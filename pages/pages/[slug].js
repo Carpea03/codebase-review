@@ -43,7 +43,7 @@ export default function Page({ data = {}, preview }) {
                 <title>
                   {page.title} | Next.js Blog Example with {CMS_NAME}
                 </title>
-                {/* {page.coverImage?.asset?._ref && (
+                {page.coverImage?.asset?._ref && (
                   <meta
                     key="ogImage"
                     property="og:image"
@@ -53,7 +53,7 @@ export default function Page({ data = {}, preview }) {
                       .fit('crop')
                       .url()}
                   />
-                )} */}
+                )}
               </Head>
               <PageHeader
                 title={page.title}
