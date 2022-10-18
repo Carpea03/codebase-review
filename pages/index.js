@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Container from '../components/container'
-import MorePages from '../components/more-pages'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
