@@ -5,5 +5,7 @@
   },
   "prettier.semi": false,
   "prettier.singleQuote": true,
-  "prettier.bracketSameLine": true
+  "prettier.bracketSameLine": true,
+  "prettier.useEditorConfig": false,
+  "eslint.format.enable": true
 }
