@@ -1,6 +1,6 @@
 import React from 'react'
 import Alert from '../components/alert'
-import ContactDefault from '../components/contact-default'
+import Contact from '../components/contact'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import Hero from '../components/hero'
@@ -15,7 +15,7 @@ export default function Layout({ preview, children }) {
         <Alert preview={preview} />
         <Header />
         <main>{children}</main>
-        <ContactDefault />
+        <Contact />
         <Newsletter />
       </div>
       <Footer />
