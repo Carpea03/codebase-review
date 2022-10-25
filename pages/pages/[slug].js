@@ -33,7 +33,7 @@ export default function Page({ data = {}, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        {/* <Header /> */}
         {router.isFallback ? (
           <PageTitle>Loading…</PageTitle>
         ) : (
