@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './public/**/*.html',
   ],
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'), require('flowbite-typography')],
   theme: {
     extend: {
       // colors: {
