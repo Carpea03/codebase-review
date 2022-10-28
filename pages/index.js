@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import ContentCard from '../components/content-card'
-import Blog from '../components/blog'
 // import Container from '../components/container'
 import Features from '../components/features'
 import FeaturesImages from '../components/features-images'
@@ -38,7 +37,6 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
       <Features />
       <Logos />
       <FeaturesImages />
-      <Blog />
     </Layout>
   )
 }

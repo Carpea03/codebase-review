@@ -20,9 +20,8 @@ export default function Layout({ preview, children }) {
           {/* <div className="flex justify-between px-4 mx-auto max-w-screen-xl"> */}
           <div
             className={`flex justify-between px-4 mx-auto max-w-screen-xl ${markdownStyles.markdown}`}>
-            <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-              {children}
-            </article>
+            {/* <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"> */}
+            <article>{children}</article>
           </div>
         </main>
         <Blog />

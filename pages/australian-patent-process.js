@@ -57,7 +57,7 @@ export default function aus() {
               </a>
             </div>
           </li>
-          <li ariaCurrent="page">
+          <li aria-current="page">
             <div className="flex items-center">
               <svg
                 className="w-6 h-6 text-gray-400"

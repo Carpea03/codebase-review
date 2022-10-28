@@ -340,7 +340,7 @@ export default function Header(props) {
         <div className="grid py-4 px-4 mx-auto max-w-screen-xl lg:grid-cols-2 md:px-6">
           <form className="flex mb-4 lg:order-2 lg:mb-0">
             <label
-              for="search-dropdown"
+              htmlFor="search-dropdown"
               className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">
               Your Email
             </label>
@@ -393,7 +393,7 @@ export default function Header(props) {
                 <Link href="/">
                   <a
                     className="text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-500"
-                    ariaCurrent="page">
+                    aria-current="page">
                     Home
                   </a>
                 </Link>
