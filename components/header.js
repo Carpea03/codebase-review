@@ -29,7 +29,7 @@ export default function Header(props) {
           <div className="flex items-center">
             <button
               type="button"
-              dataDropdownToggle="language-dropdown"
+              // dataDropdownToggle="language-dropdown"
               className="inline-flex items-center text-gray-900 dark:text-gray-300 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 lg:px-4 py-2 lg:py-2.5 mr-2 md:mr-3 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
               <svg
                 className="w-5 h-5 rounded-full md:mr-2"
@@ -346,7 +346,7 @@ export default function Header(props) {
             </label>
             <button
               id="dropdown-button"
-              dataDropdownToggle="dropdown"
+              // dataDropdownToggle="dropdown"
               className="hidden md:inline-flex flex-shrink-0 z-10 items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-200 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
               type="button">
               All categories{' '}
@@ -401,7 +401,7 @@ export default function Header(props) {
               <li>
                 <button
                   id="dropdown-button-megamenu"
-                  dataCollapseToggle="megamenu"
+                  // dataCollapseToggle="megamenu"
                   className="flex justify-between items-center w-full font-medium dark:hover:text-primary-500 md:p-0 md:w-auto dark:text-white hover:text-primary-500 dark:focus:text-primary-500">
                   Company{' '}
                   <svg

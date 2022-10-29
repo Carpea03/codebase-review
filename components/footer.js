@@ -561,7 +561,7 @@ export default function Footer() {
           <div
             id="dropdown"
             className="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
-            dataPopperPlacement="bottom"
+            // dataPopperPlacement="bottom"
             // style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(911px, 681.5px, 0px);">
           >
             <ul
