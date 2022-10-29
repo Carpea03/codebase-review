@@ -2,22 +2,22 @@ import React from 'react'
 
 export default function logos() {
   return (
-    <section class="bg-white dark:bg-gray-900">
-      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-xl">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
+    <section className="bg-white dark:bg-gray-900">
+      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-xl">
+        <h2 className="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
           You’ll be in good company
         </h2>
-        <p class="mb-4 text-base font-light text-center text-gray-500 md:text-xl sm:px-14 md:px-24 lg:px-56 xl:px-72">
+        <p className="mb-4 text-base font-light text-center text-gray-500 md:text-xl sm:px-14 md:px-24 lg:px-56 xl:px-72">
           We use an agile approach to test assumptions and connect with the
           needs of your audience early and often.
         </p>
-        <div class="justify-center space-y-2 space-x-0 sm:space-y-0 sm:space-x-6 sm:flex">
+        <div className="justify-center space-y-2 space-x-0 sm:space-y-0 sm:space-x-6 sm:flex">
           <a
             href="#"
-            class="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+            className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
             Explore our integrations
             <svg
-              class="ml-1 w-5 h-5"
+              className="ml-1 w-5 h-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
@@ -29,10 +29,10 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+            className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
             API Overview
             <svg
-              class="ml-1 w-5 h-5"
+              className="ml-1 w-5 h-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
@@ -43,12 +43,12 @@ export default function logos() {
             </svg>
           </a>
         </div>
-        <div class="mt-6 space-y-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 xl:gap-8 md:space-y-0 md:mb-8 md:mt-12">
+        <div className="mt-6 space-y-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 xl:gap-8 md:space-y-0 md:mb-8 md:mt-12">
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-9 text-gray-600 dark:text-gray-400"
+              className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 125 35"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -62,9 +62,9 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-9 text-gray-600 dark:text-gray-400"
+              className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 86 29"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -78,9 +78,9 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-8 text-gray-600 dark:text-gray-400"
+              className="h-8 text-gray-600 dark:text-gray-400"
               viewBox="0 0 151 34"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -104,9 +104,9 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-9 text-gray-600 dark:text-gray-400"
+              className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 124 38"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -118,9 +118,9 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-9 text-gray-600 dark:text-gray-400"
+              className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 128 38"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -140,9 +140,9 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-10 text-gray-600 dark:text-gray-400"
+              className="h-10 text-gray-600 dark:text-gray-400"
               viewBox="0 0 41 50"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -154,9 +154,9 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-8 text-gray-600 dark:text-gray-400"
+              className="h-8 text-gray-600 dark:text-gray-400"
               viewBox="0 0 123 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -216,9 +216,9 @@ export default function logos() {
           </a>
           <a
             href="#"
-            class="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
-              class="h-9 text-gray-600 dark:text-gray-400"
+              className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 53 38"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
