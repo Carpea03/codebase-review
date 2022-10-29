@@ -14,9 +14,9 @@ export default function RelatedArticle() {
       ariaLabel="Related articles"
       className="py-8 lg:py-24 dark:bg-gray-800">
       <div className="px-4 mx-auto max-w-screen-xl">
-        <h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
+        <h4 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
           Related articles
-        </h2>
+        </h4>
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* <article className="max-w-xs"> */}
           <article>
@@ -33,9 +33,9 @@ export default function RelatedArticle() {
                 {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 2"> */}
               </a>
             </Link>
-            <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+            <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <a>Our first office</a>
-            </h2>
+            </h4>
             <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
@@ -59,11 +59,11 @@ export default function RelatedArticle() {
                 {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2"> */}
               </a>
             </Link>
-            <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+            <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
                 <a>Enterprise design tips</a>
               </Link>
-            </h2>
+            </h4>
             <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
@@ -88,11 +88,11 @@ export default function RelatedArticle() {
                 {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3"> */}
               </a>
             </Link>
-            <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+            <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
                 <a>We partnered with Google</a>
               </Link>
-            </h2>
+            </h4>
             <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
@@ -117,11 +117,11 @@ export default function RelatedArticle() {
                 {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4"> */}
               </a>
             </Link>
-            <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+            <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
                 <a>Our first project with React</a>
               </Link>
-            </h2>
+            </h4>
             <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.

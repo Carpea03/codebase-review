@@ -32,42 +32,42 @@ export default function Page({ data = {}, preview }) {
 
   return (
     <Layout preview={preview}>
-      <Container>
-        {/* <Header /> */}
-        {router.isFallback ? (
-          <PageTitle>Loading…</PageTitle>
-        ) : (
-          <>
-            <article>
-              <Head>
-                <title>
-                  {page.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                {page.coverImage?.asset?._ref && (
-                  <meta
-                    key="ogImage"
-                    property="og:image"
-                    content={urlForImage(page.coverImage)
-                      .width(1200)
-                      .height(627)
-                      .fit('crop')
-                      .url()}
-                  />
-                )}
-              </Head>
-              <PageHeader
-                title={page.title}
-                coverImage={page.coverImage}
-                date={page.date}
-                author={page.author}
-              />
-              <PageBody content={page.content} />
-            </article>
-            <SectionSeparator />
-            {morePages.length > 0 && <MoreStories pages={morePages} />}
-          </>
-        )}
-      </Container>
+      {/* <Container> */}
+      {/* <Header /> */}
+      {router.isFallback ? (
+        <PageTitle>Loading…</PageTitle>
+      ) : (
+        <>
+          <article>
+            <Head>
+              <title>
+                {page.title} | Next.js Blog Example with {CMS_NAME}
+              </title>
+              {page.coverImage?.asset?._ref && (
+                <meta
+                  key="ogImage"
+                  property="og:image"
+                  content={urlForImage(page.coverImage)
+                    .width(1200)
+                    .height(627)
+                    .fit('crop')
+                    .url()}
+                />
+              )}
+            </Head>
+            <PageHeader
+              title={page.title}
+              coverImage={page.coverImage}
+              date={page.date}
+              author={page.author}
+            />
+            <PageBody content={page.content} />
+          </article>
+          <SectionSeparator />
+          {morePages.length > 0 && <MoreStories pages={morePages} />}
+        </>
+      )}
+      {/* </Container> */}
     </Layout>
   )
 }

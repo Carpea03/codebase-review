@@ -1,17 +1,22 @@
 import React from 'react'
+// import Alert from '../components/alert'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Newsletter from '../components/newsletter'
-export default function Layout({ preview, children }) {
+import RelatedArticle from '../components/related-article'
+
+export default function LayoutBlog({ preview, children }) {
   return (
     <>
       <div>
+        {/* <Alert preview={preview} /> */}
         <Header />
-        <main className="pt-14 mx-auto w-full max-w-2xl max-width-none format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+        <main className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
           {children}
         </main>
+        <RelatedArticle />
         <Contact />
         <Newsletter />
       </div>

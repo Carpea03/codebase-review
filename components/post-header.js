@@ -7,19 +7,31 @@ export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
-        {author && <Avatar name={author.name} picture={author.picture} />}
-      </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} image={coverImage} priority />
-      </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block mb-6 md:hidden">
-          {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
-        <div className="mb-6 text-lg">
-          <Date dateString={date} />
-        </div>
+      <div className="pb-4 lg:mb-6 not-format">
+        <address className="pb-4 flex items-center mb-6 not-italic">
+          <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+            {author && <Avatar picture={author.picture} />}
+            <div>
+              <a
+                href="#"
+                rel="author"
+                className="text-xl font-bold text-gray-900 dark:text-white">
+                {author.name}
+              </a>
+              <p className="text-base font-light text-gray-500 dark:text-gray-400">
+                {author.role || '*** Add staff role to schema ***'}
+              </p>
+              <p className="text-base font-light text-gray-500 dark:text-gray-400">
+                <Date dateString={date} />
+              </p>
+            </div>
+          </div>
+        </address>
+        <CoverImage
+          title={title}
+          image={coverImage}
+          priority
+        />
       </div>
     </>
   )

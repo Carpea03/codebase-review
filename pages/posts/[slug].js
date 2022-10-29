@@ -5,9 +5,8 @@ import Container from '../../components/container'
 import PostBody from '../../components/post-body'
 import MoreStories from '../../components/more-stories'
 import PostHeader from '../../components/post-header'
-import RelatedArticle from '../../components/related-article'
 import SectionSeparator from '../../components/section-separator'
-import Layout from '../../components/layout'
+import LayoutBlog from '../../components/layout-blog'
 import PostTitle from '../../components/post-title'
 import { CMS_NAME } from '../../lib/constants'
 import { postQuery, postSlugsQuery } from '../../lib/queries'
@@ -31,28 +30,16 @@ export default function Post({ data = {}, preview }) {
   }
 
   return (
-    <Layout preview={preview}>
+    <LayoutBlog preview={preview}>
       <Container>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article>
+            <article className="pt-14">
               <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                {post.coverImage?.asset?._ref && (
-                  <meta
-                    key="ogImage"
-                    property="og:image"
-                    content={urlForImage(post.coverImage)
-                      .width(1200)
-                      .height(627)
-                      .fit('crop')
-                      .url()}
-                  />
-                )}
+                <title>{post.title} - IP Front™ News</title>
+                {post.coverImage?.asset?._ref}
               </Head>
               <PostHeader
                 title={post.title}
@@ -62,13 +49,12 @@ export default function Post({ data = {}, preview }) {
               />
               <PostBody content={post.content} />
             </article>
-            <RelatedArticle />
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}
       </Container>
-    </Layout>
+    </LayoutBlog>
   )
 }
 
