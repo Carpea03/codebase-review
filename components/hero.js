@@ -48,6 +48,7 @@ export default function Hero(props) {
             alt="Mockup"
             width={500}
             height={500}
+            priority
           />
         </div>
       </div>
