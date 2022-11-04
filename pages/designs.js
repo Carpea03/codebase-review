@@ -37,7 +37,7 @@ export default function () {
             className="grid grid-cols-1 gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-sm lg:mb-28 dark:bg-gray-800 dark:border-gray-700 sm:grid-cols-2">
             <div>
               <label
-                for="first-name"
+                htmlFor="first-name"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 First Name
               </label>
@@ -51,7 +51,7 @@ export default function () {
             </div>
             <div>
               <label
-                for="last-name"
+                htmlFor="last-name"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Last Name
               </label>
@@ -65,7 +65,7 @@ export default function () {
             </div>
             <div>
               <label
-                for="email"
+                htmlFor="email"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Your email
               </label>
@@ -79,7 +79,7 @@ export default function () {
             </div>
             <div>
               <label
-                for="phone-number"
+                htmlFor="phone-number"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Phone Number
               </label>
@@ -93,7 +93,7 @@ export default function () {
             </div>
             <div className="sm:col-span-2">
               <label
-                for="message"
+                htmlFor="message"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
                 Your message
               </label>
@@ -177,9 +177,9 @@ export default function () {
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    clip-rule="evenodd"></path>
+                    clipRule="evenodd"></path>
                 </svg>
               </div>
               <p className="mb-2 text-xl font-bold dark:text-white">Support</p>

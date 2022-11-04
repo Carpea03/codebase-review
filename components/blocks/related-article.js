@@ -11,7 +11,7 @@ const myLoader = ({ src, width, quality }) => {
 export default function RelatedArticle() {
   return (
     <aside
-      ariaLabel="Related articles"
+      aria-label="Related articles"
       className="lg:py-24 dark:bg-gray-800">
       <div className="px-4 mx-auto max-w-screen-xl md:p-8 lg:p-10">
         <h4 className="text-2xl font-bold text-gray-900 dark:text-white md:p-8 lg:p-10">

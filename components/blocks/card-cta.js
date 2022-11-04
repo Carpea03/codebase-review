@@ -74,10 +74,10 @@ export default function CardCta() {
                     x2="23.2079"
                     y2="12.8065"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1724C9" />
+                    <stop stopColor="#1724C9" />
                     <stop
                       offset="1"
-                      stop-color="#1C64F2"
+                      stopColor="#1C64F2"
                     />
                   </linearGradient>
                   <linearGradient
@@ -87,10 +87,10 @@ export default function CardCta() {
                     x2="19.0297"
                     y2="2.14962"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1C64F2" />
+                    <stop stopColor="#1C64F2" />
                     <stop
                       offset="1"
-                      stop-color="#0092FF"
+                      stopColor="#0092FF"
                     />
                   </linearGradient>
                   <linearGradient
@@ -100,10 +100,10 @@ export default function CardCta() {
                     x2="3.67407"
                     y2="5.81015"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0092FF" />
+                    <stop stopColor="#0092FF" />
                     <stop
                       offset="1"
-                      stop-color="#45B2FF"
+                      stopColor="#45B2FF"
                     />
                   </linearGradient>
                   <linearGradient
@@ -113,10 +113,10 @@ export default function CardCta() {
                     x2="26.5369"
                     y2="25.6356"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1C64F2" />
+                    <stop stopColor="#1C64F2" />
                     <stop
                       offset="1"
-                      stop-color="#0092FF"
+                      stopColor="#0092FF"
                     />
                   </linearGradient>
                   <linearGradient
@@ -126,10 +126,10 @@ export default function CardCta() {
                     x2="15.2317"
                     y2="23.9345"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1724C9" />
+                    <stop stopColor="#1724C9" />
                     <stop
                       offset="1"
-                      stop-color="#1C64F2"
+                      stopColor="#1C64F2"
                     />
                   </linearGradient>
                   <linearGradient
@@ -139,10 +139,10 @@ export default function CardCta() {
                     x2="31.0061"
                     y2="10.4342"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0092FF" />
+                    <stop stopColor="#0092FF" />
                     <stop
                       offset="1"
-                      stop-color="#45B2FF"
+                      stopColor="#45B2FF"
                     />
                   </linearGradient>
                   <linearGradient
@@ -152,10 +152,10 @@ export default function CardCta() {
                     x2="2.39054"
                     y2="20.3063"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1C64F2" />
+                    <stop stopColor="#1C64F2" />
                     <stop
                       offset="1"
-                      stop-color="#0092FF"
+                      stopColor="#0092FF"
                     />
                   </linearGradient>
                   <linearGradient
@@ -165,10 +165,10 @@ export default function CardCta() {
                     x2="9.6778"
                     y2="11.3044"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1724C9" />
+                    <stop stopColor="#1724C9" />
                     <stop
                       offset="1"
-                      stop-color="#1C64F2"
+                      stopColor="#1C64F2"
                     />
                   </linearGradient>
                   <linearGradient
@@ -178,10 +178,10 @@ export default function CardCta() {
                     x2="13.3327"
                     y2="31.7743"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0092FF" />
+                    <stop stopColor="#0092FF" />
                     <stop
                       offset="1"
-                      stop-color="#45B2FF"
+                      stopColor="#45B2FF"
                     />
                   </linearGradient>
                 </defs>
@@ -195,9 +195,9 @@ export default function CardCta() {
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
+                  clipRule="evenodd"></path>
               </svg>
             </a>
             <a
@@ -208,7 +208,7 @@ export default function CardCta() {
                 viewBox="0 0 22 31"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_4151_63004)">
+                <g clipPath="url(#clip0_4151_63004)">
                   <path
                     d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z"
                     fill="#0ACF83"
@@ -250,9 +250,9 @@ export default function CardCta() {
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
+                  clipRule="evenodd"></path>
               </svg>
             </a>
             <a
@@ -263,7 +263,7 @@ export default function CardCta() {
                 viewBox="0 0 26 31"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_4151_62985)">
+                <g clipPath="url(#clip0_4151_62985)">
                   <path
                     d="M25.7689 0.901322L15.1763 3.49437C15.0758 3.51776 14.9717 3.52086 14.87 3.50352C14.7683 3.48617 14.6711 3.44871 14.5841 3.39335L9.57667 0.121964C9.48513 0.0624589 9.38179 0.0234753 9.27373 0.00769593C9.16568 -0.00808342 9.05549 -0.000283916 8.95074 0.0305577L0.284074 2.58031C0.204603 2.59938 0.133665 2.64415 0.0822909 2.70766C0.030917 2.77117 0.001987 2.84986 0 2.9315L0 8.11761L8.95074 5.48607C9.05549 5.45522 9.16568 5.44743 9.27373 5.4632C9.38179 5.47898 9.48513 5.51797 9.57667 5.57747L14.5841 8.84404C14.6701 8.90151 14.7674 8.94022 14.8694 8.95762C14.9715 8.97503 15.076 8.97075 15.1763 8.94507L26 6.2991V1.07451C25.9987 1.02559 25.9784 0.979095 25.9433 0.944943C25.9082 0.91079 25.8612 0.891685 25.8122 0.891701L25.7689 0.901322Z"
                     fill="#FF7F66"
@@ -319,9 +319,9 @@ export default function CardCta() {
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
+                  clipRule="evenodd"></path>
               </svg>
             </a>
             <a
@@ -344,10 +344,10 @@ export default function CardCta() {
                     x2="27.5845"
                     y2="22.9931"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#2298BD" />
+                    <stop stopColor="#2298BD" />
                     <stop
                       offset="1"
-                      stop-color="#0ED7B5"
+                      stopColor="#0ED7B5"
                     />
                   </linearGradient>
                 </defs>
@@ -361,9 +361,9 @@ export default function CardCta() {
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
+                  clipRule="evenodd"></path>
               </svg>
             </a>
           </div>

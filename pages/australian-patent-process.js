@@ -21,7 +21,7 @@ export default function AustralianPatentProcess() {
       </Head>
       <nav
         className="flex"
-        ariaLabel="Breadcrumb">
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link href="#">
