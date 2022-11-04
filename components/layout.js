@@ -1,20 +1,18 @@
 import React from 'react'
-import Contact from '../components/contact'
+import Contact from '../components/blocks/contact'
 import Footer from '../components/footer'
 import Header from '../components/header'
-import Hero from '../components/hero'
-import Newsletter from '../components/newsletter'
-export default function Layout({ preview, children }) {
+import Hero from '../components/blocks/hero'
+import Newsletter from '../components/blocks/newsletter'
+export default function Layout({ children }) {
   return (
     <>
-      <div>
-        <Header />
-        <main className="pt-14 mx-auto w-full max-w-2xl max-width-none format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-          {children}
-        </main>
-        <Contact />
-        <Newsletter />
-      </div>
+      <Header />
+      <main className="pt-14 px-8 mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+        {children}
+      </main>
+      <Contact />
+      <Newsletter />
       <Footer />
     </>
   )

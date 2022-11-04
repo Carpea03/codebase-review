@@ -1,15 +1,14 @@
 import cn from 'classnames'
 import Image from 'next/future/image'
 import Link from 'next/link'
-import { urlForImage } from '../lib/sanity'
+import { urlForImage } from '../../lib/sanity'
 
 export default function CoverImage({ title, slug, image: source, priority }) {
   const image = source?.asset?._ref ? (
     <div
       className={cn('shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,
-      })}
-    >
+      })}>
       <Image
         className="w-full h-auto"
         layout="responsive"

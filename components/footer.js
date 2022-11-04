@@ -128,35 +128,91 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
           <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
-              Company
+              BIP Pages
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
                 <a
-                  href="#"
+                  href="/about"
                   className=" hover:underline">
                   About
                 </a>
               </li>
               <li className="mb-4">
                 <a
-                  href="#"
-                  className="hover:underline">
-                  Careers
+                  href="/australian-patent-process"
+                  className=" hover:underline">
+                  Australian Patent Process
                 </a>
               </li>
               <li className="mb-4">
                 <a
-                  href="#"
+                  href="designs"
                   className="hover:underline">
-                  Brand Center
+                  Designs
                 </a>
               </li>
               <li className="mb-4">
                 <a
-                  href="#"
+                  href="/specialisations"
+                  className="hover:underline">
+                  Specialisations
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="/specialisations/construction-patents"
+                  className="hover:underline">
+                  Construction patents
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="/how-to-patent"
+                  className="hover:underline">
+                  How to patent
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="/ip-news"
                   className="hover:underline">
                   Blog
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="/ip-news/opensource-software-and-ip"
+                  className="hover:underline">
+                  Blog Post
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="ip-news"
+                  className="hover:underline">
+                  Contact
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="/sydney/chris-baxter"
+                  className="hover:underline">
+                  Attorney
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="/testimonials"
+                  className="hover:underline">
+                  Testimonials
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="/videos"
+                  className="hover:underline">
+                  Videos
                 </a>
               </li>
             </ul>

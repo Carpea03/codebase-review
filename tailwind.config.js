@@ -66,6 +66,9 @@ module.exports = {
           'Noto Color Emoji',
         ],
       },
+      // table, th, td: {
+      //   'p-2 border border-slate-700'
+      // }
       // spacing: {
       //   28: '7rem',
       // },

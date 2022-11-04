@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import MoreStories from '../../components/more-stories'
-import PostHeader from '../../components/post-header'
-import SectionSeparator from '../../components/section-separator'
-import LayoutBlog from '../../components/layout-blog'
-import PostTitle from '../../components/post-title'
+import Container from '../../components/blog/container'
+import PostBody from '../../components/blog/post-body'
+import MoreStories from '../../components/blog/more-stories'
+import PostHeader from '../../components/blog/post-header'
+// import SectionSeparator from '../../components/section-separator'
+import Layout from '../../components/blog/layout'
+import PostTitle from '../../components/blog/post-title'
 import { CMS_NAME } from '../../lib/constants'
 import { postQuery, postSlugsQuery } from '../../lib/queries'
 import { urlForImage, usePreviewSubscription } from '../../lib/sanity'
@@ -30,13 +30,13 @@ export default function Post({ data = {}, preview }) {
   }
 
   return (
-    <LayoutBlog preview={preview}>
+    <Layout preview={preview}>
       <Container>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="pt-14">
+            <article>
               <Head>
                 <title>{post.title} - IP Front™ News</title>
                 {post.coverImage?.asset?._ref}
@@ -49,12 +49,12 @@ export default function Post({ data = {}, preview }) {
               />
               <PostBody content={post.content} />
             </article>
-            <SectionSeparator />
+            {/* <SectionSeparator /> */}
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}
       </Container>
-    </LayoutBlog>
+    </Layout>
   )
 }
 

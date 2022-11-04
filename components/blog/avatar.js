@@ -1,5 +1,5 @@
 import Image from 'next/future/image'
-import { urlForImage } from '../lib/sanity'
+import { urlForImage } from '../../lib/sanity'
 
 export default function Avatar({ name, picture }) {
   return (

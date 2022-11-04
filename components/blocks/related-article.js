@@ -12,12 +12,12 @@ export default function RelatedArticle() {
   return (
     <aside
       ariaLabel="Related articles"
-      className="py-8 lg:py-24 dark:bg-gray-800">
-      <div className="px-4 mx-auto max-w-screen-xl">
-        <h4 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
+      className="lg:py-24 dark:bg-gray-800">
+      <div className="px-4 mx-auto max-w-screen-xl md:p-8 lg:p-10">
+        <h4 className="text-2xl font-bold text-gray-900 dark:text-white md:p-8 lg:p-10">
           Related articles
         </h4>
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 md:p-8 lg:p-10">
           {/* <article className="max-w-xs"> */}
           <article>
             <Link href="/">
@@ -36,7 +36,7 @@ export default function RelatedArticle() {
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <a>Our first office</a>
             </h4>
-            <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
+            <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
@@ -64,7 +64,7 @@ export default function RelatedArticle() {
                 <a>Enterprise design tips</a>
               </Link>
             </h4>
-            <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
+            <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
@@ -74,7 +74,7 @@ export default function RelatedArticle() {
               </a>
             </Link>
           </article>
-          <article className="max-w-xs">
+          <article className="max-w-xs-">
             <Link href="/">
               <a>
                 <Image
@@ -93,7 +93,7 @@ export default function RelatedArticle() {
                 <a>We partnered with Google</a>
               </Link>
             </h4>
-            <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
+            <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
@@ -103,7 +103,7 @@ export default function RelatedArticle() {
               </a>
             </Link>
           </article>
-          <article className="max-w-xs">
+          <article className="max-w-xs-">
             <Link href="/">
               <a>
                 <Image
@@ -122,7 +122,7 @@ export default function RelatedArticle() {
                 <a>Our first project with React</a>
               </Link>
             </h4>
-            <p className="mb-4 font-light text-gray-500 dark:text-gray-400">
+            <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
