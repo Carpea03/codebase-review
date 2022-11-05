@@ -4,6 +4,7 @@
     "node": true
   },
   "rules": {
+    "react/no-unescaped-entities": 0,
     // formatting rules
     "linebreak-style": 2,
     "eol-last": 2,
@@ -87,8 +88,7 @@
     ],
     "jsx-quotes": 2,
     "comma-dangle": [2, "always-multiline"],
-    "dot-notation": 2,
-    "rules": { "react/no-unescaped-entities": 0 }
+    "dot-notation": 2
   },
   "parser": "babel-eslint"
 }
