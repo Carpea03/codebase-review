@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
@@ -8,9 +9,10 @@ import PostHeader from '../../components/blog/post-header'
 // import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/blog/layout'
 import PostTitle from '../../components/blog/post-title'
-import { CMS_NAME } from '../../lib/constants'
+// import { CMS_NAME } from '../../lib/constants'
 import { postQuery, postSlugsQuery } from '../../lib/queries'
-import { urlForImage, usePreviewSubscription } from '../../lib/sanity'
+// import { urlForImage, usePreviewSubscription } from '../../lib/sanity'
+import { usePreviewSubscription } from '../../lib/sanity'
 import { sanityClient, getClient, overlayDrafts } from '../../lib/sanity.server'
 
 export default function Post({ data = {}, preview }) {

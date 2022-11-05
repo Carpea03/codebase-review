@@ -1,10 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 // import LayoutWide from '../components/layout-wide'
 import Layout from '../components/layout'
 
-export default function contact() {
+export default function Contact() {
   return (
     <Layout>
       <Head>

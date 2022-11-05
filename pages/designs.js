@@ -1,11 +1,10 @@
 import React from 'react'
 import CardCta from '../components/blocks/card-cta'
-import ContactSection from '../components/blocks/contact-section'
 import FeatureListCta from '../components/blocks/feature-list-cta'
 import LayoutWide from '../components/layout-wide'
 import TeamPatent from '../components/team-patent'
 
-export default function () {
+export default function Designs() {
   return (
     <LayoutWide>
       <section className="bg-white dark:bg-gray-900">
