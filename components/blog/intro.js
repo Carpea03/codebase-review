@@ -1,3 +1,4 @@
+import React from 'react'
 import { CMS_NAME, CMS_URL } from '../../lib/constants'
 
 export default function Intro() {
@@ -6,7 +7,7 @@ export default function Intro() {
       <h1 className="text-6xl md:text-4xl font-bold tracking-tighter leading-tight md:pr-8">
         IP Front™ – IP News
       </h1>
-      {/* <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         A statically generated blog example using{' '}
         <a
           href="https://nextjs.org/"
@@ -20,7 +21,7 @@ export default function Intro() {
           {CMS_NAME}
         </a>
         .
-      </h4> */}
+      </h4>
     </section>
   )
 }

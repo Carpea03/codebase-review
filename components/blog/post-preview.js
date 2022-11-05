@@ -1,3 +1,4 @@
+import React from 'react'
 import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'
@@ -21,7 +22,7 @@ export default function PostPreview({
         />
       </div>
       <h3 className="mb-3 text-3xl leading-snug">
-        <Link href={`/posts/${slug}`}>
+        <Link href={`/ip-news/${slug}`}>
           <a className="hover:underline">{title}</a>
         </Link>
       </h3>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const myLoader = ({ src, width, quality }) => {
   return `https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/${src}?w=${width}&q=${
@@ -8,7 +7,7 @@ const myLoader = ({ src, width, quality }) => {
   }`
 }
 
-export default function Hero(props) {
+export default function Hero() {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">

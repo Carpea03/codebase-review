@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
 import StaffChris from '../components/staff/chris'
 import StaffMartin from '../components/staff/martin'
 import StaffMike from '../components/staff/mike'
@@ -11,12 +9,6 @@ import StaffNaleesha from '../components/staff/naleesha'
 import StaffAndrew from '../components/staff/andrew'
 import StaffWillem from '../components/staff/willem'
 import StaffRichard from '../components/staff/richard'
-
-const myLoader = ({ src, width, quality }) => {
-  return `https://bip-cms-sanity.vercel.app/images/team/${src}?w=${width}&q=${
-    quality || 75
-  }`
-}
 
 export default function TeamPatent() {
   return (

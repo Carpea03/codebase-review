@@ -1,3 +1,4 @@
+import React from 'react'
 import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'

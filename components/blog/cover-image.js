@@ -1,3 +1,4 @@
+import React from 'react'
 import cn from 'classnames'
 import Image from 'next/future/image'
 import Link from 'next/link'
@@ -15,7 +16,10 @@ export default function CoverImage({ title, slug, image: source, priority }) {
         width={2000}
         height={1000}
         alt={`Cover Image for ${title}`}
-        src={urlForImage(source).height(1000).width(2000).url()}
+        // prettier-ignore
+        src={urlForImage(source).height(1000)
+          .width(2000)
+          .url()}
         sizes="100vw"
         priority={priority}
       />
@@ -27,7 +31,7 @@ export default function CoverImage({ title, slug, image: source, priority }) {
   return (
     <div className="sm:mx-0">
       {slug ? (
-        <Link href={`/posts/${slug}`}>
+        <Link href={`/ip-news/${slug}`}>
           <a aria-label={title}>{image}</a>
         </Link>
       ) : (

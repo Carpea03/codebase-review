@@ -6,13 +6,10 @@ import Container from '../../components/blog/container'
 import PostBody from '../../components/blog/post-body'
 import MoreStories from '../../components/blog/more-stories'
 import PostHeader from '../../components/blog/post-header'
-// import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/blog/layout'
 import PostTitle from '../../components/blog/post-title'
-// import { CMS_NAME } from '../../lib/constants'
 import { postQuery, postSlugsQuery } from '../../lib/queries'
-// import { urlForImage, usePreviewSubscription } from '../../lib/sanity'
-import { usePreviewSubscription } from '../../lib/sanity'
+import { urlForImage, usePreviewSubscription } from '../../lib/sanity'
 import { sanityClient, getClient, overlayDrafts } from '../../lib/sanity.server'
 
 export default function Post({ data = {}, preview }) {
@@ -41,7 +38,17 @@ export default function Post({ data = {}, preview }) {
             <article>
               <Head>
                 <title>{post.title} - IP Front™ News</title>
-                {post.coverImage?.asset?._ref}
+                {post.coverImage?.asset?._ref && (
+                  <meta
+                    key="ogImage"
+                    property="og:image"
+                    content={urlForImage(post.coverImage)
+                      .width(1200)
+                      .height(627)
+                      .fit('crop')
+                      .url()}
+                  />
+                )}
               </Head>
               <PostHeader
                 title={post.title}
@@ -51,7 +58,6 @@ export default function Post({ data = {}, preview }) {
               />
               <PostBody content={post.content} />
             </article>
-            {/* <SectionSeparator /> */}
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}

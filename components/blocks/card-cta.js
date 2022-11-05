@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 export default function CardCta() {
   return (
@@ -7,7 +6,7 @@ export default function CardCta() {
       <section className="bg-white dark:bg-gray-900 not-format">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            We didn't reinvent the wheel
+            We didn&apos;t reinvent the wheel
           </h2>
           <p className="mb-3 font-light text-gray-500 dark:text-gray-400 sm:text-xl">
             Track work across the enterprise through an open, collaborative

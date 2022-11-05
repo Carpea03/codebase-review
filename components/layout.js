@@ -2,7 +2,6 @@ import React from 'react'
 import Contact from '../components/blocks/contact'
 import Footer from '../components/footer'
 import Header from '../components/header'
-import Hero from '../components/blocks/hero'
 import Newsletter from '../components/blocks/newsletter'
 export default function Layout({ children }) {
   return (

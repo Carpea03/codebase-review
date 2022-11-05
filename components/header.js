@@ -6,7 +6,7 @@ const myLoader = ({ src, width, quality }) => {
   return `https://flowbite.com/docs/images/${src}?w=${width}&q=${quality || 75}`
 }
 
-export default function Header(props) {
+export default function Header() {
   return (
     <header className="shadow-md">
       <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-800">
