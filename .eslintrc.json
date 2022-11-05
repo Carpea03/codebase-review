@@ -5,7 +5,7 @@
   },
   "rules": {
     // formatting rules
-    "react/no-unescaped-entities": 2,
+    "react/no-unescaped-entities": 0,
     "linebreak-style": 2,
     "eol-last": 2,
     "no-multiple-empty-lines": 2,
