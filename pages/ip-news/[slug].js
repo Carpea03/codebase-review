@@ -55,6 +55,8 @@ export default function Post({ data = {}, preview }) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
+                category={post.category}
+                tag={post.tag}
               />
               <PostBody content={post.content} />
             </article>

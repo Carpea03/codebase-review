@@ -33,6 +33,8 @@ export default function PostPreview({
       {author && (
         <Avatar
           name={author.name}
+          role={author.role}
+          bio={author.bio}
           picture={author.picture}
         />
       )}
