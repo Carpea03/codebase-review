@@ -182,7 +182,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <a
-                  href="/ip-news/opensource-software-and-ip"
+                  href="/ip-news/patenting-your-health-care-apps"
                   className="hover:underline">
                   Blog Post
                 </a>
@@ -198,21 +198,14 @@ export default function Footer() {
                 <a
                   href="/sydney/chris-baxter"
                   className="hover:underline">
-                  Attorney
+                  Attorney Chris
                 </a>
               </li>
               <li className="mb-4">
                 <a
-                  href="/testimonials"
+                  href="/zh/专利代理人"
                   className="hover:underline">
-                  Testimonials
-                </a>
-              </li>
-              <li className="mb-4">
-                <a
-                  href="/videos"
-                  className="hover:underline">
-                  Videos
+                  我们的专利代理人
                 </a>
               </li>
             </ul>
