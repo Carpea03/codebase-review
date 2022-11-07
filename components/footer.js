@@ -194,13 +194,13 @@ export default function Footer() {
                   Contact
                 </a>
               </li>
-              <li className="mb-4">
+              {/* <li className="mb-4">
                 <a
                   href="/sydney/chris-baxter"
                   className="hover:underline">
                   Attorney Chris
                 </a>
-              </li>
+              </li> */}
               <li className="mb-4">
                 <a
                   href="/zh/专利代理人"
