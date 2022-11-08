@@ -89,5 +89,6 @@
     "jsx-quotes": 2,
     "comma-dangle": [2, "always-multiline"],
     "dot-notation": 2
-  }
+  },
+  "parser": "/usr/local/lib/node_modules/babel-eslint"
 }
