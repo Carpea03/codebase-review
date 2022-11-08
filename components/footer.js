@@ -189,7 +189,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <a
-                  href="ip-news"
+                  href="/contact"
                   className="hover:underline">
                   Contact
                 </a>
