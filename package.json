@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && npm start --prefix studio",
     "start": "next start",
     "studio:dev": "npm --prefix studio run start",
     "studio:deploy": "npx vercel env pull && npm --prefix studio run deploy"
