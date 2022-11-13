@@ -1,4 +1,3 @@
-import React from 'react'
 import CardCta from '../components/blocks/card-cta'
 import FeatureListCta from '../components/blocks/feature-list-cta'
 import LayoutWide from '../components/layout-wide'

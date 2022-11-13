@@ -1,4 +1,3 @@
-import React from 'react'
 import markdownStyles from './markdown-styles.module.css'
 import { PortableText } from '@portabletext/react'
 

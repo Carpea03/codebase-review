@@ -1,4 +1,3 @@
-import React from 'react'
 import Contact from '../components/blocks/contact'
 import Footer from '../components/footer'
 import Header from '../components/header'
