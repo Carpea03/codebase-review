@@ -15,10 +15,10 @@
     "date-fns": "^2.29.1",
     "flowbite": "^1.5.3",
     "flowbite-react": "^0.2.1",
-    "next": "latest",
+    "next": "^13.0.5",
     "next-sanity": "^0.6.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
@@ -30,5 +30,23 @@
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
     "tailwindcss": "^3.1.7"
-  }
+  },
+  "name": "bip-cms-sanity",
+  "description": "This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Sanity](https://www.sanity.io/) as the data source.",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilrobots/bip-cms-sanity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilrobots/bip-cms-sanity/issues"
+  },
+  "homepage": "https://github.com/lilrobots/bip-cms-sanity#readme"
 }
