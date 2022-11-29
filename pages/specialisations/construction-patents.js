@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Layout from '../../components/layout'
 import Image from 'next/future/image'
 import StaffChris from '../../components/staff/chris'
@@ -62,13 +63,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2015331287"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2015331287"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2015331287
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Construction machine control system, a construction machine,
@@ -86,13 +87,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2019100306"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019100306"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2019100306
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Prefabricated high-strength and high-efficiency thermal
@@ -111,13 +112,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2017203475"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2017203475"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2017203475
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Composite wall panel, wall system and components thereof,
@@ -134,13 +135,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2018101553"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018101553"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2018101553
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     A fire safety arrangement for overhead pipe support
@@ -158,13 +159,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2016274787"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2016274787"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2016274787
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Cooling system with direct expansion and pumped refrigerant
@@ -181,13 +182,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2017101710"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2017101710"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2017101710
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Lifting device of hydraulic straightening platform for shaft
@@ -204,13 +205,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2018204490"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018204490"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2018204490
-                    </a>
+                    </Link>
                   </dt>
                   <dd>Concrete tile and molding material for same</dd>
                 </dl>
@@ -224,13 +225,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2017204060"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2017204060"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2017204060
-                    </a>
+                    </Link>
                   </dt>
                   <dd>Method for producing arc-welded structural member</dd>
                 </dl>
@@ -244,13 +245,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2010223609"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2010223609"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2010223609
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Method and system for inserting a pipe into an underground
@@ -267,13 +268,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2018901230"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018901230"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2018901230
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     A building component for use in the construction of concrete
@@ -290,13 +291,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2008301671"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2008301671"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2008301671
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Steering bogie for rolling stock, rolling stock and
@@ -313,13 +314,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2018100175"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018100175"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2018100175
-                    </a>
+                    </Link>
                   </dt>
                   <dd>A power distribution system with override capability</dd>
                 </dl>
@@ -333,13 +334,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2018101793"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018101793"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2018101793
-                    </a>
+                    </Link>
                   </dt>
                   <dd>
                     Method and system for controlling operation of a renewable
@@ -356,13 +357,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2006242458"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2006242458"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2006242458
-                    </a>
+                    </Link>
                   </dt>
                   <dd>Pneumatic conveying device for bulk material</dd>
                 </dl>
@@ -376,13 +377,13 @@ export default function ConstructionPatents() {
               <td>
                 <dl>
                   <dt>
-                    <a
+                    <Link
                       title="AU Patent # 2018102112"
                       href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018102112"
                       target="_blank"
                       rel="noopener noreferrer">
                       AU Patent # 2018102112
-                    </a>
+                    </Link>
                   </dt>
                   <dd>A fall arresting overhead safety rail system</dd>
                 </dl>
@@ -421,9 +422,9 @@ export default function ConstructionPatents() {
           <li>
             Proceed in the countries that are important to interested parties by
             the 30-month deadline for&nbsp;
-            <a href="https://www.baxterip.com.au/national-phase-patent">
+            <Link href="https://www.baxterip.com.au/national-phase-patent">
               national phase entry
-            </a>
+            </Link>
             .
           </li>
         </ol>
@@ -438,11 +439,11 @@ export default function ConstructionPatents() {
         </h3>
         <ol>
           <li>
-            <a
+            <Link
               title="AU Patent #2018247335"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018247335">
               <i>AU Patent #2018247335</i>
-            </a>
+            </Link>
             &nbsp;–&nbsp;
             <strong>
               Lift shaft assembly and construction and installation
@@ -451,21 +452,21 @@ export default function ConstructionPatents() {
             Bowen and Pomeroy Pty Ltd
           </li>
           <li>
-            <a
+            <Link
               title="AU Patent #2019901171"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019901171">
               <i>AU Patent #2019901171</i>
-            </a>
+            </Link>
             &nbsp;–&nbsp;
             <strong>Hole depth measuring, device and system.&nbsp;</strong>
             Jedair Compressors Pty Ltd
           </li>
           <li>
-            <a
+            <Link
               title="AU Patent #2019200184"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200184">
               <i>AU Patent #2019200184</i>
-            </a>
+            </Link>
             &nbsp;–&nbsp;
             <strong>
               A plumbing attachment to aid in the installation of piping.&nbsp;
@@ -473,21 +474,21 @@ export default function ConstructionPatents() {
             Nilsson, Fredrik
           </li>
           <li>
-            <a
+            <Link
               title="AU Patent #2019200174"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200174">
               <i>AU Patent #2019200174</i>
-            </a>
+            </Link>
             &nbsp;–&nbsp;
             <strong>A system and a method for power generation.&nbsp;</strong>
             Hiremath, Rajeev MR
           </li>
           <li>
-            <a
+            <Link
               title="AU Patent #2018274977"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018274977">
               <i>AU Patent #2018274977</i>
-            </a>
+            </Link>
             &nbsp;–&nbsp;
             <strong>
               A system for providing a continuous stream of foamed cement
@@ -1275,7 +1276,7 @@ export default function ConstructionPatents() {
               Some of our civil engineering and construction clients include:
             </h4>
             <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <a
+              <Link
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
@@ -1286,8 +1287,8 @@ export default function ConstructionPatents() {
                   height={191}
                   className="mx-auto mb-4 rounded-full"
                 />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
@@ -1298,7 +1299,7 @@ export default function ConstructionPatents() {
                   height={191}
                   className="mx-auto mb-4 rounded-full"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
