@@ -40,7 +40,8 @@ export default function FeatureListCta() {
             </p>
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
+              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400"
+              legacyBehavior>
               Learn how to keep your funds safe{' '}
               <svg
                 className="ml-1 w-5 h-5"
@@ -76,7 +77,8 @@ export default function FeatureListCta() {
             </p>
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
+              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400"
+              legacyBehavior>
               Learn how your crypto is covered{' '}
               <svg
                 className="ml-1 w-5 h-5"
@@ -111,7 +113,8 @@ export default function FeatureListCta() {
             </p>
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
+              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400"
+              legacyBehavior>
               How to implement best practices{' '}
               <svg
                 className="ml-1 w-5 h-5"

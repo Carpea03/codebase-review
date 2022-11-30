@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function CardCta() {
   return (
@@ -21,7 +22,7 @@ export default function CardCta() {
             eliminate toil, and deploy changes with ease.
           </p>
           <div className="grid gap-8 lg:grid-cols-2">
-            <a
+            <Link
               href="#"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -198,8 +199,8 @@ export default function CardCta() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -253,8 +254,8 @@ export default function CardCta() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -322,8 +323,8 @@ export default function CardCta() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -364,7 +365,7 @@ export default function CardCta() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

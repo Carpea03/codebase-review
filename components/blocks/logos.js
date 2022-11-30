@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function logos() {
   return (
@@ -12,7 +13,7 @@ export default function logos() {
           needs of your audience early and often.
         </p>
         <div className="justify-center space-y-2 space-x-0 sm:space-y-0 sm:space-x-6 sm:flex">
-          <a
+          <Link
             href="#"
             className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
             Explore our integrations
@@ -26,8 +27,8 @@ export default function logos() {
                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                 clipRule="evenodd"></path>
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
             API Overview
@@ -41,10 +42,10 @@ export default function logos() {
                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                 clipRule="evenodd"></path>
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="mt-6 space-y-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 xl:gap-8 md:space-y-0 md:mb-8 md:mt-12">
-          <a
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -59,8 +60,8 @@ export default function logos() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -75,8 +76,8 @@ export default function logos() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -101,8 +102,8 @@ export default function logos() {
                 </clipPath>
               </defs>
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -115,8 +116,8 @@ export default function logos() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -137,8 +138,8 @@ export default function logos() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -151,8 +152,8 @@ export default function logos() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -213,8 +214,8 @@ export default function logos() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <svg
@@ -235,7 +236,7 @@ export default function logos() {
                 fill="white"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

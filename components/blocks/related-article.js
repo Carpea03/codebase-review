@@ -20,7 +20,7 @@ export default function RelatedArticle() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 md:p-8 lg:p-10">
           {/* <article className="max-w-xs"> */}
           <article>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
 
               <Image
                 loader={myLoader}
@@ -34,19 +34,19 @@ export default function RelatedArticle() {
 
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-              <a>Our first office</a>
+              <Link>Our first office</Link>
             </h4>
             <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
-            <a className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+            <Link className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
               Read in 2 minutes
-            </a>
+            </Link>
           </article>
           {/* <article className="max-w-xs"> */}
           <article>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
 
               <Image
                 loader={myLoader}
@@ -77,7 +77,7 @@ export default function RelatedArticle() {
             </Link>
           </article>
           <article className="max-w-xs-">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
 
               <Image
                 loader={myLoader}
@@ -108,7 +108,7 @@ export default function RelatedArticle() {
             </Link>
           </article>
           <article className="max-w-xs-">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
 
               <Image
                 loader={myLoader}

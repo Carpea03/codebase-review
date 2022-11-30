@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'
@@ -13,12 +14,12 @@ export default function PostHeader({ title, coverImage, date, author }) {
           <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
             {author && <Avatar picture={author.picture} />}
             <div>
-              <a
+              <Link
                 href="#"
                 rel="author"
                 className="text-xl font-bold text-gray-900 dark:text-white">
                 {author.name}
-              </a>
+              </Link>
               <p className="text-base font-light text-gray-500 dark:text-gray-400">
                 {author.role || '*** Add staff role to schema ***'}
               </p>

@@ -11,7 +11,7 @@ export default function Header() {
     <header className="shadow-md">
       <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center" legacyBehavior>
 
             <Image
               loader={myLoader}
@@ -126,7 +126,8 @@ export default function Header() {
                   <Link
                     href="/"
                     className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                    role="menuitem">
+                    role="menuitem"
+                    legacyBehavior>
 
                     <div className="inline-flex items-center">
                       <svg
@@ -168,7 +169,8 @@ export default function Header() {
                   <Link
                     href="/"
                     className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                    role="menuitem">
+                    role="menuitem"
+                    legacyBehavior>
 
                     <div className="inline-flex items-center">
                       <svg
@@ -195,7 +197,8 @@ export default function Header() {
                   <Link
                     href="/"
                     className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                    role="menuitem">
+                    role="menuitem"
+                    legacyBehavior>
 
                     <div className="inline-flex items-center">
                       <svg
@@ -229,7 +232,8 @@ export default function Header() {
                   <Link
                     href="/"
                     className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                    role="menuitem">
+                    role="menuitem"
+                    legacyBehavior>
 
                     <div className="inline-flex items-center">
                       <svg
@@ -297,7 +301,8 @@ export default function Header() {
             <span className="mr-0 ml-2 w-px h-5 bg-gray-200 dark:bg-gray-600 lg:inline lg:mr-3 lg:ml-5"></span>
             <Link
               href="/"
-              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600">
+              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600"
+              legacyBehavior>
 
               <svg
                 className="w-4 h-4"
@@ -310,7 +315,8 @@ export default function Header() {
             </Link>
             <Link
               href="/"
-              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600">
+              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600"
+              legacyBehavior>
 
               <svg
                 className="w-4 h-4"
@@ -323,7 +329,8 @@ export default function Header() {
             </Link>
             <Link
               href="/"
-              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600">
+              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600"
+              legacyBehavior>
 
               <svg
                 className="w-4 h-4"
@@ -336,7 +343,8 @@ export default function Header() {
             </Link>
             <Link
               href="/"
-              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600">
+              className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded-lg dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600"
+              legacyBehavior>
 
               <svg
                 className="w-4 h-4"
@@ -470,7 +478,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -494,7 +503,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -518,7 +528,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -544,7 +555,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -568,7 +580,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -592,7 +605,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -618,7 +632,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -642,7 +657,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -666,7 +682,8 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                className="flex p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
+                legacyBehavior>
 
                 <svg
                   className="mr-2 w-6 h-6"
@@ -698,7 +715,8 @@ export default function Header() {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-400">
+              className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-400"
+              legacyBehavior>
               Explore our brands{' '}
               <svg
                 className="ml-1 w-4 h-4"

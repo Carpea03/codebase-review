@@ -22,7 +22,7 @@ export default function PostPreview({
         />
       </div>
       <h3 className="mb-3 text-3xl leading-snug">
-        <Link href={`/ip-news/${slug}`} className="hover:underline">
+        <Link href={`/ip-news/${slug}`} className="hover:underline" legacyBehavior>
           {title}
         </Link>
       </h3>

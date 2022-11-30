@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { CMS_NAME, CMS_URL } from '../../lib/constants'
 
 export default function Intro() {
@@ -9,17 +10,17 @@ export default function Intro() {
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         A statically generated blog example using{' '}
-        <a
+        <Link
           href="https://nextjs.org/"
           className="underline hover:text-success duration-200 transition-colors">
           Next.js
-        </a>{' '}
+        </Link>{' '}
         and{' '}
-        <a
+        <Link
           href={CMS_URL}
           className="underline hover:text-success duration-200 transition-colors">
           {CMS_NAME}
-        </a>
+        </Link>
         .
       </h4>
     </section>

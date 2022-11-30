@@ -11,7 +11,8 @@ export default function ContentCard() {
           </h2>
           <Link
             href="/"
-            className="inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+            className="inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
+            legacyBehavior>
             Learn more about inner source<svg
               className="ml-1 w-6 h-6"
               fill="currentColor"
