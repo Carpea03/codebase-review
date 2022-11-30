@@ -1,4 +1,3 @@
-import React from 'react'
 import Blog from '../components/blocks/blog'
 import Contact from '../components/blocks/contact'
 import ContentCard from '../components/blocks/content-card'

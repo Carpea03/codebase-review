@@ -5,7 +5,7 @@
   },
   "rules": {
     // formatting rules
-    "react/no-unescaped-entities": 0,
+    // "react/no-unescaped-entities": 0,
     "linebreak-style": 2,
     "eol-last": 2,
     "no-multiple-empty-lines": 2,
@@ -90,5 +90,5 @@
     "comma-dangle": [2, "always-multiline"],
     "dot-notation": 2
   },
-  "parser": "babel-eslint"
+  "parser": "/usr/local/lib/node_modules/babel-eslint"
 }

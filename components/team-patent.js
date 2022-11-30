@@ -1,4 +1,3 @@
-import React from 'react'
 import StaffChris from '../components/staff/chris'
 import StaffMartin from '../components/staff/martin'
 import StaffMike from '../components/staff/mike'

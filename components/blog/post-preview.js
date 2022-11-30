@@ -1,4 +1,3 @@
-import React from 'react'
 import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'
@@ -33,6 +32,8 @@ export default function PostPreview({
       {author && (
         <Avatar
           name={author.name}
+          role={author.role}
+          bio={author.bio}
           picture={author.picture}
         />
       )}

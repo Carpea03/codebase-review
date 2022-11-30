@@ -10,6 +10,18 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'role',
+      title: 'Role',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'bio',
+      title: 'Bio',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'picture',
       title: 'Picture',
       type: 'image',

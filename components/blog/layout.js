@@ -1,4 +1,3 @@
-import React from 'react'
 import Alert from './alert'
 import Contact from '../blocks/contact'
 import Footer from '../footer'

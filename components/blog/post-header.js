@@ -1,4 +1,3 @@
-import React from 'react'
 import Avatar from './avatar'
 import Date from './date'
 import CoverImage from './cover-image'
@@ -20,8 +19,11 @@ export default function PostHeader({ title, coverImage, date, author }) {
                 {author.name}
               </a>
               <p className="text-base font-light text-gray-500 dark:text-gray-400">
-                {author.role || '*** Add staff role to schema ***'}
+                {author.role || '[author_role]'}
               </p>
+              {/* <p className="text-base font-light text-gray-500 dark:text-gray-400">
+                {author.bio}
+              </p> */}
               <p className="text-base font-light text-gray-500 dark:text-gray-400">
                 <Date dateString={date} />
               </p>

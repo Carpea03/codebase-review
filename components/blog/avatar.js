@@ -1,8 +1,7 @@
-import React from 'react'
 import Image from 'next/future/image'
 import { urlForImage } from '../../lib/sanity'
 
-export default function Avatar({ name, picture }) {
+export default function Avatar({ name, picture, role, bio }) {
   return (
     <div className="flex items-center">
       <div className="relative w-16 h-16 mr-4">
@@ -23,7 +22,11 @@ export default function Avatar({ name, picture }) {
           alt={name}
         />
       </div>
-      <div className="text-xl font-bold">{name}</div>
+      <div className="text-xl font-bold">
+        <p>{name}</p>
+        <p>{role}</p>
+        <p>{bio}</p>
+      </div>
     </div>
   )
 }

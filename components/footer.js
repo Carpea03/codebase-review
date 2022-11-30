@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -182,37 +181,30 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <a
-                  href="/ip-news/opensource-software-and-ip"
+                  href="/ip-news/patenting-your-health-care-apps"
                   className="hover:underline">
                   Blog Post
                 </a>
               </li>
               <li className="mb-4">
                 <a
-                  href="ip-news"
+                  href="/contact"
                   className="hover:underline">
                   Contact
                 </a>
               </li>
-              <li className="mb-4">
+              {/* <li className="mb-4">
                 <a
                   href="/sydney/chris-baxter"
                   className="hover:underline">
-                  Attorney
+                  Attorney Chris
                 </a>
-              </li>
+              </li> */}
               <li className="mb-4">
                 <a
-                  href="/testimonials"
+                  href="/zh/专利代理人"
                   className="hover:underline">
-                  Testimonials
-                </a>
-              </li>
-              <li className="mb-4">
-                <a
-                  href="/videos"
-                  className="hover:underline">
-                  Videos
+                  我们的专利代理人
                 </a>
               </li>
             </ul>

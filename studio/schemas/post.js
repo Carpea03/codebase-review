@@ -20,15 +20,15 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'string',
+    },
+    {
       name: 'content',
       title: 'Content',
       type: 'array',
       of: [{ type: 'block' }],
-    },
-    {
-      name: 'excerpt',
-      title: 'Excerpt',
-      type: 'string',
     },
     {
       name: 'coverImage',
@@ -49,11 +49,30 @@ export default {
       type: 'reference',
       to: [{ type: 'author' }],
     },
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: [{ type: 'category' }],
+    },
+    {
+      name: 'tag',
+      title: 'Tag',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'tag' }],
+        },
+      ],
+    },
   ],
   preview: {
     select: {
       title: 'title',
       author: 'author.name',
+      category: 'category.name',
+      tag: 'tag.name',
       media: 'coverImage',
     },
     prepare(selection) {
