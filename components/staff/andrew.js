@@ -21,7 +21,7 @@ export default function StaffAndrew() {
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="sydney/andrew-balis">
-          <a>Andrew Balis</a>
+          Andrew Balis
         </Link>
       </h3>
       <p>Associate, Patent & Trade Mark Attorney</p>
@@ -50,5 +50,5 @@ export default function StaffAndrew() {
         <li>Sydney</li>
       </ul>
     </div>
-  )
+  );
 }

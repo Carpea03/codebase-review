@@ -441,7 +441,8 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2018247335"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018247335">
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018247335"
+              legacyBehavior>
               <i>AU Patent #2018247335</i>
             </Link>
             &nbsp;–&nbsp;
@@ -454,7 +455,8 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2019901171"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019901171">
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019901171"
+              legacyBehavior>
               <i>AU Patent #2019901171</i>
             </Link>
             &nbsp;–&nbsp;
@@ -464,7 +466,8 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2019200184"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200184">
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200184"
+              legacyBehavior>
               <i>AU Patent #2019200184</i>
             </Link>
             &nbsp;–&nbsp;
@@ -476,7 +479,8 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2019200174"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200174">
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200174"
+              legacyBehavior>
               <i>AU Patent #2019200174</i>
             </Link>
             &nbsp;–&nbsp;
@@ -486,7 +490,8 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2018274977"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018274977">
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018274977"
+              legacyBehavior>
               <i>AU Patent #2018274977</i>
             </Link>
             &nbsp;–&nbsp;
@@ -1278,7 +1283,8 @@ export default function ConstructionPatents() {
             <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
               <Link
                 href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
+                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+                legacyBehavior>
                 <Image
                   loader={myLoader}
                   src="logo-slingshot-haulage.png"
@@ -1290,7 +1296,8 @@ export default function ConstructionPatents() {
               </Link>
               <Link
                 href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
+                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+                legacyBehavior>
                 <Image
                   loader={myLoader}
                   src="logo-wombat-timbers.png"
@@ -1305,5 +1312,5 @@ export default function ConstructionPatents() {
         </section>
       </div>
     </Layout>
-  )
+  );
 }

@@ -21,17 +21,17 @@ export default function RelatedArticle() {
           {/* <article className="max-w-xs"> */}
           <article>
             <Link href="/">
-              <a>
-                <Image
-                  loader={myLoader}
-                  src="blog-1.png"
-                  alt="Flowbite Logo"
-                  width={296}
-                  height={193}
-                  className="mb-5 rounded-lg"
-                />
-                {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 2"> */}
-              </a>
+
+              <Image
+                loader={myLoader}
+                src="blog-1.png"
+                alt="Flowbite Logo"
+                width={296}
+                height={193}
+                className="mb-5 rounded-lg"
+              />
+              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 2"> */}
+
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <a>Our first office</a>
@@ -47,93 +47,99 @@ export default function RelatedArticle() {
           {/* <article className="max-w-xs"> */}
           <article>
             <Link href="/">
-              <a>
-                <Image
-                  loader={myLoader}
-                  src="blog-2.png"
-                  alt="Flowbite Logo"
-                  width={296}
-                  height={193}
-                  className="mb-5 rounded-lg"
-                />
-                {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2"> */}
-              </a>
+
+              <Image
+                loader={myLoader}
+                src="blog-2.png"
+                alt="Flowbite Logo"
+                width={296}
+                height={193}
+                className="mb-5 rounded-lg"
+              />
+              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2"> */}
+
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
-                <a>Enterprise design tips</a>
+                Enterprise design tips
               </Link>
             </h4>
             <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
-            <Link href="/">
-              <a className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+            <Link
+              href="/"
+              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+              
                 Read in 12 minutes
-              </a>
+              
             </Link>
           </article>
           <article className="max-w-xs-">
             <Link href="/">
-              <a>
-                <Image
-                  loader={myLoader}
-                  src="blog-3.png"
-                  alt="Flowbite Logo"
-                  width={296}
-                  height={193}
-                  className="mb-5 rounded-lg"
-                />
-                {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3"> */}
-              </a>
+
+              <Image
+                loader={myLoader}
+                src="blog-3.png"
+                alt="Flowbite Logo"
+                width={296}
+                height={193}
+                className="mb-5 rounded-lg"
+              />
+              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3"> */}
+
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
-                <a>We partnered with Google</a>
+                We partnered with Google
               </Link>
             </h4>
             <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
-            <Link href="/">
-              <a className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+            <Link
+              href="/"
+              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+              
                 Read in 8 minutes
-              </a>
+              
             </Link>
           </article>
           <article className="max-w-xs-">
             <Link href="/">
-              <a>
-                <Image
-                  loader={myLoader}
-                  src="blog-4.png"
-                  alt="Flowbite Logo"
-                  width={296}
-                  height={193}
-                  className="mb-5 rounded-lg"
-                />
-                {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4"> */}
-              </a>
+
+              <Image
+                loader={myLoader}
+                src="blog-4.png"
+                alt="Flowbite Logo"
+                width={296}
+                height={193}
+                className="mb-5 rounded-lg"
+              />
+              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4"> */}
+
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
-                <a>Our first project with React</a>
+                Our first project with React
               </Link>
             </h4>
             <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
               months of preparation.
             </p>
-            <Link href="/">
-              <a className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+            <Link
+              href="/"
+              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+              
                 Read in 4 minutes
-              </a>
+              
             </Link>
           </article>
         </div>
       </div>
     </aside>
-  )
+  );
 }

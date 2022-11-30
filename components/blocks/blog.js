@@ -31,7 +31,7 @@ export default function Blog() {
             </div>
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <Link href="/">
-                <a>How to quickly deploy a static website</a>
+                How to quickly deploy a static website
               </Link>
             </h2>
             <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
@@ -86,7 +86,7 @@ export default function Blog() {
             </div>
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <Link href="/">
-                <a>Our first project with React</a>
+                Our first project with React
               </Link>
             </h2>
             <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
@@ -126,5 +126,5 @@ export default function Blog() {
         </div>
       </div>
     </section>
-  )
+  );
 }

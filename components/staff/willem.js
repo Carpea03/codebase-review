@@ -21,7 +21,7 @@ export default function StaffWillem() {
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="melbourne/willem-du-preez">
-          <a>Willem du Preez</a>
+          Willem du Preez
         </Link>
       </h3>
       <p>IP Professional</p>
@@ -50,5 +50,5 @@ export default function StaffWillem() {
         <li>Melbourne</li>
       </ul>
     </div>
-  )
+  );
 }

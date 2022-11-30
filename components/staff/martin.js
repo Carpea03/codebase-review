@@ -22,7 +22,7 @@ export default function StaffMartin() {
       {/* <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png" alt="Helene Avatar"> */}
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="melbourne/martin-earley">
-          <a>Martin Earley</a>
+          Martin Earley
         </Link>
       </h3>
       <p>Director, Victoria Region Manager, Patent & Trade Mark Attorney</p>
@@ -51,5 +51,5 @@ export default function StaffMartin() {
         <li>Melbourne</li>
       </ul>
     </div>
-  )
+  );
 }

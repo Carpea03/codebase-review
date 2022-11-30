@@ -21,7 +21,7 @@ export default function StaffMike() {
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="sydney/mike-biagio">
-          <a>Mike Biagio</a>
+          Mike Biagio
         </Link>
       </h3>
       <p>Principal, Patent Attorney</p>
@@ -50,5 +50,5 @@ export default function StaffMike() {
         <li>Sydney</li>
       </ul>
     </div>
-  )
+  );
 }

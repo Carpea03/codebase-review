@@ -21,7 +21,7 @@ export default function StaffNaleesha() {
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="sydney/naleesha-niranjan">
-          <a>Naleesha Niranjan</a>
+          Naleesha Niranjan
         </Link>
       </h3>
       <p>Senior Associate, Patent & Trade Mark Attorney</p>
@@ -50,5 +50,5 @@ export default function StaffNaleesha() {
         <li>Sydney</li>
       </ul>
     </div>
-  )
+  );
 }

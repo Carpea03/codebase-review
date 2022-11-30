@@ -21,7 +21,7 @@ export default function StaffQi() {
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="sydney/qi-zhang">
-          <a>Dr Qi Zhang</a>
+          Dr Qi Zhang
         </Link>
       </h3>
       <p>Principal, Patent & Trade Mark Attorney</p>
@@ -50,5 +50,5 @@ export default function StaffQi() {
         <li>Sydney</li>
       </ul>
     </div>
-  )
+  );
 }

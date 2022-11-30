@@ -9,22 +9,20 @@ export default function ContentCard() {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 lg:text-5xl dark:text-white">
             Turn collaboration into innovation
           </h2>
-          <Link href="/">
-            <a
-              href="#"
-              className="inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
-              Learn more about inner source
-              <svg
-                className="ml-1 w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-            </a>
+          <Link
+            href="/"
+            className="inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+            Learn more about inner source<svg
+              className="ml-1 w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"></path>
+            </svg>
+
           </Link>
         </div>
         <div className="grid gap-6 mt-12 lg:mt-14 lg:gap-12 md:grid-cols-3">
@@ -79,5 +77,5 @@ export default function ContentCard() {
         </div>
       </div>
     </section>
-  )
+  );
 }

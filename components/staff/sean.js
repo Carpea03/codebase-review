@@ -21,7 +21,7 @@ export default function StaffSean() {
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="melbourne/sean-klinkradt">
-          <a>Seán Klinkradt</a>
+          Seán Klinkradt
         </Link>
       </h3>
       <p>Senior Associate, Patent Attorney</p>
@@ -50,5 +50,5 @@ export default function StaffSean() {
         <li>Melbourne</li>
       </ul>
     </div>
-  )
+  );
 }

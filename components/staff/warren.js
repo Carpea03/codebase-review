@@ -22,7 +22,7 @@ export default function StaffWarren() {
       {/* <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar"> */}
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="melbourne/warren-chandler">
-          <a>Warren Chandler</a>
+          Warren Chandler
         </Link>
       </h3>
       <p>Senior Associate, Patent & Trade Mark Attorney</p>
@@ -51,5 +51,5 @@ export default function StaffWarren() {
         <li>Melbourne</li>
       </ul>
     </div>
-  )
+  );
 }

@@ -24,7 +24,10 @@ export default function AustralianPatentProcess() {
         aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
-            <Link href="#" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+            <Link
+              href="#"
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              legacyBehavior>
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
@@ -153,5 +156,5 @@ export default function AustralianPatentProcess() {
         </li>
       </ul>
     </Layout>
-  )
+  );
 }
