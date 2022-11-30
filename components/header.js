@@ -340,7 +340,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
-      <nav className="bg-white border-gray-200 dark:bg-gray-700 dark:border-gray-600 border-y">
+      {/*<nav className="bg-white border-gray-200 dark:bg-gray-700 dark:border-gray-600 border-y">
         <div className="grid py-4 px-4 mx-auto max-w-screen-xl lg:grid-cols-2 md:px-6">
           <form className="flex mb-4 lg:order-2 lg:mb-0">
             <label
@@ -443,8 +443,8 @@ export default function Header() {
             </ul>
           </div>
         </div>
-      </nav>
-      <nav
+      </nav>*/}
+      {/*<nav
         id="megamenu"
         className="bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-600">
         <div className="grid py-4 px-4 mx-auto max-w-screen-xl text-gray-900 dark:text-white md:grid-cols-2 lg:grid-cols-4 md:px-6">
@@ -689,7 +689,7 @@ export default function Header() {
             </Link>
           </div>
         </div>
-      </nav>
+      </nav>*/}
     </header>
   );
 }

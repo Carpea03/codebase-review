@@ -3,20 +3,20 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function AustralianPatentProcess() {
+export default function AustralianPatentSearch() {
   return (
     <Layout>
       <Head>
         <title>
-          Australian patent process | Baxter IP Sydney & Melbourne
+          Australian patent search | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
-          content="The Australian patent process commences at filing and includes examination which, when successful, results in grant of the patent."
+          content="Australian patent search often takes the form of freedom-to operate search to see whether a company has freedom-to-operate in Australia."
         />
         <link
           rel="canonical"
-          href="/australian-patent-process"
+          href="/australian-patent-search"
         />
       </Head>
       <nav
@@ -106,91 +106,50 @@ export default function AustralianPatentProcess() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Australian patent process
+                Australian patent search
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>Australian patent process</h1>
+      <h1>Australian patent search</h1>
       <p>
-        Developing new technologies allows businesses to generate significant
-        new revenue streams and charge higher margins. However, at the start of
-        the process the value of a new invention is difficult to measure. Only
-        once you have built the product and started selling it will you develop
-        the associated revenue stream.
+        Compared with many other countries, a patent search in Australia is
+        relatively straightforward because IP Australia offers a sophisticated
+        patent database and patent search system to the general public – called
+        AusPat. AusPat covers Australian patent records right back to 1904.
       </p>
       <p>
-        Having spent time and money developing a great idea, you will want to
-        stop others from copying it and competing with you. As it’s cheaper and
-        easier to simply copy a product rather than have to design and invent
-        it, copycats are, typically, able to undercut the price at which you can
-        sell your product. This is because the inventor of a new innovation will
-        need to recoup the investment and research and development costs of the
-        innovation through sales of the commercial product.
+        Australian patent searches can be carried out by patent number, applicant
+        name, inventor name and many other more sophisticated methodologies.
+        Generally speaking, if you need to find a patent or{' '}
+        <Link
+          title="File a Provisional Patent Application"
+          href="https://www.baxterip.com.au/provisional-patents">
+          patent application
+        </Link>{' '}
+        on the basis of a name, it is best to have an{' '}
+        <Link
+          title="Patent Attorneys Sydney &amp; Melbourne"
+          href="https://www.baxterip.com.au/patent-attorney">
+          Australian patent attorney
+        </Link>{' '}
+        carry out your Australian patent search because a few strategies need
+        to be applied to identify the right entity and not miss relevant search
+        results.
       </p>
       <p>
-        The good news is that there is a way to stop this from happening if you
-        are able to obtain patent protection and the start of the Australian
-        patent process is to file a patent application for your invention.
-        Obtaining a patent on your invention is a way of obtaining a legal
-        monopoly for your invention and will allow you to take action against
-        those people who copy your invention.
+        If you are trying to determine whether your new idea is patentable in
+        Australia, ironically, an Australian patent search is probably not going
+        to give you the correct answer. The reason for this is that for a new idea
+        to be patentable, it must be novel in light of all published documents
+        worldwide, and not just in Australia.{' '}
+        <Link
+          title="Worldwide Patent Novelty Search"
+          href="https://www.baxterip.com.au/international-patent-search">
+          For information on worldwide novelty searches, please click here
+        </Link>.
       </p>
-      <p>
-        If you do not want to sell the product yourself, once your patent has
-        been filed you can licence your invention if you choose to allow others
-        to use your invention. This means you could still be paid for your idea
-        even if you don’t want to commercialise it yourself. This payment may
-        take the form of a lump sum payment, royalty fees, a combination of both
-        or another scheme altogether.
-      </p>
-      <p>
-        Importantly, it is crucial that you file a patent application before you
-        sell or publicly disclose your invention. This is because once the
-        information is in the public domain it is deemed to be public
-        information and you cannot patent public information even if you came up
-        with the idea. Therefore you need to speak to a patent attorney and file
-        your patent application before disclosing your invention to any third
-        party.
-      </p>
-      <p>
-        The Australian patent process can be lengthy depending on the options
-        you choose and therefore obtaining a patent on your invention is a long
-        term investment in your idea. Depending on your invention you could get
-        a granted patent within 6 months but the process typically takes between
-        1 – 3 years before a patent office can undertake a full review of your
-        application and the various processes completed. Your patent attorney
-        can also match the application timelines with your commercial timelines
-        to ensure you are taking the most appropriate commercial pathway. The
-        best thing you can do is obtain expert advice as soon as possible.
-      </p>
-      <p>
-        Click through below to learn more about the different stages of the
-        Australian patent process:
-      </p>
-      <ul>
-        <li>
-          <Link href="https://www.baxterip.com.au/patent-application">
-            Filing an Australian standard patent application
-          </Link>
-        </li>
-        <li>
-          <Link href="https://www.baxterip.com.au/patent-examination">
-            Examination of an Australian patent application
-          </Link>
-        </li>
-        <li>
-          <Link href="https://www.baxterip.com.au/patent-opposition-process-and-acceptance">
-            Patent opposition process and acceptance
-          </Link>
-        </li>
-        <li>
-          <Link href="https://www.baxterip.com.au/patent-grant-and-renewal">
-            Grant and renewal of an Australian patent
-          </Link>
-        </li>
-      </ul>
     </Layout>
     );
 }
