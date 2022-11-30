@@ -21,7 +21,6 @@ export default function RelatedArticle() {
           {/* <article className="max-w-xs"> */}
           <article>
             <Link href="/" legacyBehavior>
-
               <Image
                 loader={myLoader}
                 src="blog-1.png"
@@ -30,11 +29,11 @@ export default function RelatedArticle() {
                 height={193}
                 className="mb-5 rounded-lg"
               />
-              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 2"> */}
-
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-              <Link>Our first office</Link>
+              <Link>
+                Our first office
+              </Link>
             </h4>
             <p className="mb-4 mr-4 font-light text-gray-500 dark:text-gray-400">
               Over the past year, Volosoft has undergone many changes! After
@@ -47,7 +46,6 @@ export default function RelatedArticle() {
           {/* <article className="max-w-xs"> */}
           <article>
             <Link href="/" legacyBehavior>
-
               <Image
                 loader={myLoader}
                 src="blog-2.png"
@@ -56,8 +54,6 @@ export default function RelatedArticle() {
                 height={193}
                 className="mb-5 rounded-lg"
               />
-              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2"> */}
-
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
@@ -71,14 +67,11 @@ export default function RelatedArticle() {
             <Link
               href="/"
               className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-              
-                Read in 12 minutes
-              
+              Read in 12 minutes
             </Link>
           </article>
           <article className="max-w-xs-">
             <Link href="/" legacyBehavior>
-
               <Image
                 loader={myLoader}
                 src="blog-3.png"
@@ -87,8 +80,6 @@ export default function RelatedArticle() {
                 height={193}
                 className="mb-5 rounded-lg"
               />
-              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3"> */}
-
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
@@ -102,14 +93,11 @@ export default function RelatedArticle() {
             <Link
               href="/"
               className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-              
-                Read in 8 minutes
-              
+              Read in 8 minutes
             </Link>
           </article>
           <article className="max-w-xs-">
             <Link href="/" legacyBehavior>
-
               <Image
                 loader={myLoader}
                 src="blog-4.png"
@@ -118,8 +106,6 @@ export default function RelatedArticle() {
                 height={193}
                 className="mb-5 rounded-lg"
               />
-              {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4"> */}
-
             </Link>
             <h4 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
               <Link href="/">
@@ -133,9 +119,7 @@ export default function RelatedArticle() {
             <Link
               href="/"
               className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-              
-                Read in 4 minutes
-              
+              Read in 4 minutes
             </Link>
           </article>
         </div>

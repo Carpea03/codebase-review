@@ -200,5 +200,5 @@ export default function Designs() {
       <CardCta />
       <TeamPatent />
     </LayoutWide>
-  )
+    )
 }

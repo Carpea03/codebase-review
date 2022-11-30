@@ -15,39 +15,46 @@ export default function logos() {
         <div className="justify-center space-y-2 space-x-0 sm:space-y-0 sm:space-x-6 sm:flex">
           <Link
             href="#"
-            className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
-            Explore our integrations
-            <svg
-              className="ml-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                fillRule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clipRule="evenodd"></path>
-            </svg>
+            className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
+            legacyBehavior>
+            <div>
+              Explore our integrations
+              <svg
+                className="ml-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fillRule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clipRule="evenodd"></path>
+              </svg>
+            </div>
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
-            API Overview
-            <svg
-              className="ml-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                fillRule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clipRule="evenodd"></path>
-            </svg>
+            className="flex justify-center items-center text-base font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
+            legacyBehavior>
+            <div>
+              API Overview
+              <svg
+                className="ml-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fillRule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clipRule="evenodd"></path>
+              </svg>
+            </div>
           </Link>
         </div>
         <div className="mt-6 space-y-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 xl:gap-8 md:space-y-0 md:mb-8 md:mt-12">
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 125 35"
@@ -63,7 +70,8 @@ export default function logos() {
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 86 29"
@@ -79,7 +87,8 @@ export default function logos() {
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-8 text-gray-600 dark:text-gray-400"
               viewBox="0 0 151 34"
@@ -105,7 +114,8 @@ export default function logos() {
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 124 38"
@@ -119,7 +129,8 @@ export default function logos() {
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 128 38"
@@ -141,7 +152,8 @@ export default function logos() {
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-10 text-gray-600 dark:text-gray-400"
               viewBox="0 0 41 50"
@@ -155,7 +167,8 @@ export default function logos() {
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-8 text-gray-600 dark:text-gray-400"
               viewBox="0 0 123 32"
@@ -217,7 +230,8 @@ export default function logos() {
           </Link>
           <Link
             href="#"
-            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
+            className="flex justify-center items-center p-8 text-center bg-gray-50 rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800"
+            legacyBehavior>
             <svg
               className="h-9 text-gray-600 dark:text-gray-400"
               viewBox="0 0 53 38"
@@ -240,5 +254,5 @@ export default function logos() {
         </div>
       </div>
     </section>
-  )
+  );
 }

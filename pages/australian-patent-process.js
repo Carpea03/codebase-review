@@ -156,5 +156,5 @@ export default function AustralianPatentProcess() {
         </li>
       </ul>
     </Layout>
-  );
+    );
 }

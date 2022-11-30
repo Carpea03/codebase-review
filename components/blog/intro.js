@@ -18,11 +18,12 @@ export default function Intro() {
         and{' '}
         <Link
           href={CMS_URL}
-          className="underline hover:text-success duration-200 transition-colors">
+          className="underline hover:text-success duration-200 transition-colors"
+          legacyBehavior>
           {CMS_NAME}
         </Link>
         .
       </h4>
     </section>
-  )
+  );
 }
