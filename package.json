@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "studio:dev": "npm --prefix studio run start",
-    "studio:deploy": "npx vercel env pull && npm --prefix studio run deploy"
+    "studio:deploy": "npx vercel env pull && npm --prefix studio run deploy",
+    "lint": "next lint"
   },
   "dependencies": {
     "@portabletext/react": "^1.0.6",
@@ -21,12 +22,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
-    "@babel/eslint-parser": "^7.19.1",
-    "@next/eslint-plugin-next": "^13.0.5",
     "@sanity/cli": "^2.35.0",
     "autoprefixer": "^10.4.8",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-react": "^7.31.10",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
     "flowbite-typography": "^1.0.3",
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
