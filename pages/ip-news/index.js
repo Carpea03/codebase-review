@@ -5,7 +5,7 @@ import HeroPost from '../../components/blog/hero-post'
 import Intro from '../../components/blog/intro'
 import Layout from '../../components/layout'
 import { CMS_NAME } from '../../lib/constants'
-import indexQuery from '../../lib/queries'
+import { indexQuery } from '../../lib/queries'
 import { usePreviewSubscription } from '../../lib/sanity'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
 
