@@ -1,6 +1,6 @@
 {
   "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
-  "parser": "@babel/eslint-parser",
+  "parser": "@next/eslint-plugin-next",
   "env": {
     "node": true
   },
