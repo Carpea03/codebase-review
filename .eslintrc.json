@@ -5,7 +5,6 @@
     "prettier",
     "plugin:@next/next/recommended"
   ],
-  "parser": "@next/eslint-plugin-next",
   "env": {
     "node": true
   },
