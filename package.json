@@ -20,12 +20,11 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
     "@sanity/cli": "^2.35.0",
     "autoprefixer": "^10.4.8",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.10",
     "flowbite-typography": "^1.0.3",
