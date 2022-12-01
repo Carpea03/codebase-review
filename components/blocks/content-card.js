@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ContentCard() {
@@ -28,7 +29,7 @@ export default function ContentCard() {
         </div>
         <div className="grid gap-6 mt-12 lg:mt-14 lg:gap-12 md:grid-cols-3">
           <div className="flex mb-2 md:flex-col md:mb-0">
-            <img
+            <Image
               className="mr-4 w-auto h-36 md:w-full md:h-auto rounded-lg"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-1.png"
               alt="office image"
@@ -44,7 +45,7 @@ export default function ContentCard() {
             </div>
           </div>
           <div className="flex mb-2 md:flex-col md:mb-0">
-            <img
+            <Image
               className="mr-4 w-auto h-36 md:w-full md:h-auto rounded-lg"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-2.png"
               alt="office image 2"
@@ -60,7 +61,7 @@ export default function ContentCard() {
             </div>
           </div>
           <div className="flex md:flex-col">
-            <img
+            <Image
               className="mr-4 w-auto h-36 md:w-full md:h-auto rounded-lg"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-3.png"
               alt="office image 3"

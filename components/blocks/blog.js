@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Blog() {
@@ -41,7 +42,7 @@ export default function Blog() {
             </p>
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-4">
-                <img
+                <Image
                   className="w-7 h-7 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                   alt="Jese Leos avatar"
@@ -96,7 +97,7 @@ export default function Blog() {
             </p>
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-4">
-                <img
+                <Image
                   className="w-7 h-7 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                   alt="Bonnie Green avatar"

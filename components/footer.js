@@ -37,8 +37,10 @@ export default function Footer() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
-                <Link href="mailto:company@name.com">
-                  <a className="ml-2 hover:underline">sydney@baxterip.com.au</a>
+                <Link
+                  href="mailto:company@name.com"
+                  lassName="ml-2 hover:underline">
+                  sydney@baxterip.com.au
                 </Link>
               </li>
             </ul>
@@ -74,10 +76,10 @@ export default function Footer() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
-                <Link href="mailto:company@name.com">
-                  <a className="ml-2 hover:underline">
-                    melbourne@baxterip.com.au
-                  </a>
+                <Link
+                  href="mailto:company@name.com"
+                  className="ml-2 hover:underline">
+                  melbourne@baxterip.com.au
                 </Link>
               </li>
             </ul>
@@ -114,10 +116,10 @@ export default function Footer() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
-                <Link href="mailto:company@name.com">
-                  <a className="ml-2 hover:underline">
-                    brisbane@baxterip.com.au
-                  </a>
+                <Link
+                  href="mailto:company@name.com"
+                  className="ml-2 hover:underline">
+                  brisbane@baxterip.com.au
                 </Link>
               </li>
             </ul>
@@ -131,18 +133,18 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <a
+                <Link
                   href="/about"
                   className=" hover:underline">
                   About
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="/australian-patent-process"
                   className=" hover:underline">
                   Australian Patent Process
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
                 <a
@@ -152,18 +154,18 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="/specialisations"
                   className="hover:underline">
                   Specialisations
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="/specialisations/construction-patents"
                   className="hover:underline">
                   Construction patents
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
                 <a
@@ -173,25 +175,25 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="/ip-news"
                   className="hover:underline">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="/ip-news/patenting-your-health-care-apps"
                   className="hover:underline">
                   Blog Post
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="/contact"
                   className="hover:underline">
                   Contact
-                </a>
+                </Link>
               </li>
               {/* <li className="mb-4">
                 <a
@@ -201,11 +203,11 @@ export default function Footer() {
                 </a>
               </li> */}
               <li className="mb-4">
-                <a
+                <Link
                   href="/zh/专利代理人"
                   className="hover:underline">
                   我们的专利代理人
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -215,18 +217,18 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Discord Server
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Twitter
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
                 <a
@@ -311,7 +313,7 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex mx-2 flex-col justify-between items-center lg:flex-row">
           <Link href="/">
-            <a className="flex items-center mb-6 text-2xl font-semibold text-gray-900 lg:mb-0 dark:text-white">
+            <div className="flex items-center mb-6 text-2xl font-semibold text-gray-900 lg:mb-0 dark:text-white">
               <svg
                 className="mr-2 h-8"
                 viewBox="0 0 33 33"
@@ -474,12 +476,14 @@ export default function Footer() {
                 </defs>
               </svg>
               Flowbite
-            </a>
+            </div>
           </Link>
           <span className="block mb-4 text-sm text-gray-500 dark:text-gray-400 lg:mb-0">
             © 2021-2022{' '}
-            <Link href="/">
-              <a className="hover:underline">Flowbite™</a>
+            <Link
+              href="/"
+              className="hover:underline">
+              Flowbite™
             </Link>
             . All Rights Reserved.
           </span>
@@ -616,31 +620,31 @@ export default function Footer() {
               className="py-1 text-sm text-gray-700 dark:text-gray-200"
               aria-labelledby="dropdownDefault">
               <li>
-                <Link href="/">
-                  <a className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    English
-                  </a>
+                <Link
+                  href="/"
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  English
                 </Link>
               </li>
               <li>
-                <Link href="/">
-                  <a className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    German
-                  </a>
+                <Link
+                  href="/"
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  German
                 </Link>
               </li>
               <li>
-                <Link href="/">
-                  <a className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    Italian
-                  </a>
+                <Link
+                  href="/"
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Italian
                 </Link>
               </li>
               <li>
-                <Link href="/">
-                  <a className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    Spanish
-                  </a>
+                <Link
+                  href="/"
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Spanish
                 </Link>
               </li>
             </ul>
