@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://bip-cms-sanity.vercel.app/images/team/${src}?w=${width}&q=${
+  return `https://baxterip.vercel.app/images/team/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -19,9 +19,7 @@ export default function StaffWillem() {
         className="mx-auto mb-4 w-36 h-36 rounded-full"
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <Link href="melbourne/willem-du-preez">
-          <a>Willem du Preez</a>
-        </Link>
+        <Link href="melbourne/willem-du-preez">Willem du Preez</Link>
       </h3>
       <p>IP Professional</p>
       <ul className="flex justify-center mt-4 space-x-4">

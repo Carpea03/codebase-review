@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://bip-cms-sanity.vercel.app/images/team/${src}?w=${width}&q=${
+  return `https://baxterip.vercel.app/images/team/${src}?w=${width}&q=${
     quality || 75
   }`
 }
