@@ -10,7 +10,7 @@ export default function ContentCard() {
             Turn collaboration into innovation
           </h2>
           <Link href="/">
-            <a
+            <div
               href="#"
               className="inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
               Learn more about inner source
@@ -24,7 +24,7 @@ export default function ContentCard() {
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
+            </div>
           </Link>
         </div>
         <div className="grid gap-6 mt-12 lg:mt-14 lg:gap-12 md:grid-cols-3">
@@ -33,6 +33,8 @@ export default function ContentCard() {
               className="mr-4 w-auto h-36 md:w-full md:h-auto rounded-lg"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-1.png"
               alt="office image"
+              width="340"
+              height="396"
             />
             <div>
               <h3 className="text-xl font-bold md:mt-4 mb-2.5 text-gray-900 dark:text-white">
@@ -49,6 +51,8 @@ export default function ContentCard() {
               className="mr-4 w-auto h-36 md:w-full md:h-auto rounded-lg"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-2.png"
               alt="office image 2"
+              width="340"
+              height="396"
             />
             <div>
               <h3 className="text-xl font-bold md:mt-4 mb-2.5 text-gray-900 dark:text-white">
@@ -65,6 +69,8 @@ export default function ContentCard() {
               className="mr-4 w-auto h-36 md:w-full md:h-auto rounded-lg"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-3.png"
               alt="office image 3"
+              width="340"
+              height="396"
             />
             <div>
               <h3 className="text-xl font-bold md:mt-4 mb-2.5 text-gray-900 dark:text-white">
