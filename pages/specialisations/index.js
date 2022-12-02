@@ -1,5 +1,6 @@
-import React from 'react'
 import Layout from '../../components/layout'
+import Link from 'next/link'
+import React from 'react'
 
 export default function index() {
   return (
@@ -295,9 +296,9 @@ export default function index() {
           <ol>
             <li>
               Your{' '}
-              <a href="https://www.baxterip.com.au/patent-attorney">
+              <Link href="https://www.baxterip.com.au/patent-attorney">
                 patent industry expert attorney
-              </a>{' '}
+              </Link>{' '}
               will understand your new idea and its technical and commercial
               context more quickly.
             </li>
@@ -322,9 +323,9 @@ export default function index() {
           </ol>
           <p>
             If you work in the fast-evolving{' '}
-            <a href="https://www.baxterip.com.au/specialisations/fintech-patents">
+            <Link href="https://www.baxterip.com.au/specialisations/fintech-patents">
               fintech
-            </a>{' '}
+            </Link>{' '}
             or SaaS space, patent protection is necessary to protect the steps
             you have taken ahead of other players because these gaps can be
             closed quickly. If you work in developing new chemical processes,
@@ -336,13 +337,13 @@ export default function index() {
             Often there is a scientific community push for publishing advances
             to establish a pseudo claim of first to invent – this needs to be
             resisted until a{' '}
-            <a href="https://www.baxterip.com.au/provisional-patents">
+            <Link href="https://www.baxterip.com.au/provisional-patents">
               patent application
-            </a>{' '}
+            </Link>{' '}
             has been filed by your{' '}
-            <a href="https://www.baxterip.com.au/patent-attorney">
+            <Link href="https://www.baxterip.com.au/patent-attorney">
               patent attorney
-            </a>
+            </Link>
             ; otherwise, publication may adversely affect the ability to obtain
             adequate and deserved commercial compensation for the substantial
             investment you have made.

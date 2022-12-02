@@ -19,9 +19,7 @@ export default function StaffAndrew() {
         className="mx-auto mb-4 w-36 h-36 rounded-full"
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <Link href="sydney/andrew-balis">
-          <a>Andrew Balis</a>
-        </Link>
+        <Link href="sydney/andrew-balis">Andrew Balis</Link>
       </h3>
       <p>Associate, Patent & Trade Mark Attorney</p>
       <ul className="flex justify-center mt-4 space-x-4">

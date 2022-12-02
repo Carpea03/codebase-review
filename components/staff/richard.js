@@ -19,9 +19,7 @@ export default function StaffRichard() {
         className="mx-auto mb-4 w-36 h-36 rounded-full"
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <Link href="sydney/richard-grant">
-          <a>Dr Richard Grant</a>
-        </Link>
+        <Link href="sydney/richard-grant">Dr Richard Grant</Link>
       </h3>
       <p>Senior Patent Attorney</p>
       <ul className="flex justify-center mt-4 space-x-4">

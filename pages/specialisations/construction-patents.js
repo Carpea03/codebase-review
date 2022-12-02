@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import Layout from '../../components/layout'
-import Image from 'next/future/image'
+import Link from 'next/link'
 import StaffChris from '../../components/staff/chris'
 import StaffMartin from '../../components/staff/martin'
 import StaffMike from '../../components/staff/mike'
@@ -420,9 +421,9 @@ export default function ConstructionPatents() {
           <li>
             Proceed in the countries that are important to interested parties by
             the 30-month deadline for&nbsp;
-            <a href="https://www.baxterip.com.au/national-phase-patent">
+            <Link href="https://www.baxterip.com.au/national-phase-patent">
               national phase entry
-            </a>
+            </Link>
             .
           </li>
         </ol>
