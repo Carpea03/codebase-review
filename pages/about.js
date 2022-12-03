@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '../components/layout'
 
 export default function About() {
@@ -24,9 +25,9 @@ export default function About() {
         are both unique and highly commercial are a rare and valuable commodity.
         If you or a team member have invented or developed an impactful
         innovation, you need a{' '}
-        <a href="https://www.baxterip.com.au/patent-attorney">
+        <Link href="https://www.baxterip.com.au/patent-attorney">
           patent attorney
-        </a>{' '}
+        </Link>{' '}
         firm that:
       </p>
       <ol>
@@ -51,17 +52,17 @@ export default function About() {
         Often equally or even more valuable than unique ideas, are distinctive
         brands that are recognised by their target markets. If your business has
         created or is using a brand you do not want others to use, you need a{' '}
-        <a href="https://www.baxterip.com.au/trade-mark-attorney">
+        <Link href="https://www.baxterip.com.au/trade-mark-attorney">
           trade mark attorney
-        </a>{' '}
+        </Link>{' '}
         firm that:
       </p>
       <ol>
         <li>
           Can help you choose the right brand or{' '}
-          <a href="https://www.baxterip.com.au/types-of-trade-marks">
+          <Link href="https://www.baxterip.com.au/types-of-trade-marks">
             type of trade marks
-          </a>{' '}
+          </Link>{' '}
           to file based on the learning arising from the team’s voluminous track
           record of trade mark experience
         </li>
@@ -69,25 +70,26 @@ export default function About() {
       </ol>
       <h2>Baxter IP identifies, protects and grows your IP</h2>
       <p>
-        With offices in <a href="https://www.baxterip.com.au/sydney">Sydney</a>{' '}
-        and <a href="https://www.baxterip.com.au/melbourne">Melbourne</a>, we
+        With offices in{' '}
+        <Link href="https://www.baxterip.com.au/sydney">Sydney</Link> and{' '}
+        <Link href="https://www.baxterip.com.au/melbourne">Melbourne</Link>, we
         are a mid-sized firm that offers the combined resources of a close-knit
         network of highly experienced{' '}
-        <a href="https://www.baxterip.com.au/ip-attorney">
+        <Link href="https://www.baxterip.com.au/ip-attorney">
           patent &amp; trade mark attorneys
-        </a>
+        </Link>
         , specialists in{' '}
-        <a href="https://www.baxterip.com.au/specialisations/software-patents">
+        <Link href="https://www.baxterip.com.au/specialisations/software-patents">
           software
-        </a>
+        </Link>
         ,{' '}
-        <a href="https://www.baxterip.com.au/specialisations/mechanical-patents">
+        <Link href="https://www.baxterip.com.au/specialisations/mechanical-patents">
           engineering
-        </a>{' '}
+        </Link>{' '}
         and{' '}
-        <a href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents">
+        <Link href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents">
           pharmaceuticals
-        </a>{' '}
+        </Link>{' '}
         IP and trade marks, who are poised to protect what’s yours.
       </p>
       <p>
@@ -104,8 +106,8 @@ export default function About() {
       </p>
       <p>
         Uniquely, qualifying clients can access our{' '}
-        <a href="https://www.baxterip.com.au/capital-partners">capital</a> and
-        commercialisation partners to assist them with raising capital or in
+        <Link href="https://www.baxterip.com.au/capital-partners">capital</Link>{' '}
+        and commercialisation partners to assist them with raising capital or in
         taking steps involved in commercialising their intellectual property.
       </p>
       <h3>Most awarded mid-sized patent &amp; trade mark firm in Australia</h3>
@@ -126,18 +128,18 @@ export default function About() {
       <h3>Strong patents &amp; experienced trade mark counsel</h3>
       <p>
         By leveraging the industry specific expertise of{' '}
-        <a href="https://www.baxterip.com.au/patent-attorney">
+        <Link href="https://www.baxterip.com.au/patent-attorney">
           our patent attorneys
-        </a>
+        </Link>
         , we can pursue the broadest possible patent coverage for your idea or
         technology. Awarded for thinking outside the box, we excel in{' '}
-        <a href="https://www.baxterip.com.au/pct-patent">
+        <Link href="https://www.baxterip.com.au/pct-patent">
           international patenting
-        </a>{' '}
+        </Link>{' '}
         and mitigating future risk by careful and comprehensive counsel. Our{' '}
-        <a href="https://www.baxterip.com.au/provisional-patents">
+        <Link href="https://www.baxterip.com.au/provisional-patents">
           patent applications
-        </a>{' '}
+        </Link>{' '}
         not only meet international standards but are prepared by patent
         attorneys who are specialists in their fields.
       </p>

@@ -38,7 +38,7 @@ export default function FeatureListCta() {
               storage.
             </p>
             <Link href="#">
-              <a className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
+              <div className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
                 Learn how to keep your funds safe{' '}
                 <svg
                   className="ml-1 w-5 h-5"
@@ -50,7 +50,7 @@ export default function FeatureListCta() {
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                     clipRule="evenodd"></path>
                 </svg>
-              </a>
+              </div>
             </Link>
           </div>
           <div>
@@ -73,7 +73,7 @@ export default function FeatureListCta() {
               covered.
             </p>
             <Link href="#">
-              <a className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
+              <div className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
                 Learn how your crypto is covered{' '}
                 <svg
                   className="ml-1 w-5 h-5"
@@ -85,7 +85,7 @@ export default function FeatureListCta() {
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                     clipRule="evenodd"></path>
                 </svg>
-              </a>
+              </div>
             </Link>
           </div>
           <div>
@@ -107,7 +107,7 @@ export default function FeatureListCta() {
               digital currencies.
             </p>
             <Link href="#">
-              <a className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
+              <div className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
                 How to implement best practices{' '}
                 <svg
                   className="ml-1 w-5 h-5"
@@ -119,7 +119,7 @@ export default function FeatureListCta() {
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                     clipRule="evenodd"></path>
                 </svg>
-              </a>
+              </div>
             </Link>
           </div>
         </div>

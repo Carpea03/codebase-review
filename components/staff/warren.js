@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://bip-cms-sanity.vercel.app/images/team/${src}?w=${width}&q=${
+  return `https://baxterip.vercel.app/images/team/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -20,9 +20,7 @@ export default function StaffWarren() {
       />
       {/* <img className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar"> */}
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <Link href="melbourne/warren-chandler">
-          <a>Warren Chandler</a>
-        </Link>
+        <Link href="melbourne/warren-chandler">Warren Chandler</Link>
       </h3>
       <p>Senior Associate, Patent & Trade Mark Attorney</p>
       <ul className="flex justify-center mt-4 space-x-4">

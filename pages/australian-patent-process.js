@@ -24,7 +24,7 @@ export default function AustralianPatentProcess() {
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link href="#">
-              <a className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              <div className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                 <svg
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
@@ -33,7 +33,7 @@ export default function AustralianPatentProcess() {
                   <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
                 </svg>
                 Patents
-              </a>
+              </div>
             </Link>
           </li>
           <li>
@@ -133,24 +133,24 @@ export default function AustralianPatentProcess() {
       </p>
       <ul>
         <li>
-          <a href="https://www.baxterip.com.au/patent-application">
+          <Link href="https://www.baxterip.com.au/patent-application">
             Filing an Australian standard patent application
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.baxterip.com.au/patent-examination">
+          <Link href="https://www.baxterip.com.au/patent-examination">
             Examination of an Australian patent application
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.baxterip.com.au/patent-opposition-process-and-acceptance">
+          <Link href="https://www.baxterip.com.au/patent-opposition-process-and-acceptance">
             Patent opposition process and acceptance
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.baxterip.com.au/patent-grant-and-renewal">
+          <Link href="https://www.baxterip.com.au/patent-grant-and-renewal">
             Grant and renewal of an Australian patent
-          </a>
+          </Link>
         </li>
       </ul>
     </Layout>

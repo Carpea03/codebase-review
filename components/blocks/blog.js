@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Blog() {
@@ -29,9 +30,7 @@ export default function Blog() {
               <span className="text-sm">14 days ago</span>
             </div>
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              <Link href="/">
-                <a>How to quickly deploy a static website</a>
-              </Link>
+              <Link href="/">How to quickly deploy a static website</Link>
             </h2>
             <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
               Static websites are now used to bootstrap lots of websites and are
@@ -41,10 +40,12 @@ export default function Blog() {
             </p>
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-4">
-                <img
+                <Image
                   className="w-7 h-7 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                   alt="Jese Leos avatar"
+                  width={28}
+                  height={28}
                 />
                 <span className="font-medium dark:text-white">Jese Leos</span>
               </div>
@@ -84,9 +85,7 @@ export default function Blog() {
               <span className="text-sm">14 days ago</span>
             </div>
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              <Link href="/">
-                <a>Our first project with React</a>
-              </Link>
+              <Link href="/">Our first project with React</Link>
             </h2>
             <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
               Static websites are now used to bootstrap lots of websites and are
@@ -96,10 +95,12 @@ export default function Blog() {
             </p>
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-4">
-                <img
+                <Image
                   className="w-7 h-7 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                   alt="Bonnie Green avatar"
+                  width={28}
+                  height={28}
                 />
                 <span className="font-medium dark:text-white">
                   Bonnie Green
