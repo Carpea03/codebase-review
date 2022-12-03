@@ -197,11 +197,18 @@ export default function Footer() {
               </li>
               {/* <li className="mb-4">
                 <a
-                  href="/sydney/chris-baxter"
-                  className="hover:underline">
-                  Attorney Chris
+                href="/sydney/chris-baxter"
+                className="hover:underline">
+                Attorney Chris
                 </a>
               </li> */}
+              <li className="mb-4">
+                <Link
+                  href="global/about"
+                  className=" hover:underline">
+                  About (Global)
+                </Link>
+              </li>
               <li className="mb-4">
                 <Link
                   href="/zh/专利代理人"
