@@ -13,27 +13,6 @@ You'll get:
 
 ### [https://next-blog-sanity.vercel.app](https://next-blog-sanity.vercel.app)
 
-## Related examples
-
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-- [Ghost](/examples/cms-ghost)
-- [Umbraco Heartcore](/examples/cms-umbraco-heartcore)
-- [Blog Starter](/examples/blog-starter)
-- [Builder.io](/examples/cms-builder-io)
-- [DotCMS](/examples/cms-dotcms)
-- [Enterspeed](/examples/cms-enterspeed)
-
 # Configuration
 
 - [Step 1. Set up the environment](#step-1-set-up-the-environment)
@@ -50,6 +29,7 @@ You'll get:
 - [Step 6. Deploy your Studio and publish from anywhere](#step-6-deploy-your-studio-and-publish-from-anywhere)
 - [Step 7. Setup Revalidation Webhook](#step-7-setup-revalidation-webhook)
   - [Testing the Webhook](#testing-the-webhook)
+- [Step 8. Add GitHub Action to deploy Sanity Studio on pull requests to main branch](#step-8-add-github-action-to-deploy-sanity-studio-on-pull-requests-to-main-branch)
 - [Next steps](#next-steps)
 
 ## Step 1. Set up the environment
@@ -389,6 +369,40 @@ Wormhole into the [manager](https://manage.sanity.io/) by running:
 - Edit a Post in your Sanity Studio and publish.
 - The log should start showing calls.
 - And the published changes show up on the site after you reload.
+
+## Step 8. Add GitHub Action to deploy Sanity Studio on pull requests to main branch
+
+In the GitHub repo, go to Settings > Secrets > Actions and add the following environment variables:
+
+- SANITY_STUDIO_API_PROJECT_ID
+- SANITY_STUDIO_API_DATASET
+
+Create a workflow file `.github/workflows/main.yml` with the following contents:
+
+```
+name: Deploy Sanity Studio
+on:
+  pull_request:
+    branches:
+      - main
+defaults:
+  run:
+    working-directory: studio
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: yarn install
+      - name: Deploy Sanity Studio
+        run: npx @sanity/cli deploy
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+          SANITY_STUDIO_API_PROJECT_ID: ${{ secrets.SANITY_STUDIO_API_PROJECT_ID }}
+          SANITY_STUDIO_API_DATASET: ${{ secrets.SANITY_STUDIO_API_DATASET }}
+```
 
 ## Next steps
 
