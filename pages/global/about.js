@@ -14,21 +14,21 @@ export default function About() {
           name="description"
           content="Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
         />
-        <Link
+        <link
           rel="canonical"
           href="/global/about"
         />
-        <Link
+        <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/about"
           hreflang="en-us"
         />
-        <Link
+        <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%85%B3%E4%BA%8E"
           hreflang="zh"
         />
-        <Link
+        <link
           rel="alternate"
           hreflang="x-default"
           href="https://www.baxterip.com.au/about"
@@ -40,7 +40,7 @@ export default function About() {
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
-              href="#"
+              href="/"
               className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
               <svg
                 className="w-4 h-4 mr-2"
