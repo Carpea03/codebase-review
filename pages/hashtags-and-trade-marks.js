@@ -1,22 +1,21 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function AustralianPatentSearch() {
+export default function HashtagsAndTradeMarks() {
   return (
     <Layout>
       <Head>
         <title>
-          Australian patent search | Baxter IP Sydney & Melbourne
+          Hashtags and trade marks | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
-          content="Australian patent search often takes the form of freedom-to operate search to see whether a company has freedom-to-operate in Australia."
+          content="Hashtags may perform a similar function as trade marks but do not offer the same protection."
         />
         <link
           rel="canonical"
-          href="/australian-patent-search"
+          href="/hashtags-and-trade-marks"
         />
       </Head>
       <nav
@@ -68,9 +67,9 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/patents"
+                href="/trade-marks"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patents
+                Trade marks
               </Link>
             </div>
           </li>
@@ -87,28 +86,9 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/how-to-patent"
+                href="/how-to-trade-mark"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to patent
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/patent-search"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patent search
+                How to trade mark
               </Link>
             </div>
           </li>
@@ -125,50 +105,18 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Australian patent search
+                Hashtags and trade marks
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>Australian patent search</h1>
-      <p>
-        Compared with many other countries, a patent search in Australia is
-        relatively straightforward because IP Australia offers a sophisticated
-        patent database and patent search system to the general public – called
-        AusPat. AusPat covers Australian patent records right back to 1904.
-      </p>
-      <p>
-        Australian patent searches can be carried out by patent number, applicant
-        name, inventor name and many other more sophisticated methodologies.
-        Generally speaking, if you need to find a patent or{' '}
-        <Link
-          title="File a Provisional Patent Application"
-          href="https://www.baxterip.com.au/provisional-patents">
-          patent application
-        </Link>{' '}
-        on the basis of a name, it is best to have an{' '}
-        <Link
-          title="Patent Attorneys Sydney &amp; Melbourne"
-          href="https://www.baxterip.com.au/patent-attorney">
-          Australian patent attorney
-        </Link>{' '}
-        carry out your Australian patent search because a few strategies need
-        to be applied to identify the right entity and not miss relevant search
-        results.
-      </p>
-      <p>
-        If you are trying to determine whether your new idea is patentable in
-        Australia, ironically, an Australian patent search is probably not going
-        to give you the correct answer. The reason for this is that for a new idea
-        to be patentable, it must be novel in light of all published documents
-        worldwide, and not just in Australia.{' '}
-        <Link
-          title="Worldwide Patent Novelty Search"
-          href="https://www.baxterip.com.au/international-patent-search">
-          For information on worldwide novelty searches, please click here
-        </Link>.
-      </p>
+      <h1>Hashtags and trade marks</h1>
+      <p>Australian e-commerce has grown by 22% in 2018, and the number of people relying on testimonials from social media influencers before availing of a particular good or service is currently on the rise. One powerful tool in influencer marketing is the use of hashtags on social media posts as part of a companies' marketing campaigns.</p>
+      <p>A hashtag is a word or phrase following a hash sign (#, also referred to as the pound sign). The hash tag may be used across most social media platforms, such as Facebook, Twitter and Linkedin, and the string of characters following the # sign can direct online traffic toward a certain product or service. Influencer marketing and the growing reliance of consumers on people's actual experiences instead of traditional advertising before availing of a certain product or service have underlined the potential issue of trade mark infringement using hashtags.</p>
+      <h2>Registering a hashtag trade mark and infringement</h2>
+      <p>A recent update to the <a href="http://manuals.ipaustralia.gov.au/trademarks/trade_marks_examiners_manual.htm" target="_blank" rel="noopener noreferrer">Australian Trade Marks Office Manual of Practice and Procedure</a> included a discussion on hashtags and their registrability. Rules as to whether a hashtag can be used to commit <a href="/trade-mark-infringement">trade mark infringement</a> is analogous to previous issues with <a href="/domain-names-and-trade-marks">domain names and trade marks</a>. Hashtag trade marks perform the same function as trade marks, that is, distinguishing the <a href="/classes-of-goods-and-services">goods and services</a> from those of the competition and serving as a badge of origin in relation to the goods and services. Infringement is qualified as the unauthorised use of hashtags as a trade mark for the aforementioned purpose.</p>
+      <p>Thus, if the text following the hash sign is already registered, then an actual hashtag trade mark may be unnecessary. However, a hashtag marketing campaign should be carefully considered in order to avoid infringing on a competitor's prior rights. There are currently no existing trade mark infringement cases involving hashtags, but the issue may expand similarly to domain name disputes.</p>
     </Layout>
-    );
+  )
 }

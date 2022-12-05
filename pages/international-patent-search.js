@@ -3,20 +3,20 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function AustralianPatentSearch() {
+export default function InternationalPatentSearch() {
   return (
     <Layout>
       <Head>
         <title>
-          Australian patent search | Baxter IP Sydney & Melbourne
+          International patent search | Patent novelty search | Baxter IP
         </title>
         <meta
           name="description"
-          content="Australian patent search often takes the form of freedom-to operate search to see whether a company has freedom-to-operate in Australia."
+          content="An international patent search is normally a form of novelty search conducted to ensure that your IP is novel in light of the international prior art."
         />
         <link
           rel="canonical"
-          href="/australian-patent-search"
+          href="/international-patent-search"
         />
       </Head>
       <nav
@@ -125,50 +125,19 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Australian patent search
+                International patent search
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>Australian patent search</h1>
-      <p>
-        Compared with many other countries, a patent search in Australia is
-        relatively straightforward because IP Australia offers a sophisticated
-        patent database and patent search system to the general public – called
-        AusPat. AusPat covers Australian patent records right back to 1904.
-      </p>
-      <p>
-        Australian patent searches can be carried out by patent number, applicant
-        name, inventor name and many other more sophisticated methodologies.
-        Generally speaking, if you need to find a patent or{' '}
-        <Link
-          title="File a Provisional Patent Application"
-          href="https://www.baxterip.com.au/provisional-patents">
-          patent application
-        </Link>{' '}
-        on the basis of a name, it is best to have an{' '}
-        <Link
-          title="Patent Attorneys Sydney &amp; Melbourne"
-          href="https://www.baxterip.com.au/patent-attorney">
-          Australian patent attorney
-        </Link>{' '}
-        carry out your Australian patent search because a few strategies need
-        to be applied to identify the right entity and not miss relevant search
-        results.
-      </p>
-      <p>
-        If you are trying to determine whether your new idea is patentable in
-        Australia, ironically, an Australian patent search is probably not going
-        to give you the correct answer. The reason for this is that for a new idea
-        to be patentable, it must be novel in light of all published documents
-        worldwide, and not just in Australia.{' '}
-        <Link
-          title="Worldwide Patent Novelty Search"
-          href="https://www.baxterip.com.au/international-patent-search">
-          For information on worldwide novelty searches, please click here
-        </Link>.
-      </p>
+      <h1>International patent search</h1>
+      <p>Conducting a international patent search of prior art patents is valuable since it provides you with an indication of whether a patent application for your invention will be allowed.</p>
+      <p>In order to be patentable, an invention must be (1) new (novel); and (2) inventive. Although patent law varies from country to country, novelty and inventiveness of patent applications are at least usually assessed against any document published worldwide before the priority date of the patent application. Consequently, no international patent search will ever be thoroughly exhaustive as it is impossible to, with complete accuracy, search every document ever published worldwide. However, patent novelty searches are useful in indicating the state of the prior art and locating prior art that is likely to be raised during examination.</p>
+      <p>It is important to note that it is not possible to search any patent application that is filed less than 18 months prior because patent applications are only published at 18 months after their international priority date. This means that the results of a patent novelty search will likely miss relevant prior art if conducted within 18 months from when the patent application was first filed.</p>
+      <p>There are multiple options for international patent novelty searches, including:</p>
+      <ol><li>Pre-filing patent searches (i.e. patent searches carried out before a patent application is filed)</li><li><a title="International-Type Patent Search" href="/international-type-search">International-type patent searches</a> (based on a filed provisional patent application)</li></ol>
+      <p>Our <a href="/patent-attorney">patent attorneys</a> and patent searchers can carry out either or both of these types of novelty searches, as well as other international patent searches for you to help you de-risk your intellectual property protection efforts.</p>
     </Layout>
     );
 }

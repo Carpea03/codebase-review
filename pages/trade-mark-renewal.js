@@ -1,22 +1,21 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function AustralianPatentSearch() {
+export default function TradeMarkRenewal() {
   return (
     <Layout>
       <Head>
         <title>
-          Australian patent search | Baxter IP Sydney & Melbourne
+          Renewing your trade mark application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
-          content="Australian patent search often takes the form of freedom-to operate search to see whether a company has freedom-to-operate in Australia."
+          content="Trade mark renewal is part of keeping your trade mark in force indefinitely, so long as the trade mark continues to be used as a trade mark."
         />
         <link
           rel="canonical"
-          href="/australian-patent-search"
+          href="/trade-mark-renewal"
         />
       </Head>
       <nav
@@ -68,9 +67,9 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/patents"
+                href="/trade-marks"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patents
+                Trade marks
               </Link>
             </div>
           </li>
@@ -87,28 +86,9 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/how-to-patent"
+                href="/how-to-trade-mark"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to patent
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/patent-search"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patent search
+                How to trade mark
               </Link>
             </div>
           </li>
@@ -125,50 +105,20 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Australian patent search
+                Trade mark renewal
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>Australian patent search</h1>
-      <p>
-        Compared with many other countries, a patent search in Australia is
-        relatively straightforward because IP Australia offers a sophisticated
-        patent database and patent search system to the general public – called
-        AusPat. AusPat covers Australian patent records right back to 1904.
-      </p>
-      <p>
-        Australian patent searches can be carried out by patent number, applicant
-        name, inventor name and many other more sophisticated methodologies.
-        Generally speaking, if you need to find a patent or{' '}
-        <Link
-          title="File a Provisional Patent Application"
-          href="https://www.baxterip.com.au/provisional-patents">
-          patent application
-        </Link>{' '}
-        on the basis of a name, it is best to have an{' '}
-        <Link
-          title="Patent Attorneys Sydney &amp; Melbourne"
-          href="https://www.baxterip.com.au/patent-attorney">
-          Australian patent attorney
-        </Link>{' '}
-        carry out your Australian patent search because a few strategies need
-        to be applied to identify the right entity and not miss relevant search
-        results.
-      </p>
-      <p>
-        If you are trying to determine whether your new idea is patentable in
-        Australia, ironically, an Australian patent search is probably not going
-        to give you the correct answer. The reason for this is that for a new idea
-        to be patentable, it must be novel in light of all published documents
-        worldwide, and not just in Australia.{' '}
-        <Link
-          title="Worldwide Patent Novelty Search"
-          href="https://www.baxterip.com.au/international-patent-search">
-          For information on worldwide novelty searches, please click here
-        </Link>.
-      </p>
+      <h1>Renewing your trade mark</h1>
+      <p>After registration, a registered trade mark is in force for 10 years. At the 10 year mark, the trade mark owner can then opt to keep the trade mark active by paying the appropriate renewal fees. The trade mark renewal can be done every 10 years from the date of filing, indefinitely so long as the trade mark continues to be used as a trade mark.</p>
+      <h2>When can the registration be renewed?</h2>
+      <p>Renewal of trade mark registration can be conducted as early as 12 months before the renewal due date. You can still renew up to six months past the trade mark renewal date in Australia. However, additional fees for extension will be added to the renewal fees. Your trade mark attorney can help prevent any additional fees being incurred or lapsing of the registration by sending you timely reminders before a renewal is due.</p>
+      <p>After payment of the appropriate renewal fees, your trade mark attorney will notify you that the trade mark registration has been successfully renewed.</p>
+      <h2>Consequences of non-renewal</h2>
+      <p>Failure to renew a trade mark by the expiry date means that the trade mark will lose any rights and will be labeled lapsed. However, registration can be renewed within a six-month period after the renewal date. When this period has elapsed, the trade mark will be deleted from the Australian Trade Marks Register. Unless you can successfully get an extension of time, you may need to lodge a new application for the trade mark. Your trade mark attorney can advise you of your options should you miss a renewal deadline.</p>
+      <p>If your business has been actively gaining goodwill associated with the trade mark, a lapsed trade mark opens up a window for opportunistic <a href="/trade-mark-application">trade mark filings</a> by any competitors for a similar or identical trade mark in respect of the same <a href="/classes-of-goods-and-services">goods and classes</a>. Therefore, it is in your best interest to stay informed of the important dates in your trade mark’s timeline and to keep your registration up to date. The <a href="/trade-mark-attorney">trade mark attorneys</a> at Baxter IP will be able to help you manage your trade mark registration.</p>
     </Layout>
-    );
+  )
 }
