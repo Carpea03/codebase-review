@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
@@ -112,22 +113,114 @@ export default function TradeMarkRegistrationProcess() {
         </ol>
       </nav>
       <h1>Trade mark registration process</h1>
-      <p>In Australia, the trade mark registration process involves several steps commencing with a search and extending beyond registration.</p>
-      <figure><a href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png" data-lbwps-width="1600" data-lbwps-height="517" data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png"><img decoding="async" loading="lazy" width="1024" height="331" src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png" alt="Australian Standard Trade Mark Procedure (for desktop)" class="wp-image-28565" srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-768x248.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1536x496.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-2048x661.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png 1600w" sizes="(max-width: 1024px) 100vw, 1024px"/></a><figcaption>Australian Standard Trade Mark Procedure</figcaption></figure>
+      <p>
+        In Australia, the trade mark registration process involves several steps
+        commencing with a search and extending beyond registration.
+      </p>
+      <figure>
+        <Link
+          href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png"
+          data-lbwps-width="1600"
+          data-lbwps-height="517"
+          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png">
+          <Image
+            decoding="async"
+            loading="lazy"
+            width="1024"
+            height="331"
+            src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+            alt="Australian Standard Trade Mark Procedure (for desktop)"
+            class="wp-image-28565"
+            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-768x248.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1536x496.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-2048x661.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png 1600w"
+            sizes="(max-width: 1024px) 100vw, 1024px"
+          />
+        </Link>
+        <figcaption>Australian Standard Trade Mark Procedure</figcaption>
+      </figure>
       <h3>File an application</h3>
-      <p>At application, an identical <a href="/trade-mark-search">trade mark search</a> is carried out in order to identify any obvious impediments to trade mark registration. Applicants can do their own search of the register, however a trade mark attorney will use more advanced strategies in conducting these searches.</p>
-      <p>This first step in the trade mark process involves the applicant filing a <a href="/trade-mark-application">trade mark application</a>. Application involves the preparation of the application, submitting the application and payment of the required fees.</p>
-      <p>Importantly, in the preparation step, the required information in the application should be complete and correct because only limited changes can be performed after filing. Incorrect or incomplete information may result in rejection or a narrow range of protection for the trade mark.</p>
+      <p>
+        At application, an identical{' '}
+        <Link href="/trade-mark-search">trade mark search</Link> is carried out
+        in order to identify any obvious impediments to trade mark registration.
+        Applicants can do their own search of the register, however a trade mark
+        attorney will use more advanced strategies in conducting these searches.
+      </p>
+      <p>
+        This first step in the trade mark process involves the applicant filing
+        a <Link href="/trade-mark-application">trade mark application</Link>.
+        Application involves the preparation of the application, submitting the
+        application and payment of the required fees.
+      </p>
+      <p>
+        Importantly, in the preparation step, the required information in the
+        application should be complete and correct because only limited changes
+        can be performed after filing. Incorrect or incomplete information may
+        result in rejection or a narrow range of protection for the trade mark.
+      </p>
       <h3>Examination</h3>
-      <p>After submission of the application to the Trade Marks Office (IP Australia), the trade mark examiner, who is a delegate of the Commissioner of Trade Marks, will assess the application and an <a href="/trade-mark-examination">examination</a> report will be issued to the applicant. In the case that the application does not meet the legislative criteria set by IP Australia in light of the <em>Trade Marks Act 1995</em>, an adverse examination report will be issued to the applicant.</p>
-      <p>The applicant can then provide arguments to support their application within a certain time frame (which is 15 months in Australia) or alternatively the applicant can amend the application.</p>
-      <p>The Trade Marks office will then decide based on the presented evidence and/or amendments whether to accept or refuse the trade mark application.</p>
+      <p>
+        After submission of the application to the Trade Marks Office (IP
+        Australia), the trade mark examiner, who is a delegate of the
+        Commissioner of Trade Marks, will assess the application and an{' '}
+        <Link href="/trade-mark-examination">examination</Link> report will be
+        issued to the applicant. In the case that the application does not meet
+        the legislative criteria set by IP Australia in light of the{' '}
+        <em>Trade Marks Act 1995</em>, an adverse examination report will be
+        issued to the applicant.
+      </p>
+      <p>
+        The applicant can then provide arguments to support their application
+        within a certain time frame (which is 15 months in Australia) or
+        alternatively the applicant can amend the application.
+      </p>
+      <p>
+        The Trade Marks office will then decide based on the presented evidence
+        and/or amendments whether to accept or refuse the trade mark
+        application.
+      </p>
       <h3>Acceptance</h3>
-      <p>Upon <a href="/trade-mark-acceptance">acceptance of the trade mark application</a>, IP Australia publishes the trade mark in the <em>Australian Official Journal of Trade Marks</em>, which can be seen by the public. <a href="/publication-of-trade-mark-details">Publication of the trade mark</a> commences a two-month opposition period in which any third party can oppose the registration of the trade mark.</p>
+      <p>
+        Upon{' '}
+        <Link href="/trade-mark-acceptance">
+          acceptance of the trade mark application
+        </Link>
+        , IP Australia publishes the trade mark in the{' '}
+        <em>Australian Official Journal of Trade Marks</em>, which can be seen
+        by the public.{' '}
+        <Link href="/publication-of-trade-mark-details">
+          Publication of the trade mark
+        </Link>{' '}
+        commences a two-month opposition period in which any third party can
+        oppose the registration of the trade mark.
+      </p>
       <h3>Opposition</h3>
-      <p>Based on the similar grounds for the rejection of trade marks, a trade mark opposition can be lodged by any third party. A <a href="/trade-mark-opposition">trade mark opposition</a> can result in either a registered trade mark or a refused application.</p>
+      <p>
+        Based on the similar grounds for the rejection of trade marks, a trade
+        mark opposition can be lodged by any third party. A{' '}
+        <Link href="/trade-mark-opposition">trade mark opposition</Link> can
+        result in either a registered trade mark or a refused application.
+      </p>
       <h3>Trade mark registered</h3>
-      <p>Once registered, the trade mark owner has sole rights to the use of the trade mark and to its <a href="/trade-mark-registration-benefits">benefits</a>. The owner is also responsible for <a href="/trade-mark-maintenance">managing the trade mark</a> in order to maximise the trade mark’s commercial benefits, for preventing other parties from capitalising on their intellectual property right by <a href="/trade-mark-enforcement-options">enforcing their trade mark</a>, for <a href="/trade-mark-renewal">maintaining ownership</a> throughout the trade mark’s lifetime by ensuring that renewal fees are paid every 10 years, and for protecting the trade mark by preventing others from using it in <a href="/ip-glossary#trade-mark-dilution">a way that diminishes its value</a>.</p>
+      <p>
+        Once registered, the trade mark owner has sole rights to the use of the
+        trade mark and to its{' '}
+        <Link href="/trade-mark-registration-benefits">benefits</Link>. The
+        owner is also responsible for{' '}
+        <Link href="/trade-mark-maintenance">managing the trade mark</Link> in
+        order to maximise the trade mark’s commercial benefits, for preventing
+        other parties from capitalising on their intellectual property right by{' '}
+        <Link href="/trade-mark-enforcement-options">
+          enforcing their trade mark
+        </Link>
+        , for <Link href="/trade-mark-renewal">maintaining ownership</Link>{' '}
+        throughout the trade mark’s lifetime by ensuring that renewal fees are
+        paid every 10 years, and for protecting the trade mark by preventing
+        others from using it in{' '}
+        <Link href="/ip-glossary#trade-mark-dilution">
+          a way that diminishes its value
+        </Link>
+        .
+      </p>
     </Layout>
   )
 }

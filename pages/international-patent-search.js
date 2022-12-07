@@ -132,12 +132,55 @@ export default function InternationalPatentSearch() {
         </ol>
       </nav>
       <h1>International patent search</h1>
-      <p>Conducting a international patent search of prior art patents is valuable since it provides you with an indication of whether a patent application for your invention will be allowed.</p>
-      <p>In order to be patentable, an invention must be (1) new (novel); and (2) inventive. Although patent law varies from country to country, novelty and inventiveness of patent applications are at least usually assessed against any document published worldwide before the priority date of the patent application. Consequently, no international patent search will ever be thoroughly exhaustive as it is impossible to, with complete accuracy, search every document ever published worldwide. However, patent novelty searches are useful in indicating the state of the prior art and locating prior art that is likely to be raised during examination.</p>
-      <p>It is important to note that it is not possible to search any patent application that is filed less than 18 months prior because patent applications are only published at 18 months after their international priority date. This means that the results of a patent novelty search will likely miss relevant prior art if conducted within 18 months from when the patent application was first filed.</p>
-      <p>There are multiple options for international patent novelty searches, including:</p>
-      <ol><li>Pre-filing patent searches (i.e. patent searches carried out before a patent application is filed)</li><li><a title="International-Type Patent Search" href="/international-type-search">International-type patent searches</a> (based on a filed provisional patent application)</li></ol>
-      <p>Our <a href="/patent-attorney">patent attorneys</a> and patent searchers can carry out either or both of these types of novelty searches, as well as other international patent searches for you to help you de-risk your intellectual property protection efforts.</p>
+      <p>
+        Conducting a international patent search of prior art patents is
+        valuable since it provides you with an indication of whether a patent
+        application for your invention will be allowed.
+      </p>
+      <p>
+        In order to be patentable, an invention must be (1) new (novel); and (2)
+        inventive. Although patent law varies from country to country, novelty
+        and inventiveness of patent applications are at least usually assessed
+        against any document published worldwide before the priority date of the
+        patent application. Consequently, no international patent search will
+        ever be thoroughly exhaustive as it is impossible to, with complete
+        accuracy, search every document ever published worldwide. However,
+        patent novelty searches are useful in indicating the state of the prior
+        art and locating prior art that is likely to be raised during
+        examination.
+      </p>
+      <p>
+        It is important to note that it is not possible to search any patent
+        application that is filed less than 18 months prior because patent
+        applications are only published at 18 months after their international
+        priority date. This means that the results of a patent novelty search
+        will likely miss relevant prior art if conducted within 18 months from
+        when the patent application was first filed.
+      </p>
+      <p>
+        There are multiple options for international patent novelty searches,
+        including:
+      </p>
+      <ol>
+        <li>
+          Pre-filing patent searches (i.e. patent searches carried out before a
+          patent application is filed)
+        </li>
+        <li>
+          <Link
+            title="International-Type Patent Search"
+            href="/international-type-search">
+            International-type patent searches
+          </Link>{' '}
+          (based on a filed provisional patent application)
+        </li>
+      </ol>
+      <p>
+        Our <Link href="/patent-attorney">patent attorneys</Link> and patent
+        searchers can carry out either or both of these types of novelty
+        searches, as well as other international patent searches for you to help
+        you de-risk your intellectual property protection efforts.
+      </p>
     </Layout>
-    );
+  )
 }

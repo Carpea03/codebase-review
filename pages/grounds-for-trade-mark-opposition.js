@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
@@ -6,9 +7,7 @@ export default function GroundsForTradeMarkOpposition() {
   return (
     <Layout>
       <Head>
-        <title>
-          Grounds for opposing a trade mark application | Baxter IP
-        </title>
+        <title>Grounds for opposing a trade mark application | Baxter IP</title>
         <meta
           name="description"
           content="Avoid the hassle of trade mark opposition by knowing the grounds for opposing a trade mark application that an opponent can rely on."
@@ -112,32 +111,238 @@ export default function GroundsForTradeMarkOpposition() {
         </ol>
       </nav>
       <h1>Grounds for opposing a trade mark application</h1>
-      <p>In Australia, an <a href="/trade-mark-opposition">opposition</a> is known as the formal process of objecting to the registration of another mark. Once a trade mark application is <a href="/trade-mark-acceptance">accepted</a> and advertised in the Official Journal of Trade Marks, any party can oppose the application under one or more grounds specified in the <em>Trade Marks Act (1995)</em> within 2 months of the advertisement date. The grounds for opposing a trade mark application that an opponent can rely on are explained below.</p>
-      <figure class="wp-block-table table table-bordered table-responsive is-style-regular"><table><tbody><tr><th scope="row">Prohibited Signs<br/><small>(Section 39)</small></th><td>A trade mark application may be opposed on the ground that it contains <a href="/unregistrable-trade-marks#prohibited-signs">prohibited signs</a>. Examples of these prohibited signs are:
-      <ul>
-      <li>Arms, seals, and flags of Australian Federal or State governments</li>
-      <li>Arms or emblems of Australian public authorities or towns</li>
-      <li>Foreign national symbols, or hallmarks</li>
-      <li>Signs of intergovernmental organisations.</li>
-      </ul>
-      </td></tr><tr><th scope="row">Capacity to Distinguish<br/><small>(Section 41)</small></th><td>Another ground for opposing a trade mark application may be opposed on the ground that the trade mark is not capable of distinguishing the applicant's <a href="/classes-of-goods-and-services">goods/services</a> from those of other traders. Considerations for determining if this ground is established will include whether other traders are likely to desire to use the same trade mark in connection with their own goods or some trade mark nearly resembling it without improper motive.</td></tr><tr><th scope="row">Contains Scandalous Matter<br/><small>(Section 42)</small></th><td>A trade mark application may be opposed if the trade mark application contains scandalous matter or if its use would be contrary to law. Whether a mark contains “<a href="/unregistrable-trade-marks#scandalous">scandalous matter</a>” will be determined by reference to the meaning of the trade mark and whether it contains elements that are likely to be considered as shocking or offensive, for example that the mark contains elements that may be considered as:
-      <ul>
-      <li>Personal abuse</li>
-      <li>Incorporate racial or ethnic abuse</li>
-      <li>Incorporate abuse of a national flag</li>
-      <li>Incorporate elements of religious intolerance</li>
-      <li>Incites violence and/or terrorism.</li>
-      </ul>
-      <p>“Use contrary to law refers” to the contravention of a specific legislative body, for example that the mark uses a geographical indication in relation to the provision of wine, meaning it could potentially contravene the <em>Australian Grape and Wine Authority Act (2013)</em>.</p>
-      </td></tr><tr><th scope="row">Considered Confusing<br/><small>(Section 43)</small></th><td>A trade mark application may be opposed on the ground that the trade mark's use in relation to certain goods and services is likely to cause confusion. The confusion may be with regards to:
-      <ul>
-      <li>The character of their goods and services (composition and nature),</li>
-      <li>The quantity or quality of the goods and services, or</li>
-      <li>The geographical origin of the goods or services.</li>
-      </ul>
-      </td></tr><tr><th scope="row">Prior application/registration<br/><small>(Section 44)</small></th><td>A trade mark may be opposed on the ground that the applied for mark is substantially identical or deceptively similar to another previously applied for/registered mark for similar/closely related goods and/or services.</td></tr><tr><th scope="row">Applicant not the Owner of the Mark<br/><small>(Section 58)</small></th><td>Ownership of a mark in Australia will be established through the use of the mark. Under this ground, an opponent may show that it used the mark before the date of Application of the Opposed mark and is therefore the owner of that mark. <strong>Section 58A:</strong> In cases where the application was accepted under prior use, the Opponent may rely on this ground to show earlier use of the mark.</td></tr><tr><th scope="row">No Intention to Use the Trade Mark<br/><small>(Section 59)</small></th><td><img decoding="async" loading="lazy" class="alignleft wp-image-15365" src="https://www.baxterip.com.au/wp-content/uploads/2019/12/show-you-care.jpg" alt="Show you care 100% recyclable" width="100" height="99"/>
-      <p>This ground may be raised on the basis that the applicant did not at the filing date intend to use the mark as a badge of origin. For example, in <em>ACI Operations Pty Ltd v Amcor LTD [2001]</em> O 34 this ground was established as it was determined that the sign (<em>see image at the left</em>) was intended to simply indicate that a product could be recycled and this was not use as a <em>badge of origin</em>.</p>
-      </td></tr><tr><th scope="row">Prior Mark With Reputation in Australia<br/><small>(Section 60)</small></th><td>A trade mark may be opposed on this ground if the Opponent is the owner of a trade mark that has acquired a reputation in Australia to such an extent that the use of an identical of similar mark would likely result in deceiving or confusing consumers. For example, the mark TRADIEBAY was successfully opposed based on Ebay Incorporated's reputation in its EBAY trade mark.</td></tr><tr><th scope="row">False Geographic Indication<br/><small>(Section 61)</small></th><td>This ground may be established if the mark contains misrepresentations in <a href="/special-types-of-trade-marks#geographical-indication-trade-marks">relation to the origin</a> of the goods and/or services.</td></tr><tr><th scope="row">False Evidence Representations<br/><small>(Section 62)</small></th><td>Under this ground, an opposition may be based on the mark being amended contrary to the <em>Trade Marks Act</em> or being accepted on the basis of a false representation of Evidence.</td></tr><tr><th scope="row">Bad Faith<br/><small>(Section 62A)</small></th><td>Finally, an accepted application may be opposed under this ground if, for example, a party has registered a mark in the knowledge that another party was already using that mark. Since this ground often deals with the consideration of the intention of the applicant at the time of filing, it can be complicated to prove.</td></tr></tbody></table></figure>
+      <p>
+        In Australia, an <Link href="/trade-mark-opposition">opposition</Link>{' '}
+        is known as the formal process of objecting to the registration of
+        another mark. Once a trade mark application is{' '}
+        <Link href="/trade-mark-acceptance">accepted</Link> and advertised in
+        the Official Journal of Trade Marks, any party can oppose the
+        application under one or more grounds specified in the{' '}
+        <em>Trade Marks Act (1995)</em> within 2 months of the advertisement
+        date. The grounds for opposing a trade mark application that an opponent
+        can rely on are explained below.
+      </p>
+      <figure class="wp-block-table table table-bordered table-responsive is-style-regular">
+        <table>
+          <tbody>
+            <tr>
+              <th scope="row">
+                Prohibited Signs
+                <br />
+                <small>(Section 39)</small>
+              </th>
+              <td>
+                A trade mark application may be opposed on the ground that it
+                contains{' '}
+                <Link href="/unregistrable-trade-marks#prohibited-signs">
+                  prohibited signs
+                </Link>
+                . Examples of these prohibited signs are:
+                <ul>
+                  <li>
+                    Arms, seals, and flags of Australian Federal or State
+                    governments
+                  </li>
+                  <li>
+                    Arms or emblems of Australian public authorities or towns
+                  </li>
+                  <li>Foreign national symbols, or hallmarks</li>
+                  <li>Signs of intergovernmental organisations.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Capacity to Distinguish
+                <br />
+                <small>(Section 41)</small>
+              </th>
+              <td>
+                Another ground for opposing a trade mark application may be
+                opposed on the ground that the trade mark is not capable of
+                distinguishing the applicant&apos;{' '}
+                <Link href="/classes-of-goods-and-services">
+                  goods/services
+                </Link>{' '}
+                from those of other traders. Considerations for determining if
+                this ground is established will include whether other traders
+                are likely to desire to use the same trade mark in connection
+                with their own goods or some trade mark nearly resembling it
+                without improper motive.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Contains Scandalous Matter
+                <br />
+                <small>(Section 42)</small>
+              </th>
+              <td>
+                A trade mark application may be opposed if the trade mark
+                application contains scandalous matter or if its use would be
+                contrary to law. Whether a mark contains “
+                <Link href="/unregistrable-trade-marks#scandalous">
+                  scandalous matter
+                </Link>
+                ” will be determined by reference to the meaning of the trade
+                mark and whether it contains elements that are likely to be
+                considered as shocking or offensive, for example that the mark
+                contains elements that may be considered as:
+                <ul>
+                  <li>Personal abuse</li>
+                  <li>Incorporate racial or ethnic abuse</li>
+                  <li>Incorporate abuse of a national flag</li>
+                  <li>Incorporate elements of religious intolerance</li>
+                  <li>Incites violence and/or terrorism.</li>
+                </ul>
+                <p>
+                  “Use contrary to law refers” to the contravention of a
+                  specific legislative body, for example that the mark uses a
+                  geographical indication in relation to the provision of wine,
+                  meaning it could potentially contravene the{' '}
+                  <em>Australian Grape and Wine Authority Act (2013)</em>.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Considered Confusing
+                <br />
+                <small>(Section 43)</small>
+              </th>
+              <td>
+                A trade mark application may be opposed on the ground that the
+                trade mark&apos; use in relation to certain goods and services
+                is likely to cause confusion. The confusion may be with regards
+                to:
+                <ul>
+                  <li>
+                    The character of their goods and services (composition and
+                    nature),
+                  </li>
+                  <li>The quantity or quality of the goods and services, or</li>
+                  <li>The geographical origin of the goods or services.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Prior application/registration
+                <br />
+                <small>(Section 44)</small>
+              </th>
+              <td>
+                A trade mark may be opposed on the ground that the applied for
+                mark is substantially identical or deceptively similar to
+                another previously applied for/registered mark for
+                similar/closely related goods and/or services.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Applicant not the Owner of the Mark
+                <br />
+                <small>(Section 58)</small>
+              </th>
+              <td>
+                Ownership of a mark in Australia will be established through the
+                use of the mark. Under this ground, an opponent may show that it
+                used the mark before the date of Application of the Opposed mark
+                and is therefore the owner of that mark.{' '}
+                <strong>Section 58A:</strong> In cases where the application was
+                accepted under prior use, the Opponent may rely on this ground
+                to show earlier use of the mark.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                No Intention to Use the Trade Mark
+                <br />
+                <small>(Section 59)</small>
+              </th>
+              <td>
+                <Image
+                  decoding="async"
+                  loading="lazy"
+                  class="alignleft wp-image-15365"
+                  src="https://www.baxterip.com.au/wp-content/uploads/2019/12/show-you-care.jpg"
+                  alt="Show you care 100% recyclable"
+                  width="100"
+                  height="99"
+                />
+                <p>
+                  This ground may be raised on the basis that the applicant did
+                  not at the filing date intend to use the mark as a badge of
+                  origin. For example, in{' '}
+                  <em>ACI Operations Pty Ltd v Amcor LTD [2001]</em> O 34 this
+                  ground was established as it was determined that the sign (
+                  <em>see image at the left</em>) was intended to simply
+                  indicate that a product could be recycled and this was not use
+                  as a <em>badge of origin</em>.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Prior Mark With Reputation in Australia
+                <br />
+                <small>(Section 60)</small>
+              </th>
+              <td>
+                A trade mark may be opposed on this ground if the Opponent is
+                the owner of a trade mark that has acquired a reputation in
+                Australia to such an extent that the use of an identical of
+                similar mark would likely result in deceiving or confusing
+                consumers. For example, the mark TRADIEBAY was successfully
+                opposed based on Ebay Incorporated&apos; reputation in its EBAY
+                trade mark.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                False Geographic Indication
+                <br />
+                <small>(Section 61)</small>
+              </th>
+              <td>
+                This ground may be established if the mark contains
+                misrepresentations in{' '}
+                <Link href="/special-types-of-trade-marks#geographical-indication-trade-marks">
+                  relation to the origin
+                </Link>{' '}
+                of the goods and/or services.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                False Evidence Representations
+                <br />
+                <small>(Section 62)</small>
+              </th>
+              <td>
+                Under this ground, an opposition may be based on the mark being
+                amended contrary to the <em>Trade Marks Act</em> or being
+                accepted on the basis of a false representation of Evidence.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Bad Faith
+                <br />
+                <small>(Section 62A)</small>
+              </th>
+              <td>
+                Finally, an accepted application may be opposed under this
+                ground if, for example, a party has registered a mark in the
+                knowledge that another party was already using that mark. Since
+                this ground often deals with the consideration of the intention
+                of the applicant at the time of filing, it can be complicated to
+                prove.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
     </Layout>
   )
 }

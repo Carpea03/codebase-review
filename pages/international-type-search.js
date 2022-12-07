@@ -7,9 +7,7 @@ export default function InternationalTypeSearch() {
   return (
     <Layout>
       <Head>
-        <title>
-          International-type search | Baxter IP Sydney & Melbourne
-        </title>
+        <title>International-type search | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Conducting an international-type search on provisional patent applications can be used to cost-effectively review the novelty of the patent claims."
@@ -113,11 +111,69 @@ export default function InternationalTypeSearch() {
         </ol>
       </nav>
       <h1>Stage 2: International-type patent search</h1>
-      <p>IP Australia offers a highly cost effective option for an international patent search called an “international-type search”.</p>
-      <p>We would almost always recommend you have an international patent search carried out if you have had a patent attorney file a <a title="File a Provisional Patent Application" href="/provisional-patents">provisional patent application</a> for you recently, except in circumstances where you have commissioned a detailed <a title="Patent Novelty Searches" href="/international-type-search">patent novelty search</a>&nbsp;prior to filing.</p>
-      <p>An international-type search typically takes IP Australia about 6 – 8 weeks to complete then you should allow your patent attorney time to conduct the review of the search results. It is easy to take an overly negative view of patent search results if they are received without a review from your patent attorney. A <a title="Patent Attorneys Sydney &amp; Melbourne" href="/patent-attorney">patent attorney</a>&nbsp;will quickly recognise in the results:</p>
-      <ul><li>any&nbsp;<a title="" href="/ip-glossary#prior-art" data-toggle="tooltip" data-placement="bottom" data-original-title="Information which is in the public domain and hence not patentable.">prior art</a> that was incorrectly identified by the searcher; and</li><li>how your patent claims can be reworded to circumvent the search results.</li></ul>
-      <p>The bottom line – if the search results look similar to your new idea, don’t despair! Speak to an&nbsp;<a title="Patent Attorneys Sydney &amp; Melbourne" href="/patent-attorney">Australian patent attorney</a> about the patent search results as the result and your options may well be different to how you initially perceive it.</p>
+      <p>
+        IP Australia offers a highly cost effective option for an international
+        patent search called an “international-type search”.
+      </p>
+      <p>
+        We would almost always recommend you have an international patent search
+        carried out if you have had a patent attorney file a{' '}
+        <Link
+          title="File a Provisional Patent Application"
+          href="/provisional-patents">
+          provisional patent application
+        </Link>{' '}
+        for you recently, except in circumstances where you have commissioned a
+        detailed{' '}
+        <Link
+          title="Patent Novelty Searches"
+          href="/international-type-search">
+          patent novelty search
+        </Link>
+        &nbsp;prior to filing.
+      </p>
+      <p>
+        An international-type search typically takes IP Australia about 6 – 8
+        weeks to complete then you should allow your patent attorney time to
+        conduct the review of the search results. It is easy to take an overly
+        negative view of patent search results if they are received without a
+        review from your patent attorney. A{' '}
+        <Link
+          title="Patent Attorneys Sydney &amp; Melbourne"
+          href="/patent-attorney">
+          patent attorney
+        </Link>
+        &nbsp;will quickly recognise in the results:
+      </p>
+      <ul>
+        <li>
+          any&nbsp;
+          <Link
+            title=""
+            href="/ip-glossary#prior-art"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            data-original-title="Information which is in the public domain and hence not patentable.">
+            prior art
+          </Link>{' '}
+          that was incorrectly identified by the searcher; and
+        </li>
+        <li>
+          how your patent claims can be reworded to circumvent the search
+          results.
+        </li>
+      </ul>
+      <p>
+        The bottom line – if the search results look similar to your new idea,
+        don’t despair! Speak to an&nbsp;
+        <Link
+          title="Patent Attorneys Sydney &amp; Melbourne"
+          href="/patent-attorney">
+          Australian patent attorney
+        </Link>{' '}
+        about the patent search results as the result and your options may well
+        be different to how you initially perceive it.
+      </p>
     </Layout>
-    );
+  )
 }

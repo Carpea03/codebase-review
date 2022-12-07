@@ -15,7 +15,7 @@ export default function index() {
             area:
           </p>
           <div className="max-w-2xl grid gap-8 lg:grid-cols-2 not-format">
-            <a
+            <Link
               href="specialisations/software-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -42,8 +42,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/electrical-engineering-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -72,8 +72,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/consumer-product-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -100,8 +100,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/pharmaceutical-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -130,8 +130,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/physics-and-optical-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -160,8 +160,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/fintech-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -188,8 +188,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/mechanical-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -224,8 +224,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/construction-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -254,8 +254,8 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="specialisations/medical-patents"
               className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg
@@ -282,7 +282,7 @@ export default function index() {
                   d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                   clipRule="evenodd"></path>
               </svg>
-            </a>
+            </Link>
           </div>
           <p>
             Deliver great service experiences fast - without the complexity of

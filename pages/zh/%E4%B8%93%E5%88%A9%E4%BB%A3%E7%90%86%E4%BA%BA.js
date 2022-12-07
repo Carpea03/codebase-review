@@ -78,11 +78,11 @@ export default function 专利代理人() {
         </li>
         <li>
           您的专利代理人将能够根据专利设计的逻辑变化扩展您的
-          <a
+          <Link
             title="提交临时专利申请"
             href="https://www.baxterip.com.au/zh/临时专利">
             专利申请
-          </a>
+          </Link>
           范围。
         </li>
         <li>我们的专利代理人事务所能会为您提供行业内的商业建议或联系人。</li>
@@ -97,13 +97,13 @@ export default function 专利代理人() {
         <li>
           我们是一支成功的团队：从2015年的IT专利代理人服务知识产权奖到IP
           Luminary Awards和大学奖章再到企业家的
-          <a
+          <Link
             title="Anthill 奖30岁以下年龄阶段荣誉奖"
             href="http://anthillonline.com/chris-baxter-2011-anthill-30under30-honourable-mention/"
             target="_blank"
             rel="noopener noreferrer">
             Anthill奖
-          </a>
+          </Link>
           。
         </li>
         <li>

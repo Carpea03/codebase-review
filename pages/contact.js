@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import LayoutWide from '../components/layout-wide'
+import Link from 'next/link'
 
 export default function Contact() {
   return (
@@ -102,17 +103,17 @@ export default function Contact() {
                     placeholder="Leave a comment..."></textarea>
                   <p className="mt-4 text-sm text-gray-500">
                     By submitting this form you agree to our{' '}
-                    <a
+                    <Link
                       href="#"
                       className="text-primary-600 hover:underline dark:text-primary-500">
                       terms and conditions
-                    </a>{' '}
+                    </Link>{' '}
                     and our{' '}
-                    <a
+                    <Link
                       href="#"
                       className="text-primary-600 hover:underline dark:text-primary-500">
                       privacy policy
-                    </a>{' '}
+                    </Link>{' '}
                     which explains how we may collect, use and disclose your
                     personal information including to third parties.
                   </p>

@@ -6,9 +6,7 @@ export default function HowToChooseAnAustralianPatentAttorney() {
   return (
     <Layout>
       <Head>
-        <title>
-          How to choose an Australian patent attorney | Baxter IP
-        </title>
+        <title>How to choose an Australian patent attorney | Baxter IP</title>
         <meta
           name="description"
           content="Here are several factors on how to choose an Australian patent attorney to help you in drafting and filing your patent application."
@@ -74,27 +72,157 @@ export default function HowToChooseAnAustralianPatentAttorney() {
         </ol>
       </nav>
       <h1>How to choose an Australian patent attorney</h1>
-      <p>Like any other type of professional, the primary and secondary skills of individual patent attorneys vary, along with the capability of their firm. In this article, we outline 8 things to consider when choosing your patent attorney.</p>
-      <h2>1. Choose a patent attorney who specialises in your technology area</h2>
-      <p>Although many <a title="Our Patent Attorneys" href="/patent-attorney">patent attorneys</a> claim to be <a title="IP &amp; Patent Specialisations" href="/specialisations">technology generalists</a>, very few actually are. An Australian patent attorney’s technology specialisation generally derives from a mix of:</p>
-      <ul><li>their technical qualification (i.e. what field of engineering or science they studied in);</li><li>the technology area they have been working in;</li><li>the clients they have been working for;</li><li>the areas they are personally most interested in and so read about and study in addition to their role; and</li><li>how many years they have worked in your technology area.</li></ul>
-      <h2>2. Choose an intellectual property firm that has more than 3 attorneys</h2>
-      <p>This is intuitive for most clients but it’s amazing how many inventors don’t consider the downsides of working with a sole practitioner or small firm – they are cheaper for a reason.</p>
-      <p>Whilst many attorneys at small firms are completely competent, it is extremely difficult for a small firm to operate the systems required to manage and update <a href="/how-to-patent">patent</a>, <a href="/how-to-trade-mark">trade mark</a> and <a href="/registered-designs">registered design</a> processes in multiple jurisdictions. The reason for this is that the processes involve rules and deadlines which change regularly across jurisdictions requiring systems to be updated. If a system is not up-to-date and a deadline is missed, sometimes there is no way to restore the intellectual property right. So it’s risky to work with a firm that doesn’t have sufficient resources to keep their systems up-to-date.</p>
-      <p>There is also the obvious and unfortunate risk when working with a sole practitioner that something might happen to them, for example they become ill. Most people have some serious illness at some point in their lives and what happens to the management of your intellectual property if that happens? We’ve seen cases where sole practitioners have become ill and client rights have lapsed as a result.</p>
-      <h2>3. Choose a patent attorney who can add value with their secondary knowledge, skills or connections</h2>
-      <p><a title="Our Patent Attorneys" href="/patent-attorney">Patent attorneys</a> often have secondary areas (aside from patents) that they are very knowledgeable about. For example, in our firm, we have attorneys who are also registered or have been registered to practice in other countries (e.g. USA and China). We also have attorneys who are experienced in licensing, commercialisation or capital raising. Remember to ask your attorneys which other skills or knowledge they have that might be helpful to your project. How else can they help you?</p>
-      <h2>4. Choose a firm that can provide enforcement of your intellectual property</h2>
-      <p>Alongside your patent attorney, it’s important to have an experienced IP and/or commercial lawyer who can help you draft legal agreements and provide other legal advice. When it comes to enforcing your patent or defending an infringement suit, it’s much easier to have a lawyer who already knows and has worked with your patent attorney. Being involved in the enforcement of patents also provides attorneys with a unique and helpful perspective on the drafting of patents, enabling them to draft more robust patent applications that can withstand the scrutiny applied during Court proceedings.</p>
+      <p>
+        Like any other type of professional, the primary and secondary skills of
+        individual patent attorneys vary, along with the capability of their
+        firm. In this article, we outline 8 things to consider when choosing
+        your patent attorney.
+      </p>
+      <h2>
+        1. Choose a patent attorney who specialises in your technology area
+      </h2>
+      <p>
+        Although many{' '}
+        <Link
+          title="Our Patent Attorneys"
+          href="/patent-attorney">
+          patent attorneys
+        </Link>{' '}
+        claim to be{' '}
+        <Link
+          title="IP &amp; Patent Specialisations"
+          href="/specialisations">
+          technology generalists
+        </Link>
+        , very few actually are. An Australian patent attorney’s technology
+        specialisation generally derives from a mix of:
+      </p>
+      <ul>
+        <li>
+          their technical qualification (i.e. what field of engineering or
+          science they studied in);
+        </li>
+        <li>the technology area they have been working in;</li>
+        <li>the clients they have been working for;</li>
+        <li>
+          the areas they are personally most interested in and so read about and
+          study in addition to their role; and
+        </li>
+        <li>how many years they have worked in your technology area.</li>
+      </ul>
+      <h2>
+        2. Choose an intellectual property firm that has more than 3 attorneys
+      </h2>
+      <p>
+        This is intuitive for most clients but it’s amazing how many inventors
+        don’t consider the downsides of working with a sole practitioner or
+        small firm – they are cheaper for a reason.
+      </p>
+      <p>
+        Whilst many attorneys at small firms are completely competent, it is
+        extremely difficult for a small firm to operate the systems required to
+        manage and update <Link href="/how-to-patent">patent</Link>,{' '}
+        <Link href="/how-to-trade-mark">trade mark</Link> and{' '}
+        <Link href="/registered-designs">registered design</Link> processes in
+        multiple jurisdictions. The reason for this is that the processes
+        involve rules and deadlines which change regularly across jurisdictions
+        requiring systems to be updated. If a system is not up-to-date and a
+        deadline is missed, sometimes there is no way to restore the
+        intellectual property right. So it’s risky to work with a firm that
+        doesn’t have sufficient resources to keep their systems up-to-date.
+      </p>
+      <p>
+        There is also the obvious and unfortunate risk when working with a sole
+        practitioner that something might happen to them, for example they
+        become ill. Most people have some serious illness at some point in their
+        lives and what happens to the management of your intellectual property
+        if that happens? We’ve seen cases where sole practitioners have become
+        ill and client rights have lapsed as a result.
+      </p>
+      <h2>
+        3. Choose a patent attorney who can add value with their secondary
+        knowledge, skills or connections
+      </h2>
+      <p>
+        <Link
+          title="Our Patent Attorneys"
+          href="/patent-attorney">
+          Patent attorneys
+        </Link>{' '}
+        often have secondary areas (aside from patents) that they are very
+        knowledgeable about. For example, in our firm, we have attorneys who are
+        also registered or have been registered to practice in other countries
+        (e.g. USA and China). We also have attorneys who are experienced in
+        licensing, commercialisation or capital raising. Remember to ask your
+        attorneys which other skills or knowledge they have that might be
+        helpful to your project. How else can they help you?
+      </p>
+      <h2>
+        4. Choose a firm that can provide enforcement of your intellectual
+        property
+      </h2>
+      <p>
+        Alongside your patent attorney, it’s important to have an experienced IP
+        and/or commercial lawyer who can help you draft legal agreements and
+        provide other legal advice. When it comes to enforcing your patent or
+        defending an infringement suit, it’s much easier to have a lawyer who
+        already knows and has worked with your patent attorney. Being involved
+        in the enforcement of patents also provides attorneys with a unique and
+        helpful perspective on the drafting of patents, enabling them to draft
+        more robust patent applications that can withstand the scrutiny applied
+        during Court proceedings.
+      </p>
       <h2>5. Choose a firm that is commercially connected</h2>
-      <p>Some professionals work in a bit of a vacuum and they aren’t very helpful to their clients. Other patent attorneys have extensive networks of corporate or capital contacts, development professionals and other consultants who can help you along the path to market. Whether it’s a professional to help you with an R&amp;D tax credit or someone who can help you improve the industrial design of your product, why not choose an attorney who has the connections you need?</p>
+      <p>
+        Some professionals work in a bit of a vacuum and they aren’t very
+        helpful to their clients. Other patent attorneys have extensive networks
+        of corporate or capital contacts, development professionals and other
+        consultants who can help you along the path to market. Whether it’s a
+        professional to help you with an R&amp;D tax credit or someone who can
+        help you improve the industrial design of your product, why not choose
+        an attorney who has the connections you need?
+      </p>
       <h2>6. Choose a patent attorney who is liked by their clients</h2>
-      <p>If the clients of a patent attorney are happy with him/her it’s much more likely you will be too! How can you know whether the patent attorney you are considering has <a title="Client Testimonials" href="/testimonials">happy clients</a>? Two tips:</p>
-      <ol><li>Check the google rating of the firm – are they 4 or 5 stars?</li><li>What is the net promoter score (NPS) of the firm or do they even measure it?</li></ol>
+      <p>
+        If the clients of a patent attorney are happy with him/her it’s much
+        more likely you will be too! How can you know whether the patent
+        attorney you are considering has{' '}
+        <Link
+          title="Client Testimonials"
+          href="/testimonials">
+          happy clients
+        </Link>
+        ? Two tips:
+      </p>
+      <ol>
+        <li>Check the google rating of the firm – are they 4 or 5 stars?</li>
+        <li>
+          What is the net promoter score (NPS) of the firm or do they even
+          measure it?
+        </li>
+      </ol>
       <h2>7. Choose an IP firm that has principals who are fellows of IPTA</h2>
-      <p>IPTA (<a href="https://ipta.org.au/" target="_blank" rel="noopener noreferrer">The Institute of Patent &amp; Trade Mark Attorneys of Australia</a>) is the professional body for patent and trade mark attorneys in Australia. Fellows of IPTA are normally highly regarded within the Australian IP profession and must have at least 5 years experience post registration.</p>
+      <p>
+        IPTA (
+        <Link
+          href="https://ipta.org.au/"
+          target="_blank"
+          rel="noopener noreferrer">
+          The Institute of Patent &amp; Trade Mark Attorneys of Australia
+        </Link>
+        ) is the professional body for patent and trade mark attorneys in
+        Australia. Fellows of IPTA are normally highly regarded within the
+        Australian IP profession and must have at least 5 years experience post
+        registration.
+      </p>
       <h2>8. Choose an IP firm that offers fixed fee pricing</h2>
-      <p>No-one wants to work with an attorney who charges by the hour. Hourly charging makes it difficult to budget for your project and can easily lead to cost over-runs. Many firms now work on a fixed fee pricing model and it’s definitely in your interest to consider working with one of them.</p>
+      <p>
+        No-one wants to work with an attorney who charges by the hour. Hourly
+        charging makes it difficult to budget for your project and can easily
+        lead to cost over-runs. Many firms now work on a fixed fee pricing model
+        and it’s definitely in your interest to consider working with one of
+        them.
+      </p>
     </Layout>
   )
 }
