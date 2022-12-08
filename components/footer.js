@@ -147,11 +147,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="designs"
                   className="hover:underline">
                   Designs
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
                 <Link
@@ -168,11 +168,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="/how-to-patent"
                   className="hover:underline">
                   How to patent
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
                 <Link
@@ -196,11 +196,11 @@ export default function Footer() {
                 </Link>
               </li>
               {/* <li className="mb-4">
-                <a
+                <Link
                 href="/sydney/chris-baxter"
                 className="hover:underline">
                 Attorney Chris
-                </a>
+                </Link>
               </li> */}
               <li className="mb-4">
                 <Link
@@ -238,18 +238,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Facebook
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -259,25 +259,25 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Licensing
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Terms &amp; Conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -287,32 +287,32 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   iOS
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Android
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   Windows
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a
+                <Link
                   href="#"
                   className="hover:underline">
                   MacOS
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
