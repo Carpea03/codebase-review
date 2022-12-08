@@ -1,6 +1,6 @@
 name: Deploy Sanity Studio
 on:
-  pull_request:
+  push:
     branches:
       - main
 defaults:
