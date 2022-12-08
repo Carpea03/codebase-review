@@ -98,13 +98,13 @@ export default function LivingOurValues() {
         right questions and to provide you with clear, commercially astute IP
         advice.
       </p>
-      <figure class="aligncenter size-large is-resized">
+      <figure className="aligncenter size-large is-resized">
         <Image
           decoding="async"
           loading="lazy"
           src="https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter.jpg"
           alt="Chris Baxter - Managing Director, Patent &amp; Trade Mark Attorney"
-          class="wp-image-31316"
+          className="wp-image-31316"
           width="150"
           height="150"
           srcset="https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter-150x150.jpg 150w, https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter-210x210.jpg 210w, https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter-100x100.jpg 100w"
@@ -126,7 +126,7 @@ export default function LivingOurValues() {
         data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg">
         <Image
           decoding="async"
-          class="bip_svg aligncenter img-fluid"
+          className="bip_svg aligncenter img-fluid"
           src="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
           alt="The UNSW Sydney logo"
         />
@@ -138,7 +138,7 @@ export default function LivingOurValues() {
         data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg">
         <Image
           decoding="async"
-          class="bip_svg aligncenter img-fluid"
+          className="bip_svg aligncenter img-fluid"
           src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
           alt="Founders of 10x Accelerator"
         />
@@ -167,7 +167,7 @@ export default function LivingOurValues() {
           loading="lazy"
           width="666"
           height="100"
-          class="size-full wp-image-29425 img-fluid"
+          className="size-full wp-image-29425 img-fluid"
           src="https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre.jpg"
           alt="Nunyara Centre logo"
           srcset="https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre.jpg 666w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-300x45.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-210x32.jpg 210w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-100x15.jpg 100w"
@@ -188,7 +188,7 @@ export default function LivingOurValues() {
         data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg">
         <Image
           decoding="async"
-          class="bip_svg aligncenter img-fluid"
+          className="bip_svg aligncenter img-fluid"
           src="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
           alt="Percy Baxter Charitable Trust logo"
         />

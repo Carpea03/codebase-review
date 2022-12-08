@@ -121,7 +121,7 @@ export default function SpecialTypesOfTradeMarks() {
         certification trade marks in that the party registering the trade mark
         is not necessarily the party who will be using the mark.
       </p>
-      <h3 class="h5">Functions of a collective trade mark</h3>
+      <h3 className="h5">Functions of a collective trade mark</h3>
       <p>
         Collective trade marks are trade marks used by members of an association
         to:
@@ -152,7 +152,7 @@ export default function SpecialTypesOfTradeMarks() {
         trade marks is that collective trade marks cannot be sold or assigned to
         another owner.
       </p>
-      <h3 class="h5">Who can apply for a collective trade mark?</h3>
+      <h3 className="h5">Who can apply for a collective trade mark?</h3>
       <p>
         The application for a collective trade mark must be filed by an
         organisation or association. This means that an individual may not
@@ -162,7 +162,7 @@ export default function SpecialTypesOfTradeMarks() {
         An association may be incorporated, such as FTD Inc. or unincorporated,
         such as the Australian Association of Social Workers (AASW).
       </p>
-      <h3 class="h5">Examples of collective trade marks</h3>
+      <h3 className="h5">Examples of collective trade marks</h3>
       <figure>
         <table>
           <tbody>
@@ -208,12 +208,12 @@ export default function SpecialTypesOfTradeMarks() {
         Notably, a certification trade mark is ideal for protecting geographical
         indications. One such example is Scotch Whiskey.
       </p>
-      <h3 class="h5">Who can use a certification trade mark?</h3>
+      <h3 className="h5">Who can use a certification trade mark?</h3>
       <p>
         A certification trade mark can be used by different traders on their
         goods and services.
       </p>
-      <h3 class="h5">How do you apply for a certification trade mark?</h3>
+      <h3 className="h5">How do you apply for a certification trade mark?</h3>
       <p>
         Applying for a certification trade mark follows the same process as{' '}
         <Link href="/trade-mark-registration-process">
@@ -230,7 +230,7 @@ export default function SpecialTypesOfTradeMarks() {
         by the applicant. The application and the rules will be approved by the
         Australian Competition and Consumer Commission.
       </p>
-      <h3 class="h5">What are certification rules?</h3>
+      <h3 className="h5">What are certification rules?</h3>
       <p>
         At a minimum, the certification rules that the applicant needs to submit
         must:
@@ -257,7 +257,7 @@ export default function SpecialTypesOfTradeMarks() {
           non-compliance with the standard or characteristic.
         </li>
       </ol>
-      <h3 class="h5">Examples of certification trade marks</h3>
+      <h3 className="h5">Examples of certification trade marks</h3>
       <figure>
         <table>
           <tbody>
@@ -356,7 +356,7 @@ export default function SpecialTypesOfTradeMarks() {
         European wine geographical indications have been recorded in the
         registry.
       </p>
-      <h4 class="h6">Examples of geographical indications</h4>
+      <h4 className="h6">Examples of geographical indications</h4>
       <p>
         Examples of foreign graphical indications registered in Australia
         include Parmigiano Regianno (Certification mark{' '}
@@ -413,7 +413,7 @@ export default function SpecialTypesOfTradeMarks() {
         goods and services during the time of application of the defensive trade
         mark.
       </p>
-      <h3 class="h6">Examples of defensive trade marks</h3>
+      <h3 className="h6">Examples of defensive trade marks</h3>
       <figure>
         <table>
           <tbody>

@@ -249,7 +249,7 @@ export default function InternationalTradeMarkManagement() {
         system.
       </p>
       <table
-        class="table table-bordered"
+        className="table table-bordered"
         width="50%">
         <tbody>
           <tr>

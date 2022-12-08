@@ -325,7 +325,9 @@ export default function TypesOfTradeMarks() {
         experienced after purchase. At present, there are no registered taste
         trade marks in the Australian trade mark registry.
       </p>
-      <h2 class="h5">Trade mark type according to degree of distinctiveness</h2>
+      <h2 className="h5">
+        Trade mark type according to degree of distinctiveness
+      </h2>
       <h3 id="generic">Generic “trade marks”</h3>
       <p>
         Generic “marks” are terms that denote an actual product. These marks
@@ -382,7 +384,7 @@ export default function TypesOfTradeMarks() {
         public about your brand and its products or services. Several classic
         examples of fanciful trade marks include Kodak, Xerox and Pepsi.
       </p>
-      <h2 class="h5">Special types of trade marks</h2>
+      <h2 className="h5">Special types of trade marks</h2>
       <p>
         In addition to these different categories, trade marks are also
         classified{' '}

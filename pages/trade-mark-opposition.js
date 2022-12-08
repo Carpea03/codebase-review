@@ -113,7 +113,7 @@ export default function TradeMarkOpposition() {
             decoding="async"
             src="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
             alt="Trade Mark Opposition Procedure (for desktop)"
-            class="wp-image-28569"
+            className="wp-image-28569"
           />
         </Link>
         <figcaption>Trade Mark Opposition Procedure</figcaption>

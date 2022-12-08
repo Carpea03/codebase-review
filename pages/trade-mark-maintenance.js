@@ -165,7 +165,7 @@ export default function TradeMarkMaintenance() {
           <strong>
             Have your trade mark{' '}
             <Link
-              class="text-danger"
+              className="text-danger"
               href="/trade-mark-amendment">
               amended
             </Link>{' '}
@@ -199,7 +199,7 @@ export default function TradeMarkMaintenance() {
           <strong>
             Maintain the trade mark and{' '}
             <Link
-              class="text-danger"
+              className="text-danger"
               href="/trade-mark-renewal">
               be aware of important dates
             </Link>

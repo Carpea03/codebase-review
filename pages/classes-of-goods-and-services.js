@@ -131,7 +131,7 @@ export default function ClassesOfGoodsAndServices() {
         </Link>
         .
       </p>
-      <h2 class="h5">Examples of classes of goods and services</h2>
+      <h2 className="h5">Examples of classes of goods and services</h2>
       <table>
         <tbody>
           <tr>

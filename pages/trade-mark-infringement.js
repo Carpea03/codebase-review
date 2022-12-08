@@ -239,7 +239,7 @@ export default function TradeMarkInfringement() {
           height="250"
           src="https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi.jpg"
           alt="Asashi &amp; Musashi"
-          class="wp-image-8328"
+          className="wp-image-8328"
           srcset="https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi.jpg 800w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-300x94.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-768x240.jpg 768w"
           sizes="(max-width: 800px) 100vw, 800px"
         />
@@ -484,7 +484,7 @@ export default function TradeMarkInfringement() {
             loading="lazy"
             width="300"
             height="251"
-            class="size-medium wp-image-8331 img-fluid"
+            className="size-medium wp-image-8331 img-fluid"
             src="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-300x251.jpg"
             alt="Facebook Trademark Report Form"
             srcset="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-300x251.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-768x643.jpg 768w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-600x500.jpg 600w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form.jpg 800w"
@@ -588,7 +588,7 @@ export default function TradeMarkInfringement() {
           height="131"
           src="https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg"
           alt="Xingbake logo disputed by Starbucks as blatant piracy"
-          class="wp-image-8333"
+          className="wp-image-8333"
           srcset="https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy.jpg 398w"
           sizes="(max-width: 300px) 100vw, 300px"
         />

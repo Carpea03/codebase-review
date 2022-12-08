@@ -130,7 +130,7 @@ export default function TradeMarkRegistrationProcess() {
             height="331"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
             alt="Australian Standard Trade Mark Procedure (for desktop)"
-            class="wp-image-28565"
+            className="wp-image-28565"
             srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-768x248.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1536x496.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-2048x661.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />

@@ -122,7 +122,7 @@ export default function GroundsForTradeMarkOpposition() {
         date. The grounds for opposing a trade mark application that an opponent
         can rely on are explained below.
       </p>
-      <figure class="wp-block-table table table-bordered table-responsive is-style-regular">
+      <figure className="wp-block-table table table-bordered table-responsive is-style-regular">
         <table>
           <tbody>
             <tr>
@@ -264,7 +264,7 @@ export default function GroundsForTradeMarkOpposition() {
                 <Image
                   decoding="async"
                   loading="lazy"
-                  class="alignleft wp-image-15365"
+                  className="alignleft wp-image-15365"
                   src="https://www.baxterip.com.au/wp-content/uploads/2019/12/show-you-care.jpg"
                   alt="Show you care 100% recyclable"
                   width="100"

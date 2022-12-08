@@ -268,7 +268,7 @@ export default function TradeMarkApplication() {
           </ol>
         </li>
       </ol>
-      <h3 class="h6">Confidentiality</h3>
+      <h3 className="h6">Confidentiality</h3>
       <p>
         Bound by the Code of Conduct for Trans-Tasman Patent and Trade Marks
         Attorneys 2018, your{' '}

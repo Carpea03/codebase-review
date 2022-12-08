@@ -75,26 +75,28 @@ export default function Faqs() {
       </nav>
       <h1>Frequently Asked Questions</h1>
       <section>
-        <h2 class="mt-5">General</h2>
-        <h3 class="h6 mt-5">
+        <h2 className="mt-5">General</h2>
+        <h3 className="h6 mt-5">
           Where is your office located? (either for Sydney or Melbourne)
         </h3>
         <p>Our offices are located at 1 Bligh St and 530 Collins St.</p>
-        <h3 class="h6 mt-5">Do you have a Chinese or a Mandarin speaker?</h3>
+        <h3 className="h6 mt-5">
+          Do you have a Chinese or a Mandarin speaker?
+        </h3>
         <p>
           Yes, we have two Mandarin speakers, one specialises in patents, the
           other in trade marks.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           How much does it cost for a trade mark or a patent?
         </h3>
         <p>
           Your attorney will be able to provide a quote once they have an
           understanding of what you wish to protect.
         </p>
-        <h3 class="h6 mt-5">Do you accept clients outside of Australia?</h3>
+        <h3 className="h6 mt-5">Do you accept clients outside of Australia?</h3>
         <p>Yes, we have many foreign clients.</p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           Do all matters shared with you remain confidential?
         </h3>
         <p>
@@ -103,15 +105,15 @@ export default function Faqs() {
           talk with confidence about your idea with your attorney as this will
           enable them to give you the best possible advice.
         </p>
-        <h3 class="h6 mt-5">Do you offer IP litigation services?</h3>
+        <h3 className="h6 mt-5">Do you offer IP litigation services?</h3>
         <p>
           IP specialist lawyers and barristers we work with offer IP litigation
           services.
         </p>
       </section>
       <section>
-        <h2 class="mt-5">Patent related</h2>
-        <h3 class="h6 mt-5">What is a patent?</h3>
+        <h2 className="mt-5">Patent related</h2>
+        <h3 className="h6 mt-5">What is a patent?</h3>
         <p>
           A patent is an exclusive right or monopoly granted by the Commonwealth
           for an invention, which is a product or a process that provides, in
@@ -119,7 +121,9 @@ export default function Faqs() {
           solution to a problem. A patent provides an enforceable legal right to
           prevent others from exploiting an invention.
         </p>
-        <h3 class="h6 mt-5">What kind of protection does a patent offer?</h3>
+        <h3 className="h6 mt-5">
+          What kind of protection does a patent offer?
+        </h3>
         <p>
           Patent protection means that the invention cannot be commercially
           made, used, distributed or sold without the patent owner’s consent. To
@@ -127,7 +131,7 @@ export default function Faqs() {
           a court. Conversely, a court can also declare a patent invalid upon a
           successful challenge by a third party.
         </p>
-        <h3 class="h6 mt-5">What is patentable?</h3>
+        <h3 className="h6 mt-5">What is patentable?</h3>
         <p>
           For an invention to be patentable, it must satisfy certain criteria.
           For example, it must
@@ -159,7 +163,7 @@ export default function Faqs() {
           </Link>
           .
         </p>
-        <h3 class="h6 mt-5">What rights does a patent owner have?</h3>
+        <h3 className="h6 mt-5">What rights does a patent owner have?</h3>
         <p>
           A patent owner has the right to decide who may – or may not – use the
           patented invention for the period in which the invention is protected.
@@ -171,7 +175,7 @@ export default function Faqs() {
           longer holds exclusive rights to the invention, which becomes
           available to commercial exploitation by others.
         </p>
-        <h3 class="h6 mt-5">Who is entitled to apply for a patent?</h3>
+        <h3 className="h6 mt-5">Who is entitled to apply for a patent?</h3>
         <p>
           Only the inventor or the person who has acquired the rights to the
           invention from the inventor can be granted a patent for that
@@ -182,7 +186,7 @@ export default function Faqs() {
           duties, it would be prudent to put a written agreement in place before
           relevant work is done.
         </p>
-        <h3 class="h6 mt-5">When should I file a patent application?</h3>
+        <h3 className="h6 mt-5">When should I file a patent application?</h3>
         <p>
           It is critically important to file a patent application before either
           publicly disclosing the details of the invention or conducting any
@@ -191,7 +195,7 @@ export default function Faqs() {
           although you should immediately consult your patent attorney if such a
           situation arises.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           How long will it take for a patent application to issue as a patent?
         </h3>
         <p>
@@ -208,7 +212,7 @@ export default function Faqs() {
           found to be invalid during examination, it will be removed from the
           register.
         </p>
-        <h3 class="h6 mt-5">What is a provisional application?</h3>
+        <h3 className="h6 mt-5">What is a provisional application?</h3>
         <p>
           A provisional application is used to establish a&nbsp;
           <Link href="/ip-glossary#priority-date">priority date</Link>&nbsp;for
@@ -218,7 +222,7 @@ export default function Faqs() {
           lodging the provisional application for your application to retain its
           priority date.
         </p>
-        <h3 class="h6 mt-5">How long does a patent last?</h3>
+        <h3 className="h6 mt-5">How long does a patent last?</h3>
         <p>
           In general, an Australian standard patent has a maximum term of 20
           years, from the date of filing of the complete application, provided
@@ -226,7 +230,7 @@ export default function Faqs() {
           innovation patent has a maximum term of 8 years from the date of
           filing of the complete application.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           When can I begin selling a product and/or begin seeking interest from
           others?
         </h3>
@@ -245,7 +249,7 @@ export default function Faqs() {
           respect of an invention. Use of these symbols where no application has
           been made is prohibited and subject to fines.
         </p>
-        <h3 class="h6 mt-5">When should patent protection be sought?</h3>
+        <h3 className="h6 mt-5">When should patent protection be sought?</h3>
         <p>
           It is important to investigate the possibility of&nbsp;
           <Link href="/ip-glossary#patent-protection">patent protection</Link>
@@ -254,7 +258,7 @@ export default function Faqs() {
           process that will provide the manufacturer of that product or the user
           of that process with a marketing advantage over its competitors.
         </p>
-        <h3 class="h6 mt-5">How can a patent be obtained worldwide?</h3>
+        <h3 className="h6 mt-5">How can a patent be obtained worldwide?</h3>
         <p>
           In general, an application for a patent must be filed, and a patent
           shall be granted and enforced, in each country in which you seek
@@ -284,7 +288,7 @@ export default function Faqs() {
           requirements and pay the costs in each country, but these can be
           deferred by the PCT procedure by up to 18 months.
         </p>
-        <h3 class="h6 mt-5">What is a grace period?</h3>
+        <h3 className="h6 mt-5">What is a grace period?</h3>
         <p>
           A grace period allows public disclosure of an invention in
           circumstances where the inventor has disclosed their invention before
@@ -297,7 +301,7 @@ export default function Faqs() {
           means that patent applications that rely on grace period will be
           invalid in some other countries.
         </p>
-        <h3 class="h6 mt-5">What is a patent registration?</h3>
+        <h3 className="h6 mt-5">What is a patent registration?</h3>
         <p>
           In a legal sense, there is no such thing as a patent registration. A “
           <Link href="/ip-glossary#patent-application">patent application</Link>
@@ -319,7 +323,7 @@ export default function Faqs() {
           applying for a patent is merely a matter of filling in a form. Of
           course, much more is involved.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           What is the difference between copyright and patents?
         </h3>
         <p>
@@ -344,7 +348,7 @@ export default function Faqs() {
           commercially and patents protect function concepts or, put simply, the
           way things work.
         </p>
-        <h3 class="h6 mt-5">What is a patent attorney?</h3>
+        <h3 className="h6 mt-5">What is a patent attorney?</h3>
         <p>
           A patent attorney provides representation and advice regarding
           patenting and related intellectual property matters, such as preparing
@@ -361,7 +365,7 @@ export default function Faqs() {
           to the same extent as a communication between a solicitor and his or
           her client.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           What is the difference between patent attorneys and patent lawyers?
         </h3>
         <p>
@@ -403,7 +407,7 @@ export default function Faqs() {
           tribunal-type process for patent conflicts) before&nbsp;
           <Link href="https://www.ipaustralia.gov.au/">IP Australia</Link>.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           Is a confidentiality agreement necessary between a patent attorney and
           a client?
         </h3>
@@ -417,7 +421,7 @@ export default function Faqs() {
           confidentiality and a strict fiduciary requirement to use your
           information only to your benefit.
         </p>
-        <h3 class="h6 mt-5">What is the process for obtaining a patent?</h3>
+        <h3 className="h6 mt-5">What is the process for obtaining a patent?</h3>
         <p>
           For more information see our&nbsp;
           <Link href="/patent-process-flowcharts">
@@ -425,7 +429,7 @@ export default function Faqs() {
           </Link>
           .
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           Why should I go to Baxter IP for patent services?
         </h3>
         <p>
@@ -437,8 +441,8 @@ export default function Faqs() {
         </p>
       </section>
       <section>
-        <h2 class="mt-5">Trade mark related</h2>
-        <h3 class="h6 mt-5">What is a trade mark?</h3>
+        <h2 className="mt-5">Trade mark related</h2>
+        <h3 className="h6 mt-5">What is a trade mark?</h3>
         <p>
           A trade mark is used to distinguish goods or services from those
           provided by any other person and allows customers to easily identify
@@ -455,7 +459,7 @@ export default function Faqs() {
           prove ownership.&nbsp; This gives you the sole right to use and enjoy
           the trade mark in the country of registration.
         </p>
-        <h3 class="h6 mt-5">What is a trade mark attorney?</h3>
+        <h3 className="h6 mt-5">What is a trade mark attorney?</h3>
         <p>
           A&nbsp;<Link href="/trade-mark-attorney">trade mark attorney</Link>
           &nbsp;provides representation and advice regarding trade marks and
@@ -483,7 +487,7 @@ export default function Faqs() {
           matters before the Designs Office, design oppositions and advising in
           relation to infringement.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           Where do I start if I want to file a trade mark application?
         </h3>
         <p>
@@ -530,7 +534,7 @@ export default function Faqs() {
           to us and we can perform registrability search and report to advise
           you whether the name is likely to be accepted for registration.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           My trade mark is distinctive and unique, what is the next step?
         </h3>
         <p>
@@ -546,7 +550,7 @@ export default function Faqs() {
           earliest possible grant date. Once your trade mark has granted, it can
           be&nbsp;<Link href="/trade-mark-enforcement-options">enforced</Link>.
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           Does my trade mark protect me outside Australia?
         </h3>
         <p>
@@ -562,7 +566,9 @@ export default function Faqs() {
           problematic.&nbsp; Our attorneys can help by preparing a filing
           strategy to support your international business.
         </p>
-        <h3 class="h6 mt-5">What if I decide not to register my trade mark?</h3>
+        <h3 className="h6 mt-5">
+          What if I decide not to register my trade mark?
+        </h3>
         <p>
           If you choose not to register your trade mark you are leaving your
           name open to be used by others as you have a very limited ability to
@@ -570,7 +576,9 @@ export default function Faqs() {
           ownership and the ability to more easily stop others from using the
           name.
         </p>
-        <h3 class="h6 mt-5">What is the process for obtaining a trade mark?</h3>
+        <h3 className="h6 mt-5">
+          What is the process for obtaining a trade mark?
+        </h3>
         <p>
           For more information see our&nbsp;
           <Link href="/trade-mark-process-flowcharts">
@@ -578,7 +586,7 @@ export default function Faqs() {
           </Link>
           .
         </p>
-        <h3 class="h6 mt-5">
+        <h3 className="h6 mt-5">
           Why should I go to Baxter IP for trade mark services?
         </h3>
         <p>

@@ -296,7 +296,7 @@ export default function DomainNamesAndTradeMarks() {
                     href="http://www.factoryseconds.com.au/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="broken_link">
+                    className="broken_link">
                     factoryseconds.com.au
                   </Link>
                   &gt;];

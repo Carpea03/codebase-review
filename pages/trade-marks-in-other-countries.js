@@ -273,7 +273,7 @@ export default function TradeMarkInOtherCountries() {
         (Singapore, Cambodia, Laos, Vietnam, Philippines and Thailand).
       </p>
       <h2
-        class="h5"
+        className="h5"
         id="china">
         Trade marks in China
       </h2>

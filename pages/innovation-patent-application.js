@@ -207,7 +207,7 @@ export default function InnovationPatentApplication() {
             height="270"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png"
             alt="Innovation Patent Procedure (for desktop)"
-            class="wp-image-28584"
+            className="wp-image-28584"
             srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-300x79.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-768x202.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1536x405.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-2048x539.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-210x55.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-100x26.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
