@@ -1,33 +1,20 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../components/layout'
 
-export default function 专利检索() {
+export default function TradeMarkAcceptance() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>
+          Acceptance of a trade mark application | Baxter IP Sydney & Melbourne
+        </title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="The acceptance of a trade mark application occurs when an application has successfully overcome any issues raised during the examination phase."
         />
-        <link rel="canonical" href="/zh/专利检索" />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hreflang="en-us"
-        />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hreflang="zh"
-        />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
-        />
+        <link rel="canonical" href="/trade-mark-acceptance" />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
@@ -57,9 +44,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/我们的服务"
+                href="/services"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                我们的服务
+                Services
               </Link>
             </div>
           </li>
@@ -76,9 +63,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/专利"
+                href="/trade-marks"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                专利
+                Trade marks
               </Link>
             </div>
           </li>
@@ -95,9 +82,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/如何申请专利"
+                href="/how-to-trade-mark"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                如何申请专利
+                How to trade mark
               </Link>
             </div>
           </li>
@@ -114,49 +101,90 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                Trade mark acceptance
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>Acceptance of a trade mark application</h1>
+      <h2>What happens once a mark is accepted?</h2>
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        If an adverse Examination Report is not issued in relation to an
+        application, or if the Applicant has successfully overcome any issues
+        raised during <Link href="/trade-mark-examination">examination</Link>,
+        the mark will be accepted for registration.
       </p>
-      <h2>全球新颖的专利检索</h2>
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
+        Once the mark is accepted, it will be advertised in the Australian
+        Official Journal of Trade Marks for a two-month period which allows any
+        third party to{' '}
+        <Link href="/trade-mark-opposition">oppose registration</Link>. If the
+        application is not opposed during this period, or if an extension of
+        time to file an opposition has not been requested, the mark will be
+        registered.
+      </p>
+      <h2>Deferment of acceptance of a trade mark</h2>
+      <p>
+        Trade mark acceptance may be deferred when a written request is
+        submitted by the applicant in order to address an objection raised in an
+        adverse examination report issued by{' '}
         <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
-        </Link>
+          href="https://www.ipaustralia.gov.au/"
+          target="_blank"
+          rel="noopener noreferrer">
+          IP Australia
+        </Link>{' '}
+        during formal examination. An objection may arise due to a conflict with
+        a previously registered or applied for trade mark under section 44 or
+        reg 4.15A.
       </p>
-      <h2>可自由运营专利检索</h2>
+      <p>Deferment can be requested on the following basis:</p>
+      <ul>
+        <li>the trade mark(s) in conflict are still pending;</li>
+        <li>
+          the conflicting registration(s) has been challenged and is undergoing
+          non-use removal or cancellation proceedings;
+        </li>
+        <li>
+          the cited trade mark(s) has a registration status of &ldquo;expired
+          &ndash; renewal possible&rdquo;
+        </li>
+        <li>the conflicting trade marks have pending court action</li>
+        <li>
+          the applicant aims to establish prior use or honest, concurrent use or
+          obtain a letter of consent from the owner of the conflicting trade
+          mark
+        </li>
+      </ul>
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
-        <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
+        A Request for Deferment of Acceptance may be requested at any time
+        within 15 months from the first adverse report date. If the request is
+        entered close to the acceptance deadline, it may also be necessary that
+        the Applicant enter an extension of time for the deferment request to be
+        considered before the application lapses. Deferment may be granted at
+        the Registrar&apos;s own discretion.
       </p>
-      <h2>澳大利亚专利检索</h2>
       <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
-        </Link>
+        The end of the deferment period will depend on the circumstances in
+        which the deferment was requested. Possible scenarios on when the
+        deferment will end include:
       </p>
-      <h2>其他专利检索</h2>
+      <ul>
+        <li>The conflicting application/registration has been withdrawn</li>
+        <li>
+          The Registrar is satisfied the ground for rejection no longer exists
+        </li>
+        <li>
+          Proceedings described above have ended and the conflicting mark(s) has
+          been removed or renewed.
+        </li>
+      </ul>
       <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        For deferment granted on the basis of prior use, honest concurrent use
+        and other circumstances, deferment will end after a period of six
+        months. The new acceptance date will be calculated based on the end date
+        of the deferment.
       </p>
     </Layout>
   )

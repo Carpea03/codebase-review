@@ -8,16 +8,14 @@ export default function AustralianRegisteredDesign() {
     <Layout>
       <Head>
         <title>
-          Australian Registered Design | Baxter IP, Patent & Trade Mark Attorneys
+          Australian Registered Design | Baxter IP, Patent & Trade Mark
+          Attorneys
         </title>
         <meta
           name="description"
           content="Australian registered designs provide intellectual property protection for the aesthetics, shape and overall design of new products."
         />
-        <link
-          rel="canonical"
-          href="/global/australian-registered-designs"
-        />
+        <link rel="canonical" href="/global/australian-registered-designs" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-registered-designs"
@@ -34,9 +32,7 @@ export default function AustralianRegisteredDesign() {
           href="https://www.baxterip.com.au/registered-designs"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -72,13 +68,50 @@ export default function AustralianRegisteredDesign() {
       </nav>
       <h1>Australian Registered Design</h1>
       <h2>Minimum registered design filing requirements:</h2>
-      <ul><li>A set of representations (may be photographs) showing clear views of the article (e.g. may include perspective, side, top plan and bottom plan views).</li><li>A name of the product shown in the representations</li><li>Name and address of the applicant</li><li>Identification of the scope of monopoly claimed</li></ul>
-      <h2>Additional filing requirements for filing an Australian registered design:</h2>
-      <ul><li>Name of the author and devolution of title to the applicant</li><li>Details of convention priority if applicable (application number, title, country). A certified copy of the priority document is required along with a verified English translation (if relevant) prior to registration.</li><li>A statement of newness and distinctiveness (optional) describing the important visual features of the design which are new and distinctive.</li><li>Appointment of Agent if requested</li></ul>
+      <ul>
+        <li>
+          A set of representations (may be photographs) showing clear views of
+          the article (e.g. may include perspective, side, top plan and bottom
+          plan views).
+        </li>
+        <li>A name of the product shown in the representations</li>
+        <li>Name and address of the applicant</li>
+        <li>Identification of the scope of monopoly claimed</li>
+      </ul>
+      <h2>
+        Additional filing requirements for filing an Australian registered
+        design:
+      </h2>
+      <ul>
+        <li>Name of the author and devolution of title to the applicant</li>
+        <li>
+          Details of convention priority if applicable (application number,
+          title, country). A certified copy of the priority document is required
+          along with a verified English translation (if relevant) prior to
+          registration.
+        </li>
+        <li>
+          A statement of newness and distinctiveness (optional) describing the
+          important visual features of the design which are new and distinctive.
+        </li>
+        <li>Appointment of Agent if requested</li>
+      </ul>
       <h2>Examination</h2>
-      <p>An Australian registered design application undergoes a formalities examination and then proceeds to grant. Substantive examination is part of an optional, post-grant certification procedure that can be requested at any time during the life of the registered design. A registered design must be certified before an infringement action may be commenced. A third party can request certification of a registered design but must share the associated government fees if it does.</p>
+      <p>
+        An Australian registered design application undergoes a formalities
+        examination and then proceeds to grant. Substantive examination is part
+        of an optional, post-grant certification procedure that can be requested
+        at any time during the life of the registered design. A registered
+        design must be certified before an infringement action may be commenced.
+        A third party can request certification of a registered design but must
+        share the associated government fees if it does.
+      </p>
       <h2>Renewals</h2>
-      <p>The initial period of registration for the Australian registered design lasts five years from the filing date and can be extended once to a maximum term of 10 years.</p>
+      <p>
+        The initial period of registration for the Australian registered design
+        lasts five years from the filing date and can be extended once to a
+        maximum term of 10 years.
+      </p>
     </Layout>
-    );
+  )
 }

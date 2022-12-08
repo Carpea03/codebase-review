@@ -1,7 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
 import Layout from '../../components/layout'
-import Image from 'next/future/image'
+import Link from 'next/link'
 import StaffChris from '../../components/staff/chris'
 import StaffMartin from '../../components/staff/martin'
 import StaffMike from '../../components/staff/mike'
@@ -441,8 +440,7 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2018247335"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018247335"
-              legacyBehavior>
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018247335">
               <i>AU Patent #2018247335</i>
             </Link>
             &nbsp;–&nbsp;
@@ -455,8 +453,7 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2019901171"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019901171"
-              legacyBehavior>
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019901171">
               <i>AU Patent #2019901171</i>
             </Link>
             &nbsp;–&nbsp;
@@ -466,8 +463,7 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2019200184"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200184"
-              legacyBehavior>
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200184">
               <i>AU Patent #2019200184</i>
             </Link>
             &nbsp;–&nbsp;
@@ -479,8 +475,7 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2019200174"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200174"
-              legacyBehavior>
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200174">
               <i>AU Patent #2019200174</i>
             </Link>
             &nbsp;–&nbsp;
@@ -490,8 +485,7 @@ export default function ConstructionPatents() {
           <li>
             <Link
               title="AU Patent #2018274977"
-              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018274977"
-              legacyBehavior>
+              href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018274977">
               <i>AU Patent #2018274977</i>
             </Link>
             &nbsp;–&nbsp;
@@ -1283,8 +1277,7 @@ export default function ConstructionPatents() {
             <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
               <Link
                 href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-                legacyBehavior>
+                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
                   src="logo-slingshot-haulage.png"
@@ -1296,8 +1289,7 @@ export default function ConstructionPatents() {
               </Link>
               <Link
                 href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-                legacyBehavior>
+                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
                   src="logo-wombat-timbers.png"
@@ -1312,5 +1304,5 @@ export default function ConstructionPatents() {
         </section>
       </div>
     </Layout>
-  );
+  )
 }

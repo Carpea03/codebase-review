@@ -1,33 +1,18 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../components/layout'
 
-export default function 专利检索() {
+export default function HashtagsAndTradeMarks() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>Hashtags and trade marks | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="Hashtags may perform a similar function as trade marks but do not offer the same protection."
         />
-        <link rel="canonical" href="/zh/专利检索" />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hreflang="en-us"
-        />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hreflang="zh"
-        />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
-        />
+        <link rel="canonical" href="/hashtags-and-trade-marks" />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
@@ -57,9 +42,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/我们的服务"
+                href="/services"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                我们的服务
+                Services
               </Link>
             </div>
           </li>
@@ -76,9 +61,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/专利"
+                href="/trade-marks"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                专利
+                Trade marks
               </Link>
             </div>
           </li>
@@ -95,9 +80,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/如何申请专利"
+                href="/how-to-trade-mark"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                如何申请专利
+                How to trade mark
               </Link>
             </div>
           </li>
@@ -114,49 +99,62 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                Hashtags and trade marks
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>Hashtags and trade marks</h1>
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        Australian e-commerce has grown by 22% in 2018, and the number of people
+        relying on testimonials from social media influencers before availing of
+        a particular good or service is currently on the rise. One powerful tool
+        in influencer marketing is the use of hashtags on social media posts as
+        part of a companies&apos; marketing campaigns.
       </p>
-      <h2>全球新颖的专利检索</h2>
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
+        A hashtag is a word or phrase following a hash sign (#, also referred to
+        as the pound sign). The hash tag may be used across most social media
+        platforms, such as Facebook, Twitter and Linkedin, and the string of
+        characters following the # sign can direct online traffic toward a
+        certain product or service. Influencer marketing and the growing
+        reliance of consumers on people&apos;s actual experiences instead of
+        traditional advertising before availing of a certain product or service
+        have underlined the potential issue of trade mark infringement using
+        hashtags.
+      </p>
+      <h2>Registering a hashtag trade mark and infringement</h2>
+      <p>
+        A recent update to the{' '}
         <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
+          href="http://manuals.ipaustralia.gov.au/trademarks/trade_marks_examiners_manual.htm"
+          target="_blank"
+          rel="noopener noreferrer">
+          Australian Trade Marks Office Manual of Practice and Procedure
+        </Link>{' '}
+        included a discussion on hashtags and their registrability. Rules as to
+        whether a hashtag can be used to commit{' '}
+        <Link href="/trade-mark-infringement">trade mark infringement</Link> is
+        analogous to previous issues with{' '}
+        <Link href="/domain-names-and-trade-marks">
+          domain names and trade marks
         </Link>
+        . Hashtag trade marks perform the same function as trade marks, that is,
+        distinguishing the{' '}
+        <Link href="/classes-of-goods-and-services">goods and services</Link>{' '}
+        from those of the competition and serving as a badge of origin in
+        relation to the goods and services. Infringement is qualified as the
+        unauthorised use of hashtags as a trade mark for the aforementioned
+        purpose.
       </p>
-      <h2>可自由运营专利检索</h2>
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
-        <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
-      </p>
-      <h2>澳大利亚专利检索</h2>
-      <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
-        </Link>
-      </p>
-      <h2>其他专利检索</h2>
-      <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        Thus, if the text following the hash sign is already registered, then an
+        actual hashtag trade mark may be unnecessary. However, a hashtag
+        marketing campaign should be carefully considered in order to avoid
+        infringing on a competitor&apos;s prior rights. There are currently no
+        existing trade mark infringement cases involving hashtags, but the issue
+        may expand similarly to domain name disputes.
       </p>
     </Layout>
   )

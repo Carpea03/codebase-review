@@ -74,7 +74,7 @@ export default function About() {
           mark attorney counsel;
         </li>
         <li>
-          that is experienced in the patent end game – negotiation, licensing
+          that is experienced in the patent end game &ndash; negotiation, licensing
           and enforcement; and
         </li>
         <li>
@@ -100,15 +100,16 @@ export default function About() {
           <Link href="https://www.baxterip.com.au/types-of-trade-marks">
             type of trade marks
           </Link>{' '}
-          to file based on the learning arising from the team’s voluminous track
+          to file based on the learning arising from the team&apos;s voluminous track
           record of trade mark experience
         </li>
         <li>Is highly responsive and transparent on pricing</li>
       </ol>
       <h2>Baxter IP identifies, protects and grows your IP</h2>
       <p>
-        With offices in <Link href="https://www.baxterip.com.au/sydney">Sydney</Link>{' '}
-        and <Link href="https://www.baxterip.com.au/melbourne">Melbourne</Link>, we
+        With offices in{' '}
+        <Link href="https://www.baxterip.com.au/sydney">Sydney</Link> and{' '}
+        <Link href="https://www.baxterip.com.au/melbourne">Melbourne</Link>, we
         are a mid-sized firm that offers the combined resources of a close-knit
         network of highly experienced{' '}
         <Link href="https://www.baxterip.com.au/ip-attorney">
@@ -126,7 +127,7 @@ export default function About() {
         <Link href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents">
           pharmaceuticals
         </Link>{' '}
-        IP and trade marks, who are poised to protect what’s yours.
+        IP and trade marks, who are poised to protect what&apos;s yours.
       </p>
       <p>
         Our 2000+ strong client base ranges from a number of well-known
@@ -142,8 +143,8 @@ export default function About() {
       </p>
       <p>
         Uniquely, qualifying clients can access our{' '}
-        <Link href="https://www.baxterip.com.au/capital-partners">capital</Link> and
-        commercialisation partners to assist them with raising capital or in
+        <Link href="https://www.baxterip.com.au/capital-partners">capital</Link>{' '}
+        and commercialisation partners to assist them with raising capital or in
         taking steps involved in commercialising their intellectual property.
       </p>
       <h3>Most awarded mid-sized patent &amp; trade mark firm in Australia</h3>

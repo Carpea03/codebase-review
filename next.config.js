@@ -4,6 +4,7 @@ module.exports = {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
       { hostname: 'source.unsplash.com' },
+      { hostname: 'www.baxterip.com.au' },
     ],
   },
 }

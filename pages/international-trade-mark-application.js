@@ -1,33 +1,20 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../components/layout'
 
-export default function 专利检索() {
+export default function InternationalTradeMarkApplication() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>
+          Applying for international trade marks | Baxter IP Sydney & Melbourne
+        </title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="International trade mark applications can be filed by either filing in each country of interest or through the Madrid Protocol."
         />
-        <link rel="canonical" href="/zh/专利检索" />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hreflang="en-us"
-        />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hreflang="zh"
-        />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
-        />
+        <link rel="canonical" href="/international-trade-mark-application" />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
@@ -57,9 +44,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/我们的服务"
+                href="/services"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                我们的服务
+                Services
               </Link>
             </div>
           </li>
@@ -76,9 +63,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/专利"
+                href="/trade-marks"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                专利
+                Trade marks
               </Link>
             </div>
           </li>
@@ -95,9 +82,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/如何申请专利"
+                href="/how-to-trade-mark"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                如何申请专利
+                How to trade mark
               </Link>
             </div>
           </li>
@@ -114,49 +101,74 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                International trade mark application
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>Applying for an international trade mark</h1>
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        In order to protect your brand in other countries you have two main
+        options:
       </p>
-      <h2>全球新颖的专利检索</h2>
+      <ol>
+        <li>File a trade mark application in each country of interest</li>
+        <li>
+          File a Madrid Protocol international trade mark application through
+          the <Link href="/madrid-system">Madrid System</Link>
+        </li>
+      </ol>
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
-        <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
+        In order for the filing that you make to retain the original filing date
+        of your{' '}
+        <Link title="Australian Trademarks" href="/trade-mark-application">
+          Australian trade mark application
         </Link>
+        , the filing(s) whether via path 1 or 2 above must be made within 6
+        months of the original filing date of your Australian trade mark
+        application.
       </p>
-      <h2>可自由运营专利检索</h2>
+      <h2>Madrid Protocol international trade mark application</h2>
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
+        A <Link href="/madrid-system">Madrid Protocol</Link> international trade
+        mark application is a simpler and less expensive way of seeking trade
+        mark protection overseas. Trade mark application through the Madrid
+        Protocol offers and presents several advantages, such as:
+      </p>
+      <ul>
+        <li>Only a single international trade mark application is required</li>
+        <li>It is in one language</li>
+        <li>It is filed through the Trade Marks Office of the home country</li>
+        <li>
+          Protection can be sought in one, some or all of the member countries
+        </li>
+        <li>Updates of ownership and renewals can be handled centrally</li>
+      </ul>
+      <h2>
+        Direct trade marks vs. Madrid Protocol international trade mark
+        application
+      </h2>
+      <p>
+        There are some circumstances where filing a trade mark application
+        directly in countries of interest may be a better option than filing a
+        Madrid Protocol international trade mark application. Therefore, it is
+        important to obtain the advice of a{' '}
         <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
+          title="Patent Attorneys Sydney &amp; Melbourne"
+          href="/trade-mark-attorney">
+          trade mark attorney
+        </Link>{' '}
+        prior to seeking international trade mark protection.
       </p>
-      <h2>澳大利亚专利检索</h2>
+      <h2>About to file an international trade mark application?</h2>
       <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
+        If you would like advice on how to protect your brand whether in
+        Australia or internationally, please send us a{' '}
+        <Link title="Talk to an expert about your IP now" href="/contact">
+          message
         </Link>
-      </p>
-      <h2>其他专利检索</h2>
-      <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        .
       </p>
     </Layout>
   )

@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
@@ -7,17 +6,12 @@ export default function 专利代理人() {
   return (
     <Layout>
       <Head>
-        <title>
-          专利代理人|悉尼和墨尔本|Baxter IP
-        </title>
+        <title>专利代理人|悉尼和墨尔本 | Baxter IP</title>
         <meta
           name="description"
-          content="悉尼专利律师或墨尔本的专利律师将与您根据技术专长来帮助你的文件在你的领域专利相匹配。"
+          content="Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
         />
-        <link
-          rel="canonical"
-          href="/zh/专利代理人"
-        />
+        <link rel="canonical" href="/zh/专利代理人" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA"
@@ -29,21 +23,19 @@ export default function 专利代理人() {
           href="https://www.baxterip.com.au/patent-attorney"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
+            <Link href="/zh">
+              <div className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <svg
+                  className="w-4 h-4 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+              </div>
             </Link>
           </li>
           <li aria-current="page">
@@ -81,11 +73,11 @@ export default function 专利代理人() {
         </li>
         <li>
           您的专利代理人将能够根据专利设计的逻辑变化扩展您的
-          <a
+          <Link
             title="提交临时专利申请"
             href="https://www.baxterip.com.au/zh/临时专利">
             专利申请
-          </a>
+          </Link>
           范围。
         </li>
         <li>我们的专利代理人事务所能会为您提供行业内的商业建议或联系人。</li>
@@ -100,13 +92,13 @@ export default function 专利代理人() {
         <li>
           我们是一支成功的团队：从2015年的IT专利代理人服务知识产权奖到IP
           Luminary Awards和大学奖章再到企业家的
-          <a
+          <Link
             title="Anthill 奖30岁以下年龄阶段荣誉奖"
             href="http://anthillonline.com/chris-baxter-2011-anthill-30under30-honourable-mention/"
             target="_blank"
             rel="noopener noreferrer">
             Anthill奖
-          </a>
+          </Link>
           。
         </li>
         <li>

@@ -1,33 +1,20 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../components/layout'
 
-export default function 专利检索() {
+export default function MadridProtocolApplication() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>
+          Publication of your trade mark details | Baxter IP Sydney & Melbourne
+        </title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="After acceptance of the trade mark, the trade mark details are made available to the public in the Register of Trade Marks."
         />
-        <link rel="canonical" href="/zh/专利检索" />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hreflang="en-us"
-        />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hreflang="zh"
-        />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
-        />
+        <link rel="canonical" href="/publication-of-trade-mark-details" />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
@@ -57,9 +44,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/我们的服务"
+                href="/services"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                我们的服务
+                Services
               </Link>
             </div>
           </li>
@@ -76,9 +63,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/专利"
+                href="/trade-marks"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                专利
+                Trade marks
               </Link>
             </div>
           </li>
@@ -95,9 +82,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/如何申请专利"
+                href="/how-to-trade-mark"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                如何申请专利
+                How to trade mark
               </Link>
             </div>
           </li>
@@ -114,49 +101,81 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                Trade mark publication
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>Publication of trade mark details</h1>
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        When applying for{' '}
+        <Link href="/trade-mark-application">trade mark registration</Link>, you
+        are required to provide information that will be made available to the
+        public on publication of your trade mark details. Therefore, it is
+        important to consider what the strategic implications may be of the
+        disclosure of, for example:
       </p>
-      <h2>全球新颖的专利检索</h2>
+      <ul>
+        <li>
+          future{' '}
+          <Link href="/classes-of-goods-and-services">goods or services</Link>{' '}
+          you are planning to launch as stated in the Statement of
+          Goods/Services;
+        </li>
+        <li>
+          new <Link href="/choosing-a-brand-name">branding</Link> before that
+          branding is launched; and
+        </li>
+        <li>
+          shape trade marks showing{' '}
+          <Link href="/types-of-trade-marks">elements of future designs</Link>.
+        </li>
+      </ul>
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
-        <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
-        </Link>
+        It is possible to request that the Registrar keep certain information
+        confidential. Specifically, the following information that might be
+        disclosed in:
       </p>
-      <h2>可自由运营专利检索</h2>
+      <ul>
+        <li>
+          <Link href="/preparing-evidence-of-use-report">evidence of use</Link>,
+          or intention to use, a trade mark;
+        </li>
+        <li>
+          declarations regarding the reasons for expedited{' '}
+          <Link href="/trade-mark-examination">examination</Link> or various
+          other reasons for requests for time extensions; or
+        </li>
+        <li>
+          documents filed in relation to{' '}
+          <Link href="/trade-mark-opposition">opposition</Link> matters (but not
+          the notice of opposition itself).
+        </li>
+      </ul>
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
-        <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
+        Other information is made available to the public, and the Registrar
+        will not allow for that information to be kept confidential. These
+        information includes:
       </p>
-      <h2>澳大利亚专利检索</h2>
+      <ul>
+        <li>responses to examination reports;</li>
+        <li>contact details (name and addresses) of trade mark applicants;</li>
+        <li>
+          names and businesses of declarants, including their position, length
+          of tenure in the company or organisation, business address and their
+          signatures;
+        </li>
+        <li>information regarding witnesses to a declaration;</li>
+        <li>publicly known marketing collateral and activities; and</li>
+        <li>
+          length of time of use of the trade mark to represent the corresponding
+          goods and/or services.
+        </li>
+      </ul>
       <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
-        </Link>
-      </p>
-      <h2>其他专利检索</h2>
-      <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        Essentially, for information to be considered confidential, it must be
+        of sufficient significance and be inherently confidential.
       </p>
     </Layout>
   )

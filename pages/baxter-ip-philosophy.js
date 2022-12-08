@@ -4,24 +4,20 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 
 export default function BaxterIpPhilosophy() {
-    return (
-        <Layout>
+  return (
+    <Layout>
       <Head>
         <title>
-          Dedicated & supportive, transparent and commercial | The Baxter IP philosophy
+          Dedicated & supportive, transparent and commercial | The Baxter IP
+          philosophy
         </title>
         <meta
           name="description"
           content="Baxter IP's philosophy is built on dedication & support, transparency and commerciality. We promise to provide you with clear, commercially astute IP advice."
         />
-        <link
-          rel="canonical"
-          href="/baxter-ip-philosophy"
-        />
+        <link rel="canonical" href="/baxter-ip-philosophy" />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -77,61 +73,63 @@ export default function BaxterIpPhilosophy() {
       <h1>The Baxter IP philosophy</h1>
       <h2>Our heritage, our legacy, our promise to you</h2>
       <blockquote>
-        Upholding the highest standard of business ethics and ensuring our advice
-        always serves the best interests of our clients. This is our guiding
-        principle and our legacy.
+        Upholding the highest standard of business ethics and ensuring our
+        advice always serves the best interests of our clients. This is our
+        guiding principle and our legacy.
       </blockquote>
-      <cite>– Dr John Baxter, Senior Commercial Counsel</cite>
+      <cite>&ndash; Dr John Baxter, Senior Commercial Counsel</cite>
       <p>
         We are passionate about providing intellectual property and advice that
-        genuinely helps clients achieve their commercial goals and as such,
-        here is{' '}
-        <Link
-          href="https://www.baxterip.com.au/about">
-          our firm
-        </Link>‘s commitment to you:
+        genuinely helps clients achieve their commercial goals and as such, here
+        is <Link href="/about">our firm</Link>&apos;s commitment to you:
       </p>
       <ol>
+        <li>Your best interests are always at the forefront of our minds.</li>
         <li>
-          Your best interests are always at the forefront of our minds.
+          We operate at the highest standard of professional ethics and personal
+          integrity.
         </li>
         <li>
-          We operate at the highest standard of professional ethics and personal integrity.
+          The confidentiality of the information you provide to us will be
+          protected as a matter of course &ndash; our IP firm takes pride in our
+          spotless record of trust, intact since our inception in 2007.
         </li>
         <li>
-          The confidentiality of the information you provide to us will be protected as a matter of course – our IP firm takes pride in our spotless record of trust, intact since our inception in 2007.
+          We regularly communicate with clients about intellectual property
+          processes, possible outcomes and IP costs in an upfront and honest
+          manner.
         </li>
         <li>
-          We regularly communicate with clients about intellectual property processes, possible outcomes and IP costs in an upfront and honest manner.
+          We communicate in plain English to ensure that you understand relevant
+          intellectual property law.
         </li>
         <li>
-          We communicate in plain English to ensure that you understand relevant intellectual property law.
+          Your matter will be handled efficiently and conscientiously to ensure
+          that our work is not only of the highest quality but is completed
+          without delay.
         </li>
         <li>
-          Your matter will be handled efficiently and conscientiously to ensure that our work is not only of the highest quality but is completed without delay.
+          We look for opportunities to help clients to profit from their
+          intellectual property &ndash; often introducing clients to
+          professional service providers who can assist them.
         </li>
         <li>
-          We look for opportunities to help clients to profit from their intellectual property – often introducing clients to professional service providers who can assist them.
+          We provide fixed-cost and capped-fee IP attorney services where
+          possible to assist you with budgeting.
         </li>
         <li>
-          We provide fixed-cost and capped-fee IP attorney services where possible to assist you with budgeting.
+          Our patent firm&apos;s intellectual property work will always be
+          undertaken efficiently so as to provide you with the best possible
+          value for money.
         </li>
         <li>
-          Our patent firm’s intellectual property work will always be undertaken efficiently so as to provide you with the best possible value for money.
-        </li>
-        <li>
-          We walk in our client’s shoes – we know what it is like because many of{' '}
-          <Link
-            href="https://www.baxterip.com.au/ip-attorney">
-            our IP attorneys
-          </Link>{' '}
-          have worked in-house at research &amp; development firms.
+          We walk in our client&apos;s shoes &ndash; we know what it is like
+          because many of <Link href="/ip-attorney">our IP attorneys</Link> have
+          worked in-house at research &amp; development firms.
         </li>
       </ol>
-      <blockquote>
-        We promise you commercially astute IP advice
-      </blockquote>
-      <cite>– Michael Manak, General Manager</cite>
+      <blockquote>We promise you commercially astute IP advice</blockquote>
+      <cite>&ndash; Michael Manak, General Manager</cite>
     </Layout>
-    )
+  )
 }

@@ -1,12 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
+import LayoutWide from '../components/layout-wide'
 import Link from 'next/link'
-// import LayoutWide from '../components/layout-wide'
-import Layout from '../components/layout'
 
 export default function Contact() {
   return (
-    <Layout>
+    <LayoutWide>
       <Head>
         <title>
           Other Australian enquiries | Baxter IP, Patent & Trade Mark Attorneys
@@ -195,6 +194,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </Layout>
+    </LayoutWide>
   )
 }

@@ -1,8 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
 import CardCta from '../components/blocks/card-cta'
 import FeatureListCta from '../components/blocks/feature-list-cta'
 import LayoutWide from '../components/layout-wide'
+import Link from 'next/link'
 import TeamPatent from '../components/team-patent'
 
 export default function Designs() {
@@ -15,7 +14,7 @@ export default function Designs() {
               Protect your valuable design
             </h1>
             <p className="mb-8 font-light text-gray-400 sm:text-xl">
-              Your product’s unique aesthetic makes it more desirable in-market
+              Your product&apos;s unique aesthetic makes it more desirable in-market
               when compared with competing products. A design registration
               protects your valuable differentiating aesthetics from competitors
               who might want to leverage off your design work to benefit from it
@@ -39,7 +38,7 @@ export default function Designs() {
               <label
                 htmlFor="first-name"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                First Name
+                First name
               </label>
               <input
                 type="text"
@@ -53,7 +52,7 @@ export default function Designs() {
               <label
                 htmlFor="last-name"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Last Name
+                Last name
               </label>
               <input
                 type="text"
@@ -81,7 +80,7 @@ export default function Designs() {
               <label
                 htmlFor="phone-number"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Phone Number
+                Phone number
               </label>
               <input
                 type="number"
@@ -200,5 +199,5 @@ export default function Designs() {
       <CardCta />
       <TeamPatent />
     </LayoutWide>
-    )
+  )
 }

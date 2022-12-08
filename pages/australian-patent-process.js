@@ -8,20 +8,15 @@ export default function AustralianPatentProcess() {
     <Layout>
       <Head>
         <title>
-          Australian patent process | Baxter IP Sydney & Melbourne
+        Australian patent process | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
-          content="The Australian patent process commences at filing and includes examination which, when successful, results in grant of the patent."
+          content="The Australian patent process commences at filing and includes examination which, when successful, results in grant of the patent. Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
         />
-        <link
-          rel="canonical"
-          href="/australian-patent-process"
-        />
+        <link rel="canonical" href="/about" />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -122,12 +117,13 @@ export default function AustralianPatentProcess() {
       </p>
       <p>
         Having spent time and money developing a great idea, you will want to
-        stop others from copying it and competing with you. As it’s cheaper and
-        easier to simply copy a product rather than have to design and invent
-        it, copycats are, typically, able to undercut the price at which you can
-        sell your product. This is because the inventor of a new innovation will
-        need to recoup the investment and research and development costs of the
-        innovation through sales of the commercial product.
+        stop others from copying it and competing with you. As it&apos;s cheaper
+        and easier to simply copy a product rather than have to design and
+        invent it, copycats are, typically, able to undercut the price at which
+        you can sell your product. This is because the inventor of a new
+        innovation will need to recoup the investment and research and
+        development costs of the innovation through sales of the commercial
+        product.
       </p>
       <p>
         The good news is that there is a way to stop this from happening if you
@@ -141,9 +137,9 @@ export default function AustralianPatentProcess() {
         If you do not want to sell the product yourself, once your patent has
         been filed you can licence your invention if you choose to allow others
         to use your invention. This means you could still be paid for your idea
-        even if you don’t want to commercialise it yourself. This payment may
-        take the form of a lump sum payment, royalty fees, a combination of both
-        or another scheme altogether.
+        even if you don&apos;t want to commercialise it yourself. This payment
+        may take the form of a lump sum payment, royalty fees, a combination of
+        both or another scheme altogether.
       </p>
       <p>
         Importantly, it is crucial that you file a patent application before you
@@ -159,11 +155,12 @@ export default function AustralianPatentProcess() {
         you choose and therefore obtaining a patent on your invention is a long
         term investment in your idea. Depending on your invention you could get
         a granted patent within 6 months but the process typically takes between
-        1 – 3 years before a patent office can undertake a full review of your
-        application and the various processes completed. Your patent attorney
-        can also match the application timelines with your commercial timelines
-        to ensure you are taking the most appropriate commercial pathway. The
-        best thing you can do is obtain expert advice as soon as possible.
+        1 &ndash; 3 years before a patent office can undertake a full review of
+        your application and the various processes completed. Your patent
+        attorney can also match the application timelines with your commercial
+        timelines to ensure you are taking the most appropriate commercial
+        pathway. The best thing you can do is obtain expert advice as soon as
+        possible.
       </p>
       <p>
         Click through below to learn more about the different stages of the
@@ -192,5 +189,5 @@ export default function AustralianPatentProcess() {
         </li>
       </ul>
     </Layout>
-    );
+  )
 }

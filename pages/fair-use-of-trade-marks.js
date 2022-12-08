@@ -1,33 +1,18 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../components/layout'
 
-export default function 专利检索() {
+export default function FairUseOfTradeMarks() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>Fair use of trade marks | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="The policy on trade mark fair use allows for descriptive fair use or nominative fair use of trade marks without risking infringement."
         />
-        <link rel="canonical" href="/zh/专利检索" />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hreflang="en-us"
-        />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hreflang="zh"
-        />
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
-        />
+        <link rel="canonical" href="/fair-use-of-trade-marks" />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
@@ -57,9 +42,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/我们的服务"
+                href="/services"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                我们的服务
+                Services
               </Link>
             </div>
           </li>
@@ -76,9 +61,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/专利"
+                href="/trade-mark-oppositions-disputes"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                专利
+                Trade mark oppositions & disputes
               </Link>
             </div>
           </li>
@@ -95,9 +80,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/如何申请专利"
+                href="/trade-mark-disputes"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                如何申请专利
+                Trade mark disputes
               </Link>
             </div>
           </li>
@@ -114,49 +99,70 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                Fair use of trade marks
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>Fair use of trade marks</h1>
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        A trade mark serves as a badge of origin of particular{' '}
+        <Link href="/classes-of-goods-and-services">goods and/or services</Link>
+        . One of the benefits of having a registered trade mark is that the
+        owner of the trade mark can enforce their trade mark rights against
+        someone who is using their registered trade mark to sell their similar
+        goods or services. However, certain instances of use of a registered
+        trade mark can be considered &quot;fair use&quot;. This allows a party
+        to legitimately use another person&apos;s trade mark without{' '}
+        <Link href="/trade-mark-infringement">infringing the trade mark</Link>.
       </p>
-      <h2>全球新颖的专利检索</h2>
+      <h2>What is considered fair use?</h2>
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
-        <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
-        </Link>
+        Fair use of trade marks is classified into two parts namely, descriptive
+        fair use and nominative fair use.
       </p>
-      <h2>可自由运营专利检索</h2>
+      <h3>Descriptive fair use</h3>
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
-        <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
+        Descriptive fair use is when someone&apos;s registered trade mark can be
+        used in good faith to describe the user&apos;s products or services.
+        This usually happens when the trade mark in question has a descriptive
+        meaning in addition to its secondary meaning as a trade mark. However,
+        in{' '}
+        <em>Wellness Pty Ltd v Pro Bio Living Waters Pty Ltd [2004] FCA 438</em>
+        , it was held that the use of the term &quot;Living Water&quot; was
+        found to infringe a registered trade mark which was owned by Wellness
+        Pty Ltd. The court found that the use of the words &quot;Living
+        water&quot; by <em>Pro Bio</em> was neither descriptive of the goods nor
+        reasonably necessary for adequate description of the goods. Therefore,
+        the court did not consider Pro Bio&apos;s use of the words &quot;Living
+        water&quot; to constitute fair use.
       </p>
-      <h2>澳大利亚专利检索</h2>
+      <h3>Nominative fair use</h3>
       <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
-        </Link>
+        Nominative fair use is when the use of another&apos;s trade mark to
+        refer to the trade mark owner&apos;s actual goods and services
+        associated with the mark is permitted. Nominative fair use is allowed
+        if:
       </p>
-      <h2>其他专利检索</h2>
+      <ul>
+        <li>
+          the product or service is not identifiable without use of the trade
+          mark;
+        </li>
+        <li>
+          only a portion of the mark that is necessary to identify the product
+          or service is used; and
+        </li>
+        <li>
+          use of the mark does not suggest endorsement by the trade mark owner.
+        </li>
+      </ul>
       <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        One example of nominative fair use is the use of the &quot;Barbie&quot;
+        trade mark in a parody or criticism by a certain photographer. His work
+        would not have been identifiable without the use of the trade mark
+        &quot;Barbie.&quot;
       </p>
     </Layout>
   )
