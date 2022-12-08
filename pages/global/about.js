@@ -14,7 +14,7 @@ export default function About() {
           name="description"
           content="Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
         />
-        <link rel="canonical" href="/global/about" />
+        <link rel="canonical" href="https://www.baxterip.com.au/global/about" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/about"

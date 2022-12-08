@@ -15,7 +15,10 @@ export default function AustralianRegisteredDesign() {
           name="description"
           content="Australian registered designs provide intellectual property protection for the aesthetics, shape and overall design of new products."
         />
-        <link rel="canonical" href="/global/australian-registered-designs" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/global/australian-registered-designs"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-registered-designs"

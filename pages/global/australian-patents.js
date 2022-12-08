@@ -14,7 +14,10 @@ export default function AustralianPatents() {
           name="description"
           content="In Australia, filed patent applications must meet several criteria during the patent process before patent grant is achieved."
         />
-        <link rel="canonical" href="/global/australian-patents" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/global/australian-patents"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-patents"
