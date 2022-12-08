@@ -382,7 +382,7 @@ Create a workflow file `.github/workflows/main.yml` with the following contents:
 ```
 name: Deploy Sanity Studio
 on:
-  pull_request:
+  push:
     branches:
       - main
 defaults:
