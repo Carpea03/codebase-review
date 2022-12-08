@@ -15,7 +15,20 @@ export default function HowToPatent() {
           name="description"
           content="Learn how to patent an idea in Australia and how to get international patent protection with Baxter IP."
         />
-        <link rel="canonical" href="/how-to-patent" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/how-to-patent"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/australian-patents"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7%E4%B8%93%E5%88%A9"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
@@ -64,9 +77,9 @@ export default function HowToPatent() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/trade-marks"
+                href="/patents"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Trade marks
+                Patents
               </Link>
             </div>
           </li>
@@ -188,7 +201,7 @@ export default function HowToPatent() {
       </p>
       <p>
         To answer question C, in Australia, there is very little that is
-        excluded so far as what can be patented. For example, bsp;
+        excluded so far as what can be patented. For example,{' '}
         <Link
           title="Software, Mobile &amp; Apps Patents"
           href="/specialisations/software-patents">

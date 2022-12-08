@@ -14,7 +14,10 @@ export default function PreparingAnEvidenceOfUseReport() {
           name="description"
           content="To counter trade mark opposition against your trade mark, you evidence of use report must address the issues raised by the trade mark examiner."
         />
-        <link rel="canonical" href="/preparing-evidence-of-use-report" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/preparing-evidence-of-use-report"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

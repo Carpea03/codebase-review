@@ -14,7 +14,10 @@ export default function InternationalTradeMarkManagement() {
           name="description"
           content="Manage and renew your international trade mark to maintain protection within the countries included in your international registration."
         />
-        <link rel="canonical" href="/international-trade-mark-management" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/international-trade-mark-management"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

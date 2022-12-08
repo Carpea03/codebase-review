@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Layout from '../../components/layout'
 import Link from 'next/link'
+import Head from 'next/head'
 import StaffChris from '../../components/staff/chris'
 import StaffMartin from '../../components/staff/martin'
 import StaffMike from '../../components/staff/mike'
@@ -16,6 +17,75 @@ const myLoader = ({ src, width, quality }) => {
 export default function ConstructionPatents() {
   return (
     <Layout>
+      <Head>
+        <title>
+          Civil engineering patent | Construction patent | Baxter IP patent
+          attorneys
+        </title>
+        <meta
+          name="description"
+          content="File a patent on civil engineering patents and construction technology. Talk to our expert civil engineering patent attorneys today at Baxter IP."
+        />
+        <link rel="canonical" href="/specialisations/construction-patents" />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E5%9C%9F%E6%9C%A8%E5%B7%A5%E7%A8%8B%E5%92%8C%E5%BB%BA%E7%AD%91%E4%B8%93%E5%88%A9"
+          hreflang="zh"
+        />
+      </Head>
+      <nav className="flex" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+          <li className="inline-flex items-center">
+            <Link
+              href="#"
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              <svg
+                className="w-4 h-4 mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+            </Link>
+          </li>
+          <li>
+            <div className="flex items-center">
+              <svg
+                className="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fillRule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clipRule="evenodd"></path>
+              </svg>
+              <Link
+                href="/specialisations"
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                Patenting in your industry
+              </Link>
+            </div>
+          </li>
+          <li aria-current="page">
+            <div className="flex items-center">
+              <svg
+                className="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fillRule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clipRule="evenodd"></path>
+              </svg>
+              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
+                Civil engineering and construction patents
+              </span>
+            </div>
+          </li>
+        </ol>
+      </nav>
       <div>
         <h1>Civil engineering and construction patents</h1>
         <p>
@@ -26,7 +96,7 @@ export default function ConstructionPatents() {
           Australia, civil engineering ranks among the top 5 industries for
           filing patent applications in 2018.
         </p>
-        <h2>What’s patentable?</h2>
+        <h2>What&apos;s patentable?</h2>
         <p>
           So long as your civil engineering or construction industry technology
           is new and inventive, it should be patentable in any country around
@@ -55,7 +125,6 @@ export default function ConstructionPatents() {
           patent applications
         </h3>
         <table>
-          {/* <table className="table-auto border-separate border-spacing-2 border border-slate-500"> */}
           <tbody>
             <tr>
               <th>Building construction systems</th>
@@ -442,12 +511,11 @@ export default function ConstructionPatents() {
               title="AU Patent #2018247335"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018247335">
               <i>AU Patent #2018247335</i>
-            </Link>
-            &nbsp;–&nbsp;
+            </Link>{' '}
+            &ndash;{' '}
             <strong>
-              Lift shaft assembly and construction and installation
-              thereof.&nbsp;
-            </strong>
+              Lift shaft assembly and construction and installation thereof.
+            </strong>{' '}
             Bowen and Pomeroy Pty Ltd
           </li>
           <li>
@@ -455,9 +523,8 @@ export default function ConstructionPatents() {
               title="AU Patent #2019901171"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019901171">
               <i>AU Patent #2019901171</i>
-            </Link>
-            &nbsp;–&nbsp;
-            <strong>Hole depth measuring, device and system.&nbsp;</strong>
+            </Link>{' '}
+            &ndash; <strong>Hole depth measuring, device and system.</strong>{' '}
             Jedair Compressors Pty Ltd
           </li>
           <li>
@@ -465,11 +532,11 @@ export default function ConstructionPatents() {
               title="AU Patent #2019200184"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200184">
               <i>AU Patent #2019200184</i>
-            </Link>
-            &nbsp;–&nbsp;
+            </Link>{' '}
+            &ndash;{' '}
             <strong>
-              A plumbing attachment to aid in the installation of piping.&nbsp;
-            </strong>
+              A plumbing attachment to aid in the installation of piping.
+            </strong>{' '}
             Nilsson, Fredrik
           </li>
           <li>
@@ -477,9 +544,8 @@ export default function ConstructionPatents() {
               title="AU Patent #2019200174"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2019200174">
               <i>AU Patent #2019200174</i>
-            </Link>
-            &nbsp;–&nbsp;
-            <strong>A system and a method for power generation.&nbsp;</strong>
+            </Link>{' '}
+            &ndash; <strong>A system and a method for power generation.</strong>{' '}
             Hiremath, Rajeev MR
           </li>
           <li>
@@ -487,26 +553,22 @@ export default function ConstructionPatents() {
               title="AU Patent #2018274977"
               href="http://pericles.ipaustralia.gov.au/ols/auspat/applicationDetails.do?applicationNo=2018274977">
               <i>AU Patent #2018274977</i>
-            </Link>
-            &nbsp;–&nbsp;
+            </Link>{' '}
+            &ndash;{' '}
             <strong>
               A system for providing a continuous stream of foamed cement
               product and a mixing and pump apparatus, system and an associated
-              method for providing a stream of foamed cement material.&nbsp;
-            </strong>
+              method for providing a stream of foamed cement material.
+            </strong>{' '}
             Vacrest Pty Ltd
           </li>
         </ol>
       </div>
-      {/* <section className="bg-white dark:bg-gray-900 not-format max-w-2xl"> */}
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 not-format">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Our civil engineering and construction industry experts
           </h2>
-          {/* <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                Tagline
-              </p> */}
         </div>
         <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <StaffChris />
@@ -516,8 +578,6 @@ export default function ConstructionPatents() {
           <StaffNaleesha />
         </div>
       </div>
-      {/* </section> */}
-      {/* <div className="pt-14 mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"> */}
       <div>
         <h2>
           What are the key regions for civil engineering and construction
@@ -533,10 +593,7 @@ export default function ConstructionPatents() {
               What are the key regions for civil engineering and construction
               patents?
             </title>
-            <rect
-              fill="none"
-              height="564.98"
-              width="996.83"></rect>
+            <rect fill="none" height="564.98" width="996.83"></rect>
             <path
               fill="#d6d6d6"
               d="M591.7,331.31l.39-.12.08.64,1.68-.36,1.77.06,1.29.07,1.47-1.59L600,328.5l1.35-1.46.41.81.29,1.86H601l-.18,1.53.38.32-1,.46v1l-.62,1-.06.93-.43.49-6.45-1.17-.82-2.35Z"
@@ -1148,16 +1205,10 @@ export default function ConstructionPatents() {
               fontSize="19.31"
               transform="translate(387.31 290.51)">
               Eu
-              <tspan
-                letterSpacing="-0.02em"
-                y="0"
-                x="22.53">
+              <tspan letterSpacing="-0.02em" y="0" x="22.53">
                 r
               </tspan>
-              <tspan
-                letterSpacing="0em"
-                y="0"
-                x="29.33">
+              <tspan letterSpacing="0em" y="0" x="29.33">
                 ope
               </tspan>
             </text>
@@ -1235,39 +1286,37 @@ export default function ConstructionPatents() {
               cx="729.29"></circle>
           </svg>
         </p>
-        <p>&nbsp;</p>
         <ul>
           <li>
-            <strong>USA</strong>&nbsp;– Largest market in the world that is
+            <strong>USA</strong> &ndash; Largest market in the world that is
             closest to the style of the Australian market, so that improvements
             in building or other infrastructure construction will often
             translate from the Australian market to the US market.
           </li>
           <li>
-            <strong>China</strong>&nbsp;– A large economy continually
+            <strong>China</strong> &ndash; A large economy continually
             undertaking substantial infrastructure projects and quite open to
             innovative construction technology.
           </li>
           <li>
-            <strong>Middle East</strong>&nbsp;– As we can protect 6 countries in
-            a single Gulf Cooperation Council patent application and these
+            <strong>Middle East</strong> &ndash; As we can protect 6 countries
+            in a single Gulf Cooperation Council patent application and these
             countries expend large amounts on infrastructure yet have a
             requirement for high quality and innovative developments.
           </li>
           <li>
-            <strong>Europe</strong>&nbsp;– Over 20 countries can be protected by
-            a single European patent application and this forms the 3rd largest
-            economic region in the world
+            <strong>Europe</strong> &ndash; Over 20 countries can be protected
+            by a single European patent application and this forms the 3rd
+            largest economic region in the world
           </li>
           <li>
-            <strong>Australia</strong>&nbsp;– Particularly if this is your pilot
-            market and the infrastructure is required in fields that are related
-            to commercial projects like mining, education, health, transport and
-            telecommunications.
+            <strong>Australia</strong> &ndash; Particularly if this is your
+            pilot market and the infrastructure is required in fields that are
+            related to commercial projects like mining, education, health,
+            transport and telecommunications.
           </li>
         </ul>
       </div>
-      {/* </div> */}
       <div>
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-xl">

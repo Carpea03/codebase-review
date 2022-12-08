@@ -12,7 +12,10 @@ export default function HashtagsAndTradeMarks() {
           name="description"
           content="Hashtags may perform a similar function as trade marks but do not offer the same protection."
         />
-        <link rel="canonical" href="/hashtags-and-trade-marks" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/hashtags-and-trade-marks"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

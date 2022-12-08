@@ -14,7 +14,15 @@ export default function HowToTradeMark() {
           name="description"
           content="We explain how to protect your Australian trade mark by applying for trade mark registration with the help of a trade mark attorney."
         />
-        <link rel="canonical" href="/how-to-trade-mark" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/how-to-trade-mark"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E5%95%86%E6%A0%87"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

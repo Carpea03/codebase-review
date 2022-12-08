@@ -14,7 +14,10 @@ export default function TradeMarkPreFilingConsiderations() {
           name="description"
           content="Before filing a trade mark application, several considerations must first be addressed. Consult with our trade mark team if you meet these considerations."
         />
-        <link rel="canonical" href="/trade-mark-pre-filing-considerations" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-pre-filing-considerations"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

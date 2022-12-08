@@ -15,7 +15,10 @@ export default function UnregistrableTradeMarks() {
           name="description"
           content="Know whether your trade mark contains signs that cannot be protected as a trade mark. Consult with one of our trade mark attorneys about your brand today."
         />
-        <link rel="canonical" href="/unregistrable-trade-marks" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/unregistrable-trade-marks"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

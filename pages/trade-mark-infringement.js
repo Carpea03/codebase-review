@@ -13,7 +13,20 @@ export default function TradeMarkInfringement() {
           name="description"
           content="Trade mark infringement, the unauthorised use of a registered trade mark, needs to be addressed to avoid dilution of your trade mark."
         />
-        <link rel="canonical" href="/trade-mark-infringement" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-infringement"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/trade-mark-infringement"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E4%BE%B5%E6%9D%83"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

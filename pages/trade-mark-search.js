@@ -12,7 +12,20 @@ export default function TradeMarkSearch() {
           name="description"
           content="A comprehensive trade mark search covering Australian and international databases is necessary to check registrability and clearance."
         />
-        <link rel="canonical" href="/trade-mark-search" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-search"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/trade-mark-search"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E6%90%9C%E7%B4%A2"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

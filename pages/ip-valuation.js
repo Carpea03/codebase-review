@@ -14,7 +14,12 @@ export default function IpValuation() {
           name="description"
           content="Baxter IP can assess the value of your intellectual property and what your patent portfolio is worth using IP asset valuation methodologies."
         />
-        <link rel="canonical" href="/ip-valuation" />
+        <link rel="canonical" href="https://www.baxterip.com.au/ip-valuation" />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BB%B7%E5%80%BC%E8%AF%84%E4%BC%B0"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

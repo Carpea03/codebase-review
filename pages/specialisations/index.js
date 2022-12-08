@@ -1,10 +1,61 @@
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import React from 'react'
+import Head from 'next/head'
 
 export default function index() {
   return (
     <Layout>
+      <Head>
+        <title>Patenting in your industry | Baxter IP Sydney & Melbourne</title>
+        <meta
+          name="description"
+          content="Baxter IP has patent attorneys in Sydney & Melbourne who have specialist expertise in a variety of industries and technology specialisations."
+        />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/specialisations"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F"
+          hreflang="zh"
+        />
+      </Head>
+      <nav className="flex" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+          <li className="inline-flex items-center">
+            <Link
+              href="#"
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              <svg
+                className="w-4 h-4 mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+            </Link>
+          </li>
+          <li aria-current="page">
+            <div className="flex items-center">
+              <svg
+                className="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fillRule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clipRule="evenodd"></path>
+              </svg>
+              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
+                Patenting in your industry
+              </span>
+            </div>
+          </li>
+        </ol>
+      </nav>
       <div>
         <section className="bg-white dark:bg-gray-900 format mx-auto">
           <h1>Our patent attorneys are experts in your industry</h1>
@@ -289,14 +340,14 @@ export default function index() {
             traditional ITSM solutions. Accelerate critical development work,
             eliminate toil, and deploy changes with ease.
           </p>
-          {/* <div className="format mx-auto"> */}
           <h2>
-            Five reasons it’s better working with a patent specialist attorney
+            Five reasons it&apos;s better working with a patent specialist
+            attorney
           </h2>
           <ol>
             <li>
               Your{' '}
-              <Link href="https://www.baxterip.com.au/patent-attorney">
+              <Link href="/patent-attorney">
                 patent industry expert attorney
               </Link>{' '}
               will understand your new idea and its technical and commercial
@@ -323,32 +374,23 @@ export default function index() {
           </ol>
           <p>
             If you work in the fast-evolving{' '}
-            <Link href="https://www.baxterip.com.au/specialisations/fintech-patents">
-              fintech
-            </Link>{' '}
-            or SaaS space, patent protection is necessary to protect the steps
-            you have taken ahead of other players because these gaps can be
-            closed quickly. If you work in developing new chemical processes,
-            compounds and pharmaceutical formulations, there is often an
-            extended development lifecycle before a commercial return can be
-            seen.
+            <Link href="/specialisations/fintech-patents">fintech</Link> or SaaS
+            space, patent protection is necessary to protect the steps you have
+            taken ahead of other players because these gaps can be closed
+            quickly. If you work in developing new chemical processes, compounds
+            and pharmaceutical formulations, there is often an extended
+            development lifecycle before a commercial return can be seen.
           </p>
           <p>
             Often there is a scientific community push for publishing advances
-            to establish a pseudo claim of first to invent – this needs to be
-            resisted until a{' '}
-            <Link href="https://www.baxterip.com.au/provisional-patents">
-              patent application
-            </Link>{' '}
-            has been filed by your{' '}
-            <Link href="https://www.baxterip.com.au/patent-attorney">
-              patent attorney
-            </Link>
-            ; otherwise, publication may adversely affect the ability to obtain
+            to establish a pseudo claim of first to invent &ndash; this needs to
+            be resisted until a{' '}
+            <Link href="/provisional-patents">patent application</Link> has been
+            filed by your <Link href="/patent-attorney">patent attorney</Link>;
+            otherwise, publication may adversely affect the ability to obtain
             adequate and deserved commercial compensation for the substantial
             investment you have made.
           </p>
-          {/* </div> */}
         </section>
       </div>
     </Layout>

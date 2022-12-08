@@ -13,7 +13,10 @@ export default function GroundsForTradeMarkOpposition() {
           name="description"
           content="Avoid the hassle of trade mark opposition by knowing the grounds for opposing a trade mark application that an opponent can rely on."
         />
-        <link rel="canonical" href="/grounds-for-trade-mark-opposition" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/grounds-for-trade-mark-opposition"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

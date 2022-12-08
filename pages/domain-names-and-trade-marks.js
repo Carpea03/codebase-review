@@ -14,7 +14,10 @@ export default function DomainNamesAndTradeMarks() {
           name="description"
           content="Using a domain name can demonstrate first use of a trade mark, but does not guarantee the right to register that name as a trade mark."
         />
-        <link rel="canonical" href="/domain-names-and-trade-marks" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/domain-names-and-trade-marks"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

@@ -15,7 +15,10 @@ export default function FirstToFileVsFirstToUse() {
           name="description"
           content="Knowledge of first to file and first to use rules in different countries is important in timing your international trade mark application."
         />
-        <link rel="canonical" href="/first-to-file-vs-first-to-use" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/first-to-file-vs-first-to-use"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

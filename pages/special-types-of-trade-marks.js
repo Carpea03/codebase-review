@@ -14,7 +14,10 @@ export default function SpecialTypesOfTradeMarks() {
           name="description"
           content="Trade marks can also be classified according to their special functions. Speak to our trade mark team to quickly point you in the best direction."
         />
-        <link rel="canonical" href="/special-types-of-trade-marks" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/special-types-of-trade-marks"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

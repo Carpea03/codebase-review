@@ -14,7 +14,10 @@ export default function TradeMarkRegistrationBenefits() {
           name="description"
           content="Business name, logo and/or trade mark registration provides several advantages to the owner over trade marks that are unregistered."
         />
-        <link rel="canonical" href="/trade-mark-registration-benefits" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-registration-benefits"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

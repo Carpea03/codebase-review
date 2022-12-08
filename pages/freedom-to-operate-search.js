@@ -15,7 +15,20 @@ export default function FreedomToOperatePatentSearch() {
           name="description"
           content="Freedom-to-operate patent search also known as patent infringement search or patent clearance search should be considered before releasing a new product."
         />
-        <link rel="canonical" href="/freedom-to-operate-search" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/freedom-to-operate-search"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/freedom-to-operate-patent-search"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%85%8D%E8%B4%B9%E6%93%8D%E4%BD%9C%E6%90%9C%E7%B4%A2"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

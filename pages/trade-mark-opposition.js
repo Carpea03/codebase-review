@@ -13,7 +13,10 @@ export default function TradeMarkOpposition() {
           name="description"
           content="The trade mark opposition procedure can be undertaken to oppose or challenge the registration of an accepted trade mark application."
         />
-        <link rel="canonical" href="/trade-mark-opposition" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-opposition"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

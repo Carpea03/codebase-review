@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function TradeMarkPreFilingConsiderations() {
+export default function TradeMarkProcessFlowcharts() {
   return (
     <Layout>
       <Head>
@@ -15,7 +15,10 @@ export default function TradeMarkPreFilingConsiderations() {
           name="description"
           content="Flowcharts in this page are for illustrative purposes alone and only indicates some of the steps associated with the relevant trade mark procedures."
         />
-        <link rel="canonical" href="/trade-mark-process-flowcharts" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-process-flowcharts"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

@@ -15,7 +15,20 @@ export default function LivingOurValues() {
           name="description"
           content="Our philosophy of giving back is inspired by Percy Baxter, great grandfather of Chris Baxter and founder of the Percy Baxter Family Charitable Foundation."
         />
-        <link rel="canonical" href="/living-our-values" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/living-our-values"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/living-our-values"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%AE%9E%E7%8E%B0%E6%88%91%E4%BB%AC%E7%9A%84%E4%BB%B7%E5%80%BC%E8%A7%82"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

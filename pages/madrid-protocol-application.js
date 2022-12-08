@@ -12,7 +12,10 @@ export default function MadridProtocolApplication() {
           name="description"
           content="The Madrid Protocol governs the registration and management of trade marks for protection in member states of the Madrid Union."
         />
-        <link rel="canonical" href="/madrid-protocol-application" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/madrid-protocol-application"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

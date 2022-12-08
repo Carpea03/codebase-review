@@ -14,7 +14,10 @@ export default function TradeMarkAcceptance() {
           name="description"
           content="The acceptance of a trade mark application occurs when an application has successfully overcome any issues raised during the examination phase."
         />
-        <link rel="canonical" href="/trade-mark-acceptance" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-acceptance"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

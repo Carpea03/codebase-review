@@ -14,7 +14,15 @@ export default function DesignDisputes() {
           name="description"
           content="A design dispute allows IP Australia to scrutinise evidence that may be unavailable during formalities examination leading to a registered design."
         />
-        <link rel="canonical" href="/design-disputes" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/design-disputes"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E8%AE%BE%E8%AE%A1%E7%BA%A0%E7%BA%B7"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

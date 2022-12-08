@@ -12,7 +12,20 @@ export default function AustralianPatentSearch() {
           name="description"
           content="Australian patent search often takes the form of freedom-to operate search to see whether a company has freedom-to-operate in Australia."
         />
-        <link rel="canonical" href="/australian-patent-search" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/australian-patent-search"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/australian-patent-search"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

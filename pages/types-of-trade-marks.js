@@ -14,7 +14,10 @@ export default function TypesOfTradeMarks() {
           name="description"
           content="There are many types of trade mark used in the market. Consult with one of our trade mark attorneys to quickly point you in the best direction."
         />
-        <link rel="canonical" href="/types-of-trade-marks" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/types-of-trade-marks"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

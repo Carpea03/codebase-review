@@ -14,7 +14,10 @@ export default function TradeMarkAmendment() {
           name="description"
           content="Amendment of your trade mark may be requested at any point in your trade mark's timeline, but only under certain conditions."
         />
-        <link rel="canonical" href="/trade-mark-amendment" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-amendment"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

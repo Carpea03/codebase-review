@@ -14,7 +14,10 @@ export default function TradeMarkEnforcementOptions() {
           name="description"
           content="Effective trade mark enforcement and defence to trade mark infringement is necessary to maintain the value of your intellectual property."
         />
-        <link rel="canonical" href="/trade-mark-enforcement-options" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-enforcement-options"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

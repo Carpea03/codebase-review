@@ -15,7 +15,20 @@ export default function BaxterIpPhilosophy() {
           name="description"
           content="Baxter IP's philosophy is built on dedication & support, transparency and commerciality. We promise to provide you with clear, commercially astute IP advice."
         />
-        <link rel="canonical" href="/baxter-ip-philosophy" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/baxter-ip-philosophy"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/baxter-family-philosophy"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E5%AE%B6%E5%BA%AD%E5%93%B2%E5%AD%A6"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

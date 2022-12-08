@@ -12,7 +12,10 @@ export default function TradeMarkDisputes() {
           name="description"
           content="Trade mark disputes typically arise from a party enforcing their right as a trade mark owner against trade mark infringement."
         />
-        <link rel="canonical" href="/trade-mark-disputes" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-disputes"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

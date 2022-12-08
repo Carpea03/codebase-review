@@ -7,14 +7,15 @@ export default function AustralianPatentProcess() {
   return (
     <Layout>
       <Head>
-        <title>
-        Australian patent process | Baxter IP Sydney & Melbourne
-        </title>
+        <title>Australian patent process | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="The Australian patent process commences at filing and includes examination which, when successful, results in grant of the patent. Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
         />
-        <link rel="canonical" href="/about" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/australian-patent-process"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

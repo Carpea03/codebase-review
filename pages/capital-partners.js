@@ -14,7 +14,15 @@ export default function CapitalPartners() {
           name="description"
           content="Baxter IP is Australia's first patent attorney firm to facilitate capital connections through a capital partners program, whether it be at a Seed or Series-A level."
         />
-        <link rel="canonical" href="/capital-partners" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/capital-partners"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A4%A7%E5%86%99%E4%BC%99%E4%BC%B4"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

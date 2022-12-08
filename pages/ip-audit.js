@@ -14,7 +14,12 @@ export default function IpAudit() {
           name="description"
           content="An IP audit helps a company manage their intangible assets and make informed business decisions."
         />
-        <link rel="canonical" href="/ip-audit" />
+        <link rel="canonical" href="https://www.baxterip.com.au/ip-audit" />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%AE%A1%E6%A0%B8"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

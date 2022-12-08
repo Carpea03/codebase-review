@@ -14,7 +14,20 @@ export default function TradeMarkApplication() {
           name="description"
           content="Applying for a trade mark in Australia and getting your trade mark registered provides benefits compared with common law protection."
         />
-        <link rel="canonical" href="/trade-mark-application" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-application"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/australian-trade-marks"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%95%86%E6%A0%87%E6%B3%A8%E5%86%8C%E7%94%B3%E8%AF%B7"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

@@ -12,7 +12,10 @@ export default function TradeMarkSquatting() {
           name="description"
           content="Trade mark squatting is the act of registering a known trade mark for the purpose of selling the registered mark back to the original trade mark owner."
         />
-        <link rel="canonical" href="/trade-mark-squatting" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/trade-mark-squatting"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

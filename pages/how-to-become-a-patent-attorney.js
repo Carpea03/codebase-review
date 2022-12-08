@@ -12,7 +12,15 @@ export default function HowToBecomeAPatentAttorney() {
           name="description"
           content="Learn how to become a patent attorney in Australia and determine whether your skill set qualifies for an IP career in Baxter IP."
         />
-        <link rel="canonical" href="/how-to-become-a-patent-attorney" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/how-to-become-a-patent-attorney"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

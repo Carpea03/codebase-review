@@ -14,7 +14,15 @@ export default function InternationalTradeMarkApplication() {
           name="description"
           content="International trade mark applications can be filed by either filing in each country of interest or through the Madrid Protocol."
         />
-        <link rel="canonical" href="/international-trade-mark-application" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/international-trade-mark-application"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%9B%BD%E9%99%85%E5%95%86%E6%A0%87%E7%94%B3%E8%AF%B7"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

@@ -12,7 +12,10 @@ export default function FairUseOfTradeMarks() {
           name="description"
           content="The policy on trade mark fair use allows for descriptive fair use or nominative fair use of trade marks without risking infringement."
         />
-        <link rel="canonical" href="/fair-use-of-trade-marks" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/fair-use-of-trade-marks"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

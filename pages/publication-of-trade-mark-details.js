@@ -14,7 +14,10 @@ export default function MadridProtocolApplication() {
           name="description"
           content="After acceptance of the trade mark, the trade mark details are made available to the public in the Register of Trade Marks."
         />
-        <link rel="canonical" href="/publication-of-trade-mark-details" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/publication-of-trade-mark-details"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

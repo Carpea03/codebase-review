@@ -12,7 +12,15 @@ export default function InternationalTypeSearch() {
           name="description"
           content="Conducting an international-type search on provisional patent applications can be used to cost-effectively review the novelty of the patent claims."
         />
-        <link rel="canonical" href="/international-type-search" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/international-type-search"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E6%96%B0%E9%A2%96%E6%80%A7%E6%A3%80%E7%B4%A2"
+          hreflang="zh"
+        />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
