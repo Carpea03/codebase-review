@@ -6,12 +6,15 @@ export default function 专利代理人() {
   return (
     <Layout>
       <Head>
-        <title>专利代理人|悉尼和墨尔本 | Baxter IP</title>
+        <title>专利代理人|悉尼和墨尔本|Baxter IP</title>
         <meta
           name="description"
-          content="Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
+          content="悉尼专利律师或墨尔本的专利律师将与您根据技术专长来帮助你的文件在你的领域专利相匹配。"
         />
-        <link rel="canonical" href="/zh/专利代理人" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/zh/专利代理人"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA"
@@ -63,6 +66,7 @@ export default function 专利代理人() {
         IP知识产权公司在悉尼，墨尔本和布里斯班均设立了一个行业专家专利代理人团队，因此我们可以为您提供具备行业专业背景的专利代理人
         – 这对您意味着什么？
       </p>
+
       <ol>
         <li>您的专利代理人将更快地了解您的新想法及其技术和商业背景</li>
         <li>
