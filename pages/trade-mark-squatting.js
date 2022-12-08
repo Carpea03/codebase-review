@@ -1,22 +1,19 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function AustralianPatentSearch() {
+export default function TradeMarkSquatting() {
   return (
     <Layout>
       <Head>
-        <title>
-          Australian patent search | Baxter IP Sydney & Melbourne
-        </title>
+        <title>Trade mark squatting | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
-          content="Australian patent search often takes the form of freedom-to operate search to see whether a company has freedom-to-operate in Australia."
+          content="Trade mark squatting is the act of registering a known trade mark for the purpose of selling the registered mark back to the original trade mark owner."
         />
         <link
           rel="canonical"
-          href="/australian-patent-search"
+          href="/trade-mark-squatting"
         />
       </Head>
       <nav
@@ -68,9 +65,9 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/patents"
+                href="/trade-marks"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patents
+                Trade marks
               </Link>
             </div>
           </li>
@@ -87,9 +84,9 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/how-to-patent"
+                href="/how-to-trade-mark"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to patent
+                How to trade mark
               </Link>
             </div>
           </li>
@@ -106,9 +103,9 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/patent-search"
+                href="/trade-marks-in-other-countries"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patent search
+                Trade marks in other countries
               </Link>
             </div>
           </li>
@@ -125,50 +122,72 @@ export default function AustralianPatentSearch() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Australian patent search
+                Trade mark squatting
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>Australian patent search</h1>
+      <h1>Trade mark squatting</h1>
       <p>
-        Compared with many other countries, a patent search in Australia is
-        relatively straightforward because IP Australia offers a sophisticated
-        patent database and patent search system to the general public – called
-        AusPat. AusPat covers Australian patent records right back to 1904.
+        Trade mark squatting or bad faith trade mark filing occurs when a party
+        files and registers an original applicant’s trade mark in a country
+        where the trade mark is not yet registered in bad faith.
       </p>
       <p>
-        Australian patent searches can be carried out by patent number, applicant
-        name, inventor name and many other more sophisticated methodologies.
-        Generally speaking, if you need to find a patent or{' '}
-        <Link
-          title="File a Provisional Patent Application"
-          href="https://www.baxterip.com.au/provisional-patents">
-          patent application
-        </Link>{' '}
-        on the basis of a name, it is best to have an{' '}
-        <Link
-          title="Patent Attorneys Sydney &amp; Melbourne"
-          href="https://www.baxterip.com.au/patent-attorney">
-          Australian patent attorney
-        </Link>{' '}
-        carry out your Australian patent search because a few strategies need
-        to be applied to identify the right entity and not miss relevant search
-        results.
+        The original applicant then potentially faces challenges in registering
+        in the other country since the squatting party controls the rights to
+        the trade mark. Squatting parties normally commit bad faith trade mark
+        filing to gain control of the trade mark in a country with the aim of
+        forcing the original applicant to purchase the trade mark back when the
+        original applicant expands their business into that country.
       </p>
       <p>
-        If you are trying to determine whether your new idea is patentable in
-        Australia, ironically, an Australian patent search is probably not going
-        to give you the correct answer. The reason for this is that for a new idea
-        to be patentable, it must be novel in light of all published documents
-        worldwide, and not just in Australia.{' '}
-        <Link
-          title="Worldwide Patent Novelty Search"
-          href="https://www.baxterip.com.au/international-patent-search">
-          For information on worldwide novelty searches, please click here
-        </Link>.
+        Trade mark squatting is a significant issue in countries like{' '}
+        <Link href="/trade-marks-in-other-countries#china">China</Link> as a
+        result of the differences in trade mark laws in different countries.
+        Unlike Australia, China has a{' '}
+        <Link href="/first-to-file-vs-first-to-use">first-to-file</Link> trade
+        mark system, which means that the party who applies for a trade mark
+        first, obtains the rights to the mark. The filer can enforce their
+        rights to the trade mark and potentially sue the original owner in the
+        foreign jurisdiction for{' '}
+        <Link href="/trade-mark-infringement">infringement</Link>. Rights to the
+        trade mark also means that the filer can request for customs officials
+        to seize products manufactured for export by the original applicant that
+        use the trade mark.
+      </p>
+      <h2>How to prevent trade mark squatting</h2>
+      <p>
+        Given the difficulty and costs involved in canceling an application
+        after trade mark squatting has occurred, the best way to avoid any
+        issues is to{' '}
+        <Link href="/trade-marks-in-other-countries">
+          file in all relevant jurisdictions
+        </Link>{' '}
+        as soon as possible, particularly in first-to-file jurisdictions.
+        Ideally, companies should not only file their trade mark registrations
+        in their home country but also{' '}
+        <Link href="/international-trade-mark-application">
+          apply for trade mark registration in key countries
+        </Link>{' '}
+        in which the trade mark will be used, as well as prospective
+        jurisdictions under consideration for future business expansion.
+      </p>
+      <h3>
+        An example of trade mark squatting: Qiaodan Sports &amp; Michael Jordan
+      </h3>
+      <p>
+        Up until 2016, Qiaodan Sports was using a Chinese transliteration of
+        Michael Jordan’s name and a logo similar to that of Nike’s well-known
+        Air Jordan symbol as registered trade marks. They sold jerseys and
+        footwear with the number 23, Jordan’s famous basketball number, and the
+        name “chee-ow dahn,” Jordan’s name in Chinese. Jordan emphasised that
+        the products were intentionally tricking customers into believing the
+        former basketball player was associated with the company. It was ruled
+        that the rights to these trade marks be revoked from Qiaodan Sports to
+        protect Jordan’s name and legacy.
       </p>
     </Layout>
-    );
+  )
 }
