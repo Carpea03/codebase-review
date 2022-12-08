@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import CardCta from '../components/blocks/card-cta'
 import FeatureListCta from '../components/blocks/feature-list-cta'
 import LayoutWide from '../components/layout-wide'
@@ -102,17 +103,17 @@ export default function Designs() {
                 placeholder="Leave a comment..."></textarea>
               <p className="mt-4 text-sm text-gray-500">
                 By submitting this form you agree to our{' '}
-                <a
-                  href="#"
+                <Link
+                  href="/terms"
                   className="text-primary-600 hover:underline dark:text-primary-500">
                   terms and conditions
-                </a>{' '}
+                </Link>{' '}
                 and our{' '}
-                <a
-                  href="#"
+                <Link
+                  href="/privacy"
                   className="text-primary-600 hover:underline dark:text-primary-500">
                   privacy policy
-                </a>{' '}
+                </Link>{' '}
                 which explains how we may collect, use and disclose your
                 personal information including to third parties.
               </p>
@@ -142,11 +143,11 @@ export default function Designs() {
                 Email us for general queries, including marketing and
                 partnership opportunities.
               </p>
-              <a
+              <Link
                 href="mailto:abc@example.com"
                 className="font-semibold text-primary-600 dark:text-primary-500 hover:underline">
                 hello@flowbite.com
-              </a>
+              </Link>
             </div>
             <div>
               <div className="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16">
@@ -185,11 +186,11 @@ export default function Designs() {
                 Email us for general queries, including marketing and
                 partnership opportunities.
               </p>
-              <a
-                href="#"
+              <Link
+                href="/support"
                 className="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-primary-600 border-primary-600 hover:text-white hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800">
                 Support center
-              </a>
+              </Link>
             </div>
           </div>
         </div>
