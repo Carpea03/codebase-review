@@ -21,10 +21,8 @@ export default function CardCta() {
             eliminate toil, and deploy changes with ease.
           </p>
           <div className="grid gap-8 lg:grid-cols-2">
-            <Link
-              href="#"
-              className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <div>
+            <Link href="#">
+              <div className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
                 <svg
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 32 32"
@@ -201,10 +199,8 @@ export default function CardCta() {
                 </svg>
               </div>
             </Link>
-            <Link
-              href="#"
-              className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <div>
+            <Link href="#">
+              <div className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
                 <svg
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 22 31"
@@ -258,10 +254,8 @@ export default function CardCta() {
                 </svg>
               </div>
             </Link>
-            <Link
-              href="#"
-              className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <div>
+            <Link href="#">
+              <div className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
                 <svg
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 26 31"
@@ -329,10 +323,8 @@ export default function CardCta() {
                 </svg>
               </div>
             </Link>
-            <Link
-              href="#"
-              className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
-              <div>
+            <Link href="#">
+              <div className="inline-flex justify-center items-center p-5 text-base font-medium text-gray-500 bg-gray-50 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
                 <svg
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 33 21"
