@@ -204,7 +204,7 @@ export default function Footer() {
               </li> */}
               <li className="mb-4">
                 <Link
-                  href="global/about"
+                  href="/global/about"
                   className=" hover:underline">
                   About (Global)
                 </Link>
