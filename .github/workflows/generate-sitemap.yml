@@ -1,4 +1,4 @@
-name: Deploy Sanity Studio
+name: Generate sitemap and robots.txt 
 on:
   push:
     branches:
