@@ -19,16 +19,16 @@ export default function 专利检索() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-patent-search"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/patent-search"
         />
       </Head>

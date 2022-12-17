@@ -19,10 +19,8 @@ export default function Hero() {
             From checkout to global sales tax compliance, companies around the
             world use Flowbite to simplify their payment stack.
           </p>
-          <Link
-            href="#"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-            <div>
+          <Link href="#">
+            <div className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
               Get started
               <svg
                 className="w-5 h-5 ml-2 -mr-1"

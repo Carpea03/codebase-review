@@ -18,11 +18,11 @@ export default function 专利代理人() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/patent-attorney"
         />
       </Head>
