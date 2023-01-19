@@ -14,7 +14,7 @@ export default function Contact() {
           className="space-y-8">
           <div>
             <label
-              htmlhtmlFor="email"
+              htmlFor="email"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               Your email
             </label>
@@ -28,7 +28,7 @@ export default function Contact() {
           </div>
           <div>
             <label
-              htmlhtmlFor="subject"
+              htmlFor="subject"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               Subject
             </label>
@@ -42,7 +42,7 @@ export default function Contact() {
           </div>
           <div className="sm:col-span-2">
             <label
-              htmlhtmlFor="message"
+              htmlFor="message"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
               Your message
             </label>
