@@ -216,6 +216,13 @@ export default function Footer() {
                   我们的专利代理人
                 </Link>
               </li>
+              <li className="mb-4">
+                <Link
+                  href="/sitemap-0.xml"
+                  className="hover:underline">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
