@@ -54,7 +54,7 @@ export default function 澳大利亚专利代理人的角色() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/职业"
+                href="/专利律师职业"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
                 职业
               </Link>

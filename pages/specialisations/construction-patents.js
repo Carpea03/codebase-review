@@ -121,8 +121,7 @@ export default function ConstructionPatents() {
           <li>Complete works to a higher design standard</li>
         </ul>
         <h3>
-          Benefits and challenges of filing civil engineering and construction
-          patent applications
+        Examples of granted civil engineering and construction patent applications
         </h3>
         <table>
           <tbody>
