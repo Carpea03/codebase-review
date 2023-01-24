@@ -6,6 +6,7 @@ module.exports = {
       'source.unsplash.com',
       'flowbite.s3.amazonaws.com',
       'baxterip.vercel.app',
+      'www.baxterip.com.au',
       'localhost:3000',
     ],
   },
