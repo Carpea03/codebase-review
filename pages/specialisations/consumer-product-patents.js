@@ -14,7 +14,7 @@ const myLoader = ({ src, width, quality }) => {
   }`
 }
 
-export default function ConstructionPatents() {
+export default function ConsumerProductPatents() {
   return (
     <Layout>
       <Head>
