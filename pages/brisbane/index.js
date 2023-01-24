@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import LayoutWide from '../components/layout-wide'
+import LayoutWide from '../../components/layout-wide'
 import Link from 'next/link'
 
 export default function Brisbane() {
@@ -13,7 +13,10 @@ export default function Brisbane() {
           name="description"
           content="Call +61 7 3155 7970 to talk with a patent or trade mark attorney at our Brisbane office to discuss intellectual property queries today."
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/brisbane" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/brisbane"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%B8%83%E9%87%8C%E6%96%AF%E7%8F%AD"
