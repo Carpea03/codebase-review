@@ -15,12 +15,10 @@ export default function TradeMarkMaintenance() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-maintenance"
+          href="https://www.baxterip.com.au/trade-mark-maintenance"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -164,9 +162,7 @@ export default function TradeMarkMaintenance() {
         <li>
           <strong>
             Have your trade mark{' '}
-            <Link
-              className="text-danger"
-              href="/trade-mark-amendment">
+            <Link className="text-danger" href="/trade-mark-amendment">
               amended
             </Link>{' '}
             to exclude classes for which the trade mark is not used.
@@ -198,9 +194,7 @@ export default function TradeMarkMaintenance() {
         <li>
           <strong>
             Maintain the trade mark and{' '}
-            <Link
-              className="text-danger"
-              href="/trade-mark-renewal">
+            <Link className="text-danger" href="/trade-mark-renewal">
               be aware of important dates
             </Link>
             .

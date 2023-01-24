@@ -3,7 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function TradeMarkPreFilingConsiderations() {
+const myLoader = ({ src, width, quality }) => {
+  return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
+}
+
+export default function TradeMarkProcessFlowcharts() {
   return (
     <Layout>
       <Head>
@@ -80,29 +84,19 @@ export default function TradeMarkPreFilingConsiderations() {
         this page are for illustrative purposes alone and only indicates some of
         the steps associated with the relevant procedures. These do not count as
         legal advice. Please contact our{' '}
-        <Link href="https://www.baxterip.com.au/trade-mark-attorney">
-          trade mark attorneys
-        </Link>{' '}
-        for their expert advice.
+        <Link href="/trade-mark-attorney">trade mark attorneys</Link> for their
+        expert advice.
       </p>
       <hr />
       <h2>Australian Standard Trade Mark Procedure</h2>
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="517"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png">
+        <Link href="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png">
           <Image
-            decoding="async"
-            loading="lazy"
+            loader={myLoader}
+            src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+            alt="Australian Standard Trade Mark Procedure"
             width="1024"
             height="331"
-            src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
-            alt="Australian Standard Trade Mark Procedure (for desktop)"
-            className="wp-image-28565"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-768x248.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1536x496.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-2048x661.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
         <figcaption>Australian Standard Trade Mark Procedure</figcaption>
@@ -110,28 +104,18 @@ export default function TradeMarkPreFilingConsiderations() {
       <p>
         In Australia, the trade mark registration process involves several steps
         commencing with a search and extending beyond registration.{' '}
-        <Link href="https://www.baxterip.com.au/trade-mark-registration-process">
-          Learn more…
-        </Link>
+        <Link href="/trade-mark-registration-process">Learn more…</Link>
       </p>
       <hr />
       <h2>Madrid Protocol Trade Mark Application Process</h2>
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="617"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png">
+        <Link href="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png">
           <Image
-            decoding="async"
-            loading="lazy"
+            loader={myLoader}
+            src="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
+            alt="Madrid Protocol Trade Mark Application Process"
             width="1024"
             height="395"
-            src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
-            alt="Madrid Protocol Trade Mark Application Process (for desktop)"
-            className="wp-image-28571"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-768x296.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1536x592.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-210x81.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-100x39.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
         <figcaption>Madrid Protocol Trade Mark Application Process</figcaption>
@@ -139,23 +123,18 @@ export default function TradeMarkPreFilingConsiderations() {
       <p>
         An application for International Registration is filed by your trade
         mark attorney through IP Australia.{' '}
-        <Link href="https://www.baxterip.com.au/madrid-protocol-application">
-          Learn more…
-        </Link>
+        <Link href="/madrid-protocol-application">Learn more…</Link>
       </p>
       <hr />
       <h2>Trade Mark Opposition Procedure</h2>
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop.png"
-          data-lbwps-width="2487"
-          data-lbwps-height="761"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-300x92.png">
+        <Link href="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop.png">
           <Image
-            decoding="async"
-            src="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
-            alt="Trade Mark Opposition Procedure (for desktop)"
-            className="wp-image-28569"
+            loader={myLoader}
+            src="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
+            alt="Trade Mark Opposition Procedure"
+            width="1024"
+            height="313"
           />
         </Link>
         <figcaption>Trade Mark Opposition Procedure</figcaption>
@@ -164,9 +143,7 @@ export default function TradeMarkPreFilingConsiderations() {
         Any interested third person can file an opposition to trade mark
         application within 2 months from the date of its publication on
         Australian Official Journal of Trade Marks.{' '}
-        <Link href="https://www.baxterip.com.au/trade-mark-opposition">
-          Read more…
-        </Link>
+        <Link href="/trade-mark-opposition">Read more…</Link>
       </p>
     </Layout>
   )

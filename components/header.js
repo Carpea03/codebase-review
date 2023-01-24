@@ -122,7 +122,9 @@ export default function Header() {
                 className="py-1"
                 role="none">
                 <li>
-                  <Link href="/" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <Link
+                    href="/"
+                    className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
                     <div className="inline-flex items-center">
                       <svg
                         className="h-3.5 w-3.5 rounded-full mr-2"

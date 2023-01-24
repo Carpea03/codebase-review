@@ -13,12 +13,10 @@ export default function BrandNameVsTradeMark() {
         />
         <link
           rel="canonical"
-          href="/brand-name-vs-trade-mark"
+          href="https://www.baxterip.com.au/brand-name-vs-trade-mark"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -133,7 +131,7 @@ export default function BrandNameVsTradeMark() {
         strong customer recall so that the target market will connect the
         company automatically to the goods or services on offer. The goal of a
         brand name is to build enough reputation so that the public would opt to
-        avail of that brand&apos; product instead of a generic kind.
+        avail of that brand&apos;s product instead of a generic kind.
       </p>
       <h2>What is a trade mark?</h2>
       <p>
@@ -149,8 +147,8 @@ export default function BrandNameVsTradeMark() {
         register of trade marks. Trade mark registration awards the owner the
         right to seek legal relief against parties using a trade mark that is
         substantially identical or deceptively similar to the registered trade
-        mark after the trade mark&apos; priority date. This right may also deter
-        potential infringers and counterfeiters.
+        mark after the trade mark&apos;s priority date. This right may also
+        deter potential infringers and counterfeiters.
       </p>
       <p>
         One important difference between a brand name and a trade mark is the
@@ -165,9 +163,9 @@ export default function BrandNameVsTradeMark() {
         to other countries may be out of the question as the lack of a
         registered trade mark may put the brand owner at risk of{' '}
         <Link href="/trade-mark-infringement">trade mark infringement</Link>{' '}
-        allegations in other jurisdictions with a “
-        <Link href="/trade-marks-in-other-countries#china">first to file</Link>”
-        rule, such as China.
+        allegations in other jurisdictions with a &ldquo;
+        <Link href="/trade-marks-in-other-countries#china">first to file</Link>
+        &rdquo; rule, such as China.
       </p>
       <p>
         By registering the brand name as a trade mark, the owner of the
@@ -175,7 +173,7 @@ export default function BrandNameVsTradeMark() {
         relief in the country of registration against the unauthorised use of a
         confusingly similar mark. Thus, it makes good business sense to register
         the brand name and other possible trade marks that may be subjected to
-        third-party infringement in order to protect the company&apos; position
+        third-party infringement in order to protect the company&apos;s position
         in the market.
       </p>
     </Layout>

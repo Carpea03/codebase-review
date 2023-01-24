@@ -16,12 +16,20 @@ export default function HowToPatent() {
         />
         <link
           rel="canonical"
-          href="/how-to-patent"
+          href="https://www.baxterip.com.au/how-to-patent"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/australian-patents"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7%E4%B8%93%E5%88%A9"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -68,9 +76,9 @@ export default function HowToPatent() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/trade-marks"
+                href="/patents"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Trade marks
+                Patents
               </Link>
             </div>
           </li>
@@ -103,14 +111,14 @@ export default function HowToPatent() {
           Australian patent attorney
         </Link>
         . The patent process is not one to be embarked on without the advice of
-        a patent attorney as your&nbsp;
+        a patent attorney as your{' '}
         <Link
           title="File a Provisional Patent Application"
           href="/provisional-patents">
           patent application
-        </Link>
-        &nbsp;needs to establish a watertight foundation for the IP rights you
-        are seeking.
+        </Link>{' '}
+        needs to establish a watertight foundation for the IP rights you are
+        seeking.
       </p>
       <hr />
       <h2>6 common questions prior to filing a patent application</h2>
@@ -181,42 +189,42 @@ export default function HowToPatent() {
       <p>
         To get an idea of the answer to A &amp; B, your patent attorney will
         normally request IP Australia to perform a patent search based on your
-        provisional patent application. This patent search is called an&nbsp;
+        provisional patent application. This patent search is called an{' '}
         <Link
           title="International-Type Patent Search"
           href="/international-type-search">
           International-Type Search
-        </Link>
-        &nbsp;and in our experience, is by far the best value-for-money patent
-        search you can get done at an early stage in the patent process.
+        </Link>{' '}
+        and in our experience, is by far the best value-for-money patent search
+        you can get done at an early stage in the patent process.
       </p>
       <p>
         To answer question C, in Australia, there is very little that is
-        excluded so far as what can be patented. For example,&nbsp;
+        excluded so far as what can be patented. For example,{' '}
         <Link
           title="Software, Mobile &amp; Apps Patents"
           href="/specialisations/software-patents">
           software patents
-        </Link>
-        &nbsp;and&nbsp;
+        </Link>{' '}
+        and{' '}
         <Link
           title="Medical Devices Patents"
           href="/specialisations/medical-patents">
           methods of medical treatment
-        </Link>
-        &nbsp;can generally be patented. All you need to do is provide your
-        patent attorney with a clear and concise brief and they can advise you
-        as to whether your idea is patentable subject matter in Australia.
+        </Link>{' '}
+        can generally be patented. All you need to do is provide your patent
+        attorney with a clear and concise brief and they can advise you as to
+        whether your idea is patentable subject matter in Australia.
       </p>
       <p>
         You may be wondering, how you can trust your patent attorney with your
-        idea?&nbsp;
+        idea?{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
           href="/patent-attorney">
           Australian Patent Attorneys
-        </Link>
-        &nbsp;have a legislated obligation under the Australian Patents Act 1990
+        </Link>{' '}
+        have a legislated obligation under the Australian Patents Act 1990
         (Federal Law Act) to maintain confidentiality of your idea.
       </p>
       <h4>Why Baxter IP Patent Attorneys?</h4>
@@ -226,25 +234,23 @@ export default function HowToPatent() {
         subject matter.
       </p>
       <p>
-        <Link
-          title="Contact Baxter IP Sydney Office"
-          href="/contact">
+        <Link title="Contact Baxter IP Sydney Office" href="/contact">
           Click here to contact one of our experienced patent attorneys
-        </Link>
-        &nbsp;to find out more about whether your new idea includes patentable
-        subject matter.
+        </Link>{' '}
+        to find out more about whether your new idea includes patentable subject
+        matter.
       </p>
       <hr />
       <h3>4. What type of Australian patent application should I file?</h3>
       <p>
         Whilst there are numerous types of patent applications that can be
-        filed, the majority of new entrepreneurs start with a&nbsp;
+        filed, the majority of new entrepreneurs start with a{' '}
         <Link
           title="File a Provisional Patent Application"
           href="/provisional-patents">
           provisional patent application
-        </Link>
-        &nbsp;and then file a&nbsp;
+        </Link>{' '}
+        and then file a{' '}
         <Link
           title="File a PCT International Patent Application"
           href="/pct-patent">
@@ -260,8 +266,8 @@ export default function HowToPatent() {
           later)
         </li>
         <li>
-          PCT International Patent Application (lasts 1.5 – 2.5 years, covers
-          about 50 countries, most attractive to investors)
+          PCT International Patent Application (lasts 1.5 &ndash; 2.5 years,
+          covers about 50 countries, most attractive to investors)
         </li>
         <li>Australian Standard Patent Application (lasts 20 years)</li>
         <li>
@@ -324,24 +330,21 @@ export default function HowToPatent() {
         required and timeframe.
       </p>
       <p>
-        <Link
-          title="Contact Baxter IP Sydney Office"
-          href="/contact">
+        <Link title="Contact Baxter IP Sydney Office" href="/contact">
           Click here to contact one of our experienced patent attorneys
-        </Link>
-        &nbsp;to find out more about how you can protect your idea and for a
-        quote.
+        </Link>{' '}
+        to find out more about how you can protect your idea and for a quote.
       </p>
       <hr />
       <h3>6. How do I get a patent application filed? What are the steps?</h3>
       <p>
-        We’ve tried to make the patent application process as straightforward as
-        possible – here’s what needs to be done:
+        We&apos;ve tried to make the patent application process as
+        straightforward as possible &ndash; here&apos;s what needs to be done:
       </p>
       <hr />
       <h2>How to patent?</h2>
       <h3>The international patent process</h3>
-      <figure className="wp-block-image size-large">
+      <figure>
         <Link
           href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png"
           data-lbwps-width="1600"
@@ -353,9 +356,8 @@ export default function HowToPatent() {
             width="1024"
             height="315"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
-            alt="Patent Procedure Overview (for desktop)"
-            className="wp-image-28559"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
+            alt="Patent Procedure Overview"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>

@@ -15,12 +15,10 @@ export default function DomainNamesAndTradeMarks() {
         />
         <link
           rel="canonical"
-          href="/domain-names-and-trade-marks"
+          href="https://www.baxterip.com.au/domain-names-and-trade-marks"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -165,8 +163,8 @@ export default function DomainNamesAndTradeMarks() {
         domain name even if it is identical to your trade mark if the
         goods/services are not the same or closely related in a trade sense. In
         this latter context the trade mark owner can still sue under s 18 of the{' '}
-        <em>Australian Consumer Law</em> for &apos;misleading and deceptive
-        conduct&apos;. Further, in Common Law, the trade mark owner can sue for
+        <em>Australian Consumer Law</em> for &lsquo;misleading and deceptive
+        conduct&rsquo;. Further, in Common Law, the trade mark owner can sue for
         Passing Off as long as the trade mark has reputation, the website domain
         name misrepresented your trade mark, and you, as the trade mark owner,
         incurred damage.
@@ -178,15 +176,15 @@ export default function DomainNamesAndTradeMarks() {
         domains. The policy provides a quicker, more economical route to
         litigation.
       </p>
-      <h3>auDRP – Elements of a Complaint</h3>
+      <h3>auDRP &ndash; Elements of a Complaint</h3>
       <p>
         The auDRP is an administrative proceeding, and as a general guide, a
-        complainant&apos; grounds for disputation under the auDRP include the
+        complainant&apos;s grounds for disputation under the auDRP include the
         following:
       </p>
       <ol>
         <li>
-          Respondent&apos; domain name is identical or confusingly similar to a
+          Respondent&apos;s domain name is identical or confusingly similar to a
           name, trade mark or service mark in which the complainant has rights;
         </li>
         <li>
@@ -205,7 +203,7 @@ export default function DomainNamesAndTradeMarks() {
       <h3>Comments on Elements for Claimant</h3>
       <ol>
         <li>
-          Respondent&apos; domain name is identical or confusingly similar to a
+          Respondent&apos;s domain name is identical or confusingly similar to a
           name, trade mark or service mark in which the complainant has rights
           <ul>
             <li>
@@ -246,9 +244,9 @@ export default function DomainNamesAndTradeMarks() {
                 <li>
                   For unregistered trade mark rights to exist in Australia, the
                   complainant needs to have a reputation in Australia in respect
-                  of the unregistered trade mark – this is usually established
-                  by evidence of use in commerce such as sales and revenue data
-                  in Australia [
+                  of the unregistered trade mark &ndash; this is usually
+                  established by evidence of use in commerce such as sales and
+                  revenue data in Australia [
                   <em>
                     GE Capital Finance Australasia Pty Ltd v. Dental Financial
                     Services Pty Ltd
@@ -258,8 +256,8 @@ export default function DomainNamesAndTradeMarks() {
               </ul>
             </li>
             <li>
-              The test for identity is that there is &quot;essential or virtual
-              identity&quot; between the domain name and the trade mark or name
+              The test for identity is that there is &ldquo;essential or virtual
+              identity&rdquo; between the domain name and the trade mark or name
               in which the complainant has rights.
               <ul>
                 <li>
@@ -306,8 +304,8 @@ export default function DomainNamesAndTradeMarks() {
           </ul>
         </li>
         <li>
-          Respondent&apos; have no rights or legitimate interests in respect of
-          the domain name
+          Respondent have no rights or legitimate interests in respect of the
+          domain name
           <ul>
             <li>
               A complainant is required to make out a <em>prima facie</em> case
@@ -333,15 +331,16 @@ export default function DomainNamesAndTradeMarks() {
               domain name in connection with an offering of goods or services;
             </li>
             <li>
-              The key issue is whether the respondent&apos; use of the domain
-              name is <em>bona fide</em> – i.e., is in good faith. To determine
-              whether a respondent&apos; use of a domain name is in good faith
-              requires a consideration of the respondent&apos; motivation for
-              undertaking that use; which, in turn, requires an evaluation of
-              all the facts and evidence. Relevant facts include: the degree of
-              similarity of the domain name to the complainant&apos; mark; the
-              respondent&apos; awareness of the complainant&apos; business
-              conducted under its mark; the likelihood of customer confusion [
+              The key issue is whether the respondent&apos;s use of the domain
+              name is <em>bona fide</em> &ndash; i.e., is in good faith. To
+              determine whether a respondent&apos;s use of a domain name is in
+              good faith requires a consideration of the respondent&apos;s
+              motivation for undertaking that use; which, in turn, requires an
+              evaluation of all the facts and evidence. Relevant facts include:
+              the degree of similarity of the domain name to the
+              complainant&apos;s mark; the respondent&apos;s awareness of the
+              complainant&apos; business conducted under its mark; the
+              likelihood of customer confusion [
               <em>PA Consulting Services Pty Ltd v. Joseph Barrington-Lew</em>,
               WIPO Case No. DAU2003-0002 (2002), &lt;
               <Link
@@ -376,9 +375,9 @@ export default function DomainNamesAndTradeMarks() {
             <li>
               From auDRP decisions it appears that in determinations of bad
               faith panels review evidence relevant to actual knowledge of the
-              complainant&apos; trade mark or name, and draw conclusions about
-              the respondent&apos; likely knowledge from that evidence. Where
-              the complainant&apos; trade mark or name is extremely well-known,
+              complainant&apos;s trade mark or name, and draw conclusions about
+              the respondent&apos;s likely knowledge from that evidence. Where
+              the complainant&apos;s trade mark or name is extremely well-known,
               or where there is evidence indicating that the respondent would
               reasonably have been aware of the trade mark or name (
               <em>e.g.</em>, where the complainant and respondent are
@@ -418,7 +417,7 @@ export default function DomainNamesAndTradeMarks() {
         </li>
       </ol>
       <p>
-        auDRP panels have tended to recognise that a respondent&apos;
+        auDRP panels have tended to recognise that a respondent&apos;s
         registration of a trade mark corresponding to the disputed domain name
         will normally, but does not necessarily, establish that the respondent
         has rights or legitimate interests in that domain name [
@@ -431,8 +430,8 @@ export default function DomainNamesAndTradeMarks() {
       <h2>Summary</h2>
       <p>
         To bring an auDRP action, the complainant first needs to establish a
-        priority claim to ownership of a trade mark in Australia – a priority
-        claim can be established by:
+        priority claim to ownership of a trade mark in Australia &ndash; a
+        priority claim can be established by:
       </p>
       <ul>
         <li>
@@ -448,34 +447,34 @@ export default function DomainNamesAndTradeMarks() {
       <p>
         For unregistered trade mark rights to exist in Australia, the
         complainant needs to have a reputation in Australia in respect of the
-        unregistered trade mark – this is usually established by evidence of use
-        in commerce such as sales and revenue data in Australia.
+        unregistered trade mark &ndash; this is usually established by evidence
+        of use in commerce such as sales and revenue data in Australia.
       </p>
       <p>
         A second aspect of bringing an auDRP action, is whether the
-        respondent&apos; use of the domain name is bona fide, i.e., is in good
+        respondent&apos;s use of the domain name is bona fide, i.e., is in good
         faith, needs to be established. This requires a consideration of the
-        respondent&apos; motivation for using the domain, which, in turn,
+        respondent&apos;s motivation for using the domain, which, in turn,
         requires an evaluation of all the facts and evidence. Relevant facts can
         include:
       </p>
       <ul>
         <li>
-          the degree of similarity of the domain name to the complainant&apos;
+          the degree of similarity of the domain name to the complainant&apos;s
           mark; and
         </li>
         <li>
-          the respondent&apos; awareness of the complainant&apos; business
+          the respondent&apos;s awareness of the complainant&apos;s business
           conducted under its mark and the likelihood of customer confusion.
         </li>
       </ul>
       <p>
         Another relevant consideration in an auDRP action is whether the
-        respondent has a legitimate claim to ownership – for example, a reseller
-        or distributor of a product (for example, &quot;imported from New
-        Zealand&quot; marked with the trade mark). These parties can be making a
-        bona fide offering of goods and services in Australia and thus have a
-        legitimate interest in the domain name if their use meets certain
+        respondent has a legitimate claim to ownership &ndash; for example, a
+        reseller or distributor of a product (for example, &quot;imported from
+        New Zealand&quot; marked with the trade mark). These parties can be
+        making a bona fide offering of goods and services in Australia and thus
+        have a legitimate interest in the domain name if their use meets certain
         requirements, including:
       </p>
       <ul>
@@ -528,7 +527,7 @@ export default function DomainNamesAndTradeMarks() {
         </Link>
         &gt;, marks that are in the intermediate stages in their timelines prior
         to registration are considered not to satisfy the requirement of the
-        complainant&apos; trade mark rights. For unregistered trade marks in
+        complainant&apos;s trade mark rights. For unregistered trade marks in
         Australia, the claimant needs to provide evidence of use in the market,
         such as sales and revenue figures.
       </p>
@@ -552,9 +551,9 @@ export default function DomainNamesAndTradeMarks() {
           rel="noopener noreferrer">
           www.tenniswarehouse.com.au
         </Link>
-        . This website was established after Sports Warehouse&apos; business had
-        extended to Australia. In this case, it was concluded that the use of
-        the domain name www.tennis-warehouse.com constituted use of the mark
+        . This website was established after Sports Warehouse&apos;s business
+        had extended to Australia. In this case, it was concluded that the use
+        of the domain name www.tennis-warehouse.com constituted use of the mark
         TENNIS WAREHOUSE, which did not affect the identity of the registered
         mark.
       </p>

@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
@@ -14,12 +13,15 @@ export default function InternationalTypeSearch() {
         />
         <link
           rel="canonical"
-          href="/international-type-search"
+          href="https://www.baxterip.com.au/international-type-search"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E6%96%B0%E9%A2%96%E6%80%A7%E6%A3%80%E7%B4%A2"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -113,7 +115,7 @@ export default function InternationalTypeSearch() {
       <h1>Stage 2: International-type patent search</h1>
       <p>
         IP Australia offers a highly cost effective option for an international
-        patent search called an “international-type search”.
+        patent search called an &ldquo;international-type search&rdquo;.
       </p>
       <p>
         We would almost always recommend you have an international patent search
@@ -125,25 +127,23 @@ export default function InternationalTypeSearch() {
         </Link>{' '}
         for you recently, except in circumstances where you have commissioned a
         detailed{' '}
-        <Link
-          title="Patent Novelty Searches"
-          href="/international-type-search">
+        <Link title="Patent Novelty Searches" href="/international-type-search">
           patent novelty search
-        </Link>
-        &nbsp;prior to filing.
+        </Link>{' '}
+        prior to filing.
       </p>
       <p>
-        An international-type search typically takes IP Australia about 6 – 8
-        weeks to complete then you should allow your patent attorney time to
-        conduct the review of the search results. It is easy to take an overly
-        negative view of patent search results if they are received without a
-        review from your patent attorney. A{' '}
+        An international-type search typically takes IP Australia about 6
+        &ndash; 8 weeks to complete then you should allow your patent attorney
+        time to conduct the review of the search results. It is easy to take an
+        overly negative view of patent search results if they are received
+        without a review from your patent attorney. A{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
           href="/patent-attorney">
           patent attorney
-        </Link>
-        &nbsp;will quickly recognise in the results:
+        </Link>{' '}
+        will quickly recognise in the results:
       </p>
       <ul>
         <li>
@@ -164,8 +164,8 @@ export default function InternationalTypeSearch() {
         </li>
       </ul>
       <p>
-        The bottom line – if the search results look similar to your new idea,
-        don’t despair! Speak to an&nbsp;
+        The bottom line &ndash; if the search results look similar to your new
+        idea, don&apos;t despair! Speak to an{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
           href="/patent-attorney">

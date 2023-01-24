@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
@@ -14,14 +13,14 @@ export default function IpAudit() {
           name="description"
           content="An IP audit helps a company manage their intangible assets and make informed business decisions."
         />
+        <link rel="canonical" href="https://www.baxterip.com.au/ip-audit" />
         <link
-          rel="canonical"
-          href="/ip-audit"
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%AE%A1%E6%A0%B8"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -96,19 +95,19 @@ export default function IpAudit() {
       <h1>IP Audit</h1>
       <p>
         Despite its intangibility, intellectual property (IP) often comprises
-        the largest portion of a company’s overall value and in many cases is
-        the most important asset a business has. All IP that a company owns must
-        be accounted for in order to derive the maximum commercial advantage. It
-        is important to manage the IP portfolio of a business in the same way as
-        cash flow, production inventory and equipment, and the first step in
-        managing IP is by identifying it. Keeping track of one’s IP inventory
-        through an IP audit is crucial in developing informed business
-        strategies and making substantial business decisions. In a nutshell, the
-        aim of an IP audit is to distill all manner of intangible assets, such
-        as inventions, brands, trade dress, production techniques, trade secrets
-        (e.g. formulas, methods or processes) and others such into measurable,
-        valuable and manageable forms that can be protected and utilised for the
-        benefit of the company.
+        the largest portion of a company&apos;s overall value and in many cases
+        is the most important asset a business has. All IP that a company owns
+        must be accounted for in order to derive the maximum commercial
+        advantage. It is important to manage the IP portfolio of a business in
+        the same way as cash flow, production inventory and equipment, and the
+        first step in managing IP is by identifying it. Keeping track of
+        one&apos;s IP inventory through an IP audit is crucial in developing
+        informed business strategies and making substantial business decisions.
+        In a nutshell, the aim of an IP audit is to distill all manner of
+        intangible assets, such as inventions, brands, trade dress, production
+        techniques, trade secrets (e.g. formulas, methods or processes) and
+        others such into measurable, valuable and manageable forms that can be
+        protected and utilised for the benefit of the company.
       </p>
       <h2>What is an IP audit?</h2>
       <p>
@@ -119,7 +118,7 @@ export default function IpAudit() {
         outstanding royalties receivable through licensing their IP, ensure that
         ownership and assignment of IP are properly formalised (necessary to
         maintain valid rights and for enforcement), and to compile other
-        documentation required to exploit the company’s IP rights. With the
+        documentation required to exploit the company&apos;s IP rights. With the
         information provided by an audit, the company can determine which of the
         IP in its portfolio would provide the greatest value through licensing
         agreements, which IP may be exposed if it were to be challenged, which
@@ -153,7 +152,7 @@ export default function IpAudit() {
         </li>
         <li>
           Poorly drafted employment and contractor clauses that make the
-          company’s IP (including trade secrets) vulnerable to competitor
+          company&apos;s IP (including trade secrets) vulnerable to competitor
           access;
         </li>
         <li>Untapped collectible licensing and franchising fees;</li>
@@ -187,7 +186,7 @@ export default function IpAudit() {
         <li>
           <Link href="/registered-designs">Registered designs</Link>
         </li>
-        <li>Plant breeder’s rights</li>
+        <li>Plant breeder&apos;s rights</li>
       </ul>
       <p>Unregistered IP includes:</p>
       <ul>
@@ -217,10 +216,10 @@ export default function IpAudit() {
       </ul>
       <p>
         Other vital information that can be obtained when conducting IP audits
-        is the ownership of all IP in the company’s portfolio. Ownership of the
-        intellectual property should be established and the information should
-        be in order and readily available because enforcement of those IP rights
-        generally depends on ownership being held by the right party.
+        is the ownership of all IP in the company&apos;s portfolio. Ownership of
+        the intellectual property should be established and the information
+        should be in order and readily available because enforcement of those IP
+        rights generally depends on ownership being held by the right party.
       </p>
       <p>
         The owners of IP should be identified and may be any among the
@@ -237,9 +236,9 @@ export default function IpAudit() {
       <p>
         Ideally, IP audits should be conducted regularly (e.g. every year) so
         that information is kept up to date. This is necessary for effective
-        strategic planning and to optimise the company’s gains from their IP. At
-        the minimum, however, IP audits should be conducted in the following
-        scenarios:
+        strategic planning and to optimise the company&apos;s gains from their
+        IP. At the minimum, however, IP audits should be conducted in the
+        following scenarios:
       </p>
       <ul>
         <li>
@@ -306,19 +305,19 @@ export default function IpAudit() {
         </li>
         <li>
           Conduct searches to identify possible infringing acts done by the
-          company or against the company’s IP.
+          company or against the company&apos;s IP.
         </li>
       </ol>
       <p>
         Baxter IP is able to conduct a full-scope IP audit including a complete
         assessment of all relevant IP and IP related materials, or
         alternatively, narrow the scope to particular types of IP or materials,
-        depending on your company’s focus.
+        depending on your company&apos;s focus.
       </p>
       <p>
         We are able to work independently, or as part of a broader Audit team,
-        to provide a tailored IP Audit package to suit your company’s needs. Get
-        in touch with one of our{' '}
+        to provide a tailored IP Audit package to suit your company&apos;s
+        needs. Get in touch with one of our{' '}
         <Link href="/ip-strategy#team">IP Audit specialists</Link>, or
         equivalent.
       </p>

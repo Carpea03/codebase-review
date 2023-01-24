@@ -13,12 +13,15 @@ export default function HowToBecomeAPatentAttorney() {
         />
         <link
           rel="canonical"
-          href="/how-to-become-a-patent-attorney"
+          href="https://www.baxterip.com.au/how-to-become-a-patent-attorney"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -109,11 +112,11 @@ export default function HowToBecomeAPatentAttorney() {
       <p>
         In some countries, including Australia, Canada and the United States,
         you can work as a patent agent without ever being required to become an
-        attorney-at-law. In Australia, a ‘patent agent’ is also known as a
-        ‘patent attorney’, hence the confusion in comparing job titles across
-        jurisdictions. Nonetheless, a patent agent still needs to have an
-        engineering or scientific bachelor qualification and have studied the
-        relevant intellectual property law course required in their
+        attorney-at-law. In Australia, a &quot;patent agent&quot; is also known
+        as a &quot;patent attorney&quot;, hence the confusion in comparing job
+        titles across jurisdictions. Nonetheless, a patent agent still needs to
+        have an engineering or scientific bachelor qualification and have
+        studied the relevant intellectual property law course required in their
         jurisdiction. Depending on jurisdiction, some practical experience
         working under a registered patent attorney may also be required. In
         Australia, you will require two years of practical experience working
@@ -167,8 +170,8 @@ export default function HowToBecomeAPatentAttorney() {
           field in your jurisdiction and other major jurisdictions.
         </li>
         <li>
-          Discuss a client’s inventions and the patent processes with inventors
-          and licensees.
+          Discuss a client&apos;s inventions and the patent processes with
+          inventors and licensees.
         </li>
         <li>
           Enforce and defend patents. In some countries, including Australia,
@@ -191,7 +194,7 @@ export default function HowToBecomeAPatentAttorney() {
         gain a foothold in the profession. In some parts of the world, such as
         the UK, US and France, competition is fierce, and new trainees are
         encouraged to apply for regional positions. The majority of a patent
-        attorney’s work is office-based, but it is not uncommon for them to
+        attorney&apos;s work is office-based, but it is not uncommon for them to
         travel to meet with clients, particularly if they are sole
         practitioners.
       </p>
@@ -241,7 +244,7 @@ export default function HowToBecomeAPatentAttorney() {
         attorney vary with the position you hold, your experience level and your
         location. According to the 2016 annual survey by IP recruitment firm the
         Patent Attorney Job Board, salaries for trainee patent attorneys range
-        from AUD 50,500 – AUD 80,000 p.a., with remuneration increasing as
+        from AUD 50,500 &ndash; AUD 80,000 p.a., with remuneration increasing as
         experience grows, as shown below. Salaried partners in patent attorney
         firms can earn as much as AUD 200,000, with equity partners achieving up
         to AUD 300,000 or higher. The higher salary ranges are typically seen in
@@ -253,7 +256,7 @@ export default function HowToBecomeAPatentAttorney() {
           <thead>
             <tr>
               <th>
-                <strong>No. of years’ experience</strong>
+                <strong>No. of years&apos; experience</strong>
               </th>
               <th>
                 <strong>Remuneration range&nbsp;(AUD)</strong>
@@ -263,19 +266,19 @@ export default function HowToBecomeAPatentAttorney() {
           <tbody>
             <tr>
               <td>&lt; 2</td>
-              <td>$65,000 – $100,000</td>
+              <td>$65,000 &ndash; $100,000</td>
             </tr>
             <tr>
-              <td>2 – 5</td>
-              <td>$90,000 – $130,000</td>
+              <td>2 &ndash; 5</td>
+              <td>$90,000 &ndash; $130,000</td>
             </tr>
             <tr>
-              <td>5 – 10</td>
-              <td>$100,000 – $180,000+</td>
+              <td>5 &ndash; 10</td>
+              <td>$100,000 &ndash; $180,000+</td>
             </tr>
             <tr>
               <td>10+</td>
-              <td>$125,000 – $200,000+</td>
+              <td>$125,000 &ndash; $200,000+</td>
             </tr>
           </tbody>
         </table>
@@ -338,8 +341,9 @@ export default function HowToBecomeAPatentAttorney() {
         </li>
         <li>Be of good character.</li>
         <li>
-          Have been employed for ‘two continuous years or a total of two years
-          within five continuous years’ in positions that provide experience in:
+          Have been employed for &quot;two continuous years or a total of two
+          years within five continuous years&quot; in positions that provide
+          experience in:
           <ul>
             <li>searching patent records</li>
             <li>preparing, filing and prosecuting patent applications</li>
@@ -368,9 +372,9 @@ export default function HowToBecomeAPatentAttorney() {
         </li>
         <li>
           Before you can register for the examination you must have at least 24
-          months’ practical experience in the area of patent law and practice,
-          with at least 12 of those months worked in Canada. To obtain a
-          position as a patent agent trainee you will be required to have a
+          months&apos; practical experience in the area of patent law and
+          practice, with at least 12 of those months worked in Canada. To obtain
+          a position as a patent agent trainee you will be required to have a
           degree in science or engineering.
         </li>
       </ul>
@@ -389,8 +393,8 @@ export default function HowToBecomeAPatentAttorney() {
       <ul>
         <li>
           Pass examinations set by the UK Patent Examination Board. There are
-          two levels of examination – you must pass the foundation level exams
-          before progressing to the final exams the following year.
+          two levels of examination &ndash; you must pass the foundation level
+          exams before progressing to the final exams the following year.
         </li>
         <li>
           To be eligible to sit the foundation exams you must have a degree
@@ -420,7 +424,7 @@ export default function HowToBecomeAPatentAttorney() {
           or technology/engineering.
         </li>
         <li>
-          Have three years’ experience working in the European patent
+          Have three years&apos; experience working in the European patent
           profession, under the supervision of an appropriately qualified
           individual.
         </li>
@@ -445,18 +449,18 @@ export default function HowToBecomeAPatentAttorney() {
         </li>
         <li>
           Have an adequate technical and scientific background so that you are
-          able to fully understand your clients’ inventions.
+          able to fully understand your clients&apos; inventions.
         </li>
         <li>
-          Pass the patent bar exams that are used to test a candidate’s
+          Pass the patent bar exams that are used to test a candidate&apos;s
           understanding of the procedures for issuing patents.
         </li>
         <li>Be of good moral character and reputation.</li>
       </ul>
       <p>
-        If you are not an attorney but meet the other requirements – i.e. you
-        hold a qualification in a scientific or engineering subject and have
-        successfully passed the patent bar exams – you can become a patent
+        If you are not an attorney but meet the other requirements &ndash; i.e.
+        you hold a qualification in a scientific or engineering subject and have
+        successfully passed the patent bar exams &ndash; you can become a patent
         agent. As a patent agent you can prepare, file and prosecute patent
         applications with the USPTO, but you cannot provide any legal advice or
         represent clients in any legal proceedings involving a state or Federal
@@ -479,7 +483,7 @@ export default function HowToBecomeAPatentAttorney() {
         <li>
           Pass the statutory examinations set by the South African Patent
           Examination Board. Prior to sitting the exams it is strongly
-          recommended that you gain three to six months’ experience with a
+          recommended that you gain three to six months&apos; experience with a
           patent law firm or the Companies and Intellectual Property Commission.
         </li>
       </ul>

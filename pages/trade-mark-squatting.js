@@ -13,12 +13,10 @@ export default function TradeMarkSquatting() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-squatting"
+          href="https://www.baxterip.com.au/trade-mark-squatting"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -131,7 +129,7 @@ export default function TradeMarkSquatting() {
       <h1>Trade mark squatting</h1>
       <p>
         Trade mark squatting or bad faith trade mark filing occurs when a party
-        files and registers an original applicant’s trade mark in a country
+        files and registers an original applicant&apos;s trade mark in a country
         where the trade mark is not yet registered in bad faith.
       </p>
       <p>
@@ -179,14 +177,14 @@ export default function TradeMarkSquatting() {
       </h3>
       <p>
         Up until 2016, Qiaodan Sports was using a Chinese transliteration of
-        Michael Jordan’s name and a logo similar to that of Nike’s well-known
-        Air Jordan symbol as registered trade marks. They sold jerseys and
-        footwear with the number 23, Jordan’s famous basketball number, and the
-        name “chee-ow dahn,” Jordan’s name in Chinese. Jordan emphasised that
-        the products were intentionally tricking customers into believing the
-        former basketball player was associated with the company. It was ruled
-        that the rights to these trade marks be revoked from Qiaodan Sports to
-        protect Jordan’s name and legacy.
+        Michael Jordan&apos;s name and a logo similar to that of Nike&apos;s
+        well-known Air Jordan symbol as registered trade marks. They sold
+        jerseys and footwear with the number 23, Jordan&apos;s famous basketball
+        number, and the name &ldquo;chee-ow dahn&rdquo;, Jordan&apos;s name in
+        Chinese. Jordan emphasised that the products were intentionally tricking
+        customers into believing the former basketball player was associated
+        with the company. It was ruled that the rights to these trade marks be
+        revoked from Qiaodan Sports to protect Jordan&apos;s name and legacy.
       </p>
     </Layout>
   )

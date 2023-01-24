@@ -15,12 +15,15 @@ export default function HowToTradeMark() {
         />
         <link
           rel="canonical"
-          href="/how-to-trade-mark"
+          href="https://www.baxterip.com.au/how-to-trade-mark"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E5%95%86%E6%A0%87"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -95,9 +98,9 @@ export default function HowToTradeMark() {
       <h1>How to trade mark</h1>
       <p>
         A trade mark is a form of intellectual property designed to protect
-        one&apos; <Link href="/brand-name-vs-trade-mark">brand</Link>, while the
-        legal term for the intellectual property protected under a trade mark is
-        called a sign. On a commercial perspective, it is the face of a
+        one&apos;s <Link href="/brand-name-vs-trade-mark">brand</Link>, while
+        the legal term for the intellectual property protected under a trade
+        mark is called a sign. On a commercial perspective, it is the face of a
         business. It directs customers back to the source of the quality of the
         goods or services. A successful trade mark comes to embody the quality
         of the goods or services provided by the business, building brand
@@ -115,7 +118,7 @@ export default function HowToTradeMark() {
       <p>
         A sign may include a word, a tag line, a logo, a visual or packaging
         aspect, even a smell or a sound, or a combination of these elements. The
-        signs&apos; purpose is to distinguish the trade mark owner&apos; goods
+        signs&apos; purpose is to distinguish the trade mark owner&apos;s goods
         and/or services from those of their competitors.
       </p>
       <p>A good trade mark:</p>

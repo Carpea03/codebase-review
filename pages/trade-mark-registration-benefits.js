@@ -15,12 +15,10 @@ export default function TradeMarkRegistrationBenefits() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-registration-benefits"
+          href="https://www.baxterip.com.au/trade-mark-registration-benefits"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -170,8 +168,8 @@ export default function TradeMarkRegistrationBenefits() {
         of workload and responsibilities, and partnerships. The licensee, in
         turn, is able to benefit from the goodwill and reputation that the trade
         mark has already gained in the market. For example, Subway, which is one
-        of the world’s largest single-brand restaurant chain franchises licenses
-        its trade-mark to its franchisees.
+        of the world&apos;s largest single-brand restaurant chain franchises
+        licenses its trade-mark to its franchisees.
       </p>
       <p>
         Typically, as per the terms of a license agreement, the licensee must
@@ -258,9 +256,10 @@ export default function TradeMarkRegistrationBenefits() {
         relief for common law trade marks are strongly reliant on the reputation
         developed by the mark through consistent use, as well as proof of
         fraudulent conduct on the part of the offending party. An unregistered
-        trade mark can be enforced through the common law tort of “passing off”
-        and deceptive conduct as stated in the Australian Consumer Law. To
-        enforce an unregistered trade mark, three things need to be established:
+        trade mark can be enforced through the common law tort of &ldquo;passing
+        off&rdquo; and deceptive conduct as stated in the Australian Consumer
+        Law. To enforce an unregistered trade mark, three things need to be
+        established:
       </p>
       <ol>
         <li>

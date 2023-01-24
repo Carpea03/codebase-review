@@ -13,12 +13,10 @@ export default function ChoosingABrandName() {
         />
         <link
           rel="canonical"
-          href="/choosing-a-brand-name"
+          href="https://www.baxterip.com.au/choosing-a-brand-name"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -128,7 +126,7 @@ export default function ChoosingABrandName() {
         Possibly the most basic feature of a brand is the brand name, which is
         the unstylised text by which the brand is known. A good brand name can
         successfully cement a mental connection between the brand and the
-        product. The mere mention of Cadbury&apos;, Kleenex and iPhone
+        product. The mere mention of Cadbury&apos;s, Kleenex and iPhone
         instantaneously conjures mental images of these well-known global brands
         and indicates the quality of the products they offer.
       </p>
@@ -254,7 +252,7 @@ export default function ChoosingABrandName() {
         <li>
           Has a search been conducted to ensure that the trade mark you are
           considering is not a duplicate of or confusingly similar to somebody
-          else&apos; trade mark?
+          else&apos;s trade mark?
         </li>
         <li>
           Will a public disclosure of the details of your trade mark application

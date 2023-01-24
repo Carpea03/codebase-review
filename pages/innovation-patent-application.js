@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -17,12 +16,20 @@ export default function InnovationPatentApplication() {
         />
         <link
           rel="canonical"
-          href="/innovation-patent-application"
+          href="https://www.baxterip.com.au/innovation-patent-application"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/innovation-patents"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%88%9B%E6%96%B0%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -139,10 +146,10 @@ export default function InnovationPatentApplication() {
       </p>
       <h2>Can I get an innovation patent on my product?</h2>
       <p>
-        Yes – if your product has a feature that is new when compared with the{' '}
-        <Link href="/ip-glossary#prior-art">prior art</Link>. That new feature
-        can be obvious but must make a difference to the functionality of the
-        product. The prior art includes all patents and published&nbsp;
+        Yes &ndash; if your product has a feature that is new when compared with
+        the <Link href="/ip-glossary#prior-art">prior art</Link>. That new
+        feature can be obvious but must make a difference to the functionality
+        of the product. The prior art includes all patents and published{' '}
         <Link
           title="File a Provisional Patent Application"
           href="/provisional-patents">
@@ -159,24 +166,25 @@ export default function InnovationPatentApplication() {
       </p>
       <p>
         Once filed, an innovation patent application will pass through a
-        formalities examination. Your&nbsp;
+        formalities examination. Your{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
           href="/patent-attorney">
           patent attorney
-        </Link>
-        &nbsp;will receive notification of grant or a formalities report within
-        three months of filing the innovation patent application.
+        </Link>{' '}
+        will receive notification of grant or a formalities report within three
+        months of filing the innovation patent application.
       </p>
       <p>
         To obtain an enforceable innovation patent right, a Request for
         Certification of the granted innovation patent application must be filed
-        with IP Australia – this can be done at any time after the innovation
-        patent has been granted. IP Australia will then conduct a substantive
-        examination of the Innovation Patent to determine whether the Innovation
-        Patent is new and includes an innovative step over the prior art. Anyone
-        (not only the owner of the Innovation Patent) can request certification
-        of the innovation patent at any time during the term of grant.
+        with IP Australia &ndash; this can be done at any time after the
+        innovation patent has been granted. IP Australia will then conduct a
+        substantive examination of the Innovation Patent to determine whether
+        the Innovation Patent is new and includes an innovative step over the
+        prior art. Anyone (not only the owner of the Innovation Patent) can
+        request certification of the innovation patent at any time during the
+        term of grant.
       </p>
       <p>
         If the innovation patent application is successful during examination,
@@ -206,9 +214,8 @@ export default function InnovationPatentApplication() {
             width="1024"
             height="270"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png"
-            alt="Innovation Patent Procedure (for desktop)"
-            className="wp-image-28584"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-300x79.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-768x202.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1536x405.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-2048x539.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-210x55.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-100x26.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2.png 1600w"
+            alt="Innovation Patent Procedure"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-300x79.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-768x202.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1536x405.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-2048x539.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-210x55.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-100x26.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
@@ -226,15 +233,15 @@ export default function InnovationPatentApplication() {
           infringer of a granted standard patent. This is achieved by filing a
           divisional innovation patent of the standard patent application. The
           divisional innovation patent will bear the same priority date as the
-          standard patent application and thus will enable the infringer’s
+          standard patent application and thus will enable the infringer&apos;s
           activities to be captured. The claims of the innovation patent are
           specifically drafted by your{' '}
           <Link
             title="Patent Attorneys Sydney &amp; Melbourne"
             href="/patent-attorney">
             patent attorney
-          </Link>
-          &nbsp;to ensure the maximum overlap with the infringer’s product or
+          </Link>{' '}
+          to ensure the maximum overlap with the infringer&apos;s product or
           process.
         </li>
         <li>
@@ -247,7 +254,7 @@ export default function InnovationPatentApplication() {
         </li>
         <li>
           By filing a series of innovation patents surrounding a product of a
-          competitor, it is relatively easy and cost-effective to form a&nbsp;
+          competitor, it is relatively easy and cost-effective to form a
           <em>patent thicket</em> around the product, which subsequently makes
           it increasingly difficult and costly for the competitor to maintain
           freedom-to-operate.

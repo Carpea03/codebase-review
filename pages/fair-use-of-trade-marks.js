@@ -13,12 +13,10 @@ export default function FairUseOfTradeMarks() {
         />
         <link
           rel="canonical"
-          href="/fair-use-of-trade-marks"
+          href="https://www.baxterip.com.au/fair-use-of-trade-marks"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -118,7 +116,7 @@ export default function FairUseOfTradeMarks() {
         someone who is using their registered trade mark to sell their similar
         goods or services. However, certain instances of use of a registered
         trade mark can be considered &quot;fair use&quot;. This allows a party
-        to legitimately use another person&apos; trade mark without{' '}
+        to legitimately use another person&apos;s trade mark without{' '}
         <Link href="/trade-mark-infringement">infringing the trade mark</Link>.
       </p>
       <h2>What is considered fair use?</h2>
@@ -128,9 +126,9 @@ export default function FairUseOfTradeMarks() {
       </p>
       <h3>Descriptive fair use</h3>
       <p>
-        Descriptive fair use is when someone&apos; registered trade mark can be
-        used in good faith to describe the user&apos; products or services. This
-        usually happens when the trade mark in question has a descriptive
+        Descriptive fair use is when someone&apos;s registered trade mark can be
+        used in good faith to describe the user&apos;s products or services.
+        This usually happens when the trade mark in question has a descriptive
         meaning in addition to its secondary meaning as a trade mark. However,
         in{' '}
         <em>Wellness Pty Ltd v Pro Bio Living Waters Pty Ltd [2004] FCA 438</em>
@@ -139,14 +137,15 @@ export default function FairUseOfTradeMarks() {
         Pty Ltd. The court found that the use of the words &quot;Living
         water&quot; by <em>Pro Bio</em> was neither descriptive of the goods nor
         reasonably necessary for adequate description of the goods. Therefore,
-        the court did not consider Pro Bio&apos; use of the words &quot;Living
+        the court did not consider Pro Bio&apos;s use of the words &quot;Living
         water&quot; to constitute fair use.
       </p>
       <h3>Nominative fair use</h3>
       <p>
-        Nominative fair use is when the use of another&apos; trade mark to refer
-        to the trade mark owner&apos; actual goods and services associated with
-        the mark is permitted. Nominative fair use is allowed if:
+        Nominative fair use is when the use of another&apos;s trade mark to
+        refer to the trade mark owner&apos;s actual goods and services
+        associated with the mark is permitted. Nominative fair use is allowed
+        if:
       </p>
       <ul>
         <li>

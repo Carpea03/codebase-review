@@ -15,12 +15,10 @@ export default function TypesOfTradeMarks() {
         />
         <link
           rel="canonical"
-          href="/types-of-trade-marks"
+          href="https://www.baxterip.com.au/types-of-trade-marks"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -114,7 +112,7 @@ export default function TypesOfTradeMarks() {
       <h1>Types of trade marks</h1>
       <p>
         A trade mark is an intellectual property right that protects a{' '}
-        <Link href="/brand-name-vs-trade-mark">brand</Link>. &nbsp;These are the
+        <Link href="/brand-name-vs-trade-mark">brand</Link>. These are the
         various types of trade marks that are used in the market.
       </p>
       <h2 id="word-marks">Word marks</h2>
@@ -141,9 +139,9 @@ export default function TypesOfTradeMarks() {
       <h2 id="series">Series trade marks</h2>
       <p>
         This type of trade mark includes a collection of trade marks with
-        essentially the same concept or ‘material particulars’. Trade marks
-        belonging to the series only vary in non-distinctive aspects, such as
-        non-distinctive words or representations that denote (1) goods or
+        essentially the same concept or &quot;material particulars&quot;. Trade
+        marks belonging to the series only vary in non-distinctive aspects, such
+        as non-distinctive words or representations that denote (1) goods or
         services used in relation to the trade mark classes or (2) are
         indicative of orders (first, second, etc.), number, location, price,
         color, and quality. Series trade marks usually offer the advantage of
@@ -188,23 +186,23 @@ export default function TypesOfTradeMarks() {
       <p>
         These may include music snippets, animal sounds, and other auditory
         impressions. Some of the most memorable sound trade marks include those
-        of movie companies, such as MGM’s lion roar and the orchestral theme for
-        20th Century Fox (AU TM #{' '}
+        of movie companies, such as MGM&apos;s lion roar and the orchestral
+        theme for 20th Century Fox (AU TM #{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/891830?q=891830"
           target="_blank"
           rel="noopener noreferrer">
           891830
         </Link>
-        ). Other notable examples of sound trade marks are Intel’s sound logo
-        (AU TM #{' '}
+        ). Other notable examples of sound trade marks are Intel&apos;s sound
+        logo (AU TM #{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1077876?q=1077876"
           target="_blank"
           rel="noopener noreferrer">
           1077876
         </Link>
-        ) and Yahoo’s yodel (AU TM #{' '}
+        ) and Yahoo&apos;s yodel (AU TM #{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/827728?q=827728"
           target="_blank"
@@ -225,8 +223,9 @@ export default function TypesOfTradeMarks() {
           rel="noopener noreferrer">
           1840549
         </Link>
-        ). Certain trade marks combine sound and movement, such as the HBO ‘This
-        has been a presentation of HBO’ with TV screen snow static (AU TM #{' '}
+        ). Certain trade marks combine sound and movement, such as the HBO
+        &quot;This has been a presentation of HBO&apos;s with TV screen snow
+        static (AU TM #{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1813005?q=1813005"
           target="_blank"
@@ -273,7 +272,8 @@ export default function TypesOfTradeMarks() {
         to distinguish a certain good or service from others may be difficult to
         prove; thus, colour trade marks are usually combined with different
         aspects, or a combination of colors and designs are used. One example is
-        7-Eleven’s three horizontal bands of orange, green, and red (AU TM #{' '}
+        7-Eleven&apos;s three horizontal bands of orange, green, and red (AU TM
+        #{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/749403?q=749403"
           target="_blank"
@@ -288,7 +288,7 @@ export default function TypesOfTradeMarks() {
           rel="noopener noreferrer">
           987048
         </Link>
-        ) and Tiffany’s &amp; Co. (AU TM #
+        ) and Tiffany&apos;s &amp; Co. (AU TM #
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1414010?q=1414010"
           target="_blank"
@@ -325,17 +325,15 @@ export default function TypesOfTradeMarks() {
         experienced after purchase. At present, there are no registered taste
         trade marks in the Australian trade mark registry.
       </p>
-      <h2 className="h5">
-        Trade mark type according to degree of distinctiveness
-      </h2>
-      <h3 id="generic">Generic “trade marks”</h3>
+      <h2>Trade mark type according to degree of distinctiveness</h2>
+      <h3 id="generic">Generic &ldquo;trade marks&rdquo;</h3>
       <p>
-        Generic “marks” are terms that denote an actual product. These marks
-        cannot be registered and enforced because doing so will unfairly limit
-        competition in the market. Thus, these types of trade marks should be
-        avoided. In addition, extremely popular trade marks run the risk of
-        becoming generic, which was the fate of marks like escalator, dry ice,
-        and flip phone, among others.
+        Generic &ldquo;marks&rdquo; are terms that denote an actual product.
+        These marks cannot be registered and enforced because doing so will
+        unfairly limit competition in the market. Thus, these types of trade
+        marks should be avoided. In addition, extremely popular trade marks run
+        the risk of becoming generic, which was the fate of marks like
+        escalator, dry ice, and flip phone, among others.
       </p>
       <h3 id="descriptive">Descriptive trade marks</h3>
       <p>
@@ -344,14 +342,15 @@ export default function TypesOfTradeMarks() {
         protection for. In general, this type of mark may not be registered as a
         trade mark because it does not indicate the origin of a product or
         service and thus cannot distinguish them from the competition. For
-        example, the word “soft” in relation to pillows or cotton and the word
-        “sharp” in relation to knives do not confer any registrability.
-        Descriptive marks can only be registered if they acquire a secondary
-        meaning, which happens through prolonged, extensive use in commerce and
-        through widespread advertising. For example: “sharp” has acquired a
-        second meaning in relation to sharp edged, flat screen televisions.
-        Surnames are treated as merely descriptive, meaning that the same
-        criteria for the acceptance of descriptive marks apply.
+        example, the word &ldquo;soft&rdquo; in relation to pillows or cotton
+        and the word &ldquo;sharp&rdquo; in relation to knives do not confer any
+        registrability. Descriptive marks can only be registered if they acquire
+        a secondary meaning, which happens through prolonged, extensive use in
+        commerce and through widespread advertising. For example:
+        &ldquo;sharp&rdquo; has acquired a second meaning in relation to sharp
+        edged, flat screen televisions. Surnames are treated as merely
+        descriptive, meaning that the same criteria for the acceptance of
+        descriptive marks apply.
       </p>
       <h3 id="suggestive">Suggestive trade marks</h3>
       <p>
@@ -369,8 +368,8 @@ export default function TypesOfTradeMarks() {
       <p>
         Arbitrary marks are words or phrases that are used as a badge of origin
         for goods or services that are totally unrelated to its usual meaning.
-        The classic example is the mark “Apple” for computers. Arbitrary marks
-        are innately distinctive and strongly registrable.
+        The classic example is the mark &ldquo;Apple&rdquo; for computers.
+        Arbitrary marks are innately distinctive and strongly registrable.
       </p>
       <h3 id="fanciful">Fanciful trade marks</h3>
       <p>
@@ -384,7 +383,7 @@ export default function TypesOfTradeMarks() {
         public about your brand and its products or services. Several classic
         examples of fanciful trade marks include Kodak, Xerox and Pepsi.
       </p>
-      <h2 className="h5">Special types of trade marks</h2>
+      <h2>Special types of trade marks</h2>
       <p>
         In addition to these different categories, trade marks are also
         classified{' '}

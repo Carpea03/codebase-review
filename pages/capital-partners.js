@@ -15,12 +15,15 @@ export default function CapitalPartners() {
         />
         <link
           rel="canonical"
-          href="/capital-partners"
+          href="https://www.baxterip.com.au/capital-partners"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A4%A7%E5%86%99%E4%BC%99%E4%BC%B4"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -79,13 +82,13 @@ export default function CapitalPartners() {
         clients in accessing capital. Startup company clients that meet the
         capital partners introduction criteria will be provided with a warm
         introduction to the partner and are guaranteed a response. Clients that
-        don’t meet the criteria can be sure to receive helpful feedback.
+        don&apos;t meet the criteria can be sure to receive helpful feedback.
       </p>
       <p>
         As the first patent &amp; trade mark attorney firm in Australia to
         establish partnerships with angel investor networks and technology
-        funds, we’re pleased to partner with five leading (and to be leading)
-        players in Pre-Seed, Seed &amp; Series A level funding.
+        funds, we&apos;re pleased to partner with five leading (and to be
+        leading) players in Pre-Seed, Seed &amp; Series A level funding.
       </p>
       <p>Introducing the BIP Capital Partners:</p>
       <Link
@@ -93,9 +96,7 @@ export default function CapitalPartners() {
         href="https://www.ten13.vc/"
         target="_blank"
         rel="noopener nofollow noreferrer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 215.04 39.68">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.04 39.68">
           <path
             d="M143.43.76c-2.89,0-5.79,0-8.68,0-.53,0-.65.13-.65.65,0,6,0,12,0,18,0,2.38.14,4.77.17,7.19a3.34,3.34,0,0,1-.25-.4q-6.85-12.43-13.68-24.89a.89.89,0,0,0-.92-.55q-5.61,0-11.2,0c-.43,0-.57.08-.57.54q0,18.51,0,37c0,.47.15.55.57.54,2.93,0,5.87,0,8.81,0,.47,0,.59-.12.59-.59,0-3.23,0-6.46,0-9.69,0-3.46,0-6.93,0-10.39,0-1.34-.13-2.69-.21-4a1.11,1.11,0,0,1,.39.48q6.54,11.85,13.06,23.72a.81.81,0,0,0,.82.51c3.94,0,7.88,0,11.83,0,.52,0,.6-.18.6-.65q0-18.41,0-36.81C144.05.9,143.94.75,143.43.76Z"
             fill="#2b2b2a"></path>
@@ -132,25 +133,20 @@ export default function CapitalPartners() {
         </Link>{' '}
         is an angel investment syndicate led by the family office of Steve
         Baxter (no relation to Chris Baxter) and have been producing top
-        quartile investment returns since 2011. Ten13’s philosophy of
-        ‘network-based investing’ means investees benefit from the value of
-        their 12,000+ connections worldwide. Steve is well known for his time as
-        a ‘shark’ on Ten’s Shark Tank television show.
+        quartile investment returns since 2011. Ten13&apos;s philosophy of
+        &lsquo;network-based investing&rsquo; means investees benefit from the
+        value of their 12,000+ connections worldwide. Steve is well known for
+        his time as a &lsquo;shark&rsquo; on Ten&apos;s Shark Tank television
+        show.
       </p>
       <Link
         title="AirTree Ventures"
         href="https://www.airtree.vc/"
         target="_blank"
         rel="noopener nofollow noreferrer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 234 73.1">
-          <g
-            id="HomePage"
-            transform="translate(-160.000000, -115.000000)">
-            <g
-              id="logo"
-              transform="translate(160.000000, 115.000000)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234 73.1">
+          <g id="HomePage" transform="translate(-160.000000, -115.000000)">
+            <g id="logo" transform="translate(160.000000, 115.000000)">
               <path
                 id="Logo"
                 className="st0"
@@ -183,8 +179,8 @@ export default function CapitalPartners() {
           AirTree Ventures
         </Link>{' '}
         partners with entrepreneurs that have the ambition to change the world
-        as we know it. They manage some of Australia’s largest VC funds with
-        significant institutional support. AirTree invest across all tech
+        as we know it. They manage some of Australia&apos;s largest VC funds
+        with significant institutional support. AirTree invest across all tech
         sectors and have a particular expertise in B2B SaaS products. In this
         sector they look for products that spread quickly within organisations
         and have invested in 70 companies over the past 20 years.
@@ -194,9 +190,7 @@ export default function CapitalPartners() {
         href="https://galileo.ventures/"
         target="_blank"
         rel="noopener nofollow noreferrer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 209.47 53.98">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209.47 53.98">
           <path
             d="M51.13,22.14a6.46,6.46,0,0,0-5-2.08,6.47,6.47,0,0,0-5,2.08,8,8,0,0,0-1.89,5.4v1.25a8,8,0,0,0,1.89,5.4,6.47,6.47,0,0,0,5,2.09,6.47,6.47,0,0,0,5-2.09A8,8,0,0,0,53,28.79V27.54A8,8,0,0,0,51.13,22.14Z"
             fill="none"></path>
@@ -238,9 +232,7 @@ export default function CapitalPartners() {
         href="https://www.loganwayne.com/"
         target="_blank"
         rel="noopener nofollow noreferrer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1243.49 106.8">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1243.49 106.8">
           <title>Logan and Wayne</title>
           <path d="M0,0H8.55V96.9h57.6V105H0Z"></path>
           <path d="M116.7,19.35c24.6,0,43.8,18.45,43.8,43.8,0,25.2-19.2,43.65-43.8,43.65-24.45,0-43.65-18.45-43.65-43.65C73.05,37.8,92.25,19.35,116.7,19.35Zm0,79.65c19.8,0,35.4-14.55,35.4-35.85s-15.6-36-35.4-36-35.25,14.55-35.25,36S96.9,99,116.7,99Z"></path>
@@ -264,23 +256,22 @@ export default function CapitalPartners() {
           rel="noreferrer noopener">
           Logan and Wayne
         </Link>{' '}
-        was founded by one of Australia’s leading angel investors, Brendan Hill.
-        They operate Australia’s largest AngelList syndicate, showcasing some of
-        Australia’s most ambitious startups to their global investor base.
+        was founded by one of Australia&apos;s leading angel investors, Brendan
+        Hill. They operate Australia&apos;s largest AngelList syndicate,
+        showcasing some of Australia&apos;s most ambitious startups to their
+        global investor base.
       </p>
       <p>
-        Brendan Co-Founded The Australian Graduate School of Management’s Angel
-        Investor Education Program and is passionate about educating the next
-        generation of angel investors.
+        Brendan Co-Founded The Australian Graduate School of Management&apos;s
+        Angel Investor Education Program and is passionate about educating the
+        next generation of angel investors.
       </p>
       <Link
         title="Investible"
         href="https://investible.com/"
         target="_blank"
         rel="noopener nofollow noreferrer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 237.43 59.05">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237.43 59.05">
           <title>Investible</title>
           <path
             d="M21.13,36.14,18,33a1.72,1.72,0,0,0-2.46,0l-.61.61a1.72,1.72,0,0,0,0,2.46l3.1,3.08a1.72,1.72,0,0,0,2.46,0l.61-.61A1.73,1.73,0,0,0,21.13,36.14Z"
@@ -321,9 +312,7 @@ export default function CapitalPartners() {
           <path
             d="M184.06,45.3V12.79h4.17v14c1-1.93,3.56-3.67,7.14-3.67,6.56,0,9.91,5,9.91,11.31,0,6.43-3.64,11.49-10.05,11.49a7.72,7.72,0,0,1-7-3.71V45.3Zm10.53-18.49c-3.71,0-6.43,2.92-6.43,7.59s2.69,7.73,6.43,7.73S201,39.08,201,34.4,198.51,26.81,194.59,26.81Z"
             fill="#005587"></path>
-          <path
-            d="M208.89,45.3V12.79h4.21V45.3Z"
-            fill="#005587"></path>
+          <path d="M208.89,45.3V12.79h4.21V45.3Z" fill="#005587"></path>
           <path
             d="M237.29,39.15A9.78,9.78,0,0,1,227.61,46c-5.8,0-10.88-4.21-10.88-11.53,0-6.77,4.9-11.4,10.33-11.4,6.63,0,10.37,4.58,10.37,11.31a8.66,8.66,0,0,1-.09,1.34H221.08a6.45,6.45,0,0,0,6.53,6.57,5.89,5.89,0,0,0,6.06-4.36ZM233,32.28c-.09-3.1-2.12-5.51-5.93-5.51a5.8,5.8,0,0,0-5.88,5.51Z"
             fill="#005587"></path>
@@ -333,32 +322,32 @@ export default function CapitalPartners() {
         </svg>
       </Link>
       <p>
-        As Australia’s leading seed investment group,{' '}
+        As Australia&apos;s leading seed investment group,{' '}
         <Link
           href="https://investible.com/"
           target="_blank"
           rel="noreferrer noopener">
           Investible
         </Link>{' '}
-        fuses instinct with insight to back the world’s next generation of
+        fuses instinct with insight to back the world&apos;s next generation of
         game-changers. Investible was formally founded in 2014 by
         entrepreneurs-turned-angel investors Creel Price and Trevor Folsom to
-        discover, invest in and support the world’s best early-stage technology
-        companies.
+        discover, invest in and support the world&apos;s best early-stage
+        technology companies.
       </p>
       <p>
-        Investible’s unique structure enables its diverse network of investors
-        to co-invest in businesses alongside its fund(s) and has made
+        Investible&apos;s unique structure enables its diverse network of
+        investors to co-invest in businesses alongside its fund(s) and has made
         investments in 9 countries and 20 sectors through its inaugural
         early-stage fund. With offices in Australia and Singapore, its mission
         is to elevate seed investment on a global scale.
       </p>
       <hr />
-      <h5>What’s next?</h5>
+      <h5>What&apos;s next?</h5>
       <p>
-        If you’re a client of Baxter IP and are interested in learning more
-        simply ask your attorney whether you’re eligible for consideration in
-        the BIP Capital Partners program.
+        If you&apos;re a client of Baxter IP and are interested in learning more
+        simply ask your attorney whether you&apos;re eligible for consideration
+        in the BIP Capital Partners program.
       </p>
     </Layout>
   )

@@ -1271,33 +1271,37 @@ export default function ConstructionPatents() {
       <div>
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-xl">
-            <h4 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
+            <h4 className="mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
               Some of our civil engineering and construction clients include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
+            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-2 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
               <Link
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
-                <Image
-                  loader={myLoader}
-                  src="logo-slingshot-haulage.png"
-                  alt="Slingshot Haulage Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
+                <a>
+                  <Image
+                    loader={myLoader}
+                    src="logo-slingshot-haulage.png"
+                    alt="Slingshot Haulage Pty Ltd logo."
+                    width={255}
+                    height={191}
+                    className="mx-auto mb-4 rounded-full"
+                  />
+                </a>
               </Link>
               <Link
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
-                <Image
-                  loader={myLoader}
-                  src="logo-wombat-timbers.png"
-                  alt="Wombat Timbers Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
+                <a>
+                  <Image
+                    loader={myLoader}
+                    src="logo-wombat-timbers.png"
+                    alt="Wombat Timbers Pty Ltd logo."
+                    width={255}
+                    height={191}
+                    className="mx-auto mb-4 rounded-full"
+                  />
+                </a>
               </Link>
             </div>
           </div>
