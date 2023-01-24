@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
-    remotePatterns: [
-      { hostname: 'cdn.sanity.io' },
-      { hostname: 'source.unsplash.com' },
-      { hostname: 'flowbite.s3.amazonaws.com' },
-      { hostname: 'baxterip.vercel.app' },
+    domains: [
+      'cdn.sanity.io',
+      'source.unsplash.com',
+      'flowbite.s3.amazonaws.com',
+      'baxterip.vercel.app',
+      'localhost:3000',
     ],
   },
 }
