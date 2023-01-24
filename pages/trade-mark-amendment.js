@@ -11,16 +11,14 @@ export default function TradeMarkAmendment() {
         </title>
         <meta
           name="description"
-          content="Amendment of your trade mark may be requested at any point in your trade mark’s timeline, but only under certain conditions."
+          content="Amendment of your trade mark may be requested at any point in your trade mark's timeline, but only under certain conditions."
         />
         <link
           rel="canonical"
-          href="/trade-mark-amendment"
+          href="https://www.baxterip.com.au/trade-mark-amendment"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -131,8 +129,9 @@ export default function TradeMarkAmendment() {
           rel="noopener noreferrer">
           IP Australia
         </Link>
-        . Examples of these revisions include changes in the owner’s names and
-        details, changes in the representation of the trade mark, deletion of{' '}
+        . Examples of these revisions include changes in the owner&apos;s names
+        and details, changes in the representation of the trade mark, deletion
+        of{' '}
         <Link href="/classes-of-goods-and-services">
           classes of goods and services
         </Link>
@@ -154,7 +153,7 @@ export default function TradeMarkAmendment() {
         <li>changes to the representation of the mark;</li>
         <li>
           one or more trade marks from the application may be removed (in the
-          case of a “series” application);
+          case of a &ldquo;series&rdquo; application);
         </li>
         <li>classes of goods and services may be corrected; and/or</li>
         <li>adding or changing endorsements.</li>
@@ -170,18 +169,18 @@ export default function TradeMarkAmendment() {
           revisions in the registered mark (as long as the identity of the trade
           mark as published is unchanged);
         </li>
-        <li>changes in the trade mark owner’s details; and/or</li>
+        <li>changes in the trade mark owner&apos;s details; and/or</li>
         <li>changes in the address for service</li>
       </ul>
       <p>
         In general, amendments need to be considered by the Registrar and will
         be granted if the Registrar considers the request is fair and reasonable
-        and does not affect other people’s rights. Thus, classes of goods and
-        services cannot be added, as this would grant the trade mark applicant
-        extended rights. In addition, certain amendments may have to be
-        advertised in the Australian Official Journal of Trade marks so that any
-        third party can oppose the amendment in case the proposed revisions to
-        the trade mark are in conflict with their own intellectual property
+        and does not affect other people&apos;s rights. Thus, classes of goods
+        and services cannot be added, as this would grant the trade mark
+        applicant extended rights. In addition, certain amendments may have to
+        be advertised in the Australian Official Journal of Trade marks so that
+        any third party can oppose the amendment in case the proposed revisions
+        to the trade mark are in conflict with their own intellectual property
         rights.
       </p>
       <h2>Amendments prior to renewal</h2>

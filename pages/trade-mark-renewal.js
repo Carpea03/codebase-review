@@ -15,12 +15,10 @@ export default function TradeMarkRenewal() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-renewal"
+          href="https://www.baxterip.com.au/trade-mark-renewal"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -152,10 +150,10 @@ export default function TradeMarkRenewal() {
         competitors for a similar or identical trade mark in respect of the same{' '}
         <Link href="/classes-of-goods-and-services">goods and classes</Link>.
         Therefore, it is in your best interest to stay informed of the important
-        dates in your trade mark’s timeline and to keep your registration up to
-        date. The <Link href="/trade-mark-attorney">trade mark attorneys</Link>{' '}
-        at Baxter IP will be able to help you manage your trade mark
-        registration.
+        dates in your trade mark&apos;s timeline and to keep your registration
+        up to date. The{' '}
+        <Link href="/trade-mark-attorney">trade mark attorneys</Link> at Baxter
+        IP will be able to help you manage your trade mark registration.
       </p>
     </Layout>
   )

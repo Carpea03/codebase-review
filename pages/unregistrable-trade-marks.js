@@ -16,12 +16,10 @@ export default function UnregistrableTradeMarks() {
         />
         <link
           rel="canonical"
-          href="/unregistrable-trade-marks"
+          href="https://www.baxterip.com.au/unregistrable-trade-marks"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -130,14 +128,14 @@ export default function UnregistrableTradeMarks() {
         that others may want to use to describe or represent their own goods or
         services, then the application is more likely to be rejected on these
         grounds. A registered trade mark aims to protect, but not to the
-        detriment of others’ legitimate needs; it is only fair to keep
+        detriment of others&apos; legitimate needs; it is only fair to keep
         frequently used texts or images for everyone to use.
       </p>
       <h3 id="common-signs">Common signs</h3>
       <p>
-        Signs can be any text or image that can represent the applicant’s goods
-        or services. Such signs can be considered common if the text or image is
-        typically used to describe the goods or services that are being
+        Signs can be any text or image that can represent the applicant&apos;s
+        goods or services. Such signs can be considered common if the text or
+        image is typically used to describe the goods or services that are being
         protected. Examples of common signs are:
       </p>
       <ul>
@@ -242,7 +240,7 @@ export default function UnregistrableTradeMarks() {
         As in the case of geographical names, the applicant may submit an
         evidence of use report to show that the surname has been used and is
         recognized as a trade mark to defend the use of a common surname in the
-        applicant’s trade mark.
+        applicant&apos;s trade mark.
       </p>
       <h2 id="prohibited">Prohibited text or images</h2>
       <p>
@@ -337,9 +335,9 @@ export default function UnregistrableTradeMarks() {
       </p>
       <p>
         The <em>Life Insurance Act 1995</em>, section 16E, established the
-        restriction on the use of the expression “friendly society.” A friendly
-        society is a mutual association providing sickness benefits, life
-        insurance and pensions. The phrase is restricted under several
+        restriction on the use of the expression &ldquo;friendly society.&rdquo;
+        A friendly society is a mutual association providing sickness benefits,
+        life insurance and pensions. The phrase is restricted under several
         conditions:
       </p>
       <ul>
@@ -350,8 +348,8 @@ export default function UnregistrableTradeMarks() {
       <p>
         The APRA is an Australian government establishment that regulates and
         supervises banking, insurance, superannuation, and financial services.
-        The authority may revoke an association’s right to use the expression at
-        any time, even after consent is given.
+        The authority may revoke an association&apos;s right to use the
+        expression at any time, even after consent is given.
       </p>
       <p>
         If you, as an applicant, is not part of the list of authorised financial
@@ -369,19 +367,20 @@ export default function UnregistrableTradeMarks() {
         </Link>{' '}
         is a good example of a trade mark that was not accepted for registration
         for containing restricted words, like bank and banking. The trade mark
-        was filed on 11 July 2013 for the words “YOURS &amp; MINE BANK BANKING
-        WITH INTEGRITY” and was registered for class 36 services. AU TM#{' '}
+        was filed on 11 July 2013 for the words &ldquo;YOURS &amp; MINE BANK
+        BANKING WITH INTEGRITY&rdquo; and was registered for class 36 services.
+        AU TM#{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1092343/details"
           target="_blank"
           rel="noopener noreferrer">
           1092343
         </Link>{' '}
-        was for the words “Your significant other bank” and was originally
-        accepted for registration in May of 2006. The application was removed
-        from the register for not being renewed. This is a good example of a
-        trade mark for class 36 services that was accepted and also contains the
-        word bank.
+        was for the words &ldquo;Your significant other bank&rdquo; and was
+        originally accepted for registration in May of 2006. The application was
+        removed from the register for not being renewed. This is a good example
+        of a trade mark for class 36 services that was accepted and also
+        contains the word bank.
       </p>
       <p>
         AU TM#{' '}
@@ -392,17 +391,18 @@ export default function UnregistrableTradeMarks() {
           499895
         </Link>{' '}
         is a registered trade mark for services under class 36. The mark is for
-        the words “THE OVER 50’S FRIENDLY SOCIETY” and an image containing the
-        same words on the cover of an open book. The mark is still on the
-        register with a renewal date of 18 November 2019. By contrast, AU TM#{' '}
+        the words &ldquo;THE OVER 50&apos;S FRIENDLY SOCIETY&rdquo; and an image
+        containing the same words on the cover of an open book. The mark is
+        still on the register with a renewal date of 18 November 2019. By
+        contrast, AU TM#{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/442226/details"
           target="_blank"
           rel="noopener noreferrer">
           442226
         </Link>{' '}
-        for the phrase “STATEGUARD FRIENDLY SOCIETY” and a circular image
-        containing the same phrase was never registered.
+        for the phrase &ldquo;STATEGUARD FRIENDLY SOCIETY&rdquo; and a circular
+        image containing the same phrase was never registered.
       </p>
       <h3 id="prohibited-signs">Article 6ter prohibited signs</h3>
       <p>

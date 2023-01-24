@@ -15,12 +15,15 @@ export default function DesignDisputes() {
         />
         <link
           rel="canonical"
-          href="/design-disputes"
+          href="https://www.baxterip.com.au/design-disputes"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E8%AE%BE%E8%AE%A1%E7%BA%A0%E7%BA%B7"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -139,9 +142,10 @@ export default function DesignDisputes() {
       <h2>What is a design dispute?</h2>
       <p>
         A design dispute is an avenue provided by the <em>Designs Act 2003</em>{' '}
-        to enforce one’s right as the owner of a registered design against an
-        infringing party. Design infringement may occur even without knowledge
-        of “prior art” on the part of the infringing party.
+        to enforce one&apos;s right as the owner of a registered design against
+        an infringing party. Design infringement may occur even without
+        knowledge of &ldquo;prior art&rdquo; on the part of the infringing
+        party.
       </p>
       <h2>Who can own a registered design?</h2>
       <p>

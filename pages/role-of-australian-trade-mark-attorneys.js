@@ -13,12 +13,15 @@ export default function RoleOfAustralianTradeMarkAttorneys() {
         />
         <link
           rel="canonical"
-          href="/role-of-australian-trade-mark-attorneys"
+          href="https://www.baxterip.com.au/role-of-australian-trade-mark-attorneys"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%95%86%E6%A0%87%E5%BE%8B%E5%B8%88%E7%9A%84%E8%A7%92%E8%89%B2"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

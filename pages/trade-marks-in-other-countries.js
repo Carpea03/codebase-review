@@ -15,12 +15,10 @@ export default function TradeMarkInOtherCountries() {
         />
         <link
           rel="canonical"
-          href="/trade-marks-in-other-countries"
+          href="https://www.baxterip.com.au/trade-marks-in-other-countries"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -136,14 +134,14 @@ export default function TradeMarkInOtherCountries() {
         Given its proximity to Australia and close trading relationship, trade
         mark protection of the Australian trade mark in New Zealand is highly
         encouraged. The trade mark laws of Australia and New Zealand have
-        similarities and differences; while both nations have a “
-        <Link href="/first-to-file-vs-first-to-use">first to use</Link>” rule,
-        New Zealand trade mark law tends to follow more closely the British
-        counterpart. Given that Maori is an official language used in New
-        Zealand, it is recommended that filing a trade mark registration in New
-        Zealand includes the English translation and transliteration and that
-        all versions are registered separately. Trade mark applications may be
-        filed directly to the Intellectual Property Office of New Zealand
+        similarities and differences; while both nations have a &ldquo;
+        <Link href="/first-to-file-vs-first-to-use">first to use</Link>&rdquo;
+        rule, New Zealand trade mark law tends to follow more closely the
+        British counterpart. Given that Maori is an official language used in
+        New Zealand, it is recommended that filing a trade mark registration in
+        New Zealand includes the English translation and transliteration and
+        that all versions are registered separately. Trade mark applications may
+        be filed directly to the Intellectual Property Office of New Zealand
         (IPONZ) or through the{' '}
         <Link href="/madrid-protocol-application">Madrid Protocol</Link>.
       </p>
@@ -159,9 +157,10 @@ export default function TradeMarkInOtherCountries() {
       </p>
       <ul>
         <li>
-          Cook Islands – Cook Islands, which previously followed New Zealand
-          intellectual property laws, is party to the WIPO as its own entity.
-          However, there is no trade mark system in the country at present.
+          Cook Islands &ndash; Cook Islands, which previously followed New
+          Zealand intellectual property laws, is party to the WIPO as its own
+          entity. However, there is no trade mark system in the country at
+          present.
         </li>
         <li>Federated states of Micronesia</li>
         <li>Timor Leste</li>
@@ -170,45 +169,48 @@ export default function TradeMarkInOtherCountries() {
       </ul>
       <h3>Nations with some form of trade mark system</h3>
       <ul>
-        <li>Guam – Trade mark protection in the US extends to Guam.</li>
+        <li>Guam &ndash; Trade mark protection in the US extends to Guam.</li>
         <li>
-          Kiribati – Only the owners of UK registered trade marks for the same
-          goods can apply for trade mark protection in Kiribati. Service marks
-          are not registrable.
+          Kiribati &ndash; Only the owners of UK registered trade marks for the
+          same goods can apply for trade mark protection in Kiribati. Service
+          marks are not registrable.
         </li>
         <li>
-          New Caledonia and French Polynesia – Protection afforded to French
-          registered trade marks is automatically extended to New Caledonia and
-          French Polynesia. Even so, a national trade mark system does not
-          exist.
+          New Caledonia and French Polynesia &ndash; Protection afforded to
+          French registered trade marks is automatically extended to New
+          Caledonia and French Polynesia. Even so, a national trade mark system
+          does not exist.
         </li>
         <li>
-          Papua New Guinea – trade marks for goods and services can be
+          Papua New Guinea &ndash; trade marks for goods and services can be
           registered in Papua New Guinea; however, trade marks cannot be
           registered under multiple classes.
         </li>
         <li>
-          Samoa – application for trade mark regulations for goods and services
-          can be lodged directly to the country or through the Madrid Protocol.
+          Samoa &ndash; application for trade mark regulations for goods and
+          services can be lodged directly to the country or through the Madrid
+          Protocol.
         </li>
         <li>
-          Solomon Islands – Service marks cannot be registered. A trade mark can
-          be filed with the Registrar General based on a corresponding UK
-          registration and can include multiple classes.
+          Solomon Islands &ndash; Service marks cannot be registered. A trade
+          mark can be filed with the Registrar General based on a corresponding
+          UK registration and can include multiple classes.
         </li>
         <li>
-          Tonga – The independent Tonga registration system accepts registration
-          applications for goods or services under multiple classes.
+          Tonga &ndash; The independent Tonga registration system accepts
+          registration applications for goods or services under multiple
+          classes.
         </li>
         <li>
-          Tuvalu – Only applications based on the corresponding UK registered
-          marks are accepted. The Registrar only registers services if included
-          in the corresponding UK registered trade mark, but these registered
-          service marks are only nominal and not necessarily enforceable.
+          Tuvalu &ndash; Only applications based on the corresponding UK
+          registered marks are accepted. The Registrar only registers services
+          if included in the corresponding UK registered trade mark, but these
+          registered service marks are only nominal and not necessarily
+          enforceable.
         </li>
         <li>
-          Vanuatu – Vanuatu has an independent trade mark system that is no
-          longer rooted on an EU trade mark registration. Good and services
+          Vanuatu &ndash; Vanuatu has an independent trade mark system that is
+          no longer rooted on an EU trade mark registration. Good and services
           under multiple classes are registrable.
         </li>
       </ul>
@@ -221,9 +223,9 @@ export default function TradeMarkInOtherCountries() {
         <Link href="/madrid-protocol-application">Madrid protocol</Link>.
         However, one key difference between the Australian and US jurisdictions
         is that power of attorney is required for lodging a US trade mark
-        registration if the Applicant’s domicile is outside the US, whereas no
-        such document is required for an agent to act for you in Australia, only
-        an Australian address is required as the address for service.
+        registration if the Applicant&apos;s domicile is outside the US, whereas
+        no such document is required for an agent to act for you in Australia,
+        only an Australian address is required as the address for service.
       </p>
       <p>
         In addition, while both countries use the Nice classification of goods
@@ -237,12 +239,12 @@ export default function TradeMarkInOtherCountries() {
         Up until March 2019, applications for trade mark registration in Canada
         were only filed directly to the Canadian Trade Marks Office. Now, Canada
         is the 103rd nation to accede to the Madrid Agreement, and several
-        notable changes have been implemented in the country’s trade mark system
-        in the same year.
+        notable changes have been implemented in the country&apos;s trade mark
+        system in the same year.
       </p>
       <p>
-        Similarly to Australia, Canada is a “
-        <Link href="/first-to-file-vs-first-to-use">first to use</Link>”
+        Similarly to Australia, Canada is a &ldquo;
+        <Link href="/first-to-file-vs-first-to-use">first to use</Link>&rdquo;
         jurisdiction. Even so, prior use is not a requirement for registering a
         trade mark in the country, with intent to use being sufficient for
         filing a trade mark application. Registrability of word marks rely on
@@ -265,21 +267,19 @@ export default function TradeMarkInOtherCountries() {
       <p>
         Trade mark protection should not be neglected as counterfeiting and
         infringement is rampant in some countries in the region. Most South East
-        Asian countries follow the “
-        <Link href="/first-to-file-vs-first-to-use">first-to-file</Link>” rule,
-        so trade marks should be registered as soon as possible. Trade mark
-        applications can be lodged directly to the countries or through the
+        Asian countries follow the &ldquo;
+        <Link href="/first-to-file-vs-first-to-use">first-to-file</Link>&rdquo;
+        rule, so trade marks should be registered as soon as possible. Trade
+        mark applications can be lodged directly to the countries or through the
         Madrid Protocol, as six member countries in the region are members
         (Singapore, Cambodia, Laos, Vietnam, Philippines and Thailand).
       </p>
-      <h2
-        className="h5"
-        id="china">
+      <h2 className="h5" id="china">
         Trade marks in China
       </h2>
       <p>
-        China is one of Australia’s largest trading partners and is a popular
-        jurisdiction for protection of IP rights.{' '}
+        China is one of Australia&apos;s largest trading partners and is a
+        popular jurisdiction for protection of IP rights.{' '}
         <em>
           <strong>
             The Chinese trade mark system is highly complex and ever-changing.
@@ -290,8 +290,8 @@ export default function TradeMarkInOtherCountries() {
       </p>
       <h3>First to file trade mark system</h3>
       <p>
-        As opposed to those in Australia, a “first-to-use” jurisdiction, China’s
-        intellectual property rules give priority to{' '}
+        As opposed to those in Australia, a &ldquo;first-to-use&rdquo;
+        jurisdiction, China&apos;s intellectual property rules give priority to{' '}
         <Link href="/first-to-file-vs-first-to-use">
           those who file their trade mark first
         </Link>
@@ -352,8 +352,8 @@ export default function TradeMarkInOtherCountries() {
       <p>
         Japan is one of the top three trading countries with Australia; thus,
         applying for trade mark protection in the country is important. Similar
-        to China, Japan is a “
-        <Link href="/first-to-file-vs-first-to-use">first-to-file</Link>”
+        to China, Japan is a &ldquo;
+        <Link href="/first-to-file-vs-first-to-use">first-to-file</Link>&rdquo;
         jurisdiction, so the trade mark should be registered with the Japan
         Patent Office at the earliest possible time. Given that Japan is a
         jurisdiction with its own language and writing system, as with China,

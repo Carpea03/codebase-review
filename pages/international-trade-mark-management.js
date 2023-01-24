@@ -15,12 +15,10 @@ export default function InternationalTradeMarkManagement() {
         />
         <link
           rel="canonical"
-          href="/international-trade-mark-management"
+          href="https://www.baxterip.com.au/international-trade-mark-management"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -248,9 +246,7 @@ export default function InternationalTradeMarkManagement() {
         an international registration date after their accession to the Madrid
         system.
       </p>
-      <table
-        className="table table-bordered"
-        width="50%">
+      <table>
         <tbody>
           <tr>
             <td align="center">Estonia</td>

@@ -15,12 +15,10 @@ export default function TradeMarkPreFilingConsiderations() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-pre-filing-considerations"
+          href="https://www.baxterip.com.au/trade-mark-pre-filing-considerations"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -268,8 +266,9 @@ export default function TradeMarkPreFilingConsiderations() {
       </p>
       <p>
         Alternatively, a different cost structure applies when the application
-        proceeds immediately to filing according to the applicant’s choice or in
-        cases where the TM Headstart is not applicable, such as when filing{' '}
+        proceeds immediately to filing according to the applicant&apos;s choice
+        or in cases where the TM Headstart is not applicable, such as when
+        filing{' '}
         <Link href="/special-types-of-trade-marks">special trade marks</Link>{' '}
         like collective, certification and defensive trade marks, series trade
         marks and divisional applications.

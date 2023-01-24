@@ -15,12 +15,10 @@ export default function TradeMarkAcceptance() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-acceptance"
+          href="https://www.baxterip.com.au/trade-mark-acceptance"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -151,8 +149,8 @@ export default function TradeMarkAcceptance() {
           non-use removal or cancellation proceedings;
         </li>
         <li>
-          the cited trade mark(s) has a registration status of “expired –
-          renewal possible”
+          the cited trade mark(s) has a registration status of &ldquo;expired
+          &ndash; renewal possible&rdquo;
         </li>
         <li>the conflicting trade marks have pending court action</li>
         <li>
@@ -167,7 +165,7 @@ export default function TradeMarkAcceptance() {
         entered close to the acceptance deadline, it may also be necessary that
         the Applicant enter an extension of time for the deferment request to be
         considered before the application lapses. Deferment may be granted at
-        the Registrar’s own discretion.
+        the Registrar&apos;s own discretion.
       </p>
       <p>
         The end of the deferment period will depend on the circumstances in

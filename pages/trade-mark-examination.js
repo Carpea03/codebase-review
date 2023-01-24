@@ -15,12 +15,10 @@ export default function TradeMarkExamination() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-examination"
+          href="https://www.baxterip.com.au/trade-mark-examination"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -187,10 +185,10 @@ export default function TradeMarkExamination() {
         Section 41 and Section 44 objections are the most common objections
         raised against a mark. Section 41 provides the grounds for rejecting an
         application on the basis of the lack of distinguishing ability of the
-        applicant’s trade mark in relation to the goods or services stated in
-        the application, whereas Section 44 elaborates rejection grounds in the
-        case of similar/identical trade marks. Both objections may be overcome
-        by providing evidence of use.
+        applicant&apos;s trade mark in relation to the goods or services stated
+        in the application, whereas Section 44 elaborates rejection grounds in
+        the case of similar/identical trade marks. Both objections may be
+        overcome by providing evidence of use.
       </p>
       <h4>Providing evidence under Section 41</h4>
       <p>
@@ -211,12 +209,12 @@ export default function TradeMarkExamination() {
       </p>
       <ol>
         <li>
-          <strong>Section 41(3)</strong> – the mark has no inherent adaptation
-          to distinguish
+          <strong>Section 41(3)</strong> &ndash; the mark has no inherent
+          adaptation to distinguish
         </li>
         <li>
-          <strong>Section 41(4)</strong> – the mark has limited adaptation to
-          distinguish
+          <strong>Section 41(4)</strong> &ndash; the mark has limited adaptation
+          to distinguish
         </li>
       </ol>
       <p>
@@ -272,9 +270,9 @@ export default function TradeMarkExamination() {
       </ol>
       <h4>Providing evidence under Section 44</h4>
       <p>
-        Section 44 discusses grounds for rejection of an applicant’s mark on the
-        basis that it conflicts with previously registered/applied for marks on
-        the Register. Objections in these criteria may be addressed by:
+        Section 44 discusses grounds for rejection of an applicant&apos;s mark
+        on the basis that it conflicts with previously registered/applied for
+        marks on the Register. Objections in these criteria may be addressed by:
       </p>
       <ol type="a">
         <li>Providing evidence of prior use;</li>

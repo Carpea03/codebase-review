@@ -14,12 +14,10 @@ export default function TradeMarkOpposition() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-opposition"
+          href="https://www.baxterip.com.au/trade-mark-opposition"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -112,8 +110,9 @@ export default function TradeMarkOpposition() {
           <Image
             decoding="async"
             src="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
-            alt="Trade Mark Opposition Procedure (for desktop)"
-            className="wp-image-28569"
+            alt="Trade Mark Opposition Procedure"
+            width="1024"
+            height="313"
           />
         </Link>
         <figcaption>Trade Mark Opposition Procedure</figcaption>
@@ -143,9 +142,9 @@ export default function TradeMarkOpposition() {
       </p>
       <p>The evidence stage is broken down into three sub-stages:</p>
       <ol>
-        <li>Evidence in Support – filed by the Opponent</li>
-        <li>Evidence in Answer – filed by the Applicant</li>
-        <li>Evidence in Reply – filed by the Opponent</li>
+        <li>Evidence in Support &ndash; filed by the Opponent</li>
+        <li>Evidence in Answer &ndash; filed by the Applicant</li>
+        <li>Evidence in Reply &ndash; filed by the Opponent</li>
       </ol>
       <p>Evidence needs to be filed within prescribed time frames.</p>
       <h3>Hearings</h3>

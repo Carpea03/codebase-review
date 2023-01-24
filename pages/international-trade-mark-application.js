@@ -15,12 +15,15 @@ export default function InternationalTradeMarkApplication() {
         />
         <link
           rel="canonical"
-          href="/international-trade-mark-application"
+          href="https://www.baxterip.com.au/international-trade-mark-application"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%9B%BD%E9%99%85%E5%95%86%E6%A0%87%E7%94%B3%E8%AF%B7"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -126,9 +129,7 @@ export default function InternationalTradeMarkApplication() {
       <p>
         In order for the filing that you make to retain the original filing date
         of your{' '}
-        <Link
-          title="Australian Trademarks"
-          href="/trade-mark-application">
+        <Link title="Australian Trademarks" href="/trade-mark-application">
           Australian trade mark application
         </Link>
         , the filing(s) whether via path 1 or 2 above must be made within 6
@@ -171,9 +172,7 @@ export default function InternationalTradeMarkApplication() {
       <p>
         If you would like advice on how to protect your brand whether in
         Australia or internationally, please send us a{' '}
-        <Link
-          title="Talk to an expert about your IP now"
-          href="/contact">
+        <Link title="Talk to an expert about your IP now" href="/contact">
           message
         </Link>
         .

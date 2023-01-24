@@ -15,12 +15,20 @@ export default function TradeMarkApplication() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-application"
+          href="https://www.baxterip.com.au/trade-mark-application"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/australian-trade-marks"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%95%86%E6%A0%87%E6%B3%A8%E5%86%8C%E7%94%B3%E8%AF%B7"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -187,7 +195,7 @@ export default function TradeMarkApplication() {
       </h2>
       <p>
         Baxter IP offers a simple and cost-effective procedure for obtaining
-        trade mark protection – here’s what’s involved:
+        trade mark protection &ndash; here&apos;s what&apos;s involved:
       </p>
       <ol>
         <li>
@@ -275,7 +283,7 @@ export default function TradeMarkApplication() {
         <Link href="/trade-mark-attorney">trade mark attorney</Link> keeps
         information obtained from you confidential. When an application is
         filed, filing particulars, including the subject trade mark and the
-        applicant’s information, will be made available to the public.
+        applicant&apos;s information, will be made available to the public.
       </p>
     </Layout>
   )

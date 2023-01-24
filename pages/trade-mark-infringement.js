@@ -14,12 +14,20 @@ export default function TradeMarkInfringement() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-infringement"
+          href="https://www.baxterip.com.au/trade-mark-infringement"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/trade-mark-infringement"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E4%BE%B5%E6%9D%83"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -142,8 +150,9 @@ export default function TradeMarkInfringement() {
           </ul>
         </li>
         <li>
-          Using a “well-known” mark for unrelated goods and services to those of
-          which the trade mark is registered for (trade mark dilution).
+          Using a &ldquo;well-known&rdquo; mark for unrelated goods and services
+          to those of which the trade mark is registered for (trade mark
+          dilution).
         </li>
       </ol>
       <h3>Components of infringement</h3>
@@ -225,9 +234,9 @@ export default function TradeMarkInfringement() {
         developing a logo or a name.
       </p>
       <p>
-        In other cases, the use of another person’s registered trade mark is not
-        considered as trade mark infringement when the use is categorised as{' '}
-        <Link href="/fair-use-of-trade-marks">fair use</Link>.
+        In other cases, the use of another person&apos;s registered trade mark
+        is not considered as trade mark infringement when the use is categorised
+        as <Link href="/fair-use-of-trade-marks">fair use</Link>.
       </p>
       <h4>Example of trade mark infringement</h4>
       <h5>A Cautionary Tale</h5>
@@ -239,8 +248,7 @@ export default function TradeMarkInfringement() {
           height="250"
           src="https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi.jpg"
           alt="Asashi &amp; Musashi"
-          className="wp-image-8328"
-          srcset="https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi.jpg 800w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-300x94.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-768x240.jpg 768w"
+          srcSet="https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi.jpg 800w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-300x94.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-768x240.jpg 768w"
           sizes="(max-width: 800px) 100vw, 800px"
         />
         <figcaption>
@@ -257,14 +265,15 @@ export default function TradeMarkInfringement() {
         James Christian, the proprietor of an online vitamin business called
         A-sashi Vitamins (a spin from the Japanese beer Asahi), incorporated and
         registered a business name, two domain names and a Facebook page bearing
-        the word “A-sashi”. Nestlé, who owned a range of trade marks which
-        contained the word MUSASHI in relation to performance vitamins and
+        the word &ldquo;A-sashi&rdquo;. Nestlé, who owned a range of trade marks
+        which contained the word MUSASHI in relation to performance vitamins and
         nutrition products, sued Christian and sought to cease the production of
-        the A-sashi supplements. The court ruled that the ‘Sashi’ in both trade
-        marks was similar enough for consumers to be confused into thinking that
-        the products of both lines were connected. After an unsuccessful appeal,
-        the court ordered Christian to pay Nestlé for damages. As of 2016,
-        Christian was revealed to be still under debt to Nestlé.
+        the A-sashi supplements. The court ruled that the &quot;Sashi&quot; in
+        both trade marks was similar enough for consumers to be confused into
+        thinking that the products of both lines were connected. After an
+        unsuccessful appeal, the court ordered Christian to pay Nestlé for
+        damages. As of 2016, Christian was revealed to be still under debt to
+        Nestlé.
       </p>
       <p>
         This trade mark infringement case underlines the importance of having an
@@ -331,11 +340,12 @@ export default function TradeMarkInfringement() {
       </p>
       <ul>
         <li>
-          The trade mark is a person’s name or the person’s place of business;
+          The trade mark is a person&apos;s name or the person&apos;s place of
+          business;
         </li>
         <li>
           The trade mark is the name of a predecessor in business of the person
-          or the name of the predecessor’s place of business;
+          or the name of the predecessor&apos;s place of business;
         </li>
         <li>
           The trade mark is used &nbsp;descriptively, which means describing the
@@ -357,7 +367,7 @@ export default function TradeMarkInfringement() {
           for use only of that particular section of the trade mark; and/or
         </li>
         <li>
-          There is of a mark that could, in the court’s’ opinion, obtain
+          There is of a mark that could, in the court&apos;s opinion, obtain
           registration.
         </li>
       </ul>
@@ -379,9 +389,9 @@ export default function TradeMarkInfringement() {
       <h4>Meta tags</h4>
       <p>
         Meta tags are information regarding pages that are typically not seen by
-        visitors of the said page and are present only in the page’s code. These
-        tags usually contain description or keywords that characterise the page.
-        While visitors of the page cannot see them, metadata are used by
+        visitors of the said page and are present only in the page&apos;s code.
+        These tags usually contain description or keywords that characterise the
+        page. While visitors of the page cannot see them, metadata are used by
         algorithms to rank pages. The mention of a trade mark by a third party,
         possibly to drive up the ranking of and thus directing more traffic to a
         certain page, can be classified as meta tag trade mark infringement. Put
@@ -398,19 +408,20 @@ export default function TradeMarkInfringement() {
           Veda Advantage Limited v Malouf Group Enterprises Pty Limited [2016]
           FCA 255
         </i>
-        , Veda owned the rights to several trade marks bearing the word ‘VEDA’
-        like ‘Veda’, ‘Veda Advantage’, ‘Veda Check’, and ‘Vedascore’. Malouf
-        Group registered a number of keywords which incorporated the name VEDA
-        for use in sponsored ads to describe their credit repair service. Veda
-        sued Malouf, alleging trade mark infringement and breach of the
-        Australian Consumer Law. The court initially found that Malouf’s use of
-        VEDA did not amount to trade mark infringement but did find some of
-        their headings, such as “The Veda Report Center,” to mislead customers
-        into thinking that Malouf Group is affiliated with Veda.
+        , Veda owned the rights to several trade marks bearing the word
+        &quot;VEDA&quot; like &quot;Veda&quot;, &quot;Veda Advantage&quot;,
+        &quot;Veda Check&quot;, and &quot;Vedascore&quot;. Malouf Group
+        registered a number of keywords which incorporated the name VEDA for use
+        in sponsored ads to describe their credit repair service. Veda sued
+        Malouf, alleging trade mark infringement and breach of the Australian
+        Consumer Law. The court initially found that Malouf&apos;s use of VEDA
+        did not amount to trade mark infringement but did find some of their
+        headings, such as &ldquo;The Veda Report Center,&rdquo; to mislead
+        customers into thinking that Malouf Group is affiliated with Veda.
       </p>
       <p>
         This decision highlights the importance of business owners being careful
-        in relation to any use of a competitor’s name and trade marks as
+        in relation to any use of a competitor&apos;s name and trade marks as
         keywords.
       </p>
       <h4>Domain name</h4>
@@ -437,9 +448,9 @@ export default function TradeMarkInfringement() {
       <ol>
         <li>
           The domain name should be identical or at least highly similar (at
-          times appearing as a ‘typo’ error) to your domain name such that the
-          infringing domain can be mistaken or confused as that of the trade
-          mark owner;
+          times appearing as a &quot;typo&quot; error) to your domain name such
+          that the infringing domain can be mistaken or confused as that of the
+          trade mark owner;
         </li>
         <li>
           The registrant of the domain does not have any rights or interests in
@@ -455,8 +466,8 @@ export default function TradeMarkInfringement() {
         several factors, such as whether the domain name was registered for the
         purpose of disrupting the operations of the trade mark holder,
         preventing the same from registering a domain that reflects the trade
-        mark, knowingly driving online traffic to the registrant’s website and
-        creating confusion among visitors.
+        mark, knowingly driving online traffic to the registrant&apos;s website
+        and creating confusion among visitors.
       </p>
       <h4>Cybersquatting</h4>
       <p>
@@ -484,10 +495,9 @@ export default function TradeMarkInfringement() {
             loading="lazy"
             width="300"
             height="251"
-            className="size-medium wp-image-8331 img-fluid"
             src="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-300x251.jpg"
             alt="Facebook Trademark Report Form"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-300x251.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-768x643.jpg 768w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-600x500.jpg 600w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form.jpg 800w"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-300x251.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-768x643.jpg 768w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-600x500.jpg 600w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form.jpg 800w"
             sizes="(max-width: 300px) 100vw, 300px"
           />
         </Link>
@@ -544,11 +554,11 @@ export default function TradeMarkInfringement() {
       <h4>Madrid Protocol</h4>
       <p>
         The Madrid Protocol provides a centralised filing system for filing
-        overseas trade mark applications, which must be linked to a “home-base”
-        application or registration. A Madrid Protocol application can be filed
-        with an authorised office (IP Australia) and designate any one or more
-        member countries. &nbsp;At present, there are more than 90 Madrid
-        Protocol members.
+        overseas trade mark applications, which must be linked to a
+        &ldquo;home-base&rdquo; application or registration. A Madrid Protocol
+        application can be filed with an authorised office (IP Australia) and
+        designate any one or more member countries. &nbsp;At present, there are
+        more than 90 Madrid Protocol members.
       </p>
       <p>
         The authorised office will transmit the application to the International
@@ -588,8 +598,7 @@ export default function TradeMarkInfringement() {
           height="131"
           src="https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg"
           alt="Xingbake logo disputed by Starbucks as blatant piracy"
-          className="wp-image-8333"
-          srcset="https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy.jpg 398w"
+          srcSet="https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy.jpg 398w"
           sizes="(max-width: 300px) 100vw, 300px"
         />
         <figcaption>
@@ -598,8 +607,8 @@ export default function TradeMarkInfringement() {
       </figure>
       <p>
         As opposed to that in Australia, where the first party to use a trade
-        mark is legitimate, China’s intellectual property rules give priority to
-        those who{' '}
+        mark is legitimate, China&apos;s intellectual property rules give
+        priority to those who{' '}
         <Link href="/first-to-file-vs-first-to-use">
           file their trade marks first
         </Link>

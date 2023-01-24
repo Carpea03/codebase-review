@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
-export default function TradeMarkPreFilingConsiderations() {
+export default function TradeMarkProcessFlowcharts() {
   return (
     <Layout>
       <Head>
@@ -16,12 +16,10 @@ export default function TradeMarkPreFilingConsiderations() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-process-flowcharts"
+          href="https://www.baxterip.com.au/trade-mark-process-flowcharts"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -99,9 +97,8 @@ export default function TradeMarkPreFilingConsiderations() {
             width="1024"
             height="331"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
-            alt="Australian Standard Trade Mark Procedure (for desktop)"
-            className="wp-image-28565"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-768x248.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1536x496.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-2048x661.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png 1600w"
+            alt="Australian Standard Trade Mark Procedure"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-768x248.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1536x496.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-2048x661.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
@@ -128,9 +125,8 @@ export default function TradeMarkPreFilingConsiderations() {
             width="1024"
             height="395"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
-            alt="Madrid Protocol Trade Mark Application Process (for desktop)"
-            className="wp-image-28571"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-768x296.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1536x592.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-210x81.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-100x39.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png 1600w"
+            alt="Madrid Protocol Trade Mark Application Process"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-768x296.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1536x592.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-210x81.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-100x39.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
@@ -154,8 +150,9 @@ export default function TradeMarkPreFilingConsiderations() {
           <Image
             decoding="async"
             src="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
-            alt="Trade Mark Opposition Procedure (for desktop)"
-            className="wp-image-28569"
+            alt="Trade Mark Opposition Procedure"
+            width="1024"
+            height="313"
           />
         </Link>
         <figcaption>Trade Mark Opposition Procedure</figcaption>

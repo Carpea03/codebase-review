@@ -11,11 +11,18 @@ export default function Contact() {
         </title>
         <meta
           name="description"
-          content=""
+          content="Call +61 2 9264 6716 to talk with a patent or trade mark attorney at Baxter IP to discuss your patents, trade marks and intellectual property options today."
+        />
+        <link rel="canonical" href="https://www.baxterip.com.au/contact" />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/contact"
+          hreflang="en-US"
         />
         <link
-          rel="canonical"
-          href="/about"
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E8%81%94%E7%B3%BB"
+          hreflang="zh"
         />
       </Head>
       <section className="bg-white dark:bg-gray-900">
@@ -25,8 +32,7 @@ export default function Contact() {
               Australian Patent & Trade Mark Office
             </h2>
             <p className="font-light text-gray-600 dark:text-gray-400 sm:text-xl">
-              We use an agile approach to test assumptions and connect with the
-              needs of your audience early and often.
+              Call us at +61 2 9264 6716
             </p>
           </div>
           <div className="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
@@ -36,7 +42,7 @@ export default function Contact() {
                 className="grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2">
                 <div>
                   <label
-                    htmlhtmlFor="first-name"
+                    htmlFor="first-name"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     First Name
                   </label>
@@ -44,13 +50,13 @@ export default function Contact() {
                     type="text"
                     id="first-name"
                     className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                    placeholder="Bonnie"
+                    placeholder="First name"
                     required
                   />
                 </div>
                 <div>
                   <label
-                    htmlhtmlFor="last-name"
+                    htmlFor="last-name"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Last Name
                   </label>
@@ -58,13 +64,13 @@ export default function Contact() {
                     type="text"
                     id="last-name"
                     className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                    placeholder="Green"
+                    placeholder="Last Name"
                     required
                   />
                 </div>
                 <div>
                   <label
-                    htmlhtmlFor="email"
+                    htmlFor="email"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Your email
                   </label>
@@ -72,13 +78,13 @@ export default function Contact() {
                     type="email"
                     id="email"
                     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                    placeholder="name@flowbite.com"
+                    placeholder="your@email.com"
                     required
                   />
                 </div>
                 <div>
                   <label
-                    htmlhtmlFor="phone-number"
+                    htmlFor="phone-number"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Phone Number
                   </label>
@@ -92,7 +98,7 @@ export default function Contact() {
                 </div>
                 <div className="sm:col-span-2">
                   <label
-                    htmlhtmlFor="message"
+                    htmlFor="message"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
                     Your message
                   </label>
@@ -143,8 +149,8 @@ export default function Contact() {
                   Company information:
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Themesberg LLC <br />
-                  Tax id: USXXXXXX
+                  Baxter Patent Attorneys Pty Ltd <br />
+                  ABN 26 163 635 283
                 </p>
               </div>
               <div>
@@ -164,8 +170,9 @@ export default function Contact() {
                   Address:
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  SILVER LAKE, United States 1941 Late Avenue <br /> Zip
-                  Code/Postal code:03875
+                  Level 12/10 Carrington St
+                  <br />
+                  Sydney, NSW 2000, Australia
                 </p>
               </div>
               <div>
@@ -186,7 +193,7 @@ export default function Contact() {
                   to help.
                 </p>
                 <p className="font-semibold text-primary-600 dark:text-primary-500">
-                  +1 (646) 786-5060
+                  +61 2 9264 6716
                 </p>
               </div>
             </div>

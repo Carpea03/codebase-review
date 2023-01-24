@@ -16,12 +16,10 @@ export default function TradeMarkRegistrationProcess() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-registration-process"
+          href="https://www.baxterip.com.au/trade-mark-registration-process"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -129,8 +127,7 @@ export default function TradeMarkRegistrationProcess() {
             width="1024"
             height="331"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
-            alt="Australian Standard Trade Mark Procedure (for desktop)"
-            className="wp-image-28565"
+            alt="Australian Standard Trade Mark Procedure"
             srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-768x248.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1536x496.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-2048x661.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
@@ -207,14 +204,15 @@ export default function TradeMarkRegistrationProcess() {
         <Link href="/trade-mark-registration-benefits">benefits</Link>. The
         owner is also responsible for{' '}
         <Link href="/trade-mark-maintenance">managing the trade mark</Link> in
-        order to maximise the trade mark’s commercial benefits, for preventing
-        other parties from capitalising on their intellectual property right by{' '}
+        order to maximise the trade mark&apos;s commercial benefits, for
+        preventing other parties from capitalising on their intellectual
+        property right by{' '}
         <Link href="/trade-mark-enforcement-options">
           enforcing their trade mark
         </Link>
         , for <Link href="/trade-mark-renewal">maintaining ownership</Link>{' '}
-        throughout the trade mark’s lifetime by ensuring that renewal fees are
-        paid every 10 years, and for protecting the trade mark by preventing
+        throughout the trade mark&apos;s lifetime by ensuring that renewal fees
+        are paid every 10 years, and for protecting the trade mark by preventing
         others from using it in{' '}
         <Link href="/ip-glossary#trade-mark-dilution">
           a way that diminishes its value

@@ -15,12 +15,10 @@ export default function PreparingAnEvidenceOfUseReport() {
         />
         <link
           rel="canonical"
-          href="/preparing-evidence-of-use-report"
+          href="https://www.baxterip.com.au/preparing-evidence-of-use-report"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -129,7 +127,7 @@ export default function PreparingAnEvidenceOfUseReport() {
         must demonstrate prior use, honest concurrent use, or other
         circumstantial evidence that will address the issues raised by the
         Examiner. To show prior use, there needs to be documentation of the
-        trade mark&apos; use before the opposing trader&apos; use. Honest
+        trade mark&apos;s use before the opposing trader&apos;s use. Honest
         concurrent use may be established only if the trade mark was used in
         Australia before the filing date of the application.
       </p>
@@ -172,13 +170,13 @@ export default function PreparingAnEvidenceOfUseReport() {
         In <em>Inntech Pty Ltd v Pointpal Holdings Pty Ltd</em>, Inntech opposed
         a non-use application filed by Pointpal against a logo containing a
         stylised version of the words &quot;pico life&quot;. The trade mark was
-        used on Inntech Pty Ltd&apos; website in respect of various products
+        used on Inntech Pty Ltd&apos;s website in respect of various products
         promoted and sold by Inntech in Australia during the relevant period.
         There was evidence of use of the trade mark during the relevant period,
         but no evidence of use of the mark in respect to the full range of goods
         for which it was registered was provided. It was determined that the
         trade mark was not abandoned, and the evidence demonstrated that it was
-        in both, public interest and in the opponent&apos; interest (Inntech)
+        in both, public interest and in the opponent&apos;s interest (Inntech)
         that the trade mark remain registered for all of the goods within the
         specification.
       </p>

@@ -14,12 +14,10 @@ export default function GroundsForTradeMarkOpposition() {
         />
         <link
           rel="canonical"
-          href="/grounds-for-trade-mark-opposition"
+          href="https://www.baxterip.com.au/grounds-for-trade-mark-opposition"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -117,12 +115,12 @@ export default function GroundsForTradeMarkOpposition() {
         another mark. Once a trade mark application is{' '}
         <Link href="/trade-mark-acceptance">accepted</Link> and advertised in
         the Official Journal of Trade Marks, any party can oppose the
-        application under one or more grounds specified in the{' '}
+        application under one or more grounds specified in the
         <em>Trade Marks Act (1995)</em> within 2 months of the advertisement
         date. The grounds for opposing a trade mark application that an opponent
         can rely on are explained below.
       </p>
-      <figure className="wp-block-table table table-bordered table-responsive is-style-regular">
+      <figure>
         <table>
           <tbody>
             <tr>
@@ -160,7 +158,7 @@ export default function GroundsForTradeMarkOpposition() {
               <td>
                 Another ground for opposing a trade mark application may be
                 opposed on the ground that the trade mark is not capable of
-                distinguishing the applicant&apos;{' '}
+                distinguishing the applicant&apos;s{' '}
                 <Link href="/classes-of-goods-and-services">
                   goods/services
                 </Link>{' '}
@@ -180,14 +178,14 @@ export default function GroundsForTradeMarkOpposition() {
               <td>
                 A trade mark application may be opposed if the trade mark
                 application contains scandalous matter or if its use would be
-                contrary to law. Whether a mark contains “
+                contrary to law. Whether a mark contains &ldquo;
                 <Link href="/unregistrable-trade-marks#scandalous">
                   scandalous matter
                 </Link>
-                ” will be determined by reference to the meaning of the trade
-                mark and whether it contains elements that are likely to be
-                considered as shocking or offensive, for example that the mark
-                contains elements that may be considered as:
+                &rdquo; will be determined by reference to the meaning of the
+                trade mark and whether it contains elements that are likely to
+                be considered as shocking or offensive, for example that the
+                mark contains elements that may be considered as:
                 <ul>
                   <li>Personal abuse</li>
                   <li>Incorporate racial or ethnic abuse</li>
@@ -196,10 +194,10 @@ export default function GroundsForTradeMarkOpposition() {
                   <li>Incites violence and/or terrorism.</li>
                 </ul>
                 <p>
-                  “Use contrary to law refers” to the contravention of a
-                  specific legislative body, for example that the mark uses a
-                  geographical indication in relation to the provision of wine,
-                  meaning it could potentially contravene the{' '}
+                  &ldquo;Use contrary to law refers&rdquo; to the contravention
+                  of a specific legislative body, for example that the mark uses
+                  a geographical indication in relation to the provision of
+                  wine, meaning it could potentially contravene the{' '}
                   <em>Australian Grape and Wine Authority Act (2013)</em>.
                 </p>
               </td>
@@ -264,7 +262,6 @@ export default function GroundsForTradeMarkOpposition() {
                 <Image
                   decoding="async"
                   loading="lazy"
-                  className="alignleft wp-image-15365"
                   src="https://www.baxterip.com.au/wp-content/uploads/2019/12/show-you-care.jpg"
                   alt="Show you care 100% recyclable"
                   width="100"
@@ -294,7 +291,7 @@ export default function GroundsForTradeMarkOpposition() {
                 Australia to such an extent that the use of an identical of
                 similar mark would likely result in deceiving or confusing
                 consumers. For example, the mark TRADIEBAY was successfully
-                opposed based on Ebay Incorporated&apos; reputation in its EBAY
+                opposed based on Ebay Incorporated&apos;s reputation in its EBAY
                 trade mark.
               </td>
             </tr>

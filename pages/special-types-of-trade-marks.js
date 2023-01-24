@@ -15,12 +15,10 @@ export default function SpecialTypesOfTradeMarks() {
         />
         <link
           rel="canonical"
-          href="/special-types-of-trade-marks"
+          href="https://www.baxterip.com.au/special-types-of-trade-marks"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -121,14 +119,14 @@ export default function SpecialTypesOfTradeMarks() {
         certification trade marks in that the party registering the trade mark
         is not necessarily the party who will be using the mark.
       </p>
-      <h3 className="h5">Functions of a collective trade mark</h3>
+      <h3>Functions of a collective trade mark</h3>
       <p>
         Collective trade marks are trade marks used by members of an association
         to:
       </p>
       <ul>
         <li>
-          Differentiate the association’s goods or services from the{' '}
+          Differentiate the association&apos;s goods or services from the{' '}
           <Link href="/classes-of-goods-and-services">goods or services</Link>{' '}
           outside the association; or
         </li>
@@ -152,7 +150,7 @@ export default function SpecialTypesOfTradeMarks() {
         trade marks is that collective trade marks cannot be sold or assigned to
         another owner.
       </p>
-      <h3 className="h5">Who can apply for a collective trade mark?</h3>
+      <h3>Who can apply for a collective trade mark?</h3>
       <p>
         The application for a collective trade mark must be filed by an
         organisation or association. This means that an individual may not
@@ -162,14 +160,12 @@ export default function SpecialTypesOfTradeMarks() {
         An association may be incorporated, such as FTD Inc. or unincorporated,
         such as the Australian Association of Social Workers (AASW).
       </p>
-      <h3 className="h5">Examples of collective trade marks</h3>
+      <h3>Examples of collective trade marks</h3>
       <figure>
         <table>
           <tbody>
             <tr>
-              <th
-                scope="row"
-                width="15%">
+              <th scope="row" width="15%">
                 Collective Trade Mark for an Incorporated Association
               </th>
               <td width="85%">
@@ -208,21 +204,21 @@ export default function SpecialTypesOfTradeMarks() {
         Notably, a certification trade mark is ideal for protecting geographical
         indications. One such example is Scotch Whiskey.
       </p>
-      <h3 className="h5">Who can use a certification trade mark?</h3>
+      <h3>Who can use a certification trade mark?</h3>
       <p>
         A certification trade mark can be used by different traders on their
         goods and services.
       </p>
-      <h3 className="h5">How do you apply for a certification trade mark?</h3>
+      <h3>How do you apply for a certification trade mark?</h3>
       <p>
         Applying for a certification trade mark follows the same process as{' '}
         <Link href="/trade-mark-registration-process">
           applying for a regular trade mark
         </Link>
-        . The only difference is that a copy of the certification trade mark’s
-        set of rules is provided by the applicant within the application
-        process. The set of rules ensures that the standard or characteristic is
-        always satisfied by the product or service.
+        . The only difference is that a copy of the certification trade
+        mark&apos;s set of rules is provided by the applicant within the
+        application process. The set of rules ensures that the standard or
+        characteristic is always satisfied by the product or service.
       </p>
       <p>
         The applicant of the certification trade mark is responsible for
@@ -230,7 +226,7 @@ export default function SpecialTypesOfTradeMarks() {
         by the applicant. The application and the rules will be approved by the
         Australian Competition and Consumer Commission.
       </p>
-      <h3 className="h5">What are certification rules?</h3>
+      <h3>What are certification rules?</h3>
       <p>
         At a minimum, the certification rules that the applicant needs to submit
         must:
@@ -257,14 +253,12 @@ export default function SpecialTypesOfTradeMarks() {
           non-compliance with the standard or characteristic.
         </li>
       </ol>
-      <h3 className="h5">Examples of certification trade marks</h3>
+      <h3>Examples of certification trade marks</h3>
       <figure>
         <table>
           <tbody>
             <tr>
-              <th
-                scope="row"
-                width="15%">
+              <th scope="row" width="15%">
                 The Australian Carpet Trade Mark (309403)
               </th>
               <td width="85%">
@@ -356,7 +350,7 @@ export default function SpecialTypesOfTradeMarks() {
         European wine geographical indications have been recorded in the
         registry.
       </p>
-      <h4 className="h6">Examples of geographical indications</h4>
+      <h4>Examples of geographical indications</h4>
       <p>
         Examples of foreign graphical indications registered in Australia
         include Parmigiano Regianno (Certification mark{' '}
@@ -413,14 +407,12 @@ export default function SpecialTypesOfTradeMarks() {
         goods and services during the time of application of the defensive trade
         mark.
       </p>
-      <h3 className="h6">Examples of defensive trade marks</h3>
+      <h3>Examples of defensive trade marks</h3>
       <figure>
         <table>
           <tbody>
             <tr>
-              <th
-                scope="row"
-                width="15%">
+              <th scope="row" width="15%">
                 Vogue
               </th>
               <td width="85%">
@@ -438,9 +430,9 @@ export default function SpecialTypesOfTradeMarks() {
                 for different goods.
                 <p>
                   In addition, defensive marks are not subject to non-use
-                  disputes, so a salon owner who wants to use the word “Vogue”
-                  cannot file a request for removal due to non-use against the
-                  owner of the VOGUE trade mark.
+                  disputes, so a salon owner who wants to use the word
+                  &ldquo;Vogue&rdquo; cannot file a request for removal due to
+                  non-use against the owner of the VOGUE trade mark.
                 </p>
               </td>
             </tr>

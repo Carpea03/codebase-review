@@ -13,12 +13,20 @@ export default function TradeMarkSearch() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-search"
+          href="https://www.baxterip.com.au/trade-mark-search"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/trade-mark-search"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E6%90%9C%E7%B4%A2"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -138,7 +146,7 @@ export default function TradeMarkSearch() {
       </p>
       <p>
         In the preliminary stages of developing a trade mark, you need to ensure
-        that the mark you choose will not be infringing on somebody else’s
+        that the mark you choose will not be infringing on somebody else&apos;s
         earlier rights. If{' '}
         <Link href="/trade-mark-infringement">infringement</Link> is found, you
         may end up paying monetary compensation to the party being infringed and
@@ -205,16 +213,16 @@ export default function TradeMarkSearch() {
         resources?
       </h3>
       <p>
-        The word “free” in this case is misleading; while the actual search
-        engine may be free, the time, human resource, expertise, and analysis
-        that such searches and their results require are not. Searches without a
-        clear-cut direction can output thousands of entries, and sifting through
-        all of these trade mark search results is time consuming, especially if
-        you are unaware of what you’re looking for. One may end up going around
-        in circles, and a wrong decision based on your search results may result
-        in considerable financial loss on your end in terms of rebranding cost.
-        Ultimately, you may end up losing far more than the cost of hiring a
-        trade mark attorney in the first place.
+        The word &ldquo;free&rdquo; in this case is misleading; while the actual
+        search engine may be free, the time, human resource, expertise, and
+        analysis that such searches and their results require are not. Searches
+        without a clear-cut direction can output thousands of entries, and
+        sifting through all of these trade mark search results is time
+        consuming, especially if you are unaware of what you&apos;re looking
+        for. One may end up going around in circles, and a wrong decision based
+        on your search results may result in considerable financial loss on your
+        end in terms of rebranding cost. Ultimately, you may end up losing far
+        more than the cost of hiring a trade mark attorney in the first place.
       </p>
       <p>
         A <Link href="/trade-mark-attorney">trade mark attorney</Link> can
@@ -242,9 +250,7 @@ export default function TradeMarkSearch() {
         <table>
           <tbody>
             <tr>
-              <th
-                scope="row"
-                width="15%">
+              <th scope="row" width="15%">
                 Availability (clearance) search
               </th>
               <td width="85%">
@@ -264,9 +270,9 @@ export default function TradeMarkSearch() {
                 </Link>
                 , which describe a particular good or service can be granted
                 protection to a limited capacity (for example: soft in relation
-                to cotton products are not registrable, whereas a “Soft”
-                figurative trade mark is registered in relation to cosmetics).
-                Meanwhile,{' '}
+                to cotton products are not registrable, whereas a
+                &ldquo;Soft&rdquo; figurative trade mark is registered in
+                relation to cosmetics). Meanwhile,{' '}
                 <Link href="/types-of-trade-marks#generic-trade-marks">
                   generic trade marks
                 </Link>
@@ -356,9 +362,7 @@ export default function TradeMarkSearch() {
         <table>
           <tbody>
             <tr>
-              <th
-                scope="row"
-                width="15%">
+              <th scope="row" width="15%">
                 Nice Classification (for Australian and international searches)
               </th>
               <td width="85%">

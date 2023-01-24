@@ -16,12 +16,10 @@ export default function FirstToFileVsFirstToUse() {
         />
         <link
           rel="canonical"
-          href="/first-to-file-vs-first-to-use"
+          href="https://www.baxterip.com.au/first-to-file-vs-first-to-use"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -154,12 +152,12 @@ export default function FirstToFileVsFirstToUse() {
           global trade mark filing
         </Link>{' '}
         strategy, it is important to consider whether the country is a
-        &apos;first to file&apos; or a &apos;first to use&apos; jurisdiction. It
+        &quot;first to file&quot; or a &quot;first to use&quot; jurisdiction. It
         is advisable to contact one of our{' '}
         <Link href="/trade-mark-attorney">trade mark attorneys</Link> who will
         help you make the right decisions. The map and table below show some
-        examples of countries which have a &apos;first to file&apos; or
-        &apos;first to use&apos; system.
+        examples of countries which have a &quot;first to file&quot; or
+        &quot;first to use&quot; system.
       </p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1192,10 +1190,7 @@ export default function FirstToFileVsFirstToUse() {
         <polygon
           points="541.05 434.93 540.03 435.12 539.03 435.85 538.74 436.73 537.83 436.93 536.06 438.67 534.78 440.24 533.73 440.32 532.99 440.04 531.53 439.89 531.95 440.8 532.41 441.27 533.05 442.51 535.33 444.85 536.49 445.16 536.5 446.24 536.98 447.36 538.59 447.75 539.83 448.69 540.7 448.75 541.56 449.07 542.24 448.81 543.24 449.01 545.24 446.69 545.83 444.97 546.12 444.79 546.29 443.84 545.96 443.2 546.08 441.28 546.48 439.78 546.48 437.3 545.68 436.78 544.58 436.61 544.07 436 543.28 435.63 541.17 435.68 541.05 434.93"
           fill="#011d3b"></polygon>
-        <rect
-          width="996.83"
-          height="597.26"
-          fill="none"></rect>
+        <rect width="996.83" height="597.26" fill="none"></rect>
       </svg>
       <b>First to use</b>
       <p>

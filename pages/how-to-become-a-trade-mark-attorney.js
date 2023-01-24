@@ -15,12 +15,15 @@ export default function HowToBecomeATradeMarkAttorney() {
         />
         <link
           rel="canonical"
-          href="/how-to-become-a-trade-mark-attorney"
+          href="https://www.baxterip.com.au/how-to-become-a-trade-mark-attorney"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E5%95%86%E6%A0%87%E4%BB%A3%E7%90%86%E4%BA%BA"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -120,7 +123,7 @@ export default function HowToBecomeATradeMarkAttorney() {
       <p>
         Knowledge on other forms of intellectual property, such as patents,
         copyright, design, trade practises, domain names, circuit layout, plant
-        breeder’s rights, and confidential information are similarly
+        breeder&apos;s rights, and confidential information are similarly
         advantageous.
       </p>
       <h3>Knowledge qualifications</h3>

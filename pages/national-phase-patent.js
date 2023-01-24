@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -17,12 +16,15 @@ export default function NationalPhasePatent() {
         />
         <link
           rel="canonical"
-          href="/national-phase-patent"
+          href="https://www.baxterip.com.au/national-phase-patent"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%9B%BD%E5%AE%B6%E4%B8%93%E5%88%A9"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -127,9 +129,8 @@ export default function NationalPhasePatent() {
             width="1024"
             height="315"
             src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
-            alt="Patent Procedure Overview (for desktop)"
-            className="wp-image-28559"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
+            alt="Patent Procedure Overview"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
@@ -141,7 +142,8 @@ export default function NationalPhasePatent() {
       </p>
       <ol>
         <li>
-          Filing “national phase” patent applications post the filing of a{' '}
+          Filing &ldquo;national phase&rdquo; patent applications post the
+          filing of a{' '}
           <Link href="/pct-patent">
             Stage 3 PCT International Patent Application
           </Link>
@@ -174,8 +176,8 @@ export default function NationalPhasePatent() {
       <p>
         Since the processes for 1. and 2. patent applications are largely the
         same and given that 1. is by far the more common path for clients of our
-        firm, we will simply refer to “national phase” patent applications to
-        refer to both on this page.
+        firm, we will simply refer to &ldquo;national phase&rdquo; patent
+        applications to refer to both on this page.
       </p>
       <figure className="wp-block-image size-large">
         <Link
@@ -189,14 +191,13 @@ export default function NationalPhasePatent() {
             width="1024"
             height="306"
             src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png"
-            alt="Flowchart C - Australian Standard Patent Procedure (Desktop)"
-            className="wp-image-15379"
-            srcset="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-300x90.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-768x229.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1536x459.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-2048x611.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-210x63.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-100x30.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop.png 1600w"
+            alt="Flowchart C - Australian Standard Patent Procedure"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-300x90.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-768x229.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1536x459.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-2048x611.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-210x63.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-100x30.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop.png 1600w"
             sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
         <figcaption>
-          Flowchart C – Australian Standard Patent Procedure
+          Flowchart C &ndash; Australian Standard Patent Procedure
         </figcaption>
       </figure>
       <h2>10 strategies for selecting countries for national phase entry</h2>
@@ -228,7 +229,7 @@ export default function NationalPhasePatent() {
         </li>
         <li>
           <strong>Your home ground:</strong> File in Australia to protect your
-          home market – for most entrepreneurs it is the easiest market to
+          home market &ndash; for most entrepreneurs it is the easiest market to
           access commercially.
         </li>
         <li>
@@ -261,7 +262,7 @@ export default function NationalPhasePatent() {
           <strong>File in your future markets:</strong> As patents have a
           20-year lifespan, it is important to consider that the markets that
           are most valuable now may not be the markets that are most valuable in
-          10 or 15 years’ time.
+          10 or 15 years&apos; time.
         </li>
       </ol>
       <p>
@@ -291,7 +292,7 @@ export default function NationalPhasePatent() {
         as a single application. This generally leads to significant cost
         reductions. Once your European patent application proceeds to grant, it
         is necessary to register the application in the individual countries in
-        a process known as “validation”.
+        a process known as &ldquo;validation&rdquo;.
       </p>
       <h2>Patent publication</h2>
       <p>
@@ -310,13 +311,13 @@ export default function NationalPhasePatent() {
         Ultimately, if you decide to enforce your national patent rights, the
         matter will usually be heard in court, and the alleged infringer of your
         patent will have the opportunity to lodge evidence against your patent
-        to attempt to invalidate it. This is known as a “cross-claim for
-        revocation”. You may or may not be successful in such a matter, and it
-        is not uncommon for patents to be invalidated in court (e.g. by locating
-        information that is not uncovered during examination). However, the vast
-        majority of patents are never litigated; instead, a patent usually forms
-        a strong and useful starting point for commercial negotiations and
-        agreements, such as licensing.
+        to attempt to invalidate it. This is known as a &ldquo;cross-claim for
+        revocation&rdquo;. You may or may not be successful in such a matter,
+        and it is not uncommon for patents to be invalidated in court (e.g. by
+        locating information that is not uncovered during examination). However,
+        the vast majority of patents are never litigated; instead, a patent
+        usually forms a strong and useful starting point for commercial
+        negotiations and agreements, such as licensing.
       </p>
       <h2>National phase patent application costs</h2>
       <p>

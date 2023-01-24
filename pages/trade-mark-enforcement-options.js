@@ -15,12 +15,10 @@ export default function TradeMarkEnforcementOptions() {
         />
         <link
           rel="canonical"
-          href="/trade-mark-enforcement-options"
+          href="https://www.baxterip.com.au/trade-mark-enforcement-options"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -207,7 +205,7 @@ export default function TradeMarkEnforcementOptions() {
       <p>
         In the Common Law tort of passing off, a party makes unauthorised use of
         a get-up, namely, the overall packaging, external appearance, or feel of
-        a product, to profit from another product’s established reputation.
+        a product, to profit from another product&apos;s established reputation.
         Registration of a trade mark is not necessary in passing off cases. The
         elements of passing off are more difficult to establish and generally
         require:
@@ -218,7 +216,7 @@ export default function TradeMarkEnforcementOptions() {
           there has been a misrepresentation that good/services of one trader
           are connected with the goods/services of another trader, and
         </li>
-        <li>there has been damage to (the Plaintiff’s) goodwill.</li>
+        <li>there has been damage to (the Plaintiff&apos;s) goodwill.</li>
       </ol>
       <p>
         Passing off and trade mark infringement cases frequently overlap but are
@@ -260,9 +258,9 @@ export default function TradeMarkEnforcementOptions() {
         Court proceedings can be quite costly and therefore, settling disputes
         outside of court is usually preferable. Once aware of instances of
         unauthorized use of a registered Trade Mark, it is usual practice for
-        the trade mark attorney to send a ‘letter of demand’ to the infringing
-        party. The letter of demand can be prepared in a number of ways
-        depending on the objective of the Trade Mark owner. This is a
+        the trade mark attorney to send a &quot;letter of demand&quot; to the
+        infringing party. The letter of demand can be prepared in a number of
+        ways depending on the objective of the Trade Mark owner. This is a
         pre-condition to commencing{' '}
         <Link href="/trade-mark-litigation">litigation</Link> in the Federal
         Court.

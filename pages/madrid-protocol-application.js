@@ -13,12 +13,10 @@ export default function MadridProtocolApplication() {
         />
         <link
           rel="canonical"
-          href="/madrid-protocol-application"
+          href="https://www.baxterip.com.au/madrid-protocol-application"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -213,7 +211,26 @@ export default function MadridProtocolApplication() {
         international registration and notify the designated contracting
         parties.
       </p>
-      {/*<figure className="wp-block-image size-large"><Link href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png" data-lbwps-width="1600" data-lbwps-height="617" data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png"><img decoding="async" loading="lazy" width="1024" height="395" src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png" alt="Madrid Protocol Trade Mark Application Process (for desktop)" className="wp-image-28571" srcset="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-768x296.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1536x592.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-210x81.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-100x39.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png 1600w" sizes="(max-width: 1024px) 100vw, 1024px"/></Link><figcaption>Madrid Protocol Trade Mark Application Process</figcaption></figure>*/}
+      <figure>
+        <Link
+          href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png"
+          data-lbwps-width="1600"
+          data-lbwps-height="617"
+          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png">
+          <img
+            decoding="async"
+            loading="lazy"
+            width="1024"
+            height="395"
+            src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
+            alt="Madrid Protocol Trade Mark Application Process (for desktop)"
+            className="wp-image-28571"
+            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-768x296.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1536x592.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-210x81.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-100x39.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png 1600w"
+            sizes="(max-width: 1024px) 100vw, 1024px"
+          />
+        </Link>
+        <figcaption>Madrid Protocol Trade Mark Application Process</figcaption>
+      </figure>
       <h4>Dependance on basic application</h4>
       <p>
         An international registration remains dependent on the basic application

@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
@@ -17,12 +16,20 @@ export default function FreedomToOperatePatentSearch() {
         />
         <link
           rel="canonical"
-          href="/freedom-to-operate-search"
+          href="https://www.baxterip.com.au/freedom-to-operate-search"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/freedom-to-operate-patent-search"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%85%8D%E8%B4%B9%E6%93%8D%E4%BD%9C%E6%90%9C%E7%B4%A2"
+          hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -138,11 +145,12 @@ export default function FreedomToOperatePatentSearch() {
         If you are looking to develop or release a new product, it is important
         to ascertain whether it would be open to a claim for infringement of
         intellectual property rights of a third party, for example, third-party
-        patent rights. If the answer to this question is “no”, then you are said
-        to have “freedom-to-operate”. A freedom-to-operate patent search is also
-        known as a “patent clearance search” or a “
+        patent rights. If the answer to this question is &ldquo;no&rdquo;, then
+        you are said to have &ldquo;freedom-to-operate&rdquo;. A
+        freedom-to-operate patent search is also known as a &ldquo;patent
+        clearance search&rdquo; or a &ldquo;
         <Link href="/ip-glossary#infringement">patent infringement</Link>{' '}
-        search”.
+        search&rdquo;.
       </p>
       <p>
         A freedom-to-operate patent search addresses the risk associated with
@@ -170,19 +178,19 @@ export default function FreedomToOperatePatentSearch() {
         generally will only file in a small selection of countries. For example,
         a patent applicant may only file a{' '}
         <Link href="/provisional-patents">patent application</Link> in the
-        United States and Europe – and not in Australia, in which case you can
-        make and sell their patented invention in Australia and in every country
-        other than the United States and Europe. The third-party patent
-        application may have also been “knocked back” or limited during
-        examination in some countries, and you may therefore still have
+        United States and Europe &ndash; and not in Australia, in which case you
+        can make and sell their patented invention in Australia and in every
+        country other than the United States and Europe. The third-party patent
+        application may have also been &ldquo;knocked back&rdquo; or limited
+        during examination in some countries, and you may therefore still have
         freedom-to-operate in those countries.
       </p>
-      <h2>What to do if you don’t have freedom-to-operate</h2>
+      <h2>What to do if you don&apos;t have freedom-to-operate</h2>
       <p>
         If you had a freedom-to-operate patent search carried out and discovered
         that you would infringe an existing patent if you were to proceed with
-        your product, it’s not the end of the road. There are at least 4 paths
-        you can go down:
+        your product, it&apos;s not the end of the road. There are at least 4
+        paths you can go down:
       </p>
       <ol>
         <li>
@@ -194,8 +202,8 @@ export default function FreedomToOperatePatentSearch() {
           will normally only look at patents and scientific publications and not
           more broadly at the prior art base, such as on commercial websites,
           forums or blogs. Patent examiners also easily miss prior art documents
-          that are not in English – for example, those on the Russian Patent
-          Office Database.
+          that are not in English &ndash; for example, those on the Russian
+          Patent Office Database.
         </li>
         <li>
           You can attempt to obtain a license for the technology from the patent

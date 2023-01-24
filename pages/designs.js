@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import CardCta from '../components/blocks/card-cta'
 import FeatureListCta from '../components/blocks/feature-list-cta'
 import LayoutWide from '../components/layout-wide'
+import Link from 'next/link'
 import TeamPatent from '../components/team-patent'
 
 export default function Designs() {
@@ -14,7 +14,7 @@ export default function Designs() {
               Protect your valuable design
             </h1>
             <p className="mb-8 font-light text-gray-400 sm:text-xl">
-              Your product’s unique aesthetic makes it more desirable in-market
+              Your product&apos;s unique aesthetic makes it more desirable in-market
               when compared with competing products. A design registration
               protects your valuable differentiating aesthetics from competitors
               who might want to leverage off your design work to benefit from it
@@ -36,9 +36,9 @@ export default function Designs() {
             className="grid grid-cols-1 gap-8 p-6 mx-auto mb-16 max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-sm lg:mb-28 dark:bg-gray-800 dark:border-gray-700 sm:grid-cols-2">
             <div>
               <label
-                htmlhtmlFor="first-name"
+                htmlFor="first-name"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                First Name
+                First name
               </label>
               <input
                 type="text"
@@ -50,9 +50,9 @@ export default function Designs() {
             </div>
             <div>
               <label
-                htmlhtmlFor="last-name"
+                htmlFor="last-name"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Last Name
+                Last name
               </label>
               <input
                 type="text"
@@ -64,7 +64,7 @@ export default function Designs() {
             </div>
             <div>
               <label
-                htmlhtmlFor="email"
+                htmlFor="email"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 Your email
               </label>
@@ -78,9 +78,9 @@ export default function Designs() {
             </div>
             <div>
               <label
-                htmlhtmlFor="phone-number"
+                htmlFor="phone-number"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Phone Number
+                Phone number
               </label>
               <input
                 type="number"
@@ -92,7 +92,7 @@ export default function Designs() {
             </div>
             <div className="sm:col-span-2">
               <label
-                htmlhtmlFor="message"
+                htmlFor="message"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
                 Your message
               </label>
@@ -104,13 +104,13 @@ export default function Designs() {
               <p className="mt-4 text-sm text-gray-500">
                 By submitting this form you agree to our{' '}
                 <Link
-                  href="/terms"
+                  href="#"
                   className="text-primary-600 hover:underline dark:text-primary-500">
                   terms and conditions
                 </Link>{' '}
                 and our{' '}
                 <Link
-                  href="/privacy"
+                  href="#"
                   className="text-primary-600 hover:underline dark:text-primary-500">
                   privacy policy
                 </Link>{' '}
@@ -187,7 +187,7 @@ export default function Designs() {
                 partnership opportunities.
               </p>
               <Link
-                href="/support"
+                href="#"
                 className="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-primary-600 border-primary-600 hover:text-white hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800">
                 Support center
               </Link>

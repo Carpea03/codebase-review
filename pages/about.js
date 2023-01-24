@@ -13,14 +13,18 @@ export default function About() {
           name="description"
           content="Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
         />
+        <link rel="canonical" href="https://www.baxterip.com.au/about" />
         <link
-          rel="canonical"
-          href="/about"
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/about"
+          hreflang="en-US"
         />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%85%B3%E4%BA%8E"
+          hreflang="zh"></link>
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -73,8 +77,8 @@ export default function About() {
           mark attorney counsel;
         </li>
         <li>
-          that is experienced in the patent end game – negotiation, licensing
-          and enforcement; and
+          that is experienced in the patent end game &ndash; negotiation,
+          licensing and enforcement; and
         </li>
         <li>
           understands and can integrate your IP with the entire innovation
@@ -99,8 +103,8 @@ export default function About() {
           <Link href="https://www.baxterip.com.au/types-of-trade-marks">
             type of trade marks
           </Link>{' '}
-          to file based on the learning arising from the team’s voluminous track
-          record of trade mark experience
+          to file based on the learning arising from the team&apos;s voluminous
+          track record of trade mark experience
         </li>
         <li>Is highly responsive and transparent on pricing</li>
       </ol>
@@ -126,7 +130,7 @@ export default function About() {
         <Link href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents">
           pharmaceuticals
         </Link>{' '}
-        IP and trade marks, who are poised to protect what’s yours.
+        IP and trade marks, who are poised to protect what&apos;s yours.
       </p>
       <p>
         Our 2000+ strong client base ranges from a number of well-known

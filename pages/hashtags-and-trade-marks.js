@@ -13,12 +13,10 @@ export default function HashtagsAndTradeMarks() {
         />
         <link
           rel="canonical"
-          href="/hashtags-and-trade-marks"
+          href="https://www.baxterip.com.au/hashtags-and-trade-marks"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -123,7 +121,7 @@ export default function HashtagsAndTradeMarks() {
         platforms, such as Facebook, Twitter and Linkedin, and the string of
         characters following the # sign can direct online traffic toward a
         certain product or service. Influencer marketing and the growing
-        reliance of consumers on people&apos; actual experiences instead of
+        reliance of consumers on people&apos;s actual experiences instead of
         traditional advertising before availing of a certain product or service
         have underlined the potential issue of trade mark infringement using
         hashtags.
@@ -156,7 +154,7 @@ export default function HashtagsAndTradeMarks() {
         Thus, if the text following the hash sign is already registered, then an
         actual hashtag trade mark may be unnecessary. However, a hashtag
         marketing campaign should be carefully considered in order to avoid
-        infringing on a competitor&apos; prior rights. There are currently no
+        infringing on a competitor&apos;s prior rights. There are currently no
         existing trade mark infringement cases involving hashtags, but the issue
         may expand similarly to domain name disputes.
       </p>
