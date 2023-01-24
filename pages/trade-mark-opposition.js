@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
+const myLoader = ({ src, width, quality }) => {
+  return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
+}
+
 export default function TradeMarkOpposition() {
   return (
     <Layout>
@@ -17,7 +21,9 @@ export default function TradeMarkOpposition() {
           href="https://www.baxterip.com.au/trade-mark-opposition"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -102,14 +108,10 @@ export default function TradeMarkOpposition() {
         as provided in sections 57 to 62A of the <em>Trade Marks Act 1995</em>.
       </p>
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop.png"
-          data-lbwps-width="2487"
-          data-lbwps-height="761"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-300x92.png">
+        <Link href="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop.png">
           <Image
-            decoding="async"
-            src="https://www.baxterip.com.au/wp-content/uploads/2021/11/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
+            loader={myLoader}
+            src="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
             alt="Trade Mark Opposition Procedure"
             width="1024"
             height="313"
