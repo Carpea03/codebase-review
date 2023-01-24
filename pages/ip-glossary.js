@@ -11,14 +11,19 @@ export default function IpGlossary() {
           name="description"
           content="IP Glossary providing definitions of intellectual property related terms covering patents, trade marks, registered designs and copyright."
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/ip-glossary" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/ip-glossary"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E6%9C%AF%E8%AF%AD%E8%A1%A8"
           hreflang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -849,7 +854,7 @@ export default function IpGlossary() {
         England&apos;s Statute of Monopolies in 1624. In the Florentine patent
         statute, the rights of inventors were recognized, an incentive mechanism
         was included, compensation for infringement was established, and a term
-        limit on inventors' rights was imposed. The Statute of Monopolies
+        limit on inventors&apos; rights was imposed. The Statute of Monopolies
         granted fourteen-year monopolies to authors and inventors and ended the
         practice of granting rights to &ldquo;non-original/new&rdquo; ideas or
         works already in the public domain. From these humble beginnings, it was
@@ -1914,8 +1919,8 @@ export default function IpGlossary() {
         accredited law school and pass a state bar exam. If a patent lawyer
         would like to represent inventors in front of the USPTO, then he or she
         must sit for and pass the USPTO licensing exam, which is commonly known
-        as the 'patent bar.' In cases where a lawyer has attained five years of
-        continuous service with USPTO, the licensing exam is waived.
+        as the &apos;patent bar&apos;. In cases where a lawyer has attained five
+        years of continuous service with USPTO, the licensing exam is waived.
       </p>
       <hr />
       <h3 id="patent-litigation">Patent Litigation</h3>

@@ -1,6 +1,11 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
+
+const myLoader = ({ src, width, quality }) => {
+  return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
+}
 
 export default function MadridProtocolApplication() {
   return (
@@ -16,7 +21,9 @@ export default function MadridProtocolApplication() {
           href="https://www.baxterip.com.au/madrid-protocol-application"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -212,21 +219,13 @@ export default function MadridProtocolApplication() {
         parties.
       </p>
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="617"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png">
-          <img
-            decoding="async"
-            loading="lazy"
+        <Link href="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png">
+          <Image
+            loader={myLoader}
+            src="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
+            alt="Madrid Protocol Trade Mark Application Process (for desktop)"
             width="1024"
             height="395"
-            src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
-            alt="Madrid Protocol Trade Mark Application Process (for desktop)"
-            className="wp-image-28571"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-300x116.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-768x296.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1536x592.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-210x81.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-100x39.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
           />
         </Link>
         <figcaption>Madrid Protocol Trade Mark Application Process</figcaption>
