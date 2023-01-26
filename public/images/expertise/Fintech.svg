@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <g id="Fintech_Patents" data-name="Fintech Patents">
+    <path d="M114.33,74H91.06a1.72,1.72,0,0,1,0-3.43h23.27a1.72,1.72,0,0,1,0,3.43Z" fill="#fff" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M102.7,63.82H91.06a1.71,1.71,0,0,1,0-3.42H101V48.76a1.72,1.72,0,0,1,.88-1.49l11.63-6.54a1.71,1.71,0,0,1,1.68,3l-10.76,6.05V62.11A1.72,1.72,0,0,1,102.7,63.82Z" fill="#fff" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M114.33,103.49H102.7a1.72,1.72,0,0,1-1.72-1.72V84H91.06a1.72,1.72,0,0,1,0-3.43H102.7a1.72,1.72,0,0,1,1.71,1.71v17.76h9.92a1.72,1.72,0,0,1,0,3.43Z" fill="#fff" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M52.94,73.43H29.67a1.72,1.72,0,0,1,0-3.43H52.94a1.72,1.72,0,0,1,0,3.43Z" fill="#fff" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M29.67,103.49a1.72,1.72,0,0,1-.84-3.21l10.76-6V81.89a1.71,1.71,0,0,1,1.71-1.71H52.94a1.71,1.71,0,1,1,0,3.42H43V95.24a1.72,1.72,0,0,1-.88,1.49l-11.63,6.54A1.81,1.81,0,0,1,29.67,103.49Z" fill="#fff" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M52.94,63.41H41.3a1.72,1.72,0,0,1-1.71-1.71V43.94H29.67a1.72,1.72,0,0,1,0-3.43H41.3A1.72,1.72,0,0,1,43,42.23V60h9.92a1.72,1.72,0,0,1,0,3.43Z" fill="#fff" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect x="52.94" y="48.27" width="38.13" height="48.04" rx="8.43" stroke-width="2" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/>
+    <circle cx="114.33" cy="42.23" r="4.88" fill="#667789" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M62.94,59.83h9.67a11.85,11.85,0,0,1,2.77.33,6.89,6.89,0,0,1,2.43,1.09,5.78,5.78,0,0,1,1.73,1.94,5.72,5.72,0,0,1,.67,2.87A5.11,5.11,0,0,1,79,69.53a6.71,6.71,0,0,1-3.12,2v.07a6.48,6.48,0,0,1,2.15.65,5.53,5.53,0,0,1,1.7,1.3,5.89,5.89,0,0,1,1.11,1.82,6,6,0,0,1,.4,2.22,6.46,6.46,0,0,1-.81,3.38,6.27,6.27,0,0,1-2.11,2.17,9.29,9.29,0,0,1-3,1.18,17.26,17.26,0,0,1-3.45.35H62.94ZM67,69.57h4a5.3,5.3,0,0,0,3.31-.86,3,3,0,0,0,0-4.65,6.49,6.49,0,0,0-3.66-.79H67Zm0,11.27h4.06a16.72,16.72,0,0,0,1.81-.1,5.4,5.4,0,0,0,1.77-.49A3.64,3.64,0,0,0,76,79.15a3.24,3.24,0,0,0,.52-2,2.92,2.92,0,0,0-1.27-2.73,8,8,0,0,0-4-.77H67Z" fill="#e95544" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle cx="114.33" cy="72.29" r="4.88" fill="#667789" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle cx="114.33" cy="101.77" r="4.88" fill="#667789" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle cx="29.67" cy="101.77" r="4.88" fill="#667789" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle cx="29.67" cy="71.71" r="4.88" fill="#667789" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle cx="29.67" cy="42.23" r="4.88" fill="#667789" stroke="#334a62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

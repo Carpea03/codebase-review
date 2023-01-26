@@ -9,7 +9,7 @@ import StaffWarren from '../../components/staff/warren'
 import StaffNaleesha from '../../components/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
+  return `http://localhost:3000/images/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -928,7 +928,8 @@ export default function MedicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-covidien.png"
+                  loader={myLoader}
+                  src="clients/logo-covidien.png"
                   alt="Covidien AG logo."
                   width={255}
                   height={191}
@@ -939,7 +940,8 @@ export default function MedicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-ethicon-endo-surgery.png"
+                  loader={myLoader}
+                  src="clients/logo-ethicon-endo-surgery.png"
                   alt="Ethicon Endo-Surgery, Inc logo."
                   width={255}
                   height={191}
@@ -950,7 +952,8 @@ export default function MedicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-optimized-ortho.png"
+                  loader={myLoader}
+                  src="clients/logo-optimized-ortho.png"
                   alt="Optimized Ortho Pty Ltd logo."
                   width={255}
                   height={191}
@@ -961,7 +964,8 @@ export default function MedicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-source-energy-services.png"
+                  loader={myLoader}
+                  src="clients/logo-source-energy-services.png"
                   alt="Source Energy Services Pty Ltd logo."
                   width={255}
                   height={191}
@@ -972,7 +976,8 @@ export default function MedicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-syntheon.png"
+                  loader={myLoader}
+                  src="clients/logo-syntheon.png"
                   alt="Syntheon Cardiology LLC logo."
                   width={255}
                   height={191}

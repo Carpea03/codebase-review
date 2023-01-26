@@ -7,7 +7,7 @@ import StaffMartin from '../../components/staff/martin'
 import StaffQi from '../../components/staff/qi'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
+  return `http://localhost:3000/images/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -1234,7 +1234,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-jands.png"
+                  src="clients/logo-jands.png"
                   alt="Jands logo."
                   width={255}
                   height={191}
@@ -1246,7 +1246,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-k-hart-international.png"
+                  src="clients/logo-k-hart-international.png"
                   alt="K-Hart International Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1258,7 +1258,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-l3-micreo.png"
+                  src="clients/logo-l3-micreo.png"
                   alt="L3 Micreo Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1270,7 +1270,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-thomas-global-systems.png"
+                  src="clients/logo-thomas-global-systems.png"
                   alt="Thomas Global Systems Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1282,7 +1282,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-wbs-technology.png"
+                  src="clients/logo-wbs-technology.png"
                   alt="WBS Technology logo."
                   width={255}
                   height={191}
@@ -1294,7 +1294,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-zte-corporation.png"
+                  src="clients/logo-zte-corporation.png"
                   alt="ZTE Corporation logo."
                   width={255}
                   height={191}

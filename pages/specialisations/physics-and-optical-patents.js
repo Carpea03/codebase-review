@@ -9,7 +9,7 @@ import StaffWarren from '../../components/staff/warren'
 import StaffNaleesha from '../../components/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
+  return `http://localhost:3000/images/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -776,7 +776,8 @@ export default function PhysicsAndOpticalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-cyclopharm.png"
+                  loader={myLoader}
+                  src="clients/logo-cyclopharm.png"
                   alt="Cyclopharm Ltd logo."
                   width={255}
                   height={191}
@@ -787,7 +788,8 @@ export default function PhysicsAndOpticalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-lockheed-martin.png"
+                  loader={myLoader}
+                  src="clients/logo-lockheed-martin.png"
                   alt="Lockheed Martin Corporation logo."
                   width={255}
                   height={191}
@@ -798,7 +800,8 @@ export default function PhysicsAndOpticalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-red-garage.png"
+                  loader={myLoader}
+                  src="clients/logo-red-garage.png"
                   alt="Red Garage Ventures Pty Ltd logo."
                   width={255}
                   height={191}
@@ -809,7 +812,8 @@ export default function PhysicsAndOpticalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-thomas-electronics.png"
+                  loader={myLoader}
+                  src="clients/logo-thomas-electronics.png"
                   alt="Thomas Electronics of Australia Pty Ltd logo."
                   width={255}
                   height={191}

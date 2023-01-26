@@ -12,12 +12,11 @@ export default function Page() {
     <Layout>
       <Head>
         <title>
-          Andrew Balis - Associate, Patent & Trade Mark Attorney | Baxter IP
-          Sydney
+        Andrew Balis - Associate, Patent & Trade Mark Attorney | Baxter IP Sydney
         </title>
         <meta
           name="description"
-          content="Andrew advises on several areas of local and international intellectual property and specialises in mechanical and aerospace technology."
+          content="Andrew Balis is a Sydney patent and trade mark attorney specialising in mechanical and aerospace technology."
         />
         <link
           rel="canonical"
@@ -130,7 +129,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Medical-1.svg"
+              src="/expertise/Medical.svg"
               alt="Medical icon"
               title="Medical"
               width="40"
@@ -152,7 +151,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Patent-Enforcement-1.svg"
+              src="/expertise/Patent-Enforcement.svg"
               alt="Patent Enforcement icon"
               title="Patent Enforcement"
               width="40"
@@ -163,7 +162,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Patent-Oppositions-1.svg"
+              src="/expertise/Patent-Oppositions.svg"
               alt="Patent Oppositions icon"
               title="Patent Oppositions"
               width="40"
@@ -174,7 +173,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Physics-1.svg"
+              src="/expertise/Physics.svg"
               alt="Physics icon"
               title="Physics"
               width="40"
@@ -209,7 +208,7 @@ export default function Page() {
       <Image
         loader={myLoader}
         src="/team/header-andrew-balis.jpg"
-        alt=" Andrew Balis"
+        alt="Andrew Balis"
         title="Andrew Balis"
         width="1200"
         height="600"
@@ -220,9 +219,9 @@ export default function Page() {
           I enjoy a hands-on approach, working closely with clients to develop
           their strategies. It brings me great satisfaction to help clients
           navigate the IP system to protect their ideas and maximise their
-          idea’s potential.
+          idea&rsquo;s potential.
         </blockquote>
-        <i>Andrew Balis - Associate, Patent &amp; Trade Mark Attorney</i>
+        <cite>&ndash;Andrew Balis - Associate, Patent &amp; Trade Mark Attorney</cite>
       </div>
       <br />
       <p>
@@ -232,9 +231,9 @@ export default function Page() {
       <p>
         Andrew acts for a wide variety of clients, including multinationals,
         small-medium enterprises and sole traders. Andrew has previously acted
-        for one of the world’s largest aerospace companies. He understands that
+        for one of the world&rsquo;s largest aerospace companies. He understands that
         these different clients have different goals, and enjoys providing
-        individualised advice to each of them. A core part of Andrew’s practice
+        individualised advice to each of them. A core part of Andrew&rsquo;s practice
         is to really understand what clients want from their intellectual
         property, and he will always make the time to talk with clients (whether
         it be in person, over webchat, over the phone, or via email) so that he

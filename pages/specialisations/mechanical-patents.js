@@ -9,7 +9,7 @@ import StaffWarren from '../../components/staff/warren'
 import StaffNaleesha from '../../components/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
+  return `http://localhost:3000/images/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -1117,7 +1117,8 @@ export default function MechanicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-general-dynamics-ots.png"
+                  loader={myLoader}
+                  src="clients/logo-general-dynamics-ots.png"
                   alt="General Dynamics Ordnance and Tactical Systems, Inc logo."
                   width={255}
                   height={191}
@@ -1128,7 +1129,8 @@ export default function MechanicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-lockheed-martin.png"
+                  loader={myLoader}
+                  src="clients/logo-lockheed-martin.png"
                   alt="Lockheed Martin Corporation logo."
                   width={255}
                   height={191}
@@ -1139,7 +1141,8 @@ export default function MechanicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-mitsubishi-heavy-industries.png"
+                  loader={myLoader}
+                  src="clients/logo-mitsubishi-heavy-industries.png"
                   alt="Mitsubishi Heavy Industries logo."
                   width={255}
                   height={191}
@@ -1150,7 +1153,8 @@ export default function MechanicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-ncs-oilfield-services.png"
+                  loader={myLoader}
+                  src="clients/logo-ncs-oilfield-services.png"
                   alt="NCS Oilfield Services, Inc logo."
                   width={255}
                   height={191}
@@ -1161,7 +1165,8 @@ export default function MechanicalPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-thomas-global-systems.png"
+                  loader={myLoader}
+                  src="clients/logo-thomas-global-systems.png"
                   alt="Thomas Global Systems Pty Ltd logo."
                   width={255}
                   height={191}

@@ -4,6 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
+const myLoader = ({ src, width, quality }) => {
+  return `http://localhost:3000/images/examples/${src}?w=${width}&q=${
+    quality || 75
+  }`
+}
+
 export default function TradeMarkInfringement() {
   return (
     <Layout>
@@ -243,14 +249,11 @@ export default function TradeMarkInfringement() {
       <h5>A Cautionary Tale</h5>
       <figure>
         <Image
-          decoding="async"
-          loading="lazy"
+          loader={myLoader}
           width="800"
           height="250"
-          src="https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi.jpg"
+          src="asashi-musashi.jpg"
           alt="Asashi &amp; Musashi"
-          srcSet="https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi.jpg 800w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-300x94.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/asashi-musashi-768x240.jpg 768w"
-          sizes="(max-width: 800px) 100vw, 800px"
         />
         <figcaption>
           Société Des Produits Nestlé SA &amp; Anor v Christian &amp; Anor
@@ -490,18 +493,13 @@ export default function TradeMarkInfringement() {
       </p>
       <h4>Social Media</h4>
       <figure>
-        <Link href="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form.jpg">
-          <Image
-            decoding="async"
-            loading="lazy"
-            width="300"
-            height="251"
-            src="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-300x251.jpg"
-            alt="Facebook Trademark Report Form"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-300x251.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-768x643.jpg 768w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form-600x500.jpg 600w, https://www.baxterip.com.au/wp-content/uploads/2018/11/facebook-trademark-report-form.jpg 800w"
-            sizes="(max-width: 300px) 100vw, 300px"
-          />
-        </Link>
+        <Image
+          loader={myLoader}
+          width="300"
+          height="251"
+          src="facebook-trademark-report-form-300x251.jpg"
+          alt="Facebook Trademark Report Form"
+        />
       </figure>
       <p></p>
       <Link href="https://www.baxterip.com.au/trade-mark-enforcement-options">
@@ -593,14 +591,11 @@ export default function TradeMarkInfringement() {
       <h4>Filing your trade mark in China</h4>
       <figure>
         <Image
-          decoding="async"
-          loading="lazy"
+          loader={myLoader}
           width="300"
           height="131"
-          src="https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg"
+          src="/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg"
           alt="Xingbake logo disputed by Starbucks as blatant piracy"
-          srcSet="https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy-300x131.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2018/11/Xingbake-logo-disputed-by-Starbucks-as-blatant-piracy.jpg 398w"
-          sizes="(max-width: 300px) 100vw, 300px"
         />
         <figcaption>
           Xingbake logo disputed by Starbucks as blatant piracy

@@ -7,7 +7,7 @@ import StaffMartin from '../../components/staff/martin'
 import StaffQi from '../../components/staff/qi'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
+  return `http://localhost:3000/images/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -850,7 +850,8 @@ export default function FintechPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Identitii-Pty-Ltd.svg"
+                  loader={myLoader}
+                  src="clients/Identitii-Pty-Ltd.svg"
                   alt="Identitii logo."
                   width={255}
                   height={191}
@@ -861,7 +862,8 @@ export default function FintechPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/05/logo-mazooma-2.png"
+                  loader={myLoader}
+                  src="clients/logo-mazooma-2.png"
                   alt="Mazooma Technical Services, Inc logo."
                   width={255}
                   height={191}
@@ -872,7 +874,8 @@ export default function FintechPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/05/logo-picnic-1.png"
+                  loader={myLoader}
+                  src="clients/logo-picnic-1.png"
                   alt="Picnic IP Pty Ltd logo."
                   width={255}
                   height={191}
@@ -883,7 +886,8 @@ export default function FintechPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/05/logo-spectrum-message-services-1.png"
+                  loader={myLoader}
+                  src="clients/logo-spectrum-message-services-1.png"
                   alt="Spectrum Message Services Pty Ltd logo."
                   width={255}
                   height={191}

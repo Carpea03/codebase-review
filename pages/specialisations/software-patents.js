@@ -5,11 +5,9 @@ import Head from 'next/head'
 import StaffChris from '../../components/staff/chris'
 import StaffMartin from '../../components/staff/martin'
 import StaffQi from '../../components/staff/qi'
-import StaffWarren from '../../components/staff/warren'
-import StaffNaleesha from '../../components/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
+  return `http://localhost:3000/images/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -1333,7 +1331,8 @@ export default function SoftwarePatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-enome.png"
+                  loader={myLoader}
+                  src="clients/logo-enome.png"
                   alt="E-nome Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1344,7 +1343,8 @@ export default function SoftwarePatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Identitii-Pty-Ltd.svg"
+                  loader={myLoader}
+                  src="clients/Identitii-Pty-Ltd.svg"
                   alt="Identitii logo."
                   width={255}
                   height={191}
@@ -1355,7 +1355,8 @@ export default function SoftwarePatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-penten.png"
+                  loader={myLoader}
+                  src="clients/logo-penten.png"
                   alt="Pen10 Services Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1366,7 +1367,8 @@ export default function SoftwarePatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-quikser.png"
+                  loader={myLoader}
+                  src="clients/logo-quikser.png"
                   alt="Quikser Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1377,7 +1379,8 @@ export default function SoftwarePatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-red-propaganda.png"
+                  loader={myLoader}
+                  src="clients/logo-red-propaganda.png"
                   alt="Red Propaganda Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1388,7 +1391,8 @@ export default function SoftwarePatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/05/logo-spectrum-message-services-1.png"
+                  loader={myLoader}
+                  src="clients/logo-spectrum-message-services-1.png"
                   alt="Spectrum Message Services Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1399,7 +1403,8 @@ export default function SoftwarePatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/06/logo-thomas-electronics.png"
+                  loader={myLoader}
+                  src="clients/logo-thomas-electronics.png"
                   alt="Thomas Electronics of Australia Pty Ltd logo."
                   width={255}
                   height={191}

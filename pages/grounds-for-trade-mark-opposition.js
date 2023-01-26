@@ -4,6 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
+const myLoader = ({ src, width, quality }) => {
+  return `http://localhost:3000/images/examples/${src}?w=${width}&q=${
+    quality || 75
+  }`
+}
+
 export default function GroundsForTradeMarkOpposition() {
   return (
     <Layout>
@@ -261,9 +267,10 @@ export default function GroundsForTradeMarkOpposition() {
               </th>
               <td>
                 <Image
+          loader={myLoader}
                   decoding="async"
                   loading="lazy"
-                  src="https://www.baxterip.com.au/wp-content/uploads/2019/12/show-you-care.jpg"
+                  src="show-you-care.jpg"
                   alt="Show you care 100% recyclable"
                   width="100"
                   height="99"

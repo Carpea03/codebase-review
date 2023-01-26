@@ -9,7 +9,7 @@ import StaffWarren from '../../components/staff/warren'
 import StaffNaleesha from '../../components/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
+  return `http://localhost:3000/images/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -1328,7 +1328,7 @@ export default function ConstructionPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-slingshot-haulage.png"
+                  src="clients/logo-slingshot-haulage.png"
                   alt="Slingshot Haulage Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1340,7 +1340,7 @@ export default function ConstructionPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700">
                 <Image
                   loader={myLoader}
-                  src="logo-wombat-timbers.png"
+                  src="clients/logo-wombat-timbers.png"
                   alt="Wombat Timbers Pty Ltd logo."
                   width={255}
                   height={191}
