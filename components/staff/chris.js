@@ -1,9 +1,8 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://bip-cms-sanity.vercel.app/images/team/${src}?w=${width}&q=${
+  return `https://baxterip.vercel.app/images/team/${src}?w=${width}&q=${
     quality || 75
   }`
 }
@@ -20,9 +19,7 @@ export default function StaffChris() {
         className="mx-auto mb-4 w-36 h-36 rounded-full"
       />
       <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <Link href="sydney/chris-baxter">
-          Chris Baxter
-        </Link>
+        <Link href="sydney/chris-baxter">Chris Baxter</Link>
       </h3>
       <p>Managing Director, Patent & Trade Mark Attorney</p>
       <ul className="flex justify-center mt-4 space-x-4">
@@ -50,5 +47,5 @@ export default function StaffChris() {
         <li>Sydney</li>
       </ul>
     </div>
-  );
+  )
 }
