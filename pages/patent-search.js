@@ -19,7 +19,7 @@ export default function PatentSearch() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

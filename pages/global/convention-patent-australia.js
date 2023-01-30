@@ -21,7 +21,7 @@ export default function ConventionPatentAustralia() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/convention-patent-australia"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

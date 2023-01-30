@@ -26,12 +26,12 @@ export default function TradeMarkInfringement() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/trade-mark-infringement"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E4%BE%B5%E6%9D%83"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

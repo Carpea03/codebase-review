@@ -30,7 +30,7 @@ export default function ConstructionPatents() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E5%9C%9F%E6%9C%A8%E5%B7%A5%E7%A8%8B%E5%92%8C%E5%BB%BA%E7%AD%91%E4%B8%93%E5%88%A9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

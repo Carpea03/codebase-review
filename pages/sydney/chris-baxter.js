@@ -23,12 +23,12 @@ export default function Page() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/chris-baxter"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%85%8B%E9%87%8C%E6%96%AF%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex !pl-0" aria-label="Breadcrumb">

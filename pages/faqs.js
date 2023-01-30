@@ -18,7 +18,7 @@ export default function Faqs() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E5%BE%8B%E5%B8%88%E9%97%AE%E9%A2%98"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

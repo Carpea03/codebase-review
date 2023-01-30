@@ -26,12 +26,12 @@ export default function Page() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/joanne-li"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E6%9D%8E%E6%85%A7%E6%80%A1"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex !pl-0" aria-label="Breadcrumb">

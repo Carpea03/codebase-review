@@ -18,16 +18,16 @@ export default function About() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/about"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%85%B3%E4%BA%8E"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/about"
         />
       </Head>

@@ -21,7 +21,7 @@ export default function CapitalPartners() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A4%A7%E5%86%99%E4%BC%99%E4%BC%B4"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

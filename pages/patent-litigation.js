@@ -21,12 +21,12 @@ export default function PatentLitigation() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/patent-litigation"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E8%AF%89%E8%AE%BC"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

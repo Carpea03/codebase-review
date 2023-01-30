@@ -18,16 +18,16 @@ export default function 巴克斯特家庭哲学() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E5%AE%B6%E5%BA%AD%E5%93%B2%E5%AD%A6"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/baxter-family-philosophy"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/baxter-ip-philosophy"
         />
       </Head>

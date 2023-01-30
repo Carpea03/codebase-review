@@ -26,12 +26,12 @@ export default function AwardsAndRecognition() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/awards-recognition"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A5%96%E9%A1%B9%E4%B8%8E%E8%A1%A8%E5%BD%B0"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

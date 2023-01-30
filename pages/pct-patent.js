@@ -19,7 +19,7 @@ export default function PctPatent() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/pct%E5%9B%BD%E9%99%85%E4%B8%93%E5%88%A9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

@@ -16,11 +16,11 @@ export default function 全球专利新颖搜索() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%85%A8%E7%90%83%E4%B8%93%E5%88%A9%E6%96%B0%E9%A2%96%E6%90%9C%E7%B4%A2"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/international-patent-search"
         />
       </Head>

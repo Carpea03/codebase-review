@@ -5,7 +5,6 @@ import Head from 'next/head'
 import StaffChris from '../../components/staff/chris'
 import StaffMartin from '../../components/staff/martin'
 import StaffQi from '../../components/staff/qi'
-import StaffWarren from '../../components/staff/warren'
 import StaffNaleesha from '../../components/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
@@ -32,7 +31,7 @@ export default function PhysicsAndOpticalPatents() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E7%89%A9%E7%90%86%E5%92%8C%E5%85%89%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E5%88%A9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

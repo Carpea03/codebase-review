@@ -21,16 +21,16 @@ export default function FreedomToOperatePatentSearch() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/freedom-to-operate-patent-search"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%85%8D%E8%B4%B9%E6%93%8D%E4%BD%9C%E6%90%9C%E7%B4%A2"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/freedom-to-operate-patent-search"
         />
       </Head>

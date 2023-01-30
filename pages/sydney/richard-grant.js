@@ -24,13 +24,13 @@ export default function Page() {
         />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/global/richard-grant"
-          hreflang="en-US"
+          href="https://www.baxterip.com.au/global/dr-richard-grant"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E7%90%86%E6%9F%A5%E5%BE%B7%E6%A0%BC%E5%85%B0%E7%89%B9%E5%8D%9A%E5%A3%AB"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex !pl-0" aria-label="Breadcrumb">

@@ -21,7 +21,7 @@ export default function HowToBecomeATradeMarkAttorney() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E5%95%86%E6%A0%87%E4%BB%A3%E7%90%86%E4%BA%BA"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

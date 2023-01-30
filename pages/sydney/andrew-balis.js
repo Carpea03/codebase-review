@@ -25,12 +25,12 @@ export default function Page() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/andrew-balis"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%AE%89%E5%BE%B7%E9%B2%81%E5%B7%B4%E5%88%A9%E6%96%AF"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav

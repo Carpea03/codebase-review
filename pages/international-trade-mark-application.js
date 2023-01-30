@@ -21,7 +21,7 @@ export default function InternationalTradeMarkApplication() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%9B%BD%E9%99%85%E5%95%86%E6%A0%87%E7%94%B3%E8%AF%B7"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

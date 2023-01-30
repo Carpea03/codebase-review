@@ -29,7 +29,7 @@ export default function PharmaceuticalPatents() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E5%8C%96%E5%AD%A6%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%92%8C%E8%8D%AF%E7%89%A9%E4%B8%93%E5%88%A9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

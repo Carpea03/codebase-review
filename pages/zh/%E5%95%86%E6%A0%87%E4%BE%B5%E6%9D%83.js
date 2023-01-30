@@ -16,16 +16,16 @@ export default function 商标侵权() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E4%BE%B5%E6%9D%83"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/trade-mark-infringement"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/trade-mark-infringement"
         />
       </Head>

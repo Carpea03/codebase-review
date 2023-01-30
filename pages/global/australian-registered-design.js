@@ -22,16 +22,16 @@ export default function AustralianRegisteredDesign() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-registered-designs"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%B3%A8%E5%86%8C%E5%A4%96%E8%A7%82%E8%AE%BE%E8%AE%A1"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/registered-designs"
         />
       </Head>

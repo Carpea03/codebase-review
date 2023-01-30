@@ -19,16 +19,16 @@ export default function TradeMarkLitigation() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/trade-mark-litigation"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E8%AF%89%E8%AE%BC"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/trade-mark-litigation"
         />
       </Head>

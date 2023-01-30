@@ -16,11 +16,11 @@ export default function 设计纠纷() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E8%AE%BE%E8%AE%A1%E7%BA%A0%E7%BA%B7"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/design-disputes"
         />
       </Head>

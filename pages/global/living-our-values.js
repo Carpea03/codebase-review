@@ -22,16 +22,16 @@ export default function LivingOurValues() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/living-our-values"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%AE%9E%E7%8E%B0%E6%88%91%E4%BB%AC%E7%9A%84%E4%BB%B7%E5%80%BC%E8%A7%82"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/living-our-values"
         />
       </Head>

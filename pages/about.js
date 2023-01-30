@@ -18,12 +18,12 @@ export default function About() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/about"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%85%B3%E4%BA%8E"
-          hreflang="zh"></link>
+          hrefLang="zh"></link>
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">

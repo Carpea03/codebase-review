@@ -18,11 +18,11 @@ export default function 如何成为专利代理人() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/how-to-become-a-patent-attorney"
         />
       </Head>

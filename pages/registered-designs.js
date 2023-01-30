@@ -20,12 +20,12 @@ export default function RegisteredDesigns() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-registered-design"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%B3%A8%E5%86%8C%E5%A4%96%E8%A7%82%E8%AE%BE%E8%AE%A1"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

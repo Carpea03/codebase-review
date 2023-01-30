@@ -21,7 +21,7 @@ export default function DesignDisputes() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E8%AE%BE%E8%AE%A1%E7%BA%A0%E7%BA%B7"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

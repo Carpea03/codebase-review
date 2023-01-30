@@ -21,16 +21,16 @@ export default function AustralianPatents() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-patents"
-          hreflang="en-us"
+          hrefLang="en-us"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7%E4%B8%93%E5%88%A9"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/how-to-patent"
         />
       </Head>

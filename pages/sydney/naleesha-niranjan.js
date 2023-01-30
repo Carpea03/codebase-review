@@ -26,12 +26,12 @@ export default function Page() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/naleesha-niranjan"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E7%BA%B3%E4%B8%BD%E8%8E%8E%E5%B0%BC%E7%84%B6%E7%AE%80"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex !pl-0" aria-label="Breadcrumb">

@@ -29,7 +29,7 @@ export default function MechanicalPatents() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E6%9C%BA%E6%A2%B0%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%87%87%E7%9F%BF%E4%B8%93%E5%88%A9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

@@ -18,7 +18,7 @@ export default function IpValuation() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BB%B7%E5%80%BC%E8%AF%84%E4%BC%B0"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

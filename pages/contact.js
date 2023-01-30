@@ -18,12 +18,12 @@ export default function Contact() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/contact"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E8%81%94%E7%B3%BB"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <section className="bg-white dark:bg-gray-900">

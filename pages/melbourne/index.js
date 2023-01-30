@@ -20,7 +20,7 @@ export default function Melbourne() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <section className="bg-white dark:bg-gray-900">

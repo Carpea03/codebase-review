@@ -16,11 +16,11 @@ export default function 知识产权审核() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%AE%A1%E6%A0%B8"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/ip-audit"
         />
       </Head>

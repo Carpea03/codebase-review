@@ -21,7 +21,7 @@ export default function RoleOfAustralianPatentAttorneys() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA%E7%9A%84%E8%A7%92%E8%89%B2"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

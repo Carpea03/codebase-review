@@ -16,7 +16,7 @@ export default function IpGlossary() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E6%9C%AF%E8%AF%AD%E8%A1%A8"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

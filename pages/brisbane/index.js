@@ -20,7 +20,7 @@ export default function Brisbane() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%B8%83%E9%87%8C%E6%96%AF%E7%8F%AD"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <section className="bg-white dark:bg-gray-900">

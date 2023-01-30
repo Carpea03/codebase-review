@@ -20,7 +20,7 @@ export default function Sydney() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <section className="bg-white dark:bg-gray-900">

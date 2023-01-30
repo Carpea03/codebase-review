@@ -25,12 +25,12 @@ export default function Page() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/julia-caunt"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E6%9C%B1%E8%8E%89%E5%A8%85%E8%80%83%E7%89%B9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex !pl-0" aria-label="Breadcrumb">

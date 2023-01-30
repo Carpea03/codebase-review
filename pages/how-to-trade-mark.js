@@ -21,7 +21,7 @@ export default function HowToTradeMark() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E5%95%86%E6%A0%87"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

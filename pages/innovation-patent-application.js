@@ -22,12 +22,12 @@ export default function InnovationPatentApplication() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/innovation-patents"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%88%9B%E6%96%B0%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

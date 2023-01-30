@@ -22,7 +22,7 @@ export default function ProvisionalPatents() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%B4%E6%97%B6%E4%B8%93%E5%88%A9"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

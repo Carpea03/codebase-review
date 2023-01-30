@@ -30,7 +30,7 @@ export default function ElectricalEngineeringPatents() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E5%8F%8A%E7%94%B5%E5%AD%90%E5%AD%A6%E4%B8%93%E5%88%A9%E6%96%B9%E9%9D%A2"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

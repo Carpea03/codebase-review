@@ -15,11 +15,11 @@ export default function 大写伙伴() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A4%A7%E5%86%99%E4%BC%99%E4%BC%B4"
-          hreflang="zh"
+          hrefLang="zh"
         />
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://www.baxterip.com.au/capital-partners"
         />
       </Head>

@@ -19,12 +19,12 @@ export default function TradeMarkSearch() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/trade-mark-search"
-          hreflang="en-US"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E6%90%9C%E7%B4%A2"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

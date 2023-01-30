@@ -19,7 +19,7 @@ export default function HowToChooseAnAustralianPatentAttorney() {
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E4%B8%93%E5%88%A9%E4%BB%A3%E7%90%86%E4%BA%BA"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">

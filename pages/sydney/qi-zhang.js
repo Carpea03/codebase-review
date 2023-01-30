@@ -24,13 +24,13 @@ export default function Page() {
         />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/global/qi-zhang"
-          hreflang="en-US"
+          href="https://www.baxterip.com.au/global/dr-qi-zhang"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%BC%A0%E6%97%97%E5%8D%9A%E5%A3%AB"
-          hreflang="zh"
+          hrefLang="zh"
         />
       </Head>
       <nav className="flex !pl-0" aria-label="Breadcrumb">
