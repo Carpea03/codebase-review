@@ -41,7 +41,7 @@ export default {
     {
       name: 'date',
       title: 'Date',
-      type: 'datetime',
+      type: 'date',
     },
     {
       name: 'author',
