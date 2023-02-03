@@ -56,7 +56,7 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [{ type: 'tag' }],
+          to: [{ type: 'category' }],
         },
       ],
     },
