@@ -6878,8 +6878,8 @@ export default function Index() {
           </div>
         </div>
       </div>
-      {/* <Header /> */}
-      {/* <Hero />
+      {/* <Header />
+      <Hero />
       <SocialProof />
       <ContentCard />
       <Features />
@@ -6890,8 +6890,8 @@ export default function Index() {
       <FeaturesImages />
       <Blog />
       <Contact />
-      <Newsletter />
-      <Footer /> */}
+      <Newsletter /> */}
+      <Footer />
     </>
   )
 }
