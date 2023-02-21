@@ -28,7 +28,28 @@ export default {
       name: 'content',
       title: 'Content',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [
+        { type: 'block' },
+        {
+          type: 'image',
+          fields: [
+            {
+              name: 'caption',
+              type: 'string',
+              title: 'Caption',
+              options: {
+                isHighlighted: true, // <-- make this field easily accessible
+              },
+            },
+            {
+              // Editing this field will be hidden behind an "Edit"-button
+              name: 'attribution',
+              type: 'string',
+              title: 'Attribution',
+            },
+          ],
+        },
+      ],
     },
     {
       name: 'coverImage',
