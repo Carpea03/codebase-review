@@ -22,9 +22,9 @@ export default function PostHeader({ title, coverImage, date, author }) {
               <p className="text-base font-light text-gray-500 dark:text-gray-400">
                 {author.role || '[author_role]'}
               </p>
-              {/* <p className="text-base font-light text-gray-500 dark:text-gray-400">
+              <p className="text-base font-light text-gray-500 dark:text-gray-400">
                 {author.bio}
-              </p> */}
+              </p>
               <p className="text-base font-light text-gray-500 dark:text-gray-400">
                 <Date dateString={date} />
               </p>
