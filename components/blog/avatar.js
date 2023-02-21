@@ -24,8 +24,8 @@ export default function Avatar({ name, picture, role, bio }) {
       </div>
       <div className="text-xl font-bold">
         <p>{name}</p>
-        <p>{role}</p>
-        <p>{bio}</p>
+        {/* <p>{role}</p>
+        <p>{bio}</p> */}
       </div>
     </div>
   )
