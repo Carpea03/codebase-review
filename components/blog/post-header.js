@@ -9,6 +9,9 @@ export default function PostHeader({ title, coverImage, date, author }) {
     <>
       <PostTitle>{title}</PostTitle>
       <div className="pb-4 lg:mb-6 not-format">
+        <p className="text-base font-light text-gray-500 dark:text-gray-400">
+          <Date dateString={date} />
+        </p>
         <address className="pb-4 flex items-center mb-6 not-italic">
           <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
             {author && <Avatar picture={author.picture} />}
@@ -22,11 +25,8 @@ export default function PostHeader({ title, coverImage, date, author }) {
               <p className="text-base font-light text-gray-500 dark:text-gray-400">
                 {author.role || '[author_role]'}
               </p>
-              {/* <p className="text-base font-light text-gray-500 dark:text-gray-400">
+              <p className="text-xs font-light text-gray-500 dark:text-gray-400">
                 {author.bio}
-              </p> */}
-              <p className="text-base font-light text-gray-500 dark:text-gray-400">
-                <Date dateString={date} />
               </p>
             </div>
           </div>

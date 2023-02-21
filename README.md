@@ -374,10 +374,11 @@ Wormhole into the [manager](https://manage.sanity.io/) by running:
 
 In the GitHub repo, go to Settings > Secrets > Actions and add the following environment variables:
 
-- SANITY_STUDIO_API_PROJECT_ID
-- SANITY_STUDIO_API_DATASET
+- SANITY_AUTH_TOKEN ([Sanity Manager](https://manage.sanity.io/) > API > click "Add API Token", then select "Deploy Studio" and save)
+- SANITY_STUDIO_API_PROJECT_ID (Sanity Manager > Project ID)
+- SANITY_STUDIO_API_DATASET (Sanity > Datasets)
 
-Create a workflow file `.github/workflows/main.yml` with the following contents:
+Create a workflow file `.github/workflows/sanity-deploy.yml` with the following contents:
 
 ```
 name: Deploy Sanity Studio
