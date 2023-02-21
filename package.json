@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next & npm --prefix studio run start",
     "build": "next build",
     "start": "next start",
     "studio:dev": "npm --prefix studio run start",
@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
-    "@sanity/cli": "^2.35.0",
     "autoprefixer": "^10.4.8",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
