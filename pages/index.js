@@ -27,10 +27,10 @@ export default function Index() {
       <ContentCard />
       <Features />
       <Logos />
-      <ImagesHeadingDescription />
+      {/* <ImagesHeadingDescription />
       <FeatureListCta />
       <CardCta />
-      <FeaturesImages />
+      <FeaturesImages /> */}
       <Blog />
       <Contact />
       <Newsletter />
