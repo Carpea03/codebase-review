@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next & npm --prefix studio run start",
-    "build": "npx vercel --prod --token=SANITY_STUDIO_PREVIEW_SECRET & next build",
+    "build": "npx vercel --prod --token=SANITY_REVALIDATE_SECRET & next build",
     "start": "next start",
     "studio:dev": "npm --prefix studio run start",
     "studio:deploy": "npx vercel env pull && npm --prefix studio run deploy",
