@@ -433,7 +433,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
-      <nav
+      {/* <nav
         id="megamenu"
         className="bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-600">
         <div className="grid py-4 px-4 mx-auto max-w-screen-xl text-gray-900 dark:text-white md:grid-cols-2 lg:grid-cols-4 md:px-6">
@@ -675,7 +675,7 @@ export default function Header() {
             </Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </header>
   )
 }
