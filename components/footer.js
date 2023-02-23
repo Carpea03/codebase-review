@@ -183,7 +183,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="/ip-news/patenting-your-health-care-apps"
+                  href="/ip-news/register-ip-rights-smart-move-for-australian-ip-holders-in-china"
                   className="hover:underline">
                   Blog Post
                 </Link>
