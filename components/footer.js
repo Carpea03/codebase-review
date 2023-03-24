@@ -183,7 +183,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="/ip-news/preliminary-injunction-sought-by-apple-against-samsung-galaxy-in-the-us"
+                  href="/ip-news/patentable-subject-matter-a-skill-game"
                   className="hover:underline">
                   Blog Post 1
                 </Link>

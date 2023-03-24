@@ -84,6 +84,9 @@ export async function getStaticProps({ params, preview = false }) {
       },
     },
     // If webhooks isn't setup then attempt to re-generate in 10 second intervals
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
     revalidate: 10,
   }
 }
