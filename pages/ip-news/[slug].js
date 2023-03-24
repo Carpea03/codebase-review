@@ -67,6 +67,9 @@ export default function Post({ data = {}, preview }) {
   )
 }
 
+// This function gets called at build time on server-side.
+// It may be called again, on a serverless function, if
+// revalidation is enabled and a new request comes in
 export async function getStaticProps({ params, preview = false }) {
   const { post, morePosts } = await getClient(preview).fetch(postQuery, {
     slug: params.slug,
@@ -80,8 +83,8 @@ export async function getStaticProps({ params, preview = false }) {
         morePosts: overlayDrafts(morePosts),
       },
     },
-    // If webhooks isn't setup then attempt to re-generate in 1 minute intervals
-    revalidate: process.env.SANITY_REVALIDATE_SECRET ? undefined : 60,
+    // If webhooks isn't setup then attempt to re-generate in 10 second intervals
+    revalidate: 10,
   }
 }
 
