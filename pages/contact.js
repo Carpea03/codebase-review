@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import LayoutWide from '../components/layout-wide'
+import LayoutWide from '../components/to-delete/layout-wide'
 import Link from 'next/link'
 
 export default function Contact() {
@@ -13,7 +13,10 @@ export default function Contact() {
           name="description"
           content="Call +61 2 9264 6716 to talk with a patent or trade mark attorney at Baxter IP to discuss your patents, trade marks and intellectual property options today."
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/contact" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/contact"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/contact"
