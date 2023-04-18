@@ -39,7 +39,7 @@ export default function Footer() {
                 </svg>
                 <Link
                   href="mailto:company@name.com"
-                  lassName="ml-2 hover:underline">
+                  className="ml-2 hover:underline">
                   sydney@baxterip.com.au
                 </Link>
               </li>

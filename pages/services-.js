@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/to-delete/layout'
 
 export default function Services() {
   return (
@@ -13,14 +13,19 @@ export default function Services() {
           name="description"
           content="Baxter IP provides intellectual property services including patent services, trade mark services, registered designs and other IP services."
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/services" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/services"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%88%91%E4%BB%AC%E7%9A%84%E6%9C%8D%E5%8A%A1"
           hreflang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -66,7 +71,9 @@ export default function Services() {
           <Link href="/patents">Patent Services</Link>
           <ol>
             <li>
-              <Link title="How To Patent" href="/how-to-patent">
+              <Link
+                title="How To Patent"
+                href="/how-to-patent">
                 How to Patent
               </Link>
               <ul>
@@ -225,12 +232,16 @@ export default function Services() {
           </ol>
         </li>
         <li>
-          <Link title="How To Trade Mark" href="/trade-marks">
+          <Link
+            title="How To Trade Mark"
+            href="/trade-marks">
             Trade Mark Services
           </Link>
           <ol>
             <li>
-              <Link title="How To Trade Mark" href="/how-to-trade-mark">
+              <Link
+                title="How To Trade Mark"
+                href="/how-to-trade-mark">
                 How to Trade Mark
               </Link>
               <ul>

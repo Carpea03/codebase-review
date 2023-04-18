@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/to-delete/layout'
 
 export default function HowToChooseAnAustralianPatentAttorney() {
   return (
@@ -21,7 +21,9 @@ export default function HowToChooseAnAustralianPatentAttorney() {
           hreflang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -86,11 +88,15 @@ export default function HowToChooseAnAustralianPatentAttorney() {
       </h2>
       <p>
         Although many{' '}
-        <Link title="Our Patent Attorneys" href="/patent-attorney">
+        <Link
+          title="Our Patent Attorneys"
+          href="/patent-attorney">
           patent attorneys
         </Link>{' '}
         claim to be{' '}
-        <Link title="IP &amp; Patent Specialisations" href="/specialisations">
+        <Link
+          title="IP &amp; Patent Specialisations"
+          href="/specialisations">
           technology generalists
         </Link>
         , very few actually are. An Australian patent attorney&apos;s technology
@@ -143,7 +149,9 @@ export default function HowToChooseAnAustralianPatentAttorney() {
         knowledge, skills or connections
       </h2>
       <p>
-        <Link title="Our Patent Attorneys" href="/patent-attorney">
+        <Link
+          title="Our Patent Attorneys"
+          href="/patent-attorney">
           Patent attorneys
         </Link>{' '}
         often have secondary areas (aside from patents) that they are very
@@ -184,7 +192,9 @@ export default function HowToChooseAnAustralianPatentAttorney() {
         If the clients of a patent attorney are happy with him/her it&apos;s
         much more likely you will be too! How can you know whether the patent
         attorney you are considering has{' '}
-        <Link title="Client Testimonials" href="/testimonials">
+        <Link
+          title="Client Testimonials"
+          href="/testimonials">
           happy clients
         </Link>
         ? Two tips:

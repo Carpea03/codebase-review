@@ -136,10 +136,10 @@ const Footer = () => {
               <div className="flex flex-col items-start gap-10">
                 <Subject title="More to explore" />
                 <div className="flex flex-col items-start gap-6">
-                  <Item title="IP News" />
+                  <Link href="/ip-news">IP News</Link>
+                  {/* <Item title="IP News" /> */}
                   <Item title="Our Values" />
-                  {/* <Item title="How We Give Back" /> */}
-                  <Link href="/ip-news">How We Give Back</Link>
+                  <Item title="How We Give Back" />
                   <Item title="Awards & Recognition" />
                 </div>
               </div>

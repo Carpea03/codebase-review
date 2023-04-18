@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/to-delete/layout'
 
 export default function SpecialTypesOfTradeMarks() {
   return (
@@ -18,7 +18,9 @@ export default function SpecialTypesOfTradeMarks() {
           href="https://www.baxterip.com.au/special-types-of-trade-marks"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -165,7 +167,9 @@ export default function SpecialTypesOfTradeMarks() {
         <table>
           <tbody>
             <tr>
-              <th scope="row" width="15%">
+              <th
+                scope="row"
+                width="15%">
                 Collective Trade Mark for an Incorporated Association
               </th>
               <td width="85%">
@@ -258,7 +262,9 @@ export default function SpecialTypesOfTradeMarks() {
         <table>
           <tbody>
             <tr>
-              <th scope="row" width="15%">
+              <th
+                scope="row"
+                width="15%">
                 The Australian Carpet Trade Mark (309403)
               </th>
               <td width="85%">
@@ -412,7 +418,9 @@ export default function SpecialTypesOfTradeMarks() {
         <table>
           <tbody>
             <tr>
-              <th scope="row" width="15%">
+              <th
+                scope="row"
+                width="15%">
                 Vogue
               </th>
               <td width="85%">

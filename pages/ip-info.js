@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/to-delete/layout'
 
 export default function IpInfo() {
   return (
@@ -13,14 +13,19 @@ export default function IpInfo() {
           name="description"
           content="A collection of intellectual property information, tools and resources provided by Baxter IP, Patent & Trade Mark Attorneys."
         />{' '}
-        <link rel="canonical" href="https://www.baxterip.com.au/ip-info" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/ip-info"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BF%A1%E6%81%AF"
           hreflang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             {' '}

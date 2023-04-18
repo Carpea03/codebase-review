@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/to-delete/layout'
 
 export default function DomainNamesAndTradeMarks() {
   return (
@@ -18,7 +18,9 @@ export default function DomainNamesAndTradeMarks() {
           href="https://www.baxterip.com.au/domain-names-and-trade-marks"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
