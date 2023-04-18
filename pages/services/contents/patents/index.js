@@ -3,6 +3,11 @@ import PCTNationalPhaseAustralia from './PCTNationalPhaseAustralia'
 
 export default function Patents({ menus }) {
   const [selectedMenu, setSelectedMenu] = useState(0)
+
+  if (!menus) {
+    return null
+  }
+
   return (
     <>
       <div className="w-full flex flex-row items-center bg-[#F3F3FA] overflow-x-auto scrollbar-hide">
