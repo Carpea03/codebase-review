@@ -66,9 +66,12 @@ export const OurServices = () => {
                 className={`w-1/2 flex items-center justify-center ${
                   service.id % 2 == 0 ? 'order-last' : 'order-first'
                 }`}>
-                <img
+                <Image
                   src={service.img}
                   className="object-cover"
+                  width={205}
+                  height={238}
+                  alt=""
                 />
               </div>
               <div
