@@ -12,7 +12,7 @@ export default function Patents({ menus }) {
               selectedMenu === index ? 'border-b-4 border-[#8C79D9]' : ''
             }`}
             onClick={() => setSelectedMenu(index)}
-            key={index}>
+            key={menu.id}>
             <span className="font-manrope font-semibold text-sm sm:text-xl text-[#404266] whitespace-nowrap">
               {menu.title}
             </span>
