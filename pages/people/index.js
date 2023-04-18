@@ -4,6 +4,7 @@ import Footer from '../../components/templates/Footer'
 import Header from '../../components/templates/Header'
 import React, { useState } from 'react'
 import { HiPhone, HiLocationMarker } from 'react-icons/hi'
+import Image from 'next/image'
 
 const peoples = [
   {
@@ -193,7 +194,12 @@ export default function People() {
                 boxShadow:
                   '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
               }}>
-              <img src={teamMember.url} />
+              <Image
+                src={teamMember.url}
+                width={300}
+                height={300}
+                alt=""
+              />
               <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
                 <div>
                   <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
