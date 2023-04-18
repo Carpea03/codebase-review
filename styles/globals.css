@@ -1,0 +1,323 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+.border-bottom-base {
+  @apply border-b-[1px] border-[#F0E4C3];
+}
+
+.bg-hero-banner {
+  background: linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 101.88%);
+}
+
+.button-base {
+  background: linear-gradient(91.56deg, #8c79d9 0%, #7d67d8 100%);
+  box-shadow: "5px 4px 21px rgba(0, 0, 0, 0.25)";
+  border-radius: "5px";
+}
+
+.selected-benifit-card {
+  background: #ffffff;
+  box-shadow: 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+    0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085),
+    0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+    0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948);
+  border-radius: 2px;
+  border-width: 4px;
+  border-color: #b2b4db;
+}
+
+.benifit-card-icon {
+  box-shadow: 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+    0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085),
+    0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+    0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948);
+}
+
+.bg-ourservice {
+  background: #fffef8;
+  box-shadow: 0px -5px 11px rgba(232, 167, 0, 0.1);
+}
+
+.bg-ourservice-card {
+  background: #ffffff;
+  box-shadow: 0px 56px 114px rgba(150, 151, 169, 0.17),
+    0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+    0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+    0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948);
+  border-radius: 2px;
+}
+
+.bg-industry-speciality {
+  background: url(/industrySpeciality/background.png);
+}
+
+.selected-industry-card-icon {
+  background: #816bd9;
+  /* Drop shadow/button */
+
+  box-shadow: 5px 4px 21px rgba(0, 0, 0, 0.25);
+}
+
+.selected-industry-card {
+  background: linear-gradient(111.36deg, #61638d 0%, #494b70 98.54%);
+  border: 1.44008px solid #a290ea;
+  box-shadow: 0px 12.9733px 26.41px rgba(150, 151, 169, 0.101338),
+    0px 7.27274px 14.8052px rgba(150, 151, 169, 0.085),
+    0px 3.8625px 7.86294px rgba(150, 151, 169, 0.0686618),
+    0px 1.60727px 3.27195px rgba(150, 151, 169, 0.0477948);
+}
+
+.non-selected-industry-card {
+  background: #ffffff;
+  /* Shadow card 2 */
+
+  box-shadow: 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+    0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085),
+    0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+    0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948);
+  border-radius: 2px;
+}
+
+.bg-selected-sydney-team-menu {
+  background-image: url("/professionalProfiles/bg-active-menu.png");
+}
+
+.bg-non-selected-sydney-team-menu {
+  background-image: url("/professionalProfiles/bg-deactive-menu.png");
+  transform: rotate(-180deg);
+}
+
+.bg-selected-melbourne-team-menu {
+  background-image: url("/professionalProfiles/bg-active-menu.png");
+  transform: rotate(-180deg);
+}
+
+.bg-non-selected-melbourne-team-menu {
+  background-image: url("/professionalProfiles/bg-deactive-menu.png");
+}
+
+.bg-selected-long-menu {
+  background-image: url("/fillingStats/long-active-menu.png");
+}
+
+.bg-non-selected-long-menu {
+  background-image: url("/fillingStats/long-deactive-menu.png");
+}
+
+.bg-selected-menu {
+  background-image: url("/fillingStats/active-menu.png");
+}
+
+.bg-non-selected-menu {
+  background-image: url("/fillingStats/deactive-menu.png");
+}
+
+.bg-fillingstats-center {
+  background: url(/fillingStats/bg-center.png);
+  border-radius: 2px;
+}
+
+.bg-contactus-metaoffice {
+  background: linear-gradient(
+      63.11deg,
+      rgba(64, 66, 102, 0.5) 25.2%,
+      rgba(64, 66, 102, 0) 107.54%
+    ),
+    url(/contactus/office.png);
+}
+
+.btn-discover {
+  background: #816bd9;
+  box-shadow: 0px 124px 253px rgba(150, 151, 169, 0.17),
+    0px 27px 56px rgba(150, 151, 169, 0.101338),
+    0px 8px 16px rgba(150, 151, 169, 0.0686618),
+    0px 3px 7px rgba(0, 0, 0, 0.0477948);
+  border-radius: 12px;
+}
+
+.bg-marketsegment {
+  background: linear-gradient(0deg, #ffbe14 0%, #fffdf6 57.78%);
+}
+
+.marketsegment-card-style-1 {
+  background-image: url("/marketSegments/card-style-1.png");
+}
+
+.marketsegment-card-style-2 {
+  background-image: url("/marketSegments/card-style-2.png");
+}
+
+.bg-marketsegment-non-selected-card {
+  background: #ffffff;
+  box-shadow: 0px 124px 253px rgba(150, 151, 169, 0.17),
+    0px 27px 56px rgba(150, 151, 169, 0.101338),
+    0px 8px 16px rgba(150, 151, 169, 0.0686618),
+    0px 3px 7px rgba(0, 0, 0, 0.0477948);
+  border-radius: 5px;
+}
+
+.bg-marketsegment-selected-card {
+  background: linear-gradient(111.36deg, #61638d 0%, #494b70 98.54%);
+  box-shadow: 0px 124px 253px rgba(150, 151, 169, 0.17),
+    0px 27px 56px rgba(150, 151, 169, 0.101338),
+    0px 8px 16px rgba(150, 151, 169, 0.0686618),
+    0px 3px 7px rgba(0, 0, 0, 0.0477948);
+}
+
+.bg-marketsegment-cutted-card {
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%, 90% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%, 90% 0);
+}
+
+.bg-404 {
+  background: url("/404/decoration.svg"), rgba(64, 66, 102, 0.7),
+    linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 101.88%);
+}
+
+.bg-services-unsplash {
+  background: url("/services/unsplash.png"),
+    linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
+}
+
+.bg-contactus-unsplash {
+  background: url("/contactus/unsplash.png"),
+    linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
+}
+
+.bg-people-unsplash {
+  background: url("/professionalProfiles/unsplash.png"),
+    linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
+}
+
+.bg-people-unsplash-1 {
+  background: url("/professionalProfiles/unsplash-1.png"),
+    linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
+}
+
+.bg-profile-bg {
+  background: url("/professionalProfiles/profile-mask.svg"),
+    linear-gradient(352.59deg, #ffc839 -286.39%, #ffe295 90.66%);
+}
+
+.bg-aboutus-unsplash {
+  background: url("/aboutus/unsplash.png"),
+    linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
+}
+
+@screen md {
+  .bg-hero-banner {
+    background-image: url("/banner/bg-decoration.svg"),
+      linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 101.88%);
+    background-position-y: 40%;
+  }
+
+  .button-base {
+    background: #816bd9;
+    box-shadow: 0px 124px 253px rgba(150, 151, 169, 0.17),
+      0px 27px 56px rgba(150, 151, 169, 0.101338),
+      0px 8px 16px rgba(150, 151, 169, 0.0686618),
+      0px 3px 7px rgba(0, 0, 0, 0.0477948);
+    border-radius: 12px;
+  }
+
+  .selected-benifit-card {
+    background: #ffffff;
+    box-shadow: 0px 27px 56px rgba(150, 151, 169, 0.101338),
+      0px 15px 31px rgba(150, 151, 169, 0.085),
+      0px 8px 16px rgba(150, 151, 169, 0.0686618),
+      0px 3px 7px rgba(150, 151, 169, 0.0477948);
+    border-radius: 2px;
+    border-width: 3px;
+    border-color: #b2b4db;
+  }
+
+  .bg-ourservice {
+    background: linear-gradient(164.61deg, #fffef8 40.01%, #ffbf15 371.22%);
+  }
+
+  .bg-industry-speciality {
+    background-image: url("/industrySpeciality/effected-background.png");
+    background-repeat: no-repeat;
+  }
+
+  .selected-industry-card {
+    background: linear-gradient(111.36deg, #61638d 0%, #494b70 98.54%);
+    border: 4px solid #a290ea;
+    /* Card shadow */
+
+    box-shadow: 0px 56px 114px rgba(150, 151, 169, 0.17),
+      0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+      0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+      0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948);
+    border-radius: 2px;
+  }
+
+  .bg-mask-fillingstats {
+    background-image: url("/fillingStats/bg-mask.svg");
+  }
+
+  .bg-ipNewsLog-content {
+    background: linear-gradient(167.62deg, #fffef8 42.45%, #fff3d0 91%);
+  }
+
+  .bg-marketsegment {
+    background: linear-gradient(176.69deg, #fffef8 21.12%, #ffbf15 139.62%);
+  }
+
+  .bg-marketsegment-non-selected-card {
+    background: #ffffff;
+    box-shadow: 0px 56px 114px rgba(150, 151, 169, 0.17),
+      0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+      0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+      0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948);
+  }
+
+  .bg-marketsegment-selected-card {
+    background: url("/marketSegments/card-decoration.svg"),
+      linear-gradient(111.36deg, #61638d 0%, #494b70 98.54%);
+  }
+}
+
+@screen sm {
+  .button-base {
+    background: #816bd9;
+    box-shadow: 0px 56px 114px rgba(150, 151, 169, 0.17),
+      0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+      0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+      0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948);
+    border-radius: 5px;
+  }
+
+  .selected-benifit-card {
+    background: #ffffff;
+    box-shadow: 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338),
+      0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085),
+      0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618),
+      0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948);
+    border-radius: 2px;
+    border-width: 4px;
+    border-color: #b2b4db;
+  }
+
+  .bg-ourservice-card {
+    background: #ffffff;
+    box-shadow: 0px 124px 253px rgba(150, 151, 169, 0.17),
+      0px 27px 56px rgba(150, 151, 169, 0.101338),
+      0px 8px 16px rgba(150, 151, 169, 0.0686618),
+      0px 3px 7px rgba(0, 0, 0, 0.0477948);
+    border-radius: 5px;
+  }
+
+  .selected-industry-card {
+    background: linear-gradient(111.36deg, #61638d 0%, #494b70 98.54%);
+    border-width: 4px 2px 2px 2px;
+    border-style: solid;
+    border-color: #a290ea;
+    box-shadow: 0px 28px 58px rgba(150, 151, 169, 0.101338),
+      0px 16px 32px rgba(150, 151, 169, 0.085),
+      0px 8px 17px rgba(150, 151, 169, 0.0686618),
+      0px 3px 7px rgba(150, 151, 169, 0.0477948);
+  }
+}
