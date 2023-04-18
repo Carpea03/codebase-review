@@ -4,6 +4,7 @@ import { FiSearch } from 'react-icons/fi'
 import { Container } from './Container'
 import { TiSocialLinkedin } from 'react-icons/ti'
 import GoogleMapReact from 'google-map-react'
+import Link from 'next/link'
 
 const Subject = ({ title }) => {
   return (
@@ -137,7 +138,8 @@ const Footer = () => {
                 <div className="flex flex-col items-start gap-6">
                   <Item title="IP News" />
                   <Item title="Our Values" />
-                  <Item title="How We Give Back" />
+                  {/* <Item title="How We Give Back" /> */}
+                  <Link href="/ip-news">How We Give Back</Link>
                   <Item title="Awards & Recognition" />
                 </div>
               </div>
