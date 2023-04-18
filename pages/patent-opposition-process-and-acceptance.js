@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../components/layout'
+import Layout from '../components/to-delete/layout'
 
 export default function PatentOppositionProcessAndAcceptance() {
   return (
@@ -20,7 +20,9 @@ export default function PatentOppositionProcessAndAcceptance() {
           href="https://www.baxterip.com.au/patent-opposition-process-and-acceptance"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

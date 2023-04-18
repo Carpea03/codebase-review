@@ -8,6 +8,7 @@ module.exports = {
       'baxterip.vercel.app',
       'www.baxterip.com.au',
       'localhost:3000',
+      'maps.googleapis.com',
     ],
   },
 }

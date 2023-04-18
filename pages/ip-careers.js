@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/to-delete/layout'
 
 export default function IpCareers() {
   return (
@@ -14,14 +14,19 @@ export default function IpCareers() {
           name="description"
           content="IP attorney careers as a patent attorney or trade mark attorney provide a fantastic way to support emerging businesses. Get in touch to learn more."
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/ip-careers" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/ip-careers"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E5%BE%8B%E5%B8%88%E8%81%8C%E4%B8%9A"
           hreflang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

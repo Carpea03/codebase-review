@@ -1,8 +1,8 @@
-import CardCta from '../components/blocks/card-cta'
-import FeatureListCta from '../components/blocks/feature-list-cta'
-import LayoutWide from '../components/layout-wide'
+import CardCta from '../components/to-delete/blocks/card-cta'
+import FeatureListCta from '../components/to-delete/blocks/feature-list-cta'
+import LayoutWide from '../components/to-delete/layout-wide'
 import Link from 'next/link'
-import TeamPatent from '../components/team-patent'
+import TeamPatent from '../components/to-delete/team-patent'
 
 export default function Designs() {
   return (
@@ -14,11 +14,11 @@ export default function Designs() {
               Protect your valuable design
             </h1>
             <p className="mb-8 font-light text-gray-400 sm:text-xl">
-              Your product&apos;s unique aesthetic makes it more desirable in-market
-              when compared with competing products. A design registration
-              protects your valuable differentiating aesthetics from competitors
-              who might want to leverage off your design work to benefit from it
-              or create confusion with your product.
+              Your product&apos;s unique aesthetic makes it more desirable
+              in-market when compared with competing products. A design
+              registration protects your valuable differentiating aesthetics
+              from competitors who might want to leverage off your design work
+              to benefit from it or create confusion with your product.
             </p>
             <p className="mb-8 font-light text-gray-400 sm:text-xl">
               A registered design provides 10 years of design ownership in the

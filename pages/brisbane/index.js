@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import LayoutWide from '../../components/layout-wide'
+import LayoutWide from '../../components/to-delete/layout-wide'
 import Link from 'next/link'
 
 export default function Brisbane() {

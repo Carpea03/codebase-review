@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 import Link from 'next/link'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffMike from '../../components/staff/mike'
-import StaffWarren from '../../components/staff/warren'
-import StaffNaleesha from '../../components/staff/naleesha'
+import StaffChris from '../../components/to-delete/staff/chris'
+import StaffMartin from '../../components/to-delete/staff/martin'
+import StaffMike from '../../components/to-delete/staff/mike'
+import StaffWarren from '../../components/to-delete/staff/warren'
+import StaffNaleesha from '../../components/to-delete/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
   return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
