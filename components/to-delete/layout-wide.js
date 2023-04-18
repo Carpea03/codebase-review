@@ -1,15 +1,11 @@
-import Contact from './blocks/contact'
-import Footer from './footer'
-import Header from './header'
-import Newsletter from './blocks/newsletter'
+import Header from '../../components/templates/Header'
+import Footer from '../../components/templates/Footer'
 
 export default function LayoutWide({ children }) {
   return (
     <>
       <Header />
       <main>{children}</main>
-      <Contact />
-      <Newsletter />
       <Footer />
     </>
   )
