@@ -3,30 +3,25 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
 
-export default function 专利检索() {
+export default function 知识产权价值评估() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>知识产权价值评估|什么是你的专利值多少钱？</title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="Baxter IP可以评估您的知识产权的价值和你的专利组合是值得一用的IP资产估值方法。"
         />
-        <link rel="canonical" href="/zh/专利检索" />
+        <link rel="canonical" href="/zh/知识产权价值评估" />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hrefLang="en-us"
-        />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
+          href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BB%B7%E5%80%BC%E8%AF%84%E4%BC%B0"
           hrefLang="zh"
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
+          href="https://www.baxterip.com.au/ip-valuation"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
@@ -76,28 +71,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/专利"
+                href="/zh/知识产权战略"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                专利
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/zh/如何申请专利"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                如何申请专利
+                知识产权战略
               </Link>
             </div>
           </li>
@@ -114,57 +90,42 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                知识产权价值评估
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>知识产权价值评估</h1>
+      <h2>什么是知识产权评估？</h2>
+      知识产权评估是一种用于确定和评估知识产权资产的多层面的法律和财务分析。我们可以进行专利评估以及商标评估来向您提供对您的知识产权价值的客观看法。一旦您清楚了什么能够让您的知识产权有价值，该评估还将告诉您如何使得这种价值最大化。
+      <h2>知识产权评估和我的生意有关吗？</h2>
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        大多数企业的有形资产只占企业总价值的一小部分，而其余的价值则历来是用一个广义的术语“商誉”来指代，其中包括专利和商标。在发现、衡量或者围绕这种价值做计划方面付出的努力少之又少。很少有企业不像描述中这样，而且很有可能您的企业也是如此。
       </p>
-
-      <h2>全球新颖的专利检索</h2>
-
+      <h2>为什么要对我的知识产权进行评估？</h2>
+      <p>对知识产权进行评估的原因有多种，例如：</p>
+      <ul>
+        <li>作为较大型公司为兼并或收购进行评估的一部分</li>
+        <li>作为高端策略性知识产权或业务规划的一部分</li>
+        <li>针对资本利得税（CGT）获得对无形资产的独立评估</li>
+        <li>用于合资协议，以确定各方是否投入同等货币价值的物品</li>
+        <li>作为纳税申报的理由</li>
+      </ul>
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
-        <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
-        </Link>
+        虽然上面提到的例子是为什么要对知识产权进行评估的主要原因，但是进行专利评估或者其他此类的知识产权评估还有一些其他的重要的好处。尤其是评估是对知识产权各个独立部分的承认，而这一认可在某些情况下可占公司价值的80%以上。
       </p>
-
-      <h2>可自由运营专利检索</h2>
-
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
-        <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
+        对知识产权这些独立部分的承认，例如企业的专利或商标，带来的是对这些独立的部分在企业运作中所发挥作用的了解。这种了解可以让企业有更好的能力来针对该知识产权的优势做出规划，以使其对企业的价值最大化。
       </p>
-
-      <h2>澳大利亚专利检索</h2>
-
       <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
-        </Link>
+        在某些情况下，只要有一个直接指出您企业知识产权价值差异化来源的指南者，并以清晰易懂的方式对其进行解释，就可以用新的眼光来看待企业及其策略性规划。
       </p>
-
-      <h2>其他专利检索</h2>
-
       <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        当一个企业的管理者对其无形资产有了很好的了解，他们就可以利用这些无形资产来发挥其最大价值，并且吸引潜在投资者的兴趣。
+      </p>
+      <p>
+        如果您想更好地了解您企业的无形资产所蕴含的价值，那么请随时和我们的常驻知识产权评估专家和专利代理人迈克·比亚卓取得联系。
       </p>
     </Layout>
   )

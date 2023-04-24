@@ -3,30 +3,25 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
 
-export default function 专利检索() {
+export default function 新颖性检索() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>国际式检索|Baxter IP悉尼和墨尔本</title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="在临时专利申请的国际型搜索可以用于经济有效地审查专利权利要求的新颖性。"
         />
-        <link rel="canonical" href="/zh/专利检索" />
+        <link rel="canonical" href="/zh/新颖性检索" />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hrefLang="en-us"
-        />
-        <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
+          href="https://www.baxterip.com.au/zh/%E6%96%B0%E9%A2%96%E6%80%A7%E6%A3%80%E7%B4%A2"
           hrefLang="zh"
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
+          href="https://www.baxterip.com.au/international-type-search"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
@@ -114,57 +109,32 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                第二阶段一新颖性检索
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>第二阶段一新颖性检索</h1>
+
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        专利检索和其他技术文献检索是获得策略性国际专利保护并尽量减少您专利风险的重要一步。我们的专利检索员可使用各种高级数据库和国际专利检索软件包，而且具有多年的经验。
       </p>
 
-      <h2>全球新颖的专利检索</h2>
-
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
-        <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
-        </Link>
+        想要获得专利的发明必须是新颖并且有创造性的。虽然各个国家的专利法各不相同，但是在优先权日期之前，至少通常会根据在世界任何地方发表的任何文件对专利进行评估。因此，没有任何专利新颖性检索能够做到全面彻底。但是，在显示现有技术水平和定位可能在检查期间被援引的专利文件方面，新颖性检索还是非常有用的。因此，专利新颖性搜索可以有助于降低风险，因为在接下来的过程中可能会出现先前技术并且该技术可能会被认为更靠前，这样就会使专利申请失效。重要的是，要注意到不可能搜索到在不到18个月前所递交的任何专利申请，因为专利申请只有在从其国际优先权日期起18个月后才会被公布。
       </p>
 
-      <h2>可自由运营专利检索</h2>
+      <h2>专利侵权检索</h2>
 
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
-        <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
+        客户确定他们的商业活动是否会侵犯任何第三方的专利权或者注册设计权是很重要的。专利侵权检索用于指明在某一给定国家所授予的可能值得关注的专利。
       </p>
 
-      <h2>澳大利亚专利检索</h2>
+      <h2>策略性专利检索</h2>
 
       <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
-        </Link>
-      </p>
-
-      <h2>其他专利检索</h2>
-
-      <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        专利检索可以因策略性的商业目的而进行。以下列出的是如何使用策略性专利检索的例子。
       </p>
     </Layout>
   )

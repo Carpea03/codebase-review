@@ -3,16 +3,21 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
 
-export default function 专利检索() {
+export default function 澳大利亚专利检索() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>国际式检索|Baxter IP悉尼和墨尔本</title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="在临时专利申请的国际型搜索可以用于经济有效地审查专利权利要求的新颖性。"
         />
-        <link rel="canonical" href="/zh/专利检索" />
+        <link rel="canonical" href="/zh/澳大利亚专利检索" />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
+          hrefLang="zh"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/australian-patent-search"
@@ -20,13 +25,8 @@ export default function 专利检索() {
         />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
-          hrefLang="zh"
-        />
-        <link
-          rel="alternate"
           hrefLang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
+          href="https://www.baxterip.com.au/australian-patent-search"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
@@ -114,57 +114,41 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                澳大利亚专利检索
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
+      <h1>澳大利亚专利检索</h1>
       <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
+        与许多其他国家相比，在澳大利亚专利搜索非常简单，因为澳大利亚知识产权局向公众提供了一个完善的专利数据库和专利检索系统
+        – 称为AusPat。 AusPat可以追溯到1904年的澳大利亚专利记录。
       </p>
 
-      <h2>全球新颖的专利检索</h2>
+      <p>
+        澳大利亚专利检索可以通过专利号，申请人名字和发明人名称进行。一般来说，如果您需要根据名称查找专利或
+        <Link
+          title="提交临时专利申请"
+          href="https://www.baxterip.com.au/zh/临时专利">
+          专利申请
+        </Link>
+        ，建议由
+        <Link
+          title="专利和商标代理人"
+          href="https://www.baxterip.com.au/zh/专利代理人">
+          澳大利亚专利代理人
+        </Link>
+        执行，因为有效的检索需要技巧识别正确的实体以致不错过相关的搜索结果。
+      </p>
 
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
+        如果你想确定你的新想法是否可在澳大利亚申请专利，澳大利亚专利检索可能无法给你正确答案。原因是，一个可以新想法要成功注册专利，它必须是全世界范围内相比所有已发表文件的具有新颖性，而不仅仅是在澳大利亚。
         <Link
-          title="全球专利新颖性检索"
+          title="全球专利新颖性搜索"
           href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
+          有关全球新颖性搜索的信息，请单击此处。
         </Link>
-      </p>
-
-      <h2>可自由运营专利检索</h2>
-
-      <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
-        <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
-        </Link>
-      </p>
-
-      <h2>澳大利亚专利检索</h2>
-
-      <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
-        <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
-        </Link>
-      </p>
-
-      <h2>其他专利检索</h2>
-
-      <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
       </p>
     </Layout>
   )

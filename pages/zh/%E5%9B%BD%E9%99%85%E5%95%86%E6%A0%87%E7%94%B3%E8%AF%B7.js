@@ -1,32 +1,29 @@
-import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
 
-export default function 专利检索() {
+export default function 国际商标申请() {
   return (
     <Layout>
       <Head>
-        <title>专利检索|全球专利检索|Baxter IP</title>
+        <title>国际商标申请|Baxter IP</title>
         <meta
           name="description"
-          content="Baxter IP提供专利检索，无论是全球还是在澳大利亚，审查专利性，新颖性和自由使用操作。"
+          content="国际商标申请可通过马德里协议备案，以保护和保护您的商标IIN多个国家"
         />
-        <link rel="canonical" href="/zh/专利检索" />
         <link
-          rel="alternate"
-          href="https://www.baxterip.com.au/global/australian-patent-search"
-          hrefLang="en-us"
+          rel="canonical"
+          href="https://www.baxterip.com.au/zh/国际商标申请"
         />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
+          href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E8%AF%89%E8%AE%BC"
           hrefLang="zh"
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://www.baxterip.com.au/patent-search"
+          href="https://www.baxterip.com.au/international-trade-mark-application"
         />
       </Head>
       <nav className="flex" aria-label="Breadcrumb">
@@ -76,9 +73,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/专利"
+                href="/zh/商标"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                专利
+                商标
               </Link>
             </div>
           </li>
@@ -95,9 +92,9 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <Link
-                href="/zh/如何申请专利"
+                href="/zh/如何注册商标"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                如何申请专利
+                如何商标
               </Link>
             </div>
           </li>
@@ -114,57 +111,74 @@ export default function 专利检索() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                专利检索
+                申请国际商标
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>专利检索</h1>
-      <p>
-        专利检索和其他技术文献的检索是获得战略性国际专利保护和减少专利风险的重要一步。
-        我们的经验丰富的专利搜索人员善于利用各种复杂的数据库和国际专利检索软件为客户提供高质量的专利检索服务。
-      </p>
+      <h1>国际商标申请</h1>
+      <h2>如何申请国际商标</h2>
 
-      <h2>全球新颖的专利检索</h2>
-
+      <p>为了在其他国家/地区保护您的品牌，您有两个选择：</p>
+      <ol>
+        <li>在每个感兴趣的国家/地区提交商标申请</li>
+        <li>
+          提交
+          <Link
+            title="马德里议定书"
+            href="https://www.baxterip.com.au/zh/知识产权术语表#马德里议定书">
+            马德里议定书
+          </Link>
+          国际商标申请
+        </li>
+      </ol>
       <p>
-        您可以通过全球新颖的专利检索，以得知您的发明是否符合专利申请对于技术的新颖性的要求。因为发明必须是新的并且包括可获得专利的创造性步骤。
+        为了保留您的
         <Link
-          title="全球专利新颖性检索"
-          href="https://www.baxterip.com.au/zh/全球专利新颖搜索">
-          阅读更多…
+          title="澳大利亚商标申请"
+          href="https://www.baxterip.com.au/zh/澳大利亚商标注册申请">
+          澳大利亚商标申请
         </Link>
+        的原始申请日，您提交的申请必须在您的澳大利亚商标的原始申请日期后的6个月内通过上述途径1或2递交国际申请。
       </p>
 
-      <h2>可自由运营专利检索</h2>
+      <h2>马德里议协议国际商标申请</h2>
 
       <p>
-        执行自由运营专利检索（也称为防侵权专利检索）的目的是为了确定产品在授予专利的国家和地区的销售，制造和使用不会侵犯的他人的专利权。
+        马德里国际商标申请是一种在海外寻求商标保护的更简单，更便宜的方式，并具有以下几个优点：
+      </p>
+
+      <ul>
+        <li>只需要一个国际商标申请</li>
+        <li>使用一种语言</li>
+        <li>可以从澳大利亚递交申请</li>
+        <li>可以在一个，多个甚至所有成员国寻求保护</li>
+        <li>可以集中处理所有权和续订的更新</li>
+      </ul>
+
+      <h2>直接商标申请与马德里协议国际商标申请</h2>
+
+      <p>
+        在某些情况下，直接在感兴趣的国家提交商标申请可能比提交马德里议定书国际商标申请更好，因此在寻求国际商标保护之前获得
         <Link
-          title="自由运营专利检索"
-          href="https://www.baxterip.com.au/zh/免费操作搜索">
-          阅读更多…
+          title="商标代理人"
+          href="https://www.baxterip.com.au/zh/商标代理人">
+          商标代理人
         </Link>
+        的建议非常重要。
       </p>
 
-      <h2>澳大利亚专利检索</h2>
+      <h2>即将提交国际商标申请？</h2>
 
       <p>
-        澳大利亚知识产权局维持着AUSPAT专利数据库，允许公众搜索澳大利亚专利数据。
-        我们的专利代理人和专利检索人员可以使用此数据库为您执行多种类型的澳大利亚专利检索，包括通过专利号进行检索，通过专利申请人和发明人进行搜索。
+        如果您想了解如何在澳大利亚和国际上保护您的品牌，欢迎通过
         <Link
-          title="澳大利亚专利检索"
-          href="https://www.baxterip.com.au/zh/澳大利亚专利检索">
-          阅读更多…
+          title="与知识产权代理人联系"
+          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E5%BE%8B%E5%B8%88%E8%81%8C%E4%B8%9A">
+          电邮
         </Link>
-      </p>
-
-      <h2>其他专利检索</h2>
-
-      <p>
-        专利检索可以用作商业战略。
-        以下是我们的专利代理人为我们的客户执行的战略性专利检索类型的一些例子：
+        联系我们。
       </p>
     </Layout>
   )
