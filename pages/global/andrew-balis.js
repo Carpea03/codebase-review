@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
@@ -12,7 +12,8 @@ export default function AndrewBalis() {
     <Layout>
       <Head>
         <title>
-        Andrew Balis - Associate, Patent & Trade Mark Attorney | Baxter IP Sydney
+          Andrew Balis - Associate, Patent & Trade Mark Attorney | Baxter IP
+          Sydney
         </title>
         <meta
           name="description"
@@ -226,7 +227,9 @@ export default function AndrewBalis() {
           navigate the IP system to protect their ideas and maximise their
           idea&rsquo;s potential.
         </blockquote>
-        <cite>&ndash;Andrew Balis - Associate, Patent &amp; Trade Mark Attorney</cite>
+        <cite>
+          &ndash;Andrew Balis - Associate, Patent &amp; Trade Mark Attorney
+        </cite>
       </div>
       <br />
       <p>
@@ -236,13 +239,14 @@ export default function AndrewBalis() {
       <p>
         Andrew acts for a wide variety of clients, including multinationals,
         small-medium enterprises and sole traders. Andrew has previously acted
-        for one of the world&rsquo;s largest aerospace companies. He understands that
-        these different clients have different goals, and enjoys providing
-        individualised advice to each of them. A core part of Andrew&rsquo;s practice
-        is to really understand what clients want from their intellectual
-        property, and he will always make the time to talk with clients (whether
-        it be in person, over webchat, over the phone, or via email) so that he
-        can best understand their ideas and transform that to IP potential.
+        for one of the world&rsquo;s largest aerospace companies. He understands
+        that these different clients have different goals, and enjoys providing
+        individualised advice to each of them. A core part of Andrew&rsquo;s
+        practice is to really understand what clients want from their
+        intellectual property, and he will always make the time to talk with
+        clients (whether it be in person, over webchat, over the phone, or via
+        email) so that he can best understand their ideas and transform that to
+        IP potential.
       </p>
       <p>
         Andrew brings with him a wealth of experience in prosecuting patent

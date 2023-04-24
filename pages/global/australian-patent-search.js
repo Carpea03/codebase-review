@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function AustralianPatentSearch() {
   return (
@@ -32,7 +32,9 @@ export default function AustralianPatentSearch() {
           href="https://www.baxterip.com.au/australian-patent-search"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -89,8 +91,9 @@ export default function AustralianPatentSearch() {
       <p>
         Compared with many other countries, a patent search in Australia is
         relatively straightforward because IP Australia offers a sophisticated
-        patent database and patent search system to the general public &ndash; called
-        AusPat. AusPat covers Australian patent records right back to 1904.
+        patent database and patent search system to the general public &ndash;
+        called AusPat. AusPat covers Australian patent records right back to
+        1904.
       </p>
 
       <p>
