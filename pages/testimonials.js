@@ -8,20 +8,25 @@ export default function Testimonials() {
     <Layout>
       <Head>
         <title>
-          Client testimonials on Baxter IP's intellectual property services
+          Client testimonials on Baxter IP&apos;s intellectual property services
         </title>
         <meta
           name="description"
           content="Clients reflect and share their thoughts on how the intellectual property services of Baxter IP has helped protect their innovations and brands."
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/testimonials" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/testimonials"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%8F%8D%E9%A6%88"
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -130,8 +135,8 @@ export default function Testimonials() {
         working with myself and the NewWaveAg Team, (we) will always return here
         to have any IP work completed.
       </blockquote>
-      <cite>&ndash; 
-        Lewis Thomo, Founder of{' '}
+      <cite>
+        &ndash; Lewis Thomo, Founder of{' '}
         <Link
           href="https://www.nwaa.com.au/"
           title="NewWave Agriculture Australia"
@@ -159,15 +164,15 @@ export default function Testimonials() {
         registered trade mark along with a domain name.
         <br />
         Some years later, with sheer determination by Warren, ICU Small Animal
-        Rugs was granted a patent in the United States. This was ICU's pinnacle
-        of success that l believe was only achievable by Warren and his team. I
-        could not recommend Warren enough and his team for a positive outcome.
-        If you have designed something that you believe is something special and
-        possibly could be patented there is no harm in asking as l did with
-        excellent results.
+        Rugs was granted a patent in the United States. This was ICU&apos;s
+        pinnacle of success that l believe was only achievable by Warren and his
+        team. I could not recommend Warren enough and his team for a positive
+        outcome. If you have designed something that you believe is something
+        special and possibly could be patented there is no harm in asking as l
+        did with excellent results.
       </blockquote>
-      <cite>&ndash; 
-        Marg Egan of{' '}
+      <cite>
+        &ndash; Marg Egan of{' '}
         <Link
           href="https://www.icusmallanimalrugs.com.au/"
           title="ICU Small Animal Rugs"
@@ -230,7 +235,7 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        Very professional service! We were suitably impressed with Mike's
+        Very professional service! We were suitably impressed with Mike&apos;s
         knowledge and ability to interpret our questions relating to the patent
         we enquired about. Great work, team! Fast response!
       </blockquote>
@@ -239,10 +244,10 @@ export default function Testimonials() {
       <hr />
       <blockquote>
         Really professional and efficient service, Joanne helped me through
-        every aspect of my business' trademarking needs!!
+        every aspect of my business&apos; trademarking needs!!
       </blockquote>
-      <cite>&ndash; 
-        Harry Mavrolefteros of{' '}
+      <cite>
+        &ndash; Harry Mavrolefteros of{' '}
         <Link
           href="https://firsteducation.com.au/"
           title="First Education"
@@ -259,8 +264,8 @@ export default function Testimonials() {
         professional service. I recommend people to consult them if you are
         seeking IP/Trademark related services. You will be pleased.
       </blockquote>
-      <cite>&ndash; 
-        Hira Kandel of{' '}
+      <cite>
+        &ndash; Hira Kandel of{' '}
         <Link
           href="http://www.eplanet.com.au/"
           title="E-planet"
@@ -274,8 +279,8 @@ export default function Testimonials() {
       <blockquote>
         Very responsive and experienced. Excellent service.
       </blockquote>
-      <cite>&ndash; 
-        Eric Lowenstein of{' '}
+      <cite>
+        &ndash; Eric Lowenstein of{' '}
         <Link
           href="https://tego.com.au/"
           title="Tego Insurance"
@@ -291,7 +296,8 @@ export default function Testimonials() {
         were able to resolve our Three Best Rated Trade Mark issue in Australia.
         We really appreciate your timely help. You are the best!
       </blockquote>
-      <cite>&ndash; 
+      <cite>
+        &ndash;
         <Link
           href="https://threebestrated.com/"
           title="ThreeBestRated"
@@ -377,7 +383,7 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        It's been a great experience working with Dr Qi Zhang on our patent
+        It&apos;s been a great experience working with Dr Qi Zhang on our patent
         application. His strategic thinking on patent and business strategies
         make it possible for us to maximize the value from our IP investment. Dr
         Qi Zhang is not a traditional patent attorney, but a trusted advisor!
@@ -387,11 +393,11 @@ export default function Testimonials() {
       <hr />
       <blockquote>
         Mike Biagio won our business upon our very first meeting - extending to
-        us the courtesy of a free 2 hour "crash course" on how the complex world
-        of patents works, breaking everything down in layman's terms. Since
-        then, we've had no regrets: Mike is always helpful, always professional,
-        and an absolute pleasure to work with. I would happily recommend his
-        services.
+        us the courtesy of a free 2 hour &quot;crash course&quot; on how the
+        complex world of patents works, breaking everything down in
+        layman&apos;s terms. Since then, we&apos;ve had no regrets: Mike is
+        always helpful, always professional, and an absolute pleasure to work
+        with. I would happily recommend his services.
       </blockquote>
       <cite>&ndash; George Roditis</cite>
 
@@ -403,7 +409,8 @@ export default function Testimonials() {
         recommend, even if you have questions or unsure of what assistance you
         require.
       </blockquote>
-      <cite>&ndash; 
+      <cite>
+        &ndash;
         <Link
           href="https://www.yvearay.com/"
           title="YVEARAY PTY LTD"
@@ -519,7 +526,8 @@ export default function Testimonials() {
         registered and provided follow up services as well. Well done, thank you
         guys! Highly recommend!
       </blockquote>
-      <cite>&ndash; 
+      <cite>
+        &ndash;
         <Link
           href="https://www.icakemelbourne.com.au/"
           title="iCake Le Reve Cafe"
@@ -539,8 +547,8 @@ export default function Testimonials() {
       <hr />
       <blockquote>
         Today I had my first meeting with a lawyer who specialised in trade mark
-        registration. A very beautiful girl arrived and I didn't think she was
-        the lawyer. She was very kind and very professional, very well
+        registration. A very beautiful girl arrived and I didn&apos;t think she
+        was the lawyer. She was very kind and very professional, very well
         explaining all the various scenarios and costs involved for the
         registration of an international brand. In addition, she put me on a
         conference call with a colleague of hers who specialized in copywriting,
@@ -626,11 +634,11 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        Our company's "mission impossible" IP Grant hundred percent benefits
-        from Dr. Qi Zhang's expertised knowledge of information technology and
-        hands on experience of IP application. Really appreciate the service
-        delivered by BaxterIP and would definitely introduce fellow businesses
-        to seek IP solution from BaxterIP.
+        Our company&apos;s &quot;mission impossible&quot; IP Grant hundred
+        percent benefits from Dr. Qi Zhang&apos;s expertised knowledge of
+        information technology and hands on experience of IP application. Really
+        appreciate the service delivered by BaxterIP and would definitely
+        introduce fellow businesses to seek IP solution from BaxterIP.
       </blockquote>
       <cite>&ndash; Arthur Li</cite>
 
@@ -638,10 +646,11 @@ export default function Testimonials() {
       <blockquote>
         I wanted to compliment and thank Dr. Qi Zhang for supporting our company
         through a very difficult and extensive IP application process. Without
-        his knowledge, experience and guidance I am certain we couldn't have
-        obtained our IP. As this IP is in the information communication industry
-        it is essential for us to defend our business, hence Dr. Qi's advice is
-        a key pillar in our success. Highly recommend him and his team!
+        his knowledge, experience and guidance I am certain we couldn&apos;t
+        have obtained our IP. As this IP is in the information communication
+        industry it is essential for us to defend our business, hence Dr.
+        Qi&apos;s advice is a key pillar in our success. Highly recommend him
+        and his team!
       </blockquote>
       <cite>&ndash; Endre Kollo</cite>
 
@@ -652,7 +661,7 @@ export default function Testimonials() {
         unturned in listening attentively and providing me with the most
         suitable advice to my questions about trade marks. I have been fortunate
         to meet a Trade Mark expert whom I would wholeheartedly recommend. In a
-        layman's language, Baxter IP, you rock! Not forgetting Mike Biagio!
+        layman&apos;s language, Baxter IP, you rock! Not forgetting Mike Biagio!
         Thank you!
       </blockquote>
       <cite>&ndash; Virginia Chung</cite>
@@ -677,8 +686,8 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        As an Entrepreneur from Melbourne, I couldn't thank these guys enough
-        even if I wanted to! Fantastic Work!
+        As an Entrepreneur from Melbourne, I couldn&apos;t thank these guys
+        enough even if I wanted to! Fantastic Work!
       </blockquote>
       <cite>&ndash; Sam Karagiozis</cite>
 
@@ -687,8 +696,8 @@ export default function Testimonials() {
         Fantastic service and free advice. Paul you saved me a fortune. Very
         great full for the time and very professional advice and service.
       </blockquote>
-      <cite>&ndash; 
-        Sales of{' '}
+      <cite>
+        &ndash; Sales of{' '}
         <Link
           href="https://www.tytags.com.au/"
           title="TyTags"
@@ -714,7 +723,7 @@ export default function Testimonials() {
         If this is your first stop while looking for trademark or patent
         services, I am sure it will be your last stop too. Joanne and Chris are
         excellent with helping their customers and providing the needed guidance
-        and explanations, and answers to customer's questions.
+        and explanations, and answers to customer&apos;s questions.
       </blockquote>
       <cite>&ndash; Ashish Kumar</cite>
 
@@ -724,7 +733,7 @@ export default function Testimonials() {
         to Warren Chandler. Integrity. Transparency. Committed and moreover the
         passion he possess for his work reflects the efficient workflow of IP
         application with ease and precision. Aside from his professionalism and
-        expertise, Warren acts in his client's best interest and has fair
+        expertise, Warren acts in his client&apos;s best interest and has fair
         perspectives on cost management. I look forward to working with him on
         other patents I have in the future. Highly recommended.
       </blockquote>
@@ -739,12 +748,12 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        Being a small company, it's hard to trust your business to anyone,
+        Being a small company, it&apos;s hard to trust your business to anyone,
         especially when working abroad. Baxter IP has been handling our patent
-        prosecution for several years, and we couldn't be happier. Their team is
-        well organized, efficient, and always professional. My attorney, Mike
-        Biagio is one amazing person! It's hard to find someone with the
-        knowledge and experience to help you make the best decisions; Mike
+        prosecution for several years, and we couldn&apos;t be happier. Their
+        team is well organized, efficient, and always professional. My attorney,
+        Mike Biagio is one amazing person! It&apos;s hard to find someone with
+        the knowledge and experience to help you make the best decisions; Mike
         Biagio is this individual. He is passionate about his work, has great
         integrity, and is a true pleasure to work with; he is someone I trust
         and look forward to many years of business with. Whether you reside in
@@ -760,8 +769,8 @@ export default function Testimonials() {
         fields of electronics and manufacturing, in addition to his expertise in
         IP law. Raven IoT highly recommends their service.
       </blockquote>
-      <cite>&ndash; 
-        Henry Blumentals of{' '}
+      <cite>
+        &ndash; Henry Blumentals of{' '}
         <Link
           href="https://www.raveniot.com.au/"
           title="Raven IoT"
@@ -795,8 +804,8 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        I've worked with Baxter IP on both a trademark for my company and the
-        patent process on behalf of a client. In both cases, the service and
+        I&apos;ve worked with Baxter IP on both a trademark for my company and
+        the patent process on behalf of a client. In both cases, the service and
         advice has been outstanding. Baxter IP take the time to discuss the
         process and has made me feel completely at ease. I knew where I stood at
         each stage, the follow up was swift and comprehensive and I would highly
@@ -816,7 +825,7 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        The service at Baxter's is excellent. Friendly and relaxed yet
+        The service at Baxter&apos;s is excellent. Friendly and relaxed yet
         professional and thorough.
       </blockquote>
       <cite>&ndash; Emmy &amp; Frank McNeilly</cite>
@@ -827,7 +836,8 @@ export default function Testimonials() {
         sound advice through diligent review of matter, backed by an excellent
         customer service. We have had a great experience.
       </blockquote>
-      <cite>&ndash; 
+      <cite>
+        &ndash;
         <Link
           href="https://afea.com.au/"
           title="Afea Care Services"
@@ -864,8 +874,8 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        Baxter IP is the most professional and helpful attorney I've dealt with.
-        Exceptional service from start to finish all-the-while ensuring I
+        Baxter IP is the most professional and helpful attorney I&apos;ve dealt
+        with. Exceptional service from start to finish all-the-while ensuring I
         understood the entire process in easy to understand terms. Would
         strongly recommend.
       </blockquote>
@@ -990,8 +1000,8 @@ export default function Testimonials() {
         service ultimately providing me with a secure patent and putting my mind
         at ease.
       </blockquote>
-      <cite>&ndash; 
-        Ranjith Obeyesekera, PhD, Director of Engineering Development of{' '}
+      <cite>
+        &ndash; Ranjith Obeyesekera, PhD, Director of Engineering Development of{' '}
         <Link
           href="https://www.khartinternational.com/"
           title="K-HART international Pty. Ltd."
@@ -1092,8 +1102,8 @@ export default function Testimonials() {
         problem for them. It has been a pleasure dealing with Baxter IP Patent
         Attorneys and I would have no hesitation in recommending them.
       </blockquote>
-      <cite>&ndash; 
-        Luke Miles, Director of{' '}
+      <cite>
+        &ndash; Luke Miles, Director of{' '}
         <Link
           href="https://www.lmeelectrical.com.au/"
           title="LME Electrical Contractors Pty Ltd"
@@ -1141,8 +1151,9 @@ export default function Testimonials() {
         Thank you for being so proactive in your support of this project and for
         your considerable effort in preparing a very thorough application.
       </blockquote>
-      <cite>&ndash; 
-        Research &amp; Technology Manager of a global medical devices company
+      <cite>
+        &ndash; Research &amp; Technology Manager of a global medical devices
+        company
       </cite>
 
       <hr />
@@ -1213,8 +1224,8 @@ export default function Testimonials() {
         New Year&rsquo;s Eve which made a great start to this year. Great work
         Chris!
       </blockquote>
-      <cite>&ndash; 
-        Tony Gouverneur of{' '}
+      <cite>
+        &ndash; Tony Gouverneur of{' '}
         <Link
           href="https://tidytradie.com/"
           title="Tidy Tradie"
@@ -1232,7 +1243,9 @@ export default function Testimonials() {
         forward to implementing the R symbol on our stationary and have
         displayed the Certificate in our office.
       </blockquote>
-      <cite>&ndash; Helen Jancev, Operations Manage of Focus Driving School</cite>
+      <cite>
+        &ndash; Helen Jancev, Operations Manage of Focus Driving School
+      </cite>
 
       <hr />
       <blockquote>
@@ -1281,8 +1294,8 @@ export default function Testimonials() {
         was extremely fast and the information presented was clear. We will use
         your services again.
       </blockquote>
-      <cite>&ndash; 
-        Eddy Feligueira of{' '}
+      <cite>
+        &ndash; Eddy Feligueira of{' '}
         <Link
           href="http://smartechdesigns.co.za/"
           title="Smartech Designs Pty Ltd"
@@ -1310,8 +1323,8 @@ export default function Testimonials() {
         program, utmost professional attention to detail and above all their
         width of thinking.
       </blockquote>
-      <cite>&ndash; 
-        Bruce Hanlee of{' '}
+      <cite>
+        &ndash; Bruce Hanlee of{' '}
         <Link
           href="https://xsquareddesign.com/"
           title="X2 Design Pty Ltd"
@@ -1335,8 +1348,8 @@ export default function Testimonials() {
         conflicting factors, and reported these to Board of Directors without
         ambiguity and clear future corporate direction.
       </blockquote>
-      <cite>&ndash; 
-        Marek Szymanski, Managing Director of{' '}
+      <cite>
+        &ndash; Marek Szymanski, Managing Director of{' '}
         <Link
           href="https://popcake.com.au/"
           title="Popcake Int Pty Ltd"
@@ -1356,9 +1369,9 @@ export default function Testimonials() {
         and services provided by Baxter IP Patent Attorneys, and will continue
         to engage Chris and his team for our future IP needs.
       </blockquote>
-      <cite>&ndash; 
-        Leo McHugh, PhD of Highlight Ventures Pty Ltd / Adventure Aerospace Pty
-        Ltd
+      <cite>
+        &ndash; Leo McHugh, PhD of Highlight Ventures Pty Ltd / Adventure
+        Aerospace Pty Ltd
       </cite>
 
       <hr />
@@ -1370,7 +1383,9 @@ export default function Testimonials() {
         to be thoughtful, thorough and able to grasp the vision behind what I
         asked him to advise me on.
       </blockquote>
-      <cite>&ndash; Anthony Harrison, Managing Director of Brandwave Pty Ltd</cite>
+      <cite>
+        &ndash; Anthony Harrison, Managing Director of Brandwave Pty Ltd
+      </cite>
 
       <hr />
       <blockquote>
@@ -1383,9 +1398,9 @@ export default function Testimonials() {
         give us the broadest scope to defend and develop our invention. We would
         readily recommend their IP and patent services.
       </blockquote>
-      <cite>&ndash; 
-        Guy Dixon, Inventor of Networked Infrastructure National Architecture
-        Pty Ltd
+      <cite>
+        &ndash; Guy Dixon, Inventor of Networked Infrastructure National
+        Architecture Pty Ltd
       </cite>
 
       <hr />
@@ -1454,13 +1469,13 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        I was a first time patent seeker. Baxter's service and communication was
-        first class. I found the staff helpful and patient as being a rookie in
-        the patent application process I had many questions. Baxter IP also
-        involved me in some of the text production for rebuttals and
-        descriptions. I found this great as no one knows your idea better than
-        you. I am now the owner of a US patent and I would recommend Baxter IP
-        to any prospective Patent seeker. Todd Archer Director Archer
+        I was a first time patent seeker. Baxter&apos;s service and
+        communication was first class. I found the staff helpful and patient as
+        being a rookie in the patent application process I had many questions.
+        Baxter IP also involved me in some of the text production for rebuttals
+        and descriptions. I found this great as no one knows your idea better
+        than you. I am now the owner of a US patent and I would recommend Baxter
+        IP to any prospective Patent seeker. Todd Archer Director Archer
         Innovations.
         <br />
         Found your staff helpful and efficient. Would recommend you to my
@@ -1513,11 +1528,11 @@ export default function Testimonials() {
 
       <hr />
       <blockquote>
-        Applying for a provisional patent is new for me. I'm very pleased with
-        the guidance I've received, every step has been explained thoroughly. I
-        have received prompt responses by staff when I've had questions, my
-        queries have been resolved quickly all staff have been very helpful.
-        Highly recommended.
+        Applying for a provisional patent is new for me. I&apos;m very pleased
+        with the guidance I&apos;ve received, every step has been explained
+        thoroughly. I have received prompt responses by staff when I&apos;ve had
+        questions, my queries have been resolved quickly all staff have been
+        very helpful. Highly recommended.
       </blockquote>
       <cite>&ndash; Corinda Lavington</cite>
 

@@ -39,7 +39,9 @@ export default function DrSeanKlinkradt() {
           href="https://www.baxterip.com.au/melbourne/sean-klinkradt"
         />
       </Head>
-      <nav className="flex !pl-0" aria-label="Breadcrumb">
+      <nav
+        className="flex !pl-0"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -97,7 +99,9 @@ export default function DrSeanKlinkradt() {
       <h1>Dr Seán Klinkradt</h1>
       <p>Senior Associate, Patent Attorney</p>
       <div className="text-sm">
-        <Link href="mailto:sean.klinkradt@baxterip.com.au" className="text-xs">
+        <Link
+          href="mailto:sean.klinkradt@baxterip.com.au"
+          className="text-xs">
           sean.klinkradt@baxterip.com.au
         </Link>
         <br />
@@ -218,8 +222,8 @@ export default function DrSeanKlinkradt() {
       />
       <div>
         <blockquote>
-          Participating in a client's developing intellectual property portfolio
-          is incredibly rewarding to me.
+          Participating in a client&apos;s developing intellectual property
+          portfolio is incredibly rewarding to me.
         </blockquote>
         <cite>
           &ndash;Dr Seán Klinkradt - Senior Associate, Patent Attorney
