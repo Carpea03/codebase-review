@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
@@ -36,7 +36,9 @@ export default function ChrisBaxter() {
           href="https://www.baxterip.com.au/sydney/chris-baxter"
         />
       </Head>
-      <nav className="flex !pl-0" aria-label="Breadcrumb">
+      <nav
+        className="flex !pl-0"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -94,7 +96,9 @@ export default function ChrisBaxter() {
       <h1>Chris Baxter</h1>
       <p>Managing Director, Patent & Trade Mark Attorney</p>
       <div className="text-sm">
-        <Link href="mailto:chris.baxter@baxterip.com.au" className="text-xs">
+        <Link
+          href="mailto:chris.baxter@baxterip.com.au"
+          className="text-xs">
           chris.baxter@baxterip.com.au
         </Link>
         <br />

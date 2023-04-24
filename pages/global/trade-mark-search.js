@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function TradeMarkSearch() {
   return (
@@ -32,7 +32,9 @@ export default function TradeMarkSearch() {
           href="https://www.baxterip.com.au/trade-mark-search"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -197,7 +199,9 @@ export default function TradeMarkSearch() {
         <table>
           <tbody>
             <tr>
-              <th scope="row" width="15%">
+              <th
+                scope="row"
+                width="15%">
                 Availability (clearance) search
               </th>
               <td width="85%">
@@ -297,7 +301,9 @@ export default function TradeMarkSearch() {
         <table>
           <tbody>
             <tr>
-              <th scope="row" width="15%">
+              <th
+                scope="row"
+                width="15%">
                 Nice Classification (for Australian and international searches)
               </th>
               <td width="85%">

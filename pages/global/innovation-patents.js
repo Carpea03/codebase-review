@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function InnovationPatents() {
   return (
@@ -34,7 +34,9 @@ export default function InnovationPatents() {
           href="https://www.baxterip.com.au/innovation-patent-applications"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -90,11 +92,11 @@ export default function InnovationPatents() {
       <h1>Australian Innovation Patents</h1>
       <p>
         Australian utility model patents are uniquely termed &ldquo;innovation
-        patents&rdquo;. While an Australian innovation patent is considered a second
-        tier Australian patent because of the lower threshold of patentability
-        required for certification, it can be used as a powerful tool in patent
-        litigation. The advantages and disadvantages of an innovation patent
-        when compared with a standard patent are as follows.
+        patents&rdquo;. While an Australian innovation patent is considered a
+        second tier Australian patent because of the lower threshold of
+        patentability required for certification, it can be used as a powerful
+        tool in patent litigation. The advantages and disadvantages of an
+        innovation patent when compared with a standard patent are as follows.
       </p>
 
       <h2>Innovation Patent Filing Requirements</h2>

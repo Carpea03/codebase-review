@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function PatentLitigation() {
   return (
@@ -34,7 +34,9 @@ export default function PatentLitigation() {
           href="https://www.baxterip.com.au/patent-litigation"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -99,8 +101,8 @@ export default function PatentLitigation() {
       </p>
 
       <h2>
-        Before considering patent litigation &ndash; what to do if you think someone
-        is infringing your patent?
+        Before considering patent litigation &ndash; what to do if you think
+        someone is infringing your patent?
       </h2>
 
       <p>
@@ -115,9 +117,9 @@ export default function PatentLitigation() {
         Simply threatening others with a lawsuit for patent infringement can get
         you into trouble. Care needs to be taken in communications with an
         alleged infringer. This is because of{' '}
-        <em>Section 128 of Patents Act 1990 (Cth)</em> (&ldquo;the Act&rdquo;), which
-        enables a party threatened with infringement proceedings to bring an
-        action for damages and an injunction against the person making the
+        <em>Section 128 of Patents Act 1990 (Cth)</em> (&ldquo;the Act&rdquo;),
+        which enables a party threatened with infringement proceedings to bring
+        an action for damages and an injunction against the person making the
         threats.
       </p>
 
@@ -128,10 +130,10 @@ export default function PatentLitigation() {
 
       <p>
         Of course, allegations of patent infringement will not be
-        &ldquo;unjustifiable&rdquo; if infringement is proven in subsequent court
-        proceedings. Where a claim under s128 is brought, the patent holder can
-        bring a counter-claim for patent infringement pursuant to s130 of the
-        Act.
+        &ldquo;unjustifiable&rdquo; if infringement is proven in subsequent
+        court proceedings. Where a claim under s128 is brought, the patent
+        holder can bring a counter-claim for patent infringement pursuant to
+        s130 of the Act.
       </p>
 
       <h2>Commencement of patent litigation</h2>
@@ -152,7 +154,9 @@ export default function PatentLitigation() {
         co-applicant or a respondent.
       </p>
 
-      <h3>Originating process &amp; Statement of claim &ndash; what are they?</h3>
+      <h3>
+        Originating process &amp; Statement of claim &ndash; what are they?
+      </h3>
 
       <p>
         Patent litigation proceedings in the Federal Court are commenced by the
@@ -161,11 +165,11 @@ export default function PatentLitigation() {
       </p>
 
       <p>
-        Put simply, an originating application sets out the orders (or &ldquo;relief&rdquo;)
-        you want the court to make if you are successful. You may also seek
-        interim or interlocutory relief to protect you in the period leading up
-        to the final hearing. An interim injunction to prevent infringement
-        until the matter is determined at trial is a good example.
+        Put simply, an originating application sets out the orders (or
+        &ldquo;relief&rdquo;) you want the court to make if you are successful.
+        You may also seek interim or interlocutory relief to protect you in the
+        period leading up to the final hearing. An interim injunction to prevent
+        infringement until the matter is determined at trial is a good example.
       </p>
 
       <p>
@@ -175,10 +179,10 @@ export default function PatentLitigation() {
 
       <p>
         One further document is usually required to be filed in patent
-        infringement proceedings: a &ldquo;genuine steps statement&rdquo;. This statement
-        sets out the &ldquo;sincere and genuine&rdquo; attempts taken to resolve the dispute
-        with the opposing party or an explanation of why no such steps were
-        taken.
+        infringement proceedings: a &ldquo;genuine steps statement&rdquo;. This
+        statement sets out the &ldquo;sincere and genuine&rdquo; attempts taken
+        to resolve the dispute with the opposing party or an explanation of why
+        no such steps were taken.
       </p>
 
       <h2>What happens after filing the Originating Application?</h2>
@@ -192,12 +196,12 @@ export default function PatentLitigation() {
       </p>
 
       <p>
-        This first court date (&ldquo;directions hearing&rdquo;) marks the court&apos;s
-        supervision of preparing the matter ready for trial. These steps include
-        the following: setting timetables for the exchange of documents; hearing
-        applications for interim orders; referrals to mediation; directions as
-        to the preparation of expert evidence and the method by which such
-        expert evidence will be received.
+        This first court date (&ldquo;directions hearing&rdquo;) marks the
+        court&apos;s supervision of preparing the matter ready for trial. These
+        steps include the following: setting timetables for the exchange of
+        documents; hearing applications for interim orders; referrals to
+        mediation; directions as to the preparation of expert evidence and the
+        method by which such expert evidence will be received.
       </p>
 
       <p>
@@ -287,8 +291,9 @@ export default function PatentLitigation() {
         the legal costs of the successful party. Typically this will be between
         60% to 70% of the costs of the successful party. In some limited
         circumstances, such as where an offer to settle has been rejected, a
-        party can be required to pay the other party&apos;s costs on an &ldquo;indemnity&rdquo;,
-        which covers almost all the costs of that party.
+        party can be required to pay the other party&apos;s costs on an
+        &ldquo;indemnity&rdquo;, which covers almost all the costs of that
+        party.
       </p>
 
       <hr />

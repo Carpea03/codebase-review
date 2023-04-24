@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function LivingOurValues() {
   return (
@@ -35,7 +35,9 @@ export default function LivingOurValues() {
           href="https://www.baxterip.com.au/living-our-values"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -136,10 +138,10 @@ export default function LivingOurValues() {
           UNSW Founder&apos;s Program
         </Link>{' '}
         and provides pro-bono IP advice to their 10X and Health 10X cohorts each
-        year. The Founder&apos;s Program supports university students in establishing
-        startups with a focus on social impact. For us, this is a modest but
-        important start to giving back to the community and more generally to
-        STEM education in Australia.
+        year. The Founder&apos;s Program supports university students in
+        establishing startups with a focus on social impact. For us, this is a
+        modest but important start to giving back to the community and more
+        generally to STEM education in Australia.
       </p>
 
       <h2>We support Australian Indigenous Causes</h2>
@@ -218,8 +220,8 @@ export default function LivingOurValues() {
           Baxter Charitable Trusts
         </Link>
         , and these are all good reasons to give. However, since 2017 and under
-        Chris&apos; and his brother Richard&apos;s initiative, the Baxter family started
-        taking what might be described as a more innovative, data-driven
+        Chris&apos; and his brother Richard&apos;s initiative, the Baxter family
+        started taking what might be described as a more innovative, data-driven
         approach. This now provides the family with a second layer of
         information to help the family assess the social impact of distribution
         decisions.
