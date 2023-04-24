@@ -1,26 +1,26 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
-import StaffChris from '../components/staff/chris'
-import StaffMartin from '../components/staff/martin'
-import StaffQi from '../components/staff/qi'
-import StaffWarren from '../components/staff/warren'
-import StaffSean from '../components/staff/sean'
-import StaffNaleesha from '../components/staff/naleesha'
-import StaffJarrod from '../components/staff/jarrod'
-import StaffJulia from '../components/staff/julia'
-import StaffAndrew from '../components/staff/andrew'
-import StaffJoanne from '../components/staff/joanne'
-import StaffWillem from '../components/staff/willem'
-import StaffRichard from '../components/staff/richard'
+import Layout from '../components/to-delete/layout'
+import StaffChris from '../components/to-delete/staff/chris'
+import StaffMartin from '../components/to-delete/staff/martin'
+import StaffQi from '../components/to-delete/staff/qi'
+import StaffWarren from '../components/to-delete/staff/warren'
+import StaffSean from '../components/to-delete/staff/sean'
+import StaffNaleesha from '../components/to-delete/staff/naleesha'
+import StaffJarrod from '../components/to-delete/staff/jarrod'
+import StaffJulia from '../components/to-delete/staff/julia'
+import StaffAndrew from '../components/to-delete/staff/andrew'
+import StaffJoanne from '../components/to-delete/staff/joanne'
+import StaffWillem from '../components/to-delete/staff/willem'
+import StaffRichard from '../components/to-delete/staff/richard'
 
 export default function IpAttorney() {
   return (
     <Layout>
       <Head>
         <title>
-        Patent and trade mark attorneys in Sydney & Melbourne | Baxter IP
+          Patent and trade mark attorneys in Sydney & Melbourne | Baxter IP
         </title>
         <meta
           name="description"
@@ -36,7 +36,9 @@ export default function IpAttorney() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -64,13 +66,16 @@ export default function IpAttorney() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-              Our patent & trade mark attorneys
+                Our patent & trade mark attorneys
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>Our patent & trade mark attorney teams in Sydney & Melbourne are poised to protect what&rsquo;s yours</h1>
+      <h1>
+        Our patent & trade mark attorney teams in Sydney & Melbourne are poised
+        to protect what&rsquo;s yours
+      </h1>
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 not-format">
         <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <StaffChris />
