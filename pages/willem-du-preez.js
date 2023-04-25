@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../components/to-delete/layout'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
@@ -31,7 +31,9 @@ export default function Page() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex !pl-0" aria-label="Breadcrumb">
+      <nav
+        className="flex !pl-0"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -89,7 +91,9 @@ export default function Page() {
       <h1>Willem du Preez</h1>
       <p>IP Professional</p>
       <div className="text-sm">
-        <Link href="mailto:willem.dupreez@baxterip.com.au" className="text-xs">
+        <Link
+          href="mailto:willem.dupreez@baxterip.com.au"
+          className="text-xs">
           willem.dupreez@baxterip.com.au
         </Link>
         <br />
