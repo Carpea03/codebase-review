@@ -1,17 +1,17 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
-import StaffChris from '../components/staff/chris'
-import StaffMartin from '../components/staff/martin'
-import StaffQi from '../components/staff/qi'
-import StaffWarren from '../components/staff/warren'
-import StaffNaleesha from '../components/staff/naleesha'
-import StaffJarrod from '../components/staff/jarrod'
-import StaffJulia from '../components/staff/julia'
-import StaffAndrew from '../components/staff/andrew'
-import StaffJoanne from '../components/staff/joanne'
-import StaffWillem from '../components/staff/willem'
+import Layout from '../components/to-delete/layout'
+import StaffChris from '../components/to-delete/staff/chris'
+import StaffMartin from '../components/to-delete/staff/martin'
+import StaffQi from '../components/to-delete/staff/qi'
+import StaffWarren from '../components/to-delete/staff/warren'
+import StaffNaleesha from '../components/to-delete/staff/naleesha'
+import StaffJarrod from '../components/to-delete/staff/jarrod'
+import StaffJulia from '../components/to-delete/staff/julia'
+import StaffAndrew from '../components/to-delete/staff/andrew'
+import StaffJoanne from '../components/to-delete/staff/joanne'
+import StaffWillem from '../components/to-delete/staff/willem'
 
 export default function TradeMarkAttorney() {
   return (
@@ -32,7 +32,9 @@ export default function TradeMarkAttorney() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
