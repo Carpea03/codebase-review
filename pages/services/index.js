@@ -1,14 +1,14 @@
-import { Container } from '@/components/templates/Container'
-import { Listbox } from '@headlessui/react'
+import { Container } from '../../components/templates/Container'
+import { Listbox } from '../..headlessui/react'
 import { MdArrowDropDown } from 'react-icons/md'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import Patents from './contents/patents'
 import TradeMarks from './contents/trademarks'
-import Header from '@/components/templates/Header'
-import Footer from '@/components/templates/Footer'
-import NewsBlog from '@/components/newsblog'
-import ScrollToTop from '@/components/buttons/ScrollToTop'
+import Header from '../../components/templates/Header'
+import Footer from '../../components/templates/Footer'
+import NewsBlog from '../../components/newsblog'
+import ScrollToTop from '../../components/buttons/ScrollToTop'
 
 const menus = [
   {

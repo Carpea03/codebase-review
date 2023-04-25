@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PCTNationalPhaseAustralia from './PCTNationalPhaseAustralia'
 
-export default function Patents({ menus }) {
+export default function Patents({ menus = [] }) {
   const [selectedMenu, setSelectedMenu] = useState(0)
   return (
     <>
