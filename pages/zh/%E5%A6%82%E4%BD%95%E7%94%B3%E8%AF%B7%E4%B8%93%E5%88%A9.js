@@ -2,15 +2,21 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 如何申请专利() {
   return (
     <Layout>
       <Head>
         <title>澳大利亚PCT国家阶段专利申请|Baxter IP</title>
-        <meta name="description" content="如何专利的理念在澳大利亚|Baxter IP" />
-        <link rel="canonical" href="/zh/国家专利" />
+        <meta
+          name="description"
+          content="如何专利的理念在澳大利亚|Baxter IP"
+        />
+        <link
+          rel="canonical"
+          href="/zh/国家专利"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7%E4%B8%93%E5%88%A9"
@@ -27,7 +33,9 @@ export default function 如何申请专利() {
           href="https://www.baxterip.com.au/how-to-patent"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

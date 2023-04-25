@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 关于() {
   return (
@@ -12,7 +12,10 @@ export default function 关于() {
           name="description"
           content="Baxter IP是一家领先的，独立的，中间层专利和商标律师事务所，在悉尼和墨尔本，澳大利亚设有办事处。"
         />
-        <link rel="canonical" href="/zh/关于" />
+        <link
+          rel="canonical"
+          href="/zh/关于"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/about"
@@ -29,7 +32,9 @@ export default function 关于() {
           href="https://www.baxterip.com.au/about"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

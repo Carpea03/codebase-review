@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 商标侵权() {
   return (
@@ -12,7 +12,10 @@ export default function 商标侵权() {
           name="description"
           content="商标侵权需要加以解决，以避免您的商标的稀释"
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/zh/商标侵权" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/zh/商标侵权"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E4%BE%B5%E6%9D%83"
@@ -29,7 +32,9 @@ export default function 商标侵权() {
           href="https://www.baxterip.com.au/trade-mark-infringement"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -160,7 +165,9 @@ export default function 商标侵权() {
 
       <h3>如何识别商标侵权案件</h3>
 
-      <p>根据&ldquo;1995年商标法&rdquo;（联邦）第120条，以下行为构成商标侵权：</p>
+      <p>
+        根据&ldquo;1995年商标法&rdquo;（联邦）第120条，以下行为构成商标侵权：
+      </p>
 
       <ol>
         <li>
@@ -261,7 +268,8 @@ export default function 商标侵权() {
       <h3>防止无意中侵犯商标权</h3>
 
       <p>
-        如果您是收到要求终止使用商标信函的一方，注意<i> &ldquo;1995年商标法&rdquo; </i>
+        如果您是收到要求终止使用商标信函的一方，注意
+        <i> &ldquo;1995年商标法&rdquo; </i>
         包含可能对抗商标侵权指控的条款。
       </p>
 
@@ -314,7 +322,8 @@ export default function 商标侵权() {
           FCA 255
         </i>
         案件中，Veda拥有几个带有&lsquo;VEDA&rsquo;字样的商标，如&lsquo;Veda&rsquo;，&lsquo;Veda
-        Advantage&rsquo;，&lsquo;Veda Check&rsquo;和&lsquo;Vedascore&rsquo;。 Malouf
+        Advantage&rsquo;，&lsquo;Veda Check&rsquo;和&lsquo;Vedascore&rsquo;。
+        Malouf
         Group注册了许多广告关键字，其中包含名称VEDA，用于赞助广告以描述其信用修复服务。
         Veda起诉Malouf，指控Malouf侵犯商标权和违反澳大利亚消费者法。
         法院最初发现Malouf对VEDA的使用并不构成商标侵权，但确实找到了一些标题，例如&ldquo;The

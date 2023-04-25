@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 全球专利新颖搜索() {
   return (
@@ -12,7 +12,10 @@ export default function 全球专利新颖搜索() {
           name="description"
           content="Baxter IP知识产权专利代理人在全球范围内提供具有成本效益的新颖性检索和国际现有技术检索服务，以确保您的知识产权在现有技术的基础上具有新颖性。。"
         />
-        <link rel="canonical" href="/zh/全球专利新颖搜索" />
+        <link
+          rel="canonical"
+          href="/zh/全球专利新颖搜索"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%85%A8%E7%90%83%E4%B8%93%E5%88%A9%E6%96%B0%E9%A2%96%E6%90%9C%E7%B4%A2"
@@ -24,7 +27,9 @@ export default function 全球专利新颖搜索() {
           href="https://www.baxterip.com.au/international-patent-search"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

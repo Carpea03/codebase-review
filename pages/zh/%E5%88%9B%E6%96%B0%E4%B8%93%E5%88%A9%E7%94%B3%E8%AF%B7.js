@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 创新专利申请() {
   return (
@@ -13,7 +13,10 @@ export default function 创新专利申请() {
           name="description"
           content="文件与Baxter IP澳大利亚创新专利申请。学习创新的专利工艺，并在澳大利亚的创新专利费用。"
         />
-        <link rel="canonical" href="/zh/创新专利申请" />
+        <link
+          rel="canonical"
+          href="/zh/创新专利申请"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%88%9B%E6%96%B0%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7"
@@ -30,7 +33,9 @@ export default function 创新专利申请() {
           href="https://www.baxterip.com.au/innovation-patent-application"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

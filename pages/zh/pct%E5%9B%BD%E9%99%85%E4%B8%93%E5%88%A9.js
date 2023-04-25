@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function pct国际专利() {
   return (
@@ -13,7 +13,10 @@ export default function pct国际专利() {
           name="description"
           content="通过Baxter IP提交PCT申请或国际专利申请，以便在国际上为您的创意，产品或发明申请专利。"
         />
-        <link rel="canonical" href="/zh/pct国际专利" />
+        <link
+          rel="canonical"
+          href="/zh/pct国际专利"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/pct%E5%9B%BD%E9%99%85%E4%B8%93%E5%88%A9"
@@ -25,7 +28,9 @@ export default function pct国际专利() {
           href="https://www.baxterip.com.au/pct-patent"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

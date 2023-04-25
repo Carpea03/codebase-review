@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 商标诉讼() {
   return (
@@ -11,7 +11,10 @@ export default function 商标诉讼() {
           name="description"
           content="注册商标的所有者拥有使用商标的专有权，和授权他人使用其商标注册于所注册的商品和/或服务的权利。 如果商标被侵权，商标的注册所有人有权根据商标法（联邦）1995 获得援助。"
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/zh/商标诉讼" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/zh/商标诉讼"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E8%AF%89%E8%AE%BC"
@@ -28,7 +31,9 @@ export default function 商标诉讼() {
           href="https://www.baxterip.com.au/trade-mark-litigation"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

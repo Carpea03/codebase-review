@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 免费操作搜索() {
   return (
@@ -12,7 +12,10 @@ export default function 免费操作搜索() {
           name="description"
           content="自由使用操作也称为专利侵权检索和专利检索过关专利检索应该推出新产品之前，可以考虑。"
         />
-        <link rel="canonical" href="/zh/免费操作搜索" />
+        <link
+          rel="canonical"
+          href="/zh/免费操作搜索"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/freedom-to-operate-patent-search"
@@ -29,7 +32,9 @@ export default function 免费操作搜索() {
           href="https://www.baxterip.com.au/freedom-to-operate-patent-search"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -194,7 +199,9 @@ export default function 免费操作搜索() {
             专利申请
           </Link>
           涉及到第三方专利所有者的利益，您还可以考虑两项专利申请进行之间的进行交叉许可。这已成为大公司为避免
-          <Link title="专利诉讼" href="https://www.baxterip.com.au/zh/专利诉讼">
+          <Link
+            title="专利诉讼"
+            href="https://www.baxterip.com.au/zh/专利诉讼">
             专利诉讼
           </Link>
           而采用的一种很常

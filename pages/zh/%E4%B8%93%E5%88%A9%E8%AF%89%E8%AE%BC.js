@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 专利诉讼() {
   return (
@@ -12,7 +12,10 @@ export default function 专利诉讼() {
           name="description"
           content="强制执行您的知识产权和你对与Baxter IP的专利诉讼和知识产权执法队伍的专利侵权专利。"
         />
-        <link rel="canonical" href="/zh/专利诉讼" />
+        <link
+          rel="canonical"
+          href="/zh/专利诉讼"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/global/patent-litigation"
@@ -29,7 +32,9 @@ export default function 专利诉讼() {
           href="https://www.baxterip.com.au/patent-litigation"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 知识产权术语表() {
   return (
@@ -12,7 +12,10 @@ export default function 知识产权术语表() {
           name="description"
           content="知识产权术语表，提供涉及专利，商标，注册外观设计和版权的知识产权相关术语的定义。"
         />
-        <link rel="canonical" href="/zh/知识产权术语表" />
+        <link
+          rel="canonical"
+          href="/zh/知识产权术语表"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E6%9C%AF%E8%AF%AD%E8%A1%A8"
@@ -24,7 +27,9 @@ export default function 知识产权术语表() {
           href="https://www.baxterip.com.au/ip-glossary"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

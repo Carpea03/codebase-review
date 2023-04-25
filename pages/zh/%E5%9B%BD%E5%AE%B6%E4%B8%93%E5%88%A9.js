@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 国家专利() {
   return (
@@ -13,7 +13,10 @@ export default function 国家专利() {
           name="description"
           content="文件与Baxter IP一个PCT进入国家阶段的专利申请通过PCT系统，以获得您所选择的国家专利保护。"
         />
-        <link rel="canonical" href="/zh/国家专利" />
+        <link
+          rel="canonical"
+          href="/zh/国家专利"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%9B%BD%E5%AE%B6%E4%B8%93%E5%88%A9"
@@ -30,7 +33,9 @@ export default function 国家专利() {
           href="https://www.baxterip.com.au/national-phase-patent"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -149,7 +154,9 @@ export default function 国家专利() {
       </p>
 
       <ol>
-        <li>在递交第三阶段的PCT国际专利申请后递交&ldquo;国家阶段&rdquo;的专利;或者</li>
+        <li>
+          在递交第三阶段的PCT国际专利申请后递交&ldquo;国家阶段&rdquo;的专利;或者
+        </li>
         <li>
           第一步就直接在相关国家提交&ldquo;国家&rdquo;专利申请，或者在12个月的巴黎公约期限内对另一个专利申请要求优先权。（如针对第一阶段临时专利申请要求优先权）。
         </li>

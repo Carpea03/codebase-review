@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 大写伙伴() {
   return (
@@ -11,7 +11,10 @@ export default function 大写伙伴() {
           name="description"
           content="Baxter IP 是澳大利亚第一家通过资本合作伙伴计划促进资本联系的专利代理人公司，无论是种子轮还是 A 轮融资。"
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/zh/大写伙伴" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/zh/大写伙伴"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%A4%A7%E5%86%99%E4%BC%99%E4%BC%B4"
@@ -23,7 +26,9 @@ export default function 大写伙伴() {
           href="https://www.baxterip.com.au/capital-partners"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -95,7 +100,9 @@ export default function 大写伙伴() {
         href="https://www.ten13.vc/"
         target="_blank"
         rel="noopener nofollow noreferrer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.04 39.68">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 215.04 39.68">
           <path
             d="M143.43.76c-2.89,0-5.79,0-8.68,0-.53,0-.65.13-.65.65,0,6,0,12,0,18,0,2.38.14,4.77.17,7.19a3.34,3.34,0,0,1-.25-.4q-6.85-12.43-13.68-24.89a.89.89,0,0,0-.92-.55q-5.61,0-11.2,0c-.43,0-.57.08-.57.54q0,18.51,0,37c0,.47.15.55.57.54,2.93,0,5.87,0,8.81,0,.47,0,.59-.12.59-.59,0-3.23,0-6.46,0-9.69,0-3.46,0-6.93,0-10.39,0-1.34-.13-2.69-.21-4a1.11,1.11,0,0,1,.39.48q6.54,11.85,13.06,23.72a.81.81,0,0,0,.82.51c3.94,0,7.88,0,11.83,0,.52,0,.6-.18.6-.65q0-18.41,0-36.81C144.05.9,143.94.75,143.43.76Z"
             fill="#2b2b2a"></path>
@@ -134,8 +141,9 @@ export default function 大写伙伴() {
         是由 Steve
         Baxter（与克里斯巴克斯特无关）的家族办公室领导的天使投资财团，自 2011
         年以来一直在产生最高四分之一的投资回报。Ten13
-        的&ldquo;基于网络的投资&rdquo;理念意味着被投资方从其 12,000 美元的价值中受益 +
-        全球联系。 史蒂夫因在 Ten 的创智赢家电视节目中扮演&ldquo;鲨鱼&rdquo;而闻名。
+        的&ldquo;基于网络的投资&rdquo;理念意味着被投资方从其 12,000
+        美元的价值中受益 + 全球联系。 史蒂夫因在 Ten
+        的创智赢家电视节目中扮演&ldquo;鲨鱼&rdquo;而闻名。
       </p>
 
       <Link
@@ -143,7 +151,9 @@ export default function 大写伙伴() {
         href="https://galileo.ventures/"
         target="_blank"
         rel="noopener nofollow noreferrer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209.47 53.98">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 209.47 53.98">
           <path
             d="M51.13,22.14a6.46,6.46,0,0,0-5-2.08,6.47,6.47,0,0,0-5,2.08,8,8,0,0,0-1.89,5.4v1.25a8,8,0,0,0,1.89,5.4,6.47,6.47,0,0,0,5,2.09,6.47,6.47,0,0,0,5-2.09A8,8,0,0,0,53,28.79V27.54A8,8,0,0,0,51.13,22.14Z"
             fill="none"></path>

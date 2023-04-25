@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 知识产权价值评估() {
   return (
@@ -12,7 +12,10 @@ export default function 知识产权价值评估() {
           name="description"
           content="Baxter IP可以评估您的知识产权的价值和你的专利组合是值得一用的IP资产估值方法。"
         />
-        <link rel="canonical" href="/zh/知识产权价值评估" />
+        <link
+          rel="canonical"
+          href="/zh/知识产权价值评估"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BB%B7%E5%80%BC%E8%AF%84%E4%BC%B0"
@@ -24,7 +27,9 @@ export default function 知识产权价值评估() {
           href="https://www.baxterip.com.au/ip-valuation"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

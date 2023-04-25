@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 注册外观设计() {
   return (
@@ -13,7 +13,10 @@ export default function 注册外观设计() {
           name="description"
           content="保护并通过注册外观设计与Baxter IP注册您的设计和创新，以保护您的产品的外观。"
         />
-        <link rel="canonical" href="/zh/注册外观设计" />
+        <link
+          rel="canonical"
+          href="/zh/注册外观设计"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%B3%A8%E5%86%8C%E5%A4%96%E8%A7%82%E8%AE%BE%E8%AE%A1"
@@ -30,7 +33,9 @@ export default function 注册外观设计() {
           href="https://www.baxterip.com.au/registered-designs"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

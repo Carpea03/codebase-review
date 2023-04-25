@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 设计纠纷() {
   return (
@@ -12,7 +12,10 @@ export default function 设计纠纷() {
           name="description"
           content="设计争议允许澳大利亚知识产权局审查在导致注册设计的手续审查期间可能无法获得的证据。"
         />
-        <link rel="canonical" href="/zh/设计纠纷" />
+        <link
+          rel="canonical"
+          href="/zh/设计纠纷"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E8%AE%BE%E8%AE%A1%E7%BA%A0%E7%BA%B7"
@@ -24,7 +27,9 @@ export default function 设计纠纷() {
           href="https://www.baxterip.com.au/design-disputes"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 新颖性检索() {
   return (
@@ -12,7 +12,10 @@ export default function 新颖性检索() {
           name="description"
           content="在临时专利申请的国际型搜索可以用于经济有效地审查专利权利要求的新颖性。"
         />
-        <link rel="canonical" href="/zh/新颖性检索" />
+        <link
+          rel="canonical"
+          href="/zh/新颖性检索"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%96%B0%E9%A2%96%E6%80%A7%E6%A3%80%E7%B4%A2"
@@ -24,7 +27,9 @@ export default function 新颖性检索() {
           href="https://www.baxterip.com.au/international-type-search"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

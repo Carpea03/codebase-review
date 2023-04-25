@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 知识产权审核() {
   return (
@@ -12,7 +12,10 @@ export default function 知识产权审核() {
           name="description"
           content="知识产权审计可帮助公司管理其无形资产并做出明智的业务决策。"
         />
-        <link rel="canonical" href="/zh/知识产权审核" />
+        <link
+          rel="canonical"
+          href="/zh/知识产权审核"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E5%AE%A1%E6%A0%B8"
@@ -24,7 +27,9 @@ export default function 知识产权审核() {
           href="https://www.baxterip.com.au/ip-audit"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

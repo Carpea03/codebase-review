@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 商标搜索() {
   return (
@@ -11,7 +11,10 @@ export default function 商标搜索() {
           name="description"
           content="必须进行全面的商标搜索，包括澳大利亚和国际数据库，以检查可注册性和许可权。"
         />
-        <link rel="canonical" href="https://www.baxterip.com.au/zh/商标搜索" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/zh/商标搜索"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E5%95%86%E6%A0%87%E6%90%9C%E7%B4%A2"
@@ -28,7 +31,9 @@ export default function 商标搜索() {
           href="https://www.baxterip.com.au/trade-mark-search"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -158,7 +163,8 @@ export default function 商标搜索() {
       </p>
 
       <p>
-        您是否可以使用免费资源进行自己的商标搜索？ 在这里，&ldquo;免费&rdquo;一词具有误导性;
+        您是否可以使用免费资源进行自己的商标搜索？
+        在这里，&ldquo;免费&rdquo;一词具有误导性;
         虽然实际的搜索引擎可能是免费的，但对于搜索结果的专业知识和分析所需的时间，人力资源并不是免费的。
         没有明确方向的搜索可以找出数千个条目，筛选所有这些商标搜索结果非常耗时，特别在您并不清楚什么才是真正有用信息的情况下。
         最终可能会绕了圈子，并根据搜索到的不准确结果做出了错误的判断从而使您在品牌重塑造成更大经济损失。而这部分损失，可能远远超过聘用商标代理人的成本。

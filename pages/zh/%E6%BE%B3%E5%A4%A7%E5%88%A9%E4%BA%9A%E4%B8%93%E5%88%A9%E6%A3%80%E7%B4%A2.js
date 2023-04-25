@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 澳大利亚专利检索() {
   return (
@@ -12,7 +12,10 @@ export default function 澳大利亚专利检索() {
           name="description"
           content="在临时专利申请的国际型搜索可以用于经济有效地审查专利权利要求的新颖性。"
         />
-        <link rel="canonical" href="/zh/澳大利亚专利检索" />
+        <link
+          rel="canonical"
+          href="/zh/澳大利亚专利检索"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E4%B8%93%E5%88%A9%E6%A3%80%E7%B4%A2"
@@ -29,7 +32,9 @@ export default function 澳大利亚专利检索() {
           href="https://www.baxterip.com.au/australian-patent-search"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link

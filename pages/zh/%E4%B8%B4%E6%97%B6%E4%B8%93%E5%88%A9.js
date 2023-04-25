@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 
 export default function 临时专利() {
   return (
@@ -12,7 +12,10 @@ export default function 临时专利() {
           name="description"
           content="文件在澳大利亚或美国（US）临时专利来保护与Baxter IP你的临时专利申请。"
         />
-        <link rel="canonical" href="/zh/临时专利" />
+        <link
+          rel="canonical"
+          href="/zh/临时专利"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%B4%E6%97%B6%E4%B8%93%E5%88%A9"
@@ -24,7 +27,9 @@ export default function 临时专利() {
           href="https://www.baxterip.com.au/provisional-patents"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -165,7 +170,9 @@ export default function 临时专利() {
       </p>
 
       <ol>
-        <li>对您的新想法或者发明用示例（或者&ldquo;实施例&rdquo;）进行描述；</li>
+        <li>
+          对您的新想法或者发明用示例（或者&ldquo;实施例&rdquo;）进行描述；
+        </li>
         <li>专利要求，即针对侵犯您专利的行为进行评判的一系列法律定义。</li>
       </ol>
 
