@@ -1,5 +1,5 @@
 import { Container } from '../../components/templates/Container'
-import { Listbox } from '../..headlessui/react'
+import { Listbox } from '@headlessui/react'
 import { MdArrowDropDown } from 'react-icons/md'
 import Image from 'next/image'
 import React, { useState } from 'react'
