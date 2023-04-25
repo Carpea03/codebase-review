@@ -1,15 +1,13 @@
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
+import StaffChris from '../../components/to-delete/staff/chris'
+import StaffMartin from '../../components/to-delete/staff/martin'
+import StaffQi from '../../components/to-delete/staff/qi'
 
 const myLoader = ({ src, width, quality }) => {
-  return `http://localhost:3000/images/${src}?w=${width}&q=${
-    quality || 75
-  }`
+  return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function SoftwarePatents() {
@@ -21,14 +19,19 @@ export default function SoftwarePatents() {
           name="description"
           content="File a patent on software applications including computer programs, platforms, user interfaces, or algorithms. Talk to our software patent experts today."
         />
-        <link rel="canonical" href="/specialisations/software-patents" />
+        <link
+          rel="canonical"
+          href="/specialisations/software-patents"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E5%88%A9"
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -558,7 +561,10 @@ export default function SoftwarePatents() {
             viewBox="0 0 996.83 564.98"
             xmlns="http://www.w3.org/2000/svg">
             <title>What countries are the most software patent friendly?</title>
-            <rect fill="none" height="564.98" width="996.83"></rect>
+            <rect
+              fill="none"
+              height="564.98"
+              width="996.83"></rect>
             <polygon
               fill="none"
               points="639.72 292.31 639.72 292.31 639.42 291.66 639.42 291.66 639.72 292.31"></polygon>

@@ -1,17 +1,15 @@
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
-import StaffWarren from '../../components/staff/warren'
-import StaffNaleesha from '../../components/staff/naleesha'
+import StaffChris from '../../components/to-delete/staff/chris'
+import StaffMartin from '../../components/to-delete/staff/martin'
+import StaffQi from '../../components/to-delete/staff/qi'
+import StaffWarren from '../../components/to-delete/staff/warren'
+import StaffNaleesha from '../../components/to-delete/staff/naleesha'
 
 const myLoader = ({ src, width, quality }) => {
-  return `http://localhost:3000/images/${src}?w=${width}&q=${
-    quality || 75
-  }`
+  return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function MechanicalPatents() {
@@ -25,14 +23,19 @@ export default function MechanicalPatents() {
           name="description"
           content="File a patent on technology involving mechanics or another area of mechanical engineering. Talk to our expert mechanical engineering patent attorneys today."
         />
-        <link rel="canonical" href="/specialisations/mechanical-patents" />
+        <link
+          rel="canonical"
+          href="/specialisations/mechanical-patents"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E6%9C%BA%E6%A2%B0%E5%B7%A5%E7%A8%8B%E5%92%8C%E9%87%87%E7%9F%BF%E4%B8%93%E5%88%A9"
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -610,7 +613,10 @@ export default function MechanicalPatents() {
             viewBox="0 0 996.83 564.98"
             xmlns="http://www.w3.org/2000/svg">
             <title>What are the key regions for mining patents?</title>
-            <rect fill="none" height="564.98" width="996.83"></rect>
+            <rect
+              fill="none"
+              height="564.98"
+              width="996.83"></rect>
             <polygon
               fill="#d6d6d6"
               points="335.72 521.58 334.65 518.88 333.82 517.23 333.82 525.32 333.82 525.32 333.82 517.23 332.29 516.81 330.31 518.27 329.62 520.72 328.51 522.38 325.66 521.08 322.65 518.69 320.88 517.95 323.83 521.96 326.02 523.93 328.72 526 330.97 526.55 332.53 527.68 333.8 527.98 334.86 528.11 336.69 526.94 337.4 525.42 336.11 525.32 336.12 525.32 337.41 525.42 338.51 526.75 340.54 526.55 341.52 524.7 338.51 523.78 335.72 521.58"></polygon>
@@ -926,10 +932,16 @@ export default function MechanicalPatents() {
               font-size="19.31"
               transform="translate(389.71 289.05)">
               Eu
-              <tspan letter-spacing="-0.02em" y="0" x="22.53">
+              <tspan
+                letter-spacing="-0.02em"
+                y="0"
+                x="22.53">
                 r
               </tspan>
-              <tspan letter-spacing="0em" y="0" x="29.33">
+              <tspan
+                letter-spacing="0em"
+                y="0"
+                x="29.33">
                 ope
               </tspan>
             </text>

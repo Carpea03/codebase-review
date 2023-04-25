@@ -1,15 +1,13 @@
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/to-delete/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
+import StaffChris from '../../components/to-delete/staff/chris'
+import StaffMartin from '../../components/to-delete/staff/martin'
+import StaffQi from '../../components/to-delete/staff/qi'
 
 const myLoader = ({ src, width, quality }) => {
-  return `http://localhost:3000/images/${src}?w=${width}&q=${
-    quality || 75
-  }`
+  return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function ElectricalEngineeringPatents() {
@@ -33,7 +31,9 @@ export default function ElectricalEngineeringPatents() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -676,7 +676,10 @@ export default function ElectricalEngineeringPatents() {
               What are the key regions for electrical engineering and
               electronics patents?
             </title>
-            <rect fill="none" height="564.98" width="996.83"></rect>
+            <rect
+              fill="none"
+              height="564.98"
+              width="996.83"></rect>
             <polygon
               fill="#d6d6d6"
               points="335.72 521.58 334.65 518.88 333.82 517.23 333.82 525.32 333.82 525.32 333.82 517.23 332.29 516.81 330.31 518.27 329.62 520.72 328.51 522.38 325.66 521.08 322.65 518.69 320.88 517.95 323.83 521.96 326.02 523.93 328.72 526 330.97 526.55 332.53 527.68 333.8 527.98 334.86 528.11 336.69 526.94 337.4 525.42 336.11 525.32 336.12 525.32 337.41 525.42 338.51 526.75 340.54 526.55 341.52 524.7 338.51 523.78 335.72 521.58"></polygon>
@@ -1105,10 +1108,15 @@ export default function ElectricalEngineeringPatents() {
               font-size="19.31"
               transform="translate(747.46 328.84)">
               Ko
-              <tspan letter-spacing="-0.02em" y="0" x="23.98">
+              <tspan
+                letter-spacing="-0.02em"
+                y="0"
+                x="23.98">
                 r
               </tspan>
-              <tspan y="0" x="30.78">
+              <tspan
+                y="0"
+                x="30.78">
                 ea
               </tspan>
             </text>
@@ -1119,10 +1127,16 @@ export default function ElectricalEngineeringPatents() {
               font-size="19.31"
               transform="translate(389.71 289.05)">
               Eu
-              <tspan letter-spacing="-0.02em" y="0" x="22.53">
+              <tspan
+                letter-spacing="-0.02em"
+                y="0"
+                x="22.53">
                 r
               </tspan>
-              <tspan letter-spacing="0em" y="0" x="29.33">
+              <tspan
+                letter-spacing="0em"
+                y="0"
+                x="29.33">
                 ope
               </tspan>
             </text>
