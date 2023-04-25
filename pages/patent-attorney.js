@@ -1,16 +1,16 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
-import StaffChris from '../components/staff/chris'
-import StaffMartin from '../components/staff/martin'
-import StaffQi from '../components/staff/qi'
-import StaffWarren from '../components/staff/warren'
-import StaffSean from '../components/staff/sean'
-import StaffNaleesha from '../components/staff/naleesha'
-import StaffAndrew from '../components/staff/andrew'
-import StaffWillem from '../components/staff/willem'
-import StaffRichard from '../components/staff/richard'
+import Layout from '../components/to-delete/layout'
+import StaffChris from '../components/to-delete/staff/chris'
+import StaffMartin from '../components/to-delete/staff/martin'
+import StaffQi from '../components/to-delete/staff/qi'
+import StaffWarren from '../components/to-delete/staff/warren'
+import StaffSean from '../components/to-delete/staff/sean'
+import StaffNaleesha from '../components/to-delete/staff/naleesha'
+import StaffAndrew from '../components/to-delete/staff/andrew'
+import StaffWillem from '../components/to-delete/staff/willem'
+import StaffRichard from '../components/to-delete/staff/richard'
 
 export default function PatentAttorney() {
   return (
@@ -31,7 +31,9 @@ export default function PatentAttorney() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
+      <nav
+        className="flex"
+        aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
