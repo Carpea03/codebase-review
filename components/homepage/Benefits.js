@@ -35,10 +35,7 @@ export default function Benefits() {
 
   return (
     <Container className="flex flex-col px-12 sm:px-0 md:px-20 xl:px-40 py-[60px] sm:py-[100px] md:py-[120px] border-bottom-base gap-[70px]">
-      <TitleContainer
-        title="BENEFITS"
-        description="Benefits working with us"
-      />
+      <TitleContainer title="Benefits" />
       <div className="w-full flex flex-col sm:flex-row sm:overflow-x-auto md:overscroll-none items-start gap-6 sm:gap-14 md:gap-6 font-manrope sm:pb-16 md:pb-0 sm:px-[107px] md:px-0 cursor-pointer">
         {benifits.map((benifit) => (
           <div

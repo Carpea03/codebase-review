@@ -54,7 +54,7 @@ export const OurServices = () => {
       <TitleContainer
         title="Services"
         description="Our Services for"
-        subDescription="Corporate /SME"
+        subDescription="Corporate / Mid-Market Enterprise"
       />
       <div className="flex flex-col">
         <div className="hidden md:flex flex-col items-center gap-[54px] md:px-20 xl:px-40">

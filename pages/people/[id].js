@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const peoples = [
   {
-    id: 1,
+    id: 0,
     teamName: 'Sydney teams',
     teamMembers: [
       {
@@ -63,7 +63,7 @@ const peoples = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     teamName: 'Melbourne teams',
     teamMembers: [
       {
@@ -118,8 +118,35 @@ const peoples = [
   },
 ]
 
-export default function People() {
-  const [selectedMenu, setSelectedMenu] = useState(0)
+const ipTeams = [
+  { id: 0, title: 'sydney-team' },
+  { id: 1, title: 'merlbourne-team' },
+]
+
+export const getStaticPaths = async () => {
+  const paths = ipTeams.map((item) => {
+    return {
+      params: { id: item.title.toString() },
+    }
+  })
+
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+export const getStaticProps = async (context) => {
+  const id = context.params.id
+  let newId = ipTeams.filter((item) => id === item.title)
+
+  return {
+    props: { item: newId[0].id },
+  }
+}
+
+export default function People({ item }) {
+  const [selectedMenu, setSelectedMenu] = useState(item)
 
   return (
     <>

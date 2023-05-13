@@ -162,7 +162,7 @@ export default function AboutUs() {
           <NewsBlog data={news} />
         </div>
       </Container>
-      <Footer />
+      <Footer page="About Us" />
     </>
   )
 }

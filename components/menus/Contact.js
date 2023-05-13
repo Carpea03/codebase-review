@@ -1,13 +1,35 @@
 import Image from 'next/image'
 import { Tab } from '@headlessui/react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
+import Link from 'next/link'
 
 const sideMenus = [
   {
     name: 'Contact US',
     img: '/menus/contact/sideMenus/contact-book.svg',
-    href: '',
+    href: '/contact-us',
+  },
+]
+
+const subMenus = [
+  {
+    title: 'Sydney Patent & Trade Mark Office',
+    contact: '+61 2 9264 6716',
+    href: '/contact-us',
+    office: 'sydney',
+  },
+  {
+    title: 'Melbourne Patent & Trade Mark Office',
+    contact: '+61 2 9264 6716',
+    href: '/contact-us',
+    office: 'melbourne',
+  },
+  {
+    title: 'Brisbane Patent & Trade Mark Office',
+    contact: '+61 2 9264 6716',
+    href: '/contact-us',
+    office: 'brisbane',
   },
 ]
 
@@ -30,27 +52,31 @@ export default function Contact() {
             as="div"
             className="hidden md:flex flex-col justify-start w-[30%]">
             {sideMenus.map((sideMenu, i) => (
-              <Tab
+              <Link
                 key={i}
-                className={({ selected }) =>
-                  classNames(
-                    'flex flex-row justify-start items-center md:pl-20 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none',
-                    selected
-                      ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
-                      : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
-                  )
-                }>
-                <Image
-                  src={sideMenu.img}
-                  size={16}
-                  alt=""
-                  width={16}
-                  height={16}
-                />
-                <span className="uppercase font-manrope text-sm ">
-                  {sideMenu.name}
-                </span>
-              </Tab>
+                href={sideMenu.href}>
+                <Tab
+                  key={i}
+                  className={({ selected }) =>
+                    classNames(
+                      'flex flex-row justify-start items-center md:pl-20 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none',
+                      selected
+                        ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
+                        : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
+                    )
+                  }>
+                  <Image
+                    src={sideMenu.img}
+                    size={16}
+                    alt=""
+                    width={16}
+                    height={16}
+                  />
+                  <span className="uppercase font-manrope text-sm ">
+                    {sideMenu.name}
+                  </span>
+                </Tab>
+              </Link>
             ))}
           </Tab.List>
           <Tab.Panels
@@ -69,24 +95,18 @@ export default function Contact() {
                   </span>
                 </div>
                 <div className="flex flex-col justify-start item-start gap-8 pt-8 pl-12">
-                  <div className="flex flex-col justify-start item-start gap-[10px]">
-                    <span className="text-[#272940]">
-                      Sydney Patent & Trade Mark Office
-                    </span>
-                    <span className="text-[#272940]/60">+61 2 9264 6716</span>
-                  </div>
-                  <div className="flex flex-col justify-start item-start gap-[10px]">
-                    <span className="text-[#272940]">
-                      Melbourne Patent & Trade Mark Office
-                    </span>
-                    <span className="text-[#272940]/60">+61 2 9264 6716</span>
-                  </div>
-                  <div className="flex flex-col justify-start item-start gap-[10px]">
-                    <span className="text-[#272940]">
-                      Brisbane Patent & Trade Mark Office
-                    </span>
-                    <span className="text-[#272940]/60">+61 2 9264 6716</span>
-                  </div>
+                  {subMenus.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.href + '/' + item.office}>
+                      <div className="flex flex-col justify-start item-start gap-[10px]">
+                        <span className="text-[#272940]">{item.title}</span>
+                        <span className="text-[#272940]/60">
+                          {item.contact}
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </Tab.Panel>

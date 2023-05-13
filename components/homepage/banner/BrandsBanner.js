@@ -16,7 +16,7 @@ export default function BrandsBanner() {
     <Container>
       <div className="flex flex-col justify-center items-center py-[53px] border-bottom-base">
         <p className="font-manrope font-semibold text-[#272940]/50 tracking-tight text-sm sm:text-lg md:text-xl xl:text-2xl">
-          Trusted and supported by this brands
+          Trusted by these brands
         </p>
       </div>
       <div className="w-full grid grid-rows-3 md:grid-rows-2 xl:grid-rows-1 grid-flow-col place-items-center px-12 sm:px-[107px] md:px-40 border-bottom-base">
