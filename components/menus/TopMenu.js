@@ -2,35 +2,11 @@ import { Transition, Listbox } from '@headlessui/react'
 import Image from 'next/image'
 import React, { useState, useEffect, Fragment } from 'react'
 import { MdArrowDropDown } from 'react-icons/md'
-
-const topMenus = [
-  {
-    id: 1,
-    name: 'Corporate / Mid-Market Enterprise',
-    icon: '/menus/services/topMenus/people-top-card.svg',
-    href: '',
-  },
-  {
-    id: 2,
-    name: 'Founded Startups',
-    icon: '/menus/services/topMenus/school.svg',
-    href: '',
-  },
-  {
-    id: 3,
-    name: 'Entrepreneur',
-    icon: '/menus/services/topMenus/home.svg',
-    href: '',
-  },
-  {
-    id: 4,
-    name: 'Foriegn Associates',
-    icon: '/menus/services/topMenus/peoples-two.svg',
-    href: '',
-  },
-]
+import useContentStore from '../../store/useContent.store'
+import { topMenus } from '../../utils/const/menus'
 
 export default function TopMenu({ menuIndex, onChange }) {
+  const setMenuState = useContentStore((state) => state.setMenuState)
   // const [menuIndex, onChange] = useState(menuIndex);
 
   // useEffect(() => {
@@ -78,6 +54,7 @@ export default function TopMenu({ menuIndex, onChange }) {
                 } ${index == 0 ? 'skew-x-12 -ml-4 -mr-4' : ''}`}
                 onClick={() => {
                   onChange(index)
+                  setMenuState(index)
                 }}>
                 <div
                   className={`flex flex-row items-center justify-center h-full gap-[10px] p-[10px] ${

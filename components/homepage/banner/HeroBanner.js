@@ -4,10 +4,12 @@ import React from 'react'
 import { HiPhone } from 'react-icons/hi'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import Image from 'next/image'
+import Link from 'next/link'
+import { metaOffice } from '../../../utils/const/links'
 
 const details = [
   {
-    title: ' Innovate Boldly. Protect Strategically.',
+    title: 'Innovate Boldly. Protect Strategically.',
     description:
       'In-house and top tier patent & trade mark attorney experience to provide astute, commercial IP advice.',
   },
@@ -34,47 +36,51 @@ export default function HeroBanner() {
           </div>
 
           <div className="flex flex-row gap-6">
-            <div className="flex flex-col items-center">
-              <div
-                className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
-                style={{
-                  boxShadow:
-                    '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                }}>
-                <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
-                  <HiPhone
-                    className="w-[9px] h-[9px] sm:w-5 sm:h-5"
-                    color="#404266"
-                  />
+            <Link href="/contact-us">
+              <div className="flex flex-col items-center">
+                <div
+                  className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
+                  style={{
+                    boxShadow:
+                      '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                  }}>
+                  <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
+                    <HiPhone
+                      className="w-[9px] h-[9px] sm:w-5 sm:h-5"
+                      color="#404266"
+                    />
+                  </div>
+                  <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
+                    {buttonText[0].title}
+                  </span>
                 </div>
-                <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
-                  {buttonText[0].title}
-                </span>
               </div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div
-                className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
-                style={{
-                  boxShadow:
-                    '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                }}>
-                <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
-                  <IoArrowForwardOutline
-                    className="w-3 h-3 sm:w-5 sm:h-5 md:w-4 md:h-4"
-                    size={16}
-                  />
+            </Link>
+            <Link href={metaOffice}>
+              <div className="flex flex-col items-center">
+                <div
+                  className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
+                  style={{
+                    boxShadow:
+                      '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                  }}>
+                  <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
+                    <IoArrowForwardOutline
+                      className="w-3 h-3 sm:w-5 sm:h-5 md:w-4 md:h-4"
+                      size={16}
+                    />
+                  </div>
+                  <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
+                    {buttonText[1].title}
+                  </span>
                 </div>
-                <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
-                  {buttonText[1].title}
-                </span>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="w-2/5 flex flex-row items-start md:pl-24 order-first md:order-last">
           <Image
-            src="/gray-empty-rect.png"
+            src="/professionalProfiles/bip-collage-1.png"
             className="h-full w-full object-cover"
             alt=""
             width={500}

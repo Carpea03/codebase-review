@@ -15,7 +15,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <Header />
+      <Header active={'Contact'} />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-contactus-unsplash !bg-cover">
           <div

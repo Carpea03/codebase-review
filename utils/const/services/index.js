@@ -31,33 +31,6 @@ export const sideMenus = [
   },
 ]
 
-export const topMenus = [
-  {
-    id: 1,
-    name: 'Coperator / Mid-Market Enterprise',
-    icon: '/menus/services/topMenus/people-top-card.svg',
-    href: '',
-  },
-  {
-    id: 2,
-    name: 'Founded Startups',
-    icon: '/menus/services/topMenus/school.svg',
-    href: '',
-  },
-  {
-    id: 3,
-    name: 'Entrepreneur',
-    icon: '/menus/services/topMenus/home.svg',
-    href: '',
-  },
-  {
-    id: 4,
-    name: 'Foriegn Associates',
-    icon: '/menus/services/topMenus/peoples-two.svg',
-    href: '',
-  },
-]
-
 export const subMenus = [
   [
     { title: 'How to patent', bold: true, division: false, href: '' },
@@ -448,3 +421,121 @@ export const subMenus4 = [
   ],
   ,
 ]
+
+export const services = {
+  0: [
+    {
+      id: 1,
+      title: 'Track record with multiple successful projects',
+      content:
+        "We've delivered successful projects spanning multiple industries and functions and can pull on our knowledge to help you too",
+      img: '/ourservices/service-1.png',
+      link: '',
+    },
+    {
+      id: 2,
+      title: 'Experienced brand awareness team ',
+      content:
+        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+      img: '/ourservices/service-2.png',
+      link: '',
+    },
+    {
+      id: 3,
+      title:
+        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      content:
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
+      img: '/ourservices/service-3.png',
+      link: '',
+    },
+    {
+      id: 4,
+      title: 'ROI Foccussed',
+      content:
+        "Award Winning - Our team have established a reptuation for being the best and have won some of the world's most highly regarded IP awards.",
+      img: '/ourservices/service-4.png',
+      link: '',
+    },
+  ],
+  1: [
+    {
+      id: 1,
+      title: 'Track record with multiple successful projects',
+      content:
+        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+      img: '/ourservices/service-1.png',
+      link: '',
+    },
+    {
+      id: 2,
+      title: 'Experienced brand awareness team ',
+      content:
+        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
+      img: '/ourservices/service-2.png',
+      link: '',
+    },
+    {
+      id: 3,
+      title:
+        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      content:
+        "Award Winning - Our team have established a reptuation for being the best and have won some of the world's most highly regarded IP awards.",
+      img: '/ourservices/service-3.png',
+      link: '',
+    },
+    {
+      id: 4,
+      title: 'ROI Foccussed',
+      content:
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
+      img: '/ourservices/service-4.png',
+      link: '',
+    },
+  ],
+  2: [
+    {
+      id: 1,
+      title: 'Track record with multiple successful projects',
+      content:
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
+      img: '/ourservices/service-1.png',
+      link: '',
+    },
+    {
+      id: 2,
+      title: 'Experienced brand awareness team ',
+      content:
+        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
+      img: '/ourservices/service-2.png',
+      link: '',
+    },
+    {
+      id: 3,
+      title:
+        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      content:
+        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+      img: '/ourservices/service-3.png',
+      link: '',
+    },
+  ],
+  3: [
+    {
+      id: 1,
+      title: 'Track record with multiple successful projects',
+      content:
+        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
+      img: '/ourservices/service-1.png',
+      link: '',
+    },
+    {
+      id: 2,
+      title: 'Experienced brand awareness team ',
+      content:
+        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+      img: '/ourservices/service-2.png',
+      link: '',
+    },
+  ],
+}

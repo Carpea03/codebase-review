@@ -37,7 +37,7 @@ export const getStaticProps = async (context) => {
 export default function Profile({ profile }) {
   return (
     <>
-      <Header />
+      <Header active={'People'} />
       <Container className="flex flex-col">
         <div className="w-full h-full sm:h-[1085px] md:h-[515px] bg-profile-bg !bg-cover flex flex-col md:flex-row justify-end items-center px-4 sm:px-16 md:px-16 xl:px-24 2xl:px-40 pt-[90px] sm:pt-[100px]">
           <div

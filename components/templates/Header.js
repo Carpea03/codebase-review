@@ -9,7 +9,7 @@ import Services from '../menus/Services'
 import Blog from '../menus/Blog'
 import People from '../menus/People'
 import Contact from '../menus/Contact'
-import { Container } from './Container'
+import Link from 'next/link'
 
 const menus = [
   { id: 1, name: 'Services' },
@@ -27,7 +27,7 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ topMenuIndex, onTopMenuChange }) {
+export default function Header({ topMenuIndex, onTopMenuChange, active }) {
   const [selectedLanguage, setSelectedLanguage] = useState(langList[0])
 
   return (
@@ -35,7 +35,9 @@ export default function Header({ topMenuIndex, onTopMenuChange }) {
       <div className="container hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40">
         <div className="flex justify-between w-full md:gap-8">
           <div className="flex justify-between items-center gap-16 2xl:gap-[70px]">
-            <Logo />
+            <Link href="/">
+              <Logo />
+            </Link>
             <div className="flex felx-row items-start gap-9 2xl:gap-12">
               {menus.map((menu) => (
                 <Popover key={menu.id}>
@@ -48,7 +50,13 @@ export default function Header({ topMenuIndex, onTopMenuChange }) {
                             ? 'font-bold text-[#272940]'
                             : 'font-medium text-[#7A7B94]'
                         )}>
-                        {menu.name}
+                        {active === menu.name ? (
+                          <span className="font-bold text-[#272940]">
+                            {menu.name}
+                          </span>
+                        ) : (
+                          menu.name
+                        )}
                       </Popover.Button>
                       <Transition
                         show={open}

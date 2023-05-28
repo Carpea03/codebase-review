@@ -64,7 +64,7 @@ export default function Index() {
 
   return (
     <>
-      <Header />
+      <Header active="Services" />
       <Container>
         <div className="w-full bg-services-unsplash !bg-cover">
           <div

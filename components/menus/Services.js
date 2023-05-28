@@ -1,17 +1,18 @@
 import { Disclosure, Tab } from '@headlessui/react'
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
 import { FaCaretDown } from 'react-icons/fa'
 import {
   sideMenus,
-  topMenus,
   subMenus,
   subMenus1,
   subMenus2,
   subMenus3,
   subMenus4,
 } from '../../utils/const/services'
+import { topMenus } from '../../utils/const/menus'
+import useContentStore from '../../store/useContent.store'
 import Link from 'next/link'
 
 const panels = [
@@ -46,6 +47,7 @@ const classNames = (...classes) => {
 }
 
 export default function Services({ menuIndex, onChange }) {
+  const setMenuState = useContentStore((state) => state.setMenuState)
   return (
     <div
       className="w-full bg-[#FFFEFD]"
@@ -122,6 +124,7 @@ export default function Services({ menuIndex, onChange }) {
                         as="div"
                         onClick={() => {
                           onChange(index)
+                          setMenuState(index)
                         }}
                         className={`w-1/3 flex flex-row items-center justify-center h-full outline-none cursor-pointer ${
                           menuIndex === index

@@ -150,7 +150,7 @@ export default function People({ item }) {
 
   return (
     <>
-      <Header />
+      <Header active={'People'} />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-people-unsplash !bg-cover">
           <div
