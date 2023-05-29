@@ -42,7 +42,8 @@ export const VisitmetaOffice = () => {
           <Link href={metaOffice}>
             <button
               type="button"
-              className="w-full flex flex-row justify-center items-center py-5 sm:py-10 gap-[10px] bg-[#333552]">
+              className="w-full flex flex-row justify-center items-center py-5 sm:py-10 gap-[10px] bg-[#333552]"
+            >
               <span className="font-manrope font-semibold text-sm sm:text-xl text-white">
                 Visit meta office now
               </span>

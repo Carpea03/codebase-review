@@ -19,17 +19,20 @@ export default function TopMenu({ menuIndex, onChange }) {
       className="sticky top-0 container max-w-screen-2xl mx-auto h-full bg-[#FFFEF8] z-50"
       style={{
         filter: 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15))',
-      }}>
+      }}
+    >
       <div
         className={`w-auto h-[60px] sm:h-[134px] md:h-32 flex flex-row items-start justify-center ${
           menuIndex === topMenus.length - 1 ? 'bg-[#FFFDF7] ' : 'bg-[#FAF4E4]'
-        }`}>
+        }`}
+      >
         <div
           className="w-3/12 h-full flex flex-row items-center justify-end pr-4 sm:pr-20 cursor-pointer md:-ml-[26px]"
           style={{
             background:
               'linear-gradient(97.07deg, #404266 23.2%, #8083B6 114.87%)',
-          }}>
+          }}
+        >
           <Image
             className="w-8 h-8 sm:w-20 sm:h-20"
             src="/general.svg"
@@ -55,23 +58,21 @@ export default function TopMenu({ menuIndex, onChange }) {
                 onClick={() => {
                   onChange(index)
                   setMenuState(index)
-                }}>
+                }}
+              >
                 <div
                   className={`flex flex-row items-center justify-center h-full gap-[10px] p-[10px] ${
                     menuIndex === index ? '-skew-x-12' : ''
-                  } ${index == 0 ? '-skew-x-12' : ''}`}>
-                  <Image
-                    src={topMenu.icon}
-                    width={32}
-                    height={32}
-                    alt=""
-                  />
+                  } ${index == 0 ? '-skew-x-12' : ''}`}
+                >
+                  <Image src={topMenu.icon} width={32} height={32} alt="" />
                   <span
                     className={`font-manrope text-base px-2 ${
                       menuIndex === index
                         ? 'font-bold text-[#272940]'
                         : 'font-medium text-[#272940]/50'
-                    }`}>
+                    }`}
+                  >
                     {topMenu.name}
                   </span>
                 </div>
@@ -86,7 +87,8 @@ export default function TopMenu({ menuIndex, onChange }) {
           value={topMenus[menuIndex]}
           onChange={(value) => {
             onChange(value.id - 1)
-          }}>
+          }}
+        >
           <Listbox.Button className="flex flex-row items-center bg-[#FDFBF5] w-full h-full cursor-pointer">
             <div className="flex flex-row items-center pl-[24px] sm:pl-[54px] h-full w-full">
               <div className="flex flex-row items-center justify-center gap-[10px] sm:gap-6">
@@ -117,18 +119,17 @@ export default function TopMenu({ menuIndex, onChange }) {
             enterTo="transform opacity-100 scale-100"
             leave="transition ease-in duration-700"
             leaveFrom="transform opacity-100 scale-100"
-            leaveTo="transform opacity-0 scale-70">
+            leaveTo="transform opacity-0 scale-70"
+          >
             <Listbox.Options
               as="div"
               className="absolute z-10 flex flex-col items-start justify-center gap-8 py-8 bg-[#FDFBF5]"
               style={{
                 width: '-webkit-fill-available',
-              }}>
+              }}
+            >
               {topMenus.map((topMenu, index) => (
-                <Listbox.Option
-                  key={index}
-                  as="div"
-                  value={topMenu}>
+                <Listbox.Option key={index} as="div" value={topMenu}>
                   <div className="flex flex-row items-center pl-[24px] sm:pl-[54px] h-full w-full cursor-pointer">
                     <div className="flex flex-row items-center justify-center gap-6">
                       <Image

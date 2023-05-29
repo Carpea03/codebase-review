@@ -26,19 +26,19 @@ export default function 如何成为专利代理人() {
           href="https://www.baxterip.com.au/how-to-become-a-patent-attorney"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
             </Link>
@@ -49,15 +49,18 @@ export default function 如何成为专利代理人() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="https://www.baxterip.com.au/zh/专利律师职业"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 职业
               </Link>
             </div>
@@ -68,11 +71,13 @@ export default function 如何成为专利代理人() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 如何成为专利代理人
@@ -246,7 +251,8 @@ export default function 如何成为专利代理人() {
           title="如何同时成为澳大利亚和新西兰的专利代理人"
           href="https://www.ttipattorney.gov.au/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           跨塔斯曼知识产权委员会
         </Link>
         的以下要求：
@@ -290,7 +296,8 @@ export default function 如何成为专利代理人() {
           title="如何成为加拿大的专利代理人"
           href="https://ipic.ca/english/the-profession/the-profession.html/how-to-become-an-agent"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           加拿大
         </Link>
         的注册专利代理人，您需要：
@@ -312,7 +319,8 @@ export default function 如何成为专利代理人() {
           title="英国如何成为英国的专利代理人代理人"
           href="https://www.cipa.org.uk/need-advice/how-to-become-a-patent-attorney/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           英国专利代理人
         </Link>
         资格，您必须满足以下要求：
@@ -337,7 +345,8 @@ export default function 如何成为专利代理人() {
           title="如何成为欧洲专利代理人"
           href="https://patentepi.org/en/epi-students/qualifying-as-a-european-patent-attorney/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           欧洲资格考试
         </Link>
         （EQE）。 但是，在您有资格参加此考试之前，您必须：
@@ -357,7 +366,8 @@ export default function 如何成为专利代理人() {
           title="如何成为美国的专利代理人"
           href="https://www.uspto.gov/learning-and-resources/patent-and-trademark-practitioners/becoming-patent-practitioner"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           专利代理人
         </Link>
         ，您必须满足以下要求：

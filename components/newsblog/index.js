@@ -15,7 +15,8 @@ export default function NewsBlog({ data, btnTitle = 'Discover more experts' }) {
               style={{
                 boxShadow:
                   '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-              }}>
+              }}
+            >
               <div className="relative w-full">
                 <Image
                   alt=""
@@ -29,7 +30,8 @@ export default function NewsBlog({ data, btnTitle = 'Discover more experts' }) {
                   style={{
                     boxShadow:
                       '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                  }}>
+                  }}
+                >
                   <Image
                     alt=""
                     src="/ipNewsBlog/nicole.png"
@@ -70,7 +72,8 @@ export default function NewsBlog({ data, btnTitle = 'Discover more experts' }) {
               style={{
                 boxShadow:
                   '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-              }}>
+              }}
+            >
               <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
                 {btnTitle}
               </span>

@@ -53,18 +53,16 @@ export default function Services({ menuIndex, onChange }) {
       className="w-full bg-[#FFFEFD]"
       style={{
         filter: 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15))',
-      }}>
+      }}
+    >
       <div className="container max-w-[1440px] mx-auto">
-        <Tab.Group
-          as="div"
-          className="hidden md:flex flex-row justify-center">
+        <Tab.Group as="div" className="hidden md:flex flex-row justify-center">
           <Tab.List
             as="div"
-            className="hidden md:flex flex-col justify-start w-[30%]">
+            className="hidden md:flex flex-col justify-start w-[30%]"
+          >
             {Object.keys(sideMenus).map((index) => (
-              <Link
-                key={index}
-                href={sideMenus[index].href}>
+              <Link key={index} href={sideMenus[index].href}>
                 <Tab
                   key={index}
                   as="div"
@@ -75,7 +73,8 @@ export default function Services({ menuIndex, onChange }) {
                         ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                         : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
                     )
-                  }>
+                  }
+                >
                   <Image
                     src={sideMenus[index].img}
                     size={16}
@@ -90,34 +89,30 @@ export default function Services({ menuIndex, onChange }) {
               </Link>
             ))}
           </Tab.List>
-          <Tab.Panels
-            as="div"
-            className="flex flex-col w-[70%]">
+          <Tab.Panels as="div" className="flex flex-col w-[70%]">
             <Tab.Panel>
               <Tab.Group defaultIndex={1}>
                 <Tab.List
                   as="div"
-                  className="flex justify-start items-center h-[67px]">
+                  className="flex justify-start items-center h-[67px]"
+                >
                   <Tab
                     as="div"
                     className="flex justify-center items-center outline-none w-[133px] h-full"
                     style={{
                       background:
                         'linear-gradient(97.07deg, #404266 23.2%, #8083B6 114.87%)',
-                    }}>
-                    <Image
-                      src="/general.svg"
-                      width={47}
-                      height={47}
-                      alt=""
-                    />
+                    }}
+                  >
+                    <Image src="/general.svg" width={47} height={47} alt="" />
                   </Tab>
                   <div
                     className={`flex flex-row items-start w-full h-full ${
                       menuIndex == topMenus.length - 1
                         ? 'bg-[#FFFDF7]'
                         : 'bg-[#FAF4E4]'
-                    }`}>
+                    }`}
+                  >
                     {topMenus.map((topMenu, index) => (
                       <Tab
                         key={index}
@@ -130,11 +125,13 @@ export default function Services({ menuIndex, onChange }) {
                           menuIndex === index
                             ? 'skew-x-12 bg-[#FFFDF7] border-b-[4px] border-[#7568D1] -ml-4'
                             : 'bg-[#FAF4E4]'
-                        } ${index == 0 ? 'skew-x-12 -ml-4 -mr-2' : ''}`}>
+                        } ${index == 0 ? 'skew-x-12 -ml-4 -mr-2' : ''}`}
+                      >
                         <div
                           className={`flex flex-row items-center justify-center h-full gap-[10px] p-[10px] ${
                             menuIndex === index ? '-skew-x-12' : ''
-                          } ${index == 0 ? '-skew-x-12' : ''}`}>
+                          } ${index == 0 ? '-skew-x-12' : ''}`}
+                        >
                           <Image
                             src={topMenu.icon}
                             width={32}
@@ -146,7 +143,8 @@ export default function Services({ menuIndex, onChange }) {
                               menuIndex === index
                                 ? 'font-bold text-[#272940] '
                                 : 'font-medium text-[#272940]/50'
-                            }`}>
+                            }`}
+                          >
                             {topMenu.name}
                           </span>
                         </div>
@@ -188,7 +186,8 @@ export default function Services({ menuIndex, onChange }) {
                       ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                       : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
                   )
-                }>
+                }
+              >
                 <Image
                   src={sideMenu.img}
                   size={16}
@@ -203,9 +202,7 @@ export default function Services({ menuIndex, onChange }) {
               <Disclosure.Panel as="div">
                 {sideMenu.id == 1 &&
                   topMenus.map((topMenu) => (
-                    <Disclosure
-                      key={topMenu.id}
-                      as="div">
+                    <Disclosure key={topMenu.id} as="div">
                       {({ open }) => (
                         <>
                           <Disclosure.Button
@@ -219,7 +216,8 @@ export default function Services({ menuIndex, onChange }) {
                                   ? 'linear-gradient(93.59deg, #404266 -11.69%, #8083B6 223.51%)'
                                   : '#FAF5EB',
                             }}
-                            defaultIndex={1}>
+                            defaultIndex={1}
+                          >
                             <div className="flex flex-row justify-between items-center gap-[10px]">
                               {topMenu.id == 1 ? (
                                 <Image
@@ -242,7 +240,8 @@ export default function Services({ menuIndex, onChange }) {
                                   topMenu.id == 1
                                     ? 'text-[#fff]'
                                     : 'text-[#272940]'
-                                }`}>
+                                }`}
+                              >
                                 {topMenu.name}
                               </span>
                             </div>

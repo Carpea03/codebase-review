@@ -190,10 +190,12 @@ export const FillingStats = () => {
             className="w-full"
             style={{
               background: 'url(/fillingStats/background.png)',
-            }}>
+            }}
+          >
             <div
               className="w-full"
-              style={{ background: 'url(/fillingStats/bg-mask.svg)' }}>
+              style={{ background: 'url(/fillingStats/bg-mask.svg)' }}
+            >
               <div className="py-14 sm:py-[100px] md:py-[120px] md:px-40 xl:px-80 2xl:px-[402px]">
                 <TitleContainer
                   title="Filling stats"
@@ -210,18 +212,21 @@ export const FillingStats = () => {
                   selectedMenu === index ? 'bg-[#FFFEF8]' : 'bg-[#FAF4E5]'
                 } ${index === 0 ? 'pl-14' : ''} ${
                   index === menus.length - 1 ? 'pr-14' : ''
-                }`}>
+                }`}
+              >
                 <div
                   className={`flex items-center justify-center w-full h-full skew-x-12 ${
                     selectedMenu === index ? 'bg-[#FFFEF8]' : 'bg-[#FAF4E5]'
                   }`}
-                  onClick={() => setSelectedMenu(index)}>
+                  onClick={() => setSelectedMenu(index)}
+                >
                   <span
                     className={`font-manrope text-xl text-center -skew-x-12 ${
                       selectedMenu === index
                         ? 'font-bold text-[#272940]'
                         : 'font-medium text-[#272940]/50'
-                    }`}>
+                    }`}
+                  >
                     {menu.name}
                   </span>
                 </div>
@@ -232,10 +237,12 @@ export const FillingStats = () => {
             as="div"
             className="md:hidden relative z-30"
             value={menus[selectedMenu]}
-            onChange={(value) => setSelectedMenu(value.id - 1)}>
+            onChange={(value) => setSelectedMenu(value.id - 1)}
+          >
             <Listbox.Button
               as="div"
-              className="flex flex-row items-center bg-[#FDFBF5] hover:opacity-50 cursor-pointer">
+              className="flex flex-row items-center bg-[#FDFBF5] hover:opacity-50 cursor-pointer"
+            >
               <div className="w-full flex flex-row items-center justify-center py-[10px] pl-6 sm:py-6 sm:pl-14 gap-6">
                 <span className="font-manrope font-bold text-xs sm:text-2xl text-[#272940]">
                   {menus[selectedMenu].title}
@@ -247,13 +254,15 @@ export const FillingStats = () => {
             </Listbox.Button>
             <Listbox.Options
               as="div"
-              className="absolute top-14 sm:top-20 left-0 w-full flex flex-col items-center justify-center p-5 gap-[10px] pr-12 sm:gap-6 sm:py-6 sm:pr-7 cursor-pointer bg-[#FDFBF5]">
+              className="absolute top-14 sm:top-20 left-0 w-full flex flex-col items-center justify-center p-5 gap-[10px] pr-12 sm:gap-6 sm:py-6 sm:pr-7 cursor-pointer bg-[#FDFBF5]"
+            >
               {menus.map((menu) => (
                 <Listbox.Option
                   as="div"
                   key={menu.id}
                   value={menu}
-                  className="cursor-pointer">
+                  className="cursor-pointer"
+                >
                   <span className="font-manrope font-medium text-xs sm:text-2xl text-[#272940]">
                     {menu.title}
                   </span>
@@ -263,7 +272,8 @@ export const FillingStats = () => {
           </Listbox>
           <div
             className="relative w-full flex flex-col bg-cover gap-48 md:gap-40"
-            style={{ backgroundImage: `url(${menus[selectedMenu].image})` }}>
+            style={{ backgroundImage: `url(${menus[selectedMenu].image})` }}
+          >
             <div className="flex flex-col pt-60 md:pt-64 px-20 md:px-80 gap-4 sm:gap-8 md:gap-6">
               <div className="flex flex-col items-center justify-center">
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-[64px] text-white whitespace-nowrap">
@@ -313,7 +323,8 @@ export const FillingStats = () => {
                   style={{
                     transform: 'matrix(-1, 0, 0, 1, 0, 0)',
                   }}
-                  onClick={prevMenuSlide}>
+                  onClick={prevMenuSlide}
+                >
                   <MdKeyboardArrowLeft
                     size={32}
                     color="#E6E6E6"
@@ -325,7 +336,8 @@ export const FillingStats = () => {
                   style={{
                     transform: 'matrix(-1, 0, 0, 1, 0, 0)',
                   }}
-                  onClick={nextMenuSlide}>
+                  onClick={nextMenuSlide}
+                >
                   <MdKeyboardArrowRight
                     size={32}
                     color="#E6E6E6"
@@ -369,7 +381,8 @@ export const FillingStats = () => {
                   <div
                     key={brand.id}
                     className="w-1/3 flex justify-center items-center cursor-pointer"
-                    onClick={() => setSelectedBrand(index)}>
+                    onClick={() => setSelectedBrand(index)}
+                  >
                     <Image
                       alt=""
                       key={brand.id}
@@ -386,7 +399,8 @@ export const FillingStats = () => {
               <div className="md:hidden w-full flex flex-row justify-center items-center py-6 sm:py-14 gap-8">
                 <div
                   className="w-1/3 flex flex-row justify-center items-center px-6 py-11 gap-6 hover:opacity-50 cursor-pointer"
-                  onClick={prevBrandSlide}>
+                  onClick={prevBrandSlide}
+                >
                   <MdKeyboardArrowRight
                     size={19}
                     color="black"
@@ -403,7 +417,8 @@ export const FillingStats = () => {
                 </div>
                 <div
                   className="w-1/3 flex flex-row justify-center items-center px-6 py-11 gap-6 hover:opacity-50 cursor-pointer"
-                  onClick={nextBrandSlide}>
+                  onClick={nextBrandSlide}
+                >
                   <MdKeyboardArrowLeft
                     size={19}
                     color="black"
@@ -413,17 +428,20 @@ export const FillingStats = () => {
               </div>
               <div
                 ref={projectsRef}
-                className="w-full flex flex-row overflow-x-auto py-[60px] gap-[60px] bg-[#FBF8F1]">
+                className="w-full flex flex-row overflow-x-auto py-[60px] gap-[60px] bg-[#FBF8F1]"
+              >
                 {projects.map((project, index) => (
                   <div
                     key={project.id}
                     ref={selectedProject === index ? projectRef : null}
                     className={`w-1/3 md:w-1/4 flex flex-shrink-0 items-center justify-center cursor-pointer`}
-                    onClick={() => setSelectedProject(index)}>
+                    onClick={() => setSelectedProject(index)}
+                  >
                     <span
                       className={`font-lora font-medium sm:text-2xl md:text-3xl xltext-[32px] leading-10 whitespace-nowrap ${
                         selectedProject === index ? 'opacity-100' : 'opacity-50'
-                      }`}>
+                      }`}
+                    >
                       {project.name}
                     </span>
                   </div>
@@ -444,10 +462,12 @@ export const FillingStats = () => {
                       })`,
                       borderRadius: '2px',
                       backgroundSize: 'cover !important',
-                    }}>
+                    }}
+                  >
                     <div
                       className="w-8 h-8 sm:w-[72px] sm:h-[72px] md:w-32 md:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
-                      onClick={prevProjectSlide}>
+                      onClick={prevProjectSlide}
+                    >
                       <MdKeyboardArrowLeft
                         size={48}
                         className="w-4 h-4 md:w-12 md:h-12"
@@ -473,10 +493,12 @@ export const FillingStats = () => {
                         ].image
                       })`,
                       borderRadius: '2px',
-                    }}>
+                    }}
+                  >
                     <div
                       className="w-8 h-8 sm:w-[72px] sm:h-[72px] md:w-32 md:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
-                      onClick={nextProjectSlide}>
+                      onClick={nextProjectSlide}
+                    >
                       <MdKeyboardArrowRight
                         size={48}
                         className="w-4 h-4 md:w-12 md:h-12"
@@ -554,7 +576,8 @@ export const FillingStats = () => {
                 <div className="flex flex-row items-center justify-center h-full col-span-1 bg-[#FBF8F1] backdrop-blur-lg hover:opacity-50 cursor-pointer">
                   <div
                     className="flex flex-col justify-center items-center hover:opacity-50 cursor-pointer"
-                    onClick={prevProjectSlide}>
+                    onClick={prevProjectSlide}
+                  >
                     <MdKeyboardArrowLeft
                       className="w-2 h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
                       color="black"
@@ -563,7 +586,8 @@ export const FillingStats = () => {
                 </div>
                 <div
                   className="h-full flex flex-col justify-center items-center cursor-pointer hover:opacity-50"
-                  onClick={nextProjectSlide}>
+                  onClick={nextProjectSlide}
+                >
                   <MdKeyboardArrowRight
                     className="w-2 h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
                     color="black"

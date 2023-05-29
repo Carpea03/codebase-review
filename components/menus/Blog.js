@@ -30,18 +30,19 @@ export default function Blog() {
       className="w-full bg-[#FFFEFD]"
       style={{
         filter: 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15))',
-      }}>
+      }}
+    >
       <div className="container max-w-[1440px] mx-auto">
         <Tab.Group
           as="div"
-          className="flex flex-col md:flex-row justify-center">
+          className="flex flex-col md:flex-row justify-center"
+        >
           <Tab.List
             as="div"
-            className="hidden md:flex flex-col justify-start w-[30%]">
+            className="hidden md:flex flex-col justify-start w-[30%]"
+          >
             {sideMenus.map((sideMenu, i) => (
-              <Link
-                key={i}
-                href={sideMenu.href}>
+              <Link key={i} href={sideMenu.href}>
                 <Tab
                   key={sideMenu.id}
                   className={({ selected }) =>
@@ -51,7 +52,8 @@ export default function Blog() {
                         ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                         : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
                     )
-                  }>
+                  }
+                >
                   <Image
                     src={sideMenu.img}
                     size={16}
@@ -68,7 +70,8 @@ export default function Blog() {
           </Tab.List>
           <Tab.Panels
             as="div"
-            className="flex flex-col w-full md:w-[70%] pb-12">
+            className="flex flex-col w-full md:w-[70%] pb-12"
+          >
             {panels.map((item, index) => (
               <Tab.Panel key={index}>
                 <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">

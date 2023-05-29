@@ -13,7 +13,8 @@ export default function TradeMarks({ menus = [] }) {
             className={`flex-1 flex-col items-center p-6 cursor-pointer ${
               selectedMenu === index ? 'border-b-4 border-[#8C79D9]' : ''
             }`}
-            onClick={() => setSelectedMenu(index)}>
+            onClick={() => setSelectedMenu(index)}
+          >
             <span className="font-manrope font-semibold text-xl text-[#404266] whitespace-nowrap">
               {menu.title}
             </span>

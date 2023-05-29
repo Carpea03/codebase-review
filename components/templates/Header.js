@@ -49,7 +49,8 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                           open
                             ? 'font-bold text-[#272940]'
                             : 'font-medium text-[#7A7B94]'
-                        )}>
+                        )}
+                      >
                         {active === menu.name ? (
                           <span className="font-bold text-[#272940]">
                             {menu.name}
@@ -66,7 +67,8 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                         leave="transition ease duration-300 transform"
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-84"
-                        className="absolute top-[84px] left-0 right-0 mx-auto w-full">
+                        className="absolute top-[84px] left-0 right-0 mx-auto w-full"
+                      >
                         <Popover.Panel
                           as="div"
                           // className="absolute top-[85px] left-0 right-0 mx-auto w-full"
@@ -91,10 +93,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
           <div className="flex justify-between items-center gap-16 2xl:gap-[70px]">
             <div className="flex items-center w-full h-14 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
               <div className="grid place-items-center h-full w-12 text-gray-300">
-                <Search
-                  color="#404266"
-                  size={24}
-                />
+                <Search color="#404266" size={24} />
               </div>
               <input
                 className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none"
@@ -104,9 +103,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
               />
             </div>
             <div className="flex flex-row justify-start items-center h-11 w-full">
-              <Listbox
-                value={selectedLanguage}
-                onChange={setSelectedLanguage}>
+              <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
                 <Listbox.Button className="flex flex-row justify-start items-center gap-3">
                   <p className="font-manrope text-xs font-normal text-[#404246]">
                     {selectedLanguage.name}
@@ -117,10 +114,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                     width={24}
                     height={24}
                   />
-                  <MdArrowDropDown
-                    size={16}
-                    color="black"
-                  />
+                  <MdArrowDropDown size={16} color="black" />
                 </Listbox.Button>
                 {/* <Listbox.Options>
                   {langList.map((lang) => (
@@ -160,18 +154,12 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
         <Logo />
         <Popover as="div">
           <Popover.Button className="outline-none">
-            <FiMenu
-              size={24}
-              className="cursor-pointer"
-            />
+            <FiMenu size={24} className="cursor-pointer" />
           </Popover.Button>
 
           <Popover.Panel className="absolute left-0 right-0 bottom-0 top-[67px] mx-auto flex flex-col justify-start items-start w-full z-20">
             {menus.map((menu) => (
-              <Disclosure
-                key={menu.id}
-                as="div"
-                className="w-full">
+              <Disclosure key={menu.id} as="div" className="w-full">
                 <Disclosure.Button
                   as="div"
                   className={({ open }) =>
@@ -184,7 +172,8 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                   }
                   style={{
                     boxShadow: '0px 5px 10px rgba(64, 76, 89, 0.05)',
-                  }}>
+                  }}
+                >
                   <span className="font-manrope font-medium text-sm text-[#7A7B94] pl-12 py-4">
                     {menu.name}
                   </span>

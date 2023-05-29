@@ -34,19 +34,19 @@ export default function Page() {
           hrefLang="zh"
         />
       </Head>
-      <nav
-        className="flex !pl-0"
-        aria-label="Breadcrumb">
+      <nav className="flex !pl-0" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
               href="/"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
             </Link>
@@ -54,17 +54,20 @@ export default function Page() {
           <li aria-current="page">
             <Link
               href="/ip-attorney"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <div className="flex items-center">
                 <svg
                   className="w-6 h-6 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
                 <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                   Our patent & trade mark attorneys
@@ -78,11 +81,13 @@ export default function Page() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 Joanne Li
@@ -94,9 +99,7 @@ export default function Page() {
       <h1>Joanne Li</h1>
       <p>Associate, Trade Mark Attorney, International Filings Manager</p>
       <div className="text-sm">
-        <Link
-          href="mailto:joanne.li@baxterip.com.au"
-          className="text-xs">
+        <Link href="mailto:joanne.li@baxterip.com.au" className="text-xs">
           joanne.li@baxterip.com.au
         </Link>
         <br />
@@ -176,14 +179,16 @@ export default function Page() {
         <Link
           href="https://www.uq.edu.au/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           University of Queensland
         </Link>{' '}
         and her internship with{' '}
         <Link
           href="https://uniquest.com.au/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           UniQuest
         </Link>
         , the IP and research commercialisation arm of UQ. She then decided to
@@ -251,7 +256,8 @@ export default function Page() {
           <Link
             href="https://www.uq.edu.au/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             University of Queensland
           </Link>
         </li>
@@ -260,7 +266,8 @@ export default function Page() {
           <Link
             href="https://uniquest.com.au/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             UniQuest
           </Link>
         </li>
@@ -269,7 +276,8 @@ export default function Page() {
           <Link
             href="https://www.uts.edu.au/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             University of Technology Sydney
           </Link>
         </li>
@@ -278,7 +286,8 @@ export default function Page() {
           <Link
             href="https://iie-en.gdufs.edu.cn/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             Guangdong University of Foreign Studies, China
           </Link>
         </li>

@@ -34,7 +34,8 @@ export default function ContactUs() {
         style={{
           background:
             'linear-gradient(107.1deg, #61638D -31.76%, #343652 96.53%)',
-        }}>
+        }}
+      >
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-col">
             <span className="uppercase font-manrope font-bold text-lg xl:text-xl text-white/50">
@@ -48,7 +49,8 @@ export default function ContactUs() {
           </div>
           <div
             className="flex justify-center items-center bg-[#4C4F76] rounded-sm w-[250px] xl:w-[354px] h-[87px] py-6 px-8 cursor-pointer"
-            onClick={handleContactUs}>
+            onClick={handleContactUs}
+          >
             <span className="grow text-center font-manrope font-semibold text-xl text-white">
               Contact Us
             </span>
@@ -62,7 +64,8 @@ export default function ContactUs() {
         <div
           className={`flex flex-col gap-8 ${
             !showContactUs ? 'hidden' : 'flex'
-          }`}>
+          }`}
+        >
           <div className="flex flex-row justify-start md:gap-4 xl:gap-[100px]">
             <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
               <Image
@@ -172,7 +175,8 @@ export default function ContactUs() {
           <Link href="/contact-us">
             <div
               className="flex flex-col justify-center items-center h-[88px] bg-[#816BD9] rounded-sm"
-              style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}>
+              style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}
+            >
               <span className="font-manrope font-semibold text-xl text-white">
                 Send us an enquiry
               </span>
@@ -186,7 +190,8 @@ export default function ContactUs() {
           style={{
             background:
               'linear-gradient(107.1deg, #61638D -31.76%, #343652 96.53%)',
-          }}>
+          }}
+        >
           <span className="font-manrope font-bold text-xs sm:text-2xl text-white/50">
             Contact us
           </span>
@@ -199,11 +204,13 @@ export default function ContactUs() {
           style={{
             background:
               'linear-gradient(134.74deg, #61638D -209.59%, #343652 65.05%)',
-          }}>
+          }}
+        >
           <div className="flex flex-col items-start w-full">
             <div
               className="flex flex-row items-center w-full px-12 py-6 sm:px-[107px] sm:py-5 border-b-[3px] border-white/30 opacity-80 cursor-pointer"
-              onClick={handleMetaOffice}>
+              onClick={handleMetaOffice}
+            >
               <div className="flex flex-row items-center gap-6 w-full">
                 <Image
                   alt=""
@@ -228,7 +235,8 @@ export default function ContactUs() {
             <div
               className={`relative flex flex-wrap ${
                 showMetaOffice ? 'flex' : 'hidden'
-              }`}>
+              }`}
+            >
               <Image
                 alt=""
                 src="/contactus/office-1.png"
@@ -252,7 +260,8 @@ export default function ContactUs() {
           <div className="flex flex-col items-start w-full">
             <div
               className="flex flex-row items-center w-full py-5 px-12 sm:px-[107px] sm:py-5 border-b-[3px] border-white/30 opacity-80 cursor-pointer"
-              onClick={handleCallUs}>
+              onClick={handleCallUs}
+            >
               <div className="flex flex-row items-center gap-6 w-full">
                 <Image
                   alt=""
@@ -278,7 +287,8 @@ export default function ContactUs() {
           <div
             className={`flex flex-col items-start py-5 px-12 sm:px-28 sm:py-11 w-full gap-6 ${
               showCallUs ? 'flex' : 'hidden'
-            }`}>
+            }`}
+          >
             <div className="flex flex-col items-start gap-[10px]">
               <span className="font-manrope font-semibold text-sm sm:text-xl text-white">
                 Patent & Trade Mark Office
@@ -313,7 +323,8 @@ export default function ContactUs() {
           <div className="flex flex-col items-start w-full">
             <div
               className="flex flex-row items-center w-full py-5 px-12 sm:px-[107px] border-b-[3px] border-white/30 opacity-80 cursor-pointer"
-              onClick={handleEmailUs}>
+              onClick={handleEmailUs}
+            >
               <div className="flex flex-row items-center gap-6 w-full">
                 <Image
                   alt=""
@@ -338,7 +349,8 @@ export default function ContactUs() {
             <div
               className={`flex flex-col items-start py-5 px-12 sm:px-[107px] gap-6 opacity-80 w-full ${
                 showEmailUs ? 'flex' : 'hidden'
-              }`}>
+              }`}
+            >
               <div className="flex flex-col items-start gap-[10px]">
                 <span className="font-manrope font-semibold text-sm sm:text-xl text-white">
                   Baxter IP
@@ -357,7 +369,8 @@ export default function ContactUs() {
             <div className="flex flex-col px-12 py-5 sm:px-[107px] sm:py-11 gap-[10px] w-full cursor-pointer hover:opacity-80">
               <div
                 className="flex flex-col justify-center items-center bg-[#816BD9] rounded-sm px-6 py-3 sm:px-14 sm:py-6"
-                style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}>
+                style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}
+              >
                 <span className="font-manrope font-semibold text-xs sm:text-2xl text-white">
                   Send us an enquiry
                 </span>

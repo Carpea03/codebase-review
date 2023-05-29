@@ -70,13 +70,15 @@ export default function Index() {
           <div
             style={{
               background: 'rgba(64, 66, 102, 0.7)',
-            }}>
+            }}
+          >
             <div
               className="flex flex-col items-center gap-4 px-8 md:px-56 py-28 sm:py-80 md:py-36"
               style={{
                 background:
                   'linear-gradient(180deg, rgba(255, 206, 79, 0) 0%, rgba(255, 206, 79, 0.4) 100%)',
-              }}>
+              }}
+            >
               <span className="uppercase font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#FFCE4F] text-center">
                 Services
               </span>
@@ -107,7 +109,8 @@ export default function Index() {
                     ? 'polygon(0 0,100% 0, 100% 100%, 5% 100%)'
                     : 'polygon(0 0,95% 0, 100% 100%, 5% 100%)',
               }}
-              onClick={() => setSelectedMenu(index)}>
+              onClick={() => setSelectedMenu(index)}
+            >
               <Image
                 src={menu.icon}
                 width={32}
@@ -125,10 +128,12 @@ export default function Index() {
           as="div"
           className="md:hidden relative z-30"
           value={menus[selectedMenu]}
-          onChange={(value) => setSelectedMenu(value.id - 1)}>
+          onChange={(value) => setSelectedMenu(value.id - 1)}
+        >
           <Listbox.Button
             as="div"
-            className="flex flex-row items-center bg-[#FDFBF5] hover:opacity-50 outline-none hover:outline-none cursor-pointer">
+            className="flex flex-row items-center bg-[#FDFBF5] hover:opacity-50 outline-none hover:outline-none cursor-pointer"
+          >
             <div className="w-full flex flex-row items-center justify-center py-[10px] pl-6 sm:py-6 sm:pl-14 gap-6">
               <Image
                 src={menus[selectedMenu].icon}
@@ -147,13 +152,15 @@ export default function Index() {
           </Listbox.Button>
           <Listbox.Options
             as="div"
-            className="absolute top-14 sm:top-20 left-0 w-full flex flex-col items-center justify-center p-5 gap-[10px] pr-12 sm:gap-6 sm:py-6 sm:pr-7 cursor-pointer bg-[#FDFBF5]">
+            className="absolute top-14 sm:top-20 left-0 w-full flex flex-col items-center justify-center p-5 gap-[10px] pr-12 sm:gap-6 sm:py-6 sm:pr-7 cursor-pointer bg-[#FDFBF5]"
+          >
             {menus.map((menu) => (
               <Listbox.Option
                 as="div"
                 key={menu.id}
                 value={menu}
-                className="cursor-pointer">
+                className="cursor-pointer"
+              >
                 <span className="font-manrope font-medium text-xs sm:text-2xl text-[#272940]">
                   {menu.title}
                 </span>
@@ -165,7 +172,8 @@ export default function Index() {
           className="flex flex-col items-start rounded-lg px-8 md:px-20 xl:px-32 2xl:px-56 sm:pt-12 pb-[107px]"
           style={{
             filter: 'drop-shadow(0px 5px 17px rgba(64, 76, 89, 0.06))',
-          }}>
+          }}
+        >
           {selectedMenu === 0 && <Patents menus={menus[0].submenus} />}
           {selectedMenu === 1 && <TradeMarks menus={menus[1].submenus} />}
         </div>
@@ -174,7 +182,8 @@ export default function Index() {
           style={{
             background:
               'linear-gradient(177.97deg, rgba(255, 254, 248, 0) 4.08%, rgba(255, 217, 115, 0.4) 98.05%)',
-          }}>
+          }}
+        >
           <NewsBlog data={news} />
         </div>
       </Container>

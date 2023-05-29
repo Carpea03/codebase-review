@@ -43,7 +43,8 @@ export default function HeroBanner() {
                   style={{
                     boxShadow:
                       '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                  }}>
+                  }}
+                >
                   <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
                     <HiPhone
                       className="w-[9px] h-[9px] sm:w-5 sm:h-5"
@@ -63,7 +64,8 @@ export default function HeroBanner() {
                   style={{
                     boxShadow:
                       '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                  }}>
+                  }}
+                >
                   <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
                     <IoArrowForwardOutline
                       className="w-3 h-3 sm:w-5 sm:h-5 md:w-4 md:h-4"

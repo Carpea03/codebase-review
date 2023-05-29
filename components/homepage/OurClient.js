@@ -30,7 +30,8 @@ export const OurClient = () => {
           style={{
             background:
               'linear-gradient(176.69deg, #FFFEF8 21.12%, #FFBF15 139.62%)',
-          }}>
+          }}
+        >
           {/** brands container */}
           <div className="flex flex-col items-start py-12 sm:pb-24 md:py-16">
             <div className="grid grid-cols-3 gap-1 sm:gap-3 md:gap-5 w-full items-center justify-center">
@@ -41,7 +42,8 @@ export const OurClient = () => {
                   style={{
                     boxShadow:
                       '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                  }}>
+                  }}
+                >
                   <Image
                     alt=""
                     src={brand.src}
@@ -74,7 +76,8 @@ export const OurClient = () => {
                 style={{
                   filter:
                     'drop-shadow(0px 56px 114px rgba(150, 151, 169, 0.17)) drop-shadow(0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338)) drop-shadow(0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618)) drop-shadow(0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948))',
-                }}>
+                }}
+              >
                 <div className="flex flex-row items-center w-4 h-4 sm:w-[60px] sm:h-[60px]">
                   <Image
                     src="/ipNewsBlog/nicole.png"

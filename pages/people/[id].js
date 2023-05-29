@@ -156,13 +156,15 @@ export default function People({ item }) {
           <div
             style={{
               background: 'rgba(64, 66, 102, 0.7)',
-            }}>
+            }}
+          >
             <div
               className="flex flex-col items-start gap-4"
               style={{
                 background:
                   'linear-gradient(180deg, rgba(255, 206, 79, 0) 0%, rgba(255, 206, 79, 0.4) 100%)',
-              }}>
+              }}
+            >
               <div className="flex flex-col items-center justify-center px-4 sm:px-32 md:px-24 xl:px-40 2xl:px-[283px] gap-4 h-[510px] sm:h-[710px] md:h-[553px] w-full">
                 <span className="font-manrope font-bold text-base sm:text-[32px] sm:leading-[44px] md:text-xl uppercase text-[#FFCE4F]">
                   People
@@ -188,7 +190,8 @@ export default function People({ item }) {
                     ? 'polygon(0 0, 98% 0, 100% 100%, 0 100%)'
                     : 'polygon(0 0, 100% 0, 100% 100%, 2% 100%)',
               }}
-              onClick={() => setSelectedMenu(index)}>
+              onClick={() => setSelectedMenu(index)}
+            >
               {selectedMenu === index ? (
                 <HiLocationMarker
                   fill="#7568D1"
@@ -207,7 +210,8 @@ export default function People({ item }) {
               <span
                 className={`font-manrope font-semibold text-xs sm:text-2xl ${
                   selectedMenu == index ? 'text-[#272940]' : 'text-[#272940]/50'
-                }`}>
+                }`}
+              >
                 {people.teamName}
               </span>
             </div>
@@ -221,13 +225,9 @@ export default function People({ item }) {
               style={{
                 boxShadow:
                   '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-              }}>
-              <Image
-                src={teamMember.url}
-                width={300}
-                height={300}
-                alt=""
-              />
+              }}
+            >
+              <Image src={teamMember.url} width={300} height={300} alt="" />
               <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
                 <div>
                   <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
@@ -238,7 +238,8 @@ export default function People({ item }) {
                   {teamMember.positions.map((position, index) => (
                     <span
                       key={index}
-                      className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]">
+                      className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
+                    >
                       {position}
                     </span>
                   ))}
@@ -255,12 +256,14 @@ export default function People({ item }) {
             <Link href="/contact-us">
               <Button
                 className="w-40 h-11 sm:w-[313px] md:w-[353px] sm:h-24"
-                title="Contact Us">
+                title="Contact Us"
+              >
                 <div
                   className="flex flex-row items-center justify-center w-6 h-6 sm:w-14 sm:h-14 md:h-12 md:w-12 bg-white rounded-full"
                   style={{
                     boxShadow: '1px 7px 16px rgba(44, 44, 44, 0.15)',
-                  }}>
+                  }}
+                >
                   <HiPhone
                     className="w-[9px] h-[9px] sm:w-5 sm:h-5"
                     color="#404266"

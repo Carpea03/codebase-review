@@ -27,7 +27,8 @@ export default function CardCta() {
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 32 32"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M24.5199 12.9424C24.4458 13.4528 24.1092 14.1463 23.723 14.7492C23.2358 15.51 22.4627 16.0428 21.5779 16.2278L17.6802 17.0429C17.0537 17.1739 16.4857 17.5017 16.0592 17.9785L13.5035 20.8352C13.0232 21.3721 12.6875 21.244 12.6875 20.5239C12.6817 20.5506 11.4191 23.8067 14.7651 25.7366C16.0507 26.4782 17.9013 26.2117 19.1869 25.4702L25.9988 21.5411C28.5463 20.0717 30.345 17.5859 30.9428 14.7084C30.9665 14.5946 30.9848 14.4803 31.0045 14.3662L24.5199 12.9424Z"
                     fill="url(#paint0_linear_4151_62980)"
@@ -71,12 +72,10 @@ export default function CardCta() {
                       y1="23.7696"
                       x2="23.2079"
                       y2="12.8065"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#1724C9" />
-                      <stop
-                        offset="1"
-                        stopColor="#1C64F2"
-                      />
+                      <stop offset="1" stopColor="#1C64F2" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_4151_62980"
@@ -84,12 +83,10 @@ export default function CardCta() {
                       y1="10.4001"
                       x2="19.0297"
                       y2="2.14962"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#1C64F2" />
-                      <stop
-                        offset="1"
-                        stopColor="#0092FF"
-                      />
+                      <stop offset="1" stopColor="#0092FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint2_linear_4151_62980"
@@ -97,12 +94,10 @@ export default function CardCta() {
                       y1="5.0209"
                       x2="3.67407"
                       y2="5.81015"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#0092FF" />
-                      <stop
-                        offset="1"
-                        stopColor="#45B2FF"
-                      />
+                      <stop offset="1" stopColor="#45B2FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint3_linear_4151_62980"
@@ -110,12 +105,10 @@ export default function CardCta() {
                       y1="28.6624"
                       x2="26.5369"
                       y2="25.6356"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#1C64F2" />
-                      <stop
-                        offset="1"
-                        stopColor="#0092FF"
-                      />
+                      <stop offset="1" stopColor="#0092FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint4_linear_4151_62980"
@@ -123,12 +116,10 @@ export default function CardCta() {
                       y1="15.6825"
                       x2="15.2317"
                       y2="23.9345"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#1724C9" />
-                      <stop
-                        offset="1"
-                        stopColor="#1C64F2"
-                      />
+                      <stop offset="1" stopColor="#1C64F2" />
                     </linearGradient>
                     <linearGradient
                       id="paint5_linear_4151_62980"
@@ -136,12 +127,10 @@ export default function CardCta() {
                       y1="21.6353"
                       x2="31.0061"
                       y2="10.4342"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#0092FF" />
-                      <stop
-                        offset="1"
-                        stopColor="#45B2FF"
-                      />
+                      <stop offset="1" stopColor="#45B2FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint6_linear_4151_62980"
@@ -149,12 +138,10 @@ export default function CardCta() {
                       y1="9.13067"
                       x2="2.39054"
                       y2="20.3063"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#1C64F2" />
-                      <stop
-                        offset="1"
-                        stopColor="#0092FF"
-                      />
+                      <stop offset="1" stopColor="#0092FF" />
                     </linearGradient>
                     <linearGradient
                       id="paint7_linear_4151_62980"
@@ -162,12 +149,10 @@ export default function CardCta() {
                       y1="8.59912"
                       x2="9.6778"
                       y2="11.3044"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#1724C9" />
-                      <stop
-                        offset="1"
-                        stopColor="#1C64F2"
-                      />
+                      <stop offset="1" stopColor="#1C64F2" />
                     </linearGradient>
                     <linearGradient
                       id="paint8_linear_4151_62980"
@@ -175,12 +160,10 @@ export default function CardCta() {
                       y1="21.3563"
                       x2="13.3327"
                       y2="31.7743"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#0092FF" />
-                      <stop
-                        offset="1"
-                        stopColor="#45B2FF"
-                      />
+                      <stop offset="1" stopColor="#45B2FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -191,11 +174,13 @@ export default function CardCta() {
                   className="ml-3 w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
               </div>
             </Link>
@@ -205,7 +190,8 @@ export default function CardCta() {
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 22 31"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g clipPath="url(#clip0_4151_63004)">
                     <path
                       d="M5.50085 30.1242C8.53625 30.1242 10.9998 27.8749 10.9998 25.1035V20.0828H5.50085C2.46546 20.0828 0.00195312 22.332 0.00195312 25.1035C0.00195312 27.8749 2.46546 30.1242 5.50085 30.1242Z"
@@ -246,11 +232,13 @@ export default function CardCta() {
                   className="ml-3 w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
               </div>
             </Link>
@@ -260,7 +248,8 @@ export default function CardCta() {
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 26 31"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g clipPath="url(#clip0_4151_62985)">
                     <path
                       d="M25.7689 0.901322L15.1763 3.49437C15.0758 3.51776 14.9717 3.52086 14.87 3.50352C14.7683 3.48617 14.6711 3.44871 14.5841 3.39335L9.57667 0.121964C9.48513 0.0624589 9.38179 0.0234753 9.27373 0.00769593C9.16568 -0.00808342 9.05549 -0.000283916 8.95074 0.0305577L0.284074 2.58031C0.204603 2.59938 0.133665 2.64415 0.0822909 2.70766C0.030917 2.77117 0.001987 2.84986 0 2.9315L0 8.11761L8.95074 5.48607C9.05549 5.45522 9.16568 5.44743 9.27373 5.4632C9.38179 5.47898 9.48513 5.51797 9.57667 5.57747L14.5841 8.84404C14.6701 8.90151 14.7674 8.94022 14.8694 8.95762C14.9715 8.97503 15.076 8.97075 15.1763 8.94507L26 6.2991V1.07451C25.9987 1.02559 25.9784 0.979095 25.9433 0.944943C25.9082 0.91079 25.8612 0.891685 25.8122 0.891701L25.7689 0.901322Z"
@@ -315,11 +304,13 @@ export default function CardCta() {
                   className="ml-3 w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
               </div>
             </Link>
@@ -329,7 +320,8 @@ export default function CardCta() {
                   className="mr-3 w-5 h-5"
                   viewBox="0 0 33 21"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M16.5 0.224121C12.1 0.224121 9.34996 2.42416 8.25 6.82412C9.9 4.62408 11.825 3.79908 14.025 4.34912C15.2802 4.66288 16.1773 5.5736 17.1704 6.58152C18.7882 8.22366 20.6604 10.1241 24.75 10.1241C29.15 10.1241 31.9 7.92408 33 3.52412C31.35 5.72416 29.425 6.54916 27.225 5.99912C25.9698 5.68536 25.0727 4.77464 24.0796 3.76672C22.4618 2.12459 20.5896 0.224121 16.5 0.224121ZM8.25 10.1241C3.85004 10.1241 1.09996 12.3242 0 16.7241C1.65 14.5241 3.57496 13.6991 5.775 14.2491C7.03016 14.5629 7.92735 15.4736 8.92044 16.4815C10.5382 18.1237 12.4104 20.0241 16.5 20.0241C20.9 20.0241 23.65 17.8241 24.75 13.4241C23.1 15.6242 21.175 16.4492 18.975 15.8991C17.7198 15.5854 16.8227 14.6746 15.8296 13.6667C14.2118 12.0246 12.3396 10.1241 8.25 10.1241Z"
                     fill="url(#paint0_linear_4151_63014)"
@@ -341,12 +333,10 @@ export default function CardCta() {
                       y1="6.56015"
                       x2="27.5845"
                       y2="22.9931"
-                      gradientUnits="userSpaceOnUse">
+                      gradientUnits="userSpaceOnUse"
+                    >
                       <stop stopColor="#2298BD" />
-                      <stop
-                        offset="1"
-                        stopColor="#0ED7B5"
-                      />
+                      <stop offset="1" stopColor="#0ED7B5" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -357,11 +347,13 @@ export default function CardCta() {
                   className="ml-3 w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
               </div>
             </Link>

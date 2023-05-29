@@ -92,7 +92,8 @@ export default function IpNewsBlog() {
           className="sm:bg-cover sm:bg-center bg-cover bg-center"
           style={{
             backgroundImage: `url(${slides[currentSlideIndex].url})`,
-          }}>
+          }}
+        >
           <div className="flex flex-col items-center gap-12 px-12 py-24 sm:px-24 sm:py-56 md:py-64">
             <div className="flex flex-col justify-center items-center gap-5">
               <div className="flex flex-row gap-3">
@@ -127,7 +128,8 @@ export default function IpNewsBlog() {
           <div
             className="w-12 h-12 sm:w-[106px] sm:h-[106px] md:w-40 md:h-40 backdrop-blur-xl bg-gray-800 flex justify-center items-center cursor-pointer hover:opacity-80"
             style={{ background: 'rgba(0, 0, 0, 0.2)' }}
-            onClick={prevSlide}>
+            onClick={prevSlide}
+          >
             <MdKeyboardArrowRight
               className="w-2 h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
               color="#E6E6E6"
@@ -137,7 +139,8 @@ export default function IpNewsBlog() {
           <div
             className="w-12 h-12 sm:w-[106px] sm:h-[106px] md:w-40 md:h-40 backdrop-blur-xl bg-gray-800 flex justify-center items-center cursor-pointer hover:opacity-80"
             style={{ background: 'rgba(0, 0, 0, 0.2)' }}
-            onClick={nextSlide}>
+            onClick={nextSlide}
+          >
             <MdKeyboardArrowLeft
               className="w-2 h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
               color="#E6E6E6"

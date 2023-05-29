@@ -51,13 +51,15 @@ export default function AboutUs() {
           <div
             style={{
               background: 'rgba(64, 66, 102, 0.7)',
-            }}>
+            }}
+          >
             <div
               className="flex flex-col items-start gap-4"
               style={{
                 background:
                   'linear-gradient(180deg, rgba(255, 206, 79, 0) 0%, rgba(255, 206, 79, 0.4) 100%)',
-              }}>
+              }}
+            >
               <div className="flex flex-col items-center justify-center px-4 sm:px-32 md:px-24 xl:px-40 2xl:px-[283px] gap-4 h-[510px] sm:h-[710px] md:h-[553px] w-full">
                 <span className="font-manrope font-bold text-base sm:text-[32px] sm:leading-[44px] md:text-xl tracking-wide uppercase text-[#FFCE4F]">
                   ABOUT US
@@ -86,7 +88,8 @@ export default function AboutUs() {
                     ? 'polygon(0 0,100% 0, 100% 100%, 5% 100%)'
                     : 'polygon(0 0,95% 0, 100% 100%, 5% 100%)',
               }}
-              onClick={() => setSelectedMenu(index)}>
+              onClick={() => setSelectedMenu(index)}
+            >
               <Image
                 src={menu.icon}
                 width={32}
@@ -104,10 +107,12 @@ export default function AboutUs() {
           as="div"
           className="md:hidden relative z-30"
           value={menus[selectedMenu]}
-          onChange={(value) => setSelectedMenu(value.id - 1)}>
+          onChange={(value) => setSelectedMenu(value.id - 1)}
+        >
           <Listbox.Button
             as="div"
-            className="flex flex-row items-center bg-[#FDFBF5] hover:opacity-50 outline-none hover:outline-none cursor-pointer">
+            className="flex flex-row items-center bg-[#FDFBF5] hover:opacity-50 outline-none hover:outline-none cursor-pointer"
+          >
             <div className="w-full flex flex-row items-center justify-center py-[10px] pl-6 sm:py-6 sm:pl-14 gap-6">
               <Image
                 src={menus[selectedMenu].icon}
@@ -126,13 +131,15 @@ export default function AboutUs() {
           </Listbox.Button>
           <Listbox.Options
             as="div"
-            className="absolute top-14 sm:top-20 left-0 w-full flex flex-col items-center justify-center p-5 gap-[10px] pr-12 sm:gap-6 sm:py-6 sm:pr-7 cursor-pointer bg-[#FDFBF5]">
+            className="absolute top-14 sm:top-20 left-0 w-full flex flex-col items-center justify-center p-5 gap-[10px] pr-12 sm:gap-6 sm:py-6 sm:pr-7 cursor-pointer bg-[#FDFBF5]"
+          >
             {menus.map((menu) => (
               <Listbox.Option
                 as="div"
                 key={menu.id}
                 value={menu}
-                className="cursor-pointer">
+                className="cursor-pointer"
+              >
                 <span className="font-manrope font-medium text-xs sm:text-2xl text-[#272940]">
                   {menu.title}
                 </span>
@@ -145,7 +152,8 @@ export default function AboutUs() {
             className="flex flex-col items-start"
             style={{
               filter: 'drop-shadow(0px 5px 17px rgba(64, 76, 89, 0.06))',
-            }}>
+            }}
+          >
             <div className="flex flex-col items-center justify-center p-[60px] gap-[60px] bg-white">
               {selectedMenu == 0 && <OurValues />}
               {selectedMenu == 1 && <Philosophy />}

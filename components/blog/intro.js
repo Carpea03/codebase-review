@@ -11,13 +11,15 @@ export default function Intro() {
         A statically generated blog example using{' '}
         <Link
           href="https://nextjs.org/"
-          className="underline hover:text-success duration-200 transition-colors">
+          className="underline hover:text-success duration-200 transition-colors"
+        >
           Next.js
         </Link>{' '}
         and{' '}
         <Link
           href={CMS_URL}
-          className="underline hover:text-success duration-200 transition-colors">
+          className="underline hover:text-success duration-200 transition-colors"
+        >
           {CMS_NAME}
         </Link>
         .

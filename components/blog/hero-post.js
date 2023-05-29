@@ -14,19 +14,12 @@ export default function HeroPost({
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage
-          slug={slug}
-          title={title}
-          image={coverImage}
-          priority
-        />
+        <CoverImage slug={slug} title={title} image={coverImage} priority />
       </div>
       <div className="mb-20 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
-            <Link
-              href={`/ip-news/${slug}`}
-              className="hover:underline">
+            <Link href={`/ip-news/${slug}`} className="hover:underline">
               {title}
             </Link>
           </h3>
@@ -36,12 +29,7 @@ export default function HeroPost({
         </div>
         <div>
           <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
-          {author && (
-            <Avatar
-              name={author.name}
-              picture={author.picture}
-            />
-          )}
+          {author && <Avatar name={author.name} picture={author.picture} />}
         </div>
       </div>
     </section>

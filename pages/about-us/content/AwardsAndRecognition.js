@@ -1,21 +1,21 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image'
+import React from 'react'
 
 const Title = ({ text }) => {
   return (
     <span className="font-lora font-medium text-2xl sm:text-5xl md:text-[32px] leading-[140%] tracking-[-0.03em] text-[#272940]">
       {text}
     </span>
-  );
-};
+  )
+}
 
 const Content = ({ text }) => {
   return (
     <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]">
       {text}
     </span>
-  );
-};
+  )
+}
 
 const Item = ({ img, title, description, content }) => {
   return (
@@ -35,8 +35,8 @@ const Item = ({ img, title, description, content }) => {
         </span>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default function AwardsAndRecognition() {
   return (
@@ -108,5 +108,5 @@ export default function AwardsAndRecognition() {
         />
       </div>
     </>
-  );
+  )
 }

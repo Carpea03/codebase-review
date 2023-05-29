@@ -162,7 +162,8 @@ export default function Profile() {
             className="w-full md:w-3/5 h-full flex flex-col px-8 sm:px-12 pt-8 pb-14 sm:pt-0 sm:pb-0 gap-8 bg-white"
             style={{
               clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%)',
-            }}>
+            }}
+          >
             <div className="w-full flex flex-col sm:pt-12 sm:pb-[14px] gap-[17px]">
               <span className="font-lora font-normal text-[32px] sm:text-5xl xl:text-[64px] xl:leading-[70px]">
                 {profile.name}
@@ -193,12 +194,7 @@ export default function Profile() {
             </div>
           </div>
           <div className="w-full md:w-2/5 h-full flex flex-col justify-end items-center bg-[#FAF4E4]">
-            <Image
-              src={profile.potrait}
-              width={389}
-              height={474}
-              alt=""
-            />
+            <Image src={profile.potrait} width={389} height={474} alt="" />
           </div>
         </div>
         <div className="px-4 sm:px-16 md:px-16 xl:px-24 2xl:px-40 pb-40 sm:pb-60">
@@ -207,7 +203,8 @@ export default function Profile() {
             style={{
               background:
                 'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
-            }}>
+            }}
+          >
             <span className="hidden md:flex font-manrope font-semibold sm:text-2xl text-white tracking-[-0.03em] text-center">
               {profile.objective}
             </span>
@@ -244,7 +241,8 @@ export default function Profile() {
             className="flex flex-col items-center justify-center py-[60px] px-4 sm:pt-[100px] sm:px-6 md:p-[60px] gap-[100px] md:gap-[60px] bg-white rounded-lg"
             style={{
               boxShadow: '0px 5px 17px rgba(64, 76, 89, 0.06)',
-            }}>
+            }}
+          >
             <div className="flex flex-col items-start gap-12 md:pr-32 w-full">
               <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl md:leading-[140%] md:tracking-[-0.03em] text-[#272940]">
                 {profile.industry.title}
@@ -319,7 +317,8 @@ export default function Profile() {
                 {profile.technicalAreas.map((technicalArea, index) => (
                   <div
                     key={index}
-                    className="flex flex-row items-center px-6 gap-8">
+                    className="flex flex-row items-center px-6 gap-8"
+                  >
                     <div className="w-8 h-8 min-w-[32px] sm:w-20 sm:h-20 sm:min-w-[80px] rounded-full bg-[#F3F3FA] flex flex-col items-center justify-center">
                       <Image
                         src={technicalArea.icon}

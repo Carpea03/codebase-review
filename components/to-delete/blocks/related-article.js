@@ -9,9 +9,7 @@ const myLoader = ({ src, width, quality }) => {
 
 export default function RelatedArticle() {
   return (
-    <aside
-      aria-label="Related articles"
-      className="dark:bg-gray-800">
+    <aside aria-label="Related articles" className="dark:bg-gray-800">
       <div className="px-4 mx-auto max-w-screen-xl md:p-8 lg:p-10">
         <h4 className="text-2xl font-bold text-gray-900 dark:text-white md:p-8 lg:p-10">
           Related articles
@@ -39,7 +37,8 @@ export default function RelatedArticle() {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+            >
               Read in 2 minutes
             </Link>
           </article>
@@ -65,7 +64,8 @@ export default function RelatedArticle() {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+            >
               Read in 12 minutes
             </Link>
           </article>
@@ -91,7 +91,8 @@ export default function RelatedArticle() {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+            >
               Read in 8 minutes
             </Link>
           </article>
@@ -117,7 +118,8 @@ export default function RelatedArticle() {
             </p>
             <Link
               href="/"
-              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+              className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+            >
               Read in 4 minutes
             </Link>
           </article>

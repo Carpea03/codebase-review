@@ -13,10 +13,7 @@ export default function Sydney() {
           name="description"
           content="Call +61 2 9264 6716 to talk with a patent or trade mark attorney at our Sydney office to discuss intellectual property queries today."
         />
-        <link
-          rel="canonical"
-          href="https://www.baxterip.com.au/sydney"
-        />
+        <link rel="canonical" href="https://www.baxterip.com.au/sydney" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC"
@@ -37,11 +34,13 @@ export default function Sydney() {
             <div className="col-span-2 mb-8 lg:mb-0">
               <form
                 action="#"
-                className="grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2">
+                className="grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2"
+              >
                 <div>
                   <label
                     htmlFor="first-name"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
                     First Name
                   </label>
                   <input
@@ -55,7 +54,8 @@ export default function Sydney() {
                 <div>
                   <label
                     htmlFor="last-name"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
                     Last Name
                   </label>
                   <input
@@ -69,7 +69,8 @@ export default function Sydney() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
                     Your email
                   </label>
                   <input
@@ -83,7 +84,8 @@ export default function Sydney() {
                 <div>
                   <label
                     htmlFor="phone-number"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
                     Phone Number
                   </label>
                   <input
@@ -97,25 +99,29 @@ export default function Sydney() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="message"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                  >
                     Your message
                   </label>
                   <textarea
                     id="message"
                     rows="6"
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="Leave a comment..."></textarea>
+                    placeholder="Leave a comment..."
+                  ></textarea>
                   <p className="mt-4 text-sm text-gray-500">
                     By submitting this form you agree to our{' '}
                     <Link
                       href="#"
-                      className="text-primary-600 hover:underline dark:text-primary-500">
+                      className="text-primary-600 hover:underline dark:text-primary-500"
+                    >
                       terms and conditions
                     </Link>{' '}
                     and our{' '}
                     <Link
                       href="#"
-                      className="text-primary-600 hover:underline dark:text-primary-500">
+                      className="text-primary-600 hover:underline dark:text-primary-500"
+                    >
                       privacy policy
                     </Link>{' '}
                     which explains how we may collect, use and disclose your
@@ -124,7 +130,8 @@ export default function Sydney() {
                 </div>
                 <button
                   type="submit"
-                  className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                  className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                >
                   Send message
                 </button>
               </form>
@@ -136,11 +143,13 @@ export default function Sydney() {
                     className="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       fillRule="evenodd"
                       d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
-                      clipRule="evenodd"></path>
+                      clipRule="evenodd"
+                    ></path>
                   </svg>
                 </div>
                 <p className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
@@ -157,11 +166,13 @@ export default function Sydney() {
                     className="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       fillRule="evenodd"
                       d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                      clipRule="evenodd"></path>
+                      clipRule="evenodd"
+                    ></path>
                   </svg>
                 </div>
                 <p className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
@@ -179,7 +190,8 @@ export default function Sydney() {
                     className="w-5 h-5 text-gray-600 lg:w-8 lg:h-8 dark:text-gray-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                   </svg>
                 </div>

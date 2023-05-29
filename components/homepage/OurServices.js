@@ -30,13 +30,12 @@ export const OurServices = () => {
       <div className="flex flex-col">
         <div className="hidden md:flex flex-col items-center gap-[54px] md:px-20 xl:px-40">
           {services[selectedMenu]?.map((service) => (
-            <div
-              key={service.id}
-              className="flex flex-row items-center h-full">
+            <div key={service.id} className="flex flex-row items-center h-full">
               <div
                 className={`w-1/2 flex items-center justify-center ${
                   service.id % 2 == 0 ? 'order-last' : 'order-first'
-                }`}>
+                }`}
+              >
                 <Image
                   src={service.img}
                   className="object-cover"
@@ -48,7 +47,8 @@ export const OurServices = () => {
               <div
                 className={`w-1/2 flex flex-col items-start ${
                   service.id % 2 == 0 ? 'order-first' : 'order-last pl-[116px]'
-                }`}>
+                }`}
+              >
                 <span className="mb-5 font-manrope font-medium text-4xl text-[#272940]">
                   {service.title}
                 </span>
@@ -57,12 +57,10 @@ export const OurServices = () => {
                 </span>
                 <a
                   href={services[selectedMenu]?.link}
-                  className="inline-flex items-center font-manrope font-semibold text-2xl text-[#272940] hover:opacity-50 cursor-pointer">
+                  className="inline-flex items-center font-manrope font-semibold text-2xl text-[#272940] hover:opacity-50 cursor-pointer"
+                >
                   <p className="mr-7">Learn more</p>
-                  <FiArrowRightCircle
-                    size={20}
-                    color={'#8069D8'}
-                  />
+                  <FiArrowRightCircle size={20} color={'#8069D8'} />
                 </a>
               </div>
             </div>
@@ -73,7 +71,8 @@ export const OurServices = () => {
           {services[selectedMenu]?.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col items-start w-[80%] shrink-0 p-6 sm:p-14 gap-6 sm:gap-14 bg-ourservice-card">
+              className="flex flex-col items-start w-[80%] shrink-0 p-6 sm:p-14 gap-6 sm:gap-14 bg-ourservice-card"
+            >
               <div className="flex flex-col justify-center items-center w-full">
                 <Image
                   src={service.img}
@@ -94,12 +93,10 @@ export const OurServices = () => {
               <div className="h-[10%] flex flex-col justify-end w-full cursor-pointer hover:opacity-50">
                 <a
                   href={services[selectedMenu]?.link}
-                  className="inline-flex justify-end items-center font-manrope font-semibold text-[10px] sm:text-2xl text-[#272940]">
+                  className="inline-flex justify-end items-center font-manrope font-semibold text-[10px] sm:text-2xl text-[#272940]"
+                >
                   <p className="mr-7">Learn more</p>
-                  <FiArrowRightCircle
-                    size={20}
-                    color={'#8069D8'}
-                  />
+                  <FiArrowRightCircle size={20} color={'#8069D8'} />
                 </a>
               </div>
             </div>

@@ -26,9 +26,7 @@ export default function 专利代理人() {
           href="https://www.baxterip.com.au/patent-attorney"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link href="/zh">
@@ -37,7 +35,8 @@ export default function 专利代理人() {
                   className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
                 </svg>
               </div>
@@ -49,11 +48,13 @@ export default function 专利代理人() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 我们的专利代理人
@@ -81,7 +82,8 @@ export default function 专利代理人() {
           您的专利代理人将能够根据专利设计的逻辑变化扩展您的
           <Link
             title="提交临时专利申请"
-            href="https://www.baxterip.com.au/zh/临时专利">
+            href="https://www.baxterip.com.au/zh/临时专利"
+          >
             专利申请
           </Link>
           范围。
@@ -102,7 +104,8 @@ export default function 专利代理人() {
             title="Anthill 奖30岁以下年龄阶段荣誉奖"
             href="http://anthillonline.com/chris-baxter-2011-anthill-30under30-honourable-mention/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             Anthill奖
           </Link>
           。

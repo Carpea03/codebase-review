@@ -10,7 +10,8 @@ export const TitleContainer = ({
     <div
       style={{
         background: background,
-      }}>
+      }}
+    >
       <div className="flex flex-col items-center gap-4 sm:gap-8">
         <p className="font-manrope font-semibold text-[#272940]/50 tracking-tight text-sm sm:text-lg md:text-xl xl:text-2xl">
           {title}

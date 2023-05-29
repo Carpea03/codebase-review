@@ -1,14 +1,14 @@
-import React from "react";
-import Content from "../Content";
-import Subtitle from "../Subtitle";
-import Title from "../Title";
+import React from 'react'
+import Content from '../Content'
+import Subtitle from '../Subtitle'
+import Title from '../Title'
 
 export default function PCTNationalPhaseAustralia() {
   return (
     <div
       className="flex flex-col justify-center items-start p-9 md:p-[60px] gap-12 bg-white"
       style={{
-        boxShadow: "0px 5px 17px rgba(64, 76, 89, 0.06)",
+        boxShadow: '0px 5px 17px rgba(64, 76, 89, 0.06)',
       }}
     >
       <div className="flex flex-col items-start gap-4">
@@ -93,5 +93,5 @@ export default function PCTNationalPhaseAustralia() {
         </ol>
       </div>
     </div>
-  );
+  )
 }

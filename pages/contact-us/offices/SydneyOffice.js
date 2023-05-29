@@ -44,7 +44,8 @@ const InputField = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}>
+      className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}
+    >
       <div className="flex flex-row gap-2">
         <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
           {fieldName}
@@ -81,10 +82,7 @@ const CheckBoxBlock = ({ title, items }) => {
         {title}
       </span>
       {items.map((item, index) => (
-        <Checkbox
-          key={index}
-          title={item.title}
-        />
+        <Checkbox key={index} title={item.title} />
       ))}
     </div>
   )
@@ -109,9 +107,7 @@ export default function SydneyOffice() {
     ref
   ) {
     return (
-      <div
-        className="flex flex-row items-center w-full"
-        ref={ref}>
+      <div className="flex flex-row items-center w-full" ref={ref}>
         <input
           className="flex-1 p-6 gap-4 text-sm sm:text-2xl md:text-xl border-[1px] border-[#E4E6F1] rounded-tl-md rounded-bl-md"
           value={value}
@@ -120,7 +116,8 @@ export default function SydneyOffice() {
         />
         <div
           className="flex flex-row items-center justify-center w-[75px] h-[75px] bg-[#E4E6F1] rounded-tr-md rounded-br-md cursor-pointer"
-          onClick={onClick}>
+          onClick={onClick}
+        >
           <FiCalendar size={24} />
         </div>
       </div>
@@ -137,7 +134,8 @@ export default function SydneyOffice() {
         className="flex flex-col items-start p-6 gap-9 bg-white w-full"
         style={{
           boxShadow: '0px 5px 17px rgba(64, 76, 89, 0.06)',
-        }}>
+        }}
+      >
         <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
           Get In Touch
         </span>
@@ -177,7 +175,8 @@ export default function SydneyOffice() {
         <div className="flex flex-col items-start bg-white border-[1px] border-[#F3F3FA] rounded w-full gap-9 pb-9">
           <div
             className="flex flex-row items-center justify-between p-6 gap-[10px] w-full bg-[#F3F3FA] border-[1px] border-[#DBDBF0] rounded cursor-pointer"
-            onClick={() => setSelectOptional(!selectOptional)}>
+            onClick={() => setSelectOptional(!selectOptional)}
+          >
             <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl text-[#404266]">
               Optional: Tell us more so we can better direct your enquiry
             </span>
@@ -205,7 +204,8 @@ export default function SydneyOffice() {
             <select
               defaultValue="Select one"
               id="countries"
-              className="w-full h-[75px] p-4 sm:p-6 gap-4 border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] rounded cursor-pointer">
+              className="w-full h-[75px] p-4 sm:p-6 gap-4 border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] rounded cursor-pointer"
+            >
               <option value="Select one">Select one</option>
               <option value="Linkedin">Linkedin</option>
             </select>
@@ -214,10 +214,7 @@ export default function SydneyOffice() {
             title="An idea that primarily relates to:"
             items={ideas}
           />
-          <CheckBoxBlock
-            title="An enquiry about:"
-            items={enquiries}
-          />
+          <CheckBoxBlock title="An enquiry about:" items={enquiries} />
           <div className="flex flex-col items-start justify-center px-6 gap-4 w-full cursor-pointer">
             <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
               Do you have a preferred time to get a call from us?
@@ -232,10 +229,7 @@ export default function SydneyOffice() {
             />
           </div>
         </div>
-        <Button
-          className="w-full h-14 sm:h-[75px]"
-          title="Submit"
-        />
+        <Button className="w-full h-14 sm:h-[75px]" title="Submit" />
       </div>
       <div className="flex flex-col items-start gap-9 h-full">
         <span className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">
@@ -247,10 +241,12 @@ export default function SydneyOffice() {
             style={{
               background:
                 'linear-gradient(111.36deg, #61638D 0%, #494B70 98.54%), #505278',
-            }}>
+            }}
+          >
             <div
               className="flex flex-row items-center justify-between px-5 gap-9 w-full cursor-pointer"
-              onClick={() => setOpenMap(!openMap)}>
+              onClick={() => setOpenMap(!openMap)}
+            >
               <span className="font-manrope font-medium text-xl text-white">
                 Sydney office
               </span>
@@ -266,7 +262,8 @@ export default function SydneyOffice() {
             <GoogleMapReact
               bootstrapURLKeys={{ key: '' }}
               defaultCenter={defaultProps.center}
-              defaultZoom={defaultProps.zoom}>
+              defaultZoom={defaultProps.zoom}
+            >
               <AnyReactComponent
                 lat={59.955413}
                 lng={30.337844}

@@ -23,21 +23,12 @@ export default function Homepage() {
 
   return (
     <>
-      <Header
-        topMenuIndex={selectedMenu}
-        onTopMenuChange={onChangeMenu}
-      />
+      <Header topMenuIndex={selectedMenu} onTopMenuChange={onChangeMenu} />
       <HeroBanner />
       <BrandsBanner />
       <Benefits />
-      <MarketSegment
-        cardIndex={selectedMenu}
-        onChange={onChangeMenu}
-      />
-      <TopMenu
-        menuIndex={selectedMenu}
-        onChange={onChangeMenu}
-      />
+      <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
+      <TopMenu menuIndex={selectedMenu} onChange={onChangeMenu} />
       <OurServices />
       <IndustrySepciality />
       <ProfessionalProfiles />

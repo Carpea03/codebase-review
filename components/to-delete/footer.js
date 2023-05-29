@@ -20,11 +20,13 @@ export default function Footer() {
                   className="mr-2 w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
                 +61 (2) 9264 6716
               </li>
@@ -33,13 +35,15 @@ export default function Footer() {
                   className="mr-2 w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
                 <Link
                   href="mailto:company@name.com"
-                  className="ml-2 hover:underline">
+                  className="ml-2 hover:underline"
+                >
                   sydney@baxterip.com.au
                 </Link>
               </li>
@@ -59,11 +63,13 @@ export default function Footer() {
                   className="mr-2 w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
                 +61(3) 9602 2288
               </li>
@@ -72,13 +78,15 @@ export default function Footer() {
                   className="mr-2 w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
                 <Link
                   href="mailto:company@name.com"
-                  className="ml-2 hover:underline">
+                  className="ml-2 hover:underline"
+                >
                   melbourne@baxterip.com.au
                 </Link>
               </li>
@@ -99,11 +107,13 @@ export default function Footer() {
                   className="mr-2 w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
-                    clipRule="evenodd"></path>
+                    clipRule="evenodd"
+                  ></path>
                 </svg>
                 +12(3) 456 7890 1234
               </li>
@@ -112,13 +122,15 @@ export default function Footer() {
                   className="mr-2 w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                 </svg>
                 <Link
                   href="mailto:company@name.com"
-                  className="ml-2 hover:underline">
+                  className="ml-2 hover:underline"
+                >
                   brisbane@baxterip.com.au
                 </Link>
               </li>
@@ -133,72 +145,64 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <Link
-                  href="/about"
-                  className=" hover:underline">
+                <Link href="/about" className=" hover:underline">
                   About
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
                   href="/australian-patent-process"
-                  className=" hover:underline">
+                  className=" hover:underline"
+                >
                   Australian Patent Process
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="designs"
-                  className="hover:underline">
+                <Link href="designs" className="hover:underline">
                   Designs
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="/specialisations"
-                  className="hover:underline">
+                <Link href="/specialisations" className="hover:underline">
                   Specialisations
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
                   href="/specialisations/construction-patents"
-                  className="hover:underline">
+                  className="hover:underline"
+                >
                   Construction patents
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="/how-to-patent"
-                  className="hover:underline">
+                <Link href="/how-to-patent" className="hover:underline">
                   How to patent
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="/ip-news"
-                  className="hover:underline">
+                <Link href="/ip-news" className="hover:underline">
                   Blog
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
                   href="/ip-news/patentable-subject-matter-a-skill-game"
-                  className="hover:underline">
+                  className="hover:underline"
+                >
                   Blog Post 1
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
                   href="/ip-news/patenting-your-health-care-apps"
-                  className="hover:underline">
+                  className="hover:underline"
+                >
                   Blog Post 2
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="/contact"
-                  className="hover:underline">
+                <Link href="/contact" className="hover:underline">
                   Contact
                 </Link>
               </li>
@@ -210,23 +214,17 @@ export default function Footer() {
                 </Link>
               </li> */}
               <li className="mb-4">
-                <Link
-                  href="/global/about"
-                  className=" hover:underline">
+                <Link href="/global/about" className=" hover:underline">
                   About (Global)
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="/zh/专利代理人"
-                  className="hover:underline">
+                <Link href="/zh/专利代理人" className="hover:underline">
                   我们的专利代理人
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="/sitemap-0.xml"
-                  className="hover:underline">
+                <Link href="/sitemap-0.xml" className="hover:underline">
                   Sitemap
                 </Link>
               </li>
@@ -238,30 +236,22 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Discord Server
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Twitter
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Facebook
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Contact Us
                 </Link>
               </li>
@@ -273,23 +263,17 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Privacy Policy
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Licensing
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Terms &amp; Conditions
                 </Link>
               </li>
@@ -301,30 +285,22 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   iOS
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Android
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Windows
                 </Link>
               </li>
               <li className="mb-4">
-                <Link
-                  href="#"
-                  className="hover:underline">
+                <Link href="#" className="hover:underline">
                   MacOS
                 </Link>
               </li>
@@ -339,7 +315,8 @@ export default function Footer() {
                 className="mr-2 h-8"
                 viewBox="0 0 33 33"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M25.2696 13.126C25.1955 13.6364 24.8589 14.3299 24.4728 14.9328C23.9856 15.6936 23.2125 16.2264 22.3276 16.4114L18.43 17.2265C17.8035 17.3575 17.2355 17.6853 16.8089 18.1621L14.2533 21.0188C13.773 21.5556 13.4373 21.4276 13.4373 20.7075C13.4315 20.7342 12.1689 23.9903 15.5149 25.9202C16.8005 26.6618 18.6511 26.3953 19.9367 25.6538L26.7486 21.7247C29.2961 20.2553 31.0948 17.7695 31.6926 14.892C31.7163 14.7781 31.7345 14.6639 31.7542 14.5498L25.2696 13.126Z"
                   fill="url(#paint0_linear_11430_22515)"
@@ -383,12 +360,10 @@ export default function Footer() {
                     y1="23.9532"
                     x2="23.9577"
                     y2="12.9901"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#1724C9" />
-                    <stop
-                      offset="1"
-                      stopColor="#1C64F2"
-                    />
+                    <stop offset="1" stopColor="#1C64F2" />
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear_11430_22515"
@@ -396,12 +371,10 @@ export default function Footer() {
                     y1="10.5837"
                     x2="19.7797"
                     y2="2.33321"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#1C64F2" />
-                    <stop
-                      offset="1"
-                      stopColor="#0092FF"
-                    />
+                    <stop offset="1" stopColor="#0092FF" />
                   </linearGradient>
                   <linearGradient
                     id="paint2_linear_11430_22515"
@@ -409,12 +382,10 @@ export default function Footer() {
                     y1="5.2045"
                     x2="4.42432"
                     y2="5.99375"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#0092FF" />
-                    <stop
-                      offset="1"
-                      stopColor="#45B2FF"
-                    />
+                    <stop offset="1" stopColor="#45B2FF" />
                   </linearGradient>
                   <linearGradient
                     id="paint3_linear_11430_22515"
@@ -422,12 +393,10 @@ export default function Footer() {
                     y1="28.846"
                     x2="27.2866"
                     y2="25.8192"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#1C64F2" />
-                    <stop
-                      offset="1"
-                      stopColor="#0092FF"
-                    />
+                    <stop offset="1" stopColor="#0092FF" />
                   </linearGradient>
                   <linearGradient
                     id="paint4_linear_11430_22515"
@@ -435,12 +404,10 @@ export default function Footer() {
                     y1="15.8661"
                     x2="15.9825"
                     y2="24.1181"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#1724C9" />
-                    <stop
-                      offset="1"
-                      stopColor="#1C64F2"
-                    />
+                    <stop offset="1" stopColor="#1C64F2" />
                   </linearGradient>
                   <linearGradient
                     id="paint5_linear_11430_22515"
@@ -448,12 +415,10 @@ export default function Footer() {
                     y1="21.8189"
                     x2="31.7569"
                     y2="10.6178"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#0092FF" />
-                    <stop
-                      offset="1"
-                      stopColor="#45B2FF"
-                    />
+                    <stop offset="1" stopColor="#45B2FF" />
                   </linearGradient>
                   <linearGradient
                     id="paint6_linear_11430_22515"
@@ -461,12 +426,10 @@ export default function Footer() {
                     y1="9.31427"
                     x2="3.14054"
                     y2="20.4898"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#1C64F2" />
-                    <stop
-                      offset="1"
-                      stopColor="#0092FF"
-                    />
+                    <stop offset="1" stopColor="#0092FF" />
                   </linearGradient>
                   <linearGradient
                     id="paint7_linear_11430_22515"
@@ -474,12 +437,10 @@ export default function Footer() {
                     y1="8.78271"
                     x2="10.4278"
                     y2="11.488"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#1724C9" />
-                    <stop
-                      offset="1"
-                      stopColor="#1C64F2"
-                    />
+                    <stop offset="1" stopColor="#1C64F2" />
                   </linearGradient>
                   <linearGradient
                     id="paint8_linear_11430_22515"
@@ -487,12 +448,10 @@ export default function Footer() {
                     y1="21.5399"
                     x2="14.0824"
                     y2="31.9579"
-                    gradientUnits="userSpaceOnUse">
+                    gradientUnits="userSpaceOnUse"
+                  >
                     <stop stopColor="#0092FF" />
-                    <stop
-                      offset="1"
-                      stopColor="#45B2FF"
-                    />
+                    <stop offset="1" stopColor="#45B2FF" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -501,9 +460,7 @@ export default function Footer() {
           </Link>
           <span className="block mb-4 text-sm text-gray-500 dark:text-gray-400 lg:mb-0">
             © 2021-2022{' '}
-            <Link
-              href="/"
-              className="hover:underline">
+            <Link href="/" className="hover:underline">
               Flowbite™
             </Link>
             . All Rights Reserved.
@@ -512,12 +469,14 @@ export default function Footer() {
             id="dropdownDefault"
             // data-dropdown-toggle="dropdown"
             className="inline-flex items-center mt-3 text-sm font-medium text-center text-gray-500 sm:mt-0 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
-            type="button">
+            type="button"
+          >
             <svg
               className="mr-1 w-4 h-4"
               viewBox="0 0 21 14"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <rect
                 x="0.75"
                 y="0.466187"
@@ -533,7 +492,8 @@ export default function Footer() {
                 x="0"
                 y="0"
                 width="21"
-                height="14">
+                height="14"
+              >
                 <rect
                   x="0.75"
                   y="0.466187"
@@ -574,11 +534,9 @@ export default function Footer() {
                   width="6.66675"
                   height="5.43787"
                   filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB">
-                  <feFlood
-                    floodOpacity="0"
-                    result="BackgroundImageFix"
-                  />
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"
@@ -608,12 +566,10 @@ export default function Footer() {
                   y1="1.35376"
                   x2="1.70239"
                   y2="5.79166"
-                  gradientUnits="userSpaceOnUse">
+                  gradientUnits="userSpaceOnUse"
+                >
                   <stop stopColor="white" />
-                  <stop
-                    offset="1"
-                    stopColor="#F0F0F0"
-                  />
+                  <stop offset="1" stopColor="#F0F0F0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -623,12 +579,14 @@ export default function Footer() {
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M19 9l-7 7-7-7"></path>
+                d="M19 9l-7 7-7-7"
+              ></path>
             </svg>
           </button>
           <div
@@ -639,32 +597,37 @@ export default function Footer() {
           >
             <ul
               className="py-1 text-sm text-gray-700 dark:text-gray-200"
-              aria-labelledby="dropdownDefault">
+              aria-labelledby="dropdownDefault"
+            >
               <li>
                 <Link
                   href="/"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
                   English
                 </Link>
               </li>
               <li>
                 <Link
                   href="/"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
                   German
                 </Link>
               </li>
               <li>
                 <Link
                   href="/"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
                   Italian
                 </Link>
               </li>
               <li>
                 <Link
                   href="/"
-                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
                   Spanish
                 </Link>
               </li>

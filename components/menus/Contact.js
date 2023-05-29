@@ -43,18 +43,19 @@ export default function Contact() {
       className="w-full bg-[#FFFEFD]"
       style={{
         filter: 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15))',
-      }}>
+      }}
+    >
       <div className="container max-w-[1440px] mx-auto">
         <Tab.Group
           as="div"
-          className="flex flex-col md:flex-row justify-center">
+          className="flex flex-col md:flex-row justify-center"
+        >
           <Tab.List
             as="div"
-            className="hidden md:flex flex-col justify-start w-[30%]">
+            className="hidden md:flex flex-col justify-start w-[30%]"
+          >
             {sideMenus.map((sideMenu, i) => (
-              <Link
-                key={i}
-                href={sideMenu.href}>
+              <Link key={i} href={sideMenu.href}>
                 <Tab
                   key={i}
                   className={({ selected }) =>
@@ -64,7 +65,8 @@ export default function Contact() {
                         ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                         : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
                     )
-                  }>
+                  }
+                >
                   <Image
                     src={sideMenu.img}
                     size={16}
@@ -79,9 +81,7 @@ export default function Contact() {
               </Link>
             ))}
           </Tab.List>
-          <Tab.Panels
-            as="div"
-            className="pb-12">
+          <Tab.Panels as="div" className="pb-12">
             <Tab.Panel>
               <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">
                 <div className="flex flex-col justify-center items-start w-full h-[134px] gap-[10px] pl-12 border-b md:border-b-2 border-solid border-[#BFBBB2] md:border-[#7568D1]">
@@ -96,9 +96,7 @@ export default function Contact() {
                 </div>
                 <div className="flex flex-col justify-start item-start gap-8 pt-8 pl-12">
                   {subMenus.map((item, index) => (
-                    <Link
-                      key={index}
-                      href={item.href + '/' + item.office}>
+                    <Link key={index} href={item.href + '/' + item.office}>
                       <div className="flex flex-col justify-start item-start gap-[10px]">
                         <span className="text-[#272940]">{item.title}</span>
                         <span className="text-[#272940]/60">

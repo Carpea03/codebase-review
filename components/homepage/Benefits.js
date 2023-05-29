@@ -48,11 +48,13 @@ export default function Benefits() {
                   }`}
             onClick={() => {
               setSelectedCard(benifit.id)
-            }}>
+            }}
+          >
             <div
               className={`mb-12 flex justify-center items-center rounded-full w-[58px] h-[58px] sm:w-[170px] sm:h-[170px] md:w-24 md:h-24 xl:w-[120px] xl:h-[120px] benifit-card-icon ${
                 selectedCard === benifit.id ? 'bg-[#816BD9]' : 'bg-white'
-              }`}>
+              }`}
+            >
               <Image
                 src={
                   +selectedCard === benifit.id
@@ -74,7 +76,8 @@ export default function Benefits() {
             </p>
             <a
               href={benifit.link}
-              className="inline-flex text-xs sm:text-xl md:text-base xl:text-xl items-center font-semibold text-[#8069D8] hover:opacity-50 cursor-pointer">
+              className="inline-flex text-xs sm:text-xl md:text-base xl:text-xl items-center font-semibold text-[#8069D8] hover:opacity-50 cursor-pointer"
+            >
               Learn more
             </a>
           </div>

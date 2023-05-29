@@ -49,7 +49,8 @@ export default function Notfound() {
               style={{
                 boxShadow:
                   '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-              }}>
+              }}
+            >
               <IoArrowBackOutline
                 size={16}
                 className="w-[10px] h-[10px] sm:w-6 sm:h-6 md:w-4 md:h-4"
@@ -63,7 +64,8 @@ export default function Notfound() {
               style={{
                 boxShadow:
                   '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-              }}>
+              }}
+            >
               <span className="font-manrope font-semibold text-xs sm:text-xl text-white">
                 Home
               </span>
@@ -79,10 +81,7 @@ export default function Notfound() {
               Check out our latest articles
             </span>
           </div>
-          <NewsBlog
-            data={news}
-            btnTitle="Explore more articles"
-          />
+          <NewsBlog data={news} btnTitle="Explore more articles" />
         </div>
       </Container>
       <Footer />

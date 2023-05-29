@@ -1,21 +1,21 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image'
+import React from 'react'
 
 const Title = ({ text }) => {
   return (
     <span className="font-lora font-medium text-2xl sm:text-5xl md:text-[32px] leading-[140%] tracking-[-0.03em] text-[#272940]">
       {text}
     </span>
-  );
-};
+  )
+}
 
 const Content = ({ children }) => {
   return (
     <div className="flex flex-col items-start gap-6 font-manrope font-medium text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]">
       {children}
     </div>
-  );
-};
+  )
+}
 
 export default function Philosophy() {
   return (
@@ -102,5 +102,5 @@ export default function Philosophy() {
         </div>
       </div>
     </>
-  );
+  )
 }

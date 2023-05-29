@@ -64,7 +64,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                       : index === 2
                       ? 'polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 80%)'
                       : 'none',
-                }}>
+                }}
+              >
                 <div
                   key={index}
                   className={`flex p-8 h-72 rounded-sm cursor-pointer ${
@@ -87,7 +88,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                   }}
                   onClick={() => {
                     onChange(index)
-                  }}>
+                  }}
+                >
                   <div className="flex flex-col gap-6 w-full">
                     <div
                       className={`w-20 h-20 rounded-full flex items-center justify-center  ${
@@ -99,25 +101,23 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                             ? '5px 4px 21px rgba(0, 0, 0, 0.25)'
                             : ''
                         } `,
-                      }}>
-                      <Image
-                        src={card.icon}
-                        width={32}
-                        height={32}
-                        alt=""
-                      />
+                      }}
+                    >
+                      <Image src={card.icon} width={32} height={32} alt="" />
                     </div>
                     <div className="flex flex-col gap-4 px-10">
                       <span
                         className={`font-manrope font-medium text-2xl ${
                           cardIndex === index ? 'text-white' : 'text-[#272940]'
-                        }`}>
+                        }`}
+                      >
                         {card.name}
                       </span>
                       <span
                         className={`font-manrope font-medium text-xl ${
                           cardIndex === index ? 'text-white' : 'text-[#7A7B94]'
-                        }`}>
+                        }`}
+                      >
                         {card.description}
                       </span>
                     </div>
@@ -137,7 +137,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                 }`}
                 onClick={() => {
                   onChange(index)
-                }}>
+                }}
+              >
                 <div className="flex flex-row items-center gap-6 w-full">
                   <div className="flex flex-row items-center gap-8 w-[90%]">
                     <div
@@ -150,7 +151,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                             ? '5px 4px 21px rgba(0, 0, 0, 0.25)'
                             : ''
                         } `,
-                      }}>
+                      }}
+                    >
                       <Image
                         src={card.icon}
                         width={30}
@@ -162,7 +164,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                     <span
                       className={`font-manrope font-medium text-sm sm:text-2xl ${
                         cardIndex === index ? 'text-white' : 'text-[#272940]'
-                      }`}>
+                      }`}
+                    >
                       {card.name}
                     </span>
                   </div>
@@ -183,7 +186,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                   <span
                     className={`font-manrope font-medium text-[10px] sm:text-xl ${
                       cardIndex === index ? 'text-white' : 'text-[#7A7B94]'
-                    }`}>
+                    }`}
+                  >
                     {card.description}
                   </span>
                 </div>
@@ -192,7 +196,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                     className="flex flex-row items-center justify-center px-6 py-5 gap-6 bg-[#816BD9] rounded-md w-full h-[36px] sm:h-[73px] hover:opacity-80"
                     style={{
                       boxShadow: '11px 8px 46px rgba(0, 0, 0, 0.25)',
-                    }}>
+                    }}
+                  >
                     <span className="font-manrope text-xs sm:text-2xl text-white">
                       Yes, this is me
                     </span>
@@ -208,7 +213,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
             style={{
               boxShadow:
                 '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-            }}>
+            }}
+          >
             <span className="font-manrope text-[10px] sm:text-xl text-black whitespace-nowrap">
               None above? keep scrolling
             </span>

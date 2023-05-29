@@ -21,19 +21,19 @@ export default function InternationalTypeSearch() {
           hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
             </Link>
@@ -44,15 +44,18 @@ export default function InternationalTypeSearch() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 Services
               </Link>
             </div>
@@ -63,15 +66,18 @@ export default function InternationalTypeSearch() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/patents"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 Patents
               </Link>
             </div>
@@ -82,15 +88,18 @@ export default function InternationalTypeSearch() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/how-to-patent"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 How to patent
               </Link>
             </div>
@@ -101,11 +110,13 @@ export default function InternationalTypeSearch() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 Stage 2: International-type patent search
@@ -124,14 +135,13 @@ export default function InternationalTypeSearch() {
         carried out if you have had a patent attorney file a{' '}
         <Link
           title="File a Provisional Patent Application"
-          href="/provisional-patents">
+          href="/provisional-patents"
+        >
           provisional patent application
         </Link>{' '}
         for you recently, except in circumstances where you have commissioned a
         detailed{' '}
-        <Link
-          title="Patent Novelty Searches"
-          href="/international-type-search">
+        <Link title="Patent Novelty Searches" href="/international-type-search">
           patent novelty search
         </Link>{' '}
         prior to filing.
@@ -144,7 +154,8 @@ export default function InternationalTypeSearch() {
         without a review from your patent attorney. A{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
-          href="/patent-attorney">
+          href="/patent-attorney"
+        >
           patent attorney
         </Link>{' '}
         will quickly recognise in the results:
@@ -157,7 +168,8 @@ export default function InternationalTypeSearch() {
             href="/ip-glossary#prior-art"
             data-toggle="tooltip"
             data-placement="bottom"
-            data-original-title="Information which is in the public domain and hence not patentable.">
+            data-original-title="Information which is in the public domain and hence not patentable."
+          >
             prior art
           </Link>{' '}
           that was incorrectly identified by the searcher; and
@@ -172,7 +184,8 @@ export default function InternationalTypeSearch() {
         idea, don&apos;t despair! Speak to an{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
-          href="/patent-attorney">
+          href="/patent-attorney"
+        >
           Australian patent attorney
         </Link>{' '}
         about the patent search results as the result and your options may well

@@ -140,7 +140,8 @@ const SlideButton = ({ className, children, onClick = {} }) => {
     <div
       className={`w-12 h-12 sm:w-[106px] sm:h-[106px] md:w-40 md:h-40 backdrop-blur-xl bg-gray-800 flex justify-center items-center ${className}`}
       style={{ background: 'rgba(0, 0, 0, 0.2)' }}
-      onClick={onClick}>
+      onClick={onClick}
+    >
       {children}
     </div>
   )
@@ -179,16 +180,15 @@ export default function ProfessionalProfiles() {
             }`}
             onClick={() => {
               setSelectedMenu(0)
-            }}>
+            }}
+          >
             <div
               className={`flex flex-row gap-2 ${
                 selectedMenu === 0 ? '' : 'rotate-180'
-              }`}>
+              }`}
+            >
               {selectedMenu === 0 ? (
-                <HiLocationMarker
-                  fill="#7568D1"
-                  size={31}
-                />
+                <HiLocationMarker fill="#7568D1" size={31} />
               ) : (
                 <HiLocationMarker
                   fill="none"
@@ -211,16 +211,15 @@ export default function ProfessionalProfiles() {
             }`}
             onClick={() => {
               setSelectedMenu(1)
-            }}>
+            }}
+          >
             <div
               className={`flex flex-row gap-2 ${
                 selectedMenu === 1 ? 'rotate-180' : ''
-              }`}>
+              }`}
+            >
               {selectedMenu === 1 ? (
-                <HiLocationMarker
-                  fill="#7568D1"
-                  size={31}
-                />
+                <HiLocationMarker fill="#7568D1" size={31} />
               ) : (
                 <HiLocationMarker
                   fill="none"
@@ -247,7 +246,8 @@ export default function ProfessionalProfiles() {
         </div>
         <div
           className="flex flex-col bg-cover bg-center"
-          style={{ backgroundImage: `url(${slides[selectSlide].image})` }}>
+          style={{ backgroundImage: `url(${slides[selectSlide].image})` }}
+        >
           <div className="flex flex-col w-full pt-24 sm:pt-52 md:pt-32 xl:pt-44 2xl:pt-56 pl-12 sm:pl-24 md:pl-28 lg:pl-32 xl:pl-40 pr-20 sm:pr-40 md:pr-48 lg:pr-80 xl:pr-[540px]">
             <div className="flex flex-col items-start py-6 sm:py-14 md:py-6 gap-[10px] sm:gap-6">
               <FaQuoteLeft
@@ -265,7 +265,8 @@ export default function ProfessionalProfiles() {
           <div className="flex flex-row items-end justify-end">
             <SlideButton
               className="hover:opacity-80 cursor-pointer"
-              onClick={prevSlide}>
+              onClick={prevSlide}
+            >
               <MdKeyboardArrowRight
                 size={32}
                 color="#E6E6E6"
@@ -275,7 +276,8 @@ export default function ProfessionalProfiles() {
             </SlideButton>
             <SlideButton
               className="hover:opacity-80 cursor-pointer"
-              onClick={nextSlide}>
+              onClick={nextSlide}
+            >
               <MdKeyboardArrowLeft
                 size={32}
                 color="#E6E6E6"
@@ -297,7 +299,8 @@ export default function ProfessionalProfiles() {
           style={{
             background:
               'linear-gradient(167.62deg, #FFFEF8 42.45%, #FFF3D0 91%)',
-          }}>
+          }}
+        >
           <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-0">
             {profiles[selectedMenu].teamMembers.map((teamMember, index) => (
               <div
@@ -306,13 +309,9 @@ export default function ProfessionalProfiles() {
                 style={{
                   boxShadow:
                     '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-                }}>
-                <Image
-                  alt=""
-                  src={teamMember.url}
-                  width={200}
-                  height={200}
-                />
+                }}
+              >
+                <Image alt="" src={teamMember.url} width={200} height={200} />
                 <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
                   <div>
                     <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
@@ -323,7 +322,8 @@ export default function ProfessionalProfiles() {
                     {teamMember.positions.map((position, index) => (
                       <span
                         key={index}
-                        className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]">
+                        className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
+                      >
                         {position}
                       </span>
                     ))}
@@ -338,7 +338,8 @@ export default function ProfessionalProfiles() {
               style={{
                 boxShadow:
                   '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-              }}>
+              }}
+            >
               <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
                 Discover more experts
               </span>

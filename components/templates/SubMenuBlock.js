@@ -9,18 +9,14 @@ export default function SubMenuBlock({ contents }) {
           return (
             <div
               key={i}
-              className="flex-1 justify-start items-start gap-8 h-full">
+              className="flex-1 justify-start items-start gap-8 h-full"
+            >
               <div className="flex flex-col justify-start item-start gap-[10px]">
                 {content.length > 0 &&
                   content.map((c, k) => {
                     return (
                       <div key={k}>
-                        {c.division && (
-                          <p
-                            key={k}
-                            className="h-8"
-                          />
-                        )}
+                        {c.division && <p key={k} className="h-8" />}
                         {!c.division && (
                           <span
                             key={k}
@@ -28,7 +24,8 @@ export default function SubMenuBlock({ contents }) {
                               c.bold
                                 ? 'text-[#272940]'
                                 : 'text-[#272940]/60 py-[5px]'
-                            }`}>
+                            }`}
+                          >
                             {c.href ? (
                               <Link
                                 isFallback={true}
@@ -37,7 +34,8 @@ export default function SubMenuBlock({ contents }) {
                                     c.href +
                                     '/' +
                                     c.title.toLowerCase().replaceAll(' ', '-'),
-                                }}>
+                                }}
+                              >
                                 {c.title}
                               </Link>
                             ) : (

@@ -113,13 +113,15 @@ export const IndustrySepciality = () => {
                 }`}
                 onClick={() => {
                   setSelectedCard(industry.id)
-                }}>
+                }}
+              >
                 <div
                   className={`rounded-full w-[26px] h-[26px] sm:w-14 sm:h-14 md:w-20 md:h-20 md:min-w-[80px] flex justify-center items-center ${
                     selectedCard === industry.id
                       ? 'selected-industry-card-icon'
                       : 'bg-[#F3F3FA]'
-                  }`}>
+                  }`}
+                >
                   <Image
                     alt=""
                     src={
@@ -138,7 +140,8 @@ export const IndustrySepciality = () => {
                       selectedCard === industry.id
                         ? 'text-white'
                         : 'text-[#272940]'
-                    }`}>
+                    }`}
+                  >
                     {industry.content}
                   </p>
                 </div>

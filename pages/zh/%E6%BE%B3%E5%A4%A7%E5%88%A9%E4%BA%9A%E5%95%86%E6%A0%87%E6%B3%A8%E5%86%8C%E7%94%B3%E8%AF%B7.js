@@ -32,19 +32,19 @@ export default function 澳大利亚商标注册申请() {
           href="https://www.baxterip.com.au/trade-mark-application"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
+      <nav className="flex" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
             </Link>
@@ -55,15 +55,18 @@ export default function 澳大利亚商标注册申请() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/zh/我们的服务"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 我们的服务
               </Link>
             </div>
@@ -74,15 +77,18 @@ export default function 澳大利亚商标注册申请() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/zh/商标"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 商标
               </Link>
             </div>
@@ -93,15 +99,18 @@ export default function 澳大利亚商标注册申请() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/zh/如何注册商标"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 如何商标
               </Link>
             </div>
@@ -112,11 +121,13 @@ export default function 澳大利亚商标注册申请() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 在澳大利亚申请商标
@@ -130,7 +141,8 @@ export default function 澳大利亚商标注册申请() {
         如果商标在您所属的行业被用于商品或者服务时是与众不同的，即可受到保护。根据
         <Link
           title="国际商标申请"
-          href="https://www.baxterip.com.au/zh/国际商标申请">
+          href="https://www.baxterip.com.au/zh/国际商标申请"
+        >
           国际商标
         </Link>
         分类代码，任何一种商品或者服务都归属某个特定类别的商品或服务。
@@ -151,7 +163,8 @@ export default function 澳大利亚商标注册申请() {
             <li>
               <Link
                 title="悉尼和墨尔本的商标代理人"
-                href="https://www.baxterip.com.au/zh/商标代理人">
+                href="https://www.baxterip.com.au/zh/商标代理人"
+              >
                 商标代理人
               </Link>
               评估您对商品和服务所作的选择，并确保您的选择是全面的，而不是带有局限性的。
@@ -163,7 +176,8 @@ export default function 澳大利亚商标注册申请() {
               商标数据库检索，对独特性的考虑以及针对
               <Link
                 title="澳大利亚商标注册申请"
-                href="https://www.baxterip.com.au/zh/澳大利亚商标注册申请">
+                href="https://www.baxterip.com.au/zh/澳大利亚商标注册申请"
+              >
                 国际商标注册申请
               </Link>
               而进行的商标说明评估
@@ -172,7 +186,8 @@ export default function 澳大利亚商标注册申请() {
               在考虑商标评估服务
               <Link
                 title="商标搜索"
-                href="https://www.baxterip.com.au/zh/商标搜索">
+                href="https://www.baxterip.com.au/zh/商标搜索"
+              >
                 （TM Headstart）
               </Link>
               的结果之后递交标准的澳大利亚商标注册申请
@@ -209,7 +224,8 @@ export default function 澳大利亚商标注册申请() {
               <Link
                 title="马德里议定书"
                 href="https://www.baxterip.com.au/zh/知识产权术语表#马德里议定书"
-                rel="&rdquo;noopener&rdquo;">
+                rel="&rdquo;noopener&rdquo;"
+              >
                 马德里议定书
               </Link>
               （或协议）国际体系 system.*

@@ -118,7 +118,8 @@ const Footer = ({ page }) => {
                 <GoogleMapReact
                   bootstrapURLKeys={{ key: '' }}
                   defaultCenter={defaultProps.center}
-                  defaultZoom={defaultProps.zoom}>
+                  defaultZoom={defaultProps.zoom}
+                >
                   <AnyReactComponent
                     lat={59.955413}
                     lng={30.337844}
@@ -132,13 +133,8 @@ const Footer = ({ page }) => {
                 <Subject title="Company" />
                 <div className="flex flex-col items-start gap-6">
                   {company.map((item) => (
-                    <Link
-                      href={item.href}
-                      key={item.title}>
-                      <Item
-                        title={item.title}
-                        page={page}
-                      />
+                    <Link href={item.href} key={item.title}>
+                      <Item title={item.title} page={page} />
                     </Link>
                   ))}
                 </div>
@@ -163,13 +159,8 @@ const Footer = ({ page }) => {
                 <Subject title="More to explore" />
                 <div className="flex flex-col items-start gap-6">
                   {moreToExplore.map((item) => (
-                    <Link
-                      href={item.href}
-                      key={item.title}>
-                      <Item
-                        title={item.title}
-                        page={page}
-                      />
+                    <Link href={item.href} key={item.title}>
+                      <Item title={item.title} page={page} />
                     </Link>
                   ))}
                 </div>
