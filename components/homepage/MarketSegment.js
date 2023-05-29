@@ -39,7 +39,7 @@ const marketSigment = [
 ]
 export const MarketSegment = ({ cardIndex, onChange }) => {
   return (
-    <div className="container- max-w-screen-2xl- mx-auto h-full bg-[#FFFEF8] overflow-hidden">
+    <div className="container max-w-screen-2xl mx-auto h-full bg-[#FFFEF8] overflow-hidden">
       <div className="w-full flex flex-col gap-28 sm:gap-36  py-16 sm:py-24 md:py-36 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-40 items-center bg-marketsegment">
         <div className="flex flex-col items-center md:items-start gap-[86px] sm:gap-[120px] md:gap-16">
           <div className="md:w-1/2 flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
