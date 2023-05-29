@@ -15,12 +15,22 @@ import { OurClient } from '../components/homepage/OurClient'
 import { OurServices } from '../components/homepage/OurServices'
 import ProfessionalProfiles from '../components/homepage/ProfessionalProfiles'
 import { VisitmetaOffice } from '../components/homepage/VisitMetaOffice'
+import useContentStore from '../store/useContent.store'
 
 export default function Home() {
+  const menuState = useContentStore((state) => state.menuState)
+  const setMenuState = useContentStore((state) => state.setMenuState)
   const [selectedMenu, setSelectedMenu] = useState(0)
+  const [subMenu, setSubMenu] = useState(0)
+
   const onChangeMenu = useCallback((index) => {
+    setMenuState(index)
     setSelectedMenu(index)
   }, [])
+
+  useEffect(() => {
+    setSubMenu(menuState)
+  }, [menuState])
 
   return (
     <>
@@ -56,12 +66,41 @@ export default function Home() {
         onChange={onChangeMenu}
       />
       <OurServices />
-      <IndustrySepciality />
-      <ProfessionalProfiles />
+      {subMenu === 0 && (
+        <>
+          <ProfessionalProfiles />
+          <FillingStats />
+          <IndustrySepciality />
+          <IpNewsBlog />
+          <OurClient />
+        </>
+      )}
+      {subMenu === 1 && (
+        <>
+          <ProfessionalProfiles />
+          <OurClient />
+          <FillingStats />
+          <IpNewsBlog />
+        </>
+      )}
+      {subMenu === 2 && (
+        <>
+          <IpNewsBlog />
+          <OurClient />
+          <FillingStats />
+          <ProfessionalProfiles />
+        </>
+      )}
+      {subMenu === 3 && (
+        <>
+          <ProfessionalProfiles />
+          <IpNewsBlog />
+          <IndustrySepciality />
+          <OurClient />
+          <FillingStats />
+        </>
+      )}
       <ContactUs />
-      <IpNewsBlog />
-      <FillingStats />
-      <OurClient />
       <VisitmetaOffice />
       <Footer />
     </>

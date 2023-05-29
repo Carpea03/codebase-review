@@ -6,6 +6,27 @@ import { TiSocialLinkedin } from 'react-icons/ti'
 import GoogleMapReact from 'google-map-react'
 import Link from 'next/link'
 
+const contact = [
+  { title: 'Email', content: 'mail@baxterip.com.au' },
+  { title: 'Phone', content: '+61 2 9264 6716' },
+]
+
+const company = [
+  { title: 'About Us', href: '/about-us' },
+  { title: 'Contact', href: '/contact-us' },
+  { title: 'Privacy Policy', href: '' },
+  { title: 'Terms & conditions', href: '' },
+]
+
+const moreToExplore = [
+  { title: 'IP News', href: '/ip-news' },
+  { title: 'Our Values', href: '' },
+  { title: 'How We Give Back', href: '' },
+  { title: 'Awards & Recognition', href: '' },
+]
+
+const logos = ['aippi.svg', 'apaa.svg', 'ita.svg', 'ipta.svg', 'aipla.svg']
+
 const Subject = ({ title }) => {
   return (
     <div className="flex flex-col items-start gap-3 sm:gap-5 md:gap-3">
@@ -17,11 +38,11 @@ const Subject = ({ title }) => {
   )
 }
 
-const Item = ({ title, content }) => {
+const Item = ({ title, content, page }) => {
   return (
     <div className="flex flex-col items-start gap-[3px] md:gap-[1px]">
       <span className="font-manrope font-medium text-sm sm:text-xl md:text-sm lg:text-base text-white whitespace-nowrap cursor-pointer">
-        {title}
+        {page === title ? <div className="text-black">{title}</div> : title}
       </span>
       <span className="font-manrope font-medium text-sm sm:text-xl text-[#9FA0B2] whitespace-nowrap cursor-pointer">
         {content}
@@ -40,7 +61,7 @@ const defaultProps = {
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>
 
-const Footer = () => {
+const Footer = ({ page }) => {
   return (
     <Container>
       <div className="flex flex-col items-center px-4 py-[30px] sm:px-9 sm:py-[67px] md:px-4 lg:px-10 md:pt-[50px] bg-[#404266]">
@@ -79,14 +100,13 @@ const Footer = () => {
             <div className="flex flex-col items-start gap-6 sm:gap-10 w-full md:w-auto">
               <Subject title="Contact Us" />
               <div className="flex flex-col items-start gap-6">
-                <Item
-                  title="Email"
-                  content="mail@baxterip.com.au"
-                />
-                <Item
-                  title="Phone"
-                  content="+61 2 9264 6716"
-                />
+                {contact.map((item) => (
+                  <Item
+                    key={item.title}
+                    title={item.title}
+                    content={item.content}
+                  />
+                ))}
               </div>
               {/* <Image
                 src={"/footer/map.png"}
@@ -111,10 +131,16 @@ const Footer = () => {
               <div className="flex flex-col items-start gap-10">
                 <Subject title="Company" />
                 <div className="flex flex-col items-start gap-6">
-                  <Item title="About Us" />
-                  <Item title="Contact" />
-                  <Item title="Privacy Policy" />
-                  <Item title="Terms & conditions" />
+                  {company.map((item) => (
+                    <Link
+                      href={item.href}
+                      key={item.title}>
+                      <Item
+                        title={item.title}
+                        page={page}
+                      />
+                    </Link>
+                  ))}
                 </div>
               </div>
               <div className="hidden md:flex h-[90px]" />
@@ -136,11 +162,16 @@ const Footer = () => {
               <div className="flex flex-col items-start gap-10">
                 <Subject title="More to explore" />
                 <div className="flex flex-col items-start gap-6">
-                  <Link href="/ip-news">IP News</Link>
-                  {/* <Item title="IP News" /> */}
-                  <Item title="Our Values" />
-                  <Item title="How We Give Back" />
-                  <Item title="Awards & Recognition" />
+                  {moreToExplore.map((item) => (
+                    <Link
+                      href={item.href}
+                      key={item.title}>
+                      <Item
+                        title={item.title}
+                        page={page}
+                      />
+                    </Link>
+                  ))}
                 </div>
               </div>
               <div className="hidden md:flex h-[90px]" />
@@ -150,36 +181,15 @@ const Footer = () => {
                   <br /> Attorneys is a member of:
                 </span>
                 <div className="grid grid-rows-2 xl:grid-rows-1 grid-flow-col items-center gap-7 relative">
-                  <Image
-                    src={'/footer/marks/aippi.svg'}
-                    alt=""
-                    width={100}
-                    height={100}
-                  />
-                  <Image
-                    src={'/footer/marks/apaa.svg'}
-                    alt=""
-                    width={100}
-                    height={100}
-                  />
-                  <Image
-                    src={'/footer/marks/ita.svg'}
-                    alt=""
-                    width={100}
-                    height={100}
-                  />
-                  <Image
-                    src={'/footer/marks/ipta.svg'}
-                    alt=""
-                    width={100}
-                    height={100}
-                  />
-                  <Image
-                    src={'/footer/marks/aipla.svg'}
-                    alt=""
-                    width={100}
-                    height={100}
-                  />
+                  {logos.map((item) => (
+                    <Image
+                      key={item}
+                      src={'/footer/marks/' + item}
+                      alt=""
+                      width={100}
+                      height={100}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
@@ -200,36 +210,15 @@ const Footer = () => {
                 Baxter IP, Patent & Trade Mark Attorneys is a member of:
               </span>
               <div className="grid grid-cols-5 items-center gap-7 sm:gap-16">
-                <Image
-                  src={'/footer/marks/aippi.svg'}
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-                <Image
-                  src={'/footer/marks/apaa.svg'}
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-                <Image
-                  src={'/footer/marks/ita.svg'}
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-                <Image
-                  src={'/footer/marks/ipta.svg'}
-                  alt=""
-                  width={100}
-                  height={100}
-                />
-                <Image
-                  src={'/footer/marks/aipla.svg'}
-                  alt=""
-                  width={100}
-                  height={100}
-                />
+                {logos.map((item) => (
+                  <Image
+                    key={item}
+                    src={'/footer/marks/' + item}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                ))}
               </div>
             </div>
           </div>

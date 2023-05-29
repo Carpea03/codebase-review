@@ -12,7 +12,7 @@ export default function Layout({ preview, children }) {
       <div>
         <Meta />
         <Alert preview={preview} />
-        <Header />
+        <Header active={'Blog'} />
         <main>{children}</main>
         <RelatedArticle />
         <Contact />

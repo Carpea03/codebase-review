@@ -5,6 +5,7 @@ import Header from '../../components/templates/Header'
 import React, { useState } from 'react'
 import { HiPhone, HiLocationMarker } from 'react-icons/hi'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const peoples = [
   {
@@ -122,7 +123,7 @@ export default function People() {
 
   return (
     <>
-      <Header />
+      <Header active={'People'} />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-people-unsplash !bg-cover">
           <div
@@ -224,20 +225,22 @@ export default function People() {
             <span className="font-lora font-semibold text-2xl sm:text-5xl sm:leading-[120%] tracking-[-0.03em] text-center text-white">
               Perpetual Innovation. Protected.
             </span>
-            <Button
-              className="w-40 h-11 sm:w-[313px] md:w-[353px] sm:h-24"
-              title="Contact Us">
-              <div
-                className="flex flex-row items-center justify-center w-6 h-6 sm:w-14 sm:h-14 md:h-12 md:w-12 bg-white rounded-full"
-                style={{
-                  boxShadow: '1px 7px 16px rgba(44, 44, 44, 0.15)',
-                }}>
-                <HiPhone
-                  className="w-[9px] h-[9px] sm:w-5 sm:h-5"
-                  color="#404266"
-                />
-              </div>
-            </Button>
+            <Link href="/contact-us">
+              <Button
+                className="w-40 h-11 sm:w-[313px] md:w-[353px] sm:h-24"
+                title="Contact Us">
+                <div
+                  className="flex flex-row items-center justify-center w-6 h-6 sm:w-14 sm:h-14 md:h-12 md:w-12 bg-white rounded-full"
+                  style={{
+                    boxShadow: '1px 7px 16px rgba(44, 44, 44, 0.15)',
+                  }}>
+                  <HiPhone
+                    className="w-[9px] h-[9px] sm:w-5 sm:h-5"
+                    color="#404266"
+                  />
+                </div>
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>

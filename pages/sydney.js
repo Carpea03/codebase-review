@@ -1,25 +1,25 @@
 import Head from 'next/head'
-import LayoutWide from '../../components/to-delete/layout-wide'
+import LayoutWide from '../components/to-delete/layout-wide'
 import Link from 'next/link'
 
-export default function Brisbane() {
+export default function Sydney() {
   return (
     <LayoutWide>
       <Head>
         <title>
-          Contact our Baxter IP Brisbane Patent & Trade Mark Attorneys
+          Contact our Baxter IP Sydney Patent & Trade Mark Attorneys
         </title>
         <meta
           name="description"
-          content="Call +61 7 3155 7970 to talk with a patent or trade mark attorney at our Brisbane office to discuss intellectual property queries today."
+          content="Call +61 2 9264 6716 to talk with a patent or trade mark attorney at our Sydney office to discuss intellectual property queries today."
         />
         <link
           rel="canonical"
-          href="https://www.baxterip.com.au/brisbane"
+          href="https://www.baxterip.com.au/sydney"
         />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E5%B8%83%E9%87%8C%E6%96%AF%E7%8F%AD"
+          href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC"
           hreflang="zh"
         />
       </Head>
@@ -27,10 +27,10 @@ export default function Brisbane() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Brisbane Patent & Trade Mark Office
+              Sydney Patent & Trade Mark Office
             </h2>
             <p className="font-light text-gray-600 dark:text-gray-400 sm:text-xl">
-              Call us at +61 7 3155 7970
+              Call us at +61 2 9264 6716
             </p>
           </div>
           <div className="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
@@ -168,9 +168,9 @@ export default function Brisbane() {
                   Address:
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Level 10/239 George St
+                  Level 12/10 Carrington St
                   <br />
-                  Brisbane, QLD 4000, Australia
+                  Sydney, NSW 2000, Australia
                 </p>
               </div>
               <div>
@@ -191,7 +191,7 @@ export default function Brisbane() {
                   to help.
                 </p>
                 <p className="font-semibold text-primary-600 dark:text-primary-500">
-                  +61 7 3155 7970
+                  +61 2 9264 6716
                 </p>
               </div>
             </div>

@@ -2,74 +2,40 @@ import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import React, { useState } from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
+import Link from 'next/link'
+import {
+  sideMenus,
+  subMenus,
+  subMenus1,
+  subMenus2,
+  subMenus3,
+} from '../../utils/const/people'
 
-const sideMenus = [
+const panels = [
   {
-    name: 'IP Attorneys',
-    img: '/menus/people/sideMenus/empty-shield.svg',
-    href: '',
+    title: 'OUR PATENT & TRADE MARK ATTORNEY OFFICES',
+    description:
+      'Between 2007 and 2019, Baxter IP established a team of industry specialist IP attorneys with offices in Sydney, Melbourne, and Brisbane.',
+    data: subMenus,
   },
   {
-    name: 'Patent attorneys',
-    img: '/menus/people/sideMenus/empty-hammer.svg',
-    href: '',
+    title: 'OUR PATENT ATTORNEYS',
+    description:
+      'A Sydney patent attorney or Melbourne patent attorney will be matched with you based on technology expertise to help you file a patent in your field.',
+    data: subMenus1,
   },
   {
-    name: 'Trade mark attorneys',
-    img: '/menus/people/sideMenus/shield-check.svg',
-    href: '',
+    title: 'OUR TRADE MARK ATTORNEYS',
+    description:
+      'A trade mark attorney from Baxter IP based in Sydney or Melbourne can assist you with trade mark applications, trade mark searches or trade mark enforcement.',
+    data: subMenus2,
   },
   {
-    name: 'Commercial counsel',
-    img: '/menus/people/sideMenus/peoples-two.svg',
-    href: '',
+    title: 'COMMERCIAL COUNSEL',
+    description:
+      'After Baxter IP has your intellectual property covered, know what to do with your IP next by seeking advice from our affiliate practices.',
+    data: subMenus3,
   },
-]
-
-const subMenus = [
-  [
-    { title: 'Sydney Team', bold: true, division: false },
-    { title: 'Chris Baxter', bold: false, division: false },
-    { title: 'Dr Qi Zhang', bold: false, division: false },
-    { title: 'Naleesha Niranjan', bold: false, division: false },
-    { title: 'Julia Caunt', bold: false, division: false },
-    { title: 'Andrew Balis', bold: false, division: false },
-    { title: 'Joanne Li', bold: false, division: false },
-    { title: 'Dr Richard Grant', bold: false, division: false },
-    { title: '', bold: false, division: true },
-  ],
-  [
-    { title: 'Merlbourne Team', bold: true, division: false },
-    { title: 'Martin Earley', bold: false, division: false },
-    { title: 'Warren Chandler', bold: false, division: false },
-    { title: 'Dr Seán Klinkradt', bold: false, division: false },
-    { title: 'Jarrod Lichtblau', bold: false, division: false },
-    { title: 'Willem du Preez', bold: false, division: false },
-    { title: '', bold: false, division: true },
-  ],
-  [
-    { title: 'About', bold: true, division: false },
-    {
-      title: 'The role of Australian patent attorneys',
-      bold: false,
-      division: false,
-    },
-    {
-      title: 'How to choose an Australian patent attorney',
-      bold: false,
-      division: false,
-    },
-    {
-      title: 'The role of Australian trade mark attorneys',
-      bold: false,
-      division: false,
-    },
-    {
-      title: 'How to become a trade mark attorney',
-      bold: false,
-      division: false,
-    },
-  ],
 ]
 
 const classNames = (...classes) => {
@@ -91,47 +57,49 @@ export default function People() {
             as="div"
             className="hidden md:flex flex-col justify-start w-[30%]">
             {sideMenus.map((sideMenu, i) => (
-              <Tab
+              <Link
                 key={i}
-                className={({ selected }) =>
-                  classNames(
-                    'flex flex-row justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none',
-                    selected
-                      ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
-                      : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
-                  )
-                }>
-                <Image
-                  src={sideMenu.img}
-                  size={16}
-                  alt=""
-                  width={16}
-                  height={16}
-                />
-                <span className="uppercase font-manrope text-sm cursor-pointer">
-                  {sideMenu.name}
-                </span>
-              </Tab>
+                href={sideMenu.href}>
+                <Tab
+                  key={i}
+                  className={({ selected }) =>
+                    classNames(
+                      'flex flex-row justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none',
+                      selected
+                        ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
+                        : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
+                    )
+                  }>
+                  <Image
+                    src={sideMenu.img}
+                    size={16}
+                    alt=""
+                    width={16}
+                    height={16}
+                  />
+                  <span className="uppercase font-manrope text-sm cursor-pointer">
+                    {sideMenu.name}
+                  </span>
+                </Tab>
+              </Link>
             ))}
           </Tab.List>
           <Tab.Panels
             as="div"
             className="flex flex-col w-full md:w-[70%]">
-            <Tab.Panel>
-              <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">
-                <div className="flex flex-col justify-center items-start w-full h-[134px] gap-[10px] pl-12 border-b md:border-b-2 border-solid border-[#BFBBB2] md:border-[#7568D1]">
-                  <span className="text-[#272940]">
-                    OUR PATENT & TRADE MARK ATTORNEY OFFICES
-                  </span>
-                  <span className="text-[#272940]/60">
-                    Between 2007 and 2019, Baxter IP established a team of
-                    industry specialist IP attorneys with offices in Sydney,
-                    Melbourne, and Brisbane.
-                  </span>
+            {panels.map((item, index) => (
+              <Tab.Panel key={index}>
+                <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">
+                  <div className="flex flex-col justify-center items-start w-full h-[134px] gap-[10px] pl-12 border-b md:border-b-2 border-solid border-[#BFBBB2] md:border-[#7568D1]">
+                    <span className="text-[#272940]">{item.title}</span>
+                    <span className="text-[#272940]/60">
+                      {item.description}
+                    </span>
+                  </div>
+                  <SubMenuBlock contents={item.data} />
                 </div>
-                <SubMenuBlock contents={subMenus} />
-              </div>
-            </Tab.Panel>
+              </Tab.Panel>
+            ))}
           </Tab.Panels>
         </Tab.Group>
       </div>

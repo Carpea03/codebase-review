@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Container } from '../templates/Container'
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
+import Link from 'next/link'
+import { metaOffice } from '../../utils/const/links'
 
 export const VisitmetaOffice = () => {
   return (
@@ -37,17 +39,19 @@ export const VisitmetaOffice = () => {
             width={1920}
             height={1080}
           />
-          <button
-            type="button"
-            className="w-full flex flex-row justify-center items-center py-5 sm:py-10 gap-[10px] bg-[#333552]">
-            <span className="font-manrope font-semibold text-sm sm:text-xl text-white">
-              Visit meta office now
-            </span>
-            <IoIosArrowForward
-              className="w-4 h-4 sm:w-6 sm:h-6"
-              color="white"
-            />
-          </button>
+          <Link href={metaOffice}>
+            <button
+              type="button"
+              className="w-full flex flex-row justify-center items-center py-5 sm:py-10 gap-[10px] bg-[#333552]">
+              <span className="font-manrope font-semibold text-sm sm:text-xl text-white">
+                Visit meta office now
+              </span>
+              <IoIosArrowForward
+                className="w-4 h-4 sm:w-6 sm:h-6"
+                color="white"
+              />
+            </button>
+          </Link>
         </div>
       </div>
     </Container>

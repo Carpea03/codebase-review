@@ -6,7 +6,7 @@ const cards = [
   {
     id: 1,
     icon: '/marketSegments/people-top-card.svg',
-    name: 'Corporate / SME',
+    name: 'Corporate / Mid-Market Enterprise',
     description: 'You are Australian companies, typically manufacturers.',
   },
   {
@@ -29,29 +29,26 @@ const cards = [
   },
 ]
 
+const marketSigment = [
+  {
+    header: 'Tailoring your site experience',
+    title: 'What best describes you?',
+    description:
+      "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
+  },
+]
 export const MarketSegment = ({ cardIndex, onChange }) => {
   return (
-    <div className="container max-w-screen-2xl mx-auto h-full bg-[#FFFEF8] overflow-hidden">
+    <div className="container- max-w-screen-2xl- mx-auto h-full bg-[#FFFEF8] overflow-hidden">
       <div className="w-full flex flex-col gap-28 sm:gap-36  py-16 sm:py-24 md:py-36 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-40 items-center bg-marketsegment">
         <div className="flex flex-col items-center md:items-start gap-[86px] sm:gap-[120px] md:gap-16">
-          <div className="flex flex-row items-center sm:gap-10 md:gap-20">
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-end gap-6">
-              <div className="md:w-1/2 flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
-                <span className="uppercase font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
-                  Market segments
-                </span>
-                <div className="flex flex-row items-center py-5 gap-[10px]">
-                  <span className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940] text-center md:text-left">
-                    What are the Best Describes about You?
-                  </span>
-                </div>
-              </div>
-              <span className="md:w-1/2 font-manrope font-medium text-sm sm:text-[32px] sm:leading-[44px] md:text-xl text-[#7A7B94]">
-                We specialise aross various market segments, Your bussiness
-                provides products or services that make society better. Our
-                patent & trademark attorneys bring you profession-leading
-                experience in sector-specific IP to protect your valuable tech
-                or brand.
+          <div className="md:w-1/2 flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
+            <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
+              {marketSigment[0].header}
+            </span>
+            <div className="flex py-1 gap-[10px]">
+              <span className="font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-center md:text-left">
+                {marketSigment[0].title}
               </span>
             </div>
           </div>

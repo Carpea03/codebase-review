@@ -2,6 +2,8 @@ import { Container } from '../templates/Container'
 import React, { useState } from 'react'
 import { FiChevronUp } from 'react-icons/fi'
 import Image from 'next/image'
+import Link from 'next/link'
+import { metaOffice } from '../../utils/const/links'
 
 export default function ContactUs() {
   const [showContactUs, setShowContactUs] = useState(false)
@@ -102,19 +104,21 @@ export default function ContactUs() {
           <div className="w-full border-[1px] border-[#FFFFFF]/30" />
           <div className="flex flex-row justify-start pb-8 md:gap-4 xl:gap-[100px]">
             <div className="w-1/3 flex justify-center items-center border-[3px] border-[#816BD9] rounded-sm bg-contactus-metaoffice">
-              <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-white/20 backdrop-blur-xl">
-                <Image
-                  alt=""
-                  src="/contactus/arrow-outward.svg"
-                  className="h-8 w-8"
-                  sizes={48}
-                  width={48}
-                  height={48}
-                />
-                <p className="font-manrope font-semibold text-xl text-white whitespace-nowrap">
-                  Visit meta office
-                </p>
-              </div>
+              <Link href={metaOffice}>
+                <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-white/20 backdrop-blur-xl">
+                  <Image
+                    alt=""
+                    src="/contactus/arrow-outward.svg"
+                    className="h-8 w-8"
+                    sizes={48}
+                    width={48}
+                    height={48}
+                  />
+                  <p className="font-manrope font-semibold text-xl text-white whitespace-nowrap">
+                    Visit meta office
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className="w-1/3 flex flex-col items-start px-[10px] gap-7">
               <div className="flex flex-col items-start gap-[10px]">
@@ -165,13 +169,15 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <div
-            className="flex flex-col justify-center items-center h-[88px] bg-[#816BD9] rounded-sm"
-            style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}>
-            <span className="font-manrope font-semibold text-xl text-white">
-              Send us an enquiry
-            </span>
-          </div>
+          <Link href="/contact-us">
+            <div
+              className="flex flex-col justify-center items-center h-[88px] bg-[#816BD9] rounded-sm"
+              style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}>
+              <span className="font-manrope font-semibold text-xl text-white">
+                Send us an enquiry
+              </span>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="md:hidden flex flex-col items-center">

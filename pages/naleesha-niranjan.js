@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../components/to-delete/layout'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
@@ -12,26 +12,26 @@ export default function Page() {
     <Layout>
       <Head>
         <title>
-          Andrew Balis - Associate, Patent & Trade Mark Attorney | Baxter IP
-          Sydney
+          Naleesha Niranjan - Senior Associate, Patent & Trade Mark Attorney |
+          Baxter IP Sydney
         </title>
         <meta
           name="description"
-          content="Andrew advises on several areas of local and international intellectual property and specialises in mechanical and aerospace technology."
+          content="Naleesha Niranjan is a Sydney patent and trade mark attorney specialising in the medical field and biomedical engineering."
         />
         <link
           rel="canonical"
-          href="https://www.baxterip.com.au/sydney/andrew-balis"
+          href="https://www.baxterip.com.au/sydney/naleesha-niranjan"
         />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/global/andrew-balis"
-          hreflang="en-US"
+          href="https://www.baxterip.com.au/global/naleesha-niranjan"
+          hrefLang="en-US"
         />
         <link
           rel="alternate"
-          href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%AE%89%E5%BE%B7%E9%B2%81%E5%B7%B4%E5%88%A9%E6%96%AF"
-          hreflang="zh"
+          href="https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E7%BA%B3%E4%B8%BD%E8%8E%8E%E5%B0%BC%E7%84%B6%E7%AE%80"
+          hrefLang="zh"
         />
       </Head>
       <nav
@@ -85,26 +85,37 @@ export default function Page() {
                   clipRule="evenodd"></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Andrew Balis
+                Naleesha Niranjan
               </span>
             </div>
           </li>
         </ol>
       </nav>
-      <h1>Andrew Balis</h1>
-      <p>Associate, patent & trade mark attorney</p>
+      <h1>Naleesha Niranjan</h1>
+      <p>Senior Associate, Patent & Trade Mark Attorney</p>
       <div className="text-sm">
         <Link
-          href="mailto:andrew.balis@baxterip.com.au"
+          href="mailto:naleesha.niranjan@baxterip.com.au"
           className="text-xs">
-          andrew.balis@baxterip.com.au
+          naleesha.niranjan@baxterip.com.au
         </Link>
         <br />
-        <Link href="tel:+61290990650">+61 2 9099 0650</Link>
+        <Link href="tel:+61280692603">+61 2 8069 2603</Link>
       </div>
       <div className="py-8">
         <small>Areas of Expertise</small>
         <div className="grid grid-cols-5 gap-4 text-xs">
+          <div className="text-center">
+            <Image
+              loader={myLoader}
+              src="/expertise/Biotechnology.svg"
+              alt="Biotechnology icon"
+              title="Biotechnology"
+              width="40"
+              height="40"
+            />
+            <div>Biotechnology</div>
+          </div>
           <div className="text-center">
             <Image
               loader={myLoader}
@@ -119,7 +130,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Mining.svg"
+              src="/expertise/Mechanical.svg"
               alt="Mechanical icon"
               title="Mechanical"
               width="40"
@@ -130,7 +141,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Medical-1.svg"
+              src="/expertise/Medical.svg"
               alt="Medical icon"
               title="Medical"
               width="40"
@@ -152,18 +163,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Patent-Enforcement-1.svg"
-              alt="Patent Enforcement icon"
-              title="Patent Enforcement"
-              width="40"
-              height="40"
-            />
-            <div>Patent Enforcement</div>
-          </div>
-          <div className="text-center">
-            <Image
-              loader={myLoader}
-              src="/expertise/Patent-Oppositions-1.svg"
+              src="/expertise/Patent-Oppositions.svg"
               alt="Patent Oppositions icon"
               title="Patent Oppositions"
               width="40"
@@ -174,7 +174,7 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
-              src="/expertise/Physics-1.svg"
+              src="/expertise/Physics.svg"
               alt="Physics icon"
               title="Physics"
               width="40"
@@ -196,6 +196,17 @@ export default function Page() {
           <div className="text-center">
             <Image
               loader={myLoader}
+              src="/expertise/Trade-Mark-Enforcement.svg"
+              alt="Trade Mark Enforcement icon"
+              title="Trade Mark Enforcement"
+              width="40"
+              height="40"
+            />
+            <div>Trade Mark Enforcement</div>
+          </div>
+          <div className="text-center">
+            <Image
+              loader={myLoader}
               src="/expertise/Trade-Mark-Filings.svg"
               alt="Trade Mark Filings icon"
               title="Trade Mark Filings"
@@ -204,98 +215,109 @@ export default function Page() {
             />
             <div>Trade Mark Filings</div>
           </div>
+          <div className="text-center">
+            <Image
+              loader={myLoader}
+              src="/expertise/Trade-Mark-Opposition.svg"
+              alt="Trade Mark Oppositions icon"
+              title="Trade Mark Oppositions"
+              width="40"
+              height="40"
+            />
+            <div>Trade Mark Oppositions</div>
+          </div>
         </div>
       </div>
       <Image
         loader={myLoader}
-        src="/team/header-andrew-balis.jpg"
-        alt=" Andrew Balis"
-        title="Andrew Balis"
+        src="/team/header-naleesha-niranjan.jpg"
+        alt=" Naleesha Niranjan"
+        title="Naleesha Niranjan"
         width="1200"
         height="600"
         className="!w-full"
       />
       <div>
         <blockquote>
-          I enjoy a hands-on approach, working closely with clients to develop
-          their strategies. It brings me great satisfaction to help clients
-          navigate the IP system to protect their ideas and maximise their
-          idea’s potential.
+          I get excited about new inventions and how they can improve
+          people&rsquo;s lives. It is important for me to understand the
+          commercial value proposition of the intellectual property and
+          incorporate that into a strong IP strategy.
         </blockquote>
-        <i>Andrew Balis - Associate, Patent &amp; Trade Mark Attorney</i>
+        <cite>
+          &ndash; Naleesha Niranjan - Senior Associate, Patent & Trade Mark
+          Attorney
+        </cite>
       </div>
       <br />
       <p>
-        Andrew advises on several areas of local and international intellectual
-        property and specialises in mechanical and aerospace technology.
+        Naleesha brings valuable knowledge in the field of{' '}
+        <Link href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents">
+          biomedical engineering
+        </Link>{' '}
+        to the Baxter IP team. She is passionate about{' '}
+        <Link href="https://www.baxterip.com.au/specialisations/medical-patents">
+          medical technology
+        </Link>
+        , its advancement and its role in tackling global health problems.
       </p>
+
       <p>
-        Andrew acts for a wide variety of clients, including multinationals,
-        small-medium enterprises and sole traders. Andrew has previously acted
-        for one of the world’s largest aerospace companies. He understands that
-        these different clients have different goals, and enjoys providing
-        individualised advice to each of them. A core part of Andrew’s practice
-        is to really understand what clients want from their intellectual
-        property, and he will always make the time to talk with clients (whether
-        it be in person, over webchat, over the phone, or via email) so that he
-        can best understand their ideas and transform that to IP potential.
+        Having completed her Bachelor degree in Medical Engineering through the
+        Dean&rsquo;s Scholar program at the Queensland University of Technology
+        with first class honours, Naleesha was awarded a full scholarship
+        position in the Erasmus Mundus Master&rsquo;s course in Biomedical
+        Engineering, studying both at the University of Ghent in Belgium and The
+        University of Groningen in The Netherlands.
       </p>
+
       <p>
-        Andrew brings with him a wealth of experience in prosecuting patent
-        applications in several industries and technology areas. These include:
-        aerospace, automotive, vapour compression systems, mining, medical and
-        consumer products. Andrew also has valuable experience in drafting
-        patent applications, providing infringement opinions and clearance
-        advice across various industries. He also has experience in preparing
-        and prosecuting design applications in Australia and internationally,
-        design infringement and validity analysis, and design freedom to operate
-        analysis.
+        Naleesha&rsquo;s Master dissertation was conducted in the cardiovascular
+        department of Helmholtz Institute at RWTH Aachen University which
+        involved conducting a thermal analysis of a prototype total artificial
+        heart using numerical methods. During her Masters, Naleesha also
+        interned with university start-ups and appreciates the constraints
+        innovators face in commercialising their inventions.
+        Her&nbsp;multidisciplinary educational background allows her to have a
+        broad understanding of a wide range of technologies, spanning several
+        engineering and clinical disciplines.
       </p>
+
       <p>
-        Andrew is a registered trans-Tasman patent attorney and a registered
-        Australian trade mark attorney. Andrew has a Master of Intellectual
-        Property from the University of Technology, Sydney. Andrew also holds a
-        Bachelor of Mechanical Engineering (Aerospace) from the University of
-        New South Wales and completed an industry thesis on the aeroacoustic
-        properties of a CPX road noise trailer in association with the UNSW
-        Aerodynamics Laboratory and an industry wind tunnel facility. Prior to
-        joining the IP profession, Andrew worked in a boutique acoustic
-        engineering firm where he learned firsthand the foundation of good
-        engineering practice, as well as seeing the research and development
-        investment small enterprises make to develop their ideas.&nbsp;
+        Prior to joining Baxter IP Naleesha worked with a large Australian
+        intellectual property attorney firm where she gained sound knowledge of
+        the IP laws in Australia and New Zealand and broad practical experience
+        in the drafting and prosecution of patent specifications. Naleesha has
+        also worked in-house as an IP Engineer for a global medical devices
+        company.
       </p>
+
       <p>
-        Andrew is a member of The Institute of Patent &amp; Trade Mark Attorneys
-        of Australia, and a member of The Intellectual Property Society of
-        Australia and New Zealand.
+        Outside of the office, Naleesha enjoys coastal walks, good food,
+        travelling and catching up with friends.
       </p>
-      <p>
-        Andrew likes to spend time with family and friends. He is a keen sports
-        enthusiast and follows the NBA and NRL in particular. Andrew also enjoys
-        working on his classic Saab 900 and going for scenic drives with his
-        wife Joanna.
-      </p>
-      <h2>Attorney Snapshot</h2>
-      <ul>
+
+      <h3>Attorney Snapshot</h3>
+
+      <ul class="text-left">
         <li>
-          Registered Trans-Tasman patent attorney and a registered Australian
-          trade mark attorney
+          <Link href="https://www.baxterip.com.au/specialisations/medical-patents">
+            Medical technology/devices
+          </Link>
         </li>
         <li>
-          Master of Intellectual Property from the University of Technology,
-          Sydney
+          <Link href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents">
+            Biomedical engineering
+          </Link>
         </li>
+        <li>Implants and prostheses</li>
+        <li>Cardiovascular devices</li>
+        <li>Orthopaedic implants</li>
+        <li>Implant interface technology</li>
         <li>
-          Bachelor of Mechanical Engineering (Aerospace) from the University of
-          New South Wales
-        </li>
-        <li>
-          Member of The Institute of Patent &amp; Trade Mark Attorneys of
-          Australia
-        </li>
-        <li>
-          Member of The Intellectual Property Society of Australia and New
-          Zealand
+          <Link href="https://www.baxterip.com.au/specialisations/mechanical-patents">
+            Mechanical engineering
+          </Link>
         </li>
       </ul>
     </Layout>

@@ -3,7 +3,6 @@ import Footer from '../../components/templates/Footer'
 import Header from '../../components/templates/Header'
 import React, { useState } from 'react'
 import { FiChevronUp } from 'react-icons/fi'
-import MelbourneOffice from './offices/MelbourneOffice'
 import SydneyOffice from './offices/SydneyOffice'
 
 const hears = [
@@ -16,7 +15,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <Header />
+      <Header active={'Contact'} />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-contactus-unsplash !bg-cover">
           <div
@@ -60,10 +59,10 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+
         <SydneyOffice />
-        {/* <MelbourneOffice /> */}
       </Container>
-      <Footer />
+      <Footer page={'Contact'} />
     </>
   )
 }

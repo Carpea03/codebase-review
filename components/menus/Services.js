@@ -1,132 +1,45 @@
 import { Disclosure, Tab } from '@headlessui/react'
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
 import { FaCaretDown } from 'react-icons/fa'
+import {
+  sideMenus,
+  subMenus,
+  subMenus1,
+  subMenus2,
+  subMenus3,
+  subMenus4,
+} from '../../utils/const/services'
+import { topMenus } from '../../utils/const/menus'
+import useContentStore from '../../store/useContent.store'
+import Link from 'next/link'
 
-const sideMenus = [
+const panels = [
   {
-    id: 1,
-    name: 'Patent Service',
-    img: '/menus/services/sideMenus/patent-service.svg',
-    href: '',
+    title: 'PATENTING IN YOUR INDUSTRY',
+    description:
+      'Baxter IP has patent attorneys who have specialist expertise in a variety of industries and technology specialisations.',
+    data: subMenus1,
   },
   {
-    id: 2,
-    name: 'Patent Specification',
-    img: '/menus/services/sideMenus/patent-specifications.svg',
-    href: '',
+    title: 'OUR PATENT SERVICES',
+    description:
+      'We explain how to apply for a trade mark in Australia so you can protect your trade mark to secure your brand’s future.',
+    data: subMenus2,
   },
   {
-    id: 3,
-    name: 'Trademark Service',
-    img: '/menus/services/sideMenus/trademark-services.svg',
-    href: '',
+    title: 'IP OPPOSITIONS & DISPUTES',
+    description:
+      'With their extensive expertise in contentious matters, our patent and trade mark attorneys are well-equipped to handle your IP dispute and opposition matters.',
+    data: subMenus3,
   },
   {
-    id: 4,
-    name: 'Ip Opporsitions & Disputes',
-    img: '/menus/services/sideMenus/ip-oppositions.svg',
-    href: '',
+    title: 'OUR PARTNERS',
+    description:
+      'The Baxter IP team is trained in capital raising, licensing and government grants and can help connect you with BIP Capital Partners.',
+    data: subMenus4,
   },
-  {
-    id: 5,
-    name: 'Bip Partners',
-    img: '/menus/services/sideMenus/bip-partners.svg',
-    href: '',
-  },
-]
-
-const topMenus = [
-  {
-    id: 1,
-    name: 'Coperator / SME',
-    icon: '/menus/services/topMenus/people-top-card.svg',
-    href: '',
-  },
-  {
-    id: 2,
-    name: 'Founded Startups',
-    icon: '/menus/services/topMenus/school.svg',
-    href: '',
-  },
-  {
-    id: 3,
-    name: 'Entrepreneur',
-    icon: '/menus/services/topMenus/home.svg',
-    href: '',
-  },
-  {
-    id: 4,
-    name: 'Foriegn Associates',
-    icon: '/menus/services/topMenus/peoples-two.svg',
-    href: '',
-  },
-]
-
-const subMenus = [
-  [
-    { title: 'How to patent', bold: true, division: false },
-    { title: 'Patent benefits', bold: false, division: false },
-    { title: '', bold: false, division: true },
-    { title: 'Patent search', bold: true, division: false },
-    { title: 'International patent search', bold: false, division: false },
-    { title: 'International-type search', bold: false, division: false },
-    { title: 'Australian patent search', bold: false, division: false },
-    { title: 'Freedom-to-operate patent search', bold: false, division: false },
-    { title: '', bold: false, division: true },
-    { title: 'Registered design', bold: true, division: false },
-    { title: 'Registered design application', bold: false, division: false },
-    { title: 'Design disputes', bold: false, division: false },
-    { title: '', bold: false, division: true },
-    { title: 'Other patent services', bold: true, division: false },
-    { title: 'Inovation patents', bold: false, division: false },
-    { title: '', bold: false, division: true },
-  ],
-  [
-    { title: 'Ip strategy', bold: true, division: false },
-    { title: 'Ip audit', bold: false, division: false },
-    { title: 'Ip vaulation', bold: false, division: false },
-    { title: '', bold: false, division: true },
-    { title: 'Patent opositions & dispites', bold: true, division: false },
-    { title: 'Patent opositions', bold: false, division: false },
-    { title: 'Patent itigation', bold: false, division: false },
-    { title: '', bold: false, division: true },
-    { title: 'Other patent services', bold: false, division: false },
-    { title: 'Inovation patents', bold: false, division: false },
-    { title: '', bold: false, division: true },
-    { title: 'Patent opositions & dispites', bold: true, division: false },
-    { title: 'Patent opositions', bold: false, division: false },
-    { title: 'Patent itigation', bold: false, division: false },
-  ],
-  [
-    { title: 'Australian patent process', bold: true, division: false },
-    { title: 'International-type patent search', bold: false, division: false },
-    {
-      title: 'PCT internationals patent applications',
-      bold: false,
-      division: false,
-    },
-    {
-      title: 'National phase patent application',
-      bold: false,
-      division: false,
-    },
-    { title: '', bold: false, division: true },
-    { title: 'Australian patent process', bold: true, division: false },
-    { title: 'International-type patent search', bold: false, division: false },
-    {
-      title: 'PCT internationals patent applications',
-      bold: false,
-      division: false,
-    },
-    {
-      title: 'National phase patent application',
-      bold: false,
-      division: false,
-    },
-    { title: '', bold: false, division: true },
-  ],
 ]
 
 const classNames = (...classes) => {
@@ -134,6 +47,7 @@ const classNames = (...classes) => {
 }
 
 export default function Services({ menuIndex, onChange }) {
+  const setMenuState = useContentStore((state) => state.setMenuState)
   return (
     <div
       className="w-full bg-[#FFFEFD]"
@@ -148,28 +62,32 @@ export default function Services({ menuIndex, onChange }) {
             as="div"
             className="hidden md:flex flex-col justify-start w-[30%]">
             {Object.keys(sideMenus).map((index) => (
-              <Tab
+              <Link
                 key={index}
-                as="div"
-                className={({ selected }) =>
-                  classNames(
-                    'flex justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 h-[67px] border-b border-solid outline-none',
-                    selected
-                      ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
-                      : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
-                  )
-                }>
-                <Image
-                  src={sideMenus[index].img}
-                  size={16}
-                  alt=""
-                  width={16}
-                  height={16}
-                />
-                <span className="uppercase font-manrope text-sm ">
-                  {sideMenus[index].name}
-                </span>
-              </Tab>
+                href={sideMenus[index].href}>
+                <Tab
+                  key={index}
+                  as="div"
+                  className={({ selected }) =>
+                    classNames(
+                      'flex justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 h-[67px] border-b border-solid outline-none',
+                      selected
+                        ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
+                        : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
+                    )
+                  }>
+                  <Image
+                    src={sideMenus[index].img}
+                    size={16}
+                    alt=""
+                    width={16}
+                    height={16}
+                  />
+                  <span className="uppercase font-manrope text-sm ">
+                    {sideMenus[index].name}
+                  </span>
+                </Tab>
+              </Link>
             ))}
           </Tab.List>
           <Tab.Panels
@@ -206,6 +124,7 @@ export default function Services({ menuIndex, onChange }) {
                         as="div"
                         onClick={() => {
                           onChange(index)
+                          setMenuState(index)
                         }}
                         className={`w-1/3 flex flex-row items-center justify-center h-full outline-none cursor-pointer ${
                           menuIndex === index
@@ -223,7 +142,7 @@ export default function Services({ menuIndex, onChange }) {
                             alt=""
                           />
                           <span
-                            className={`font-manrope text-sm px-2 ${
+                            className={`font-manrope text-l px-2 ${
                               menuIndex === index
                                 ? 'font-bold text-[#272940] '
                                 : 'font-medium text-[#272940]/50'
@@ -243,6 +162,19 @@ export default function Services({ menuIndex, onChange }) {
                 </Tab.Panels>
               </Tab.Group>
             </Tab.Panel>
+            {panels.map((item, index) => (
+              <Tab.Panel key={index}>
+                <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">
+                  <div className="flex flex-col justify-center items-start w-full h-[134px] gap-[10px] pl-12 border-b md:border-b-2 border-solid border-[#BFBBB2] md:border-[#7568D1]">
+                    <span className="text-[#272940]">{item.title}</span>
+                    <span className="text-[#272940]/60">
+                      {item.description}
+                    </span>
+                  </div>
+                  <SubMenuBlock contents={item.data} />
+                </div>
+              </Tab.Panel>
+            ))}
           </Tab.Panels>
         </Tab.Group>
         <div className="flex flex-col md:hidden">
