@@ -32,7 +32,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
 
   return (
     <div className="relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD] z-30">
-      <div className="container hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40">
+      <div className="container- hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40-">
         <div className="flex justify-between w-full md:gap-8">
           <div className="flex justify-between items-center gap-16 2xl:gap-[70px]">
             <Link href="/">
@@ -103,7 +103,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                 placeholder="Search..."
               />
             </div>
-            <div className="flex flex-row justify-start items-center h-11 w-full">
+            <div className="flex flex-row justify-start items-center h-11 w-full-">
               <Listbox
                 value={selectedLanguage}
                 onChange={setSelectedLanguage}>

@@ -16,7 +16,7 @@ export default function TopMenu({ menuIndex, onChange }) {
 
   return (
     <div
-      className="sticky top-0 container max-w-screen-2xl mx-auto h-full bg-[#FFFEF8] z-50"
+      className="sticky top-0 container- max-w-screen-2xl- mx-auto h-full bg-[#FFFEF8] z-50"
       style={{
         filter: 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15))',
       }}>
