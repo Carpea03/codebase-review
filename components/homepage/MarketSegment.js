@@ -6,32 +6,32 @@ const cards = [
   {
     id: 1,
     icon: '/marketSegments/people-top-card.svg',
-    name: 'Corporate / Mid-Market Enterprise',
-    description: 'You are Australian companies, typically manufacturers.',
+    name: 'Corporate or SME',
+    description: 'A company that conducts R&D, develops software or manufactures product.',
   },
   {
     id: 2,
     icon: '/marketSegments/peoples-two.svg',
-    name: 'Funded Startups',
-    description: 'You has australian startup companies that are 1-5 years old.',
+    name: 'Startup (Series A +) & Investors',
+    description: 'Developing new technology or sporting a clever brand.',
   },
   {
     id: 3,
     icon: '/marketSegments/school.svg',
-    name: 'CEntrepreneur',
-    description: 'You are a sole inventor.',
+    name: 'Early Stage Startup or Entrepreneur',
+    description: 'Working on bringing new ideas to life.',
   },
   {
     id: 4,
     icon: '/marketSegments/xiaodu-home.svg',
     name: 'Foreign Associates',
-    description: 'You are IP attorney based in other countries.',
+    description: 'IP Attorney firm outside of Australia or New Zealand.',
   },
 ]
 
 const marketSigment = [
   {
-    header: 'Tailoring your site experience',
+    header: 'Step 1',
     title: 'What best describes you?',
     description:
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
