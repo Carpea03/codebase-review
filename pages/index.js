@@ -44,9 +44,7 @@ export default function Home() {
       <Header topMenuIndex={selectedMenu} onTopMenuChange={onChangeMenu} />
       <HeroBanner />
       <BrandsBanner />
-      <Benefits />
       <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
-      <TopMenu menuIndex={selectedMenu} onChange={onChangeMenu} />
       <OurServices />
       {subMenu === 0 && (
         <>

@@ -4,11 +4,10 @@ import Image from 'next/image'
 
 const banners = [
   { id: 1, src: '/banner/ten13.png' },
-  { id: 2, src: '/banner/investible.svg' },
+  { id: 2, src: '/banner/investible-new.svg' },
   { id: 3, src: '/banner/unsw-sydney.svg' },
-  { id: 4, src: '/banner/university-of-sydney.svg' },
-  { id: 5, src: '/banner/founders.svg' },
-  { id: 6, src: '/banner/airtree.svg' },
+  { id: 4, src: '/banner/founders.svg' },
+  { id: 5, src: '/banner/airtree.svg' },
 ]
 
 export default function BrandsBanner() {

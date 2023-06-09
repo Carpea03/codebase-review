@@ -16,8 +16,8 @@ const details = [
 ]
 
 const buttonText = [
-  { title: 'Talk to attorney now' },
-  { title: 'Visit metaoffice now' },
+  { title: 'Talk to an Attorney Now' },
+  { title: 'Visit Metaoffice Now' },
 ]
 
 export default function HeroBanner() {
