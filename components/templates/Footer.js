@@ -25,7 +25,7 @@ const moreToExplore = [
   { title: 'Awards & Recognition', href: '' },
 ]
 
-const logos = ['aippi.svg', 'apaa.svg', 'ita.svg', 'ipta.svg', 'aipla.svg']
+const logos = ['ita.svg', 'ipta.svg', 'aipla.svg']
 
 const Subject = ({ title }) => {
   return (

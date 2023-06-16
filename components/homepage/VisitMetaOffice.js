@@ -32,13 +32,6 @@ export const VisitmetaOffice = () => {
         </div>
         {/** bottom */}
         <div className="w-full">
-          <Image
-            alt=""
-            src="/meta-office.png"
-            className="w-full"
-            width={1920}
-            height={1080}
-          />
           <Link href={metaOffice}>
             <button
               type="button"
