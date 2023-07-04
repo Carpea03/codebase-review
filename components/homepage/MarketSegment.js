@@ -12,19 +12,19 @@ const cards = [
   {
     id: 2,
     icon: '/marketSegments/peoples-two.svg',
-    name: 'Startup (Series A +) & Investors',
-    description: 'Developing new technology or sporting a clever brand.',
+    name: 'Scaleup or Investor',
+    description: 'Developing new tech or growing a clever brand.',
   },
   {
     id: 3,
     icon: '/marketSegments/school.svg',
-    name: 'Early Stage Startup or Entrepreneur',
-    description: 'Working on bringing new ideas to life.',
+    name: 'Startup or Entrepreneur',
+    description: 'Working on something new.',
   },
   {
     id: 4,
     icon: '/marketSegments/xiaodu-home.svg',
-    name: 'Foreign Associates',
+    name: 'IP Attorney',
     description: 'IP Attorney firm outside of Australia or New Zealand.',
   },
 ]
