@@ -199,7 +199,7 @@ export const FillingStats = () => {
               <div className="py-14 sm:py-[100px] md:py-[120px] md:px-40 xl:px-80 2xl:px-[402px]">
                 <TitleContainer
                   title="Filling stats"
-                  description="Total of Application type patten filled"
+                  description=""
                 />
               </div>
             </div>
@@ -270,83 +270,6 @@ export const FillingStats = () => {
               ))}
             </Listbox.Options>
           </Listbox>
-          <div
-            className="relative w-full flex flex-col bg-cover gap-48 md:gap-40"
-            style={{ backgroundImage: `url(${menus[selectedMenu].image})` }}
-          >
-            <div className="flex flex-col pt-60 md:pt-64 px-20 md:px-80 gap-4 sm:gap-8 md:gap-6">
-              <div className="flex flex-col items-center justify-center">
-                <span className="font-lora font-medium text-2xl sm:text-5xl md:text-[64px] text-white whitespace-nowrap">
-                  {menus[selectedMenu].title}
-                </span>
-              </div>
-              <span className="font-manrope font-medium text-sm sm:text-[32px] sm:leading-[44px] md:text-xl text-white text-center">
-                {menus[selectedMenu].description}
-              </span>
-            </div>
-            <div className="w-full h-[87px] sm:h-[194px] md:h-[250px] flex flex-row">
-              <div className="w-full flex flex-row justify-center items-center px-12 py-[10px] sm:py-8 sm:px-12 sm:gap-12 bg-black/20 backdrop-blur-xl">
-                <div className="w-1/3 flex flex-row justify-center items-center px-2 py-[10px] sm:py-8 sm:px-6 rounded">
-                  <div className="flex flex-col justify-center items-center gap-8">
-                    <span className="font-manrope font-medium text-xs sm:text-2xl text-[#ADAECE]">
-                      Design
-                    </span>
-                    <span className="font-lora font-medium text-xl sm:text-5xl text-white">
-                      {menus[selectedMenu].design}
-                    </span>
-                  </div>
-                </div>
-                <div className="w-1/3 flex flex-row justify-center items-center py-8 px-6 rounded">
-                  <div className="flex flex-col justify-center items-center gap-8">
-                    <span className="font-manrope font-medium text-xs sm:text-2xl text-[#ADAECE]">
-                      Patent
-                    </span>
-                    <span className="font-lora font-medium text-xl sm:text-5xl text-white">
-                      {menus[selectedMenu].patent}
-                    </span>
-                  </div>
-                </div>
-                <div className="w-1/3 flex flex-row justify-center items-center py-8 px-6 rounded">
-                  <div className="flex flex-col justify-center items-center gap-8">
-                    <span className="font-manrope font-medium text-xs sm:text-2xl text-[#ADAECE]">
-                      Trademark
-                    </span>
-                    <span className="font-lora font-medium text-xl sm:text-5xl text-white">
-                      {menus[selectedMenu].trademark}
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden md:flex flex-row w-[320px] h-full">
-                <div
-                  className="w-1/2 bg-black/20 backdrop-blur-xl flex justify-center items-center cursor-pointer hover:opacity-80"
-                  style={{
-                    transform: 'matrix(-1, 0, 0, 1, 0, 0)',
-                  }}
-                  onClick={prevMenuSlide}
-                >
-                  <MdKeyboardArrowLeft
-                    size={32}
-                    color="#E6E6E6"
-                    style={{ transform: 'matrix(-1, 0, 0, 1, 0, 0)' }}
-                  />
-                </div>
-                <div
-                  className="w-1/2 bg-black/20 backdrop-blur-xl flex justify-center items-center  cursor-pointer hover:opacity-80"
-                  style={{
-                    transform: 'matrix(-1, 0, 0, 1, 0, 0)',
-                  }}
-                  onClick={nextMenuSlide}
-                >
-                  <MdKeyboardArrowRight
-                    size={32}
-                    color="#E6E6E6"
-                    style={{ transform: 'matrix(-1, 0, 0, 1, 0, 0)' }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="flex flex-col items-start">
             <div className="flex flex-row justify-center items-center pt-[133px] px-24 pb-24 md:px-40 md:pt-32 md:pb-16 md:border-b-[1px] border-[#F0E4C3]">
               <div className="flex flex-col md:flex-row items-center justify-center md:justify-end gap-14 md:gap-[108px]">

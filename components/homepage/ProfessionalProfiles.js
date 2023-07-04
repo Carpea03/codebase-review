@@ -15,13 +15,9 @@ const profiles = [
     teamMembers: [
       {
         id: 1,
-        name: 'Naleesha Niranjan',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/naleesha.png',
+        name: 'Julia Caunt',
+        positions: ['Senior Associate', 'Trade Mark Attorney'],
+        url: '',
       },
       {
         id: 2,
@@ -41,19 +37,15 @@ const profiles = [
       },
       {
         id: 4,
-        name: 'Joanne Li',
-        positions: [
-          'Associate',
-          'Trade Mark Attorney',
-          'International filings manager',
-        ],
-        url: '/professionalProfiles/peoples/joanne.png',
+        name: 'Dr Seán Klinkradt',
+        positions: ['Senior Associate', 'Patent Attorney'],
+        url: '',
       },
       {
         id: 5,
-        name: 'Willem du Preez',
-        positions: ['Associate', 'Patent & trademark attorney'],
-        url: '/professionalProfiles/peoples/willem.png',
+        name: 'Warren Chandler',
+        positions: ['Senior Associate', 'Patent & Trade Mark Attorney'],
+        url: '',
       },
       {
         id: 6,
@@ -69,19 +61,15 @@ const profiles = [
     teamMembers: [
       {
         id: 1,
-        name: 'Chris Baxter',
-        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
-        url: '/professionalProfiles/peoples/chris.png',
+        name: 'Julia Caunt',
+        positions: ['Senior Associate', 'Trade Mark Attorney'],
+        url: '',
       },
       {
         id: 2,
-        name: 'Naleesha Niranjan',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/naleesha.png',
+        name: 'Chris Baxter',
+        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/chris.png',
       },
       {
         id: 3,
@@ -95,19 +83,15 @@ const profiles = [
       },
       {
         id: 4,
-        name: 'Joanne Li',
-        positions: [
-          'Associate',
-          'Trade Mark Attorney',
-          'International filings manager',
-        ],
-        url: '/professionalProfiles/peoples/joanne.png',
+        name: 'Dr Seán Klinkradt',
+        positions: ['Senior Associate', 'Patent Attorney'],
+        url: '',
       },
       {
         id: 5,
-        name: 'Willem du Preez',
-        positions: ['Associate', 'Patent & trademark attorney'],
-        url: '/professionalProfiles/peoples/willem.png',
+        name: 'Warren Chandler',
+        positions: ['Senior Associate', 'Patent & Trade Mark Attorney'],
+        url: '',
       },
       {
         id: 6,
