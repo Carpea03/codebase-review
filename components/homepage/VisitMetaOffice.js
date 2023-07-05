@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Container } from '../templates/Container'
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io'

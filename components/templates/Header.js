@@ -28,8 +28,6 @@ const classNames = (...classes) => {
 }
 
 export default function Header({ topMenuIndex, onTopMenuChange, active }) {
-  const [selectedLanguage, setSelectedLanguage] = useState(langList[0])
-
   return (
     <div className="relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD] z-30">
       <div className="container hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40">
@@ -75,7 +73,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                         >
                           {menu.id == 1 && (
                             <Services
-                              menuIndex={topMenuIndex}
+                              menuIndex={topMenuIndex - 1}
                               onChange={(index) => onTopMenuChange(index)}
                             />
                           )}
@@ -90,67 +88,27 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
               ))}
             </div>
           </div>
-          <div className="flex justify-between items-center gap-16 2xl:gap-[70px]">
-            <div className="flex items-center w-full h-14 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
-              <div className="grid place-items-center h-full w-12 text-gray-300">
-                <Search color="#404266" size={24} />
-              </div>
-              <input
-                className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none"
-                type="text"
-                id="search"
-                placeholder="Search..."
-              />
+          <form action="">
+            <input
+              type="search"
+              class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
+            />
+            <div className="absolute top-4 p-3 flex justify-start item-center">
+              <Search color="#404266" size={24} />
             </div>
-            <div className="flex flex-row justify-start items-center h-11 w-full">
-              <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
-                <Listbox.Button className="flex flex-row justify-start items-center gap-3">
-                  <p className="font-manrope text-xs font-normal text-[#404246]">
-                    {selectedLanguage.name}
-                  </p>
-                  <Image
-                    alt=""
-                    src={selectedLanguage.url}
-                    width={24}
-                    height={24}
-                  />
-                  <MdArrowDropDown size={16} color="black" />
-                </Listbox.Button>
-                {/* <Listbox.Options>
-                  {langList.map((lang) => (
-                    <Listbox.Option
-                      key={lang.id}
-                      value={lang}
-                      disabled={lang.unavailable}
-                      as={Fragment}
-                    >
-                      {({ active, selected }) => (
-                        <li
-                          className={`${
-                            active
-                              ? "bg-blue-500 text-white"
-                              : "bg-white text-black"
-                          }`}
-                        >
-                          {selected && (
-                            <FiCheck
-                              className="hidden ui-selected:block"
-                              sizes={5}
-                            />
-                          )}
-                          {lang.name}
-                        </li>
-                      )}
-                    </Listbox.Option>
-                  ))}
-                </Listbox.Options> */}
-              </Listbox>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
       <div className="container flex flex-row justify-between items-center mx-auto p-5 md:hidden">
-        <Search size={24} />
+        <form action="">
+          <input
+            type="search"
+            class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
+          />
+          <div className="absolute top-6 p-3 flex justify-start item-center">
+            <Search color="#404266" size={24} />
+          </div>
+        </form>
         <Logo />
         <Popover as="div">
           <Popover.Button className="outline-none">

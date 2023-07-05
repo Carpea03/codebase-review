@@ -3,12 +3,14 @@ import React from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { Container } from './Container'
 import { TiSocialLinkedin } from 'react-icons/ti'
+import { metaOffice } from '../../utils/const/links'
 import GoogleMapReact from 'google-map-react'
 import Link from 'next/link'
 
 const contact = [
-  { title: 'Email', content: 'mail@baxterip.com.au' },
   { title: 'Phone', content: '+61 2 9264 6716' },
+  { title: 'Virtual Office', content: '' },
+  { title: 'Email', content: 'mail@baxterip.com.au' },
 ]
 
 const company = [
@@ -44,9 +46,11 @@ const Item = ({ title, content, page }) => {
       <span className="font-manrope font-medium text-sm sm:text-xl md:text-sm lg:text-base text-white whitespace-nowrap cursor-pointer">
         {page === title ? <div className="text-black">{title}</div> : title}
       </span>
-      <span className="font-manrope font-medium text-sm sm:text-xl text-[#9FA0B2] whitespace-nowrap cursor-pointer">
-        {content}
-      </span>
+      {content && (
+        <span className="font-manrope font-medium text-sm sm:text-xl text-[#9FA0B2] whitespace-nowrap cursor-pointer">
+          {content}
+        </span>
+      )}
     </div>
   )
 }
@@ -78,7 +82,7 @@ const Footer = ({ page }) => {
                 />
               </div>
               <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base flex items-center text-white">
-                Perpetual Innovation. Protected.
+                Innovate Boldly. Protect Strategically.
               </span>
             </div>
             <div className="md:w-1/3 flex flex-row items-center md:py-5 relative">
@@ -101,19 +105,25 @@ const Footer = ({ page }) => {
               <Subject title="Contact Us" />
               <div className="flex flex-col items-start gap-6">
                 {contact.map((item) => (
-                  <Item
-                    key={item.title}
-                    title={item.title}
-                    content={item.content}
-                  />
+                  <>
+                    <Item
+                      key={item.title}
+                      title={item.title}
+                      content={item.content}
+                    />
+                    {!item.content && (
+                      <Link href={metaOffice}>
+                        <Image
+                          src={'/footer/meta-office-small.png'}
+                          width={290}
+                          height={250}
+                          className="bg-cover w-[340px] h-[290px] sm:w-[760px] sm:h-[650px] md:w-[290px] md:h-[250px]"
+                        />
+                      </Link>
+                    )}
+                  </>
                 ))}
               </div>
-              {/* <Image
-                src={"/footer/map.png"}
-                width={290}
-                height={250}
-                className="bg-cover w-[340px] h-[290px] sm:w-[760px] sm:h-[650px] md:w-[290px] md:h-[250px]"
-              /> */}
               <div className="w-full h-[290px] sm:h-[650px] md:w-[240px] md:h-[200px] lg:w-[290px] lg:h-[250px]">
                 <GoogleMapReact
                   bootstrapURLKeys={{ key: '' }}

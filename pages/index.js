@@ -14,18 +14,18 @@ import { MarketSegment } from '../components/homepage/MarketSegment'
 import { OurClient } from '../components/homepage/OurClient'
 import { OurServices } from '../components/homepage/OurServices'
 import ProfessionalProfiles from '../components/homepage/ProfessionalProfiles'
-import { VisitmetaOffice } from '../components/homepage/VisitMetaOffice'
+import { VisitmetaOffice } from '../components/homepage/VisitmetaOffice'
 import useContentStore from '../store/useContent.store'
 
 export default function Home() {
   const menuState = useContentStore((state) => state.menuState)
   const setMenuState = useContentStore((state) => state.setMenuState)
-  const [selectedMenu, setSelectedMenu] = useState(0)
+  const [selectedMenu, setSelectedMenu] = useState(-1)
   const [subMenu, setSubMenu] = useState(0)
 
   const onChangeMenu = useCallback((index) => {
-    setMenuState(index)
-    setSelectedMenu(index)
+    setMenuState(index + 1)
+    setSelectedMenu(index + 1)
   }, [])
 
   useEffect(() => {
@@ -46,38 +46,47 @@ export default function Home() {
       <BrandsBanner />
       <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
       <OurServices />
-      {subMenu === 0 && (
+      {subMenu === 0 && selectedMenu === -1 && (
         <>
-          <ProfessionalProfiles />
-          <FillingStats />
+          <IpNewsBlog />
           <IndustrySepciality />
-          <IpNewsBlog />
           <OurClient />
-        </>
-      )}
-      {subMenu === 1 && (
-        <>
           <ProfessionalProfiles />
-          <OurClient />
-          <FillingStats />
-          <IpNewsBlog />
         </>
       )}
-      {subMenu === 2 && (
+      {subMenu === 1 && selectedMenu !== -1 && (
         <>
           <IpNewsBlog />
           <OurClient />
+          <IndustrySepciality />
           <FillingStats />
           <ProfessionalProfiles />
         </>
       )}
-      {subMenu === 3 && (
+      {subMenu === 2 && selectedMenu !== -1 && (
         <>
-          <ProfessionalProfiles />
           <IpNewsBlog />
           <IndustrySepciality />
           <OurClient />
           <FillingStats />
+          <ProfessionalProfiles />
+        </>
+      )}
+      {subMenu === 3 && selectedMenu !== -1 && (
+        <>
+          <IpNewsBlog />
+          <OurClient />
+          <FillingStats />
+          <ProfessionalProfiles />
+        </>
+      )}
+      {subMenu === 4 && selectedMenu !== -1 && (
+        <>
+          <IpNewsBlog />
+          <FillingStats />
+          <IndustrySepciality />
+          <OurClient />
+          <ProfessionalProfiles />
         </>
       )}
       <ContactUs />

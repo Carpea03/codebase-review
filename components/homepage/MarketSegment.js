@@ -7,7 +7,8 @@ const cards = [
     id: 1,
     icon: '/marketSegments/people-top-card.svg',
     name: 'Corporate or SME',
-    description: 'A company that conducts R&D, develops software or manufactures product.',
+    description:
+      'A company that conducts R&D, develops software or manufactures product.',
   },
   {
     id: 2,
@@ -53,158 +54,96 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
             </div>
           </div>
           <div className="hidden md:grid grid-cols-2 grid-flow-row gap-6 items-stretch">
-            {cards.map((card, index) => (
-              <div
-                className={`${cardIndex === index ? 'bg-[#a290ea]' : ''}`}
-                key={index}
-                style={{
-                  clipPath:
-                    index === 1
-                      ? 'polygon(85% 0, 100% 20%, 100% 100%, 0 100%, 0 0)'
-                      : index === 2
-                      ? 'polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 80%)'
-                      : 'none',
-                }}
-              >
-                <div
-                  key={index}
-                  className={`flex p-8 h-72 rounded-sm cursor-pointer ${
-                    cardIndex === index
-                      ? 'bg-marketsegment-selected-card'
-                      : 'bg-marketsegment-non-selected-card'
-                  } ${
-                    cardIndex === index && cardIndex !== 1 && cardIndex !== 2
-                      ? 'border-[5px] border-[#a290ea]'
-                      : ''
-                  }`}
-                  //clip-path: polygon(78% 3%, 97% 18%, 97% 98%, 3% 96%, 3% 3%);
-                  style={{
-                    clipPath:
-                      index === 1
-                        ? 'polygon(85% 5px, calc(100% - 5px) 20%, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 5px)'
-                        : index === 2
-                        ? 'polygon(5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), calc(15% + 5px) calc(100% - 5px), 5px calc(80% - 5px))'
-                        : 'none',
-                  }}
-                  onClick={() => {
-                    onChange(index)
-                  }}
-                >
-                  <div className="flex flex-col gap-6 w-full">
-                    <div
-                      className={`w-20 h-20 rounded-full flex items-center justify-center  ${
-                        cardIndex === index ? 'bg-[#816BD9]' : 'bg-[#F3F3FA]'
-                      }`}
-                      style={{
-                        boxShadow: `${
-                          cardIndex === index
-                            ? '5px 4px 21px rgba(0, 0, 0, 0.25)'
-                            : ''
-                        } `,
-                      }}
-                    >
-                      <Image src={card.icon} width={32} height={32} alt="" />
-                    </div>
-                    <div className="flex flex-col gap-4 px-10">
-                      <span
-                        className={`font-manrope font-medium text-2xl ${
-                          cardIndex === index ? 'text-white' : 'text-[#272940]'
-                        }`}
-                      >
-                        {card.name}
-                      </span>
-                      <span
-                        className={`font-manrope font-medium text-xl ${
-                          cardIndex === index ? 'text-white' : 'text-[#7A7B94]'
-                        }`}
-                      >
-                        {card.description}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="md:hidden flex flex-col items-center justify-center gap-8 w-full">
-            {cards.map((card, index) => (
-              <div
-                key={index}
-                className={`flex flex-col items-center p-6 sm:px-[50px] sm:py-[30px] gap-5 cursor-pointer w-full ${
-                  cardIndex === index
-                    ? 'bg-marketsegment-selected-card'
-                    : 'bg-marketsegment-non-selected-card'
-                }`}
-                onClick={() => {
-                  onChange(index)
-                }}
-              >
-                <div className="flex flex-row items-center gap-6 w-full">
-                  <div className="flex flex-row items-center gap-8 w-[90%]">
-                    <div
-                      className={`w-10 h-10 sm:w-[88px] sm:h-[88px] rounded-full flex items-center justify-center  ${
-                        cardIndex === index ? 'bg-[#816BD9]' : 'bg-[#F3F3FA]'
-                      }`}
-                      style={{
-                        boxShadow: `${
-                          cardIndex === index
-                            ? '5px 4px 21px rgba(0, 0, 0, 0.25)'
-                            : ''
-                        } `,
-                      }}
-                    >
-                      <Image
-                        src={card.icon}
-                        width={30}
-                        height={30}
-                        className="w-4 h-4 sm:w-8 sm:h-8"
-                        alt=""
-                      />
-                    </div>
-                    <span
-                      className={`font-manrope font-medium text-sm sm:text-2xl ${
-                        cardIndex === index ? 'text-white' : 'text-[#272940]'
-                      }`}
-                    >
-                      {card.name}
-                    </span>
-                  </div>
-                  <IoMdArrowDropdownCircle
-                    size={54}
-                    color={`${
-                      cardIndex === index ? 'rgba(255, 255, 255, 0.2)' : 'white'
-                    }`}
-                    className={`w-6 h-6 sm:w-14 sm:h-14 ${
-                      cardIndex === index
-                        ? 'rotate-180 '
-                        : 'rounded-full bg-[#C8C2B4]/30'
-                    }`}
-                    strokeWidth={2}
-                  />
-                </div>
-                <div className="flex flex-col w-full">
-                  <span
-                    className={`font-manrope font-medium text-[10px] sm:text-xl ${
-                      cardIndex === index ? 'text-white' : 'text-[#7A7B94]'
-                    }`}
-                  >
-                    {card.description}
-                  </span>
-                </div>
-                {cardIndex === index && (
+            {cards.map((card, index) => {
+              if (card.id !== 0)
+                return (
                   <div
-                    className="flex flex-row items-center justify-center px-6 py-5 gap-6 bg-[#816BD9] rounded-md w-full h-[36px] sm:h-[73px] hover:opacity-80"
+                    className={`${
+                      cardIndex - 1 === index ? 'bg-[#a290ea]' : ''
+                    }`}
+                    key={index}
                     style={{
-                      boxShadow: '11px 8px 46px rgba(0, 0, 0, 0.25)',
+                      clipPath:
+                        index === 1
+                          ? 'polygon(85% 0, 100% 20%, 100% 100%, 0 100%, 0 0)'
+                          : index === 2
+                          ? 'polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 80%)'
+                          : 'none',
                     }}
                   >
-                    <span className="font-manrope text-xs sm:text-2xl text-white">
-                      Yes, this is me
-                    </span>
+                    <div
+                      key={index}
+                      className={`flex p-8 h-72 rounded-sm cursor-pointer ${
+                        cardIndex - 1 === index
+                          ? 'bg-marketsegment-selected-card'
+                          : 'bg-marketsegment-non-selected-card'
+                      } ${
+                        cardIndex - 1 === index &&
+                        cardIndex - 1 !== 1 &&
+                        cardIndex - 1 !== 2
+                          ? 'border-[5px] border-[#a290ea]'
+                          : ''
+                      }`}
+                      //clip-path: polygon(78% 3%, 97% 18%, 97% 98%, 3% 96%, 3% 3%);
+                      style={{
+                        clipPath:
+                          index === 1
+                            ? 'polygon(85% 5px, calc(100% - 5px) 20%, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 5px)'
+                            : index === 2
+                            ? 'polygon(5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), calc(15% + 5px) calc(100% - 5px), 5px calc(80% - 5px))'
+                            : 'none',
+                      }}
+                      onClick={() => {
+                        onChange(index)
+                      }}
+                    >
+                      <div className="flex flex-col gap-6 w-full">
+                        <div
+                          className={`w-20 h-20 rounded-full flex items-center justify-center  ${
+                            cardIndex - 1 === index
+                              ? 'bg-[#816BD9]'
+                              : 'bg-[#F3F3FA]'
+                          }`}
+                          style={{
+                            boxShadow: `${
+                              cardIndex - 1 === index
+                                ? '5px 4px 21px rgba(0, 0, 0, 0.25)'
+                                : ''
+                            } `,
+                          }}
+                        >
+                          <Image
+                            src={card.icon}
+                            width={32}
+                            height={32}
+                            alt=""
+                          />
+                        </div>
+                        <div className="flex flex-col gap-4 px-10">
+                          <span
+                            className={`font-manrope font-medium text-2xl ${
+                              cardIndex - 1 === index
+                                ? 'text-white'
+                                : 'text-[#272940]'
+                            }`}
+                          >
+                            {card.name}
+                          </span>
+                          <span
+                            className={`font-manrope font-medium text-xl ${
+                              cardIndex - 1 === index
+                                ? 'text-white'
+                                : 'text-[#7A7B94]'
+                            }`}
+                          >
+                            {card.description}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                )}
-              </div>
-            ))}
+                )
+            })}
           </div>
         </div>
         <div className="flex px-16 gap-6 w-full">

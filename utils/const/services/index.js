@@ -426,34 +426,41 @@ export const services = {
   0: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Seamless cross-industry, cross-disciplinary IP advice',
       content:
-        "We've delivered successful projects spanning multiple industries and functions and can pull on our knowledge to help you too",
+        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/service-1.png',
       link: '',
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Strategy First',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+        'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
       img: '/ourservices/service-2.png',
       link: '',
     },
     {
       id: 3,
-      title:
-        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      title: 'Capital Connected',
       content:
-        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
+        "Our capital partners are major Australian venture capital funds and syndicates. At a client's request, we consider whether a warm introduction to our capital partners is likely to be of interest and make the introductions if so.",
       img: '/ourservices/service-3.png',
       link: '',
     },
     {
       id: 4,
-      title: 'ROI Foccussed',
+      title: 'Analytical, technical and creative talent',
       content:
-        "Award Winning - Our team have established a reptuation for being the best and have won some of the world's most highly regarded IP awards.",
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
+      img: '/ourservices/service-4.png',
+      link: '',
+    },
+    {
+      id: 5,
+      title: 'Award Winning',
+      content:
+        'Our team have established a reptuation for being the best and have won highly regarded IP awards.',
       img: '/ourservices/service-4.png',
       link: '',
     },
@@ -461,32 +468,31 @@ export const services = {
   1: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Seamless cross-industry, cross-disciplinary IP advice',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/service-1.png',
       link: '',
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Strategy First',
       content:
-        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
+        'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
       img: '/ourservices/service-2.png',
       link: '',
     },
     {
       id: 3,
-      title:
-        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      title: 'Capital Connected',
       content:
-        "Award Winning - Our team have established a reptuation for being the best and have won some of the world's most highly regarded IP awards.",
+        "Our capital partners are major Australian venture capital funds and syndicates. At a client's request, we consider whether a warm introduction to our capital partners is likely to be of interest and make the introductions if so.",
       img: '/ourservices/service-3.png',
       link: '',
     },
     {
       id: 4,
-      title: 'ROI Foccussed',
+      title: 'Analytical, technical and creative talent',
       content:
         'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/service-4.png',
@@ -496,15 +502,15 @@ export const services = {
   2: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Capital Connected',
       content:
-        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
+        "Our capital partners are major Australian venture capital funds and syndicates. At a client's request, we consider whether a warm introduction to our capital partners is likely to be of interest and make the introductions if so.",
       img: '/ourservices/service-1.png',
       link: '',
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Seamless cross-industry, cross-disciplinary IP advice',
       content:
         "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/service-2.png',
@@ -513,9 +519,9 @@ export const services = {
     {
       id: 3,
       title:
-        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+        'Strategy First',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+        "We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.",
       img: '/ourservices/service-3.png',
       link: '',
     },
@@ -523,7 +529,7 @@ export const services = {
   3: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Seamless cross-industry, cross-disciplinary IP advice',
       content:
         "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/service-1.png',
@@ -531,9 +537,9 @@ export const services = {
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Strategy First',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
+        "We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.",
       img: '/ourservices/service-2.png',
       link: '',
     },

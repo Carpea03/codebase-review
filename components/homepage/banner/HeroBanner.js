@@ -22,7 +22,7 @@ const buttonText = [
 
 export default function HeroBanner() {
   return (
-    <Container className="md:px-20 xl:px-40 bg-hero-banner">
+    <Container className="md:px-20 xl:px-30 bg-hero-banner">
       <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-16 md:gap-0 py-10 sm:py-[60px] md:py-16 xl:py-32">
         {/** contents */}
         <div className="w-full md:w-3/5 flex flex-col items-center md:items-start gap-[70px] order-last md:order-first">
@@ -80,15 +80,13 @@ export default function HeroBanner() {
             </Link>
           </div>
         </div>
-        <div className="w-2/5 flex flex-row items-start md:pl-24 order-first md:order-last">
-          <Image
-            src="/professionalProfiles/bip-collage-1.png"
-            className="h-full w-full object-cover"
-            alt=""
-            width={500}
-            height={500}
-          />
-        </div>
+        <Image
+          src="/professionalProfiles/IP-people.jpg"
+          className="h-full w-full object-cover md:pl-20"
+          alt=""
+          width={500}
+          height={500}
+        />
       </div>
     </Container>
   )
