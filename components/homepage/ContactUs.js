@@ -76,7 +76,7 @@ export default function ContactUs() {
                 height={48}
               />
               <p className="uppercase font-manrope font-bold text-xl text-white/50">
-                Meta office
+                Virtual office
               </p>
             </div>
             <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
@@ -118,7 +118,7 @@ export default function ContactUs() {
                     height={48}
                   />
                   <p className="font-manrope font-semibold text-xl text-white whitespace-nowrap">
-                    Visit meta office
+                    Visit virtual office
                   </p>
                 </div>
               </Link>
@@ -220,7 +220,7 @@ export default function ContactUs() {
                   height={24}
                 />
                 <span className="uppercase font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
-                  Meta office
+                  Virtual office
                 </span>
               </div>
               <div className="flex justify-end items-end w-full">
@@ -245,7 +245,7 @@ export default function ContactUs() {
               />
               <div className="absolute bottom-0 right-0 left-0 py-5 px-12 sm:px-[107px] sm:py-6 flex flex-row justify-between items-center gap-[10px] bg-white/20 backdrop-blur-lg">
                 <p className="font-manrope font-semibold text-sm sm:text-xl text-white">
-                  Visit meta office
+                  Visit virtual office
                 </p>
                 <Image
                   alt=""
