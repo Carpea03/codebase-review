@@ -4,7 +4,7 @@ import { IoIosArrowForward } from 'react-icons/io'
 import Link from 'next/link'
 import { metaOffice } from '../../utils/const/links'
 
-export const VisitmetaOffice = () => {
+export const VisitVirtualOffice = () => {
   return (
     <Container>
       {/** top */}

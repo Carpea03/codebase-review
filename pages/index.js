@@ -13,8 +13,8 @@ import IpNewsBlog from '../components/homepage/IpNewsBlog'
 import { MarketSegment } from '../components/homepage/MarketSegment'
 import { OurClient } from '../components/homepage/OurClient'
 import { OurServices } from '../components/homepage/OurServices'
+import { VisitVirtualOffice } from '../components/homepage/VisitVirtualOffice'
 import ProfessionalProfiles from '../components/homepage/ProfessionalProfiles'
-import { VisitmetaOffice } from '../components/homepage/VisitmetaOffice'
 import useContentStore from '../store/useContent.store'
 
 export default function Home() {
@@ -90,7 +90,7 @@ export default function Home() {
         </>
       )}
       <ContactUs />
-      <VisitmetaOffice />
+      <VisitVirtualOffice />
       <Footer />
     </>
   )
