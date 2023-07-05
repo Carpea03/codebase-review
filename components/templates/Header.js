@@ -91,6 +91,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
           <form action="">
             <input
               type="search"
+              placeholder="Search here..."
               class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
             />
             <div className="absolute top-4 p-3 flex justify-start item-center">
@@ -103,6 +104,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
         <form action="">
           <input
             type="search"
+            placeholder="Search here..."
             class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
           />
           <div className="absolute top-6 p-3 flex justify-start item-center">
@@ -115,7 +117,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
             <FiMenu size={24} className="cursor-pointer" />
           </Popover.Button>
 
-          <Popover.Panel className="absolute left-0 right-0 bottom-0 top-[67px] mx-auto flex flex-col justify-start items-start w-full z-20">
+          <Popover.Panel className="absolute left-0 right-0 bottom-0 top-[75px] mx-auto flex flex-col justify-start items-start w-full z-20">
             {menus.map((menu) => (
               <Disclosure key={menu.id} as="div" className="w-full">
                 <Disclosure.Button

@@ -146,6 +146,88 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
             })}
           </div>
         </div>
+        <div className="md:hidden flex flex-col items-center justify-center gap-8 w-full">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className={`flex flex-col items-center p-6 sm:px-[50px] sm:py-[30px] gap-5 cursor-pointer w-full ${
+                cardIndex - 1 === index
+                  ? 'bg-marketsegment-selected-card'
+                  : 'bg-marketsegment-non-selected-card'
+              }`}
+              onClick={() => {
+                onChange(index)
+              }}
+            >
+              <div className="flex flex-row items-center gap-6 w-full">
+                <div className="flex flex-row items-center gap-8 w-[90%]">
+                  <div
+                    className={`w-10 h-10 sm:w-[88px] sm:h-[88px] rounded-full flex items-center justify-center  ${
+                      cardIndex - 1 === index ? 'bg-[#816BD9]' : 'bg-[#F3F3FA]'
+                    }`}
+                    style={{
+                      boxShadow: `${
+                        cardIndex - 1 === index
+                          ? '5px 4px 21px rgba(0, 0, 0, 0.25)'
+                          : ''
+                      } `,
+                    }}
+                  >
+                    <Image
+                      src={card.icon}
+                      width={30}
+                      height={30}
+                      className="w-4 h-4 sm:w-8 sm:h-8"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    className={`font-manrope font-medium text-sm sm:text-2xl ${
+                      cardIndex - 1 === index ? 'text-white' : 'text-[#272940]'
+                    }`}
+                  >
+                    {card.name}
+                  </span>
+                </div>
+                <IoMdArrowDropdownCircle
+                  size={54}
+                  color={`${
+                    cardIndex - 1 === index
+                      ? 'rgba(255, 255, 255, 0.2)'
+                      : 'white'
+                  }`}
+                  className={`w-6 h-6 sm:w-14 sm:h-14 ${
+                    cardIndex - 1 === index
+                      ? 'rotate-180 '
+                      : 'rounded-full bg-[#C8C2B4]/30'
+                  }`}
+                  strokeWidth={2}
+                />
+              </div>
+              <div className="flex flex-col w-full">
+                <span
+                  className={`font-manrope font-medium text-[10px] sm:text-xl ${
+                    cardIndex - 1 === index ? 'text-white' : 'text-[#7A7B94]'
+                  }`}
+                >
+                  {card.description}
+                </span>
+              </div>
+              {cardIndex - 1 === index && (
+                <div
+                  className="flex flex-row items-center justify-center px-6 py-5 gap-6 bg-[#816BD9] rounded-md w-full h-[36px] sm:h-[73px] hover:opacity-80"
+                  style={{
+                    boxShadow: '11px 8px 46px rgba(0, 0, 0, 0.25)',
+                  }}
+                >
+                  <span className="font-manrope text-xs sm:text-2xl text-white">
+                    Yes, this is me
+                  </span>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
         <div className="flex px-16 gap-6 w-full">
           <div
             className="flex flex-row items-center justify-center py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-[#FFEAAC] border-[3px] border-[#DCC895] rounded w-full cursor-pointer hover:opacity-80"
