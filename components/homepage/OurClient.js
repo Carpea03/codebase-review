@@ -55,55 +55,6 @@ export const OurClient = () => {
               ))}
             </div>
           </div>
-          {/** quote */}
-          <div className="flex flex-row justify-center items-start py-7 sm:py-14 md:py-24 gap-[10px] md:gap-6">
-            <div className="flex flex-col justify-center px-[2px] py-1 sm:px-1 sm:py-2 md:px-2 md:py-3">
-              <FaQuoteLeft
-                className="h-2 w-2 sm:h-4 sm:w-4 md:h-8 md:w-8"
-                color="#DDBE6F"
-              />
-            </div>
-            <div className="flex flex-col items-center gap-[6px] sm:gap-4 md:gap-8">
-              <div className="flex flex-col items-center gap-[10px] sm:gap-8">
-                <span className="font-lora font-semibold text-sm sm:text-[32px] sm:leading-10 md:text-4xl text-[#272940] text-center">
-                  “We&apos;ve been delighted to make this contribution of
-                  $51,692 of in-kind attorney work to the UNSW Founders Program
-                  over the last 12 months.”
-                </span>
-              </div>
-              <div
-                className="flex flex-row items-center sm:p-5 gap-[6px] sm:gap-5 rounded-sm"
-                style={{
-                  filter:
-                    'drop-shadow(0px 56px 114px rgba(150, 151, 169, 0.17)) drop-shadow(0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338)) drop-shadow(0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618)) drop-shadow(0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948))',
-                }}
-              >
-                <div className="flex flex-row items-center w-4 h-4 sm:w-[60px] sm:h-[60px]">
-                  <Image
-                    src="/ipNewsBlog/nicole.png"
-                    className="block w-full"
-                    alt=""
-                    width={60}
-                    height={60}
-                  />
-                </div>
-                <div className="flex flex-col gap-1 sm:gap-[10px]">
-                  <span className="font-manrope font-semibold text-[10px] sm:text-2xl md:text-xl text-[#272940]">
-                    Jhon doe al jhon
-                  </span>
-                  <span className="font-manrope font-semibold text-[10px] sm:text-2xl md:text-xl text-[#272940] opacity-50">
-                    Client leader
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center px-[2px] py-1 sm:px-1 sm:py-2 md:px-2 md:py-3">
-              <FaQuoteRight
-                className="h-2 w-2 sm:h-4 sm:w-4 md:h-8 md:w-8"
-                color="#DDBE6F"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </Container>

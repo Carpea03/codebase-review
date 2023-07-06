@@ -15,15 +15,15 @@ export const OurServices = () => {
   const [selectedMenu, setSelectedMenu] = useState(0)
 
   useEffect(() => {
-    setSelectedMenu(menuState - 1)
+    setSelectedMenu(menuState)
   }, [menuState])
 
   return (
-    <Container className="flex flex-col py-[60px] sm:py-[100px] md:py-[40px] gap-[70px] bg-ourservice">
-      <TitleContainer subDescription={'Working with Us'} />
+    <Container className="flex flex-col py-[60px] sm:py-[100px] md:py-[120px] gap-[70px] bg-ourservice">
+      <TitleContainer subDescription="Working with Us" />
       <div className="flex flex-col">
         <div className="hidden md:flex flex-col items-center gap-[54px] md:px-20 xl:px-40">
-          {services[selectedMenu === -1 ? 0 : selectedMenu]?.map((service) => (
+          {services[selectedMenu]?.map((service) => (
             <div key={service.id} className="flex flex-row items-center h-full">
               <div
                 className={`w-1/2 flex items-center justify-center ${

@@ -99,7 +99,6 @@ const Footer = ({ page }) => {
               </div>
             </div>
           </div>
-          <div className="w-full border-b-[1px] border-white/30" />
           <div className="flex flex-col md:flex-row justify-between items-start w-full gap-[60px] md:gap-0">
             <div className="flex flex-col items-start gap-6 sm:gap-10 w-full md:w-auto">
               <Subject title="Contact Us" />

@@ -8,13 +8,13 @@
 }
 
 .bg-hero-banner {
-  background: linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 101.88%);
+  background: linear-gradient(284.64deg, #ffc839 12.83%, #ffe295 101.88%);
 }
 
 .button-base {
   background: linear-gradient(91.56deg, #8c79d9 0%, #7d67d8 100%);
-  box-shadow: "5px 4px 21px rgba(0, 0, 0, 0.25)";
-  border-radius: "5px";
+  box-shadow: '5px 4px 21px rgba(0, 0, 0, 0.25)';
+  border-radius: '5px';
 }
 
 .selected-benifit-card {
@@ -81,37 +81,37 @@
 }
 
 .bg-selected-sydney-team-menu {
-  background-image: url("/professionalProfiles/bg-active-menu.png");
+  background-image: url('/professionalProfiles/bg-active-menu.png');
 }
 
 .bg-non-selected-sydney-team-menu {
-  background-image: url("/professionalProfiles/bg-deactive-menu.png");
+  background-image: url('/professionalProfiles/bg-deactive-menu.png');
   transform: rotate(-180deg);
 }
 
 .bg-selected-melbourne-team-menu {
-  background-image: url("/professionalProfiles/bg-active-menu.png");
+  background-image: url('/professionalProfiles/bg-active-menu.png');
   transform: rotate(-180deg);
 }
 
 .bg-non-selected-melbourne-team-menu {
-  background-image: url("/professionalProfiles/bg-deactive-menu.png");
+  background-image: url('/professionalProfiles/bg-deactive-menu.png');
 }
 
 .bg-selected-long-menu {
-  background-image: url("/fillingStats/long-active-menu.png");
+  background-image: url('/fillingStats/long-active-menu.png');
 }
 
 .bg-non-selected-long-menu {
-  background-image: url("/fillingStats/long-deactive-menu.png");
+  background-image: url('/fillingStats/long-deactive-menu.png');
 }
 
 .bg-selected-menu {
-  background-image: url("/fillingStats/active-menu.png");
+  background-image: url('/fillingStats/active-menu.png');
 }
 
 .bg-non-selected-menu {
-  background-image: url("/fillingStats/deactive-menu.png");
+  background-image: url('/fillingStats/deactive-menu.png');
 }
 
 .bg-fillingstats-center {
@@ -142,11 +142,11 @@
 }
 
 .marketsegment-card-style-1 {
-  background-image: url("/marketSegments/card-style-1.png");
+  background-image: url('/marketSegments/card-style-1.png');
 }
 
 .marketsegment-card-style-2 {
-  background-image: url("/marketSegments/card-style-2.png");
+  background-image: url('/marketSegments/card-style-2.png');
 }
 
 .bg-marketsegment-non-selected-card {
@@ -172,45 +172,47 @@
 }
 
 .bg-404 {
-  background: url("/404/decoration.svg"), rgba(64, 66, 102, 0.7),
+  background: url('/404/decoration.svg'), rgba(64, 66, 102, 0.7),
     linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 101.88%);
 }
 
 .bg-services-unsplash {
-  background: url("/services/unsplash.png"),
+  background: url('/services/unsplash.png'),
     linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
 }
 
 .bg-contactus-unsplash {
-  background: url("/contactus/unsplash.png"),
+  background: url('/contactus/unsplash.png'),
     linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
 }
 
 .bg-people-unsplash {
-  background: url("/professionalProfiles/unsplash.png"),
+  background: url('/professionalProfiles/unsplash.png'),
     linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
 }
 
 .bg-people-unsplash-1 {
-  background: url("/professionalProfiles/unsplash-1.png"),
+  background: url('/professionalProfiles/unsplash-1.png'),
     linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
 }
 
 .bg-profile-bg {
-  background: url("/professionalProfiles/profile-mask.svg"),
+  background: url('/professionalProfiles/profile-mask.svg'),
     linear-gradient(352.59deg, #ffc839 -286.39%, #ffe295 90.66%);
 }
 
 .bg-aboutus-unsplash {
-  background: url("/aboutus/unsplash.png"),
+  background: url('/aboutus/unsplash.png'),
     linear-gradient(216.69deg, #ffc839 20.83%, #ffe295 77.95%);
 }
 
 @screen md {
   .bg-hero-banner {
-    background-image: url("/banner/bg-decoration.svg"),
-      linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 101.88%);
+    background-image: url('/banner/bg-decoration.svg'),
+      linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 102.88%);
     background-position-y: 40%;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
   .button-base {
@@ -238,7 +240,7 @@
   }
 
   .bg-industry-speciality {
-    background-image: url("/industrySpeciality/effected-background.png");
+    background-image: url('/industrySpeciality/effected-background.png');
     background-repeat: no-repeat;
   }
 
@@ -255,7 +257,7 @@
   }
 
   .bg-mask-fillingstats {
-    background-image: url("/fillingStats/bg-mask.svg");
+    background-image: url('/fillingStats/bg-mask.svg');
   }
 
   .bg-ipNewsLog-content {
@@ -275,7 +277,7 @@
   }
 
   .bg-marketsegment-selected-card {
-    background: url("/marketSegments/card-decoration.svg"),
+    background: url('/marketSegments/card-decoration.svg'),
       linear-gradient(111.36deg, #61638d 0%, #494b70 98.54%);
   }
 }

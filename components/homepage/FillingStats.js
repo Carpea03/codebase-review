@@ -189,18 +189,19 @@ export const FillingStats = () => {
           <div
             className="w-full"
             style={{
-              background: 'url(/fillingStats/background.png)',
+              backgroundImage: `url("/fillingStats/background.png")`,
+              backgroundSize: 'cover',
             }}
           >
             <div
               className="w-full"
-              style={{ background: 'url(/fillingStats/bg-mask.svg)' }}
+              style={{
+                background: 'url(/fillingStats/bg-mask.svg)',
+                backgroundSize: 'cover',
+              }}
             >
               <div className="py-14 sm:py-[100px] md:py-[120px] md:px-40 xl:px-80 2xl:px-[402px]">
-                <TitleContainer
-                  title="Filling stats"
-                  description=""
-                />
+                <TitleContainer title="Filling stats" description="" />
               </div>
             </div>
           </div>

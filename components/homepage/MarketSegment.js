@@ -40,9 +40,9 @@ const marketSigment = [
 ]
 export const MarketSegment = ({ cardIndex, onChange }) => {
   return (
-    <div className="container max-w-screen-2xl mx-auto h-full bg-[#FFFEF8] overflow-hidden">
-      <div className="w-full flex flex-col gap-28 sm:gap-36  py-16 sm:py-24 md:py-36 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-40 items-center bg-marketsegment">
-        <div className="flex flex-col items-center md:items-start gap-[86px] sm:gap-[120px] md:gap-16">
+    <div>
+      <div className="w-full flex flex-col gap-28 sm:gap-36  py-16 sm:py-24 md:py-36 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-10 items-center bg-marketsegment">
+        <div className="flex flex-col items-center md:items-start gap-[86px] sm:gap-[120px] md:gap-8">
           <div className="md:w-1/2 flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
             <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
               {marketSigment[0].header}
@@ -53,23 +53,14 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
               </span>
             </div>
           </div>
-          <div className="hidden md:grid grid-cols-2 grid-flow-row gap-6 items-stretch">
+          <div className="hidden md:grid grid-cols-4 grid-flow-row gap-6 items-stretch">
             {cards.map((card, index) => {
-              if (card.id !== 0)
                 return (
                   <div
                     className={`${
                       cardIndex - 1 === index ? 'bg-[#a290ea]' : ''
                     }`}
                     key={index}
-                    style={{
-                      clipPath:
-                        index === 1
-                          ? 'polygon(85% 0, 100% 20%, 100% 100%, 0 100%, 0 0)'
-                          : index === 2
-                          ? 'polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 80%)'
-                          : 'none',
-                    }}
                   >
                     <div
                       key={index}
@@ -78,21 +69,10 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                           ? 'bg-marketsegment-selected-card'
                           : 'bg-marketsegment-non-selected-card'
                       } ${
-                        cardIndex - 1 === index &&
-                        cardIndex - 1 !== 1 &&
-                        cardIndex - 1 !== 2
+                        cardIndex - 1 === index 
                           ? 'border-[5px] border-[#a290ea]'
                           : ''
                       }`}
-                      //clip-path: polygon(78% 3%, 97% 18%, 97% 98%, 3% 96%, 3% 3%);
-                      style={{
-                        clipPath:
-                          index === 1
-                            ? 'polygon(85% 5px, calc(100% - 5px) 20%, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 5px)'
-                            : index === 2
-                            ? 'polygon(5px 5px, calc(100% - 5px) 5px, calc(100% - 5px) calc(100% - 5px), calc(15% + 5px) calc(100% - 5px), 5px calc(80% - 5px))'
-                            : 'none',
-                      }}
                       onClick={() => {
                         onChange(index)
                       }}
@@ -119,7 +99,7 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                             alt=""
                           />
                         </div>
-                        <div className="flex flex-col gap-4 px-10">
+                        <div className="flex flex-col gap-4 px-3">
                           <span
                             className={`font-manrope font-medium text-2xl ${
                               cardIndex - 1 === index

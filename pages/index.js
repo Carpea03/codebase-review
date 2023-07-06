@@ -46,10 +46,10 @@ export default function Home() {
       <BrandsBanner />
       <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
       <OurServices />
+      <ContactUs />
       {subMenu === 0 && selectedMenu === -1 && (
         <>
           <IpNewsBlog />
-          <IndustrySepciality />
           <OurClient />
           <ProfessionalProfiles />
         </>
@@ -58,7 +58,6 @@ export default function Home() {
         <>
           <IpNewsBlog />
           <OurClient />
-          <IndustrySepciality />
           <FillingStats />
           <ProfessionalProfiles />
         </>
@@ -66,7 +65,6 @@ export default function Home() {
       {subMenu === 2 && selectedMenu !== -1 && (
         <>
           <IpNewsBlog />
-          <IndustrySepciality />
           <OurClient />
           <FillingStats />
           <ProfessionalProfiles />
@@ -84,12 +82,10 @@ export default function Home() {
         <>
           <IpNewsBlog />
           <FillingStats />
-          <IndustrySepciality />
           <OurClient />
           <ProfessionalProfiles />
         </>
       )}
-      <ContactUs />
       <VisitVirtualOffice />
       <Footer />
     </>

@@ -5,7 +5,7 @@ import { FaQuoteLeft } from 'react-icons/fa'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import { TitleContainer } from '../templates/TitleContainer'
 import { HiLocationMarker } from 'react-icons/hi'
-import { profiles } from '../../utils/const/people';
+import { profiles } from '../../utils/const/people'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -54,136 +54,13 @@ export default function ProfessionalProfiles() {
 
   return (
     <Container className="px-0">
-      <div className="py-14 sm:py-[100px] md:py-[120px] md:px-40 xl:px-80 2xl:px-[312px]">
+      <div className="py-14 sm:py-[100px] md:py-[100px] md:px-40 xl:px-80 2xl:px-[312px]">
         <TitleContainer
           title="Professional Profiles"
           description="Meet our experts for this area in Sydney & Melbourne"
         />
       </div>
-      <div className="flex flex-col items-center w-full">
-        <div className="flex flex-row w-full">
-          <div
-            className={`flex flex-row w-1/2 justify-center items-center py-5 sm:py-8 cursor-pointer ${
-              selectedMenu === 0
-                ? 'bg-selected-sydney-team-menu'
-                : 'bg-non-selected-sydney-team-menu'
-            }`}
-            onClick={() => {
-              setSelectedMenu(0)
-            }}
-          >
-            <div
-              className={`flex flex-row gap-2 ${
-                selectedMenu === 0 ? '' : 'rotate-180'
-              }`}
-            >
-              {selectedMenu === 0 ? (
-                <HiLocationMarker fill="#7568D1" size={31} />
-              ) : (
-                <HiLocationMarker
-                  fill="none"
-                  stroke="#272940"
-                  strokeWidth={1}
-                  size={31}
-                  className="border-none"
-                />
-              )}
-              <span className="font-manrope font-semibold text-base md:text-2xl text-[#272940]">
-                {profiles[0].teamName}
-              </span>
-            </div>
-          </div>
-          <div
-            className={`flex flex-row w-1/2 justify-center items-center py-5 sm:py-8 cursor-pointer ${
-              selectedMenu === 1
-                ? 'bg-selected-melbourne-team-menu'
-                : 'bg-non-selected-melbourne-team-menu'
-            }`}
-            onClick={() => {
-              setSelectedMenu(1)
-            }}
-          >
-            <div
-              className={`flex flex-row gap-2 ${
-                selectedMenu === 1 ? 'rotate-180' : ''
-              }`}
-            >
-              {selectedMenu === 1 ? (
-                <HiLocationMarker fill="#7568D1" size={31} />
-              ) : (
-                <HiLocationMarker
-                  fill="none"
-                  stroke="#272940"
-                  strokeWidth={1}
-                  size={31}
-                />
-              )}
-              <span className="font-manrope font-semibold text-base md:text-2xl text-[#404266]">
-                {profiles[1].teamName}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col items-start w-full">
-        {/** loader */}
-        <div className="w-full h-[10px] bg-[#F0E3C3]">
-          <div
-            className={`h-full bg-[#816BD9] w-${selectSlide + 1}/${
-              slides.length
-            }`}
-          />
-        </div>
-        <div
-          className="flex flex-col bg-cover bg-center"
-          style={{ backgroundImage: `url(${slides[selectSlide].image})` }}
-        >
-          <div className="flex flex-col w-full pt-24 sm:pt-52 md:pt-32 xl:pt-44 2xl:pt-56 pl-12 sm:pl-24 md:pl-28 lg:pl-32 xl:pl-40 pr-20 sm:pr-40 md:pr-48 lg:pr-80 xl:pr-[540px]">
-            <div className="flex flex-col items-start py-6 sm:py-14 md:py-6 gap-[10px] sm:gap-6">
-              <FaQuoteLeft
-                className="w-8 h-8 sm:w-16 sm:h-16 md:w-8 md:h-8"
-                color={'#FFCE4F'}
-              />
-              <span className="font-lora font-semibold text-sm sm:text-[32px] sm:leading-10 md:text-[40px] md:leading-[51px] text-white">
-                {slides[selectSlide].description}
-              </span>
-              <span className="font-lora italic font-semibold text-xs sm:text-2xl md:text-xl text-white">
-                {slides[selectSlide].who}
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-row items-end justify-end">
-            <SlideButton
-              className="hover:opacity-80 cursor-pointer"
-              onClick={prevSlide}
-            >
-              <MdKeyboardArrowRight
-                size={32}
-                color="#E6E6E6"
-                className="w-[2xp] h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
-                style={{ transform: 'matrix(-1, 0, 0, 1, 0, 0)' }}
-              />
-            </SlideButton>
-            <SlideButton
-              className="hover:opacity-80 cursor-pointer"
-              onClick={nextSlide}
-            >
-              <MdKeyboardArrowLeft
-                size={32}
-                color="#E6E6E6"
-                className="w-[2xp] h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
-                style={{ transform: 'matrix(-1, 0, 0, 1, 0, 0)' }}
-              />
-            </SlideButton>
-          </div>
-        </div>
-      </div>
       <div className="flex flex-col items-center">
-        <div className="flex justify-center py-6 sm:py-14 border-[1px] border-solid border-[#F0E4C3] w-full">
-          <span className="font-manrope font-semibold text-xs sm:text-2xl text-[#272940]">
-            Our {profiles[selectedMenu].teamName}
-          </span>
-        </div>
         <div
           className="flex flex-col justify-center items-center py-12 w-full"
           style={{

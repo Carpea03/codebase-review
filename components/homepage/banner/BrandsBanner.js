@@ -13,7 +13,7 @@ const banners = [
 export default function BrandsBanner() {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-center py-[53px] border-bottom-base">
+      <div className="flex flex-col justify-center items-center py-[53px] border-bottom-base z-30">
         <p className="font-manrope font-semibold text-[#272940]/50 tracking-tight text-sm sm:text-lg md:text-xl xl:text-2xl">
           Trusted by these brands
         </p>
