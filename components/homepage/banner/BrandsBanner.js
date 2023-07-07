@@ -1,4 +1,5 @@
 import { Container } from '../../templates/Container'
+import { InnerContainer } from '../../templates/InnerContainer'
 import React from 'react'
 import Image from 'next/image'
 
@@ -18,17 +19,21 @@ export default function BrandsBanner() {
           Trusted by these brands
         </p>
       </div>
-      <div className="w-full grid grid-rows-3 md:grid-rows-2 xl:grid-rows-1 grid-flow-col place-items-center px-12 sm:px-[107px] md:px-40 border-bottom-base">
-        {banners.map((banner) => (
-          <Image
-            key={banner.id}
-            className="object-cover"
-            src={banner.src}
-            alt=""
-            width={200}
-            height={100}
-          />
-        ))}
+      <div className="border-bottom-base">
+        <InnerContainer>
+          <div className="w-full grid grid-rows-3 md:grid-rows-2 xl:grid-rows-1 grid-flow-col place-items-center px-12 sm:px-[107px] md:px-40">
+            {banners.map((banner) => (
+              <Image
+                key={banner.id}
+                className="object-cover"
+                src={banner.src}
+                alt=""
+                width={200}
+                height={100}
+              />
+            ))}
+          </div>
+        </InnerContainer>
       </div>
     </Container>
   )

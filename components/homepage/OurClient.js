@@ -1,7 +1,7 @@
 import { Container } from '../templates/Container'
 import { TitleContainer } from '../templates/TitleContainer'
 import React from 'react'
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
+import { InnerContainer } from '../templates/InnerContainer'
 import Image from 'next/image'
 
 const brands = [
@@ -18,9 +18,9 @@ export const OurClient = () => {
     <Container>
       <div className="flex flex-col items-start">
         {/** top */}
-        <div className="w-full flex flex-col px-12 pt-12 pb-10 sm:px-24 sm:py-24 md:px-4 xl:px-64 2xl:px-72 md:pt-48 md:pb-16 border-[1px] border-[#F0E4C3]">
+        <div className="w-full flex flex-col py-10  border-[1px] border-[#F0E4C3]">
           <TitleContainer
-            title="Our client"
+
             description="Join other companies growing their IP with us"
           />
         </div>
@@ -32,8 +32,9 @@ export const OurClient = () => {
               'linear-gradient(176.69deg, #FFFEF8 21.12%, #FFBF15 139.62%)',
           }}
         >
+           <InnerContainer>
           {/** brands container */}
-          <div className="flex flex-col items-start py-12 sm:pb-24 md:py-16">
+          <div className="flex flex-col items-ystart py-12 sm:pb-24 md:py-16">
             <div className="grid grid-cols-3 gap-1 sm:gap-3 md:gap-5 w-full items-center justify-center">
               {brands.map((brand) => (
                 <div
@@ -55,6 +56,7 @@ export const OurClient = () => {
               ))}
             </div>
           </div>
+          </InnerContainer>
         </div>
       </div>
     </Container>

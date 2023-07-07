@@ -1,33 +1,7 @@
 import { Container } from '../templates/Container'
 import React, { useState } from 'react'
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
 import { TitleContainer } from '../templates/TitleContainer'
 import NewsBlog from '../newsblog'
-import Image from 'next/image'
-
-const news = [
-  {
-    id: 1,
-    img: '/ipNewsBlog/news-1.png',
-    content:
-      'Infringement of third party trade marks – Hells Angels and Redbubble',
-    visit: 'Nov 25 · 4 min read',
-  },
-  {
-    id: 2,
-    img: '/ipNewsBlog/news-2.png',
-    content:
-      'Infringement of third party trade marks – Hells Angels and Redbubble',
-    visit: 'Nov 25 · 4 min read',
-  },
-  {
-    id: 3,
-    img: '/ipNewsBlog/news-3.png',
-    content:
-      'Infringement of third party trade marks – Hells Angels and Redbubble',
-    visit: 'Nov 25 · 4 min read',
-  },
-]
 
 const slides = [
   {
@@ -55,9 +29,8 @@ const slides = [
       '“ Infringement of third party trade marks – Hells Angels and Redbubble “',
   },
 ]
-export default function IpNewsBlog() {
+export default function IpNewsBlog({ news }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
-
   const prevSlide = () => {
     const isFirstSlide = currentSlideIndex === 0
     const newIndex = isFirstSlide ? slides.length - 1 : currentSlideIndex - 1
@@ -72,11 +45,8 @@ export default function IpNewsBlog() {
 
   return (
     <Container>
-      <div className="py-14 sm:py-[100px] md:py-[120px] md:px-40 xl:px-80 2xl:px-[312px]">
-        <TitleContainer
-          title="IP News Blog"
-          description="IP Front™ Intellectual Property News"
-        />
+      <div className="py-10">
+        <TitleContainer title="IP News Blog" description="Visit Us Now" />
       </div>
       <div className="w-full flex flex-col items-start bg-ipNewsLog-content">
         <NewsBlog data={news} />

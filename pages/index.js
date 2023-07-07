@@ -11,24 +11,50 @@ import { FillingStats } from '../components/homepage/FillingStats'
 import { IndustrySepciality } from '../components/homepage/IndustrySepciality'
 import IpNewsBlog from '../components/homepage/IpNewsBlog'
 import { MarketSegment } from '../components/homepage/MarketSegment'
+import { MarketSegment2 } from '../components/homepage/MarketSegment2'
 import { OurClient } from '../components/homepage/OurClient'
 import { OurServices } from '../components/homepage/OurServices'
 import { VisitVirtualOffice } from '../components/homepage/VisitVirtualOffice'
 import ProfessionalProfiles from '../components/homepage/ProfessionalProfiles'
 import useContentStore from '../store/useContent.store'
+import { indexQuery } from '../lib/queries'
+import { usePreviewSubscription } from '../lib/sanity'
+import { getClient, overlayDrafts } from '../lib/sanity.server'
 
-export default function Home() {
+export default function Home({ allPosts: initialAllPosts, preview }) {
   const menuState = useContentStore((state) => state.menuState)
   const setMenuState = useContentStore((state) => state.setMenuState)
   const [selectedMenu, setSelectedMenu] = useState(-1)
   const [subMenu, setSubMenu] = useState(0)
-
+  const [blog, setBlog] = useState()
+  const { data: allPosts } = usePreviewSubscription(indexQuery, {
+    initialData: initialAllPosts,
+    enabled: preview,
+  })
+  
+  const [heroPost, ...morePosts] = allPosts || []
+ 
   const onChangeMenu = useCallback((index) => {
+    const selectedId = localStorage.getItem('selected-id')
+
+    if (Number(selectedId) === index) {
+      setMenuState(0)
+      setSelectedMenu(-1)
+      localStorage.setItem('selected-id', -1)
+      return
+    }
     setMenuState(index + 1)
     setSelectedMenu(index + 1)
+
+    localStorage.setItem('selected-id', index)
   }, [])
 
   useEffect(() => {
+    const selectedId = localStorage.getItem('selected-id')
+    if (!selectedId) {
+      localStorage.setItem('selected-id', -1)
+    }
+
     setSubMenu(menuState)
   }, [menuState])
 
@@ -45,18 +71,19 @@ export default function Home() {
       <HeroBanner />
       <BrandsBanner />
       <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
+      <MarketSegment2 cardIndex={selectedMenu} onChange={onChangeMenu} />
       <OurServices />
       <ContactUs />
       {subMenu === 0 && selectedMenu === -1 && (
         <>
-          <IpNewsBlog />
+          <IpNewsBlog news={morePosts} />
           <OurClient />
           <ProfessionalProfiles />
         </>
       )}
       {subMenu === 1 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog />
+          <IpNewsBlog news={morePosts} />
           <OurClient />
           <FillingStats />
           <ProfessionalProfiles />
@@ -64,7 +91,7 @@ export default function Home() {
       )}
       {subMenu === 2 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog />
+          <IpNewsBlog news={morePosts} />
           <OurClient />
           <FillingStats />
           <ProfessionalProfiles />
@@ -72,7 +99,7 @@ export default function Home() {
       )}
       {subMenu === 3 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog />
+          <IpNewsBlog news={morePosts} />
           <OurClient />
           <FillingStats />
           <ProfessionalProfiles />
@@ -80,7 +107,7 @@ export default function Home() {
       )}
       {subMenu === 4 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog />
+          <IpNewsBlog news={morePosts} />
           <FillingStats />
           <OurClient />
           <ProfessionalProfiles />
@@ -90,4 +117,18 @@ export default function Home() {
       <Footer />
     </>
   )
+}
+
+// This function gets called at build time on server-side.
+// It may be called again, on a serverless function, if
+// revalidation is enabled and a new request comes in
+export async function getStaticProps({ preview = false }) {
+  const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery))
+  return {
+    props: { allPosts, preview },
+    // If webhooks isn't setup then attempt to re-generate in 10 second intervals
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+  }
 }

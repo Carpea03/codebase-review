@@ -56,7 +56,6 @@ export default function ProfessionalProfiles() {
     <Container className="px-0">
       <div className="py-14 sm:py-[100px] md:py-[100px] md:px-40 xl:px-80 2xl:px-[312px]">
         <TitleContainer
-          title="Professional Profiles"
           description="Meet our experts for this area in Sydney & Melbourne"
         />
       </div>
@@ -108,7 +107,7 @@ export default function ProfessionalProfiles() {
               }}
             >
               <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
-                Discover more experts
+                Meet other IP attorneys
               </span>
               <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
                 <IoArrowForwardOutline

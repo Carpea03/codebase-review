@@ -2,6 +2,8 @@ import React, { useState, forwardRef } from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import Button from '../../../components/buttons/Button'
+import { FaMapMarkerAlt } from 'react-icons/fa'
+import { API_KEY } from '../../../utils/const/apiKey'
 import GoogleMapReact from 'google-map-react'
 import { FiChevronUp, FiCalendar } from 'react-icons/fi'
 import Image from 'next/image'
@@ -90,12 +92,12 @@ const CheckBoxBlock = ({ title, items }) => {
 
 const defaultProps = {
   center: {
-    lat: -33.86,
-    lng: 151.206529,
+    lat: -37.81696078671947,
+    lng: 144.958443030487,
   },
   zoom: 11,
 }
-const AnyReactComponent = ({ text }) => <div>{text}</div>
+const AnyReactComponent = ({ icon }) => <div>{icon}</div>
 
 export default function MelbourneOffice() {
   const [selectOptional, setSelectOptional] = useState(true)
@@ -259,15 +261,18 @@ export default function MelbourneOffice() {
             </div>
           </div>
           <div className="w-full h-80">
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: '' }}
+          <GoogleMapReact
+              bootstrapURLKeys={{
+                key: API_KEY,
+                language: 'en',
+              }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
             >
               <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
+                lat={-37.81696078671947}
+                lng={144.958443030487}
+                icon={<FaMapMarkerAlt color="red" size={30} />}
               />
             </GoogleMapReact>
           </div>

@@ -68,7 +68,7 @@ export default function People({ item }) {
           </div>
         </div>
         <div className="flex flex-row items-start justify-center w-full">
-          {peoples.map((people, index) => (
+          {peoples.filter((item) => item.id !== 0).map((people, index) => (
             <div
               key={index}
               className={`w-1/2 h-16 sm:h-32 flex flex-row items-center justify-center gap-4 cursor-pointer ${
