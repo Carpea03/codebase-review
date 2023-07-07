@@ -84,7 +84,7 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                       <div className="flex flex-col gap-6 w-full">
                         <div className="flex flex-col gap-4  ">
                           <span
-                            className={`font-manrope text-center font-medium text-2xl ${
+                            className={`font-manrope text-center font-medium 2xl:text-2xl xl:text-xl md:text-md sm:text-sm ${
                               cardIndex - 1 === index
                                 ? 'text-white'
                                 : 'text-[#272940]'
@@ -93,7 +93,7 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                             {card.name}
                           </span>
                           <span
-                            className={`font-manrope text-center font-medium text-base  ${
+                            className={`font-manrope text-center font-medium  md:text-base sm:text-sm ${
                               cardIndex - 1 === index
                                 ? 'text-white'
                                 : 'text-[#7A7B94]'
