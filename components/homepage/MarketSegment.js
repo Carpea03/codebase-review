@@ -101,7 +101,7 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                             alt=""
                           />
                         </div>
-                        <div className="flex flex-col gap-4 px-3 h-72">
+                        <div className="flex flex-col gap-2 h-72">
                           <span
                             className={`font-manrope font-medium 2xl:text-2xl xl:text-xl md:text-md sm:text-sm ${
                               cardIndex - 1 === index
