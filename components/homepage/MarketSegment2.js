@@ -45,7 +45,7 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
   return (
     <div className="bg-marketsegment">
       <InnerContainer>
-        <div className="w-full flex flex-col gap-28 sm:gap-36 sm:py-20 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-10 items-center">
+        <div className="w-full flex flex-col gap-28 sm:gap-36 sm:py-20 px-12 sm:px-[106px] md:px-11 xl:px-90 2xl:px-10 items-center bg-marketsegment">
           <div className="flex flex-col items-center md:items-start gap-[86px] sm:gap-[120px] md:gap-8">
             <div className="md:w-1/2 flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
               <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
@@ -68,7 +68,7 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                   >
                     <div
                       key={index}
-                      className={`flex p-8 h-72 rounded-sm cursor-pointer ${
+                      className={`flex p-6 h-72 rounded-sm cursor-pointer  ${
                         cardIndex - 1 === index
                           ? 'bg-marketsegment-selected-card'
                           : 'bg-marketsegment-non-selected-card'
@@ -81,10 +81,10 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                         onChange(index)
                       }}
                     >
-                      <div className="flex flex-col gap-6 w-full">
-                        <div className="flex flex-col gap-4  ">
+                      <div className="flex flex-col gap-6 w-full  ">
+                        <div className="flex flex-col gap-2 ">
                           <span
-                            className={`font-manrope text-center font-medium 2xl:text-2xl xl:text-xl md:text-md sm:text-sm ${
+                            className={`font-manrope font-medium 2xl:text-2xl xl:text-xl md:text-md sm:text-sm ${
                               cardIndex - 1 === index
                                 ? 'text-white'
                                 : 'text-[#272940]'
@@ -92,15 +92,17 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                           >
                             {card.name}
                           </span>
-                          <span
-                            className={`font-manrope text-center font-medium  md:text-base sm:text-sm ${
-                              cardIndex - 1 === index
-                                ? 'text-white'
-                                : 'text-[#7A7B94]'
-                            }`}
-                          >
-                            {card.description}
-                          </span>
+                          <div className="flex">
+                            <span
+                              className={`font-manrope font-medium sm:text-sm ${
+                                cardIndex - 1 === index
+                                  ? 'text-white'
+                                  : 'text-[#7A7B94]'
+                              }`}
+                            >
+                              {card.description}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -194,6 +196,24 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                 )}
               </div>
             ))}
+          </div>
+          <div className="flex gap-6 w-full">
+            <div
+              className="flex flex-row items-center justify-center py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-[#FFEAAC] border-[3px] border-[#DCC895] rounded w-full cursor-pointer hover:opacity-80"
+              style={{
+                boxShadow:
+                  '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
+              }}
+            >
+              <span className="font-manrope text-[10px] sm:text-xl text-black whitespace-nowrap">
+                None above? keep scrolling
+              </span>
+              <IoMdArrowDown
+                size={24}
+                color="rgba(0, 0, 0, 0.3)"
+                className="w-4 h-4 sm:w-6 sm:h-6"
+              />
+            </div>
           </div>
         </div>
       </InnerContainer>
