@@ -39,8 +39,8 @@ export const OurServices = () => {
                   <Image
                     src={service.img}
                     className="object-cover"
-                    width={205}
-                    height={238}
+                    width={300}
+                    height={300}
                     alt=""
                   />
                 </div>
