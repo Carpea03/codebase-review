@@ -43,13 +43,13 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
   return (
     <div className="bg-marketsegment">
       <InnerContainer>
-        <div className="w-full flex flex-col gap-28 sm:gap-36 sm:py-20 px-12 sm:px-[106px] md:px-11 xl:px-90 2xl:px-10 items-center bg-marketsegment">
+        <div className="w-full flex flex-col py-10 gap-10 sm:gap-20 sm:py-20 px-10 sm:px-[106px] items-center bg-marketsegment">
           <div className="flex flex-col items-center md:items-start gap-[86px] sm:gap-[120px] md:gap-8">
             <div className="md:w-1/2 flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
               <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
                 {marketSigment[0].header}
               </span>
-              <div className="flex py-1 gap-[10px]">
+              <div className="flex">
                 <span className="font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-center md:text-left">
                   {marketSigment[0].title}
                 </span>

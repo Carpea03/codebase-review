@@ -54,7 +54,7 @@ export default function ProfessionalProfiles() {
 
   return (
     <Container className="px-0">
-      <div className="py-14 sm:py-[100px] md:py-[100px] md:px-40 xl:px-80 2xl:px-[312px]">
+      <div className="py-8 sm:py-[40px] md:py-[40px] md:px-40 xl:px-80 2xl:px-[312px]">
         <TitleContainer
           description="Meet our patent & trade mark attorneys in Sydney & Melbourne"
         />
