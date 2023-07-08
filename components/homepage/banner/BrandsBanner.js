@@ -21,7 +21,7 @@ export default function BrandsBanner() {
       </div>
       <div className="border-bottom-base">
         <InnerContainer>
-          <div className="w-full grid grid-rows-3 md:grid-rows-2 xl:grid-rows-1 grid-flow-col place-items-center px-12 sm:px-[107px] md:px-40">
+          <div className="w-full flex flex-wrap flex-rows items-center justify-center">
             {banners.map((banner) => (
               <Image
                 key={banner.id}
