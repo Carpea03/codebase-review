@@ -33,6 +33,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
   })
   
   const [heroPost, ...morePosts] = allPosts || []
+  const reduceMorePost = morePosts.slice(0,3);
  
   const onChangeMenu = useCallback((index) => {
     const selectedId = localStorage.getItem('selected-id')
@@ -76,14 +77,14 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       <ContactUs />
       {subMenu === 0 && selectedMenu === -1 && (
         <>
-          <IpNewsBlog news={morePosts} />
+          <IpNewsBlog news={reduceMorePost} />
           <OurClient />
           <ProfessionalProfiles />
         </>
       )}
       {subMenu === 1 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={morePosts} />
+          <IpNewsBlog news={reduceMorePost} />
           <OurClient />
           <FillingStats />
           <ProfessionalProfiles />
@@ -91,7 +92,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       )}
       {subMenu === 2 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={morePosts} />
+          <IpNewsBlog news={reduceMorePost} />
           <OurClient />
           <FillingStats />
           <ProfessionalProfiles />
@@ -99,7 +100,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       )}
       {subMenu === 3 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={morePosts} />
+          <IpNewsBlog news={reduceMorePost} />
           <OurClient />
           <FillingStats />
           <ProfessionalProfiles />
@@ -107,7 +108,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       )}
       {subMenu === 4 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={morePosts} />
+          <IpNewsBlog news={reduceMorePost} />
           <FillingStats />
           <OurClient />
           <ProfessionalProfiles />
@@ -119,16 +120,9 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
   )
 }
 
-// This function gets called at build time on server-side.
-// It may be called again, on a serverless function, if
-// revalidation is enabled and a new request comes in
 export async function getStaticProps({ preview = false }) {
   const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery))
   return {
     props: { allPosts, preview },
-    // If webhooks isn't setup then attempt to re-generate in 10 second intervals
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
   }
 }
