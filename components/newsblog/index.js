@@ -6,7 +6,7 @@ import { urlForImage } from '../../lib/sanity'
 
 export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
   return (
-    <div className="w-full flex flex-row items-start justify-center py-12 pb-24 sm:pb-40">
+    <div className="w-full flex flex-row items-start justify-center sm:pb-20">
       <div className="flex flex-col gap-11 sm:gap-24">
         <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-14">
           {data?.map((n) => (

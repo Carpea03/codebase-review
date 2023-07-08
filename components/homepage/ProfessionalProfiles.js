@@ -61,7 +61,7 @@ export default function ProfessionalProfiles() {
       </div>
       <div className="flex flex-col items-center">
         <div
-          className="flex flex-col justify-center items-center py-12 w-full"
+          className="flex flex-col justify-center items-center w-full pb-20"
           style={{
             background:
               'linear-gradient(167.62deg, #FFFEF8 42.45%, #FFF3D0 91%)',
