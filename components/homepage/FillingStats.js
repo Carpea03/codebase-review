@@ -188,43 +188,6 @@ export const FillingStats = () => {
       <Container>
         <InnerContainer>
           <div className="flex flex-col">
-            <Listbox
-              as="div"
-              className="md:hidden relative z-30"
-              value={menus[selectedMenu]}
-              onChange={(value) => setSelectedMenu(value.id - 1)}
-            >
-              <Listbox.Button
-                as="div"
-                className="flex flex-row items-center bg-[#FDFBF5] hover:opacity-50 cursor-pointer"
-              >
-                <div className="w-full flex flex-row items-center justify-center py-[10px] pl-6 sm:py-6 sm:pl-14 gap-6">
-                  <span className="font-manrope font-bold text-xs sm:text-2xl text-[#272940]">
-                    {menus[selectedMenu].title}
-                  </span>
-                </div>
-                <div className="flex flex-row items-start p-5 bg-[#FAF4E4]">
-                  <MdArrowDropDown className="w-4 h-4 sm:w-9 sm:h-9" />
-                </div>
-              </Listbox.Button>
-              <Listbox.Options
-                as="div"
-                className="absolute top-14 sm:top-20 left-0 w-full flex flex-col items-center justify-center p-5 gap-[10px] pr-12 sm:gap-6 sm:py-6 sm:pr-7 cursor-pointer bg-[#FDFBF5]"
-              >
-                {menus.map((menu) => (
-                  <Listbox.Option
-                    as="div"
-                    key={menu.id}
-                    value={menu}
-                    className="cursor-pointer"
-                  >
-                    <span className="font-manrope font-medium text-xs sm:text-2xl text-[#272940]">
-                      {menu.title}
-                    </span>
-                  </Listbox.Option>
-                ))}
-              </Listbox.Options>
-            </Listbox>
             <div className="flex flex-col items-start">
               <div className="flex flex-row justify-center items-center pt-[133px] px-24 pb-24 md:px-40 md:pt-32 md:pb-16 md:border-b-[1px] border-[#F0E4C3]">
                 <div className="flex flex-col md:flex-row items-center justify-center md:justify-end gap-14 md:gap-[108px]">

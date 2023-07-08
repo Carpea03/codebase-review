@@ -6,7 +6,7 @@ import { urlForImage } from '../../lib/sanity'
 
 export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
   return (
-    <div className="w-full flex flex-row items-start justify-center sm:pb-20">
+    <div className="w-full flex flex-row items-start justify-center sm:pb-10">
       <div className="flex flex-col gap-11 sm:gap-24">
         <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-14">
           {data?.map((n) => (
@@ -76,7 +76,7 @@ export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
             </div>
           ))}
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center py-10">
           <Link href="/ip-news">
             <div
               className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
