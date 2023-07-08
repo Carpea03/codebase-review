@@ -56,7 +56,7 @@ export default function ProfessionalProfiles() {
     <Container className="px-0">
       <div className="py-14 sm:py-[100px] md:py-[100px] md:px-40 xl:px-80 2xl:px-[312px]">
         <TitleContainer
-          description="Meet our experts for this area in Sydney & Melbourne"
+          description="Meet our patent & trade mark attorneys in Sydney & Melbourne"
         />
       </div>
       <div className="flex flex-col items-center">
