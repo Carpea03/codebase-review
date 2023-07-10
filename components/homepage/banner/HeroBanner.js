@@ -60,7 +60,7 @@ export default function HeroBanner() {
                 </div>
               </Link>
               <Link href={metaOffice}>
-                <div className="z-50 group flex flex-col items-center hover:bg-[#9A85D2] rounded">
+                <div className="z-40 group flex flex-col items-center hover:bg-[#9A85D2] rounded">
                   <div
                     className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] group-hover:bg-[#9A85D2] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer"
                     style={{
@@ -78,7 +78,7 @@ export default function HeroBanner() {
                       {buttonText[1].title}
                     </span>
                   </div>
-                  <div className="flex justify-center ">
+                  <div className="z-40 flex justify-center ">
                     <span className=" absolute z-50 -mt-2 scale-0 transition-none bg-[#9A85D2] p-2 group-hover:scale-100">
                       <Image
                         src="/virtual-office.png"
