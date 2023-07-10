@@ -1,8 +1,9 @@
 import { Container } from '../templates/Container'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import { TitleContainer } from '../templates/TitleContainer'
-import { profiles } from '../../utils/const/people'
+import { profiles, peopleIndustry } from '../../utils/const/people'
+import useContentStore from '../../store/useContent.store'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -35,8 +36,26 @@ const SlideButton = ({ className, children, onClick = {} }) => {
 }
 
 export default function ProfessionalProfiles() {
-  const [selectedMenu, setSelectedMenu] = useState(0)
+  const [selectedMenu, setSelectedMenu] = useState([])
   const [selectSlide, setSelectSlide] = useState(0)
+  const menuState2 = useContentStore((state) => state.menuState2)
+
+  useEffect(() => {
+    const newProfiles = profiles[0].teamMembers.map((val) => {
+      let itemContainer = []
+
+      peopleIndustry
+        .filter((val) => val.id === menuState2)[0]
+        .item.map((item) => {
+          if (item === val.id) {
+            return itemContainer.push({ ...val })
+          }
+        })
+
+      return itemContainer[0]
+    })
+    setSelectedMenu(newProfiles.filter((people) => people))
+  }, [menuState2])
 
   const prevSlide = () => {
     const isLastSlide = selectSlide === slides.length - 1
@@ -52,9 +71,7 @@ export default function ProfessionalProfiles() {
   return (
     <Container className="px-0">
       <div className="py-8 sm:py-[40px] md:py-[40px] md:px-40 xl:px-80 2xl:px-[312px]">
-        <TitleContainer
-          description="Meet our patent & trade mark attorneys in Sydney & Melbourne"
-        />
+        <TitleContainer description="Meet our patent & trade mark attorneys in Sydney & Melbourne" />
       </div>
       <div className="flex flex-col items-center">
         <div
@@ -65,7 +82,7 @@ export default function ProfessionalProfiles() {
           }}
         >
           <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-0">
-            {profiles[selectedMenu].teamMembers.map((teamMember, index) => (
+            {selectedMenu.map((teamMember, index) => (
               <div
                 key={index}
                 className="bg-white rounded-sm cursor-pointer"
@@ -74,15 +91,15 @@ export default function ProfessionalProfiles() {
                     '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
                 }}
               >
-                <Image alt="" src={teamMember.url} width={200} height={200} />
+                <Image alt="" src={teamMember?.url} width={200} height={200} />
                 <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
                   <div>
                     <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
-                      {teamMember.name}
+                      {teamMember?.name}
                     </span>
                   </div>
                   <div className="flex flex-col">
-                    {teamMember.positions.map((position, index) => (
+                    {teamMember?.positions?.map((position, index) => (
                       <span
                         key={index}
                         className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"

@@ -152,6 +152,14 @@ export const subMenus3 = [
   [{ title: 'Dr John Baxter', bold: false, division: false, href: teamLink }],
 ]
 
+export const peopleIndustry = [
+  { id: 0, item: [1, 2, 3, 4, 5, 6, 7, 8] },
+  { id: 1, item: [2, 7, 6, 3, 4, 5] },
+  { id: 2, item: [2, 7, 6, 3] },
+  { id: 3, item: [8, 4, 5] },
+  { id: 4, item: [7, 6, 1, 3, 5] },
+]
+
 export const profiles = [
   {
     id: 0,
@@ -196,6 +204,18 @@ export const profiles = [
         name: 'Andrew Balis',
         positions: ['Associate', 'Patent & trademark attorney'],
         url: '/professionalProfiles/peoples/andrew.png',
+      },
+      {
+        id: 7,
+        name: 'Dr Qi Zhang',
+        positions: ['Principal', 'Patent & Trade Mark Attorney'],
+        url: '',
+      },
+      {
+        id: 8,
+        name: 'Dr Richard Grant',
+        positions: ['Senior Patent Attorney'],
+        url: '',
       },
     ],
   },
@@ -250,7 +270,7 @@ export const profiles = [
     teamName: 'Melbourne teams',
     teamMembers: [
       {
-        id: 3,
+        id: 1,
         name: 'Martin Earley',
         positions: [
           'Director',
@@ -260,18 +280,17 @@ export const profiles = [
         url: '/professionalProfiles/peoples/martin.png',
       },
       {
-        id: 4,
+        id: 2,
         name: 'Dr Seán Klinkradt',
         positions: ['Senior Associate', 'Patent Attorney'],
         url: '',
       },
       {
-        id: 5,
+        id: 3,
         name: 'Warren Chandler',
         positions: ['Senior Associate', 'Patent & Trade Mark Attorney'],
         url: '',
       },
     ],
-    
   },
 ]
