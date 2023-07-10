@@ -4,7 +4,7 @@ import MoreStories from '../../components/blog/more-stories'
 import HeroPost from '../../components/blog/hero-post'
 import Intro from '../../components/blog/intro'
 import Layout from '../../components/to-delete/layout'
-import { CMS_NAME } from '../../lib/constants'
+import { InnerContainer } from '../../components/templates/InnerContainer'
 import { indexQuery } from '../../lib/queries'
 import { usePreviewSubscription } from '../../lib/sanity'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
@@ -18,10 +18,7 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
   return (
     <>
       <Layout preview={preview}>
-        <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
-        </Head>
-        <Container>
+        <InnerContainer>
           <Intro />
           {heroPost && (
             <HeroPost
@@ -34,7 +31,7 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+        </InnerContainer>
       </Layout>
     </>
   )

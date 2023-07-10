@@ -24,17 +24,21 @@ import { getClient, overlayDrafts } from '../lib/sanity.server'
 export default function Home({ allPosts: initialAllPosts, preview }) {
   const menuState = useContentStore((state) => state.menuState)
   const setMenuState = useContentStore((state) => state.setMenuState)
+  const menuState2 = useContentStore((state) => state.menuState2)
+  const setMenuState2 = useContentStore((state) => state.setMenuState2)
   const [selectedMenu, setSelectedMenu] = useState(-1)
+  const [selectedMenu2, setSelectedMenu2] = useState(-1)
   const [subMenu, setSubMenu] = useState(0)
-  const [blog, setBlog] = useState()
+  const [subMenu2, setSubMenu2] = useState(0)
+
   const { data: allPosts } = usePreviewSubscription(indexQuery, {
     initialData: initialAllPosts,
     enabled: preview,
   })
-  
+
   const [heroPost, ...morePosts] = allPosts || []
-  const reduceMorePost = morePosts.slice(0,3);
- 
+  const reduceMorePost = morePosts.slice(0, 3)
+
   const onChangeMenu = useCallback((index) => {
     const selectedId = localStorage.getItem('selected-id')
 
@@ -50,6 +54,21 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
     localStorage.setItem('selected-id', index)
   }, [])
 
+  const onChangeMenu2 = useCallback((index) => {
+    const selectedId = localStorage.getItem('selected-id-2')
+
+    if (Number(selectedId) === index) {
+      setMenuState2(0)
+      setSelectedMenu2(-1)
+      localStorage.setItem('selected-id-2', -1)
+      return
+    }
+    setMenuState2(index + 1)
+    setSelectedMenu2(index + 1)
+
+    localStorage.setItem('selected-id-2', index)
+  }, [])
+
   useEffect(() => {
     const selectedId = localStorage.getItem('selected-id')
     if (!selectedId) {
@@ -58,6 +77,15 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
 
     setSubMenu(menuState)
   }, [menuState])
+
+  useEffect(() => {
+    const selectedId2 = localStorage.getItem('selected-id-2')
+    if (!selectedId2) {
+      localStorage.setItem('selected-id-2', -1)
+    }
+
+    setSubMenu2(menuState2)
+  }, [menuState2])
 
   return (
     <>
@@ -72,7 +100,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       <HeroBanner />
       <BrandsBanner />
       <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
-      <MarketSegment2 cardIndex={selectedMenu} onChange={onChangeMenu} />
+      <MarketSegment2 cardIndex={selectedMenu2} onChange={onChangeMenu2} />
       <OurServices />
       <ContactUs />
       {subMenu === 0 && selectedMenu === -1 && (
