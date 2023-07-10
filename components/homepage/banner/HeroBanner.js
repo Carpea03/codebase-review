@@ -79,7 +79,7 @@ export default function HeroBanner() {
                     </span>
                   </div>
                   <div className="z-40 flex justify-center ">
-                    <span className=" absolute z-50 -mt-2 scale-0 transition-none bg-[#9A85D2] p-2 group-hover:scale-100">
+                    <span className=" absolute z-50 -mt-2 scale-0 transition-none bg-[#9A85D2] p-2 group-hover:scale-100 rounded">
                       <Image
                         src="/virtual-office.png"
                         alt=""
@@ -92,7 +92,6 @@ export default function HeroBanner() {
               </Link>
             </div>
           </div>
-
           <Image
             src="/professionalProfiles/IP-people.jpg"
             className="md:h-[300px] md:w-full xl:h-full xl:w-full object-cover md:pl-5"

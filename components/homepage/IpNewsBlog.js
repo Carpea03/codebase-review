@@ -46,7 +46,7 @@ export default function IpNewsBlog({ news }) {
   return (
     <Container>
       <div className="py-10">
-        <TitleContainer title="IP News Blog" description="Visit Us Now" />
+        <TitleContainer  description="IP Front(TM) Articles" />
       </div>
       <div className="w-full flex flex-col items-start bg-ipNewsLog-content">
         <NewsBlog data={news} />

@@ -40,12 +40,9 @@ export default function ContactUs() {
           <div className="hidden md:flex flex-col md:px-6 xl:px-32 2xl:px-40 py-14">
             <div className="flex flex-row items-center justify-between">
               <div className="flex flex-col">
-                <span className="uppercase font-manrope font-bold text-lg xl:text-xl text-white/50">
-                  Contact us
-                </span>
                 <div className="py-5">
                   <span className="font-lora font-medium md:text-4xl xl:text-5xl text-white">
-                    Reach Out to Baxter IP
+                    Speak with an IP Attorney Now
                   </span>
                 </div>
               </div>
@@ -106,7 +103,6 @@ export default function ContactUs() {
                   </p>
                 </div>
               </div>
-              <div className="w-full border-[1px] border-[#FFFFFF]/30" />
               <div className="flex flex-row justify-start pb-8 md:gap-4 xl:gap-[100px]">
                 <div className="w-1/3 flex justify-center items-center border-[3px] border-[#816BD9] rounded-sm bg-contactus-metaoffice">
                   <Link href={metaOffice}>
@@ -126,12 +122,6 @@ export default function ContactUs() {
                   </Link>
                 </div>
                 <div className="w-1/3 flex flex-col items-start px-[10px] gap-7">
-                  <div className="flex flex-col items-start gap-[10px]">
-                    <span className="font-manrope font-semibold text-xl text-white">
-                      Patent & Trade Mark Office
-                    </span>
-                    <div className="w-2/5 border-[1px] border-[#FFD15B]" />
-                  </div>
                   <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
                     <span className="font-semibold text-base text-white/50">
                       Sydney
@@ -157,33 +147,19 @@ export default function ContactUs() {
                     </span>
                   </div>
                 </div>
-                <div className="w-1/3 flex flex-col items-start px-[10px] gap-7">
-                  <div className="flex flex-col items-start gap-[10px]">
-                    <span className="font-manrope font-semibold text-xl text-white">
-                      Baxter IP
-                    </span>
-                    <div className="w-full border-[1px] border-[#FFD15B]" />
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                    <span className="font-semibold text-base text-white/50">
-                      Email
-                    </span>
-                    <span className="font-normal text-xl text-white">
-                      mail@baxterip.com.au
-                    </span>
-                  </div>
+                <div className="w-1/3 items-start">
+                  <Link href="/contact-us">
+                    <div
+                      className="flex flex-col justify-center items-center h-[88px] bg-[#816BD9] rounded-sm"
+                      style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}
+                    >
+                      <span className="font-manrope font-semibold text-xl text-white">
+                        Send us an enquiry
+                      </span>
+                    </div>
+                  </Link>
                 </div>
               </div>
-              <Link href="/contact-us">
-                <div
-                  className="flex flex-col justify-center items-center h-[88px] bg-[#816BD9] rounded-sm"
-                  style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}
-                >
-                  <span className="font-manrope font-semibold text-xl text-white">
-                    Send us an enquiry
-                  </span>
-                </div>
-              </Link>
             </div>
           </div>
           <div className="md:hidden flex flex-col items-center">
