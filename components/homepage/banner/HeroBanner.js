@@ -23,7 +23,7 @@ const buttonText = [
 
 export default function HeroBanner() {
   return (
-    <Container className="md:px-20 xl:px-40 bg-hero-banner">
+    <Container className="z-4 0 md:px-20 xl:px-40 bg-hero-banner">
       <InnerContainer>
         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-16 md:gap-0 py-10 sm:py-[60px] md:py-16 xl:py-32">
           {/** contents */}
@@ -53,16 +53,16 @@ export default function HeroBanner() {
                         color="#404266"
                       />
                     </div>
-                    <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
+                    <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white">
                       {buttonText[0].title}
                     </span>
                   </div>
                 </div>
               </Link>
               <Link href={metaOffice}>
-                <div className="group flex flex-col items-center hover:opacity-80">
+                <div className="z-50 group flex flex-col items-center hover:bg-[#9A85D2] rounded">
                   <div
-                    className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer"
+                    className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] hover:bg-[#9A85D2] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer"
                     style={{
                       boxShadow:
                         '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
@@ -78,8 +78,8 @@ export default function HeroBanner() {
                       {buttonText[1].title}
                     </span>
                   </div>
-                  <div className="flex justify-center">
-                    <span className="z-40 -mt-2 scale-0 transition-none bg-[#816BD9] p-2 group-hover:scale-100">
+                  <div className="flex justify-center ">
+                    <span className=" absolute z-50 -mt-2 scale-0 transition-none bg-[#9A85D2] p-2 group-hover:scale-100">
                       <Image
                         src="/virtual-office.png"
                         alt=""

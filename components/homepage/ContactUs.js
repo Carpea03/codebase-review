@@ -7,10 +7,10 @@ import { metaOffice } from '../../utils/const/links'
 import { InnerContainer } from '../templates/InnerContainer'
 
 export default function ContactUs() {
-  const [showContactUs, setShowContactUs] = useState(false)
-  const [showMetaOffice, setShowMetaOffice] = useState(false)
-  const [showCallUs, setShowCallUs] = useState(false)
-  const [showEmailUs, setShowEmailUs] = useState(false)
+  const [showContactUs, setShowContactUs] = useState(true)
+  const [showMetaOffice, setShowMetaOffice] = useState(true)
+  const [showCallUs, setShowCallUs] = useState(true)
+  const [showEmailUs, setShowEmailUs] = useState(true)
 
   const handleContactUs = () => {
     setShowContactUs(!showContactUs)
