@@ -62,7 +62,7 @@ export default function HeroBanner() {
               <Link href={metaOffice}>
                 <div className="z-50 group flex flex-col items-center hover:bg-[#9A85D2] rounded">
                   <div
-                    className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] hover:bg-[#9A85D2] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer"
+                    className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] group-hover:bg-[#9A85D2] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer"
                     style={{
                       boxShadow:
                         '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
