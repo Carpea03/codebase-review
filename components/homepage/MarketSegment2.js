@@ -36,7 +36,7 @@ const cards = [
 const marketSigment = [
   {
     header: 'Tailoring your site experience: Step 2',
-    title: 'What best describes you?',
+    title: 'What best describes your industry?',
     description:
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
   },
@@ -196,24 +196,6 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                 )}
               </div>
             ))}
-          </div>
-          <div className="flex gap-6 w-full">
-            <div
-              className="flex flex-row items-center justify-center py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-[#FFEAAC] border-[3px] border-[#DCC895] rounded w-full cursor-pointer hover:opacity-80"
-              style={{
-                boxShadow:
-                  '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-              }}
-            >
-              <span className="font-manrope text-[10px] sm:text-xl text-black whitespace-nowrap">
-                None above? keep scrolling
-              </span>
-              <IoMdArrowDown
-                size={24}
-                color="rgba(0, 0, 0, 0.3)"
-                className="w-4 h-4 sm:w-6 sm:h-6"
-              />
-            </div>
           </div>
         </div>
       </InnerContainer>

@@ -92,7 +92,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
             <input
               type="search"
               placeholder="Search here..."
-              class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
+              className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
             />
             <div className="absolute top-4 p-3 flex justify-start item-center">
               <Search color="#404266" size={24} />
@@ -105,7 +105,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
           <input
             type="search"
             placeholder="Search here..."
-            class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
+            className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4"
           />
           <div className="absolute top-6 p-3 flex justify-start item-center">
             <Search color="#404266" size={24} />

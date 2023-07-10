@@ -30,7 +30,8 @@ export default function HeroBanner() {
           <div className="md:w-[50%] xl:w-full flex flex-col items-center md:items-start gap-[70px] order-last md:order-first">
             <div className="w-full flex flex-col items-start justify-center gap-6">
               <span className="font-lora font-semibold text-2xl sm:text-5xl lg:text-6xl xl:text-[59px] xl:leading-[120%] text-[#272940] text-center md:text-left px-10 md:px-0">
-                {details[0].title}
+                Innovate Boldly. <br />
+                Protect Strategically.
               </span>
               <span className="font-manrope font-semibold text-sm sm:text-2xl text-[#272940]/50 text-center md:text-left px-14 sm:px-40 md:px-0">
                 {details[0].description}
@@ -59,9 +60,9 @@ export default function HeroBanner() {
                 </div>
               </Link>
               <Link href={metaOffice}>
-                <div className="group flex flex-row items-center">
+                <div className="group flex flex-col items-center hover:opacity-80">
                   <div
-                    className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
+                    className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer"
                     style={{
                       boxShadow:
                         '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
@@ -78,11 +79,11 @@ export default function HeroBanner() {
                     </span>
                   </div>
                   <div className="flex justify-center">
-                    <span className="z-40 absolute scale-0 transition-all rounded bg-gray-800 p-2 group-hover:scale-100">
+                    <span className="z-40 -mt-2 scale-0 transition-none bg-[#816BD9] p-2 group-hover:scale-100">
                       <Image
                         src="/virtual-office.png"
                         alt=""
-                        width={300}
+                        width={304}
                         height={300}
                       />
                     </span>
@@ -91,16 +92,15 @@ export default function HeroBanner() {
               </Link>
             </div>
           </div>
-  
-            <Image
-              src="/professionalProfiles/IP-people.jpg"
-              className="md:h-[300px] md:w-full xl:h-full xl:w-full object-cover md:pl-5"
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
-        
+
+          <Image
+            src="/professionalProfiles/IP-people.jpg"
+            className="md:h-[300px] md:w-full xl:h-full xl:w-full object-cover md:pl-5"
+            alt=""
+            width={500}
+            height={500}
+          />
+        </div>
       </InnerContainer>
     </Container>
   )

@@ -9,25 +9,25 @@ const cards = [
     icon: '/marketSegments/people-top-card.svg',
     name: 'Corporate or SME',
     description:
-      'A company that conducts R&D, develops software or manufactures product.',
+      'You sell product, license IP or provide a software service.',
   },
   {
     id: 2,
     icon: '/marketSegments/peoples-two.svg',
     name: 'Scaleup or Investor',
-    description: 'Developing new tech or growing a clever brand.',
+    description: 'You develop tech or are growing a clever brand.',
   },
   {
     id: 3,
     icon: '/marketSegments/school.svg',
     name: 'Startup or Entrepreneur',
-    description: 'Working on something new.',
+    description: 'You are working on something new.',
   },
   {
     id: 4,
     icon: '/marketSegments/xiaodu-home.svg',
     name: 'IP Attorney',
-    description: 'IP Attorney firm outside of Australia or New Zealand.',
+    description: 'You are an IP attorney based outside of AU or NZ.',
   },
 ]
 
@@ -213,24 +213,6 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                 )}
               </div>
             ))}
-          </div>
-          <div className="flex gap-6 w-full">
-            <div
-              className="flex flex-row items-center justify-center py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-[#FFEAAC] border-[3px] border-[#DCC895] rounded w-full cursor-pointer hover:opacity-80"
-              style={{
-                boxShadow:
-                  '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-              }}
-            >
-              <span className="font-manrope text-[10px] sm:text-xl text-black whitespace-nowrap">
-                None above? keep scrolling
-              </span>
-              <IoMdArrowDown
-                size={24}
-                color="rgba(0, 0, 0, 0.3)"
-                className="w-4 h-4 sm:w-6 sm:h-6"
-              />
-            </div>
           </div>
         </div>
       </InnerContainer>
