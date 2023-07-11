@@ -3,6 +3,7 @@ import React from 'react'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import Link from 'next/link'
 import { urlForImage } from '../../lib/sanity'
+import Date from '../../components/blog/date'
 
 export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
   return (
@@ -70,7 +71,7 @@ export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
                   {n?.title}
                 </span>
                 <span className="font-manrope font-semibold text-sm sm:text-base text-[#ADAEBD]">
-                  {n?.date}
+                  <Date dateString={n?.date} />
                 </span>
               </div>
             </div>
