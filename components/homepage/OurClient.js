@@ -34,7 +34,7 @@ export const OurClient = () => {
         >
            <InnerContainer>
           {/** brands container */}
-          <div className="flex flex-col items-ystart py-12 sm:pb-24 md:py-16">
+          <div className="flex flex-col items-ystart py-20 sm:pb-20 md:py-20">
             <div className="grid grid-cols-3 gap-1 sm:gap-3 md:gap-5 w-full items-center justify-center">
               {brands.map((brand) => (
                 <div
