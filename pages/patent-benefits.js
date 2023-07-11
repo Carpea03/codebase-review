@@ -17,7 +17,7 @@ export default function PatentBenefits() {
         />
       </Head>
       <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center md:mt-5 mt-0 mb-6 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
+        <ol className="inline-flex items-center md:pt-5 pt-0 pb-6 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
           <li className="inline-flex items-center">
             <Link
               href="#"
