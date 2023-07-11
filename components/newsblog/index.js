@@ -7,7 +7,7 @@ import { urlForImage } from '../../lib/sanity'
 export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
   return (
     <div className="w-full flex flex-row items-start justify-center sm:pb-10">
-      <div className="flex flex-col gap-11 sm:gap-24">
+      <div className="flex flex-col gap-5 sm:gap-10">
         <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-14">
           {data?.map((n) => (
             <div
@@ -22,7 +22,7 @@ export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
                 <Image
                   alt=""
                   src={n?.coverImage?.asset?._ref? urlForImage(n?.coverImage?.asset?._ref).url(): '/ipNewsBlog/news-1.png'}
-                  className="object-fill w-full h-[306px]"
+                  className="object-cover w-full h-[306px]"
                   width={362}
                   height={306}
                 />

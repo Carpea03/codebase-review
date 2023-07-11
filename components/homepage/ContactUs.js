@@ -46,19 +46,6 @@ export default function ContactUs() {
                   </span>
                 </div>
               </div>
-              <div
-                className="flex justify-center items-center bg-[#4C4F76] rounded-sm w-[250px] xl:w-[354px] h-[87px] py-6 px-8 cursor-pointer"
-                onClick={handleContactUs}
-              >
-                <span className="grow text-center font-manrope font-semibold text-xl text-white">
-                  Contact Us
-                </span>
-                <FiChevronUp
-                  size={24}
-                  color={'white'}
-                  className={`flex-none ${showContactUs ? 'rotate-180' : ''}`}
-                />
-              </div>
             </div>
             <div
               className={`flex flex-col gap-8 ${
