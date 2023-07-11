@@ -5,7 +5,7 @@ import { InnerContainer } from '../templates/InnerContainer'
 import Image from 'next/image'
 
 const brands = [
-  { id: 1, src: '/banner/Ten13.svg' },
+  { id: 1, src: '/banner/ten13.svg' },
   { id: 2, src: '/banner/investible.svg' },
   { id: 3, src: '/banner/UNSW Sydney.svg' },
   { id: 4, src: '/banner/USYD Genesis.svg' },
