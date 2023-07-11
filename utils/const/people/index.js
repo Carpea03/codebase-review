@@ -153,7 +153,7 @@ export const subMenus3 = [
 ]
 
 export const peopleIndustry = [
-  { id: 0, item: [1, 2, 3, 4, 5, 6, 7, 8] },
+  { id: 0, item: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
   { id: 1, item: [2, 7, 6, 3, 4, 5] },
   { id: 2, item: [2, 7, 6, 3] },
   { id: 3, item: [8, 4, 5] },
@@ -216,6 +216,12 @@ export const profiles = [
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/peoples/richard.jpg',
+      },
+      {
+        id: 9,
+        name: 'John Baxter',
+        positions: ['Senior Commercial Counsel'],
+        url: '/professionalProfiles/peoples/john.jpg',
       },
     ],
   },

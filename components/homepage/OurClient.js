@@ -5,11 +5,11 @@ import { InnerContainer } from '../templates/InnerContainer'
 import Image from 'next/image'
 
 const brands = [
-  { id: 1, src: '/banner/ten13.svg' },
-  { id: 2, src: '/banner/investible-new.svg' },
-  { id: 3, src: '/banner/unsw-sydney.svg' },
-  { id: 4, src: '/banner/university-of-sydney.svg' },
-  { id: 5, src: '/banner/founders.svg' },
+  { id: 1, src: '/banner/Ten13.svg' },
+  { id: 2, src: '/banner/investible.svg' },
+  { id: 3, src: '/banner/UNSW Sydney.svg' },
+  { id: 4, src: '/banner/USYD Genesis.svg' },
+  { id: 5, src: '/banner/founder.svg' },
   { id: 6, src: '/banner/airtree.svg' },
 ]
 
@@ -39,7 +39,7 @@ export const OurClient = () => {
               {brands.map((brand) => (
                 <div
                   key={brand.id}
-                  className="flex justify-center items-center bg-white py-7 sm:py-16 md:py-28"
+                  className="flex justify-center items-center bg-white"
                   style={{
                     boxShadow:
                       '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
