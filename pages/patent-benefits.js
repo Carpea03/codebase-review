@@ -16,8 +16,8 @@ export default function PatentBenefits() {
           href="https://www.baxterip.com.au/patent-application"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+      <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center mt-4 mb-4 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
           <li className="inline-flex items-center">
             <Link
               href="#"
@@ -128,9 +128,7 @@ export default function PatentBenefits() {
         benefits associated with filing a patent. In order for a patent to be
         granted, the invention has to be novel and involve an inventive step.
       </p>
-
       <p>There are several benefits in patenting an invention, including:</p>
-
       <ul>
         <li>
           gaining a monopoly to commercialise and develop an invention. Patent
@@ -149,16 +147,13 @@ export default function PatentBenefits() {
           (including internationally).
         </li>
       </ul>
-
       <h2>Patent assets generate income and protect profit</h2>
-
       <p>
         A patent is an asset which adds value to a company. It can be sold,
         transferred, licensed and used as collateral to obtain finance. A patent
         in and of itself does not generate income, revenue is generated via
         commercialisation of the product and/or licensing fees.
       </p>
-
       <p>
         A well drafted patent can provide the inventor with a head start to
         commercialise the invention and restrict competition, allowing the
@@ -176,7 +171,6 @@ export default function PatentBenefits() {
         competition and obtain damages where applicable (these include
         reputational damage and loss of profits).
       </p>
-
       <p>
         The ability to restrict competition and have protection for up to 20
         years allows inventors to patent inventions that may not yet be fully
@@ -186,7 +180,6 @@ export default function PatentBenefits() {
         may become very valuable in the course of the 20 years of protection
         provided by a patent.
       </p>
-
       <h2>Patent tax breaks</h2>
 
       <p>
@@ -195,9 +188,7 @@ export default function PatentBenefits() {
         where IP derived income will be taxed at a much lower rate of 17% for
         inventions in the medical device and biotechnology spaces.
       </p>
-
       <h2>Patents are better than confidentiality agreements</h2>
-
       <p>
         Once a patent application has been filed, the invention can be disclosed
         to potential investors, collaborators and granting bodies without having
@@ -208,9 +199,7 @@ export default function PatentBenefits() {
         irreversible damage of losing the ability to obtain patent protection
         due to prior disclosure.
       </p>
-
       <h2>Getting started with patenting</h2>
-
       <p>
         There have been cases where inventors have disclosed their invention
         more than 12 months before filing (in conference proceedings, in tender
@@ -223,7 +212,6 @@ export default function PatentBenefits() {
         the invention. It is therefore extremely important that inventors seek
         advice on the protection of their invention at a very early stage.
       </p>
-
       <p>
         In Australia, it is also possible to file for a provisional patent which
         gives inventors 12 months to decide whether to file a full patent
@@ -233,7 +221,6 @@ export default function PatentBenefits() {
         disclosure of the invention for commercialisation and investment
         purposes without needing to rely on a confidentiality agreement.
       </p>
-
       <p>
         The key takeaway message is to contact a qualified patent attorney to
         get advice on how to protect your invention from the early stages. A
