@@ -151,3 +151,182 @@ export const subMenus2 = [
 export const subMenus3 = [
   [{ title: 'Dr John Baxter', bold: false, division: false, href: teamLink }],
 ]
+
+export const peopleIndustry = [
+  { id: 0, item: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+  { id: 1, item: [2, 7, 6, 3, 4, 5] },
+  { id: 2, item: [2, 7, 6, 3] },
+  { id: 3, item: [8, 4, 5] },
+  { id: 4, item: [7, 6, 1, 3, 5] },
+]
+
+export const profiles = [
+  {
+    id: 0,
+    teamName: 'all',
+    teamMembers: [
+      {
+        id: 1,
+        name: 'Julia Caunt',
+        positions: ['Senior Associate', 'Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/julia.jpg',
+      },
+      {
+        id: 2,
+        name: 'Chris Baxter',
+        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/chris.jpg',
+      },
+      {
+        id: 3,
+        name: 'Martin Earley',
+        positions: [
+          'Director',
+          'Victoria region manager',
+          'Patent & trademark attorney',
+        ],
+        url: '/professionalProfiles/peoples/martin.jpg',
+      },
+      {
+        id: 4,
+        name: 'Dr Seán Klinkradt',
+        positions: ['Senior Associate', 'Patent Attorney'],
+        url: '/professionalProfiles/peoples/sean.jpg',
+      },
+      {
+        id: 5,
+        name: 'Warren Chandler',
+        positions: ['Senior Associate', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/warren.jpg',
+      },
+      {
+        id: 6,
+        name: 'Andrew Balis',
+        positions: ['Associate', 'Patent & trademark attorney'],
+        url: '/professionalProfiles/peoples/andrew.jpg',
+      },
+      {
+        id: 7,
+        name: 'Dr Qi Zhang',
+        positions: ['Principal', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/qi.jpg',
+      },
+      {
+        id: 8,
+        name: 'Dr Richard Grant',
+        positions: ['Senior Patent Attorney'],
+        url: '/professionalProfiles/peoples/richard.jpg',
+      },
+      {
+        id: 9,
+        name: 'John Baxter',
+        positions: ['Senior Commercial Counsel'],
+        url: '/professionalProfiles/peoples/john.jpg',
+      },
+    ],
+  },
+  {
+    id: 1,
+    teamName: 'Sydney teams',
+    teamMembers: [
+      {
+        id: 1,
+        name: 'Julia Caunt',
+        positions: ['Senior Associate', 'Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/julia.jpg',
+      },
+      {
+        id: 2,
+        name: 'Chris Baxter',
+        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/chris.jpg',
+      },
+      {
+        id: 3,
+        name: 'Martin Earley',
+        positions: [
+          'Director',
+          'Victoria region manager',
+          'Patent & trademark attorney',
+        ],
+        url: '/professionalProfiles/peoples/martin.jpg',
+      },
+      {
+        id: 4,
+        name: 'Dr Seán Klinkradt',
+        positions: ['Senior Associate', 'Patent Attorney'],
+        url: '/professionalProfiles/peoples/sean.jpg',
+      },
+      {
+        id: 5,
+        name: 'Warren Chandler',
+        positions: ['Senior Associate', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/warren.jpg',
+      },
+      {
+        id: 6,
+        name: 'Andrew Balis',
+        positions: ['Associate', 'Patent & trademark attorney'],
+        url: '/professionalProfiles/peoples/andrew.jpg',
+      },
+      {
+        id: 7,
+        name: 'Dr Qi Zhang',
+        positions: ['Principal', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/qi.jpg',
+      },
+      {
+        id: 8,
+        name: 'Dr Richard Grant',
+        positions: ['Senior Patent Attorney'],
+        url: '/professionalProfiles/peoples/richard.jpg',
+      },
+    ],
+  },
+  {
+    id: 2,
+    teamName: 'Melbourne teams',
+    teamMembers: [
+      {
+        id: 1,
+        name: 'Julia Caunt',
+        positions: ['Senior Associate', 'Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/julia.jpg',
+      },
+      {
+        id: 2,
+        name: 'Chris Baxter',
+        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/chris.jpg',
+      },
+      {
+        id: 3,
+        name: 'Martin Earley',
+        positions: [
+          'Director',
+          'Victoria region manager',
+          'Patent & trademark attorney',
+        ],
+        url: '/professionalProfiles/peoples/martin.jpg',
+      },
+      {
+        id: 4,
+        name: 'Dr Seán Klinkradt',
+        positions: ['Senior Associate', 'Patent Attorney'],
+        url: '/professionalProfiles/peoples/sean.jpg',
+      },
+      {
+        id: 5,
+        name: 'Warren Chandler',
+        positions: ['Senior Associate', 'Patent & Trade Mark Attorney'],
+        url: '/professionalProfiles/peoples/warren.jpg',
+      },
+      {
+        id: 6,
+        name: 'Andrew Balis',
+        positions: ['Associate', 'Patent & trademark attorney'],
+        url: '/professionalProfiles/peoples/andrew.jpg',
+      },
+    ],
+  },
+]

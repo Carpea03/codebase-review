@@ -11,26 +11,81 @@ import { FillingStats } from '../components/homepage/FillingStats'
 import { IndustrySepciality } from '../components/homepage/IndustrySepciality'
 import IpNewsBlog from '../components/homepage/IpNewsBlog'
 import { MarketSegment } from '../components/homepage/MarketSegment'
+import { MarketSegment2 } from '../components/homepage/MarketSegment2'
 import { OurClient } from '../components/homepage/OurClient'
 import { OurServices } from '../components/homepage/OurServices'
+import { VisitVirtualOffice } from '../components/homepage/VisitVirtualOffice'
 import ProfessionalProfiles from '../components/homepage/ProfessionalProfiles'
-import { VisitmetaOffice } from '../components/homepage/VisitMetaOffice'
 import useContentStore from '../store/useContent.store'
+import { indexQuery } from '../lib/queries'
+import { usePreviewSubscription } from '../lib/sanity'
+import { getClient, overlayDrafts } from '../lib/sanity.server'
 
-export default function Home() {
+export default function Home({ allPosts: initialAllPosts, preview }) {
   const menuState = useContentStore((state) => state.menuState)
   const setMenuState = useContentStore((state) => state.setMenuState)
-  const [selectedMenu, setSelectedMenu] = useState(0)
+  const menuState2 = useContentStore((state) => state.menuState2)
+  const setMenuState2 = useContentStore((state) => state.setMenuState2)
+  const [selectedMenu, setSelectedMenu] = useState(-1)
+  const [selectedMenu2, setSelectedMenu2] = useState(-1)
   const [subMenu, setSubMenu] = useState(0)
+  const [subMenu2, setSubMenu2] = useState(0)
+
+  const { data: allPosts } = usePreviewSubscription(indexQuery, {
+    initialData: initialAllPosts,
+    enabled: preview,
+  })
+
+  const [heroPost, ...morePosts] = allPosts || []
+  const reduceMorePost = morePosts.slice(0, 3)
 
   const onChangeMenu = useCallback((index) => {
-    setMenuState(index)
-    setSelectedMenu(index)
+    const selectedId = localStorage.getItem('selected-id')
+
+    if (Number(selectedId) === index) {
+      setMenuState(0)
+      setSelectedMenu(-1)
+      localStorage.setItem('selected-id', -1)
+      return
+    }
+    setMenuState(index + 1)
+    setSelectedMenu(index + 1)
+
+    localStorage.setItem('selected-id', index)
+  }, [])
+
+  const onChangeMenu2 = useCallback((index) => {
+    const selectedId = localStorage.getItem('selected-id-2')
+
+    if (Number(selectedId) === index) {
+      setMenuState2(0)
+      setSelectedMenu2(-1)
+      localStorage.setItem('selected-id-2', -1)
+      return
+    }
+    setMenuState2(index + 1)
+    setSelectedMenu2(index + 1)
+
+    localStorage.setItem('selected-id-2', index)
   }, [])
 
   useEffect(() => {
+    const selectedId = localStorage.getItem('selected-id')
+    if (!selectedId) {
+      localStorage.setItem('selected-id', -1)
+    }
+
     setSubMenu(menuState)
   }, [menuState])
+
+  useEffect(() => {
+    const selectedId2 = localStorage.getItem('selected-id-2')
+    if (!selectedId2) {
+      localStorage.setItem('selected-id-2', -1)
+    }
+
+    setSubMenu2(menuState2)
+  }, [menuState2])
 
   return (
     <>
@@ -45,44 +100,57 @@ export default function Home() {
       <HeroBanner />
       <BrandsBanner />
       <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
+      <MarketSegment2 cardIndex={selectedMenu2} onChange={onChangeMenu2} />
       <OurServices />
-      {subMenu === 0 && (
-        <>
-          <ProfessionalProfiles />
-          <FillingStats />
-          <IndustrySepciality />
-          <IpNewsBlog />
-          <OurClient />
-        </>
-      )}
-      {subMenu === 1 && (
-        <>
-          <ProfessionalProfiles />
-          <OurClient />
-          <FillingStats />
-          <IpNewsBlog />
-        </>
-      )}
-      {subMenu === 2 && (
-        <>
-          <IpNewsBlog />
-          <OurClient />
-          <FillingStats />
-          <ProfessionalProfiles />
-        </>
-      )}
-      {subMenu === 3 && (
-        <>
-          <ProfessionalProfiles />
-          <IpNewsBlog />
-          <IndustrySepciality />
-          <OurClient />
-          <FillingStats />
-        </>
-      )}
       <ContactUs />
-      <VisitmetaOffice />
+      {subMenu === 0 && selectedMenu === -1 && (
+        <>
+          <IpNewsBlog news={reduceMorePost} />
+          <OurClient />
+          <ProfessionalProfiles />
+        </>
+      )}
+      {subMenu === 1 && selectedMenu !== -1 && (
+        <>
+          <IpNewsBlog news={reduceMorePost} />
+          <OurClient />
+          <FillingStats />
+          <ProfessionalProfiles />
+        </>
+      )}
+      {subMenu === 2 && selectedMenu !== -1 && (
+        <>
+          <IpNewsBlog news={reduceMorePost} />
+          <OurClient />
+          <FillingStats />
+          <ProfessionalProfiles />
+        </>
+      )}
+      {subMenu === 3 && selectedMenu !== -1 && (
+        <>
+          <IpNewsBlog news={reduceMorePost} />
+          <OurClient />
+          <FillingStats />
+          <ProfessionalProfiles />
+        </>
+      )}
+      {subMenu === 4 && selectedMenu !== -1 && (
+        <>
+          <IpNewsBlog news={reduceMorePost} />
+          <FillingStats />
+          <OurClient />
+          <ProfessionalProfiles />
+        </>
+      )}
+      <VisitVirtualOffice />
       <Footer />
     </>
   )
+}
+
+export async function getStaticProps({ preview = false }) {
+  const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery))
+  return {
+    props: { allPosts, preview },
+  }
 }

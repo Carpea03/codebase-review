@@ -13,7 +13,7 @@ import { MarketSegment } from './MarketSegment'
 import { OurClient } from './OurClient'
 import { OurServices } from './OurServices'
 import ProfessionalProfiles from './ProfessionalProfiles'
-import { VisitmetaOffice } from './VisitmetaOffice'
+import { VisitmetaOffice } from './VisitVirtualOffice'
 
 export default function Homepage() {
   const [selectedMenu, setSelectedMenu] = useState(0)

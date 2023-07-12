@@ -6,121 +6,11 @@ import React, { useState } from 'react'
 import { HiPhone, HiLocationMarker } from 'react-icons/hi'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const peoples = [
-  {
-    id: 0,
-    teamName: 'Sydney teams',
-    teamMembers: [
-      {
-        id: 1,
-        name: 'Naleesha Niranjan',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/naleesha.png',
-      },
-      {
-        id: 2,
-        name: 'Chris Baxter',
-        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
-        url: '/professionalProfiles/peoples/chris.png',
-      },
-      {
-        id: 3,
-        name: 'Martin Earley',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/martin.png',
-      },
-      // {
-      //   id: 4,
-      //   name: "Joanne Li",
-      //   positions: [
-      //     "Associate",
-      //     "Trade Mark Attorney",
-      //     "International filings manager",
-      //   ],
-      //   url: "/professionalProfiles/peoples/joanne.png",
-      // },
-      // {
-      //   id: 5,
-      //   name: "Willem du Preez",
-      //   positions: ["Associate", "Patent & trademark attorney"],
-      //   url: "/professionalProfiles/peoples/willem.png",
-      // },
-      {
-        id: 6,
-        name: 'Andrew Balis',
-        positions: ['Associate', 'Patent & trademark attorney'],
-        url: '/professionalProfiles/peoples/andrew.png',
-      },
-    ],
-  },
-  {
-    id: 1,
-    teamName: 'Melbourne teams',
-    teamMembers: [
-      {
-        id: 1,
-        name: 'Chris Baxter',
-        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
-        url: '/professionalProfiles/peoples/chris.png',
-      },
-      {
-        id: 2,
-        name: 'Naleesha Niranjan',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/naleesha.png',
-      },
-      {
-        id: 3,
-        name: 'Martin Earley',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/martin.png',
-      },
-      // {
-      //   id: 4,
-      //   name: "Joanne Li",
-      //   positions: [
-      //     "Associate",
-      //     "Trade Mark Attorney",
-      //     "International filings manager",
-      //   ],
-      //   url: "/professionalProfiles/peoples/joanne.png",
-      // },
-      // {
-      //   id: 5,
-      //   name: "Willem du Preez",
-      //   positions: ["Associate", "Patent & trademark attorney"],
-      //   url: "/professionalProfiles/peoples/willem.png",
-      // },
-      {
-        id: 6,
-        name: 'Andrew Balis',
-        positions: ['Associate', 'Patent & trademark attorney'],
-        url: '/professionalProfiles/peoples/andrew.png',
-      },
-    ],
-  },
-]
+import { profiles as peoples } from '../../utils/const/people'
 
 const ipTeams = [
-  { id: 0, title: 'sydney-team' },
-  { id: 1, title: 'merlbourne-team' },
+  { id: 1, title: 'sydney-team' },
+  { id: 2, title: 'merlbourne-team' },
 ]
 
 export const getStaticPaths = async () => {
@@ -178,44 +68,52 @@ export default function People({ item }) {
           </div>
         </div>
         <div className="flex flex-row items-start justify-center w-full">
-          {peoples.map((people, index) => (
-            <div
-              key={index}
-              className={`w-1/2 h-16 sm:h-32 flex flex-row items-center justify-center gap-4 cursor-pointer ${
-                selectedMenu == index ? 'bg-[#FFFDF7]' : 'bg-[#FAF4E5]'
-              }`}
-              style={{
-                clipPath:
-                  index == 0
-                    ? 'polygon(0 0, 98% 0, 100% 100%, 0 100%)'
-                    : 'polygon(0 0, 100% 0, 100% 100%, 2% 100%)',
-              }}
-              onClick={() => setSelectedMenu(index)}
-            >
-              {selectedMenu === index ? (
-                <HiLocationMarker
-                  fill="#7568D1"
-                  size={31}
-                  className="w-4 h-4 sm:w-8 sm:h-8"
-                />
-              ) : (
-                <HiLocationMarker
-                  fill="none"
-                  stroke="#272940"
-                  strokeWidth={1}
-                  size={31}
-                  className="border-none w-4 h-4 sm:w-8 sm:h-8"
-                />
-              )}
-              <span
-                className={`font-manrope font-semibold text-xs sm:text-2xl ${
-                  selectedMenu == index ? 'text-[#272940]' : 'text-[#272940]/50'
+          {peoples
+            .filter(
+              (item) =>
+                item.teamName === 'Sydney teams' ||
+                item.teamName === 'Melbourne teams'
+            )
+            .map((people, index) => (
+              <div
+                key={index}
+                className={`w-1/2 h-16 sm:h-32 flex flex-row items-center justify-center gap-4 cursor-pointer ${
+                  selectedMenu == index ? 'bg-[#FFFDF7]' : 'bg-[#FAF4E5]'
                 }`}
+                style={{
+                  clipPath:
+                    index == 0
+                      ? 'polygon(0 0, 98% 0, 100% 100%, 0 100%)'
+                      : 'polygon(0 0, 100% 0, 100% 100%, 2% 100%)',
+                }}
+                onClick={() => setSelectedMenu(index)}
               >
-                {people.teamName}
-              </span>
-            </div>
-          ))}
+                {selectedMenu === index ? (
+                  <HiLocationMarker
+                    fill="#7568D1"
+                    size={31}
+                    className="w-4 h-4 sm:w-8 sm:h-8"
+                  />
+                ) : (
+                  <HiLocationMarker
+                    fill="none"
+                    stroke="#272940"
+                    strokeWidth={1}
+                    size={31}
+                    className="border-none w-4 h-4 sm:w-8 sm:h-8"
+                  />
+                )}
+                <span
+                  className={`font-manrope font-semibold text-xs sm:text-2xl ${
+                    selectedMenu == index
+                      ? 'text-[#272940]'
+                      : 'text-[#272940]/50'
+                  }`}
+                >
+                  {people.teamName}
+                </span>
+              </div>
+            ))}
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 sm:py-24">
           {peoples[selectedMenu].teamMembers.map((teamMember, index) => (

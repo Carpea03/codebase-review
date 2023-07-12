@@ -46,6 +46,14 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
 
+const menusData = {
+  0: subMenus,
+  1: subMenus1,
+  2: subMenus2,
+  3: subMenus3,
+  4: subMenus4,
+}
+
 export default function Services({ menuIndex, onChange }) {
   const setMenuState = useContentStore((state) => state.setMenuState)
   return (
@@ -92,68 +100,8 @@ export default function Services({ menuIndex, onChange }) {
           <Tab.Panels as="div" className="flex flex-col w-[70%]">
             <Tab.Panel>
               <Tab.Group defaultIndex={1}>
-                <Tab.List
-                  as="div"
-                  className="flex justify-start items-center h-[67px]"
-                >
-                  <Tab
-                    as="div"
-                    className="flex justify-center items-center outline-none w-[133px] h-full"
-                    style={{
-                      background:
-                        'linear-gradient(97.07deg, #404266 23.2%, #8083B6 114.87%)',
-                    }}
-                  >
-                    <Image src="/general.svg" width={47} height={47} alt="" />
-                  </Tab>
-                  <div
-                    className={`flex flex-row items-start w-full h-full ${
-                      menuIndex == topMenus.length - 1
-                        ? 'bg-[#FFFDF7]'
-                        : 'bg-[#FAF4E4]'
-                    }`}
-                  >
-                    {topMenus.map((topMenu, index) => (
-                      <Tab
-                        key={index}
-                        as="div"
-                        onClick={() => {
-                          onChange(index)
-                          setMenuState(index)
-                        }}
-                        className={`w-1/3 flex flex-row items-center justify-center h-full outline-none cursor-pointer ${
-                          menuIndex === index
-                            ? 'skew-x-12 bg-[#FFFDF7] border-b-[4px] border-[#7568D1] -ml-4'
-                            : 'bg-[#FAF4E4]'
-                        } ${index == 0 ? 'skew-x-12 -ml-4 -mr-2' : ''}`}
-                      >
-                        <div
-                          className={`flex flex-row items-center justify-center h-full gap-[10px] p-[10px] ${
-                            menuIndex === index ? '-skew-x-12' : ''
-                          } ${index == 0 ? '-skew-x-12' : ''}`}
-                        >
-                          <Image
-                            src={topMenu.icon}
-                            width={32}
-                            height={32}
-                            alt=""
-                          />
-                          <span
-                            className={`font-manrope text-l px-2 ${
-                              menuIndex === index
-                                ? 'font-bold text-[#272940] '
-                                : 'font-medium text-[#272940]/50'
-                            }`}
-                          >
-                            {topMenu.name}
-                          </span>
-                        </div>
-                      </Tab>
-                    ))}
-                  </div>
-                </Tab.List>
                 <Tab.Panels>
-                  <Tab.Panel></Tab.Panel>
+                  <Tab.Panel />
                   <Tab.Panel>
                     <SubMenuBlock contents={subMenus} />
                   </Tab.Panel>
@@ -176,7 +124,7 @@ export default function Services({ menuIndex, onChange }) {
           </Tab.Panels>
         </Tab.Group>
         <div className="flex flex-col md:hidden">
-          {sideMenus.map((sideMenu) => (
+          {sideMenus.map((sideMenu, index) => (
             <Disclosure key={sideMenu.id}>
               <Disclosure.Button
                 className={({ open }) =>
@@ -199,71 +147,8 @@ export default function Services({ menuIndex, onChange }) {
                   {sideMenu.name}
                 </span>
               </Disclosure.Button>
-              <Disclosure.Panel as="div">
-                {sideMenu.id == 1 &&
-                  topMenus.map((topMenu) => (
-                    <Disclosure key={topMenu.id} as="div">
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button
-                            as="div"
-                            className={`flex flex-row justify-between items-center cursor-pointer border-b border-solid border-[#BFBBB2] pl-12 ${
-                              open ? 'h-[68px]' : 'h-[60px]'
-                            }`}
-                            style={{
-                              background:
-                                topMenu.id == 1
-                                  ? 'linear-gradient(93.59deg, #404266 -11.69%, #8083B6 223.51%)'
-                                  : '#FAF5EB',
-                            }}
-                            defaultIndex={1}
-                          >
-                            <div className="flex flex-row justify-between items-center gap-[10px]">
-                              {topMenu.id == 1 ? (
-                                <Image
-                                  src={topMenu.icon}
-                                  width={32}
-                                  height={32}
-                                  alt=""
-                                />
-                              ) : (
-                                <Image
-                                  src={topMenu.icon}
-                                  width={16}
-                                  height={16}
-                                  color={'#5F618C'}
-                                  alt=""
-                                />
-                              )}
-                              <span
-                                className={`font-manrope font-bold text-xs ${
-                                  topMenu.id == 1
-                                    ? 'text-[#fff]'
-                                    : 'text-[#272940]'
-                                }`}
-                              >
-                                {topMenu.name}
-                              </span>
-                            </div>
-                            {open && (
-                              <div className="w-[68px] h-full flex justify-center items-center bg-[#FAF4E4]">
-                                <FaCaretDown
-                                  width={24}
-                                  height={24}
-                                  color="#BFBBB2"
-                                />
-                              </div>
-                            )}
-                          </Disclosure.Button>
-                          <Disclosure.Panel>
-                            {topMenu.id == 2 && (
-                              <SubMenuBlock contents={subMenus} />
-                            )}
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                  ))}
+              <Disclosure.Panel className="flex overflow-scroll">
+                <SubMenuBlock contents={menusData[index]} />
               </Disclosure.Panel>
             </Disclosure>
           ))}

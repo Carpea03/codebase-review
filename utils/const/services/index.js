@@ -431,116 +431,154 @@ export const services = {
   0: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Seamless Cross-industry, Cross-disciplinary IP Advice',
       content:
-        "We've delivered successful projects spanning multiple industries and functions and can pull on our knowledge to help you too",
-      img: '/ourservices/service-1.png',
+        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
+      img: '/ourservices/Seamless cross-industry, cross-disciplinary IP advice.svg',
       link: '',
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Strategy First',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
-      img: '/ourservices/service-2.png',
+        'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
+      img: '/ourservices/Strategy first.svg',
       link: '',
     },
     {
       id: 3,
-      title:
-        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      title: 'Analytical, Technical and Creative Talent',
       content:
-        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
-      img: '/ourservices/service-3.png',
+        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+      img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
     {
       id: 4,
-      title: 'ROI Foccussed',
+      title: 'Award Winning',
       content:
-        "Award Winning - Our team have established a reptuation for being the best and have won some of the world's most highly regarded IP awards.",
-      img: '/ourservices/service-4.png',
+        'Our team have established a reptuation for being the best and have won highly regarded IP awards.',
+      img: '/ourservices/Award winning.svg',
+      link: '',
+    },
+    {
+      id: 5,
+      title: 'Tech Spectrum Covered',
+      content:
+        'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
+      img: '/ourservices/Tech spectrum covered.svg',
       link: '',
     },
   ],
   1: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Seamless Cross-industry, Cross-disciplinary IP Advice',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
-      img: '/ourservices/service-1.png',
+        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
+      img: '/ourservices/Seamless cross-industry, cross-disciplinary IP advice.svg',
       link: '',
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Strategy First',
       content:
-        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
-      img: '/ourservices/service-2.png',
+        'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
+      img: '/ourservices/Strategy first.svg',
       link: '',
     },
     {
       id: 3,
-      title:
-        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      title: 'Analytical, Technical and Creative Talent',
       content:
-        "Award Winning - Our team have established a reptuation for being the best and have won some of the world's most highly regarded IP awards.",
-      img: '/ourservices/service-3.png',
+        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+      img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
     {
       id: 4,
-      title: 'ROI Foccussed',
+      title: 'Award Winning',
       content:
-        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
-      img: '/ourservices/service-4.png',
+        'Our team have established a reptuation for being the best and have won highly regarded IP awards.',
+      img: '/ourservices/Award winning.svg',
       link: '',
     },
   ],
   2: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Analytical, Technical and Creative Talent',
       content:
-        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
-      img: '/ourservices/service-1.png',
+        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+      img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Strategy First',
       content:
-        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
-      img: '/ourservices/service-2.png',
+        'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
+      img: '/ourservices/Strategy first.svg',
       link: '',
     },
     {
       id: 3,
-      title:
-        'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
+      title: 'Tech Spectrum Covered',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
-      img: '/ourservices/service-3.png',
+        'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
+      img: '/ourservices/Tech spectrum covered.svg',
+      link: '',
+    },
+    {
+      id: 4,
+      title: 'Award Winning',
+      content:
+        'Our team have established a reptuation for being the best and have won highly regarded IP awards.',
+      img: '/ourservices/Award winning.svg',
       link: '',
     },
   ],
   3: [
     {
       id: 1,
-      title: 'Track record with multiple successful projects',
+      title: 'Analytical, Technical and Creative Talent',
       content:
-        "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
-      img: '/ourservices/service-1.png',
+        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+      img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
     {
       id: 2,
-      title: 'Experienced brand awareness team ',
+      title: 'Tech Spectrum Covered',
       content:
-        "Our focus is developing recommendations & analyses to inform management decision making. If there is not a possibility of delivering the IP insights you require for strategic decisions, we'll discuss upfront.",
-      img: '/ourservices/service-2.png',
+        'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
+      img: '/ourservices/Tech spectrum covered.svg',
+      link: '',
+    },{
+      id: 3,
+      title: 'Capital Connected',
+      content:
+        "Our capital partners are major Australian venture capital funds and syndicates. At a client's request, we consider whether a warm introduction to our capital partners is likely to be of interest and make the introductions if so.",
+      img: '/ourservices/Capital connected.svg',
       link: '',
     },
+  ],
+  4: [
+    {
+      id: 1,
+      title: 'Analytical, Technical and Creative Talent',
+      content:
+        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+      img: '/ourservices/Analytical, technical and creative talent.svg',
+      link: '',
+    },
+    {
+      id: 2,
+      title: 'Tech Spectrum Covered',
+      content:
+        'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
+      img: '/ourservices/Tech spectrum covered.svg',
+      link: '',
+    }
   ],
 }

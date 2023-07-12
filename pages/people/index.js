@@ -6,117 +6,7 @@ import React, { useState } from 'react'
 import { HiPhone, HiLocationMarker } from 'react-icons/hi'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const peoples = [
-  {
-    id: 1,
-    teamName: 'Sydney teams',
-    teamMembers: [
-      {
-        id: 1,
-        name: 'Naleesha Niranjan',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/naleesha.png',
-      },
-      {
-        id: 2,
-        name: 'Chris Baxter',
-        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
-        url: '/professionalProfiles/peoples/chris.png',
-      },
-      {
-        id: 3,
-        name: 'Martin Earley',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/martin.png',
-      },
-      // {
-      //   id: 4,
-      //   name: "Joanne Li",
-      //   positions: [
-      //     "Associate",
-      //     "Trade Mark Attorney",
-      //     "International filings manager",
-      //   ],
-      //   url: "/professionalProfiles/peoples/joanne.png",
-      // },
-      // {
-      //   id: 5,
-      //   name: "Willem du Preez",
-      //   positions: ["Associate", "Patent & trademark attorney"],
-      //   url: "/professionalProfiles/peoples/willem.png",
-      // },
-      {
-        id: 6,
-        name: 'Andrew Balis',
-        positions: ['Associate', 'Patent & trademark attorney'],
-        url: '/professionalProfiles/peoples/andrew.png',
-      },
-    ],
-  },
-  {
-    id: 2,
-    teamName: 'Melbourne teams',
-    teamMembers: [
-      {
-        id: 1,
-        name: 'Chris Baxter',
-        positions: ['Managing Director', 'Patent & Trade Mark Attorney'],
-        url: '/professionalProfiles/peoples/chris.png',
-      },
-      {
-        id: 2,
-        name: 'Naleesha Niranjan',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/naleesha.png',
-      },
-      {
-        id: 3,
-        name: 'Martin Earley',
-        positions: [
-          'Director',
-          'Victoria region manager',
-          'Patent & trademark attorney',
-        ],
-        url: '/professionalProfiles/peoples/martin.png',
-      },
-      // {
-      //   id: 4,
-      //   name: "Joanne Li",
-      //   positions: [
-      //     "Associate",
-      //     "Trade Mark Attorney",
-      //     "International filings manager",
-      //   ],
-      //   url: "/professionalProfiles/peoples/joanne.png",
-      // },
-      // {
-      //   id: 5,
-      //   name: "Willem du Preez",
-      //   positions: ["Associate", "Patent & trademark attorney"],
-      //   url: "/professionalProfiles/peoples/willem.png",
-      // },
-      {
-        id: 6,
-        name: 'Andrew Balis',
-        positions: ['Associate', 'Patent & trademark attorney'],
-        url: '/professionalProfiles/peoples/andrew.png',
-      },
-    ],
-  },
-]
+import { profiles as peoples } from '../../utils/const/people'
 
 export default function People() {
   const [selectedMenu, setSelectedMenu] = useState(0)
@@ -151,47 +41,57 @@ export default function People() {
           </div>
         </div>
         <div className="flex flex-row items-start justify-center w-full">
-          {peoples.map((people, index) => (
-            <div
-              key={index}
-              className={`w-1/2 h-16 sm:h-32 flex flex-row items-center justify-center gap-4 cursor-pointer ${
-                selectedMenu == index ? 'bg-[#FFFDF7]' : 'bg-[#FAF4E5]'
-              }`}
-              style={{
-                clipPath:
-                  index == 0
-                    ? 'polygon(0 0, 98% 0, 100% 100%, 0 100%)'
-                    : 'polygon(0 0, 100% 0, 100% 100%, 2% 100%)',
-              }}
-              onClick={() => setSelectedMenu(index)}
-            >
-              {selectedMenu === index ? (
-                <HiLocationMarker
-                  fill="#7568D1"
-                  size={31}
-                  className="w-4 h-4 sm:w-8 sm:h-8"
-                />
-              ) : (
-                <HiLocationMarker
-                  fill="none"
-                  stroke="#272940"
-                  strokeWidth={1}
-                  size={31}
-                  className="border-none w-4 h-4 sm:w-8 sm:h-8"
-                />
-              )}
-              <span
-                className={`font-manrope font-semibold text-xs sm:text-2xl ${
-                  selectedMenu == index ? 'text-[#272940]' : 'text-[#272940]/50'
+          {peoples.filter(
+              (item) =>
+                item.teamName === 'Sydney teams' ||
+                item.teamName === 'Melbourne teams'
+            ).map((people, index) => (
+              <div
+                key={index}
+                className={`w-1/2 h-16 sm:h-32 flex flex-row items-center justify-center gap-4 cursor-pointer ${
+                  selectedMenu == index ? 'bg-[#FFFDF7]' : 'bg-[#FAF4E5]'
                 }`}
+                style={{
+                  clipPath:
+                    index == 0
+                      ? 'polygon(0 0, 98% 0, 100% 100%, 0 100%)'
+                      : 'polygon(0 0, 100% 0, 100% 100%, 2% 100%)',
+                }}
+                onClick={() => setSelectedMenu(index)}
               >
-                {people.teamName}
-              </span>
-            </div>
-          ))}
+                {selectedMenu === index ? (
+                  <HiLocationMarker
+                    fill="#7568D1"
+                    size={31}
+                    className="w-4 h-4 sm:w-8 sm:h-8"
+                  />
+                ) : (
+                  <HiLocationMarker
+                    fill="none"
+                    stroke="#272940"
+                    strokeWidth={1}
+                    size={31}
+                    className="border-none w-4 h-4 sm:w-8 sm:h-8"
+                  />
+                )}
+                <span
+                  className={`font-manrope font-semibold text-xs sm:text-2xl ${
+                    selectedMenu == index
+                      ? 'text-[#272940]'
+                      : 'text-[#272940]/50'
+                  }`}
+                >
+                  {people.teamName}
+                </span>
+              </div>
+            ))}
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 sm:py-24">
-          {peoples[selectedMenu].teamMembers.map((teamMember, index) => (
+          {peoples.filter(
+              (item) =>
+                item.teamName === 'Sydney teams' ||
+                item.teamName === 'Melbourne teams'
+            )[0].teamMembers.map((people, index) => (
             <div
               key={index}
               className="bg-white rounded-sm cursor-pointer"
@@ -200,15 +100,15 @@ export default function People() {
                   '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
               }}
             >
-              <Image src={teamMember.url} width={300} height={300} alt="" />
+              <Image src={people.url} width={300} height={300} alt="" />
               <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
                 <div>
                   <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
-                    {teamMember.name}
+                    {people.name}
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  {teamMember.positions.map((position, index) => (
+                  {people.positions.map((position, index) => (
                     <span
                       key={index}
                       className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
