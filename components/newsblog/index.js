@@ -11,7 +11,7 @@ export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
       <div className="flex flex-col gap-5 sm:gap-10">
         <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-14">
           {data?.map((n) => (
-            <Link href={`/ip-news/${n?.slug}`}>
+            <Link key={n?.author?.name} href={`/ip-news/${n?.slug}`}>
               <div
                 key={n?.author?.name}
                 className="flex flex-col items-start bg-white w-full md:max-w-[362px] cursor-pointer"

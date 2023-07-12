@@ -8,9 +8,9 @@ import { profiles } from '../../utils/const/profiles'
 import { profiles as peoples } from '../../utils/const/people'
 
 export const getStaticPaths = async () => {
-  const paths = peoples[0].teamMembers.map((item) => {
+  const paths = peoples[0]?.teamMembers?.slice(0, 8).map((item) => {
     return {
-      params: { id: item.linkId.toString() },
+      params: { id: item?.linkId?.toString() },
     }
   })
 
