@@ -1,49 +1,51 @@
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 import { IoMdArrowDropdownCircle, IoMdArrowDown } from 'react-icons/io'
-import { InnerContainer } from '../../components/templates/InnerContainer'
+import { InnerContainer } from '../templates/InnerContainer'
 
 const cards = [
   {
     id: 1,
     icon: '/marketSegments/people-top-card.svg',
-    name: 'Corporate or SME',
+    name: 'Engineering',
     description:
-      'You sell product, license IP or provide a software service.',
+      'Aero, Agri Tech, Construction, Manufacturing, Mechanical, Mining, Naval, Space',
   },
   {
     id: 2,
     icon: '/marketSegments/peoples-two.svg',
-    name: 'Scaleup or Investor',
-    description: 'You develop tech or are growing a clever brand.',
+    name: 'HighTech',
+    description:
+      'Applications, Defence, Distributed Ledgers, E-Commerce, Electrical, Electronics, Energy Tech, Laser Tech, Nuclear, Optical Tech, Physics, Quantum, Robotics, Security, Telecommunications',
   },
   {
     id: 3,
     icon: '/marketSegments/school.svg',
-    name: 'Startup or Entrepreneur',
-    description: 'You are working on something new.',
+    name: 'Healthtech',
+    description:
+      'Biochemistry, Biotechnology, Chemistry, Medical Devices, Pharmaceuticals, Vet Science',
   },
   {
     id: 4,
     icon: '/marketSegments/xiaodu-home.svg',
-    name: 'IP Attorney',
-    description: 'You are an IP attorney based outside of AU or NZ.',
+    name: 'Other Industries',
+    description: 'FMCG, Food & Bev, Recruitment',
   },
 ]
 
 const marketSigment = [
   {
-    header: 'Tailoring your site experience: Step 1',
-    title: 'What best describes you?',
+    header: 'Tailoring your site experience: Step 2',
+    title: 'What best describes your industry?',
     description:
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
   },
 ]
-export const MarketSegment = ({ cardIndex, onChange }) => {
+export const MarketSegment2 = ({ cardIndex, onChange }) => {
   return (
     <div className="bg-marketsegment">
       <InnerContainer>
-        <div className="w-full flex flex-col py-10 gap-10 sm:gap-20 sm:py-20 px-10 sm:px-[106px] items-center bg-marketsegment">
+      <div className="w-full flex flex-col py-10 gap-10 sm:gap-20 sm:py-20 px-10 sm:px-[106px] items-center bg-marketsegment">
           <div className="flex flex-col items-center md:items-start gap-[86px] sm:gap-[120px] md:gap-8">
             <div className="md:w-1/2 flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
               <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
@@ -66,7 +68,7 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                   >
                     <div
                       key={index}
-                      className={`flex p-8 h-72 rounded-sm cursor-pointer ${
+                      className={`flex p-6 h-72 rounded-sm cursor-pointer  ${
                         cardIndex - 1 === index
                           ? 'bg-marketsegment-selected-card'
                           : 'bg-marketsegment-non-selected-card'
@@ -79,29 +81,8 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                         onChange(index)
                       }}
                     >
-                      <div className="flex flex-col gap-6 w-full">
-                        <div
-                          className={`w-20 h-20 rounded-full flex items-center justify-center  ${
-                            cardIndex - 1 === index
-                              ? 'bg-[#816BD9]'
-                              : 'bg-[#F3F3FA]'
-                          }`}
-                          style={{
-                            boxShadow: `${
-                              cardIndex - 1 === index
-                                ? '5px 4px 21px rgba(0, 0, 0, 0.25)'
-                                : ''
-                            } `,
-                          }}
-                        >
-                          <Image
-                            src={card.icon}
-                            width={32}
-                            height={32}
-                            alt=""
-                          />
-                        </div>
-                        <div className="flex flex-col gap-2 h-72">
+                      <div className="flex flex-col gap-6 w-full  ">
+                        <div className="flex flex-col gap-2 ">
                           <span
                             className={`font-manrope font-medium 2xl:text-2xl xl:text-xl md:text-md sm:text-sm ${
                               cardIndex - 1 === index
@@ -111,15 +92,17 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                           >
                             {card.name}
                           </span>
-                          <span
-                            className={`font-manrope font-medium 2xl:text-xl xl:text-xl md:text-md sm:text-sm ${
-                              cardIndex - 1 === index
-                                ? 'text-white'
-                                : 'text-[#7A7B94]'
-                            }`}
-                          >
-                            {card.description}
-                          </span>
+                          <div className="flex">
+                            <span
+                              className={`font-manrope font-medium sm:text-sm ${
+                                cardIndex - 1 === index
+                                  ? 'text-white'
+                                  : 'text-[#7A7B94]'
+                              }`}
+                            >
+                              {card.description}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>

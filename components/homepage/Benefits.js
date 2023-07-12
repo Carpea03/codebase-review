@@ -1,35 +1,9 @@
 import { Container } from '../templates/Container'
 import { TitleContainer } from '../templates/TitleContainer'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { useState } from 'react'
+import { benifits } from '../../utils/const/benefits'
 
-const benifits = [
-  {
-    id: 1,
-    imgSrc: 'organization.svg',
-    title: 'Various target',
-    content:
-      'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
-    link: '#',
-  },
-  {
-    id: 2,
-    imgSrc: 'badge.svg',
-    title: 'Industry expertise',
-    content:
-      'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
-    link: '#',
-  },
-  {
-    id: 3,
-    imgSrc: 'people.svg',
-    title: 'Community',
-    content:
-      'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
-    link: '#',
-  },
-]
 export default function Benefits() {
   const [selectedCard, setSelectedCard] = useState(1)
 
