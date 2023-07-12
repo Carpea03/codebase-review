@@ -34,7 +34,12 @@ export const sideMenus = [
 export const subMenus = [
   [
     { title: 'How to patent', bold: true, division: false, href: '' },
-    { title: 'Patent benefits', bold: false, division: false, href: '' },
+    {
+      title: 'Patent benefits',
+      bold: false,
+      division: false,
+      href: '/patent-benefits',
+    },
     { title: '', bold: false, division: true, href: '' },
     { title: 'Patent search', bold: true, division: false, href: '' },
     {
@@ -76,9 +81,9 @@ export const subMenus = [
     { title: '', bold: false, division: true, href: '' },
   ],
   [
-    { title: 'Ip strategy', bold: true, division: false, href: '' },
-    { title: 'Ip audit', bold: false, division: false, href: '' },
-    { title: 'Ip vaulation', bold: false, division: false, href: '' },
+    { title: 'IP strategy', bold: true, division: false, href: '' },
+    { title: 'IP audit', bold: false, division: false, href: '' },
+    { title: 'IP vaulation', bold: false, division: false, href: '' },
     { title: '', bold: false, division: true, href: '' },
     {
       title: 'Patent opositions & dispites',

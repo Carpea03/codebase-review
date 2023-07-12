@@ -25,5 +25,10 @@ module.exports = {
       // => @media (min-width: 1440px) { ... }
     },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  variants: {
+    extend: {
+      overflow: ['responsive', 'hover', 'focus'],
+    },
+  },
+  plugins: [require('flowbite-typography')],
 }

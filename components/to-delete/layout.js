@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Header active={'Blog'} />
-      <main className="pt-14 px-8w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+      <main className="format max-w-none mx-auto px-5 lg:px-20 pb-10">
         {children}
       </main>
       <Footer />
