@@ -431,7 +431,7 @@ export const services = {
   0: [
     {
       id: 1,
-      title: 'Seamless Cross-industry, Cross-disciplinary IP Advice',
+      title: 'Seamless Cross-Industry, Cross-Disciplinary IP Advice',
       content:
         "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/Seamless cross-industry, cross-disciplinary IP advice.svg',
@@ -473,7 +473,7 @@ export const services = {
   1: [
     {
       id: 1,
-      title: 'Seamless Cross-industry, Cross-disciplinary IP Advice',
+      title: 'Seamless Cross-Industry, Cross-Disciplinary IP Advice',
       content:
         "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/Seamless cross-industry, cross-disciplinary IP advice.svg',

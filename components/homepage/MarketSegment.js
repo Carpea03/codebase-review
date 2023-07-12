@@ -33,7 +33,7 @@ const cards = [
 
 const marketSigment = [
   {
-    header: 'Tailoring your site experience: Step 1',
+    header: 'Tailoring your experience: Step 1',
     title: 'What best describes you?',
     description:
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",

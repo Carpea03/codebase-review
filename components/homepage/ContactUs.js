@@ -61,7 +61,7 @@ export default function ContactUs() {
                     width={48}
                     height={48}
                   />
-                  <p className="uppercase font-manrope font-bold text-xl text-white/50">
+                  <p className="font-manrope font-bold text-xl text-white/50">
                     Virtual office
                   </p>
                 </div>
@@ -86,7 +86,7 @@ export default function ContactUs() {
                     height={48}
                   />
                   <p className="font-manrope font-bold text-xl text-white/50">
-                    Email Us
+                    Enquiry Form or Email
                   </p>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function ContactUs() {
                       width={24}
                       height={24}
                     />
-                    <span className="uppercase font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
+                    <span className="font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
                       Virtual office
                     </span>
                   </div>
@@ -299,7 +299,7 @@ export default function ContactUs() {
                       height={24}
                     />
                     <span className="uppercase font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
-                      Email Us
+                      Enquiry Form or Email
                     </span>
                   </div>
                   <div className="flex justify-end items-end w-full">
