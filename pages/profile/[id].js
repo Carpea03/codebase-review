@@ -5,18 +5,12 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { profiles } from '../../utils/const/profiles'
-
-const peoples = [
-  'chris-baxter',
-  'naleesha-niranjan',
-  'andrew-balis',
-  'martin-earley',
-]
+import { profiles as peoples } from '../../utils/const/people'
 
 export const getStaticPaths = async () => {
-  const paths = peoples.map((item) => {
+  const paths = peoples[0].teamMembers.map((item) => {
     return {
-      params: { id: item.toString() },
+      params: { id: item.linkId.toString() },
     }
   })
 

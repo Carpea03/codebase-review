@@ -83,33 +83,41 @@ export default function ProfessionalProfiles() {
         >
           <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-0">
             {selectedMenu.map((teamMember, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-sm cursor-pointer"
-                style={{
-                  boxShadow:
-                    '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-                }}
-              >
-                <Image alt="" src={teamMember?.url} width={200} height={200} />
-                <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
-                  <div>
-                    <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
-                      {teamMember?.name}
-                    </span>
-                  </div>
-                  <div className="flex flex-col">
-                    {teamMember?.positions?.map((position, index) => (
-                      <span
-                        key={index}
-                        className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
-                      >
-                        {position}
+                <div
+                  key={index}
+                  className="bg-white  rounded-sm cursor-pointer"
+                  style={{
+                    boxShadow:
+                      '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
+                  }}
+                >
+                  <Link href={teamMember.link}> 
+                  <Image
+                    alt=""
+                    src={teamMember?.url}
+                    width={200}
+                    height={200}
+                  />
+                  <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
+                    <div>
+                      <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
+                        {teamMember?.name}
                       </span>
-                    ))}
+                    </div>
+                    <div className="flex flex-col">
+                      {teamMember?.positions?.map((position, index) => (
+                        <span
+                          key={index}
+                          className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
+                        >
+                          {position}
+                        </span>
+                      ))}
+                    </div>
                   </div>
+                  </Link>
                 </div>
-              </div>
+           
             ))}
           </div>
           <Link href="/people">
