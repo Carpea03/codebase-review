@@ -35,7 +35,7 @@ const cards = [
 
 const marketSigment = [
   {
-    header: 'Tailoring your site experience: Step 2',
+    header: 'Tailoring your experience: Step 2',
     title: 'What best describes your industry?',
     description:
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
@@ -68,7 +68,7 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                   >
                     <div
                       key={index}
-                      className={`flex p-6 h-72 rounded-sm cursor-pointer  ${
+                      className={`flex text-center p-6 h-72 rounded-sm cursor-pointer  ${
                         cardIndex - 1 === index
                           ? 'bg-marketsegment-selected-card'
                           : 'bg-marketsegment-non-selected-card'

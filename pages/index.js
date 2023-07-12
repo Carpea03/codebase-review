@@ -106,22 +106,22 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       {subMenu === 0 && selectedMenu === -1 && (
         <>
           <IpNewsBlog news={reduceMorePost} />
-          <OurClient />
+          <OurClient state={menuState2} />
           <ProfessionalProfiles />
         </>
       )}
       {subMenu === 1 && selectedMenu !== -1 && (
         <>
           <IpNewsBlog news={reduceMorePost} />
-          <OurClient />
-          <FillingStats />
+          <OurClient state={menuState2} />
+          <FillingStats state={menuState2} />
           <ProfessionalProfiles />
         </>
       )}
       {subMenu === 2 && selectedMenu !== -1 && (
         <>
           <IpNewsBlog news={reduceMorePost} />
-          <OurClient />
+          <OurClient state={menuState2} />
           <FillingStats />
           <ProfessionalProfiles />
         </>
@@ -129,7 +129,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       {subMenu === 3 && selectedMenu !== -1 && (
         <>
           <IpNewsBlog news={reduceMorePost} />
-          <OurClient />
+          <OurClient state={menuState2} />
           <FillingStats />
           <ProfessionalProfiles />
         </>
@@ -138,7 +138,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
         <>
           <IpNewsBlog news={reduceMorePost} />
           <FillingStats />
-          <OurClient />
+          <OurClient state={menuState2} />
           <ProfessionalProfiles />
         </>
       )}

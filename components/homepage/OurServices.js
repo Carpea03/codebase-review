@@ -57,13 +57,6 @@ export const OurServices = () => {
                   <span className="mb-10 font-manrope font-semibold text-xl text-[#7A7B94]">
                     {service.content}
                   </span>
-                  <a
-                    href={services[selectedMenu]?.link}
-                    className="inline-flex items-center font-manrope font-semibold text-2xl text-[#272940] hover:opacity-50 cursor-pointer"
-                  >
-                    <p className="mr-7">Learn more</p>
-                    <FiArrowRightCircle size={20} color={'#8069D8'} />
-                  </a>
                 </div>
               </div>
             ))}
