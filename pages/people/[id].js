@@ -125,24 +125,26 @@ export default function People({ item }) {
                   '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
               }}
             >
-              <Image src={teamMember.url} width={300} height={300} alt="" />
-              <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
-                <div>
-                  <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
-                    {teamMember.name}
-                  </span>
-                </div>
-                <div className="flex flex-col">
-                  {teamMember.positions.map((position, index) => (
-                    <span
-                      key={index}
-                      className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
-                    >
-                      {position}
+              <Link href={teamMember.link}>
+                <Image src={teamMember.url} width={300} height={300} alt="" />
+                <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
+                  <div>
+                    <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
+                      {teamMember.name}
                     </span>
-                  ))}
+                  </div>
+                  <div className="flex flex-col">
+                    {teamMember.positions.map((position, index) => (
+                      <span
+                        key={index}
+                        className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
+                      >
+                        {position}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

@@ -44,8 +44,8 @@ export const profiles = {
       title: 'Biography',
       description:
         'Chris began his intellectual property career working at a large Australian IP firm, then joined the in-house team at one of Australia’s largest medical devices companies, before leaving in 2007 to establish Baxter IP.' +
-        'Under Chris’ leadership, the firm has grown to a team of 27 patent & trade mark attorneys and administrative staff, with offices in Sydney and Melbourne. Chris advises a client base comprised of multinational corporations, universities and SMEs, as well as venture capital firms, tech start-ups and entrepreneurs.\n\n' +
-        'Chris has broad technological experience spanning, in particular: medtech, defence, software and aerospace inventions. He specialises in providing strategic, cross-jurisdictional intellectual property advice on complex patent portfolios and dispute matters. He understands the nexus of IP and its significance in the commercial licensing and capital raising process. Clients benefit from Chris’ holistic approach, which focuses on their commercial interests, as well as the legal processes involved.',
+        'Under Chris’ leadership, the firm has grown to a team of 27 patent & trade mark attorneys and administrative staff, with offices in Sydney and Melbourne. Chris advises a client base comprised of multinational corporations, universities and SMEs, as well as venture capital firms, tech start-ups and entrepreneurs.' +
+        'Chris has broad technological experience spanning, in particular: medtech, defence, software and aerospace inventions.\n\n He specialises in providing strategic, cross-jurisdictional intellectual property advice on complex patent portfolios and dispute matters. He understands the nexus of IP and its significance in the commercial licensing and capital raising process. Clients benefit from Chris’ holistic approach, which focuses on their commercial interests, as well as the legal processes involved.',
     },
     snapshots: {
       title: 'Attorney Snapshot',
@@ -340,7 +340,7 @@ export const profiles = {
       },
     ],
   },
-  'qi-zhang': {
+  'dr-qi-zhang': {
     name: 'Dr Qi Zhang',
     position: 'Principal, Patent & Trade Mark Attorney',
     email: 'qi.zhang@baxterip.com.au',
@@ -351,11 +351,11 @@ export const profiles = {
     industry: {
       title: 'Biography',
       description:
-        'We were delighted to welcome Qi to the Baxter IP team in 2016. Specialising in mobile communications, electrical engineering and mechanics, he works with private inventors, start-ups and SMEs, helping to identify and protect their IP assets and providing comprehensive support from concept through to commercialisation.' +
-        'Qi provides clear, practical advice to clients on the patentability of their inventions and patenting strategies, in light of their specific goals and business strategies. He also drafts patent specifications and prosecutes patent applications in major jurisdictions, including Australia, US, China, Europe, Japan, Korea and other emerging economies.' +
-        'Our clients appreciate Qi for his straightforward, jargon-free advice and for his strong focus on helping them to generate sustainable value from their ideas and hard work. Qi helps his clients explore different ideas and options, and make informed decisions about a patent strategy and commercialisation pathway to suit their individual circumstances and goals.' +
-        'Prior to joining Baxter IP, Qi has enjoyed a highly successful international career in IP protection and management. In 2012 he was invited to join a tier-1 patent attorney firm in Sydney, where he qualified as an Australian patent attorney. Working with high-profile international clients and leading Australian research organisations, including NICTA, CSIRO and the University of Sydney, he provided expert advice on global patent strategies, drafted patent specifications, and provided legal and technical analyses of patentability in multiple technical areas including software, business methods, financial services, electronics, and mechatronics.' +
-        'Before his move to Sydney Qi’s career took him to the USA, where he furthered his education in the IP field by completing a Master degree in Intellectual Property Management & Markets. As a patent researcher with a US patent consulting firm, he applied these learnings to help clients create tangible commercial value from their intangible IP assets – identifying valuable patents in hot consumer markets and advising clients on building their patent portfolios. His work also included identifying potential patent infringements and supporting clients through infringement litigation.' +
+        'We were delighted to welcome Qi to the Baxter IP team in 2016. Specialising in mobile communications, electrical engineering and mechanics, he works with private inventors, start-ups and SMEs, helping to identify and protect their IP assets and providing comprehensive support from concept through to commercialisation.\n\n' +
+        'Qi provides clear, practical advice to clients on the patentability of their inventions and patenting strategies, in light of their specific goals and business strategies. He also drafts patent specifications and prosecutes patent applications in major jurisdictions, including Australia, US, China, Europe, Japan, Korea and other emerging economies.\n\n' +
+        'Our clients appreciate Qi for his straightforward, jargon-free advice and for his strong focus on helping them to generate sustainable value from their ideas and hard work. Qi helps his clients explore different ideas and options, and make informed decisions about a patent strategy and commercialisation pathway to suit their individual circumstances and goals.\n\n' +
+        'Prior to joining Baxter IP, Qi has enjoyed a highly successful international career in IP protection and management. In 2012 he was invited to join a tier-1 patent attorney firm in Sydney, where he qualified as an Australian patent attorney. Working with high-profile international clients and leading Australian research organisations, including NICTA, CSIRO and the University of Sydney, he provided expert advice on global patent strategies, drafted patent specifications, and provided legal and technical analyses of patentability in multiple technical areas including software, business methods, financial services, electronics, and mechatronics.\n\n' +
+        'Before his move to Sydney Qi’s career took him to the USA, where he furthered his education in the IP field by completing a Master degree in Intellectual Property Management & Markets. As a patent researcher with a US patent consulting firm, he applied these learnings to help clients create tangible commercial value from their intangible IP assets – identifying valuable patents in hot consumer markets and advising clients on building their patent portfolios. His work also included identifying potential patent infringements and supporting clients through infringement litigation.\n\n' +
         'The foundations of Qi’s intellectual property career were built in China, where he worked with one of the top patent attorney firms in China after completing his Ph.D in electrical engineering in 2005. His work there included providing legal and technical advice, and managing the preparation, filing and prosecution of patent applications for major international clients including Motorola, Samsung, 3M, GE and Yamaha.',
     },
     snapshots: {
@@ -463,10 +463,10 @@ export const profiles = {
     industry: {
       title: 'Biography',
       description:
-        'Julia has over 16 years of experience in global and local FMCG organisations having worked in-house for both Nestlé and Lion. She has considerable business advisory experience in trade mark and IP protection across a broad range of categories including food and beverages, health sciences, infant nutrition and petfood products.' +
-        'Her extensive experience supporting global, regional and local teams on diverse brand portfolio and intellectual property matters includes trade mark clearance searches, infringement issues, trade mark protection, strategy and enforcement.' +
-        'Julia’s core motivation is to ensure that clients receive the most appropriate advice tailored to their unique requirements.' +
-        'She has a Bachelor of Arts in Modern History from Macquarie University and a Masters in Intellectual Property from the University of Technology Sydney. Julia is a registered trade mark attorney and a member of the Intellectual Property Society of Australia & New Zealand.' +
+        'Julia has over 16 years of experience in global and local FMCG organisations having worked in-house for both Nestlé and Lion. She has considerable business advisory experience in trade mark and IP protection across a broad range of categories including food and beverages, health sciences, infant nutrition and petfood products.\n\n' +
+        'Her extensive experience supporting global, regional and local teams on diverse brand portfolio and intellectual property matters includes trade mark clearance searches, infringement issues, trade mark protection, strategy and enforcement.\n\n' +
+        'Julia’s core motivation is to ensure that clients receive the most appropriate advice tailored to their unique requirements.\n\n' +
+        'She has a Bachelor of Arts in Modern History from Macquarie University and a Masters in Intellectual Property from the University of Technology Sydney. Julia is a registered trade mark attorney and a member of the Intellectual Property Society of Australia & New Zealand.\n\n' +
         'When not working Julia enjoys being active and embarking on new adventures, whether that is road trips, adventure races, long walks exploring new areas or even taking a pottery class.',
     },
     snapshots: {
@@ -563,7 +563,7 @@ export const profiles = {
       },
     ],
   },
-  'richard-grant': {
+  'dr-richard-grant': {
     name: 'Dr Richard Grant',
     position: 'Senior Patent Attorney',
     email: 'richard.grant@baxterip.com.au',
@@ -574,9 +574,9 @@ export const profiles = {
     industry: {
       title: 'Biography',
       description:
-        'Richard has a PhD in organic chemistry and spent 20 years working as a researcher in the academic sphere and at CSIRO, and as a researcher/research manager in industry. His industrial experience spans both small start-up companies and large multinationals. He has been a designated inventor on several patent applications arising from that research.' +
-        'He also has around 16 years experience as a patent attorney, most recently as a principal of a prominent Australian firm. He has worked on a wide range of chemical inventions spanning organic synthesis, pharmaceuticals, nanotechnology, polymer synthesis and processing, polymer composites, solar energy, carbon sequestration, graphene synthesis, sensor technology and others. Richard has drafted several hundred patent applications and successfully prosecuted many of these through to granted patents, both locally and in foreign jurisdictions. He has also provided opinions on patentability and infringement, and strategic advice for management of patent portfolios.' +
-        'Richard has worked with sole inventors, SMEs, universities, government laboratories and major multinationals to achieve their IP goals. He particularly enjoys working with local clients, where he has more scope to work directly with inventors and to provide strategic advice so as to promote clients’ commercial objectives. Having worked extensively both as a researcher and as an attorney, Richard understands the patenting process from both angles, enabling him to provide clear and realistic advice to clients.',
+        'Richard has a PhD in organic chemistry and spent 20 years working as a researcher in the academic sphere and at CSIRO, and as a researcher/research manager in industry. His industrial experience spans both small start-up companies and large multinationals. He has been a designated inventor on several patent applications arising from that research.\n\n' +
+        'He also has around 16 years experience as a patent attorney, most recently as a principal of a prominent Australian firm. He has worked on a wide range of chemical inventions spanning organic synthesis, pharmaceuticals, nanotechnology, polymer synthesis and processing, polymer composites, solar energy, carbon sequestration, graphene synthesis, sensor technology and others. Richard has drafted several hundred patent applications and successfully prosecuted many of these through to granted patents, both locally and in foreign jurisdictions. He has also provided opinions on patentability and infringement, and strategic advice for management of patent portfolios.\n\n' +
+        'Richard has worked with sole inventors, SMEs, universities, government laboratories and major multinationals to achieve their IP goals. He particularly enjoys working with local clients, where he has more scope to work directly with inventors and to provide strategic advice so as to promote clients’ commercial objectives. Having worked extensively both as a researcher and as an attorney, Richard understands the patenting process from both angles, enabling him to provide clear and realistic advice to clients.\n\n',
     },
     snapshots: {
       title: 'Attorney Snapshot',
@@ -667,7 +667,7 @@ export const profiles = {
       },
     ],
   },
-  'sean-klinkradt': {
+  'dr-seán-klinkradt': {
     name: 'Dr Seán Klinkradt',
     position: 'Senior Associate, Patent Attorney',
     email: 'sean.klinkradt@baxterip.com.au',
@@ -678,12 +678,12 @@ export const profiles = {
     industry: {
       title: 'Biography',
       description:
-        'Seán is a registered Australian and New Zealand Patent Attorney and has more than 20 years of experience in IP. During his career, he has worked for major intellectual property firms in South Africa and Australia, where he gained experience in the fields of pharmaceuticals, biotechnology, medical devices, veterinary products, and chemical patent applications.' +
-        'Seán is particularly interested in the management of his clients’ intellectual property assets underpinned by a strong focus on the clients’ needs.' +
-        'Seán has been awarded degrees in science, law, and ancient cultures by the University of Port Elizabeth, UTS, Sydney, and Stellenbosch University.' +
-        'Seán completed a PhD in neuroscience at RMIT University, Melbourne. The focus of Seán’s research related to the discovery and characterization of a new excitatory amino acid transporter in mouse and rat brain. This protein has been identified as a likely candidate for therapeutics for the treatment of numerous neurological diseases, neurodegenerative diseases, and neuropsychiatric diseases or disorders.' +
-        'Seán is a Fellow of the Institute of Patent and Trade Mark Attorneys of Australia and an Attorney of the High Court of South Africa.' +
-        'Seán lectures intellectual property and medical subjects at several universities. He enjoys reading widely and has a particular interest in literature of the ancient world and philosophy.' +
+        'Seán is a registered Australian and New Zealand Patent Attorney and has more than 20 years of experience in IP. During his career, he has worked for major intellectual property firms in South Africa and Australia, where he gained experience in the fields of pharmaceuticals, biotechnology, medical devices, veterinary products, and chemical patent applications.\n\n' +
+        'Seán is particularly interested in the management of his clients’ intellectual property assets underpinned by a strong focus on the clients’ needs.\n\n' +
+        'Seán has been awarded degrees in science, law, and ancient cultures by the University of Port Elizabeth, UTS, Sydney, and Stellenbosch University.\n\n' +
+        'Seán completed a PhD in neuroscience at RMIT University, Melbourne. The focus of Seán’s research related to the discovery and characterization of a new excitatory amino acid transporter in mouse and rat brain. This protein has been identified as a likely candidate for therapeutics for the treatment of numerous neurological diseases, neurodegenerative diseases, and neuropsychiatric diseases or disorders.\n\n' +
+        'Seán is a Fellow of the Institute of Patent and Trade Mark Attorneys of Australia and an Attorney of the High Court of South Africa.\n\n' +
+        'Seán lectures intellectual property and medical subjects at several universities. He enjoys reading widely and has a particular interest in literature of the ancient world and philosophy.\n\n' +
         'Whenever possible, Seán enjoys heading out with the dogs to spend time with the horses.',
     },
     snapshots: {
@@ -814,10 +814,10 @@ export const profiles = {
     industry: {
       title: 'Biography',
       description:
-        'When you’ve excelled in a particular field for 30 years, you build a name for yourself. When that area of excellence is mastering a scientific approach to IP strategy, you also earn the admiration of both colleagues and clients. But for Warren Chandler, it’s only ever been about creating strong intellectual property assets for his clients.' +
-        'The claim ‘attention to detail’ tends to be used far too liberally – but Warren’s appetite for detail can be seen in his comprehensive assessments of client’s commercial IP strategies, and it’s something that delivers literal and measurable results. Several Australian companies that Warren has advised from start-up stage have now emerged as large, well-known commercial enterprises with strong intellectual property assets. This is where Warren, and by extension, his clients are well served by his 24 years’ experience as a patent attorney in chemical engineering.' +
-        'Warren worked across a broad spectrum of disciplines during the course of a 7-year tenure at the CSIRO. Fields as diverse as radical polymerisation of diallylamine monomers (at the division of applied organic chemistry) to chemical engineering, and controlled release of veterinary pharmaceuticals (at the division of Animal Production) were traversed during this time. With the dawn of the 90s, Warren registered as a patent attorney, commencing in his area of speciality, applied chemistry and methods of treatment of diseased states in animals and humans. ' +
-        'Warren’s modus operandum has always put client service and quality first. Warren’s reward? The satisfaction of a raft of listed and private companies whose businesses have significantly increased in value as a result of his assistance as their patent attorney.' +
+        'When you’ve excelled in a particular field for 30 years, you build a name for yourself. When that area of excellence is mastering a scientific approach to IP strategy, you also earn the admiration of both colleagues and clients. But for Warren Chandler, it’s only ever been about creating strong intellectual property assets for his clients.\n\n' +
+        'The claim ‘attention to detail’ tends to be used far too liberally – but Warren’s appetite for detail can be seen in his comprehensive assessments of client’s commercial IP strategies, and it’s something that delivers literal and measurable results. Several Australian companies that Warren has advised from start-up stage have now emerged as large, well-known commercial enterprises with strong intellectual property assets. This is where Warren, and by extension, his clients are well served by his 24 years’ experience as a patent attorney in chemical engineering.\n\n' +
+        'Warren worked across a broad spectrum of disciplines during the course of a 7-year tenure at the CSIRO. Fields as diverse as radical polymerisation of diallylamine monomers (at the division of applied organic chemistry) to chemical engineering, and controlled release of veterinary pharmaceuticals (at the division of Animal Production) were traversed during this time. With the dawn of the 90s, Warren registered as a patent attorney, commencing in his area of speciality, applied chemistry and methods of treatment of diseased states in animals and humans.\n\n' +
+        'Warren’s modus operandum has always put client service and quality first. Warren’s reward? The satisfaction of a raft of listed and private companies whose businesses have significantly increased in value as a result of his assistance as their patent attorney.\n\n' +
         'A patient man, known for his tenacity, Warren has never lost a staring competition with his home-brewed beer and produces a brave if not aggressive drop for the private collection.',
     },
     snapshots: {

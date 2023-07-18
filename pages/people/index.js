@@ -41,11 +41,13 @@ export default function People() {
           </div>
         </div>
         <div className="flex flex-row items-start justify-center w-full">
-          {peoples.filter(
+          {peoples
+            .filter(
               (item) =>
                 item.teamName === 'Sydney teams' ||
                 item.teamName === 'Melbourne teams'
-            ).map((people, index) => (
+            )
+            .map((people, index) => (
               <div
                 key={index}
                 className={`w-1/2 h-16 sm:h-32 flex flex-row items-center justify-center gap-4 cursor-pointer ${
@@ -87,39 +89,43 @@ export default function People() {
             ))}
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 sm:py-24">
-          {peoples.filter(
+          {peoples
+            .filter(
               (item) =>
                 item.teamName === 'Sydney teams' ||
                 item.teamName === 'Melbourne teams'
-            )[0].teamMembers.map((people, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-sm cursor-pointer"
-              style={{
-                boxShadow:
-                  '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-              }}
-            >
-              <Image src={people.url} width={300} height={300} alt="" />
-              <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
-                <div>
-                  <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
-                    {people.name}
-                  </span>
-                </div>
-                <div className="flex flex-col">
-                  {people.positions.map((position, index) => (
-                    <span
-                      key={index}
-                      className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
-                    >
-                      {position}
-                    </span>
-                  ))}
-                </div>
+            )[0]
+            .teamMembers.map((people, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-sm cursor-pointer"
+                style={{
+                  boxShadow:
+                    '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
+                }}
+              >
+                <Link href={people.link}>
+                  <Image src={people.url} width={300} height={300} alt="" />
+                  <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
+                    <div>
+                      <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
+                        {people.name}
+                      </span>
+                    </div>
+                    <div className="flex flex-col">
+                      {people.positions.map((position, index) => (
+                        <span
+                          key={index}
+                          className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
+                        >
+                          {position}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
         <div className="bg-people-unsplash-1 w-full h-[412px] sm:h-[916px] md:h-[624px] !bg-cover">
           <div className="flex flex-col items-center justify-center gap-10 sm:gap-[89px] md:gap-12 px-12 md:px-[184px] h-full">
