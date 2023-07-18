@@ -113,6 +113,7 @@ export const OurClient = ({ state }) => {
                     }}
                   >
                     <Image
+                      key={brand.id}
                       alt=""
                       src={brand.src}
                       className="w-full block"

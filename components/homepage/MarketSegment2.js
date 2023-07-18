@@ -29,7 +29,7 @@ const cards = [
     id: 4,
     icon: '/marketSegments/xiaodu-home.svg',
     name: 'Other Industries',
-    description: 'FMCG, Food & Bev, Recruitment',
+    description: 'Cosmetics, Entertainment, FMCG, Food & Bev, Hospitality, Recruitment',
   },
 ]
 
