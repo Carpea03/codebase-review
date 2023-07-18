@@ -119,13 +119,16 @@ export default function Profile({ profile }) {
               boxShadow: '0px 5px 17px rgba(64, 76, 89, 0.06)',
             }}
           >
-            <div className="flex flex-col items-start gap-12 md:pr-32 w-full">
+            <div  className="flex flex-col items-start gap-12 w-full ">
               <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl md:leading-[140%] md:tracking-[-0.03em] text-[#272940]">
                 {profile.industry.title}
               </span>
-              <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]">
+              <p
+                style={{ whiteSpace: 'pre-line', textAlign: 'justify' }}
+                className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]"
+              >
                 {profile.industry.description}
-              </span>
+              </p>
             </div>
             <div className="flex flex-col items-start gap-4 sm:gap-8 w-full">
               <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl md:leading-[140%] md:tracking-[-0.03em] text-[#272940]">
