@@ -12,7 +12,6 @@ import Link from 'next/link'
 
 const contact = [
   { title: 'Phone', content: '+61 2 9264 6716' },
-  { title: 'Virtual Office', content: '' },
   { title: 'Email', content: 'mail@baxterip.com.au' },
 ]
 
@@ -114,16 +113,6 @@ const Footer = ({ page }) => {
                         title={item.title}
                         content={item.content}
                       />
-                      {!item.content && (
-                        <Link href={metaOffice}>
-                          <Image
-                            src={'/footer/meta-office-small.png'}
-                            width={290}
-                            height={250}
-                            className="bg-cover w-[340px] h-[290px] sm:w-[760px] sm:h-[650px] md:w-[290px] md:h-[250px]"
-                          />
-                        </Link>
-                      )}
                     </>
                   ))}
                 </div>

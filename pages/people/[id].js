@@ -126,7 +126,7 @@ export default function People({ item }) {
               }}
             >
               <Link href={teamMember.link}>
-                <Image src={teamMember.url} width={300} height={300} alt="" />
+                <Image src={teamMember.url} width={400} height={200} alt="" />
                 <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
                   <div>
                     <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">

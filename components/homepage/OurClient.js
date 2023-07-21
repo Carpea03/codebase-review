@@ -102,7 +102,7 @@ export const OurClient = ({ state }) => {
           <InnerContainer>
             {/** brands container */}
             <div className="flex flex-col items-ystart py-20 sm:pb-20 md:py-20">
-              <div className="grid grid-cols-3 gap-1 sm:gap-3 md:gap-5 w-full items-center justify-center">
+              <div className="grid grid-cols-4 gap-1 sm:gap-4 md:gap-5 w-full items-center justify-center">
                 {brands[state].supportedBrand.map((brand) => (
                   <div
                     key={brand.id}

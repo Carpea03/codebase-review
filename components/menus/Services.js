@@ -97,7 +97,7 @@ export default function Services({ menuIndex, onChange }) {
               </Link>
             ))}
           </Tab.List>
-          <Tab.Panels as="div" className="flex flex-col w-[70%]">
+          <Tab.Panels as="div" className="flex flex-col xl:flex-row w-[70%]">
             <Tab.Panel>
               <Tab.Group defaultIndex={1}>
                 <Tab.Panels>
@@ -111,12 +111,6 @@ export default function Services({ menuIndex, onChange }) {
             {panels.map((item, index) => (
               <Tab.Panel key={index}>
                 <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">
-                  <div className="flex flex-col justify-center items-start w-full h-[134px] gap-[10px] pl-12 border-b md:border-b-2 border-solid border-[#BFBBB2] md:border-[#7568D1]">
-                    <span className="text-[#272940]">{item.title}</span>
-                    <span className="text-[#272940]/60">
-                      {item.description}
-                    </span>
-                  </div>
                   <SubMenuBlock contents={item.data} />
                 </div>
               </Tab.Panel>

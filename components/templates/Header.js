@@ -13,9 +13,10 @@ import Link from 'next/link'
 
 const menus = [
   { id: 1, name: 'Services' },
-  { id: 2, name: 'Blog' },
-  { id: 3, name: 'People' },
-  { id: 4, name: 'Contact' },
+  { id: 2, name: 'People' },
+  { id: 3, name: 'Values' },
+  { id: 4, name: 'Article' },
+  { id: 5, name: 'Contact' },
 ]
 
 const langList = [
@@ -77,9 +78,10 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                               onChange={(index) => onTopMenuChange(index)}
                             />
                           )}
-                          {menu.id == 2 && <Blog />}
-                          {menu.id == 3 && <People />}
-                          {menu.id == 4 && <Contact />}
+                          {menu.id == 2 && <People />}
+                          {menu.id == 3 && ''}
+                          {menu.id == 4 && <Blog />}
+                          {menu.id == 5 && <Contact />}
                         </Popover.Panel>
                       </Transition>
                     </>
@@ -145,9 +147,10 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                       onChange={(index) => onTopMenuChange(index)}
                     />
                   )}
-                  {menu.id == 2 && <Blog />}
-                  {menu.id == 3 && <People />}
-                  {menu.id == 4 && <Contact />}
+                  {menu.id == 2 && <People />}
+                  {menu.id == 3 && ''}
+                  {menu.id == 4 && <Blog />}
+                  {menu.id == 5 && <Contact />}
                 </Disclosure.Panel>
               </Disclosure>
             ))}

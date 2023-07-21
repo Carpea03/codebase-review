@@ -4,6 +4,7 @@ import { IoIosArrowForward } from 'react-icons/io'
 import Link from 'next/link'
 import { metaOffice } from '../../utils/const/links'
 import { InnerContainer } from '../templates/InnerContainer'
+import Image from 'next/image'
 
 export const VisitVirtualOffice = () => {
   return (
@@ -19,7 +20,7 @@ export const VisitVirtualOffice = () => {
                 </span>
               </div>
             </div>
-            <div className="hidden w-1/2 md:flex flex-col items-end pl-[108px] text-black opacity-50">
+            <div className="md:w-1/2 md:flex flex-col items-end md:pl-[108px] text-black opacity-50">
               <span>
                 With a single click you will find yourself at the reception area
                 of our virtual office. No special equipment is required and you
@@ -34,6 +35,15 @@ export const VisitVirtualOffice = () => {
           </div>
         </InnerContainer>
         {/** bottom */}
+        <div className="w-full">
+          <Image
+            alt=""
+            src="/Meta office.svg"
+            className="w-full"
+            width={1440}
+            height={955}
+          />
+        </div>
         <div className="w-full bg-[#333552]">
           <InnerContainer>
             <Link href={metaOffice}>

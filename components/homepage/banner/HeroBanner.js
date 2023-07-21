@@ -17,20 +17,21 @@ const details = [
 ]
 
 const buttonText = [
-  { title: 'Talk to an IP Attorney Now' },
-  { title: 'Visit Virtual Office Now' },
+  { title: 'Talk to an IP attorney' },
+  { title: 'Visit our Virtual Office' },
 ]
 
 export default function HeroBanner() {
   return (
     <Container className="z-4 0 md:px-20 xl:px-40 bg-hero-banner">
-      <InnerContainer>
+      <div className="container max-w-screen-2xl mx-auto h-full">
         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-16 md:gap-0 py-10 sm:py-[60px] md:py-16 xl:py-32">
           {/** contents */}
           <div className="md:w-[50%] xl:w-full flex flex-col items-center md:items-start gap-[70px] order-last md:order-first">
             <div className="w-full flex flex-col items-start justify-center gap-6">
-              <span className="font-lora font-semibold text-2xl sm:text-5xl lg:text-6xl xl:text-[59px] xl:leading-[120%] text-[#272940] text-center md:text-left px-10 md:px-0">
-                Innovate Boldly. <br />
+              <span className="w-full font-lora font-semibold text-2xl sm:text-5xl lg:text-6xl xl:text-[59px] xl:leading-[120%] text-[#272940] text-center md:text-left px-10 md:px-0">
+                Innovate Boldly.
+                <br />
                 Protect Strategically.
               </span>
               <span className="font-manrope font-semibold text-sm sm:text-2xl text-[#272940]/50 text-center md:text-left px-14 sm:px-40 md:px-0">
@@ -96,11 +97,11 @@ export default function HeroBanner() {
             src="/professionalProfiles/IP-people.jpg"
             className="md:h-[300px] md:w-full xl:h-full xl:w-full object-cover md:pl-5"
             alt=""
-            width={500}
-            height={500}
+            width={442}
+            height={332}
           />
         </div>
-      </InnerContainer>
+      </div>
     </Container>
   )
 }
