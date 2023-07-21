@@ -122,7 +122,7 @@ export default function ContactUs() {
                       Melbourne
                     </span>
                     <span className="font-normal text-xl text-white">
-                      +61 2 9264 6716
+                      +61 3 9602 2288
                     </span>
                   </div>
                   <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
@@ -130,7 +130,7 @@ export default function ContactUs() {
                       Brisbane
                     </span>
                     <span className="font-normal text-xl text-white">
-                      +61 2 9264 6716
+                      +61 7 3155 7970
                     </span>
                   </div>
                 </div>
@@ -273,7 +273,7 @@ export default function ContactUs() {
                     Melbourne
                   </span>
                   <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                    +61 2 9264 6716
+                    +61 3 9602 2288
                   </span>
                 </div>
                 <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
@@ -281,7 +281,7 @@ export default function ContactUs() {
                     Brisbane
                   </span>
                   <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                    +61 2 9264 6716
+                    +61 7 3155 7970
                   </span>
                 </div>
               </div>

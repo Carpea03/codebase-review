@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import { TitleContainer } from '../templates/TitleContainer'
 import { profiles, peopleIndustry } from '../../utils/const/people'
+import { cards } from '../../utils/const/menus'
 import useContentStore from '../../store/useContent.store'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -38,6 +39,9 @@ const SlideButton = ({ className, children, onClick = {} }) => {
 export default function ProfessionalProfiles() {
   const [selectedMenu, setSelectedMenu] = useState([])
   const [selectSlide, setSelectSlide] = useState(0)
+  const [selectIndustry, selectedIndustry] = useState(
+    'Meet our patent & trade mark attorneys in Sydney & Melbourne'
+  )
   const menuState2 = useContentStore((state) => state.menuState2)
 
   useEffect(() => {
@@ -55,6 +59,8 @@ export default function ProfessionalProfiles() {
       return itemContainer[0]
     })
     setSelectedMenu(newProfiles.filter((people) => people))
+    const item = cards.filter((val) => val.id === menuState2)[0]
+    selectedIndustry(item?.name)
   }, [menuState2])
 
   const prevSlide = () => {
@@ -71,7 +77,13 @@ export default function ProfessionalProfiles() {
   return (
     <Container className="px-0">
       <div className="py-8 sm:py-[40px] md:py-[40px] md:px-40 xl:px-80 2xl:px-[312px]">
-        <TitleContainer description="Meet our patent & trade mark attorneys in Sydney & Melbourne" />
+        <TitleContainer
+          description={`${
+            menuState2
+              ? `Meet our patent & trade mark attorneys specializing in ${selectIndustry} in Sydney & Melbourne`
+              : 'Meet our patent & trade mark attorneys in Sydney & Melbourne'
+          }`}
+        />
       </div>
       <div className="flex flex-col items-center">
         <div
@@ -81,21 +93,21 @@ export default function ProfessionalProfiles() {
               'linear-gradient(167.62deg, #FFFEF8 42.45%, #FFF3D0 91%)',
           }}
         >
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-0">
+          <div className="grid mt-10 grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-0">
             {selectedMenu.map((teamMember, index) => (
-                <div
-                  key={index}
-                  className="bg-white  rounded-sm cursor-pointer"
-                  style={{
-                    boxShadow:
-                      '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-                  }}
-                >
-                  <Link href={teamMember.link}> 
+              <div
+                key={index}
+                className="bg-white  rounded-sm cursor-pointer"
+                style={{
+                  boxShadow:
+                    '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
+                }}
+              >
+                <Link href={teamMember.link}>
                   <Image
                     alt=""
                     src={teamMember?.url}
-                    width={200}
+                    width={330}
                     height={200}
                   />
                   <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
@@ -115,9 +127,8 @@ export default function ProfessionalProfiles() {
                       ))}
                     </div>
                   </div>
-                  </Link>
-                </div>
-           
+                </Link>
+              </div>
             ))}
           </div>
           <Link href="/people">

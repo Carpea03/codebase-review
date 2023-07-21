@@ -25,7 +25,7 @@ export const OurServices = () => {
           </span>
         </div>
         <div className="flex flex-col pb-20">
-          <div className="hidden md:flex flex-col items-center gap-[54px] md:px-20 xl:px-40">
+          <div className="hidden md:flex flex-col items-center  md:px-20 xl:px-40">
             {services[selectedMenu]?.map((service) => (
               <div
                 key={service.id}
@@ -39,7 +39,7 @@ export const OurServices = () => {
                   <Image
                     src={service.img}
                     className="object-cover"
-                    width={300}
+                    width={558}
                     height={300}
                     alt=""
                   />
