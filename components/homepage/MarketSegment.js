@@ -92,6 +92,7 @@ export const MarketSegment = ({ cardIndex, onChange }) => {
                         ? 'border-[5px] border-[#a290ea]'
                         : ''
                     }`}
+                    
                     onClick={() => {
                       onChange(index)
                       onSelected(index)
