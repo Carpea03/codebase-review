@@ -65,6 +65,7 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                     onClick={() => {
                       onChange(index)
                       onSelected(index)
+                      onCollapse()
                     }}
                   >
                     <div className="flex flex-col gap-6 w-full">
@@ -134,6 +135,7 @@ export const MarketSegment2 = ({ cardIndex, onChange }) => {
                   onClick={() => {
                     onChange(index)
                     onSelected(index)
+                    onCollapse()
                   }}
                 >
                   <div className="flex flex-row items-center gap-6 w-full">
