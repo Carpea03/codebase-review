@@ -99,47 +99,47 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
       <Header topMenuIndex={selectedMenu} onTopMenuChange={onChangeMenu} />
       <HeroBanner />
       <BrandsBanner />
-      <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
-      <MarketSegment2 cardIndex={selectedMenu2} onChange={onChangeMenu2} />
+      <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} cardIndexIndustry={selectedMenu2} onChangeIndustry={onChangeMenu2}  />
+      {/* <MarketSegment2 cardIndex={selectedMenu2} onChange={onChangeMenu2} /> */}
       <OurServices />
       <ContactUs />
       {subMenu === 0 && selectedMenu === -1 && (
         <>
-          <IpNewsBlog news={reduceMorePost} />
           <OurClient state={menuState2} />
           <ProfessionalProfiles />
+          <FillingStats />
+          <IpNewsBlog news={reduceMorePost} />
         </>
       )}
       {subMenu === 1 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={reduceMorePost} />
-          <OurClient state={menuState2} />
-          <FillingStats state={menuState2} />
           <ProfessionalProfiles />
+          <OurClient state={menuState2} />
+          <IpNewsBlog news={reduceMorePost} />
+          <FillingStats state={menuState2} />
         </>
       )}
       {subMenu === 2 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={reduceMorePost} />
+          <ProfessionalProfiles />
           <OurClient state={menuState2} />
           <FillingStats />
-          <ProfessionalProfiles />
+          <IpNewsBlog news={reduceMorePost} />
         </>
       )}
       {subMenu === 3 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={reduceMorePost} />
+          <ProfessionalProfiles />
           <OurClient state={menuState2} />
           <FillingStats />
-          <ProfessionalProfiles />
         </>
       )}
       {subMenu === 4 && selectedMenu !== -1 && (
         <>
-          <IpNewsBlog news={reduceMorePost} />
-          <FillingStats />
-          <OurClient state={menuState2} />
           <ProfessionalProfiles />
+          <IpNewsBlog news={reduceMorePost} />
+          <OurClient state={menuState2} />
+          <FillingStats />
         </>
       )}
       <VisitVirtualOffice />

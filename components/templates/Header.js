@@ -7,15 +7,16 @@ import { Search } from 'react-feather'
 import { Listbox, Popover, Disclosure, Transition } from '@headlessui/react'
 import Services from '../menus/Services'
 import Blog from '../menus/Blog'
-import People from '../menus/People'
+import Values from '../menus/Values'
 import Contact from '../menus/Contact'
+import useContentStore from '../../store/useContent.store'
 import Link from 'next/link'
 
 const menus = [
   { id: 1, name: 'Services' },
   { id: 2, name: 'People' },
   { id: 3, name: 'Values' },
-  { id: 4, name: 'Article' },
+  { id: 4, name: 'Articles' },
   { id: 5, name: 'Contact' },
 ]
 
@@ -29,6 +30,23 @@ const classNames = (...classes) => {
 }
 
 export default function Header({ topMenuIndex, onTopMenuChange, active }) {
+  const menuState = useContentStore((state) => state.menuState)
+  const onClick = (id) => {
+    switch (id) {
+      case 1:
+        if (menuState === 1) window.location.href = '/services'
+        if (menuState === 4) window.location.href = '/services'
+        return
+      case 2:
+        window.location.href = '/people'
+        return
+      case 5:
+        window.location.href = '/contact-us'
+        return
+      default:
+        return
+    }
+  }
   return (
     <div className="z-50 sticky top-0 relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD] z-30 ">
       <div className="container hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40">
@@ -43,6 +61,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                   {({ open }) => (
                     <>
                       <Popover.Button
+                        onClick={() => onClick(menu.id)}
                         className={classNames(
                           'font-manrope text-sm leading-5 outline-none',
                           open
@@ -72,16 +91,31 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                           as="div"
                           // className="absolute top-[85px] left-0 right-0 mx-auto w-full"
                         >
-                          {menu.id == 1 && (
+                          {menu.id == 1 && menuState === 2 && (
                             <Services
                               menuIndex={topMenuIndex - 1}
                               onChange={(index) => onTopMenuChange(index)}
                             />
                           )}
-                          {menu.id == 2 && <People />}
-                          {menu.id == 3 && ''}
+
+                          {menu.id == 1 && menuState === 0 && (
+                            <Services
+                              menuIndex={topMenuIndex - 1}
+                              onChange={(index) => onTopMenuChange(index)}
+                            />
+                          )}
+
+                          {menu.id == 1 && menuState === 3 && (
+                            <Services
+                              menuIndex={topMenuIndex - 1}
+                              onChange={(index) => onTopMenuChange(index)}
+                            />
+                          )}
+
+                          {menu.id == 2 && ''}
+                          {menu.id == 3 && <Values />}
                           {menu.id == 4 && <Blog />}
-                          {menu.id == 5 && <Contact />}
+                          {menu.id == 5 && ''}
                         </Popover.Panel>
                       </Transition>
                     </>
@@ -147,10 +181,10 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                       onChange={(index) => onTopMenuChange(index)}
                     />
                   )}
-                  {menu.id == 2 && <People />}
-                  {menu.id == 3 && ''}
+                  {menu.id == 2 && ''}
+                  {menu.id == 3 && <Values />}
                   {menu.id == 4 && <Blog />}
-                  {menu.id == 5 && <Contact />}
+                  {menu.id == 5 && ''}
                 </Disclosure.Panel>
               </Disclosure>
             ))}
