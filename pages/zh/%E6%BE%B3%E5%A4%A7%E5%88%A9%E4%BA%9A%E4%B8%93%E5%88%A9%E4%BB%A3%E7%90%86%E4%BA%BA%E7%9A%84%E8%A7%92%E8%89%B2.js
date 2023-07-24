@@ -26,8 +26,8 @@ export default function 澳大利亚专利代理人的角色() {
           href="https://www.baxterip.com.au/role-of-australian-patent-attorneys"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+      <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center mt-4 mb-4 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
           <li className="inline-flex items-center">
             <Link href="/zh">
               <div className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
