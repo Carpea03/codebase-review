@@ -10,7 +10,7 @@ export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
     <div className="w-full flex flex-row items-start justify-center sm:pb-10">
       <div className="flex flex-col gap-5 sm:gap-10">
         <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-14">
-          {data?.map((n) => (
+          {data?.map((n,index) => (
             <Link key={n?.author?.name} href={`/ip-news/${n?.slug}`}>
               <div
                 key={n?.author?.name}
@@ -20,7 +20,7 @@ export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
                     '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
                 }}
               >
-                <div className="relative w-full">
+                <div key={`c-${n?.author?.name}`} className="relative w-full">
                   <Image
                     alt=""
                     src={
