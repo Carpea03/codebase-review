@@ -12,7 +12,7 @@ export default function Content({ posts }) {
       </div>
       <div className="flex flex-col">
         <div>
-          {posts.map((post) => (
+          {posts.slice(0, 50).map((post) => (
             // key={post.slug}
             // title={post.title}
             // coverImage={post.coverImage}
@@ -28,13 +28,15 @@ export default function Content({ posts }) {
             //       'polygon(90% 5px, calc(100% - 5px) 10%, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 5px)',
             //   }}
             // >
-              <div
-                className="bg-white  rounded-sm cursor-pointer"
-                style={{
-                  width: 636,
-                  boxShadow: '0px 5px 17px 0px rgba(64, 76, 89, 0.06)',
-                }}
-              >
+
+            <div
+              className="bg-white rounded-sm cursor-pointer"
+              style={{
+                width: 636,
+                boxShadow: '0px 5px 17px 0px rgba(64, 76, 89, 0.06)',
+              }}
+            >
+              <Link href={`/ip-news/${post.slug}`} className="no-underline">
                 <div>
                   <div
                     className="cover-bg"
@@ -56,7 +58,8 @@ export default function Content({ posts }) {
                   </div>
                   <Date dateString={post.date} />
                 </div>
-              </div>
+              </Link>
+            </div>
             // </div>
           ))}
         </div>
