@@ -134,15 +134,13 @@ export default function TradeMarkRegistrationProcess() {
       </p>
       <figure>
         <Link href="/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png">
-          <a>
-            <Image
-              loader={myLoader}
-              src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
-              alt="Australian Standard Trade Mark Procedure"
-              width="1024"
-              height="331"
-            />
-          </a>
+          <Image
+            loader={myLoader}
+            src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+            alt="Australian Standard Trade Mark Procedure"
+            width="1024"
+            height="331"
+          />
         </Link>
         <figcaption>Australian Standard Trade Mark Procedure</figcaption>
       </figure>

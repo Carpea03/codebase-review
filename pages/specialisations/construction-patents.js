@@ -1,16 +1,14 @@
 import Image from 'next/image'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../../components/layout'
 import Link from 'next/link'
-import StaffChris from '../../components/to-delete/staff/chris'
-import StaffMartin from '../../components/to-delete/staff/martin'
-import StaffMike from '../../components/to-delete/staff/mike'
-import StaffWarren from '../../components/to-delete/staff/warren'
-import StaffNaleesha from '../../components/to-delete/staff/naleesha'
+import StaffChris from '../../components/staff/chris'
+import StaffMartin from '../../components/staff/martin'
+import StaffMike from '../../components/staff/mike'
+import StaffWarren from '../../components/staff/warren'
+import StaffNaleesha from '../../components/staff/naleesha'
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://www.baxterip.com.au/wp-content/uploads/2019/06/${src}?w=${width}&q=${
-    quality || 75
-  }`
+const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
+  return `${host}/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function ConstructionPatents() {
@@ -1447,31 +1445,27 @@ export default function ConstructionPatents() {
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <a>
-                  <Image
-                    loader={myLoader}
-                    src="logo-slingshot-haulage.png"
-                    alt="Slingshot Haulage Pty Ltd logo."
-                    width={255}
-                    height={191}
-                    className="mx-auto mb-4 rounded-full"
-                  />
-                </a>
+                <Image
+                  loader={myLoader}
+                  src="logo-slingshot-haulage.png"
+                  alt="Slingshot Haulage Pty Ltd logo."
+                  width={255}
+                  height={191}
+                  className="mx-auto mb-4 rounded-full"
+                />
               </Link>
               <Link
                 href="#"
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <a>
-                  <Image
-                    loader={myLoader}
-                    src="logo-wombat-timbers.png"
-                    alt="Wombat Timbers Pty Ltd logo."
-                    width={255}
-                    height={191}
-                    className="mx-auto mb-4 rounded-full"
-                  />
-                </a>
+                <Image
+                  loader={myLoader}
+                  src="logo-wombat-timbers.png"
+                  alt="Wombat Timbers Pty Ltd logo."
+                  width={255}
+                  height={191}
+                  className="mx-auto mb-4 rounded-full"
+                />
               </Link>
             </div>
           </div>

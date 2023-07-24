@@ -1,10 +1,10 @@
 import Alert from './alert'
-import Contact from '../to-delete/blocks/contact'
+import Contact from '../blocks/contact'
 import Footer from '../templates/Footer'
 import Header from '../templates/Header'
 import Meta from './meta'
-import Newsletter from '../to-delete/blocks/newsletter'
-import RelatedArticle from '../to-delete/blocks/related-article'
+import Newsletter from '../blocks/newsletter'
+import RelatedArticle from '../blocks/related-article'
 
 export default function Layout({ preview, children }) {
   return (

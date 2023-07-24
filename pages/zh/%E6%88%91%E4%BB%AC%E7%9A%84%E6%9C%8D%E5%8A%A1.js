@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../../components/layout'
 
 export default function 我们的服务() {
   return (
