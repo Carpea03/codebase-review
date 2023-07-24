@@ -18,7 +18,7 @@ export const sideMenus = [
     href: '',
   },
   {
-    id: 4,  
+    id: 4,
     name: 'Industry Expertise',
     img: '/menus/services/sideMenus/Expertise (Dark).svg',
     href: '',
@@ -40,7 +40,86 @@ export const subMenus = [
       division: false,
       href: '/patent-benefits',
     },
+    { title: '', bold: false, division: true },
+    {
+      title: 'International patent process',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Stage 1: Provisional patent applications',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Stage 2: International-type patent search',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Stage 3: PCT International patent applications',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Stage 4: National phase patent applications',
+      bold: false,
+      division: false,
+      href: '',
+    },
     { title: '', bold: false, division: true, href: '' },
+    { title: 'Registered designs', bold: true, division: false, href: '' },
+    {
+      title: 'Registered design application',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: 'Design disputes', bold: false, division: false, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    { title: 'IP strategy', bold: true, division: false, href: '' },
+    { title: 'IP audit', bold: false, division: false, href: '' },
+    { title: 'IP vaulation', bold: false, division: false, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+    {
+      title: 'Australian patent process',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Provisional patent applications',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'International-type patent search',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'PCT internationals patent applications',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'National phase patent application',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: '', bold: false, division: true },
+  ],
+  [
     { title: 'Patent search', bold: true, division: false, href: '' },
     {
       title: 'International patent search',
@@ -66,24 +145,6 @@ export const subMenus = [
       division: false,
       href: '',
     },
-    { title: '', bold: false, division: true },
-    { title: 'Registered design', bold: true, division: false, href: '' },
-    {
-      title: 'Registered design application',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    { title: 'Design disputes', bold: false, division: false, href: '' },
-    { title: '', bold: false, division: true, href: '' },
-    { title: 'Other patent services', bold: true, division: false, href: '' },
-    { title: 'Inovation patents', bold: false, division: false, href: '' },
-    { title: '', bold: false, division: true, href: '' },
-  ],
-  [
-    { title: 'IP strategy', bold: true, division: false, href: '' },
-    { title: 'IP audit', bold: false, division: false, href: '' },
-    { title: 'IP vaulation', bold: false, division: false, href: '' },
     { title: '', bold: false, division: true, href: '' },
     {
       title: 'Patent opositions & dispites',
@@ -91,129 +152,41 @@ export const subMenus = [
       division: false,
       href: '',
     },
-    { title: 'Patent opositions', bold: false, division: false, href: '' },
-    { title: 'Patent itigation', bold: false, division: false, href: '' },
-    { title: '', bold: false, division: true },
-    { title: 'Other patent services', bold: false, division: false, href: '' },
-    { title: 'Inovation patents', bold: false, division: false, href: '' },
-    { title: '', bold: false, division: true },
     {
-      title: 'Patent opositions & dispites',
-      bold: true,
-      division: false,
-      href: '',
-    },
-    { title: 'Patent opositions', bold: false, division: false, href: '' },
-    { title: 'Patent itigation', bold: false, division: false, href: '' },
-  ],
-  [
-    {
-      title: 'Australian patent process',
-      bold: true,
-      division: false,
-      href: '',
-    },
-    {
-      title: 'International-type patent search',
+      title: 'Patent opositions',
       bold: false,
       division: false,
       href: '',
     },
     {
-      title: 'PCT internationals patent applications',
+      title: 'Patent itigation',
       bold: false,
       division: false,
       href: '',
     },
-    {
-      title: 'National phase patent application',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    { title: '', bold: false, division: true, href: '' },
-    {
-      title: 'Australian patent process',
-      bold: true,
-      division: false,
-      href: '',
-    },
-    {
-      title: 'International-type patent search',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    {
-      title: 'PCT internationals patent applications',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    {
-      title: 'National phase patent application',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    { title: '', bold: false, division: true, href: '' },
   ],
 ]
 
 export const subMenus1 = [
   [
     {
-      title: 'Chemical, biotech & pharmaceutical patents',
-      bold: false,
+      title: 'How to trade mark',
+      bold: true,
       division: false,
       href: '',
     },
-    {
-      title: 'Civil engineering & construction patents',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    {
-      title: 'Consumer product patents',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    {
-      title: 'Electrical engineering & electronics patents',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    { title: 'Fintech patents', bold: false, division: false, href: '' },
-    { title: 'Medical device patents', bold: false, division: false, href: '' },
-    {
-      title: 'Physics & optical engineering patents',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    {
-      title: 'Software, apps & computer patents',
-      bold: false,
-      division: false,
-      href: '',
-    },
-    { title: '', bold: false, division: true, href: '' },
-  ],
-]
-
-export const subMenus2 = [
-  [
-    { title: 'HOW TO TRADE MARK', bold: true, division: false, href: '' },
     {
       title: 'Brand name vs trade mark',
       bold: false,
       division: false,
       href: '',
     },
-    { title: 'Choosing a brand name', bold: false, division: false, href: '' },
+    {
+      title: 'Choosing a brand name',
+      bold: false,
+      division: false,
+      href: '',
+    },
     {
       title: 'Trade mark registration benefits',
       bold: false,
@@ -246,7 +219,7 @@ export const subMenus2 = [
     },
     { title: '', bold: false, division: true, href: '' },
     {
-      title: 'INTERNATIONAL TRADE MARK APPLICATION',
+      title: 'International trade mark application',
       bold: true,
       division: false,
       href: '',
@@ -272,8 +245,18 @@ export const subMenus2 = [
     { title: '', bold: false, division: true, href: '' },
   ],
   [
-    { title: 'TRADE MARK PREPARATION', bold: true, division: false, href: '' },
-    { title: 'Types of trade marks', bold: false, division: false, href: '' },
+    {
+      title: 'Trade mark preparation',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Types of trade marks',
+      bold: false,
+      division: false,
+      href: '',
+    },
     {
       title: 'Special types of trade marks',
       bold: false,
@@ -286,15 +269,25 @@ export const subMenus2 = [
       division: false,
       href: '',
     },
-    { title: 'Trade mark search', bold: false, division: false, href: '' },
+    {
+      title: 'Trade mark search',
+      bold: false,
+      division: false,
+      href: '',
+    },
     { title: '', bold: false, division: true, href: '' },
     {
-      title: 'TRADE MARK OPPOSITIONS & DISPUTES',
+      title: 'Trade mark oppositions and disputes',
       bold: true,
       division: false,
       href: '',
     },
-    { title: 'Trade mark opposition', bold: false, division: false, href: '' },
+    {
+      title: 'Trade mark opposition',
+      bold: false,
+      division: false,
+      href: '',
+    },
     {
       title: 'Grounds for trade mark opposition',
       bold: false,
@@ -313,7 +306,12 @@ export const subMenus2 = [
       division: false,
       href: '',
     },
-    { title: 'Trade mark disputes', bold: false, division: false, href: '' },
+    {
+      title: 'Trade mark disputes',
+      bold: false,
+      division: false,
+      href: '',
+    },
     {
       title: 'Trade mark infringement',
       bold: false,
@@ -326,12 +324,17 @@ export const subMenus2 = [
       division: false,
       href: '',
     },
-    { title: 'Trade mark litigation', bold: false, division: false, href: '' },
+    {
+      title: 'Trade mark litigation',
+      bold: false,
+      division: false,
+      href: '',
+    },
     { title: '', bold: false, division: true, href: '' },
   ],
   [
     {
-      title: 'TRADE MARK REGISTRATION PROCESS',
+      title: 'Trade mark registration process',
       bold: true,
       division: false,
       href: '',
@@ -342,20 +345,50 @@ export const subMenus2 = [
       division: false,
       href: '',
     },
-    { title: 'Trade mark examination', bold: false, division: false, href: '' },
-    { title: 'Trade mark acceptance', bold: false, division: false, href: '' },
-    { title: 'Trade mark publication', bold: false, division: false, href: '' },
-    { title: 'Trade mark maintenance', bold: false, division: false, href: '' },
-    { title: 'Trade mark amendment', bold: false, division: false, href: '' },
-    { title: 'Trade mark renewal', bold: false, division: false, href: '' },
-    { title: '', bold: false, division: true },
+    {
+      title: 'Trade mark examination',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Trade mark acceptance',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Trade mark publication',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Trade mark maintenance',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Trade mark amendment',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Trade mark renewal',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: '', bold: false, division: true, href: '' },
   ],
 ]
 
-export const subMenus3 = [
+export const subMenus2 = [
   [
     {
-      title: 'PATENT OPPOSITIONS & DISPUTES',
+      title: 'Patent oppositions and disputes',
       bold: true,
       division: false,
       href: '',
@@ -371,18 +404,17 @@ export const subMenus3 = [
   ],
   [
     {
-      title: 'TRADE MARK OPPOSITIONS & DISPUTES',
+      title: 'Trade mark oppositions and disputes',
       bold: true,
       division: false,
       href: '',
     },
     {
-      title: 'Australian trade mark application',
+      title: 'Trade mark opposition',
       bold: false,
       division: false,
       href: '',
     },
-    { title: 'Trade mark opposition', bold: false, division: false, href: '' },
     {
       title: 'Grounds for trade mark opposition',
       bold: false,
@@ -401,7 +433,12 @@ export const subMenus3 = [
       division: false,
       href: '',
     },
-    { title: 'Trade mark disputes', bold: false, division: false, href: '' },
+    {
+      title: 'Trade mark disputes',
+      bold: false,
+      division: false,
+      href: '',
+    },
     {
       title: 'Trade mark infringement',
       bold: false,
@@ -414,17 +451,120 @@ export const subMenus3 = [
       division: false,
       href: '',
     },
-    { title: 'Trade mark litigationt', bold: false, division: false, href: '' },
+    {
+      title: 'Trade mark litigation',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    {
+      title: 'Design disputes',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    { title: '', bold: false, division: true },
+  ],
+]
+
+export const subMenus3 = [
+  [
+    {
+      title: 'Engineering',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Aero',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: 'Agri Tech', bold: false, division: false, href: '' },
+    { title: 'Construction', bold: false, division: false, href: '' },
+    { title: 'Manufacturing', bold: false, division: false, href: '' },
+    { title: 'Mechanical', bold: false, division: false, href: '' },
+    { title: 'Mining', bold: false, division: false, href: '' },
+    { title: 'Naval', bold: false, division: false, href: '' },
+    { title: 'Space', bold: false, division: false, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    {
+      title: 'HighTech',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Applications',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: 'Defence', bold: false, division: false, href: '' },
+    { title: 'Distributed Ledgers', bold: false, division: false, href: '' },
+    { title: 'E-Commerce', bold: false, division: false, href: '' },
+    { title: 'Electrical', bold: false, division: false, href: '' },
+    { title: 'Electronics', bold: false, division: false, href: '' },
+    { title: 'Energy Tech', bold: false, division: false, href: '' },
+    { title: 'Laser Tech', bold: false, division: false, href: '' },
+    { title: 'Nuclear', bold: false, division: false, href: '' },
+    { title: 'Optical Tech', bold: false, division: false, href: '' },
+    { title: 'Physics', bold: false, division: false, href: '' },
+    { title: 'Quantum', bold: false, division: false, href: '' },
+    { title: 'Robotics', bold: false, division: false, href: '' },
+    { title: 'Security', bold: false, division: false, href: '' },
+    { title: 'Telecommunications', bold: false, division: false, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    {
+      title: 'Healthtech',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Biochemistry',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: 'Biotechnology', bold: false, division: false, href: '' },
+    { title: 'Chemistry', bold: false, division: false, href: '' },
+    { title: 'Medical Devices', bold: false, division: false, href: '' },
+    { title: 'Pharmaceuticals', bold: false, division: false, href: '' },
+    { title: 'Vet Science', bold: false, division: false, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    {
+      title: 'Other Industries',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Cosmetics',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: 'Entertainment', bold: false, division: false, href: '' },
+    { title: 'FMCG', bold: false, division: false, href: '' },
+    { title: 'Food & Bev', bold: false, division: false, href: '' },
+    { title: 'Hospitality', bold: false, division: false, href: '' },
+    { title: 'Recruitment', bold: false, division: false, href: '' },
     { title: '', bold: false, division: true, href: '' },
   ],
 ]
 
 export const subMenus4 = [
-  [
-    { title: 'BIP Capital Partners', bold: false, division: false, href: '' },
-    { title: '', bold: false, division: true, href: '' },
-  ],
-  ,
 ]
 
 export const services = {
@@ -449,7 +589,7 @@ export const services = {
       id: 3,
       title: 'Analytical, Technical and Creative Talent',
       content:
-        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
@@ -491,7 +631,7 @@ export const services = {
       id: 3,
       title: 'Analytical, Technical and Creative Talent',
       content:
-        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
@@ -509,7 +649,7 @@ export const services = {
       id: 1,
       title: 'Analytical, Technical and Creative Talent',
       content:
-        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
@@ -543,7 +683,7 @@ export const services = {
       id: 1,
       title: 'Analytical, Technical and Creative Talent',
       content:
-        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
@@ -554,7 +694,8 @@ export const services = {
         'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
       img: '/ourservices/Tech spectrum covered.svg',
       link: '',
-    },{
+    },
+    {
       id: 3,
       title: 'Capital Connected',
       content:
@@ -568,7 +709,7 @@ export const services = {
       id: 1,
       title: 'Analytical, Technical and Creative Talent',
       content:
-        "Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.",
+        'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
       link: '',
     },
@@ -579,6 +720,6 @@ export const services = {
         'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
       img: '/ourservices/Tech spectrum covered.svg',
       link: '',
-    }
+    },
   ],
 }

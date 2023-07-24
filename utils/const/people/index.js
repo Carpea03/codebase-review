@@ -1,28 +1,6 @@
 const teamLink = '/people'
 const profile = '/profile'
 
-export const sideMenus = [
-  {
-    name: 'IP Attorneys',
-    img: '/menus/people/sideMenus/empty-shield.svg',
-    href: '/people',
-  },
-  {
-    name: 'Patent attorneys',
-    img: '/menus/people/sideMenus/empty-hammer.svg',
-    href: '',
-  },
-  {
-    name: 'Trade mark attorneys',
-    img: '/menus/people/sideMenus/shield-check.svg',
-    href: '',
-  },
-  {
-    name: 'Commercial counsel',
-    img: '/menus/people/sideMenus/peoples-two.svg',
-    href: '',
-  },
-]
 
 export const subMenus = [
   [

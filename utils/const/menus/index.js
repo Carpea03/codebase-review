@@ -25,8 +25,7 @@ export const topMenus = [
   },
 ]
 
-
-export const cards = [
+export const cardsIndustry = [
   {
     id: 1,
     iconDark: '/marketSegments2/Engineering (Dark).svg',
@@ -56,6 +55,95 @@ export const cards = [
     iconDark: '/marketSegments2/FMCG (Dark).svg',
     iconLight: '/marketSegments2/FMCG (Light).svg',
     name: 'Other Industries',
-    description: 'Cosmetics, Entertainment, FMCG, Food & Bev, Hospitality, Recruitment',
+    description:
+      'Cosmetics, Entertainment, FMCG, Food & Bev, Hospitality, Recruitment',
+  },
+]
+
+export const cards = [
+  {
+    id: 1,
+    iconDark: '/marketSegments/SME (Dark).svg',
+    iconLight: '/marketSegments/SME (Light).svg',
+    name: 'Corporate or SME',
+    description: 'You sell product, license IP or provide a software service.',
+  },
+  {
+    id: 2,
+    iconDark: '/marketSegments/Scaleup (Dark).svg',
+    iconLight: '/marketSegments/Scaleup (Light).svg',
+    name: 'Scaleup or Investor',
+    description: 'You develop tech or are growing a clever brand.',
+  },
+  {
+    id: 3,
+    iconDark: '/marketSegments/Startup (Dark).svg',
+    iconLight: '/marketSegments/Startup (Light).svg',
+    name: 'Startup or Entrepreneur',
+    description: 'You are working on something new.',
+  },
+  {
+    id: 4,
+    iconDark: '/marketSegments/Associates (Dark).svg',
+    iconLight: '/marketSegments/Associates (Light).svg',
+    name: 'IP Attorney',
+    description: 'You are an IP attorney based outside of AU or NZ.',
+  },
+]
+
+export const subMenusValues = [
+  [
+    { title: 'About us', bold: true, division: false, href: '' },
+    { title: 'Our values', bold: false, division: false, href: '' },
+    { title: 'Our philosophy', bold: false, division: false, href: '' },
+    { title: 'Capital partners', bold: false, division: false, href: '' },
+    { title: 'Awards and recognition', bold: false, division: false, href: '' },
+    { title: 'Client testimonials', bold: false, division: false, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+]
+
+export const subMenusJoinUs = [
+  [
+    { title: 'Join us', bold: true, division: false, href: '' },
+    { title: 'IP careers', bold: false, division: false, href: '' },
+    {
+      title: 'The role of Australian patent attorneys',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'How to become a patent attorney',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'The role of Australian trade mark attorneys',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'How to become a trade mark attorney',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+]
+
+export const sideMenus = [
+  {
+    name: 'Values',
+    img: '/menus/values/Values (Dark).svg',
+    href: '',
+  },
+  {
+    name: 'Join us',
+    img: '/menus/services/sideMenus/Expertise (Dark).svg',
+    href: '',
   },
 ]

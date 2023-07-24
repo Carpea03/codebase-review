@@ -3,20 +3,25 @@ import { Tab } from '@headlessui/react'
 import React, { useState } from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
 import Link from 'next/link'
-import { sideMenus, subMenus, subMenus1 } from '../../utils/const/blog'
+import {
+  sideMenus,
+  subMenusValues,
+  subMenusJoinUs,
+
+} from '../../utils/const/menus'
 
 const panels = [
   {
-    title: 'IP FRONT™ - INTELLECTUAL PROPERTY NEWS',
+    title: 'OUR PATENT & TRADE MARK ATTORNEY OFFICES',
     description:
-      'The latest IP news across patents and trade marks law and practice by Baxter IP.',
-    data: subMenus,
+      'Between 2007 and 2019, Baxter IP established a team of industry specialist IP attorneys with offices in Sydney, Melbourne, and Brisbane.',
+    data: subMenusValues,
   },
   {
-    title: 'IP INFORMATION & TOOLS',
+    title: 'OUR PATENT ATTORNEYS',
     description:
-      'A collection of IP-related information and tools provided by Baxter IP, Patent & Trade Mark Attorneys.',
-    data: subMenus1,
+      'A Sydney patent attorney or Melbourne patent attorney will be matched with you based on technology expertise to help you file a patent in your field.',
+    data: subMenusJoinUs,
   },
 ]
 
@@ -24,7 +29,7 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Blog() {
+export default function Values() {
   return (
     <div
       className="w-full bg-[#FFFEFD]"
@@ -44,7 +49,7 @@ export default function Blog() {
             {sideMenus.map((sideMenu, i) => (
               <Link key={i} href={sideMenu.href}>
                 <Tab
-                  key={sideMenu.id}
+                  key={i}
                   className={({ selected }) =>
                     classNames(
                       'flex flex-row justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none',
@@ -61,26 +66,17 @@ export default function Blog() {
                     width={16}
                     height={16}
                   />
-                  <span className="uppercase font-manrope text-sm ">
+                  <span className="uppercase font-manrope text-sm cursor-pointer">
                     {sideMenu.name}
                   </span>
                 </Tab>
               </Link>
             ))}
           </Tab.List>
-          <Tab.Panels
-            as="div"
-            className="flex flex-col w-full md:w-[70%] pb-12"
-          >
+          <Tab.Panels as="div" className="flex flex-col w-full md:w-[70%]">
             {panels.map((item, index) => (
               <Tab.Panel key={index}>
                 <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">
-                  {/* <div className="flex flex-col justify-center items-start w-full h-[134px] gap-[10px] pl-12 border-b md:border-b-2 border-solid border-[#BFBBB2] md:border-[#7568D1]">
-                    <span className="text-[#272940]">{item.title}</span>
-                    <span className="text-[#272940]/60">
-                      {item.description}
-                    </span>
-                  </div> */}
                   <SubMenuBlock contents={item.data} />
                 </div>
               </Tab.Panel>

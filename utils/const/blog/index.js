@@ -1,14 +1,14 @@
 export const sideMenus = [
   {
     id: 1,
-    name: 'IP News',
-    img: '/menus/blog/sideMenus/ip-news.svg',
+    name: 'Articles',
+    img: '/menus/blog/sideMenus/Articles (Dark).svg',
     href: '/ip-news',
   },
   {
     id: 2,
-    name: 'Resources',
-    img: '/menus/blog/sideMenus/resources.svg',
+    name: 'IP Info',
+    img: '/menus/blog/sideMenus/Info (Dark).svg',
     href: '',
   },
 ]
@@ -41,6 +41,7 @@ export const subMenus = [
 
 export const subMenus1 = [
   [
+    { title: 'IP Information and Tools', bold: true, division: false, href: '' },
     { title: 'IP Glossary', bold: false, division: false, href: '' },
     { title: 'IP FAQs', bold: false, division: false, href: '' },
     {
@@ -55,7 +56,5 @@ export const subMenus1 = [
       division: false,
       href: '',
     },
-    { title: 'Videos', bold: false, division: false, href: '' },
-    { title: 'Top Startups 2018', bold: false, division: false, href: '' },
   ],
 ]
