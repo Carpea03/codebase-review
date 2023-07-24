@@ -1,5 +1,5 @@
-import Header from '../../components/templates/Header'
-import Footer from '../../components/templates/Footer'
+import Header from '../components/templates/Header'
+import Footer from '../components/templates/Footer'
 export default function Layout({ children }) {
   return (
     <>

@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
+
 import StaffChris from '../components/to-delete/staff/chris'
 import StaffMartin from '../components/to-delete/staff/martin'
 import StaffQi from '../components/to-delete/staff/qi'

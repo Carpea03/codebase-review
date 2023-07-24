@@ -3,7 +3,7 @@ import Container from '../../components/blog/container'
 import MoreStories from '../../components/blog/more-stories'
 import HeroPost from '../../components/blog/hero-post'
 import Intro from '../../components/blog/intro'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../../components/layout'
 import { InnerContainer } from '../../components/templates/InnerContainer'
 import { indexQuery } from '../../lib/queries'
 import { usePreviewSubscription } from '../../lib/sanity'
@@ -22,7 +22,7 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
       <Layout preview={preview}>
         <Banner author={heroPost.author} />
         <InnerContainer>
-        <Content  posts={morePosts} />
+          <Content posts={morePosts} />
           {/* <Intro /> */}
           {/* {heroPost && (
             <HeroPost

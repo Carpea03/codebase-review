@@ -1,11 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
+
 import Image from 'next/image'
 
-const myLoader = ({ src, width, quality }) => {
-  return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
+const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
+  return `${host}/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function AwardsAndRecognition() {
