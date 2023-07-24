@@ -60,6 +60,12 @@ export const subMenus = [
       href: '',
     },
     {
+      title: 'Stage 3: PCT International patent applications',
+      bold: false,
+      division: false,
+      href: '',
+    },
+    {
       title: 'Stage 4: National phase patent applications',
       bold: false,
       division: false,
