@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import CoverImage from '../blog/cover-image'
 import Avatar from '../blog/avatar'
+import Date from '../blog/date'
+
 export default function Content({ posts }) {
   return (
     <div className="px-40">
@@ -12,7 +14,7 @@ export default function Content({ posts }) {
       </div>
       <div className="flex flex-col">
         <div>
-          {posts.slice(0, 50).map((post) => (
+          {posts.slice(0, 50).map((post,index) => (
             // key={post.slug}
             // title={post.title}
             // coverImage={post.coverImage}
@@ -30,6 +32,7 @@ export default function Content({ posts }) {
             // >
 
             <div
+            key={index}
               className="bg-white rounded-sm cursor-pointer"
               style={{
                 width: 636,
