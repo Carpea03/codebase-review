@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
@@ -134,15 +134,13 @@ export default function TradeMarkRegistrationProcess() {
       </p>
       <figure>
         <Link href="/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png">
-          <a>
-            <Image
-              loader={myLoader}
-              src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
-              alt="Australian Standard Trade Mark Procedure"
-              width="1024"
-              height="331"
-            />
-          </a>
+          <Image
+            loader={myLoader}
+            src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+            alt="Australian Standard Trade Mark Procedure"
+            width="1024"
+            height="331"
+          />
         </Link>
         <figcaption>Australian Standard Trade Mark Procedure</figcaption>
       </figure>

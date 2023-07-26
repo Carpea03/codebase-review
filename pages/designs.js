@@ -1,8 +1,8 @@
-import CardCta from '../components/to-delete/blocks/card-cta'
-import FeatureListCta from '../components/to-delete/blocks/feature-list-cta'
-import LayoutWide from '../components/to-delete/layout-wide'
+import CardCta from '../components/blocks/card-cta'
+import FeatureListCta from '../components/blocks/feature-list-cta'
+import LayoutWide from '../components/layout-wide'
 import Link from 'next/link'
-import TeamPatent from '../components/to-delete/team-patent'
+import TeamPatent from '../components/team-patent'
 
 export default function Designs() {
   return (

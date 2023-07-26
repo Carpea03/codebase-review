@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../../components/layout'
 
 export default function 商标侵权() {
   return (
@@ -29,8 +29,8 @@ export default function 商标侵权() {
           href="https://www.baxterip.com.au/trade-mark-infringement"
         />
       </Head>
-      <nav className="flex" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+      <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center mt-4 mb-4 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
           <li className="inline-flex items-center">
             <Link
               href="#"
