@@ -30,10 +30,7 @@ export default function SubMenuBlock({ contents }) {
                               <Link
                                 isFallback={true}
                                 href={{
-                                  pathname:
-                                    c.href +
-                                    '/' +
-                                    c.title.toLowerCase().replaceAll(' ', '-'),
+                                  pathname: c.href,
                                 }}
                               >
                                 {c.title}

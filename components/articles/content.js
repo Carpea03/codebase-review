@@ -1,72 +1,116 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import CoverImage from '../blog/cover-image'
-import Avatar from '../blog/avatar'
-import Date from '../blog/date'
+import Card from './card'
+import ArticlesList from './articles-list'
+import { Search } from 'react-feather'
+import CategoryList from './category-list'
+import ReactPaginate from 'react-paginate'
+import { useState, useEffect } from 'react'
 
 export default function Content({ posts }) {
-  return (
-    <div className="px-40">
-      <div className="py-10">
-        <span className="text-4xl text-black font-medium font-lora">
-          {'Fresh content'}
-        </span>
-      </div>
-      <div className="flex flex-col">
-        <div>
-          {posts.slice(0, 50).map((post,index) => (
-            // key={post.slug}
-            // title={post.title}
-            // coverImage={post.coverImage}
-            // date={post.date}
-            // author={post.author}
-            // slug={post.slug}
-            // excerpt={post.excerpt}
-            // <div
-            // className=""
-            //   style={{
-            //     width: 650,
-            //     clipPath:
-            //       'polygon(90% 5px, calc(100% - 5px) 10%, calc(100% - 5px) calc(100% - 5px), 5px calc(100% - 5px), 5px 5px)',
-            //   }}
-            // >
+  const category = [
+    { title: 'Case studies', total: 20 },
+    { title: 'Chemical, Biotech, Pharmaceutical Patents', total: 20 },
+    { title: 'Designs', total: 20 },
+    { title: 'Case studies', total: 20 },
+    { title: 'Chemical, Biotech, Pharmaceutical Patents', total: 20 },
+    { title: 'Designs', total: 20 },
+    { title: 'Case studies', total: 20 },
+    { title: 'Chemical, Biotech, Pharmaceutical Patents', total: 20 },
+    { title: 'Designs', total: 20 },
+  ]
+  const itemsPerPage = 6
+  const [itemOffset, setItemOffset] = useState(0)
+  const endOffset = itemOffset + itemsPerPage
 
-            <div
-            key={index}
-              className="bg-white rounded-sm cursor-pointer"
-              style={{
-                width: 636,
-                boxShadow: '0px 5px 17px 0px rgba(64, 76, 89, 0.06)',
-              }}
-            >
-              <Link href={`/ip-news/${post.slug}`} className="no-underline">
-                <div>
-                  <div
-                    className="cover-bg"
-                    style={{ width: 636, height: 320 }}
-                  />
-                  <CoverImage
-                    slug={post.slug}
-                    title={post.title}
-                    image={post.coverImage}
-                  />
-                </div>
-                <div className="px-5 pb-10">
-                  <Avatar
-                    name={post.author.name}
-                    picture={post.author.picture}
-                  />
-                  <div className="text-[#404266] text-3xl text-black font-medium font-manrope">
-                    {post.title}
-                  </div>
-                  <Date dateString={post.date} />
-                </div>
-              </Link>
+  const currentItems = posts.slice(itemOffset, endOffset)
+  const pageCount = Math.ceil(posts.length / itemsPerPage)
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % posts.length
+    setItemOffset(newOffset)
+  }
+
+  return (
+    <section>
+      <div className="px-5 sm:px-5 md:px-40 flex flex-col sm:flex-col md:flex-row xl:flex-row">
+        <div className="">
+          <div className="mt-10">
+            <span className="text-4xl text-black font-medium font-lora">
+              {'Fresh content'}
+            </span>
+          </div>
+          <div style={{ width: 636 }} className="flow-col">
+            {currentItems.map((post) => (
+              <Card
+                key={post.slug}
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                author={post.author}
+                slug={post.slug}
+                excerpt={post.excerpt}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="w-full mt-10 md:m-10">
+          <div className="flex items-center w-full h-14 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
+            <div className="grid place-items-center h-full w-12 text-gray-300">
+              <Search color="#404266" size={24} />
             </div>
-            // </div>
+            <input
+              className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none"
+              type="text"
+              id="search"
+              placeholder="Search..."
+            />
+          </div>
+          <div className="mt-10 mb-5">
+            <span className="font-lora text-4xl text-black">
+              Articles relevant to you
+            </span>
+            {posts.slice(0, 3).map((post, index) => (
+              <ArticlesList
+                key={post.slug}
+                title={post.title}
+                index={index}
+                date={post.date}
+                author={post.author}
+                slug={post.slug}
+                excerpt={post.excerpt}
+              />
+            ))}
+          </div>
+          <div className="mt-10 mb-5">
+            <span className="font-lora text-4xl text-black">Categories</span>
+          </div>
+          {category.map((item, index) => (
+            <CategoryList
+              key={`${item.title}-${index}`}
+              title={item.title}
+              total={item.total}
+            />
           ))}
         </div>
       </div>
-    </div>
+      <div className="mt-10 md:px-45">
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="next >"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={5}
+          pageCount={pageCount}
+          previousLabel="< prev"
+          renderOnZeroPageCount={null}
+          containerClassName="pagination"
+          pageLinkClassName="page-num"
+          previousLinkClassName="page-num"
+          nextLinkClassName="page-num"
+          activeLinkClassName="active"
+          breakLinkClassName="break-dot"
+          previousClassName="previous"
+          nextClassName="next"
+        />
+      </div>
+    </section>
   )
 }

@@ -1,5 +1,5 @@
-import CardCta from '../components/blocks/card-cta'
-import FeatureListCta from '../components/blocks/feature-list-cta'
+// import CardCta from '../components/blocks/card-cta'
+// import FeatureListCta from '../components/blocks/feature-list-cta'
 import LayoutWide from '../components/layout-wide'
 import Link from 'next/link'
 import TeamPatent from '../components/team-patent'
@@ -211,8 +211,8 @@ export default function Designs() {
           </div>
         </div>
       </section>
-      <FeatureListCta />
-      <CardCta />
+      {/* <FeatureListCta />
+      <CardCta /> */}
       <TeamPatent />
     </LayoutWide>
   )

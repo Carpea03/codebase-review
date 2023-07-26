@@ -113,8 +113,8 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                           )}
 
                           {menu.id == 2 && ''}
-                          {menu.id == 3 && <Values />}
-                          {menu.id == 4 && <Blog />}
+                          {menu.id == 3 && <Values active={"Values"} />}
+                          {menu.id == 4 && <Blog active={"Articles"} />}
                           {menu.id == 5 && ''}
                         </Popover.Panel>
                       </Transition>
@@ -182,8 +182,8 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                     />
                   )}
                   {menu.id == 2 && ''}
-                  {menu.id == 3 && <Values />}
-                  {menu.id == 4 && <Blog />}
+                  {menu.id == 3 && <Values active={"Values"} />}
+                  {menu.id == 4 && <Blog active={"Articles"} />}
                   {menu.id == 5 && ''}
                 </Disclosure.Panel>
               </Disclosure>

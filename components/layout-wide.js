@@ -1,5 +1,5 @@
-import Header from '../../components/templates/Header'
-import Footer from '../../components/templates/Footer'
+import Header from './templates/Header'
+import Footer from './templates/Footer'
 
 export default function LayoutWide({ children }) {
   return (

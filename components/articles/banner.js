@@ -1,11 +1,13 @@
 import { Container } from '../templates/Container'
-import Avatar from '../blog/avatar'
+import Avatar from './profile-avatar'
+import { InnerContainer } from '../../components/templates/InnerContainer'
 
 export default function Banner(author) {
   return (
     <Container className=" bg-hero-banner flex justify-center text-center">
-      <div className="w-1/2 py-20">
-        <div className="flex flex-col">
+       <InnerContainer>
+      <div className="w-full py-20 flex justify-center items-center">
+        <div className="w-1/2 flex flex-col">
           <span className=" text-6xl text-black font-lora">
             {
               '“ Infringement of third party trade marks – Hells Angels and Redbubble “'
@@ -22,6 +24,7 @@ export default function Banner(author) {
           </div>
         </div>
       </div>
+      </InnerContainer>
     </Container>
   )
 }

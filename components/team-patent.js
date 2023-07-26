@@ -1,13 +1,13 @@
-import StaffChris from '../staff/chris'
-import StaffMartin from '../staff/martin'
-import StaffMike from '../staff/mike'
-import StaffWarren from '../staff/warren'
-import StaffQi from '../staff/qi'
-import StaffSean from '../staff/sean'
-import StaffNaleesha from '../staff/naleesha'
-import StaffAndrew from '../staff/andrew'
-import StaffWillem from '../staff/willem'
-import StaffRichard from '../staff/richard'
+import StaffChris from './staff/chris'
+import StaffMartin from './staff/martin'
+import StaffMike from './staff/mike'
+import StaffWarren from './staff/warren'
+import StaffQi from './staff/qi'
+import StaffSean from './staff/sean'
+import StaffNaleesha from './staff/naleesha'
+import StaffAndrew from './staff/andrew'
+import StaffWillem from './staff/willem'
+import StaffRichard from './staff/richard'
 
 export default function TeamPatent() {
   return (

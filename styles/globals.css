@@ -334,3 +334,46 @@
       0px 3px 7px rgba(150, 151, 169, 0.0477948);
   }
 }
+
+/* pagination */
+.pagination {
+  list-style: none;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.pagination .page-num {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+  border: 1px solid;
+  border-color: #DFE1EA;
+}
+
+.pagination .page-num:hover {
+  background-color: #ffce4f;
+  color: black;
+}
+
+.pagination .active {
+  background-color: #ffce4f;
+  color: black;
+}
+
+.pagination .break-dot {
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid;
+  border-color: #DFE1EA;
+}
+
+.previous {
+  padding-right: 17%;
+}
+.next {
+  padding-left:  17%;
+ }
