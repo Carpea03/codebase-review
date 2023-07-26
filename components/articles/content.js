@@ -83,8 +83,12 @@ export default function Content({ posts }) {
           <div className="mt-10 mb-5">
             <span className="font-lora text-4xl text-black">Categories</span>
           </div>
-          {category.map((item) => (
-            <CategoryList title={item.title} total={item.total} />
+          {category.map((item, index) => (
+            <CategoryList
+              key={`${item.title}-${index}`}
+              title={item.title}
+              total={item.total}
+            />
           ))}
         </div>
       </div>
