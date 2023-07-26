@@ -8,7 +8,6 @@ import { InnerContainer } from '../../components/templates/InnerContainer'
 import { indexQuery } from '../../lib/queries'
 import { usePreviewSubscription } from '../../lib/sanity'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
-import Banner from '../../components/articles/banner'
 import Content from '../../components/articles/content'
 
 export default function Index({ allPosts: initialAllPosts, preview }) {
@@ -19,23 +18,8 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
   const [heroPost, ...morePosts] = allPosts || []
   return (
     <>
-      <Layout preview={preview}>
-        <Banner author={heroPost.author} />
-        <InnerContainer>
-        <Content  posts={morePosts} />
-          {/* <Intro /> */}
-          {/* {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
-        </InnerContainer>
+      <Layout preview={preview} bannerData={heroPost.author}>
+        {morePosts.length > 0 && <Content posts={morePosts} />}
       </Layout>
     </>
   )
