@@ -109,8 +109,8 @@ export default function Contact({ contactDetails }) {
 
   const defaultProps = {
     center: {
-      lat: contactDetails.lat,
-      lng: contactDetails.lng,
+      lat: contactDetails?.lat,
+      lng: contactDetails?.lng,
     },
     zoom: 11,
   }
@@ -277,7 +277,7 @@ export default function Contact({ contactDetails }) {
               onClick={() => setOpenMap(!openMap)}
             >
               <span className="font-manrope font-medium text-xl text-white">
-                {`${contactDetails.name} office`}
+                {`${contactDetails?.name} office`}
               </span>
               <FiChevronUp
                 className={`w-6 h-6 sm:w-8 sm:h-8 stroke-white ${
@@ -297,8 +297,8 @@ export default function Contact({ contactDetails }) {
               defaultZoom={defaultProps.zoom}
             >
               <AnyReactComponent
-                lat={contactDetails.lat}
-                lng={contactDetails.lng}
+                lat={contactDetails?.lat}
+                lng={contactDetails?.lng}
                 icon={<FaMapMarkerAlt color="red" size={30} />}
               />
             </GoogleMapReact>
@@ -309,7 +309,7 @@ export default function Contact({ contactDetails }) {
             address
           </span>
           <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#272940]">
-            {contactDetails.address}
+            {contactDetails?.address}
           </span>
         </div>
         <div className="flex flex-col items-start gap-[10px]">
@@ -317,7 +317,7 @@ export default function Contact({ contactDetails }) {
             Phone
           </span>
           <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
-            {contactDetails.number}
+            {contactDetails?.number}
           </span>
         </div>
         <div className="flex flex-col items-start gap-[10px]">
@@ -325,7 +325,7 @@ export default function Contact({ contactDetails }) {
             postal address
           </span>
           <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#272940]">
-            {contactDetails.addressPostal}
+            {contactDetails?.addressPostal}
           </span>
         </div>
         <div className="flex flex-col items-start gap-[10px]">

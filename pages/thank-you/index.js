@@ -5,7 +5,7 @@ import Header from '../../components/templates/Header'
 import React from 'react'
 import Link from 'next/link'
 import { IoArrowBackOutline } from 'react-icons/io5'
-const router = useRouter()
+
 const news = [
   {
     id: 1,
