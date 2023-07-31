@@ -351,7 +351,7 @@
   font-weight: 400;
   text-decoration: none;
   border: 1px solid;
-  border-color: #DFE1EA;
+  border-color: #dfe1ea;
 }
 
 .pagination .page-num:hover {
@@ -368,12 +368,21 @@
   padding: 10px 15px;
   text-decoration: none;
   border: 1px solid;
-  border-color: #DFE1EA;
+  border-color: #dfe1ea;
 }
 
 .previous {
   padding-right: 17%;
 }
+
 .next {
-  padding-left:  17%;
- }
+  padding-left: 17%;
+}
+
+.select-contact {
+  width: 300px;
+  border: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #FFCE4F;
+  -webkit-appearance: none;
+  background-position-x: 95%;
+}
