@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { contactDetails } from '../../utils/const/contacts'
 
 export default function Footer() {
   return (
@@ -28,7 +29,7 @@ export default function Footer() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                +61 (2) 9264 6716
+                {contactDetails[0].number}
               </li>
               <li className="flex items-center">
                 <svg

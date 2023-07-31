@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { metaOffice } from '../../utils/const/links'
 import { InnerContainer } from '../templates/InnerContainer'
+import { contactDetails } from '../../utils/const/contacts'
 
 export default function ContactUs() {
   const [showContactUs, setShowContactUs] = useState(true)
@@ -54,40 +55,56 @@ export default function ContactUs() {
             >
               <div className="flex flex-row justify-start md:gap-4 xl:gap-[100px]">
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
-                  <Image
-                    src="/contactus/web.svg"
-                    sizes={48}
-                    alt=""
-                    width={48}
-                    height={48}
-                  />
-                  <p className="font-manrope font-bold text-xl text-white/50">
-                    Virtual office
-                  </p>
+                  <Link
+                    href={metaOffice}
+                    className="flex flex-row items-center"
+                  >
+                    <Image
+                      src="/contactus/web.svg"
+                      sizes={48}
+                      alt=""
+                      width={48}
+                      height={48}
+                    />
+                    <p className="font-manrope font-bold text-xl text-white/50">
+                      Virtual office
+                    </p>
+                  </Link>
+                </div>
+
+                <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
+                  <Link
+                    href="/contact-us"
+                    className="flex flex-row items-center"
+                  >
+                    <Image
+                      alt=""
+                      src="/contactus/phone.svg"
+                      sizes={48}
+                      width={48}
+                      height={48}
+                    />
+                    <p className="font-manrope font-bold text-xl text-white/50">
+                      Call us
+                    </p>
+                  </Link>
                 </div>
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
-                  <Image
-                    alt=""
-                    src="/contactus/phone.svg"
-                    sizes={48}
-                    width={48}
-                    height={48}
-                  />
-                  <p className="font-manrope font-bold text-xl text-white/50">
-                    Call us
-                  </p>
-                </div>
-                <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
-                  <Image
-                    alt=""
-                    src="/contactus/mail-outline.svg"
-                    sizes={48}
-                    width={48}
-                    height={48}
-                  />
-                  <p className="font-manrope font-bold text-xl text-white/50">
-                    Enquiry Form or Email
-                  </p>
+                  <Link
+                    href="/contact-us"
+                    className="flex flex-row items-center"
+                  >
+                    <Image
+                      alt=""
+                      src="/contactus/mail-outline.svg"
+                      sizes={48}
+                      width={48}
+                      height={48}
+                    />
+                    <p className="font-manrope font-bold text-xl text-white/50">
+                      Enquiry Form or Email
+                    </p>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-row justify-start pb-8 md:gap-4 xl:gap-[100px]">
@@ -109,30 +126,19 @@ export default function ContactUs() {
                   </Link>
                 </div>
                 <div className="w-1/3 flex flex-col items-start px-[10px] gap-7">
-                  <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                    <span className="font-semibold text-base text-white/50">
-                      Sydney
-                    </span>
-                    <span className="font-normal text-xl text-white">
-                      +61 2 9264 6716
-                    </span>
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                    <span className="font-semibold text-base text-white/50">
-                      Melbourne
-                    </span>
-                    <span className="font-normal text-xl text-white">
-                      +61 3 9602 2288
-                    </span>
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                    <span className="font-semibold text-base text-white/50">
-                      Brisbane
-                    </span>
-                    <span className="font-normal text-xl text-white">
-                      +61 7 3155 7970
-                    </span>
-                  </div>
+                  {contactDetails.map((item, index) => (
+                    <div
+                      key={`contact-${index}`}
+                      className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
+                    >
+                      <span className="font-semibold text-base text-white/50">
+                        {item.name}
+                      </span>
+                      <span className="font-normal text-xl text-white">
+                        {item.number}
+                      </span>
+                    </div>
+                  ))}
                 </div>
                 <div className="w-1/3 items-start">
                   <Link href="/contact-us">
@@ -260,30 +266,19 @@ export default function ContactUs() {
                   </span>
                   <div className="w-2/5 border-[1px] border-[#FFD15B]" />
                 </div>
-                <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                  <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
-                    Sydney
-                  </span>
-                  <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                    +61 2 9264 6716
-                  </span>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                  <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
-                    Melbourne
-                  </span>
-                  <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                    +61 3 9602 2288
-                  </span>
-                </div>
-                <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                  <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
-                    Brisbane
-                  </span>
-                  <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                    +61 7 3155 7970
-                  </span>
-                </div>
+                {contactDetails.map((item, index) => (
+                  <div
+                    key={`contactus-${index}`}
+                    className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
+                  >
+                    <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
+                      {item.name}
+                    </span>
+                    <span className="font-manrope font-normal text-sm sm:text-xl text-white">
+                      {item.number}
+                    </span>
+                  </div>
+                ))}
               </div>
               <div className="flex flex-col items-start w-full">
                 <div

@@ -76,7 +76,7 @@ export default function Services({ menuIndex, onChange }) {
                   as="div"
                   className={({ selected }) =>
                     classNames(
-                      'flex justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 h-[67px] border-b border-solid outline-none',
+                      'flex justify-start items-center hover:text-black md:pl-4 lg:pl-20 xl:pl-40 gap-3 h-[67px] border-b border-solid outline-none',
                       selected
                         ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                         : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
@@ -123,7 +123,7 @@ export default function Services({ menuIndex, onChange }) {
               <Disclosure.Button
                 className={({ open }) =>
                   classNames(
-                    'flex justify-start items-center gap-3 w-full h-[67px] pl-12 border-b border-solid outline-none',
+                    'flex justify-start hover:text-black items-center gap-3 w-full h-[67px] pl-12 border-b border-solid outline-none',
                     open
                       ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                       : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'

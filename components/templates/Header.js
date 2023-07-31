@@ -11,6 +11,7 @@ import Values from '../menus/Values'
 import Contact from '../menus/Contact'
 import useContentStore from '../../store/useContent.store'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const menus = [
   { id: 1, name: 'Services' },
@@ -31,17 +32,18 @@ const classNames = (...classes) => {
 
 export default function Header({ topMenuIndex, onTopMenuChange, active }) {
   const menuState = useContentStore((state) => state.menuState)
+  const router = useRouter();
   const onClick = (id) => {
     switch (id) {
       case 1:
-        if (menuState === 1) window.location.href = '/services'
-        if (menuState === 4) window.location.href = '/services'
+        if (menuState === 1) router.push('/services')
+        if (menuState === 4) router.push('/services')
         return
       case 2:
-        window.location.href = '/people'
+        router.push('/people')
         return
       case 5:
-        window.location.href = '/contact-us'
+        router.push('/contact-us')
         return
       default:
         return
