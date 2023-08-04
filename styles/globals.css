@@ -130,6 +130,13 @@
   background-size: cover;
 }
 
+.bg-metaoffice {
+  background: 
+    url(/meta-office-new.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .cover-bg {
   background: linear-gradient(
     37deg,

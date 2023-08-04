@@ -4,6 +4,7 @@ import { InnerContainer } from '../../templates/InnerContainer'
 import React from 'react'
 import { HiPhone } from 'react-icons/hi'
 import { IoArrowForwardOutline } from 'react-icons/io5'
+import { BsDoorOpenFill } from 'react-icons/bs'
 import Image from 'next/image'
 import Link from 'next/link'
 import { metaOffice } from '../../../utils/const/links'
@@ -14,6 +15,11 @@ const details = [
     description:
       'In-house and top tier patent & trade mark attorney experience to provide astute, commercial IP advice.',
   },
+  {
+    title: 'Protect your trade mark to secure your brand’s future.',
+    description:
+      'Your trade mark is the face of your business. It directs customers back to your company, the source of the quality of your products or services. A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, get in touch with us today.',
+  },
 ]
 
 const buttonText = [
@@ -21,7 +27,7 @@ const buttonText = [
   { title: 'Visit our Virtual Office' },
 ]
 
-export default function HeroBanner() {
+export default function HeroBanner({ landing, data }) {
   return (
     <Container className="z-4 0 md:px-20 xl:px-40 bg-hero-banner">
       <div className="container max-w-screen-2xl mx-auto h-full">
@@ -30,13 +36,16 @@ export default function HeroBanner() {
           <div className="md:w-[50%] xl:w-full flex flex-col items-center md:items-start gap-[70px] order-last md:order-first">
             <div className="w-full flex flex-col items-start justify-center gap-6">
               <span className="w-full font-lora font-semibold text-2xl sm:text-5xl lg:text-6xl xl:text-[59px] xl:leading-[120%] text-[#272940] text-center md:text-left px-10 md:px-0">
-                Innovate Boldly.
+                {landing ? data?.header[0]?.title : 'Innovate Boldly.'}
                 <br />
-                Protect Strategically.
+                {landing ? '' : 'Protect Strategically.'}
               </span>
-              <span className="font-manrope font-semibold text-sm sm:text-2xl text-[#272940]/50 text-center md:text-left px-14 sm:px-40 md:px-0">
-                {details[0].description}
-              </span>
+              <p
+                style={{ whiteSpace: 'pre-line' }}
+                className="font-manrope font-semibold text-sm sm:text-2xl text-[#272940]/50 text-center md:text-left px-14 sm:px-40 md:px-0"
+              >
+                {landing ? data?.header[0]?.body : details[0].description}
+              </p>
             </div>
             <div className="flex sm:flex-col md:flex-row md:justify-center md:items -center gap-6 md:gap-6">
               <Link href="/contact-us">
@@ -70,10 +79,7 @@ export default function HeroBanner() {
                     }}
                   >
                     <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
-                      <IoArrowForwardOutline
-                        className="w-3 h-3 sm:w-5 sm:h-5 md:w-4 md:h-4"
-                        size={16}
-                      />
+                      <Image src="/door.svg" alt="" width={48} height={48} />
                     </div>
                     <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
                       {buttonText[1].title}
@@ -95,7 +101,9 @@ export default function HeroBanner() {
           </div>
           <Image
             src="/professionalProfiles/IP-people.jpg"
-            className="md:h-[300px] md:w-full xl:h-full xl:w-full object-cover md:pl-5"
+            className={`${
+              landing ? 'pt-10' : ''
+            } md:h-[300px] md:w-full xl:h-full xl:w-full object-cover md:pl-5`}
             alt=""
             width={442}
             height={332}
