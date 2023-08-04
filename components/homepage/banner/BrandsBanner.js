@@ -37,7 +37,7 @@ export default function BrandsBanner({ landing }) {
         <InnerContainer>
           <div className="w-full flex flex-wrap flex-rows items-center justify-center">
             {logos?.map((banner) => (
-              <div className={landing ? 'px-10 pb-10' : ''}>
+              <div key={banner.id} className={landing ? 'px-10 pb-10' : ''}>
                 <Image
                   key={banner.id}
                   className="object-cover"
