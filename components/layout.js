@@ -15,7 +15,7 @@ export default function Layout({
   navData,
   defaultLayout,
   allPosts: initialAllPosts,
-  preview = true,
+  preview,
 }) {
 
   const { data: allPosts } = usePreviewSubscription(indexQueryTop3, {
