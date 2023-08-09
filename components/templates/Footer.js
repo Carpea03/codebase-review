@@ -107,13 +107,13 @@ const Footer = ({ page }) => {
                 <Subject title="Contact Us" />
                 <div className="flex flex-col items-start gap-6">
                   {contact.map((item) => (
-                    <>
+                    <div key={`contact-${item.title}`}>
                       <Item
-                        key={item.title}
+                        key={`contact-${item.title}`}
                         title={item.title}
                         content={item.content}
                       />
-                    </>
+                    </div>
                   ))}
                 </div>
                 <div className="w-full h-[290px] sm:h-[650px] md:w-[240px] md:h-[200px] lg:w-[290px] lg:h-[250px]">
@@ -138,7 +138,7 @@ const Footer = ({ page }) => {
                   <Subject title="Company" />
                   <div className="flex flex-col items-start gap-6">
                     {company.map((item) => (
-                      <Link href={item.href} key={item.title}>
+                      <Link href={item.href} key={`company-${item.title}`}>
                         <Item title={item.title} page={page} />
                       </Link>
                     ))}
@@ -164,7 +164,10 @@ const Footer = ({ page }) => {
                   <Subject title="More to explore" />
                   <div className="flex flex-col items-start gap-6">
                     {moreToExplore.map((item) => (
-                      <Link href={item.href} key={item.title}>
+                      <Link
+                        href={item.href}
+                        key={`moreToExplore-${item.title}`}
+                      >
                         <Item title={item.title} page={page} />
                       </Link>
                     ))}
@@ -179,7 +182,7 @@ const Footer = ({ page }) => {
                   <div className="grid grid-rows-2 xl:grid-rows-1 grid-flow-col items-center gap-7 relative">
                     {logos.map((item) => (
                       <Image
-                        key={item}
+                        key={`logos-${item}`}
                         src={'/footer/marks/' + item}
                         alt=""
                         width={100}
@@ -208,7 +211,7 @@ const Footer = ({ page }) => {
                 <div className="grid grid-cols-5 items-center gap-7 sm:gap-16">
                   {logos.map((item) => (
                     <Image
-                      key={item}
+                      key={`logo-${item}`}
                       src={'/footer/marks/' + item}
                       alt=""
                       width={100}

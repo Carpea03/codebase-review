@@ -29,7 +29,7 @@ const slides = [
       '“ Infringement of third party trade marks – Hells Angels and Redbubble “',
   },
 ]
-export default function IpNewsBlog({ news }) {
+export default function IpNewsBlog({ news, isblog }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
   const prevSlide = () => {
     const isFirstSlide = currentSlideIndex === 0
@@ -45,11 +45,17 @@ export default function IpNewsBlog({ news }) {
 
   return (
     <Container>
-      <div className="py-10">
-        <TitleContainer  description="IP Front™ Articles" />
-      </div>
-      <div className="w-full flex flex-col items-start bg-ipNewsLog-content">
-        <NewsBlog data={news} />
+      {!isblog && (
+        <div className="py-10">
+          <TitleContainer description="IP Front™ Articles" />
+        </div>
+      )}
+      <div
+        className={`w-full flex flex-col items-start ${
+          isblog ? '' : 'bg-ipNewsLog-content'
+        }`}
+      >
+        <NewsBlog data={news} isblog={isblog} />
       </div>
     </Container>
   )

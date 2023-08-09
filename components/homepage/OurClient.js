@@ -105,7 +105,7 @@ export const OurClient = ({ state }) => {
               <div className="grid grid-cols-4 gap-1 sm:gap-4 md:gap-5 w-full items-center justify-center">
                 {brands[state].supportedBrand.map((brand) => (
                   <div
-                    key={brand.id}
+                    key={`brand-${brand.id}`}
                     className="flex justify-center items-center bg-white"
                     style={{
                       boxShadow:

@@ -16,10 +16,14 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
     enabled: preview,
   })
   const [heroPost, ...morePosts] = allPosts || []
+  const data = [
+    { title: 'Articles', link: '/ip-news' },
+  ]
+
   return (
     <>
-      <Layout preview={preview} bannerData={heroPost.author}>
-        {morePosts.length > 0 && <Content posts={morePosts} />}
+      <Layout preview={preview} defaultLayout={true} navData={data}>
+        <div className='mt-10'>{morePosts.length > 0 && <Content posts={morePosts} />}</div>
       </Layout>
     </>
   )

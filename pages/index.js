@@ -13,7 +13,7 @@ import { OurServices } from '../components/homepage/OurServices'
 import { VisitVirtualOffice } from '../components/homepage/VisitVirtualOffice'
 import ProfessionalProfiles from '../components/homepage/ProfessionalProfiles'
 import useContentStore from '../store/useContent.store'
-import { indexQuery } from '../lib/queries'
+import { indexQueryTop3 } from '../lib/queries'
 import { usePreviewSubscription } from '../lib/sanity'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
 
@@ -27,13 +27,13 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
   const [subMenu, setSubMenu] = useState(0)
   const [subMenu2, setSubMenu2] = useState(0)
 
-  const { data: allPosts } = usePreviewSubscription(indexQuery, {
+  const { data: allPosts } = usePreviewSubscription(indexQueryTop3, {
     initialData: initialAllPosts,
     enabled: preview,
   })
 
   const [heroPost, ...morePosts] = allPosts || []
-  const reduceMorePost = morePosts.slice(0, 3)
+  const reduceMorePost = morePosts
 
   const onChangeMenu = useCallback((index) => {
     const selectedId = localStorage.getItem('selected-id')
@@ -145,7 +145,7 @@ export default function Home({ allPosts: initialAllPosts, preview }) {
 }
 
 export async function getStaticProps({ preview = false }) {
-  const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery))
+  const allPosts = overlayDrafts(await getClient(preview).fetch(indexQueryTop3))
   return {
     props: { allPosts, preview },
   }

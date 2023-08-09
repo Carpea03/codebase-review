@@ -146,7 +146,7 @@ export default function Profile() {
   const [profile, setProfile] = useState(profiles['chris baxter'])
 
   useEffect(() => {
-    console.log(query)
+    // console.log(query)
     if (query.data != null) {
       const profile = profiles[query.data.toLowerCase()]
       setProfile(profile)
