@@ -19,6 +19,7 @@ export default function Content({ posts }) {
   const pageCount = Math.ceil(posts.length / itemsPerPage)
 
   const handlePageClick = (event) => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     const newOffset = (event.selected * itemsPerPage) % posts.length
     setItemOffset(newOffset)
   }

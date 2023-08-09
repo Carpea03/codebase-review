@@ -14,17 +14,18 @@ export default function Layout({
   bannerData,
   navData,
   defaultLayout,
+  allPosts: initialAllPosts,
+  preview = true,
 }) {
-  const [reduceMorePost, setReduceMorePost] = useState()
 
-  useEffect(() => {
-    init()
-  }, [])
+  const { data: allPosts } = usePreviewSubscription(indexQueryTop3, {
+    initialData: initialAllPosts,
+    enabled: preview,
+  })
 
-  const init = async () => {
-    const allPosts = overlayDrafts(await getClient(false).fetch(indexQueryTop3))
-    setReduceMorePost(allPosts)
-  }
+  const [heroPost, ...morePosts] = allPosts || []
+  const reduceMorePost = morePosts
+
 
   return (
     <>
@@ -65,4 +66,11 @@ export default function Layout({
       <Footer />
     </>
   )
+}
+
+export async function getStaticProps({ preview = false }) {
+  const allPosts = overlayDrafts(await getClient(preview).fetch(indexQueryTop3))
+  return {
+    props: { allPosts, preview },
+  }
 }
