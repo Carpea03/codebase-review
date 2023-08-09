@@ -5,15 +5,24 @@ import Link from 'next/link'
 import { urlForImage } from '../../lib/sanity'
 import Date from '../../components/blog/date'
 
-export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
+export default function NewsBlog({
+  data,
+  isblog,
+  btnTitle = 'Read More Articles',
+}) {
   return (
     <div className="w-full flex flex-row items-start justify-center sm:pb-10">
       <div className="flex flex-col gap-5 sm:gap-10">
+        {isblog && (
+          <div className="font-lora text-2xl leading-normal font-medium pt-10 pl-5 sm:pl-10 sm:ml-5 md:pl-10 md:ml-5">
+            <div>Related Articles</div>
+          </div>
+        )}
         <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-14">
-          {data?.map((n,index) => (
+          {data?.map((n, index) => (
             <Link key={n?.author?.name} href={`/ip-news/${n?.slug}`}>
               <div
-                key={n?.author?.name}
+                key={`items-${n?.author?.name}-${index}`}
                 className="flex flex-col items-start bg-white w-full md:max-w-[362px] cursor-pointer"
                 style={{
                   boxShadow:
@@ -72,9 +81,18 @@ export default function NewsBlog({ data, btnTitle = 'Read More Articles' }) {
                       {n?.author?.name}
                     </span>
                   </div>
-                  <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
-                    {n?.title}
-                  </span>
+                  <div
+                    style={{
+                      height: 85,
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                    className="text-ellipsis"
+                  >
+                    <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
+                      {n?.title}
+                    </span>
+                  </div>
                   <span className="font-manrope font-semibold text-sm sm:text-base text-[#ADAEBD]">
                     <Date dateString={n?.date} />
                   </span>

@@ -386,6 +386,14 @@
   padding-left: 17%;
 }
 
+.previous1 {
+  padding-right: 0;
+}
+
+.next1 {
+  padding-left: 0;
+}
+
 .select-contact {
   width: 300px;
   border: none;

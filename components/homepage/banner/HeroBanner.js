@@ -57,12 +57,7 @@ export default function HeroBanner({ landing, data }) {
                         '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
                     }}
                   >
-                    <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
-                      <HiPhone
-                        className="w-[9px] h-[9px] sm:w-5 sm:h-5"
-                        color="#404266"
-                      />
-                    </div>
+                   <Image src="/telephone.svg" alt="" width={48} height={48} />
                     <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white">
                       {buttonText[0].title}
                     </span>
@@ -78,9 +73,7 @@ export default function HeroBanner({ landing, data }) {
                         '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
                     }}
                   >
-                    <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
-                      <Image src="/door.svg" alt="" width={48} height={48} />
-                    </div>
+                    <Image src="/door.svg" alt="" width={48} height={48} />
                     <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
                       {buttonText[1].title}
                     </span>

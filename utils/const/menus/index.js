@@ -94,11 +94,11 @@ export const cards = [
 export const subMenusValues = [
   [
     { title: 'About us', bold: true, division: false, href: '' },
-    { title: 'Our values', bold: false, division: false, href: '' },
-    { title: 'Our philosophy', bold: false, division: false, href: '' },
-    { title: 'Capital partners', bold: false, division: false, href: '' },
-    { title: 'Awards and recognition', bold: false, division: false, href: '' },
-    { title: 'Client testimonials', bold: false, division: false, href: '' },
+    { title: 'Our values', bold: false, division: false, href: '/living-our-values' },
+    { title: 'Our philosophy', bold: false, division: false, href: '/baxter-ip-philosophy' },
+    { title: 'Capital partners', bold: false, division: false, href: '/capital-partners' },
+    { title: 'Awards and recognition', bold: false, division: false, href: '/awards-and-recognition' },
+    { title: 'Client testimonials', bold: false, division: false, href: '/testimonials' },
     { title: '', bold: false, division: true, href: '' },
   ],
 ]
@@ -106,30 +106,30 @@ export const subMenusValues = [
 export const subMenusJoinUs = [
   [
     { title: 'Join us', bold: true, division: false, href: '' },
-    { title: 'IP careers', bold: false, division: false, href: '' },
+    { title: 'IP careers', bold: false, division: false, href: '/ip-careers' },
     {
       title: 'The role of Australian patent attorneys',
       bold: false,
       division: false,
-      href: '',
+      href: '/role-of-australian-patent-attorneys',
     },
     {
       title: 'How to become a patent attorney',
       bold: false,
       division: false,
-      href: '',
+      href: '/how-to-become-a-patent-attorney',
     },
     {
       title: 'The role of Australian trade mark attorneys',
       bold: false,
       division: false,
-      href: '',
+      href: '/role-of-australian-trade-mark-attorneys',
     },
     {
       title: 'How to become a trade mark attorney',
       bold: false,
       division: false,
-      href: '',
+      href: '/how-to-become-a-trade-mark-attorney',
     },
     { title: '', bold: false, division: true, href: '' },
   ],

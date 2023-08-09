@@ -7,15 +7,9 @@ import { useState, useEffect } from 'react'
 
 export default function Content({ posts }) {
   const category = [
-    { title: 'Case studies', total: 20 },
-    { title: 'Chemical, Biotech, Pharmaceutical Patents', total: 20 },
-    { title: 'Designs', total: 20 },
-    { title: 'Case studies', total: 20 },
-    { title: 'Chemical, Biotech, Pharmaceutical Patents', total: 20 },
-    { title: 'Designs', total: 20 },
-    { title: 'Case studies', total: 20 },
-    { title: 'Chemical, Biotech, Pharmaceutical Patents', total: 20 },
-    { title: 'Designs', total: 20 },
+    { title: 'General ', total: 115 },
+    { title: 'Patents', total: 20 },
+    { title: 'Trade marks', total: 20 },
   ]
   const itemsPerPage = 6
   const [itemOffset, setItemOffset] = useState(0)
@@ -92,7 +86,7 @@ export default function Content({ posts }) {
           ))}
         </div>
       </div>
-      <div className="mt-10 md:px-45">
+      <div className="hidden xl:flex mt-10 md:px-45">
         <ReactPaginate
           breakLabel="..."
           nextLabel="next >"
@@ -109,6 +103,26 @@ export default function Content({ posts }) {
           breakLinkClassName="break-dot"
           previousClassName="previous"
           nextClassName="next"
+        />
+      </div>
+      <div className=" xl:hidden mt-10 md:px-45">
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="next >"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={1}
+          pageCount={pageCount}
+          marginPagesDisplayed={3}
+          previousLabel="< prev"
+          renderOnZeroPageCount={null}
+          containerClassName="pagination"
+          pageLinkClassName="page-num"
+          previousLinkClassName="page-num"
+          nextLinkClassName="page-num"
+          activeLinkClassName="active"
+          breakLinkClassName="break-dot"
+          previousClassName="previous1"
+          nextClassName="next1"
         />
       </div>
     </section>
