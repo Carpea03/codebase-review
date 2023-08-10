@@ -90,9 +90,7 @@ export default function Content({ posts }) {
 
   const pagination = (data) => {
     const endOffset = itemOffset + itemsPerPage
-    const currentItems = data
-      ?.sort(() => Math.random() - 0.5)
-      ?.slice(itemOffset, endOffset)
+    const currentItems = data?.slice(itemOffset, endOffset)
     setCurrentItems(currentItems)
     const pageCount = Math.ceil(data?.length / itemsPerPage)
     setPageCount(pageCount)
