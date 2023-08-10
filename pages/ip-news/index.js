@@ -9,6 +9,7 @@ import { indexQuery } from '../../lib/queries'
 import { usePreviewSubscription } from '../../lib/sanity'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
 import Content from '../../components/articles/content'
+import { useState, useEffect } from 'react'
 
 export default function Index({ allPosts: initialAllPosts, preview }) {
   const { data: allPosts } = usePreviewSubscription(indexQuery, {
@@ -16,14 +17,16 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
     enabled: preview,
   })
   const [heroPost, ...morePosts] = allPosts || []
-  const data = [
-    { title: 'Articles', link: '/ip-news' },
-  ]
+  const data = [{ title: 'Articles', link: '/ip-news' }]
 
   return (
     <>
       <Layout preview={preview} defaultLayout={true} navData={data}>
-        <div className='mt-10'>{morePosts.length > 0 && <Content posts={morePosts} />}</div>
+        <div className="mt-10">
+          {morePosts.length > 0 && (
+            <Content posts={morePosts} />
+          )}
+        </div>
       </Layout>
     </>
   )
