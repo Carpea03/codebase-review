@@ -23,10 +23,9 @@ const allIndustries = 'f9106bb6-b232-4f2c-8923-96a3414c58b0'
 
 export default function Content({ posts }) {
   const [filteredData, setFilteredData] = useState()
-  const [currentItems, setCurrentItems] = useState()
-  const [pageCount, setPageCount] = useState()
   const itemsPerPage = 6
   const [itemOffset, setItemOffset] = useState(0)
+  
   const generalTotal = posts
     .map((item) => item.category)
     .filter((val) => val[0]._ref === general).length
@@ -85,16 +84,13 @@ export default function Content({ posts }) {
 
     const newData = generalTags.concat(industryTags)
     setFilteredData(newData)
-    pagination(newData)
+ 
   }
 
-  const pagination = (data) => {
     const endOffset = itemOffset + itemsPerPage
-    const currentItems = data?.slice(itemOffset, endOffset)
-    setCurrentItems(currentItems)
-    const pageCount = Math.ceil(data?.length / itemsPerPage)
-    setPageCount(pageCount)
-  }
+    const currentItems = filteredData?.slice(itemOffset, endOffset)
+    const pageCount = Math.ceil(filteredData?.length / itemsPerPage)
+
 
   const filterHelper = (morePosts, tags) => {
     const resultTags = morePosts.map((item) => {
