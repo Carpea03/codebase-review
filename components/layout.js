@@ -30,9 +30,7 @@ export default function Layout({
   }, [])
 
   const init = async () => {
-
     const allPosts = overlayDrafts(await getClient(false).fetch(indexQueryTop3))
-    console.log("allPosts",allPosts)
     setReduceMorePost(allPosts)
   }
 

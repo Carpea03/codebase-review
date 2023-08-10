@@ -84,7 +84,6 @@ export default function Content({ posts }) {
     }
 
     const newData = generalTags.concat(industryTags)
-    console.log('newData', newData)
     setFilteredData(newData)
     pagination(newData)
   }

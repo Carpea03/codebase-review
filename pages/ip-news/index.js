@@ -19,7 +19,6 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
   const [heroPost, ...morePosts] = allPosts || []
   const data = [{ title: 'Articles', link: '/ip-news' }]
 
-
   return (
     <>
       <Layout preview={preview} defaultLayout={true} navData={data}>
