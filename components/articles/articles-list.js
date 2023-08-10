@@ -32,7 +32,7 @@ export default function ArticlesList({
                 {title}
               </Link>
             </h3>
-            <div className="mb-4 text-lg">
+            <div className="mb-4 text-xl text-[#ADAEBD] font-manrope">
               <Date dateString={date} />
             </div>
             <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>

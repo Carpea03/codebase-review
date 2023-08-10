@@ -17,23 +17,24 @@ export default function Layout({
   allPosts: initialAllPosts,
   preview,
 }) {
-  const { data: allPosts } = usePreviewSubscription(indexQueryTop3, {
-    initialData: initialAllPosts,
-    enabled: (preview = true),
-  })
-  const [heroPost, ...morePosts] = allPosts || []
-  const reduceMorePost = morePosts
-  // const [reduceMorePost, setReduceMorePost] = useState()
+  // const { data: allPosts } = usePreviewSubscription(indexQueryTop3, {
+  //   initialData: initialAllPosts,
+  //   enabled: (preview = true),
+  // })
+  // const [heroPost, ...morePosts] = allPosts || []
+  // const reduceMorePost = morePosts
+  const [reduceMorePost, setReduceMorePost] = useState()
 
-  // useEffect(() => {
-  //   init()
-  // }, [])
+  useEffect(() => {
+    init()
+  }, [])
 
-  // const init = async () => {
+  const init = async () => {
 
-  //   const allPosts = overlayDrafts(await getClient(false).fetch(indexQueryTop3))
-  //   setReduceMorePost(allPosts)
-  // }
+    const allPosts = overlayDrafts(await getClient(false).fetch(indexQueryTop3))
+    console.log("allPosts",allPosts)
+    setReduceMorePost(allPosts)
+  }
 
   return (
     <>
@@ -79,14 +80,14 @@ export default function Layout({
 // This function gets called at build time on server-side.
 // It may be called again, on a serverless function, if
 // revalidation is enabled and a new request comes in
-export async function getStaticProps({ preview = false }) {
-  const allPosts = overlayDrafts(await getClient(preview).fetch(indexQueryTop3))
-  return {
-    props: { allPosts, preview },
-    // If webhooks isn't setup then attempt to re-generate in 10 second intervals
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 10,
-  }
-}
+// export async function getStaticProps({ preview = false }) {
+//   const allPosts = overlayDrafts(await getClient(preview).fetch(indexQueryTop3))
+//   return {
+//     props: { allPosts, preview },
+//     // If webhooks isn't setup then attempt to re-generate in 10 second intervals
+//     // Next.js will attempt to re-generate the page:
+//     // - When a request comes in
+//     // - At most once every 10 seconds
+//     revalidate: 10,
+//   }
+// }

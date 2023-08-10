@@ -10,6 +10,7 @@ export default function Card ({
   excerpt,
   author,
   slug,
+  type
 }) {
   return (
     <div>
@@ -33,8 +34,8 @@ export default function Card ({
               {title}
             </Link>
           </h3>
-          <div className="mb-4 text-lg">
-            <Date dateString={date} />
+          <div className="text-xl mb-4 text-[#ADAEBD] font-manrope">
+          {type} · <Date dateString={date} />
           </div>
           <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
         </div>
