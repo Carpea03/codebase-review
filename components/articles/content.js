@@ -25,7 +25,7 @@ export default function Content({ posts }) {
   const [filteredData, setFilteredData] = useState()
   const itemsPerPage = 6
   const [itemOffset, setItemOffset] = useState(0)
-  
+
   const generalTotal = posts
     .map((item) => item.category)
     .filter((val) => val[0]._ref === general).length
@@ -84,13 +84,11 @@ export default function Content({ posts }) {
 
     const newData = generalTags.concat(industryTags)
     setFilteredData(newData)
- 
   }
 
-    const endOffset = itemOffset + itemsPerPage
-    const currentItems = filteredData?.slice(itemOffset, endOffset)
-    const pageCount = Math.ceil(filteredData?.length / itemsPerPage)
-
+  const endOffset = itemOffset + itemsPerPage
+  const currentItems = filteredData?.slice(itemOffset, endOffset)
+  const pageCount = Math.ceil(filteredData?.length / itemsPerPage)
 
   const filterHelper = (morePosts, tags) => {
     const resultTags = morePosts.map((item) => {
