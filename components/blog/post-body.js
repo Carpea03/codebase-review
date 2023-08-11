@@ -3,6 +3,7 @@ import { PortableText } from '@portabletext/react'
 import { getImageDimensions } from '@sanity/asset-utils'
 import { urlForImage } from '../../lib/sanity'
 import Image from 'next/image'
+import Avatar from '../articles/profile-avatar'
 
 const SanityImage = ({ value, isInline }) => {
   const { width, height } = getImageDimensions(value)
@@ -33,9 +34,9 @@ const SanityImage = ({ value, isInline }) => {
   )
 }
 
-export default function PostBody({ content }) {
+export default function PostBody({ content, post }) {
   return (
-    <div className={`mx-auto max-w-2xl ${markdownStyles.markdown}`}>
+    <div>
       <PortableText
         value={content}
         components={{

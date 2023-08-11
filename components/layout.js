@@ -1,6 +1,7 @@
 import Header from '../components/templates/Header'
 import Footer from '../components/templates/Footer'
 import { InnerContainer } from '../components/templates/InnerContainer'
+import PostBody from '../components/blog/post-body'
 import Banner from '../components/articles/banner'
 import IpNewsBlog from '../components/homepage/IpNewsBlog'
 import { indexQueryTop3 } from '../lib/queries'
@@ -10,6 +11,7 @@ import { useState, useEffect, useCallback } from 'react'
 import Nav from '../components/Nav'
 
 export default function Layout({
+  articlesBg,
   children,
   bannerData,
   navData,
@@ -37,9 +39,10 @@ export default function Layout({
   return (
     <>
       <Header active={'Articles'} />
-      {bannerData && <Banner author={bannerData} />}
-
-      <div className="bg-white w-full flex  item-center absolute h-30 ">
+      <div
+        style={{ zIndex: 10 }}
+        className="bg-white w-full flex item-center absolute h-30 z-100"
+      >
         <InnerContainer>
           <div className="flex flex-col">
             <div className=" md:flex flex-col  xl:px-[120px]">
@@ -50,19 +53,44 @@ export default function Layout({
           </div>
         </InnerContainer>
       </div>
-      {!defaultLayout && (
-        <div className="bg-ipNewsLog-content md:px-20">
-          <InnerContainer>
-            <div className="flex flex-col">
-              <div className=" md:flex flex-col items-center xl:px-[120px] pt-10">
-                <main className=" bg-white format max-w-none mx-auto md:mt-20 mb-20 pl-10 pr-10 pb-10">
-                  {children}
-                </main>
-              </div>
-            </div>
-          </InnerContainer>
-          <IpNewsBlog news={reduceMorePost?.slice(0, 3)} isblog={true} />
+      {bannerData && (
+        <div className="z-0">
+          <Banner />
         </div>
+      )}
+      {!defaultLayout && (
+        <>
+          <div
+            className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} `}
+          >
+            <InnerContainer>
+              <div className="flex flex-col md:px-20">
+                <div
+                  style={{ zIndex: 10 }}
+                  className={`${
+                    bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
+                  } md:flex flex-col  items-center xl:px-[120px] pt-10`}
+                >
+                  <main
+                    style={{
+                      zIndex: 0,
+                    }}
+                    className={` ${
+                      bannerData ? 'py-80 mt-20' : 'bg-white'
+                    } format max-w-none mx-auto pl-10 pr-10 pb-10
+                  ${bannerData ? 'mb-20' : 'md:mt-20 mb-20 '}
+                  `}
+                  >
+                    {children}
+                  </main>
+                </div>
+              </div>
+            </InnerContainer>
+            <>
+              <IpNewsBlog news={reduceMorePost?.slice(0, 3)} isblog={true} />
+            </>
+          </div>
+        </>
       )}
 
       {defaultLayout && (
