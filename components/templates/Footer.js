@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FiSearch } from 'react-icons/fi'
-import { FaMapMarkerAlt } from 'react-icons/fa'
+import { BsFillChatSquareFill } from "react-icons/bs";
 import { Container } from './Container'
 import { TiSocialLinkedin } from 'react-icons/ti'
 import { metaOffice } from '../../utils/const/links'
@@ -124,11 +124,32 @@ const Footer = ({ page }) => {
                     }}
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
+                    center={{lat: -33.86901095698735, lng: 151.2089059548967}}
                   >
                     <AnyReactComponent
                       lat={-33.86901095698735}
                       lng={151.2089059548967}
-                      icon={<FaMapMarkerAlt color="red" size={30} />}
+                      icon={<>
+                      <BsFillChatSquareFill color="white" size={30} style={{
+                        width: "50px",
+                        height: "50px",
+                        position: "relative",
+                        top: "-50px",
+                        left: "-25px",
+                      }} />
+                      <div style={{
+                        width: "50px",
+                        height: "50px",
+                        position: "absolute",
+                        top: "-50px",
+                        left: "-18px",
+                      }}>
+                        <Image
+                        src="/contactus/logo-marker.svg"
+                        width={35}
+                        height={35}
+                        alt=""
+                      /></div></>}
                     />
                   </GoogleMapReact>
                 </div>

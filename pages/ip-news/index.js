@@ -18,6 +18,7 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
   })
   const [heroPost, ...morePosts] = allPosts || []
   const data = [{ title: 'Articles', link: '/ip-news' }]
+  console.log("morePosts",morePosts)
 
   return (
     <>

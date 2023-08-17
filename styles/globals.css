@@ -434,3 +434,7 @@
   -webkit-appearance: none;
   background-position-x: 95%;
 }
+
+input[type="checkbox"] {
+  accent-color: #FFCE4F;
+}
