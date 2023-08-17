@@ -1,9 +1,9 @@
-import React, { useState, useEffect, forwardRef, useRef } from 'react'
+import React, { useState, useEffect, forwardRef, useRef, useImperativeHandle } from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import Button from '../../../components/buttons/Button'
 import GoogleMapReact from 'google-map-react'
-import { FaMapMarkerAlt } from 'react-icons/fa'
+import { BsFillChatSquareFill } from "react-icons/bs";
 import { API_KEY } from '../../../utils/const/apiKey'
 import { FiChevronUp, FiCalendar } from 'react-icons/fi'
 import Image from 'next/image'
@@ -32,33 +32,56 @@ const enquiries = [
   { id: 4, title: 'Opposition / Infringement / Disputes' },
 ]
 
-const InputField = ({
-  className,
-  fieldName,
-  placeHolder,
-  isRequired = false,
-  inputHeight = '75px',
-  onChange,
-}) => {
-  return (
-    <div
-      className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}
-    >
-      <div className="flex flex-row gap-2">
-        <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
-          {fieldName}
-        </span>
-        <span className="text-[#E42B15]">{isRequired ? '*' : ''}</span>
+const assistances = [
+  { id: 1, title: 'Commercialisation advice' },
+  { id: 2, title: 'Product design' },
+  { id: 3, title: 'Software development' },
+  { id: 4, title: 'Hardware development' },
+  { id: 5, title: 'Website' },
+  { id: 6, title: 'Presentation graphics' },
+  { id: 7, title: 'Information memorandum' },
+  { id: 8, title: 'IP Valuation' },
+]
+
+const InputField = forwardRef(function InputField(
+  {
+    className,
+    fieldName,
+    placeHolder,
+    isRequired = false,
+    inputHeight = '75px',
+    onChange
+  }, ref) {
+    const inputRef = useRef(null);
+
+    useImperativeHandle(ref, () => {
+      return {
+        focus() {
+          inputRef.current.focus();
+        }
+      };
+    }, []);
+    
+    return (
+      <div
+        className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}
+      >
+        <div className="flex flex-row gap-2">
+          <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
+            {fieldName}
+          </span>
+          <span className="text-[#E42B15]">{isRequired ? '*' : ''}</span>
+        </div>
+        <input
+          type="text"
+          className={`w-full h-[51px] sm:h-[101px] md:h-[${inputHeight}] text-sm sm:text-2xl md:text-xl p-4 sm:p-8 md:p-6 rounded border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0`}
+          placeholder={placeHolder}
+          onChange={onChange}
+          ref={inputRef}
+        />
       </div>
-      <input
-        type="text"
-        className={`w-full h-[51px] sm:h-[101px] md:h-[${inputHeight}] text-sm sm:text-2xl md:text-xl p-4 sm:p-8 md:p-6 rounded border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0`}
-        placeholder={placeHolder}
-        onChange={onChange}
-      />
-    </div>
-  )
-}
+    )
+  })
 
 const Checkbox = ({ title }) => {
   return (
@@ -93,6 +116,8 @@ export default function Contact({ contactDetails }) {
   const router = useRouter()
   const firstNameFocus = useRef(null)
   const lastNameFocus = useRef(null)
+  const phoneNumberFocus = useRef(null)
+  const emailFocus = useRef(null)
   const [selectOptional, setSelectOptional] = useState(true)
   const [startDate, setStartDate] = useState(new Date())
   const [openMap, setOpenMap] = useState(true)
@@ -155,10 +180,20 @@ export default function Contact({ contactDetails }) {
   }
 
   const onSubmit = () => {
-    if (!firstName && !lastName && !phoneNumber && !email) {
+    
+    if (!firstName || !lastName || !phoneNumber || !email) {
+      if (!firstName)
+        firstNameFocus.current.focus()
+      else if (!lastName)
+        lastNameFocus.current.focus()
+      else if (!phoneNumber)
+        phoneNumberFocus.current.focus()
+      else if (!email)
+        emailFocus.current.focus()
+
       return false
-    }
-    router.push('/thank-you')
+    } else
+      router.push('/thank-you')
   }
 
   return (
@@ -170,34 +205,37 @@ export default function Contact({ contactDetails }) {
         }}
       >
         <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
-          Get In Touch
+          Send us a message
         </span>
         <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
           <InputField
             onChange={(e) => setFirstName(e.target.value)}
-            ref={firstNameFocus}
             type="text"
             fieldName="First Name"
             placeHolder="First Name"
             isRequired={firstName.length === 0 ? true : false}
+            ref={firstNameFocus}
           />
           <InputField
             onChange={(e) => setLastName(e.target.value)}
             fieldName="Last Name"
             placeHolder="Last Name"
             isRequired={lastName.length === 0 ? true : false}
+            ref={lastNameFocus}
           />
           <InputField
             onChange={(e) => setPhoneNumber(e.target.value)}
             fieldName="Phone Number"
             placeHolder="Phone Number"
             isRequired={phoneNumber.length === 0 ? true : false}
+            ref={phoneNumberFocus}
           />
           <InputField
             onChange={(e) => checkEmailValid(e.target.value)}
             fieldName="Email Address"
             placeHolder="Your@email.com"
             isRequired={email.length === 0 ? true : isValidEmail ? false : true}
+            ref={emailFocus}
           />
           <div className="flex flex-col items-start justify-center gap-4 w-full">
             <div className="flex flex-row gap-2">
@@ -239,7 +277,7 @@ export default function Contact({ contactDetails }) {
               ))}
             </select>
           </div>
-          <CheckBoxBlock title="An enquiry about:" items={enquiries} />
+          <CheckBoxBlock title="Enquiry about:" items={enquiries} />
           <div className="flex flex-col items-start justify-center px-6 gap-4 w-full cursor-pointer">
             <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
               Do you have a preferred time to get a call from us?
@@ -253,6 +291,7 @@ export default function Contact({ contactDetails }) {
               customInput={<CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />}
             />
           </div>
+          <CheckBoxBlock title="Would you also like assistance with:" items={assistances} />
         </div>
         <Button
           onClick={() => onSubmit()}
@@ -295,11 +334,32 @@ export default function Contact({ contactDetails }) {
               }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
+              center={{lat: contactDetails?.lat, lng: contactDetails?.lng}}
             >
               <AnyReactComponent
                 lat={contactDetails?.lat}
                 lng={contactDetails?.lng}
-                icon={<FaMapMarkerAlt color="red" size={30} />}
+                icon={<>
+                <BsFillChatSquareFill color="white" size={30} style={{
+                  width: "50px",
+                  height: "50px",
+                  position: "relative",
+                  top: "-50px",
+                  left: "-25px",
+                }} />
+                <div style={{
+                  width: "50px",
+                  height: "50px",
+                  position: "absolute",
+                  top: "-50px",
+                  left: "-18px",
+                }}>
+                  <Image
+                  src="/contactus/logo-marker.svg"
+                  width={35}
+                  height={35}
+                  alt=""
+                /></div></>}
               />
             </GoogleMapReact>
           </div>
