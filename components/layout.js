@@ -101,15 +101,19 @@ export default function Layout({
         <>
           <div className={`bg-ipNewsLog-content`}>
             <InnerContainer>
-              <div className="flex flex-col px-5 md:px-20">
+              <div className="flex flex-col px-5 md:px-20 pt-10">
                 <div
-                  style={{ zIndex: 10, }}
+                  style={{ zIndex: 10 }}
                   className={`${
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
                   } md:flex flex-col  justify-center items-center xl:px-[120px] pt-10`}
                 >
-                  <div className={'font-lora text-5xl mt-20 mb-10 text-white'}>
-                    {title}
+                  <div className="flex justify-center item-center">
+                    <span
+                      className={'font-lora text-5xl mt-20 mb-10 text-white'}
+                    >
+                      {title}
+                    </span>
                   </div>
                   <main
                     style={{
@@ -118,7 +122,7 @@ export default function Layout({
                     }}
                     className={` 
                   bg-white
-                     format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-md
+                     format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-md pt-1
                     
                  ${bannerData ? 'mb-20' : 'md:mt-20 mb-20'}
                  `}
