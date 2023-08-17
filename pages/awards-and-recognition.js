@@ -2,12 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
-
 import Image from 'next/image'
-
-const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
-  return `${host}/images/${src}?w=${width}&q=${quality || 75}`
-}
 
 export default function AwardsAndRecognition() {
   const data = [
@@ -56,8 +51,7 @@ export default function AwardsAndRecognition() {
               <Image
                 width="300"
                 height="300"
-                loader={myLoader}
-                src="awards/2021-Global-Law-Experts-Software-Patents-IP-Attorney-Firm-of-the-Year-300x300.jpg"
+                src="/awards/2021-Global-Law-Experts-Software-Patents-IP-Attorney-Firm-of-the-Year-300x300.jpg"
                 alt="Global Law Experts Annual Awards: Software Patents IP Attorney Firm of the Year (Australia)"
                 title="Global Law Experts Annual Awards: Software Patents IP Attorney Firm of the Year (Australia)"
               />
@@ -83,10 +77,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2020-AI-Acquisition-International-Global-Excellence-Awards-300x300.jpg"
+                src="/awards/2020-AI-Acquisition-International-Global-Excellence-Awards-300x300.jpg"
                 alt="AI Acquisition International – Global Excellence Awards: Best Specialist Patent &amp; Trade Mark Law Firm (Australia)"
                 title="AI Acquisition International – Global Excellence Awards: Best Specialist Patent &amp; Trade Mark Law Firm (Australia)"
               />{' '}
@@ -116,10 +109,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2019-Corporate-INTL-Global-Awards-300x300.jpg"
+                src="/awards/2019-Corporate-INTL-Global-Awards-300x300.jpg"
                 alt="Corporate INTL Global Awards: Software Patents Attorney Firm of the Year (Australia)"
                 title="Corporate INTL Global Awards: Software Patents Attorney Firm of the Year (Australia)"
               />{' '}
@@ -145,10 +137,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2019-Global-Law-Experts-Annual-Awards-300x300.jpg"
+                src="/awards/2019-Global-Law-Experts-Annual-Awards-300x300.jpg"
                 alt="Global Law Experts Annual Awards: Software Patents IP Attorney Firm of the Year (Australia)"
                 title="Global Law Experts Annual Awards: Software Patents IP Attorney Firm of the Year (Australia)"
               />
@@ -174,10 +165,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2019-LawyersWeekly-Australian-Law-Awards-300x300.jpg"
+                src="/awards/2019-LawyersWeekly-Australian-Law-Awards-300x300.jpg"
                 alt="LawyersWeekly – Australian Law Awards: Intellectual Property Team of the Year (Finalist)"
                 title="LawyersWeekly – Australian Law Awards: Intellectual Property Team of the Year (Finalist)"
               />{' '}
@@ -203,10 +193,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2018-Global-Law-Experts-Annual-Awards-300x300.jpg"
+                src="/awards/2018-Global-Law-Experts-Annual-Awards-300x300.jpg"
                 alt="Global Law Experts Annual Awards: Software Patents IP Attorney Firm of the Year (Australia)"
                 title="Global Law Experts Annual Awards: Software Patents IP Attorney Firm of the Year (Australia)"
               />
@@ -232,10 +221,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2018-Corporate-INTL-Global-Awards-300x300.jpg"
+                src="/awards/2018-Corporate-INTL-Global-Awards-300x300.jpg"
                 alt="Corporate INTL Global Awards: Software Patents Attorney Firm of the Year (Australia)"
                 title="Corporate INTL Global Awards: Software Patents Attorney Firm of the Year (Australia)"
               />
@@ -261,10 +249,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2018-AI-Acquisition-International-Global-Excellence-Awards-300x300.jpg"
+                src="/awards/2018-AI-Acquisition-International-Global-Excellence-Awards-300x300.jpg"
                 alt="AI Acquisition International – Global Excellence Awards: Patent &amp; Trade Mark Attorneys of the Year (Australia)"
                 title="AI Acquisition International – Global Excellence Awards: Patent &amp; Trade Mark Attorneys of the Year (Australia)"
               />{' '}
@@ -292,10 +279,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2017-Corporate-INTL-Global-Awards-300x300.jpg"
+                src="/awards/2017-Corporate-INTL-Global-Awards-300x300.jpg"
                 alt="Corporate INTL Global Awards: Software Patents Attorney Firm of the Year (Australia)"
                 title="Corporate INTL Global Awards: Software Patents Attorney Firm of the Year (Australia)"
               />{' '}
@@ -321,10 +307,9 @@ export default function AwardsAndRecognition() {
           <tr>
             <td>
               <Image
-                loader={myLoader}
                 width="300"
                 height="300"
-                src="awards/2016-AI-Intellectual-Property-Awards-300x300.jpg"
+                src="/awards/2016-AI-Intellectual-Property-Awards-300x300.jpg"
                 alt="AI Intellectual Property Awards: Best Full-Service Patent Attorney Firm and Recognised Lead in Software &amp; Medical Device Patents (Australia)"
                 title="AI Intellectual Property Awards: Best Full-Service Patent Attorney Firm and Recognised Lead in Software &amp; Medical Device Patents (Australia)"
               />{' '}
