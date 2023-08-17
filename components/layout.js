@@ -4,7 +4,7 @@ import { InnerContainer } from '../components/templates/InnerContainer'
 import PostBody from '../components/blog/post-body'
 import Banner from '../components/articles/banner'
 import IpNewsBlog from '../components/homepage/IpNewsBlog'
-import { indexQueryTop3 } from '../lib/queries'
+import { indexQuery } from '../lib/queries'
 import { usePreviewSubscription } from '../lib/sanity'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
 import { useState, useEffect, useCallback } from 'react'
@@ -15,7 +15,8 @@ export default function Layout({
   children,
   bannerData,
   navData,
-  defaultLayout,
+  layout,
+  title,
   allPosts: initialAllPosts,
   preview,
 }) {
@@ -32,7 +33,7 @@ export default function Layout({
   }, [])
 
   const init = async () => {
-    const allPosts = overlayDrafts(await getClient(false).fetch(indexQueryTop3))
+    const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
     setReduceMorePost(allPosts)
   }
 
@@ -55,14 +56,12 @@ export default function Layout({
       </div>
       {bannerData && (
         <div className="z-0">
-          <Banner />
+          <Banner layout={layout} />
         </div>
       )}
-      {!defaultLayout && (
+      {!layout && (
         <>
-          <div
-            className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} `}
-          >
+          <div className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} `}>
             <InnerContainer>
               <div className="flex flex-col md:px-20">
                 <div
@@ -87,13 +86,62 @@ export default function Layout({
               </div>
             </InnerContainer>
             <>
-              <IpNewsBlog news={reduceMorePost?.slice(0, 3)} isblog={true} />
+              <IpNewsBlog
+                news={reduceMorePost
+                  ?.sort(() => Math.random() - 0.5)
+                  .slice(0, 3)}
+                isblog={true}
+              />
             </>
           </div>
         </>
       )}
 
-      {defaultLayout && (
+      {layout === 2 && (
+        <>
+          <div className={`bg-ipNewsLog-content`}>
+            <InnerContainer>
+              <div className="flex flex-col px-5 md:px-20">
+                <div
+                  style={{ zIndex: 10, }}
+                  className={`${
+                    bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
+                  } md:flex flex-col  justify-center items-center xl:px-[120px] pt-10`}
+                >
+                  <div className={'font-lora text-5xl mt-20 mb-10 text-white'}>
+                    {title}
+                  </div>
+                  <main
+                    style={{
+                      zIndex: 0,
+                      boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+                    }}
+                    className={` 
+                  bg-white
+                     format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-md
+                    
+                 ${bannerData ? 'mb-20' : 'md:mt-20 mb-20'}
+                 `}
+                  >
+                    {children}
+                  </main>
+                </div>
+              </div>
+            </InnerContainer>
+
+            <>
+              <IpNewsBlog
+                isblog={true}
+                news={reduceMorePost
+                  ?.sort(() => Math.random() - 0.5)
+                  .slice(0, 3)}
+              />
+            </>
+          </div>
+        </>
+      )}
+
+      {layout === 1 && (
         <InnerContainer>
           <main className="format max-w-none mx-auto mb-20">{children}</main>
         </InnerContainer>

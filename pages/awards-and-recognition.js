@@ -15,7 +15,7 @@ export default function AwardsAndRecognition() {
     { title: 'Awards & Recognition', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Awards & Recognition"}>
       <Head>
         <title>
           Patent and trade mark attorney awards and recognition | Baxter IP
@@ -40,7 +40,6 @@ export default function AwardsAndRecognition() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Awards & Recognition</h1>
         <p>
           <Link href="/about">
             Baxter IP, Patent &amp; Trade Mark Attorneys

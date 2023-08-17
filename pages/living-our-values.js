@@ -9,7 +9,7 @@ export default function LivingOurValues() {
     { title: 'Living our values', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Living our values"}>
       <Head>
         <title>
           Living our values at Baxter IP, Patent & Trade Mark Attorneys
@@ -34,7 +34,6 @@ export default function LivingOurValues() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Living our values</h1>
       <h2>Dedicated &amp; supportive, transparent and commercial</h2>
       <p>
         These are our core values. At the heart of Baxter IP is a{' '}
