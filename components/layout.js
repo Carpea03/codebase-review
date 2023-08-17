@@ -63,12 +63,12 @@ export default function Layout({
         <>
           <div className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} `}>
             <InnerContainer>
-              <div className="flex flex-col md:px-20">
+              <div className="flex flex-col md:px-20 mt-10">
                 <div
                   style={{ zIndex: 10 }}
                   className={`${
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
-                  } md:flex flex-col  items-center xl:px-[120px] pt-10`}
+                  } md:flex flex-col  items-center xl:px-[120px]`}
                 >
                   <main
                     style={{
