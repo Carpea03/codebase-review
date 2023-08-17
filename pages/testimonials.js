@@ -9,7 +9,7 @@ export default function Testimonials() {
     { title: 'Client testimonials', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Client Testimonials"}>
       <Head>
         <title>
           Client testimonials on Baxter IP&apos;s intellectual property services

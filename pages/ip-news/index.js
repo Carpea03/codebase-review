@@ -22,7 +22,7 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
 
   return (
     <>
-      <Layout preview={preview} defaultLayout={true} navData={data}>
+      <Layout preview={preview} defaultLayout={true} navData={data} layout={1}>
         <div className="mt-10">
           {morePosts.length > 0 && (
             <Content posts={morePosts} />

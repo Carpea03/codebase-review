@@ -8,7 +8,7 @@ export default function CapitalPartners() {
     { title: 'Capital Partners', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"BIP Capital Partners"}>
       <Head>
         <title>
           BIP Capital Partners | Baxter IP, Patent & Trade Mark Attorneys
@@ -28,7 +28,6 @@ export default function CapitalPartners() {
         />
       </Head>
       <div className="mt-10">
-        <h1>BIP Capital Partners</h1>
         <p>
           BIP Capital Partners provide unmatched opportunities for Baxter IP
           clients in accessing capital. Startup company clients that meet the

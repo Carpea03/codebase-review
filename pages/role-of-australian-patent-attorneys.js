@@ -8,7 +8,7 @@ export default function RoleOfAustralianPatentAttorneys() {
     { title: 'The role of Australian patent attorneys', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian patent attorneys"}>
       <Head>
         <title>
           The role of Australian patent attorneys | Baxter IP Sydney & Melbourne
@@ -28,7 +28,6 @@ export default function RoleOfAustralianPatentAttorneys() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>The role of Australian patent attorneys</h1>
       <p>
         An Australian patent attorney is a person who represents a patent
         applicant or patent owner before IP Australia and other bodies and is

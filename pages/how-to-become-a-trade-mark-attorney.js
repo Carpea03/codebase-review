@@ -8,7 +8,7 @@ export default function HowToBecomeATradeMarkAttorney() {
     { title: 'How to become a trade mark attorney', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"How to become a trade mark attorney"}>
       <Head>
         <title>
           How to become a trade mark attorney in Australia | Baxter IP
@@ -28,7 +28,6 @@ export default function HowToBecomeATradeMarkAttorney() {
         />
       </Head>
       <div className="mt-10">
-        <h1>How to become a trade mark attorney</h1>
         <p>
           An Australian trade mark attorney represents and advises clients
           regarding trade mark matters, such as{' '}

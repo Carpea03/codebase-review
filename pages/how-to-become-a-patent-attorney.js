@@ -8,7 +8,7 @@ export default function HowToBecomeAPatentAttorney() {
     { title: 'How to become a patent attorney', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"How to become a patent attorney"}>
       <Head>
         <title>How to become a patent attorney in Australia | Baxter IP</title>
         <meta
@@ -26,7 +26,6 @@ export default function HowToBecomeAPatentAttorney() {
         />
       </Head>
       <div className="mt-10">
-        <h1>How to become a patent attorney</h1>
         <p>
           A patent is a government granted monopoly that provides a patent owner
           the exclusive right to prevent others from making, using or selling an

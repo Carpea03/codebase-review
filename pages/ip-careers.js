@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 export default function IpCareers() {
   const data = [{ title: 'Join us', link: '' }]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Careers at Baxter IP"}>
       <Head>
         <title>
           IP attorney careers | Start your intellectual property career at
@@ -23,7 +23,6 @@ export default function IpCareers() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Careers at Baxter IP</h1>
       <h2>
         A private Australian IP practice that&apos;s dedicated &amp; supportive,
         transparent and commercial

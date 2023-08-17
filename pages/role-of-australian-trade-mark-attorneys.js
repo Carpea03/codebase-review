@@ -8,7 +8,7 @@ export default function RoleOfAustralianTradeMarkAttorneys() {
     { title: 'The role of Australian trade mark attorney', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian trade mark attorneys"}>
       <Head>
         <title>The role of Australian trade mark attorneys | Baxter IP</title>
         <meta
@@ -26,7 +26,6 @@ export default function RoleOfAustralianTradeMarkAttorneys() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>The role of Australian trade mark attorneys</h1>
       <p>
         The role of Australian trade mark attorneys is both legal and technical
         in nature. Trade mark attorneys ensure that trade mark applications
