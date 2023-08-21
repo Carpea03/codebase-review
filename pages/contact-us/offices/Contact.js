@@ -11,6 +11,23 @@ import { hears } from '../../../utils/const/contacts'
 import Link from 'next/link'
 import { metaOffice } from '../../../utils/const/links'
 import { useRouter } from 'next/router'
+import emailjs from '@emailjs/browser';
+
+const generalTypes = [
+  { id: 0, title: 'Corporate or SME'},
+  { id: 1, title: 'Scaleup or Investor'},
+  { id: 2, title: 'Startup or Entrepreneur'},
+  { id: 3, title: 'Foreign Associates'},
+  { id: -1, title: 'General User Type'},
+]
+
+const industryTypes = [
+  { id: 0, title: 'Engineering'},
+  { id: 1, title: 'HighTech'},
+  { id: 2, title: 'Healthtech'},
+  { id: 3, title: 'Other Industries'},
+  { id: -1, title: 'All Industries'},
+]
 
 const ideas = [
   { id: 1, title: 'Chemical, Biotech, Pharmaceutical' },
@@ -45,6 +62,8 @@ const assistances = [
 
 const InputField = forwardRef(function InputField(
   {
+    name,
+    defaultValue,
     className,
     fieldName,
     placeHolder,
@@ -74,6 +93,8 @@ const InputField = forwardRef(function InputField(
         </div>
         <input
           type="text"
+          defaultValue={defaultValue}
+          name={name}
           className={`w-full h-[51px] sm:h-[101px] md:h-[${inputHeight}] text-sm sm:text-2xl md:text-xl p-4 sm:p-8 md:p-6 rounded border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0`}
           placeholder={placeHolder}
           onChange={onChange}
@@ -83,11 +104,13 @@ const InputField = forwardRef(function InputField(
     )
   })
 
-const Checkbox = ({ title }) => {
+const Checkbox = ({ name, title }) => {
   return (
     <div className="flex flex-row items-center gap-3">
       <input
         type="checkbox"
+        name={name}
+        value={title}
         className="w-6 h-6 rounded border-2 md:border-[1px] border-[#E4E6F1] checked:border-0 checked:bg-[#FFCE4F] cursor-pointer"
       />
       <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl text-[#404266]">
@@ -97,14 +120,14 @@ const Checkbox = ({ title }) => {
   )
 }
 
-const CheckBoxBlock = ({ title, items }) => {
+const CheckBoxBlock = ({ title, name, items }) => {
   return (
     <div className="flex flex-col items-start justify-center px-6 gap-4">
       <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl items-center text-[#404266]">
         {title}
       </span>
       {items.map((item, index) => (
-        <Checkbox key={index} title={item.title} />
+        <Checkbox key={index} name={name} title={item.title} />
       ))}
     </div>
   )
@@ -114,6 +137,7 @@ const AnyReactComponent = ({ icon }) => <div>{icon}</div>
 
 export default function Contact({ contactDetails }) {
   const router = useRouter()
+  const contact = useRef(null)
   const firstNameFocus = useRef(null)
   const lastNameFocus = useRef(null)
   const phoneNumberFocus = useRef(null)
@@ -131,23 +155,27 @@ export default function Contact({ contactDetails }) {
   const [website, setWebsite] = useState('')
   const [hearUs, setHearUs] = useState('')
   const [enquiry, setEnquiry] = useState('')
-
+  const [generalType, setGeneralType] = useState([]);
+  const [industryType, setIndustryType] = useState([]);
+  
+  
   const defaultProps = {
     center: {
       lat: contactDetails?.lat,
       lng: contactDetails?.lng,
     },
-    zoom: 11,
+    zoom: 18,
   }
 
   const CustomerInput = forwardRef(function CustomerInput(
-    { value, onChange, placeholder, onClick },
+    { name, value, onChange, placeholder, onClick },
     ref
   ) {
     return (
       <div className="flex flex-row items-center w-full" ref={ref}>
         <input
           className="flex-1 p-6 gap-4 text-sm sm:text-2xl md:text-xl border-[1px] border-[#E4E6F1] rounded-tl-md rounded-bl-md"
+          name={name}
           value={value}
           onChange={onChange}
           placeholder={placeholder}
@@ -179,8 +207,33 @@ export default function Contact({ contactDetails }) {
     setIsValidEmail(true)
   }
 
-  const onSubmit = () => {
-    
+  useEffect(() => {
+    const generalType = JSON.parse(localStorage.getItem('selected-id'));
+    const industryType = JSON.parse(localStorage.getItem('selected-id-2'));
+
+    if (generalType) {
+      setGeneralType(generalTypes.filter(value => value.id === generalType)[0].title)
+    }
+
+    if (industryType) {
+      setIndustryType(industryTypes.filter(value => value.id === industryType)[0].title)
+    }
+  }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm("service_nukxu1q", "template_5fli3mg", e.target, "PVWG2gTr0y0QrkUF6")
+    .then((result) => {
+      console.log(result.text)
+
+      router.push('/thank-you')
+    }, (error) => {
+      console.log(error.text)
+    });
+  }
+
+  const onSubmit = (e) => {
     if (!firstName || !lastName || !phoneNumber || !email) {
       if (!firstName)
         firstNameFocus.current.focus()
@@ -192,12 +245,13 @@ export default function Contact({ contactDetails }) {
         emailFocus.current.focus()
 
       return false
-    } else
-      router.push('/thank-you')
+    } else {
+      contact.current.requestSubmit()
+    }
   }
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start px-4 sm:px-16 md:px-4 xl:px-20 2xl:px-40 pt-16 pb-60 gap-6">
+    <div className="flex flex-col md:flex-row items-center md:items-start px-4 sm:px-16 md:px-4 xl:px-20 2xl:px-40 pt-16 pb-6 gap-6">
       <div
         className="flex flex-col items-start p-6 gap-9 bg-white w-full"
         style={{
@@ -207,97 +261,131 @@ export default function Contact({ contactDetails }) {
         <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
           Send us a message
         </span>
-        <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
-          <InputField
-            onChange={(e) => setFirstName(e.target.value)}
-            type="text"
-            fieldName="First Name"
-            placeHolder="First Name"
-            isRequired={firstName.length === 0 ? true : false}
-            ref={firstNameFocus}
-          />
-          <InputField
-            onChange={(e) => setLastName(e.target.value)}
-            fieldName="Last Name"
-            placeHolder="Last Name"
-            isRequired={lastName.length === 0 ? true : false}
-            ref={lastNameFocus}
-          />
-          <InputField
-            onChange={(e) => setPhoneNumber(e.target.value)}
-            fieldName="Phone Number"
-            placeHolder="Phone Number"
-            isRequired={phoneNumber.length === 0 ? true : false}
-            ref={phoneNumberFocus}
-          />
-          <InputField
-            onChange={(e) => checkEmailValid(e.target.value)}
-            fieldName="Email Address"
-            placeHolder="Your@email.com"
-            isRequired={email.length === 0 ? true : isValidEmail ? false : true}
-            ref={emailFocus}
-          />
-          <div className="flex flex-col items-start justify-center gap-4 w-full">
-            <div className="flex flex-row gap-2">
-              <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
-                Any other comments?
-              </span>
+        <form onSubmit={sendEmail} ref={contact}>
+          <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
+          <InputField 
+              type="text"
+              name="office"
+              defaultValue={contactDetails?.name}
+              className="hidden"
+            />
+            <InputField 
+              type="text"
+              name="general_type"
+              defaultValue={generalType}
+              className="hidden"
+            />
+            <InputField 
+              type="text"
+              name="industry_type"
+              defaultValue={industryType}
+              className="hidden"
+            />
+            <InputField
+              onChange={(e) => setFirstName(e.target.value)}
+              type="text"
+              name="first_name"
+              fieldName="First Name"
+              placeHolder="First Name"
+              isRequired={firstName.length === 0 ? true : false}
+              ref={firstNameFocus}
+            />
+            <InputField
+              onChange={(e) => setLastName(e.target.value)}
+              type="text"
+              name="last_name"
+              fieldName="Last Name"
+              placeHolder="Last Name"
+              isRequired={lastName.length === 0 ? true : false}
+              ref={lastNameFocus}
+            />
+            <InputField
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              type="text"
+              name="phone_number"
+              fieldName="Phone Number"
+              placeHolder="Phone Number"
+              isRequired={phoneNumber.length === 0 ? true : false}
+              ref={phoneNumberFocus}
+            />
+            <InputField
+              onChange={(e) => checkEmailValid(e.target.value)}
+              type="text"
+              name="email_address"
+              fieldName="Email Address"
+              placeHolder="Your@email.com"
+              isRequired={email.length === 0 ? true : isValidEmail ? false : true}
+              ref={emailFocus}
+            />
+            <div className="flex flex-col items-start justify-center gap-4 w-full">
+              <div className="flex flex-row gap-2">
+                <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
+                  Any other comments?
+                </span>
+              </div>
+              <textarea
+                name="comments"
+                minLength={20}
+                className="w-full h-72 p-6 rounded text-sm sm:text-2xl md:text-xl border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0"
+              />
             </div>
-            <textarea
-              minLength={20}
-              className="w-full h-72 p-6 rounded text-sm sm:text-2xl md:text-xl border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0"
+          </div>
+          <div className="flex flex-col items-start pt-8 bg-white border-[1px] border-[#F3F3FA] rounded w-full gap-9 pb-9">
+            <InputField
+              type="text"
+              name="company"
+              className="px-6"
+              fieldName="Company or Business Name (if applicable)"
+              placeHolder="Company or Business Name"
             />
-          </div>
-        </div>
-        <div className="flex flex-col items-start pt-8 bg-white border-[1px] border-[#F3F3FA] rounded w-full gap-9 pb-9">
-          <InputField
-            className="px-6"
-            fieldName="Company or Business Name (if applicable)"
-            placeHolder="Company or Business Name"
-          />
-          <InputField
-            className="px-6"
-            fieldName="Website"
-            placeHolder="www.your-website.com"
-          />
-          <div className="flex flex-col items-start justify-center px-6 gap-4 w-full">
-            <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl text-[#404266]">
-              How did you hear about us?
-            </span>
-            <select
-              defaultValue="Select one"
-              id="countries"
-              className="w-full h-[75px] p-4 sm:p-6 gap-4 border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] rounded cursor-pointer"
-            >
-              <option value="Select one">Select one</option>
-              {hears.map((item, index) => (
-                <option key={`option-${index}`} value={index}>
-                  {item}
-                </option>
-              ))}
-            </select>
-          </div>
-          <CheckBoxBlock title="Enquiry about:" items={enquiries} />
-          <div className="flex flex-col items-start justify-center px-6 gap-4 w-full cursor-pointer">
-            <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
-              Do you have a preferred time to get a call from us?
-            </span>
-            <DatePicker
-              selected={startDate}
-              showTimeSelect
-              onChange={handleDateChange}
-              placeholderText="Tue 10 Jan, 12:30 PM"
-              dateFormat="EEE d MMMM, hh:mm aa"
-              customInput={<CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />}
+            <InputField
+              type="text"
+              name="website"
+              className="px-6"
+              fieldName="Website"
+              placeHolder="www.your-website.com"
             />
+            <div className="flex flex-col items-start justify-center px-6 gap-4 w-full">
+              <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl text-[#404266]">
+                How did you hear about us?
+              </span>
+              <select
+                defaultValue=""
+                id="countries"
+                name="hear_about_us"
+                className="w-full h-[75px] p-4 sm:p-6 gap-4 border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] rounded cursor-pointer"
+              >
+                <option value="">Select one</option>
+                {hears.map((item, index) => (
+                  <option key={`option-${index}`} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <CheckBoxBlock title="Enquiry about:" name="enquiry_about" items={enquiries} />
+            <div className="flex flex-col items-start justify-center px-6 gap-4 w-full cursor-pointer">
+              <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
+                Do you have a preferred time to get a call from us?
+              </span>
+              <DatePicker
+                selected={startDate}
+                showTimeSelect
+                onChange={handleDateChange}
+                placeholderText="Tue 10 Jan, 12:30 PM"
+                dateFormat="EEE d MMMM, hh:mm aa"
+                name="preferred_time"
+                customInput={<CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />}
+              />
+            </div>
+            <CheckBoxBlock title="Would you also like assistance with:" name="assistance" items={assistances} />
           </div>
-          <CheckBoxBlock title="Would you also like assistance with:" items={assistances} />
-        </div>
-        <Button
-          onClick={() => onSubmit()}
-          className="w-full h-14 sm:h-[75px]"
-          title="Submit"
-        />
+          <Button
+            onClick={(e) => onSubmit(e)}
+            className="w-full h-14 sm:h-[75px]"
+            title="Submit"
+          />
+        </form>
       </div>
       <div className="flex flex-col items-start gap-9 h-full">
         <span className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">
@@ -411,7 +499,7 @@ export default function Contact({ contactDetails }) {
                   alt=""
                 />
                 <p className="font-manrope font-semibold text-xl text-white">
-                  Speak with an attorney at our meta office now
+                  Visit meta office
                 </p>
               </div>
             </Link>

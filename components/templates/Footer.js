@@ -24,9 +24,9 @@ const company = [
 
 const moreToExplore = [
   { title: 'IP News', href: '/ip-news' },
-  { title: 'Our Values', href: '' },
+  { title: 'Our Values', href: '/living-our-values' },
   { title: 'How We Give Back', href: '' },
-  { title: 'Awards & Recognition', href: '' },
+  { title: 'Awards & Recognition', href: '/awards-and-recognition' },
 ]
 
 const logos = ['ita.svg', 'ipta.svg', 'aipla.svg']
@@ -62,7 +62,7 @@ const defaultProps = {
     lat: -33.86901095698735,
     lng: 151.2089059548967,
   },
-  zoom: 11,
+  zoom: 18,
 }
 
 const AnyReactComponent = ({ icon }) => <div>{icon}</div>
