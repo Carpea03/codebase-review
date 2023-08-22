@@ -7,12 +7,12 @@ import { InnerContainer } from '../templates/InnerContainer'
 import Image from 'next/image'
 
 export const VisitVirtualOffice = () => {
-  return (
+  return (  
     <Container>
       {/** top */}
       <div className="flex flex-col items-center w-full">
         <InnerContainer>
-          <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 py-40 px-20">
+          <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 py-40 px-5 md:px-20">
             <div className="w-full flex flex-col items-center md:items-start gap-[14px] sm:gap-[10px]">
               <span className="font-manrope font-medium text-xl sm:text-2xl md:leading-[30px] text-[#272940] text-center md:text-left opacity-50">
                 {'VIRTUAL OFFICE'}

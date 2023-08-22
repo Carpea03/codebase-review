@@ -1,9 +1,15 @@
-import React, { useState, useEffect, forwardRef, useRef, useImperativeHandle } from 'react'
+import React, {
+  useState,
+  useEffect,
+  forwardRef,
+  useRef,
+  useImperativeHandle,
+} from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import Button from '../../../components/buttons/Button'
 import GoogleMapReact from 'google-map-react'
-import { BsFillChatSquareFill } from "react-icons/bs";
+import { BsFillChatSquareFill } from 'react-icons/bs'
 import { API_KEY } from '../../../utils/const/apiKey'
 import { FiChevronUp, FiCalendar } from 'react-icons/fi'
 import Image from 'next/image'
@@ -11,22 +17,22 @@ import { hears } from '../../../utils/const/contacts'
 import Link from 'next/link'
 import { metaOffice } from '../../../utils/const/links'
 import { useRouter } from 'next/router'
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
 
 const generalTypes = [
-  { id: 0, title: 'Corporate or SME'},
-  { id: 1, title: 'Scaleup or Investor'},
-  { id: 2, title: 'Startup or Entrepreneur'},
-  { id: 3, title: 'Foreign Associates'},
-  { id: -1, title: 'General User Type'},
+  { id: 0, title: 'Corporate or SME' },
+  { id: 1, title: 'Scaleup or Investor' },
+  { id: 2, title: 'Startup or Entrepreneur' },
+  { id: 3, title: 'Foreign Associates' },
+  { id: -1, title: 'General User Type' },
 ]
 
 const industryTypes = [
-  { id: 0, title: 'Engineering'},
-  { id: 1, title: 'HighTech'},
-  { id: 2, title: 'Healthtech'},
-  { id: 3, title: 'Other Industries'},
-  { id: -1, title: 'All Industries'},
+  { id: 0, title: 'Engineering' },
+  { id: 1, title: 'HighTech' },
+  { id: 2, title: 'Healthtech' },
+  { id: 3, title: 'Other Industries' },
+  { id: -1, title: 'All Industries' },
 ]
 
 const ideas = [
@@ -69,40 +75,46 @@ const InputField = forwardRef(function InputField(
     placeHolder,
     isRequired = false,
     inputHeight = '75px',
-    onChange
-  }, ref) {
-    const inputRef = useRef(null);
+    onChange,
+  },
+  ref
+) {
+  const inputRef = useRef(null)
 
-    useImperativeHandle(ref, () => {
+  useImperativeHandle(
+    ref,
+    () => {
       return {
         focus() {
-          inputRef.current.focus();
-        }
-      };
-    }, []);
-    
-    return (
-      <div
-        className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}
-      >
-        <div className="flex flex-row gap-2">
-          <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
-            {fieldName}
-          </span>
-          <span className="text-[#E42B15]">{isRequired ? '*' : ''}</span>
-        </div>
-        <input
-          type="text"
-          defaultValue={defaultValue}
-          name={name}
-          className={`w-full h-[51px] sm:h-[101px] md:h-[${inputHeight}] text-sm sm:text-2xl md:text-xl p-4 sm:p-8 md:p-6 rounded border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0`}
-          placeholder={placeHolder}
-          onChange={onChange}
-          ref={inputRef}
-        />
+          inputRef.current.focus()
+        },
+      }
+    },
+    []
+  )
+
+  return (
+    <div
+      className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}
+    >
+      <div className="flex flex-row gap-2">
+        <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
+          {fieldName}
+        </span>
+        <span className="text-[#E42B15]">{isRequired ? '*' : ''}</span>
       </div>
-    )
-  })
+      <input
+        type="text"
+        defaultValue={defaultValue}
+        name={name}
+        className={`w-full h-[51px] sm:h-[101px] md:h-[${inputHeight}] text-sm sm:text-2xl md:text-xl p-4 sm:p-8 md:p-6 rounded border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0`}
+        placeholder={placeHolder}
+        onChange={onChange}
+        ref={inputRef}
+      />
+    </div>
+  )
+})
 
 const Checkbox = ({ name, title }) => {
   return (
@@ -155,10 +167,9 @@ export default function Contact({ contactDetails }) {
   const [website, setWebsite] = useState('')
   const [hearUs, setHearUs] = useState('')
   const [enquiry, setEnquiry] = useState('')
-  const [generalType, setGeneralType] = useState([]);
-  const [industryType, setIndustryType] = useState([]);
-  
-  
+  const [generalType, setGeneralType] = useState([])
+  const [industryType, setIndustryType] = useState([])
+
   const defaultProps = {
     center: {
       lat: contactDetails?.lat,
@@ -208,41 +219,50 @@ export default function Contact({ contactDetails }) {
   }
 
   useEffect(() => {
-    const generalType = JSON.parse(localStorage.getItem('selected-id'));
-    const industryType = JSON.parse(localStorage.getItem('selected-id-2'));
+    const generalType = JSON.parse(localStorage.getItem('selected-id'))
+    const industryType = JSON.parse(localStorage.getItem('selected-id-2'))
 
     if (generalType) {
-      setGeneralType(generalTypes.filter(value => value.id === generalType)[0].title)
+      setGeneralType(
+        generalTypes.filter((value) => value.id === generalType)[0].title
+      )
     }
 
     if (industryType) {
-      setIndustryType(industryTypes.filter(value => value.id === industryType)[0].title)
+      setIndustryType(
+        industryTypes.filter((value) => value.id === industryType)[0].title
+      )
     }
-  }, []);
+  }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm("service_nukxu1q", "template_5fli3mg", e.target, "PVWG2gTr0y0QrkUF6")
-    .then((result) => {
-      console.log(result.text)
+    emailjs
+      .sendForm(
+        'service_nukxu1q',
+        'template_5fli3mg',
+        e.target,
+        'PVWG2gTr0y0QrkUF6'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
 
-      router.push('/thank-you')
-    }, (error) => {
-      console.log(error.text)
-    });
+          router.push('/thank-you')
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
   }
 
   const onSubmit = (e) => {
     if (!firstName || !lastName || !phoneNumber || !email) {
-      if (!firstName)
-        firstNameFocus.current.focus()
-      else if (!lastName)
-        lastNameFocus.current.focus()
-      else if (!phoneNumber)
-        phoneNumberFocus.current.focus()
-      else if (!email)
-        emailFocus.current.focus()
+      if (!firstName) firstNameFocus.current.focus()
+      else if (!lastName) lastNameFocus.current.focus()
+      else if (!phoneNumber) phoneNumberFocus.current.focus()
+      else if (!email) emailFocus.current.focus()
 
       return false
     } else {
@@ -251,7 +271,7 @@ export default function Contact({ contactDetails }) {
   }
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start px-4 sm:px-16 md:px-4 xl:px-20 2xl:px-40 pt-16 pb-6 gap-6">
+    <div className="flex flex-col md:flex-row items-center md:items-start px-4 sm:px-16 md:px-4 xl:px-20 2xl:px-40 pt-16 pb-32 gap-6">
       <div
         className="flex flex-col items-start p-6 gap-9 bg-white w-full"
         style={{
@@ -263,19 +283,19 @@ export default function Contact({ contactDetails }) {
         </span>
         <form onSubmit={sendEmail} ref={contact}>
           <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
-          <InputField 
+            <InputField
               type="text"
               name="office"
               defaultValue={contactDetails?.name}
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               name="general_type"
               defaultValue={generalType}
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               name="industry_type"
               defaultValue={industryType}
@@ -314,7 +334,9 @@ export default function Contact({ contactDetails }) {
               name="email_address"
               fieldName="Email Address"
               placeHolder="Your@email.com"
-              isRequired={email.length === 0 ? true : isValidEmail ? false : true}
+              isRequired={
+                email.length === 0 ? true : isValidEmail ? false : true
+              }
               ref={emailFocus}
             />
             <div className="flex flex-col items-start justify-center gap-4 w-full">
@@ -363,7 +385,11 @@ export default function Contact({ contactDetails }) {
                 ))}
               </select>
             </div>
-            <CheckBoxBlock title="Enquiry about:" name="enquiry_about" items={enquiries} />
+            <CheckBoxBlock
+              title="Enquiry about:"
+              name="enquiry_about"
+              items={enquiries}
+            />
             <div className="flex flex-col items-start justify-center px-6 gap-4 w-full cursor-pointer">
               <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
                 Do you have a preferred time to get a call from us?
@@ -375,10 +401,16 @@ export default function Contact({ contactDetails }) {
                 placeholderText="Tue 10 Jan, 12:30 PM"
                 dateFormat="EEE d MMMM, hh:mm aa"
                 name="preferred_time"
-                customInput={<CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />}
+                customInput={
+                  <CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />
+                }
               />
             </div>
-            <CheckBoxBlock title="Would you also like assistance with:" name="assistance" items={assistances} />
+            <CheckBoxBlock
+              title="Would you also like assistance with:"
+              name="assistance"
+              items={assistances}
+            />
           </div>
           <Button
             onClick={(e) => onSubmit(e)}
@@ -422,32 +454,42 @@ export default function Contact({ contactDetails }) {
               }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
-              center={{lat: contactDetails?.lat, lng: contactDetails?.lng}}
+              center={{ lat: contactDetails?.lat, lng: contactDetails?.lng }}
             >
               <AnyReactComponent
                 lat={contactDetails?.lat}
                 lng={contactDetails?.lng}
-                icon={<>
-                <BsFillChatSquareFill color="white" size={30} style={{
-                  width: "50px",
-                  height: "50px",
-                  position: "relative",
-                  top: "-50px",
-                  left: "-25px",
-                }} />
-                <div style={{
-                  width: "50px",
-                  height: "50px",
-                  position: "absolute",
-                  top: "-50px",
-                  left: "-18px",
-                }}>
-                  <Image
-                  src="/contactus/logo-marker.svg"
-                  width={35}
-                  height={35}
-                  alt=""
-                /></div></>}
+                icon={
+                  <>
+                    <BsFillChatSquareFill
+                      color="white"
+                      size={50}
+                      style={{
+                        width: '80px',
+                        height: '80px',
+                        position: 'relative',
+                        top: '-50px',
+                        left: '-25px',
+                      }}
+                    />
+                    <div
+                      style={{
+                        width: '60px',
+                        height: '60px',
+                        position: 'absolute',
+                        top: '-50px',
+                        left: '-18px',
+                      }}
+                    >
+                      <Image
+                        src="/contactus/logo-marker.svg"
+                        width={60}
+                        height={60}
+                        alt=""
+                      />
+                    </div>
+                  </>
+                }
               />
             </GoogleMapReact>
           </div>

@@ -9,6 +9,7 @@ import { usePreviewSubscription } from '../lib/sanity'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
 import { useState, useEffect, useCallback } from 'react'
 import Nav from '../components/Nav'
+import ContactUsBanner from '../components/articles/contact-us-banner'
 
 export default function Layout({
   articlesBg,
@@ -17,6 +18,8 @@ export default function Layout({
   navData,
   layout,
   title,
+  defaultLayout,
+  contactUs,
   allPosts: initialAllPosts,
   preview,
 }) {
@@ -59,16 +62,22 @@ export default function Layout({
           <Banner layout={layout} />
         </div>
       )}
+
+      {!bannerData && !defaultLayout && (
+        <div className="z-0">
+          <Banner layout={layout} />
+        </div>
+      )}
       {!layout && (
         <>
           <div className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} `}>
             <InnerContainer>
-              <div className="flex flex-col md:px-20 mt-10">
+              <div className="flex flex-col md:px-20 mt-10 ">
                 <div
                   style={{ zIndex: 10 }}
                   className={`${
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
-                  } md:flex flex-col  items-center xl:px-[120px]`}
+                  } md:flex flex-col  items-center xl:px-[120px] px-10`}
                 >
                   <main
                     style={{
@@ -76,7 +85,7 @@ export default function Layout({
                     }}
                     className={` ${
                       bannerData ? 'py-80 mt-20' : 'bg-white'
-                    } format max-w-none mx-auto pl-10 pr-10 pb-10
+                    } format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-lg
                   ${bannerData ? 'mb-20' : 'md:mt-20 mb-20 '}
                   `}
                   >
@@ -95,6 +104,12 @@ export default function Layout({
             </>
           </div>
         </>
+      )}
+
+      {layout === 1 && (
+        <InnerContainer>
+          <main className="format max-w-none mx-auto mb-20">{children}</main>
+        </InnerContainer>
       )}
 
       {layout === 2 && (
@@ -132,7 +147,6 @@ export default function Layout({
                 </div>
               </div>
             </InnerContainer>
-
             <>
               <IpNewsBlog
                 isblog={true}
@@ -145,11 +159,45 @@ export default function Layout({
         </>
       )}
 
-      {layout === 1 && (
-        <InnerContainer>
-          <main className="format max-w-none mx-auto mb-20">{children}</main>
-        </InnerContainer>
+      {layout === 3 && (
+        <>
+          <div className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} `}>
+            <InnerContainer>
+              <div className="flex flex-col md:px-20 mt-10">
+                <div
+                  style={{ zIndex: 10 }}
+                  className={`${
+                    bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
+                  } md:flex flex-col  items-center xl:px-[120px]`}
+                >
+                  <main
+                    style={{
+                      zIndex: 0,
+                    }}
+                    className={` ${
+                      bannerData ? 'py-80 mt-20' : 'bg-white'
+                    } format max-w-none mx-auto pl-10 pr-10 pb-10
+                  ${bannerData ? 'mb-20' : 'md:mt-20 mb-20 '}
+                  `}
+                  >
+                    {children}
+                  </main>
+                </div>
+              </div>
+            </InnerContainer>
+            <>
+              <IpNewsBlog
+                news={reduceMorePost
+                  ?.sort(() => Math.random() - 0.5)
+                  .slice(0, 3)}
+                isblog={true}
+              />
+            </>
+          </div>
+        </>
       )}
+
+      {contactUs && <ContactUsBanner />}
       <Footer />
     </>
   )

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FiSearch } from 'react-icons/fi'
-import { BsFillChatSquareFill } from "react-icons/bs";
+import { BsFillChatSquareFill } from 'react-icons/bs'
 import { Container } from './Container'
 import { TiSocialLinkedin } from 'react-icons/ti'
 import { metaOffice } from '../../utils/const/links'
@@ -124,32 +124,42 @@ const Footer = ({ page }) => {
                     }}
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
-                    center={{lat: -33.86901095698735, lng: 151.2089059548967}}
+                    center={{ lat: -33.86901095698735, lng: 151.2089059548967 }}
                   >
                     <AnyReactComponent
                       lat={-33.86901095698735}
                       lng={151.2089059548967}
-                      icon={<>
-                      <BsFillChatSquareFill color="white" size={30} style={{
-                        width: "50px",
-                        height: "50px",
-                        position: "relative",
-                        top: "-50px",
-                        left: "-25px",
-                      }} />
-                      <div style={{
-                        width: "50px",
-                        height: "50px",
-                        position: "absolute",
-                        top: "-50px",
-                        left: "-18px",
-                      }}>
-                        <Image
-                        src="/contactus/logo-marker.svg"
-                        width={35}
-                        height={35}
-                        alt=""
-                      /></div></>}
+                      icon={
+                        <>
+                          <BsFillChatSquareFill
+                            color="white"
+                            size={50}
+                            style={{
+                              width: '80px',
+                              height: '80px',
+                              position: 'relative',
+                              top: '-50px',
+                              left: '-25px',
+                            }}
+                          />
+                          <div
+                            style={{
+                              width: '60px',
+                              height: '60px',
+                              position: 'absolute',
+                              top: '-50px',
+                              left: '-18px',
+                            }}
+                          >
+                            <Image
+                              src="/contactus/logo-marker.svg"
+                              width={60}
+                              height={60}
+                              alt=""
+                            />
+                          </div>
+                        </>
+                      }
                     />
                   </GoogleMapReact>
                 </div>
