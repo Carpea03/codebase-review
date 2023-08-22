@@ -84,7 +84,7 @@ export default function Post({ data = {}, preview }) {
   }
 
   return (
-    <Layout navData={menu} articlesBg={true} bannerData={true}>
+    <Layout navData={menu} articlesBg={true} bannerData={true} contactUs={true} layout={3}>
       <div>
         <div
           className="w-full hidden md:flex rounded"

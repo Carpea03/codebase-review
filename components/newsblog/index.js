@@ -5,11 +5,7 @@ import Link from 'next/link'
 import { urlForImage } from '../../lib/sanity'
 import Date from '../../components/blog/date'
 
-export default function NewsBlog({
-  data,
-  isblog,
-  btnTitle = 'Read More Articles',
-}) {
+export default function NewsBlog({ data, isblog, btnTitle }) {
   return (
     <>
       <div className="w-full flex flex-row items-start justify-center sm:pb-10">
@@ -112,7 +108,7 @@ export default function NewsBlog({
                 }}
               >
                 <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
-                  {btnTitle}
+                  {btnTitle || 'Read More Articles'}
                 </span>
                 <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
                   <IoArrowForwardOutline
