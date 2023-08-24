@@ -11,7 +11,6 @@ import { hears } from '../../../utils/const/contacts'
 import Link from 'next/link'
 import { metaOffice } from '../../../utils/const/links'
 import { useRouter } from 'next/router'
-import emailjs from '@emailjs/browser';
 
 const generalTypes = [
   { id: 0, title: 'Corporate or SME'},
@@ -220,20 +219,7 @@ export default function Contact({ contactDetails }) {
     }
   }, []);
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs.sendForm("service_nukxu1q", "template_5fli3mg", e.target, "PVWG2gTr0y0QrkUF6")
-    .then((result) => {
-      console.log(result.text)
-
-      router.push('/thank-you')
-    }, (error) => {
-      console.log(error.text)
-    });
-  }
-
-  const onSubmit = (e) => {
+  const onSubmit = () => {
     if (!firstName || !lastName || !phoneNumber || !email) {
       if (!firstName)
         firstNameFocus.current.focus()
@@ -247,6 +233,8 @@ export default function Contact({ contactDetails }) {
       return false
     } else {
       contact.current.requestSubmit()
+
+      router.push('/thank-you')
     }
   }
 
@@ -261,30 +249,69 @@ export default function Contact({ contactDetails }) {
         <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
           Send us a message
         </span>
-        <form onSubmit={sendEmail} ref={contact}>
+        <form 
+          id="ActionStepWebform10"
+          name="ActionStepWebform10"
+          enctype="application/x-www-form-urlencoded"
+          method="post"
+          action="https://go.actionstep.com/frontend/application/webform/post"
+          ref={contact}
+        >
           <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
-          <InputField 
+            <InputField 
               type="text"
-              name="office"
+              id="organization_key"
+              name="organization_key"
+              defaultValue="sq9162"
+              className="hidden"
+            />
+            <InputField 
+              type="text"
+              id="uid"
+              name="uid"
+              defaultValue="6344f7cad4e589f0366f8e5810af571a9ed85029"
+              className="hidden"
+            />
+            <InputField 
+              type="text"
+              id="dc100__user_id"
+              name="dc100__user_id"
+              defaultValue=""
+              className="hidden"
+            />
+            <InputField 
+              type="text"
+              id="dc100__geo_location"
+              name="dc100__geo_location"
+              defaultValue=""
+              className="hidden"
+            />
+            <InputField 
+              type="text"
+              id="dc100__Location"
+              name="dc100__Location"
               defaultValue={contactDetails?.name}
               className="hidden"
             />
             <InputField 
               type="text"
-              name="general_type"
+              id="dc100__user_type"
+              name="dc100__user_type"
               defaultValue={generalType}
               className="hidden"
             />
             <InputField 
               type="text"
-              name="industry_type"
+              id="dc100__industry_type"
+              name="dc100__industry_type"
               defaultValue={industryType}
               className="hidden"
             />
             <InputField
               onChange={(e) => setFirstName(e.target.value)}
               type="text"
-              name="first_name"
+              id="p50__first_name"
+              name="p50__first_name"
               fieldName="First Name"
               placeHolder="First Name"
               isRequired={firstName.length === 0 ? true : false}
@@ -293,7 +320,8 @@ export default function Contact({ contactDetails }) {
             <InputField
               onChange={(e) => setLastName(e.target.value)}
               type="text"
-              name="last_name"
+              id="p50__last_name"
+              name="p50__last_name"
               fieldName="Last Name"
               placeHolder="Last Name"
               isRequired={lastName.length === 0 ? true : false}
@@ -302,7 +330,8 @@ export default function Contact({ contactDetails }) {
             <InputField
               onChange={(e) => setPhoneNumber(e.target.value)}
               type="text"
-              name="phone_number"
+              id="p50__phone1"
+              name="p50__phone1"
               fieldName="Phone Number"
               placeHolder="Phone Number"
               isRequired={phoneNumber.length === 0 ? true : false}
@@ -311,7 +340,8 @@ export default function Contact({ contactDetails }) {
             <InputField
               onChange={(e) => checkEmailValid(e.target.value)}
               type="text"
-              name="email_address"
+              id="p50__e_mail"
+              name="p50__e_mail"
               fieldName="Email Address"
               placeHolder="Your@email.com"
               isRequired={email.length === 0 ? true : isValidEmail ? false : true}
@@ -324,8 +354,8 @@ export default function Contact({ contactDetails }) {
                 </span>
               </div>
               <textarea
-                name="comments"
-                minLength={20}
+                id="dc100__Initial_Comments"
+                name="dc100__Initial_Comments"
                 className="w-full h-72 p-6 rounded text-sm sm:text-2xl md:text-xl border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0"
               />
             </div>
@@ -333,14 +363,16 @@ export default function Contact({ contactDetails }) {
           <div className="flex flex-col items-start pt-8 bg-white border-[1px] border-[#F3F3FA] rounded w-full gap-9 pb-9">
             <InputField
               type="text"
-              name="company"
+              id="p50__company_name"
+              name="p50__company_name"
               className="px-6"
               fieldName="Company or Business Name (if applicable)"
               placeHolder="Company or Business Name"
             />
             <InputField
               type="text"
-              name="website"
+              id="p50__website"
+              name="p50__website"
               className="px-6"
               fieldName="Website"
               placeHolder="www.your-website.com"
@@ -351,8 +383,8 @@ export default function Contact({ contactDetails }) {
               </span>
               <select
                 defaultValue=""
-                id="countries"
-                name="hear_about_us"
+                id="dc100__Referral"
+                name="dc100__Referral"
                 className="w-full h-[75px] p-4 sm:p-6 gap-4 border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] rounded cursor-pointer"
               >
                 <option value="">Select one</option>
@@ -363,7 +395,7 @@ export default function Contact({ contactDetails }) {
                 ))}
               </select>
             </div>
-            <CheckBoxBlock title="Enquiry about:" name="enquiry_about" items={enquiries} />
+            <CheckBoxBlock title="Enquiry about:" id="dc100__Enquiry_Type" name="dc100__Enquiry_Type[]" items={enquiries} />
             <div className="flex flex-col items-start justify-center px-6 gap-4 w-full cursor-pointer">
               <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
                 Do you have a preferred time to get a call from us?
@@ -374,14 +406,16 @@ export default function Contact({ contactDetails }) {
                 onChange={handleDateChange}
                 placeholderText="Tue 10 Jan, 12:30 PM"
                 dateFormat="EEE d MMMM, hh:mm aa"
-                name="preferred_time"
+                id="dc100__Meeting_Preferences"
+                name="dc100__Meeting_Preferences"
                 customInput={<CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />}
               />
             </div>
-            <CheckBoxBlock title="Would you also like assistance with:" name="assistance" items={assistances} />
+            <CheckBoxBlock title="Would you also like assistance with:" id="dc100__assistance" name="dc100__assistance" items={assistances} />
           </div>
           <Button
-            onClick={(e) => onSubmit(e)}
+            type="button"
+            onClick={() => onSubmit()}
             className="w-full h-14 sm:h-[75px]"
             title="Submit"
           />

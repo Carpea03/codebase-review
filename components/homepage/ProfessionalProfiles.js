@@ -2,7 +2,7 @@ import { Container } from '../templates/Container'
 import React, { useState, useEffect } from 'react'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import { TitleContainer } from '../templates/TitleContainer'
-import { profiles, peopleIndustry } from '../../utils/const/people'
+import { profiles, peopleIndustry, awards } from '../../utils/const/people'
 import { cards } from '../../utils/const/menus'
 import useContentStore from '../../store/useContent.store'
 import Image from 'next/image'
@@ -36,6 +36,7 @@ const SlideButton = ({ className, children, onClick = {} }) => {
   )
 }
 
+
 export default function ProfessionalProfiles() {
   const [selectedMenu, setSelectedMenu] = useState([])
   const [selectSlide, setSelectSlide] = useState(0)
@@ -43,6 +44,7 @@ export default function ProfessionalProfiles() {
     'Meet our patent & trade mark attorneys in Sydney & Melbourne'
   )
   const menuState2 = useContentStore((state) => state.menuState2)
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
   useEffect(() => {
     const newProfiles = profiles[0].teamMembers.map((val) => {
@@ -73,6 +75,25 @@ export default function ProfessionalProfiles() {
     const newIndex = isFirstSlide ? slides.length - 1 : selectSlide - 1
     setSelectSlide(newIndex)
   }
+
+  function getCurrentDimension() {
+      return {
+          width: typeof window !== 'undefined' ? window.innerWidth : 0,
+          height: typeof window !== 'undefined' ? window.innerHeight : 0
+      }
+  }
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension())
+    }
+
+    window.addEventListener('resize', updateDimension);
+    
+    return(() => {
+        window.removeEventListener('resize', updateDimension);
+    })
+  }, [screenSize])
 
   return (
     <Container className="px-0">
@@ -111,21 +132,34 @@ export default function ProfessionalProfiles() {
                     height={200}
                   />
                   <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
-                    <div>
-                      <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
-                        {teamMember?.name}
-                      </span>
-                    </div>
-                    <div className="flex flex-col">
-                      {teamMember?.positions?.map((position, index) => (
-                        <span
-                          key={index}
-                          className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
-                        >
-                          {position}
-                        </span>
-                      ))}
-                    </div>
+                      <div className="flex flex-row w-full">
+                        <div className="flex flex-col w-full">
+                          <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266] pb-2 sm:pb-4">
+                            {teamMember?.name}
+                          </span>
+                          <div className="flex flex-col w-full">
+                            {teamMember?.positions?.map((position, index) => (
+                              <span
+                                key={index}
+                                className="font-lora italic font-medium text-[7px] sm:text-base md:text-sm text-[#7A7B94] sm:w-full md:w-[200px]"
+                              >
+                                {position}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="flex flex-col flex-end content-end flex-wrap w-full">
+                          {teamMember?.awards?.map((award, index) => (
+                            <Image
+                              key={index}
+                              src={`/professionalProfiles/awards/${awards?.filter(value => value.id == award)[0]?.title}.png`}
+                              width={screenSize.width <= 768 ? awards?.filter(value => value.id == award)[0]?.width / 2 : awards?.filter(value => value.id == award)[0]?.width}
+                              height={screenSize.width <= 768 ? awards?.filter(value => value.id == award)[0]?.height / 1.5 : awards?.filter(value => value.id == award)[0]?.height}
+                              className="self-end pb-2 sm:pb-4"
+                            />
+                          ))}
+                        </div>
+                      </div>
                   </div>
                 </Link>
               </div>

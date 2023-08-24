@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { profiles } from '../../utils/const/profiles'
-import { profiles as peoples } from '../../utils/const/people'
+import { profiles as peoples, awards } from '../../utils/const/people'
 import { InnerContainer } from '../../components/templates/InnerContainer'
 
 export const getStaticPaths = async () => {
@@ -48,7 +48,7 @@ export default function Profile({ profile }) {
                     {profile.name}
                   </span>
                   <div className="flex flex-col justify-center items-start">
-                    <span className="font-manrope font-medium text-base sm:text-[32px] sm:leading-[44px] sm:tracking-[-0.03em] md:text-xl xl:text-2xl text-[#7A7B94]">
+                    <span className="font-manrope font-medium text-base sm:text-[32px] sm:leading-[44px] sm:tracking-[-0.03em] md:text-xl xl:text-2xl text-[#272940]">
                       {profile.position}
                     </span>
                   </div>
@@ -86,7 +86,7 @@ export default function Profile({ profile }) {
                 background:
                   'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
               }}
-            >
+            > 
               <span className="hidden md:flex font-manrope font-semibold sm:text-2xl text-white tracking-[-0.03em] text-center">
                 {profile.objective}
               </span>
