@@ -1,9 +1,15 @@
-import React, { useState, useEffect, forwardRef, useRef, useImperativeHandle } from 'react'
+import React, {
+  useState,
+  useEffect,
+  forwardRef,
+  useRef,
+  useImperativeHandle,
+} from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import Button from '../../../components/buttons/Button'
 import GoogleMapReact from 'google-map-react'
-import { BsFillChatSquareFill } from "react-icons/bs";
+import { BsFillChatSquareFill } from 'react-icons/bs'
 import { API_KEY } from '../../../utils/const/apiKey'
 import { FiChevronUp, FiCalendar } from 'react-icons/fi'
 import Image from 'next/image'
@@ -13,19 +19,19 @@ import { metaOffice } from '../../../utils/const/links'
 import { useRouter } from 'next/router'
 
 const generalTypes = [
-  { id: 0, title: 'Corporate or SME'},
-  { id: 1, title: 'Scaleup or Investor'},
-  { id: 2, title: 'Startup or Entrepreneur'},
-  { id: 3, title: 'Foreign Associates'},
-  { id: -1, title: 'General User Type'},
+  { id: 0, title: 'Corporate or SME' },
+  { id: 1, title: 'Scaleup or Investor' },
+  { id: 2, title: 'Startup or Entrepreneur' },
+  { id: 3, title: 'Foreign Associates' },
+  { id: -1, title: 'General User Type' },
 ]
 
 const industryTypes = [
-  { id: 0, title: 'Engineering'},
-  { id: 1, title: 'HighTech'},
-  { id: 2, title: 'Healthtech'},
-  { id: 3, title: 'Other Industries'},
-  { id: -1, title: 'All Industries'},
+  { id: 0, title: 'Engineering' },
+  { id: 1, title: 'HighTech' },
+  { id: 2, title: 'Healthtech' },
+  { id: 3, title: 'Other Industries' },
+  { id: -1, title: 'All Industries' },
 ]
 
 const ideas = [
@@ -68,40 +74,46 @@ const InputField = forwardRef(function InputField(
     placeHolder,
     isRequired = false,
     inputHeight = '75px',
-    onChange
-  }, ref) {
-    const inputRef = useRef(null);
+    onChange,
+  },
+  ref
+) {
+  const inputRef = useRef(null)
 
-    useImperativeHandle(ref, () => {
+  useImperativeHandle(
+    ref,
+    () => {
       return {
         focus() {
-          inputRef.current.focus();
-        }
-      };
-    }, []);
-    
-    return (
-      <div
-        className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}
-      >
-        <div className="flex flex-row gap-2">
-          <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
-            {fieldName}
-          </span>
-          <span className="text-[#E42B15]">{isRequired ? '*' : ''}</span>
-        </div>
-        <input
-          type="text"
-          defaultValue={defaultValue}
-          name={name}
-          className={`w-full h-[51px] sm:h-[101px] md:h-[${inputHeight}] text-sm sm:text-2xl md:text-xl p-4 sm:p-8 md:p-6 rounded border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0`}
-          placeholder={placeHolder}
-          onChange={onChange}
-          ref={inputRef}
-        />
+          inputRef.current.focus()
+        },
+      }
+    },
+    []
+  )
+
+  return (
+    <div
+      className={`flex flex-col items-start justify-center gap-4 w-full ${className}`}
+    >
+      <div className="flex flex-row gap-2">
+        <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
+          {fieldName}
+        </span>
+        <span className="text-[#E42B15]">{isRequired ? '*' : ''}</span>
       </div>
-    )
-  })
+      <input
+        type="text"
+        defaultValue={defaultValue}
+        name={name}
+        className={`w-full h-[51px] sm:h-[101px] md:h-[${inputHeight}] text-sm sm:text-2xl md:text-xl p-4 sm:p-8 md:p-6 rounded border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0`}
+        placeholder={placeHolder}
+        onChange={onChange}
+        ref={inputRef}
+      />
+    </div>
+  )
+})
 
 const Checkbox = ({ name, title }) => {
   return (
@@ -154,10 +166,9 @@ export default function Contact({ contactDetails }) {
   const [website, setWebsite] = useState('')
   const [hearUs, setHearUs] = useState('')
   const [enquiry, setEnquiry] = useState('')
-  const [generalType, setGeneralType] = useState([]);
-  const [industryType, setIndustryType] = useState([]);
-  
-  
+  const [generalType, setGeneralType] = useState([])
+  const [industryType, setIndustryType] = useState([])
+
   const defaultProps = {
     center: {
       lat: contactDetails?.lat,
@@ -207,28 +218,28 @@ export default function Contact({ contactDetails }) {
   }
 
   useEffect(() => {
-    const generalType = JSON.parse(localStorage.getItem('selected-id'));
-    const industryType = JSON.parse(localStorage.getItem('selected-id-2'));
+    const generalType = JSON.parse(localStorage.getItem('selected-id'))
+    const industryType = JSON.parse(localStorage.getItem('selected-id-2'))
 
     if (generalType) {
-      setGeneralType(generalTypes.filter(value => value.id === generalType)[0].title)
+      setGeneralType(
+        generalTypes.filter((value) => value.id === generalType)[0].title
+      )
     }
 
     if (industryType) {
-      setIndustryType(industryTypes.filter(value => value.id === industryType)[0].title)
+      setIndustryType(
+        industryTypes.filter((value) => value.id === industryType)[0].title
+      )
     }
-  }, []);
+  }, [])
 
   const onSubmit = () => {
     if (!firstName || !lastName || !phoneNumber || !email) {
-      if (!firstName)
-        firstNameFocus.current.focus()
-      else if (!lastName)
-        lastNameFocus.current.focus()
-      else if (!phoneNumber)
-        phoneNumberFocus.current.focus()
-      else if (!email)
-        emailFocus.current.focus()
+      if (!firstName) firstNameFocus.current.focus()
+      else if (!lastName) lastNameFocus.current.focus()
+      else if (!phoneNumber) phoneNumberFocus.current.focus()
+      else if (!email) emailFocus.current.focus()
 
       return false
     } else {
@@ -239,7 +250,7 @@ export default function Contact({ contactDetails }) {
   }
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start px-4 sm:px-16 md:px-4 xl:px-20 2xl:px-40 pt-16 pb-6 gap-6">
+    <div className="flex flex-col md:flex-row items-center md:items-start px-4 sm:px-16 md:px-4 xl:px-20 2xl:px-40 pt-16 pb-32 gap-6">
       <div
         className="flex flex-col items-start p-6 gap-9 bg-white w-full"
         style={{
@@ -293,14 +304,14 @@ export default function Contact({ contactDetails }) {
               defaultValue={contactDetails?.name}
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               id="dc100__user_type"
               name="dc100__user_type"
               defaultValue={generalType}
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               id="dc100__industry_type"
               name="dc100__industry_type"
@@ -344,7 +355,9 @@ export default function Contact({ contactDetails }) {
               name="p50__e_mail"
               fieldName="Email Address"
               placeHolder="Your@email.com"
-              isRequired={email.length === 0 ? true : isValidEmail ? false : true}
+              isRequired={
+                email.length === 0 ? true : isValidEmail ? false : true
+              }
               ref={emailFocus}
             />
             <div className="flex flex-col items-start justify-center gap-4 w-full">
@@ -456,32 +469,42 @@ export default function Contact({ contactDetails }) {
               }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
-              center={{lat: contactDetails?.lat, lng: contactDetails?.lng}}
+              center={{ lat: contactDetails?.lat, lng: contactDetails?.lng }}
             >
               <AnyReactComponent
                 lat={contactDetails?.lat}
                 lng={contactDetails?.lng}
-                icon={<>
-                <BsFillChatSquareFill color="white" size={30} style={{
-                  width: "50px",
-                  height: "50px",
-                  position: "relative",
-                  top: "-50px",
-                  left: "-25px",
-                }} />
-                <div style={{
-                  width: "50px",
-                  height: "50px",
-                  position: "absolute",
-                  top: "-50px",
-                  left: "-18px",
-                }}>
-                  <Image
-                  src="/contactus/logo-marker.svg"
-                  width={35}
-                  height={35}
-                  alt=""
-                /></div></>}
+                icon={
+                  <>
+                    <BsFillChatSquareFill
+                      color="white"
+                      size={50}
+                      style={{
+                        width: '80px',
+                        height: '80px',
+                        position: 'relative',
+                        top: '-50px',
+                        left: '-25px',
+                      }}
+                    />
+                    <div
+                      style={{
+                        width: '60px',
+                        height: '60px',
+                        position: 'absolute',
+                        top: '-50px',
+                        left: '-18px',
+                      }}
+                    >
+                      <Image
+                        src="/contactus/logo-marker.svg"
+                        width={60}
+                        height={60}
+                        alt=""
+                      />
+                    </div>
+                  </>
+                }
               />
             </GoogleMapReact>
           </div>

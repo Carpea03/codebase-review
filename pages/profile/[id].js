@@ -81,19 +81,38 @@ export default function Profile({ profile }) {
         <InnerContainer>
           <div className="px-4 sm:px-16 md:px-16 xl:px-24 2xl:px-40 pb-40 sm:pb-60">
             <div
-              className="flex flex-col items-center sm:gap-8 px-4 sm:px-8 sm:py-14 md:px-12 py-6"
-              style={{
-                background:
-                  'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
-              }}
-            > 
-              <span className="hidden md:flex font-manrope font-semibold sm:text-2xl text-white tracking-[-0.03em] text-center">
-                {profile.objective}
-              </span>
-              <span className="md:hidden font-manrope font-bold text-base sm:text-[32px] leading-[150%] tracking-[-0.03em] text-white text-center py-8">
-                {profile.objective}
-              </span>
-              <div className="hidden md:flex flex-row items-center justify-center gap-[10px]">
+              className="flex flex-col"
+            >
+              <div className="flex">
+                <div className="flex flex-row items-center sm:gap-8 px-4 sm:px-8 sm:py-14 md:px-12 py-6"
+                  style={{
+                    background:
+                      'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
+                  }}
+                >
+                  <span className="hidden md:flex font-manrope font-semibold sm:text-2xl text-white tracking-[-0.03em] text-center">
+                    {profile.objective}
+                  </span>
+                </div>
+                <div className="flex flex-row w-full md:w-2/5 h-full">
+                  <div className="w-[500px] h-auto">
+                    <div className="flex flex-col w-full">
+                      {profile.awards?.map((award, index) => (
+                        <Image
+                          key={index}
+                          src={`/professionalProfiles/awards/${awards?.filter(value => value.id == award)[0]?.title}.png`}
+                          width={awards?.filter(value => value.id == award)[0]?.width * 2}
+                          height={awards?.filter(value => value.id == award)[0]?.height * 1.5}
+                          className="self-end m-5 sm:m-10 sm:mb-0"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+              {/* <div className="hidden md:flex flex-row items-center justify-center gap-[10px]">
                 <hr className="w-[50px] border-[1px] border-white" />
                 <span className="font-lora italic font-semibold text-xl text-white text-center whitespace-nowrap">
                   {profile.name}
@@ -102,7 +121,12 @@ export default function Profile({ profile }) {
                   {profile.position}
                 </span>
                 <hr className="w-[50px] border-[1px] border-white" />
-              </div>
+              </div> */}
+
+              <span className="md:hidden font-manrope font-bold text-base sm:text-[32px] leading-[150%] tracking-[-0.03em] text-white text-center py-8">
+                {profile.objective}
+              </span>
+
               <div className="md:hidden flex flex-col items-center justify-center gap-[10px]">
                 <div className="flex flex-row gap-4 items-center">
                   <hr className="w-[50px] border-[1px] border-white" />

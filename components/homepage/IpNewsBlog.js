@@ -29,7 +29,7 @@ const slides = [
       '“ Infringement of third party trade marks – Hells Angels and Redbubble “',
   },
 ]
-export default function IpNewsBlog({ news, isblog }) {
+export default function IpNewsBlog({ news, isblog, btnTitle }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
   const prevSlide = () => {
     const isFirstSlide = currentSlideIndex === 0
@@ -55,7 +55,7 @@ export default function IpNewsBlog({ news, isblog }) {
           isblog ? '' : 'bg-ipNewsLog-content'
         }`}
       >
-        <NewsBlog data={news} isblog={isblog} />
+        <NewsBlog data={news} isblog={isblog} btnTitle={btnTitle} />
       </div>
     </Container>
   )
