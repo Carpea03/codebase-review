@@ -244,6 +244,7 @@ export const profiles = {
     name: 'Martin Earley',
     position: 'Director, Victoria Region Manager, Patent & Trade Mark Attorney',
     email: 'martin.earley@baxterip.com.au',
+    awards: [1],
     telephone: '+61 3 9602 2288',
     potrait: '/professionalProfiles/peoples/martin.jpg',
     objective:

@@ -7,6 +7,9 @@ import { useRouter } from 'next/router'
 import { profiles } from '../../utils/const/profiles'
 import { profiles as peoples, awards } from '../../utils/const/people'
 import { InnerContainer } from '../../components/templates/InnerContainer'
+import IpNewsBlog from '../../components/homepage/IpNewsBlog'
+import { indexQuery } from '../../lib/queries'
+import { getClient, overlayDrafts } from '../../lib/sanity.server'
 
 export const getStaticPaths = async () => {
   const paths = peoples[0]?.teamMembers?.slice(0, 8).map((item) => {
@@ -30,20 +33,26 @@ export const getStaticProps = async (context) => {
 }
 
 export default function Profile({ profile }) {
+  const [reduceMorePost, setReduceMorePost] = useState()
+
+  useEffect(() => {
+    init()
+  }, [])
+
+  const init = async () => {
+    const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
+    setReduceMorePost(allPosts)
+  }
+
   return (
     <>
       <Header active={'People'} />
       <Container className="flex flex-col">
         <div className="bg-profile-bg !bg-cover">
           <InnerContainer>
-            <div className="w-full h-full sm:h-[1085px] md:h-[515px] flex flex-col md:flex-row justify-end items-center px-4 sm:px-16 md:px-16 xl:px-24 2xl:px-40 pt-[90px] sm:pt-[100px]">
-              <div
-                className="w-full md:w-3/5 h-full flex flex-col px-8 sm:px-12 pt-8 pb-14 sm:pt-0 sm:pb-0 gap-8 bg-white"
-                style={{
-                  clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%)',
-                }}
-              >
-                <div className="w-full flex flex-col sm:pt-12 sm:pb-[14px] gap-[17px]">
+            <div className="flex flex-col md:flex-row px-4 sm:px-16 md:px-16 xl:px-24 sm:pt-[100px]">
+              <div className="w-full bg-white flex-col md:w-4/5 px-8 sm:px-12 pt-8 pb-14 sm:pt-0 sm:pb-0 gap-8">
+                <div className="w-full flex flex-col sm:pt-5 sm:pb-[14px] gap-[17px]">
                   <span className="font-lora font-normal text-[32px] sm:text-5xl xl:text-[64px] xl:leading-[70px]">
                     {profile.name}
                   </span>
@@ -53,7 +62,7 @@ export default function Profile({ profile }) {
                     </span>
                   </div>
                 </div>
-                <div className="flex flex-col xl:flex-row items-start xl:items-end h-full w-full gap-6 sm:gap-8 2xl:gap-[60px] xl:py-12">
+                <div className="flex flex-col xl:flex-row items-start h-full w-full gap-6 sm:gap-8 2xl:gap-[60px] xl:py-12">
                   <div className="flex flex-col items-start gap-[10px]">
                     <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
                       Email
@@ -66,83 +75,157 @@ export default function Profile({ profile }) {
                     <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
                       Telephone
                     </span>
-                    <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940] whitespace-nowrap">
+                    <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940] whitespace-nowrap sm:pb-10 xl:pb-0">
                       {profile.telephone}
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-2/5 h-full flex flex-col justify-end items-center bg-[#FAF4E4]">
-                <Image src={profile.potrait} width={389} height={474} alt="" />
+              <div className="xl: h-full flex flex-col bg-[#FFF]">
+                <div>
+                  <Image
+                    src={profile.potrait}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: '100%' }}
+                    alt=""
+                  />
+                </div>
+                <div
+                  className={`xl:hidden flex w-full flex-row justify-center item-center md:flex-col ${
+                    profile?.awards?.length > 0 ? 'pb-10' : 'pb-24'
+                  }`}
+                >
+                  {profile?.awards?.length > 0 && (
+                    <>
+                      {profile.awards?.map((award, index) => (
+                        <Image
+                          key={index}
+                          src={`/professionalProfiles/awards/${
+                            awards?.filter((value) => value.id == award)[0]
+                              ?.title
+                          }.png`}
+                          width={
+                            awards?.filter((value) => value.id == award)[0]
+                              ?.width * 1.5
+                          }
+                          height={
+                            awards?.filter((value) => value.id == award)[0]
+                              ?.height * 1.5
+                          }
+                          className="self-end m-5 sm:m-10 sm:mb-0"
+                        />
+                      ))}{' '}
+                    </>
+                  )}
+                </div>
               </div>
             </div>
           </InnerContainer>
         </div>
         <InnerContainer>
-          <div className="px-4 sm:px-16 md:px-16 xl:px-24 2xl:px-40 pb-40 sm:pb-60">
+          <div className="flex flex-col md:flex-row px-4 sm:px-16 md:px-16 xl:px-24 px">
             <div
-              className="flex flex-col"
+              style={{
+                background:
+                  'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
+              }}
+              className="w-full xl:w-[65.2%] bg-white flex-col px-8 sm:px-12 pt-8 pb-14 sm:pt-0 sm:pb-0 gap-8 py-5"
             >
-              <div className="flex">
-                <div className="flex flex-row items-center sm:gap-8 px-4 sm:px-8 sm:py-14 md:px-12 py-6"
-                  style={{
-                    background:
-                      'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
-                  }}
-                >
-                  <span className="hidden md:flex font-manrope font-semibold sm:text-2xl text-white tracking-[-0.03em] text-center">
-                    {profile.objective}
-                  </span>
+              <p className="p-10 md:flex font-manrope font-semibold sm:text-2xl text-white text-left">
+                {profile.objective}
+              </p>
+            </div>
+            <div className="hidden xl:flex h-full flex flex-col bg-[#FFF] z-50">
+              {profile?.awards?.length > 0 && (
+                <div className="w-96 bg-white">
+                  <div className="flex flex-col ">
+                    {profile.awards?.map((award, index) => (
+                      <Image
+                        key={index}
+                        src={`/professionalProfiles/awards/${
+                          awards?.filter((value) => value.id == award)[0]?.title
+                        }.png`}
+                        width={
+                          awards?.filter((value) => value.id == award)[0]
+                            ?.width * 2
+                        }
+                        height={
+                          awards?.filter((value) => value.id == award)[0]
+                            ?.height * 1.5
+                        }
+                        className="self-end m-5 sm:m-10 sm:mb-0"
+                      />
+                    ))}
+                  </div>
                 </div>
-                <div className="flex flex-row w-full md:w-2/5 h-full">
-                  <div className="w-[500px] h-auto">
-                    <div className="flex flex-col w-full">
+              )}
+            </div>
+          </div>
+
+          <div className="sm:w-full sm:px-5 md:px-16 xl:px-24">
+            {/* <div className="px-11 md:px-0 flex flex-col md:flex-row ">
+              <div
+                className={`flex items-center px-10 py-10 ${
+                  profile?.awards?.length > 0 ? 'xl:w-3/5' : ''
+                } `}
+                style={{
+                  background:
+                    'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
+                }}
+              >
+                <p className=" md:flex font-manrope font-semibold sm:text-2xl text-white text-center">
+                  {profile.objective}
+                </p>
+              </div>
+              <div
+                className={`hidden xl:flex bg-white ${
+                  profile?.awards?.length > 0 ? '' : ''
+                }`}
+              >
+                {profile?.awards?.length > 0 && (
+                  <div className="w-96 bg-white">
+                    <div className="flex flex-col ">
                       {profile.awards?.map((award, index) => (
                         <Image
                           key={index}
-                          src={`/professionalProfiles/awards/${awards?.filter(value => value.id == award)[0]?.title}.png`}
-                          width={awards?.filter(value => value.id == award)[0]?.width * 2}
-                          height={awards?.filter(value => value.id == award)[0]?.height * 1.5}
+                          src={`/professionalProfiles/awards/${
+                            awards?.filter((value) => value.id == award)[0]
+                              ?.title
+                          }.png`}
+                          width={
+                            awards?.filter((value) => value.id == award)[0]
+                              ?.width * 2
+                          }
+                          height={
+                            awards?.filter((value) => value.id == award)[0]
+                              ?.height * 1.5
+                          }
                           className="self-end m-5 sm:m-10 sm:mb-0"
                         />
                       ))}
                     </div>
                   </div>
-                </div>
+                )}
               </div>
-              
-
-              {/* <div className="hidden md:flex flex-row items-center justify-center gap-[10px]">
+            </div> */}
+            <div className="md:hidden flex flex-col items-center justify-center gap-[10px]">
+              <div className="flex flex-row gap-4 items-center">
                 <hr className="w-[50px] border-[1px] border-white" />
-                <span className="font-lora italic font-semibold text-xl text-white text-center whitespace-nowrap">
-                  {profile.name}
-                </span>
-                <span className="font-lora italic font-normal text-xl text-white text-center">
-                  {profile.position}
-                </span>
-                <hr className="w-[50px] border-[1px] border-white" />
-              </div> */}
-
-              <span className="md:hidden font-manrope font-bold text-base sm:text-[32px] leading-[150%] tracking-[-0.03em] text-white text-center py-8">
-                {profile.objective}
-              </span>
-
-              <div className="md:hidden flex flex-col items-center justify-center gap-[10px]">
-                <div className="flex flex-row gap-4 items-center">
-                  <hr className="w-[50px] border-[1px] border-white" />
-                  <div className="flex flex-col">
-                    <span className="font-lora italic font-normal text-sm sm:text-xl text-white text-center whitespace-nowrap">
-                      {profile.name}
-                    </span>
-                    <span className="font-lora italic font-normal text-sm sm:text-xl text-white text-center">
-                      {profile.position}
-                    </span>
-                  </div>
-
-                  <hr className="w-[50px] border-[1px] border-white" />
+                <div className="flex flex-col">
+                  <span className="font-lora italic font-normal text-sm sm:text-xl text-white text-center whitespace-nowrap">
+                    {profile.name}
+                  </span>
+                  <span className="font-lora italic font-normal text-sm sm:text-xl text-white text-center">
+                    {profile.position}
+                  </span>
                 </div>
+
+                <hr className="w-[50px] border-[1px] border-white" />
               </div>
             </div>
+
             <div
               className="flex flex-col items-center justify-center py-[60px] px-4 sm:pt-[100px] sm:px-6 md:p-[60px] gap-[100px] md:gap-[60px] bg-white rounded-lg"
               style={{
@@ -250,6 +333,10 @@ export default function Profile({ profile }) {
             </div>
           </div>
         </InnerContainer>
+        <IpNewsBlog
+          news={reduceMorePost?.sort(() => Math.random() - 0.5).slice(0, 3)}
+          isblog={true}
+        />
       </Container>
       <Footer />
     </>
