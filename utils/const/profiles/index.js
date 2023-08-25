@@ -38,6 +38,7 @@ export const profiles = {
     email: 'chris.baxter@baxterip.com.au',
     telephone: '+61 2 9264 6716',
     potrait: '/professionalProfiles/peoples/chris.jpg',
+    awards: [0, 1],
     objective:
       '“There is no surer way to create jobs and societal wealth than through the commercialisation of new ideas anchored on a strong intellectual property foundation. Through a combination of my in-house, private practice and extensive tech investment experience, I work with clients to channel their IP towards maximum impact on business value.”',
     industry: {
@@ -243,6 +244,7 @@ export const profiles = {
     name: 'Martin Earley',
     position: 'Director, Victoria Region Manager, Patent & Trade Mark Attorney',
     email: 'martin.earley@baxterip.com.au',
+    awards: [1],
     telephone: '+61 3 9602 2288',
     potrait: '/professionalProfiles/peoples/martin.jpg',
     objective:

@@ -138,6 +138,11 @@ export const peopleIndustry = [
   { id: 4, item: [7, 6, 1, 3, 5] },
 ]
 
+export const awards = [
+  { id: 0, title: 'IP Stars', width: 80, height: 26 },
+  { id: 1, title: 'IAM 100', width: 55, height: 32 },
+]
+
 export const profiles = [
   {
     id: 0,
@@ -150,6 +155,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/julia.jpg',
         link: '/profile/julia-caunt',
+        awards: []
       },
       {
         id: 2,
@@ -158,6 +164,7 @@ export const profiles = [
         positions: ['Managing Director'],
         url: '/professionalProfiles/peoples/chris.jpg',
         link: '/profile/chris-baxter',
+        awards: [0, 1],
       },
       {
         id: 3,
@@ -169,6 +176,7 @@ export const profiles = [
         ],
         url: '/professionalProfiles/peoples/martin.jpg',
         link: '/profile/martin-earley',
+        awards: [1],
       },
       {
         id: 4,
@@ -177,6 +185,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/sean.jpg',
         link: '/profile/dr-seán-klinkradt',
+        awards: [1],
       },
       {
         id: 5,
@@ -185,6 +194,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/warren.jpg',
         link: '/profile/warren-chandler',
+        awards: [],
       },
       {
         id: 6,
@@ -193,6 +203,7 @@ export const profiles = [
         positions: ['Associate'],
         url: '/professionalProfiles/peoples/andrew.jpg',
         link: '/profile/andrew-balis',
+        awards: [],
       },
       {
         id: 7,
@@ -201,6 +212,7 @@ export const profiles = [
         positions: ['Principal'],
         url: '/professionalProfiles/peoples/qi.jpg',
         link: '/profile/dr-qi-zhang',
+        awards: [],
       },
       {
         id: 8,
@@ -209,6 +221,7 @@ export const profiles = [
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/peoples/richard.jpg',
         link: '/profile/dr-richard-grant',
+        awards: [],
       },
       {
         id: 9,
@@ -217,6 +230,7 @@ export const profiles = [
         positions: ['Senior Commercial Counsel'],
         url: '/professionalProfiles/peoples/john.jpg',
         link: '',
+        awards: [],
       },
     ],
   },
@@ -231,6 +245,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/julia.jpg',
         link: '/profile/julia-caunt',
+        awards: [],
       },
       {
         id: 2,
@@ -239,6 +254,7 @@ export const profiles = [
         positions: ['Managing Director'],
         url: '/professionalProfiles/peoples/chris.jpg',
         link: '/profile/chris-baxter',
+        awards: [0, 1],
       },
       {
         id: 3,
@@ -250,6 +266,7 @@ export const profiles = [
         ],
         url: '/professionalProfiles/peoples/martin.jpg',
         link: '/profile/martin-earley',
+        awards: [1],
       },
       {
         id: 4,
@@ -258,6 +275,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/sean.jpg',
         link: '/profile/dr-seán-klinkradt',
+        awards: [1],
       },
       {
         id: 5,
@@ -266,6 +284,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/warren.jpg',
         link: '/profile/warren-chandler',
+        awards: [],
       },
       {
         id: 6,
@@ -274,6 +293,7 @@ export const profiles = [
         positions: ['Associate'],
         url: '/professionalProfiles/peoples/andrew.jpg',
         link: '/profile/andrew-balis',
+        awards: [],
       },
       {
         id: 7,
@@ -282,6 +302,7 @@ export const profiles = [
         positions: ['Principal'],
         url: '/professionalProfiles/peoples/qi.jpg',
         link: '/profile/dr-qi-zhang',
+        awards: [],
       },
       {
         id: 8,
@@ -290,6 +311,7 @@ export const profiles = [
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/peoples/richard.jpg',
         link: '/profile/dr-richard-grant',
+        awards: [],
       },
       {
         id: 9,
@@ -298,6 +320,7 @@ export const profiles = [
         positions: ['Senior Commercial Counsel'],
         url: '/professionalProfiles/peoples/john.jpg',
         link: '',
+        awards: [],
       },
     ],
   },
@@ -312,6 +335,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/julia.jpg',
         link: '/profile/julia-caunt',
+        awards: [],
       },
       {
         id: 2,
@@ -320,6 +344,7 @@ export const profiles = [
         positions: ['Managing Director'],
         url: '/professionalProfiles/peoples/chris.jpg',
         link: '/profile/chris-baxter',
+        awards: [0, 1],
       },
       {
         id: 3,
@@ -331,6 +356,7 @@ export const profiles = [
         ],
         url: '/professionalProfiles/peoples/martin.jpg',
         link: '/profile/martin-earley',
+        awards: [1],
       },
       {
         id: 4,
@@ -339,6 +365,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/sean.jpg',
         link: '/profile/dr-seán-klinkradt',
+        awards: [1],
       },
       {
         id: 5,
@@ -347,6 +374,7 @@ export const profiles = [
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/warren.jpg',
         link: '/profile/warren-chandler',
+        awards: [],
       },
       {
         id: 6,
@@ -355,6 +383,7 @@ export const profiles = [
         positions: ['Associate'],
         url: '/professionalProfiles/peoples/andrew.jpg',
         link: '/profile/andrew-balis',
+        awards: [],
       },
       {
         id: 7,
@@ -363,6 +392,7 @@ export const profiles = [
         positions: ['Principal'],
         url: '/professionalProfiles/peoples/qi.jpg',
         link: '/profile/dr-qi-zhang',
+        awards: [],
       },
       {
         id: 8,
@@ -371,6 +401,7 @@ export const profiles = [
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/peoples/richard.jpg',
         link: '/profile/dr-richard-grant',
+        awards: [],
       },
       {
         id: 9,
@@ -379,6 +410,7 @@ export const profiles = [
         positions: ['Senior Commercial Counsel'],
         url: '/professionalProfiles/peoples/john.jpg',
         link: '',
+        awards: [],
       },
     ],
   },

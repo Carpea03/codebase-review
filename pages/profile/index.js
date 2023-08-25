@@ -227,21 +227,6 @@ export default function Profile() {
                 </span>
                 <hr className="w-[50px] border-[1px] border-white" />
               </div>
-              <div className="md:hidden flex flex-col items-center justify-center gap-[10px]">
-                <div className="flex flex-row gap-4 items-center">
-                  <hr className="w-[50px] border-[1px] border-white" />
-                  <div className="flex flex-col">
-                    <span className="font-lora italic font-normal text-sm sm:text-xl text-white text-center whitespace-nowrap">
-                      {profile.name}
-                    </span>
-                    <span className="font-lora italic font-normal text-sm sm:text-xl text-white text-center">
-                      {profile.position}
-                    </span>
-                  </div>
-
-                  <hr className="w-[50px] border-[1px] border-white" />
-                </div>
-              </div>
             </div>
             <div
               className="flex flex-col items-center justify-center py-[60px] px-4 sm:pt-[100px] sm:px-6 md:p-[60px] gap-[100px] md:gap-[60px] bg-white rounded-lg"
