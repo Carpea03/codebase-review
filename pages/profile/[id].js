@@ -131,7 +131,9 @@ export default function Profile({ profile }) {
                 background:
                   'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
               }}
-              className="w-full xl:w-[65.2%] bg-white flex-col px-8 sm:px-12 pt-8 pb-14 sm:pt-0 sm:pb-0 gap-8 py-5"
+              className={`w-full ${
+                profile?.awards?.length > 0 ? 'xl:w-[65.2%]' : ''
+              } bg-white flex-col px-8 sm:px-12 pt-8 pb-14 sm:pt-0 sm:pb-0 gap-8 py-5`}
             >
               <p className="p-10 md:flex font-manrope font-semibold sm:text-2xl text-white text-left">
                 {profile.objective}
