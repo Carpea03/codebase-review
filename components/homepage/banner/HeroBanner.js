@@ -7,6 +7,7 @@ import { IoArrowForwardOutline } from 'react-icons/io5'
 import { BsDoorOpenFill } from 'react-icons/bs'
 import Image from 'next/image'
 import Link from 'next/link'
+import { metaOffice } from '../../../utils/const/links'
 
 const details = [
   {
@@ -69,7 +70,7 @@ export default function HeroBanner({ landing, data }) {
                       </div>
                     </div>
                   </Link>
-                  <Link href={'/'}>
+                  <Link href={metaOffice}>
                     <div
                       className="flex flex-col items-center"
                       onMouseEnter={() => setChangeImage(true)}
