@@ -35,7 +35,11 @@ export default function HeroBanner({ landing, data }) {
         <div className="xl:h-[620px] xl:pt-20">
           <div className="container 2xl:flex 2xl:justify-center h-full pt-12 xl:pt-0 md:py-20 xl:px-10 ">
             <div className="flex flex-col xl:flex-row">
-              <div className="order-2 xl:order-1 xl:w-[700px] pt-[60px]">
+              <div
+                className={`order-2 xl:order-1  ${
+                  landing ? 'xl:w-[730px] pt-[20px] xl:pt-0' : 'pt-[60px] xl:w-[700px]'
+                }`}
+              >
                 <span className="w-full flex justify-center text-center  xl:justify-center 2xl:justify-start 2xl:text-left font-lora font-semibold text-5xl lg:text-6xl xl:text-[56px] xl:leading-[1-0%] text-[#272940] px-10 md:px-0 ">
                   {landing ? data?.header[0]?.title : 'Innovate Boldly.'}
                   <br />
