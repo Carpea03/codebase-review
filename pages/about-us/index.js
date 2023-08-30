@@ -9,6 +9,7 @@ import Philosophy from './content/Philosophy'
 import AwardsAndRecognition from './content/AwardsAndRecognition'
 import { Listbox } from '@headlessui/react'
 import { MdArrowDropDown } from 'react-icons/md'
+import Head from 'next/head'
 
 const menus = [
   { id: 1, title: 'Living our values', icon: '/services/medal-star.svg' },
@@ -45,6 +46,10 @@ export default function AboutUs() {
 
   return (
     <>
+      <Head>
+        <title>About Us</title>
+        <meta name="description" content="" />
+      </Head>
       <Header />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-aboutus-unsplash !bg-cover">

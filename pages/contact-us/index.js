@@ -7,6 +7,7 @@ import Contact from './offices/Contact'
 import { contactDetails } from '../../utils/const/contacts'
 import { useRouter } from 'next/router'
 import { InnerContainer } from '../../components/templates/InnerContainer'
+import Head from 'next/head'
 
 const hears = [
   { id: 1, name: 'Select one' },
@@ -38,6 +39,10 @@ export default function ContactUs() {
 
   return (
     <>
+      <Head>
+        <title>Contact Us</title>
+        <meta name="description" content="" />
+      </Head>
       <Header active={'Contact'} />
       <Container className="bg-[#FFFDF7]">
         <InnerContainer>
