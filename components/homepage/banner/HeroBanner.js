@@ -32,12 +32,14 @@ export default function HeroBanner({ landing, data }) {
   return (
     <Container className="z-4 bg-hero-banner px-10 xl:px-0">
       <InnerContainer>
-        <div className="xl:h-[620px] xl:pt-20">
+        <div className={` ${landing ? 'xl:h-100' : 'xl:h-[620px]'} xl:pt-20`}>
           <div className="container 2xl:flex 2xl:justify-center h-full pt-12 xl:pt-0 md:py-20 xl:px-10 ">
             <div className="flex flex-col xl:flex-row">
               <div
                 className={`order-2 xl:order-1  ${
-                  landing ? 'xl:w-[730px] pt-[20px] xl:pt-0' : 'pt-[60px] xl:w-[700px]'
+                  landing
+                    ? 'xl:w-[730px] pt-[20px] xl:pt-0'
+                    : 'pt-[40px] xl:w-[700px]'
                 }`}
               >
                 <span className="w-full flex justify-center text-center  xl:justify-center 2xl:justify-start 2xl:text-left font-lora font-semibold text-5xl lg:text-6xl xl:text-[56px] xl:leading-[1-0%] text-[#272940] px-10 md:px-0 ">
@@ -105,27 +107,32 @@ export default function HeroBanner({ landing, data }) {
                   </Link>
                 </div>
               </div>
-              <div className="order-1 xl:order-2 flex justify-center xl:justify-end">
-                <Image
-                  src={
-                    changeImage
-                      ? '/meta-office.png'
-                      : '/professionalProfiles/IP-people.jpg'
-                  }
-                  alt={'banner'}
-                  width={584}
-                  height={438}
-                  style={
-                    changeImage
-                      ? {
-                          borderWidth: 10,
-                          borderStyle: 'solid',
-                          borderColor: '#806AD9',
-                          borderRadius: 5,
-                        }
-                      : {}
-                  }
-                />
+              <div
+                className={`order-1 xl:order-2 flex justify-center xl:justify-end`}
+              >
+                <div>
+                  <Image
+                    src={
+                      changeImage
+                        ? '/meta-office.png'
+                        : '/professionalProfiles/IP-people.jpg'
+                    }
+                    alt={'banner'}
+                    width={584}
+                    height={438}
+                    resizeMode={'contain'}
+                    style={
+                      changeImage
+                        ? {
+                            borderWidth: 10,
+                            borderStyle: 'solid',
+                            borderColor: '#806AD9',
+                            borderRadius: 5,
+                          }
+                        : {}
+                    }
+                  />
+                </div>
               </div>
             </div>
           </div>
