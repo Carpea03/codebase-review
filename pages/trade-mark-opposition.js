@@ -17,7 +17,7 @@ export default function TradeMarkOpposition() {
     { title: 'Trade mark opposition', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Trade mark opposition | Baxter IP Sydney & Melbourne</title>
         <meta

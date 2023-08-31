@@ -9,7 +9,7 @@ export default function DesignDisputes() {
     { title: 'Design disputes', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Design disputes | Baxter IP, Patent & Trade Mark Attorneys

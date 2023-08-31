@@ -10,7 +10,7 @@ export default function PatentApplication() {
     { title: 'Australian patent application', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Filing an Australian patent application | Baxter IP Sydney & Melbourne

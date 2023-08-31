@@ -14,7 +14,7 @@ export default function FreedomToOperatePatentSearch() {
     { title: 'Freedom-to-operate patent search', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Freedom-to-operate patent search | Patent infringement search | Baxter

@@ -289,6 +289,11 @@ export default function MelbourneOffice() {
           <span className="uppercase font-manrope font-semibold text-base sm:text-3xl md:text-xl text-[#7A7B94]">
             Phone
           </span>
+          <a href={`tel:+61 2 9264 6716`}>
+            <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
+            +61 2 9264 6716
+            </span>
+          </a>
           <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
             +61 2 9264 6716
           </span>
@@ -305,9 +310,11 @@ export default function MelbourneOffice() {
           <span className="uppercase font-manrope font-semibold text-base sm:text-3xl md:text-xl text-[#7A7B94]">
             email
           </span>
-          <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
-            mail@baxterip.com.au
-          </span>
+          <a href="mailto:mail@baxterip.com.au">
+            <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
+              mail@baxterip.com.au
+            </span>
+          </a>
         </div>
         <div className="flex flex-col items-start gap-9 h-full w-full">
           <span className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">

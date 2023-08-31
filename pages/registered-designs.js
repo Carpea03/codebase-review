@@ -9,7 +9,7 @@ export default function RegisteredDesigns() {
     { title: 'Registered designs', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Registered designs | Design patents Australia | Baxter IP</title>
         <meta

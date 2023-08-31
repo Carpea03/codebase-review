@@ -1,5 +1,5 @@
 const teamLink = '/people'
-const profile = '/profile'
+const profile = '/attorneys'
 
 
 export const subMenus = [
@@ -154,7 +154,7 @@ export const profiles = [
         name: 'Julia Caunt',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/julia.jpg',
-        link: '/profile/julia-caunt',
+        link: '/attorneys/julia-caunt',
         awards: []
       },
       {
@@ -163,7 +163,7 @@ export const profiles = [
         name: 'Chris Baxter',
         positions: ['Managing Director'],
         url: '/professionalProfiles/peoples/chris.jpg',
-        link: '/profile/chris-baxter',
+        link: '/attorneys/chris-baxter',
         awards: [0, 1],
       },
       {
@@ -175,7 +175,7 @@ export const profiles = [
           'Victoria region manager',
         ],
         url: '/professionalProfiles/peoples/martin.jpg',
-        link: '/profile/martin-earley',
+        link: '/attorneys/martin-earley',
         awards: [1],
       },
       {
@@ -184,7 +184,7 @@ export const profiles = [
         name: 'Dr Seán Klinkradt',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/sean.jpg',
-        link: '/profile/dr-seán-klinkradt',
+        link: '/attorneys/dr-seán-klinkradt',
         awards: [1],
       },
       {
@@ -193,7 +193,7 @@ export const profiles = [
         name: 'Warren Chandler',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/warren.jpg',
-        link: '/profile/warren-chandler',
+        link: '/attorneys/warren-chandler',
         awards: [],
       },
       {
@@ -202,7 +202,7 @@ export const profiles = [
         name: 'Andrew Balis',
         positions: ['Associate'],
         url: '/professionalProfiles/peoples/andrew.jpg',
-        link: '/profile/andrew-balis',
+        link: '/attorneys/andrew-balis',
         awards: [],
       },
       {
@@ -211,7 +211,7 @@ export const profiles = [
         name: 'Dr Qi Zhang',
         positions: ['Principal'],
         url: '/professionalProfiles/peoples/qi.jpg',
-        link: '/profile/dr-qi-zhang',
+        link: '/attorneys/dr-qi-zhang',
         awards: [],
       },
       {
@@ -220,7 +220,7 @@ export const profiles = [
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/peoples/richard.jpg',
-        link: '/profile/dr-richard-grant',
+        link: '/attorneys/dr-richard-grant',
         awards: [],
       },
       {
@@ -244,7 +244,7 @@ export const profiles = [
         name: 'Julia Caunt',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/julia.jpg',
-        link: '/profile/julia-caunt',
+        link: '/attorneys/julia-caunt',
         awards: [],
       },
       {
@@ -253,7 +253,7 @@ export const profiles = [
         name: 'Chris Baxter',
         positions: ['Managing Director'],
         url: '/professionalProfiles/peoples/chris.jpg',
-        link: '/profile/chris-baxter',
+        link: '/attorneys/chris-baxter',
         awards: [0, 1],
       },
       {
@@ -265,7 +265,7 @@ export const profiles = [
           'Victoria region manager',
         ],
         url: '/professionalProfiles/peoples/martin.jpg',
-        link: '/profile/martin-earley',
+        link: '/attorneys/martin-earley',
         awards: [1],
       },
       {
@@ -274,7 +274,7 @@ export const profiles = [
         name: 'Dr Seán Klinkradt',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/sean.jpg',
-        link: '/profile/dr-seán-klinkradt',
+        link: '/attorneys/dr-seán-klinkradt',
         awards: [1],
       },
       {
@@ -283,7 +283,7 @@ export const profiles = [
         name: 'Warren Chandler',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/warren.jpg',
-        link: '/profile/warren-chandler',
+        link: '/attorneys/warren-chandler',
         awards: [],
       },
       {
@@ -292,7 +292,7 @@ export const profiles = [
         name: 'Andrew Balis',
         positions: ['Associate'],
         url: '/professionalProfiles/peoples/andrew.jpg',
-        link: '/profile/andrew-balis',
+        link: '/attorneys/andrew-balis',
         awards: [],
       },
       {
@@ -301,7 +301,7 @@ export const profiles = [
         name: 'Dr Qi Zhang',
         positions: ['Principal'],
         url: '/professionalProfiles/peoples/qi.jpg',
-        link: '/profile/dr-qi-zhang',
+        link: '/attorneys/dr-qi-zhang',
         awards: [],
       },
       {
@@ -310,7 +310,7 @@ export const profiles = [
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/peoples/richard.jpg',
-        link: '/profile/dr-richard-grant',
+        link: '/attorneys/dr-richard-grant',
         awards: [],
       },
       {
@@ -334,7 +334,7 @@ export const profiles = [
         name: 'Julia Caunt',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/julia.jpg',
-        link: '/profile/julia-caunt',
+        link: '/attorneys/julia-caunt',
         awards: [],
       },
       {
@@ -343,7 +343,7 @@ export const profiles = [
         name: 'Chris Baxter',
         positions: ['Managing Director'],
         url: '/professionalProfiles/peoples/chris.jpg',
-        link: '/profile/chris-baxter',
+        link: '/attorneys/chris-baxter',
         awards: [0, 1],
       },
       {
@@ -355,7 +355,7 @@ export const profiles = [
           'Victoria region manager',
         ],
         url: '/professionalProfiles/peoples/martin.jpg',
-        link: '/profile/martin-earley',
+        link: '/attorneys/martin-earley',
         awards: [1],
       },
       {
@@ -364,7 +364,7 @@ export const profiles = [
         name: 'Dr Seán Klinkradt',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/sean.jpg',
-        link: '/profile/dr-seán-klinkradt',
+        link: '/attorneys/dr-seán-klinkradt',
         awards: [1],
       },
       {
@@ -373,7 +373,7 @@ export const profiles = [
         name: 'Warren Chandler',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/peoples/warren.jpg',
-        link: '/profile/warren-chandler',
+        link: '/attorneys/warren-chandler',
         awards: [],
       },
       {
@@ -382,7 +382,7 @@ export const profiles = [
         name: 'Andrew Balis',
         positions: ['Associate'],
         url: '/professionalProfiles/peoples/andrew.jpg',
-        link: '/profile/andrew-balis',
+        link: '/attorneys/andrew-balis',
         awards: [],
       },
       {
@@ -391,7 +391,7 @@ export const profiles = [
         name: 'Dr Qi Zhang',
         positions: ['Principal'],
         url: '/professionalProfiles/peoples/qi.jpg',
-        link: '/profile/dr-qi-zhang',
+        link: '/attorneys/dr-qi-zhang',
         awards: [],
       },
       {
@@ -400,7 +400,7 @@ export const profiles = [
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/peoples/richard.jpg',
-        link: '/profile/dr-richard-grant',
+        link: '/attorneys/dr-richard-grant',
         awards: [],
       },
       {

@@ -16,7 +16,7 @@ export default function TradeMarkExamination() {
     { title: 'Trade mark examination', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Examination of a trade mark application | Baxter IP Sydney & Melbourne

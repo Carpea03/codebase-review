@@ -10,7 +10,7 @@ export default function PatentSearch() {
     { title: 'Patent search', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Patent search | Worldwide patent search | Baxter IP</title>
         <meta

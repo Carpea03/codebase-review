@@ -11,7 +11,7 @@ export default function AustralianPatentSearch() {
     { title: 'Australian patent search', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Australian patent search | Baxter IP Sydney & Melbourne</title>
         <meta

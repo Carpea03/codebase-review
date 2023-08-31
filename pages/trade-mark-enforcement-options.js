@@ -13,7 +13,7 @@ export default function TradeMarkEnforcementOptions() {
     { title: 'Trade mark enforcement options', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Trade mark enforcement and defence | Baxter IP Sydney & Melbourne

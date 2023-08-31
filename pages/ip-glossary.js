@@ -8,7 +8,7 @@ export default function IpGlossary() {
     { title: 'IP Glossary', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Articles"}>
       <Head>
         <title>IP Glossary | Intellectual Property Glossary | Baxter IP</title>
         <meta

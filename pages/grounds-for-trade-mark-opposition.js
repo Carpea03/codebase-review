@@ -14,7 +14,7 @@ export default function GroundsForTradeMarkOpposition() {
     { title: 'Grounds for trade mark opposition', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Grounds for opposing a trade mark application | Baxter IP</title>
         <meta

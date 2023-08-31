@@ -11,7 +11,7 @@ export default function InternationalPatentSearch() {
     { title: 'International patent search', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           International patent search | Patent novelty search | Baxter IP

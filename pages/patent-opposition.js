@@ -14,7 +14,7 @@ export default function PatentOpposition() {
     { title: 'Patent opposition', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Patent opposition in Australia | Baxter IP Sydney & Melbourne

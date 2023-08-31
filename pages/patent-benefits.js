@@ -12,7 +12,7 @@ export default function PatentBenefits() {
   ]
   return (
     <>
-      <Layout navData={data}>
+      <Layout navData={data} active={"Services"}>
         <Head>
           <title>Benefits of a patent | Baxter IP Sydney & Melbourne</title>
           <meta

@@ -13,7 +13,7 @@ export default function PatentLitigation() {
     { title: 'Patent litigation', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Patent litigation | Intellectual property enforcement | Baxter IP

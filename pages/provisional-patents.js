@@ -10,7 +10,7 @@ export default function ProvisionalPatents() {
     { title: 'Stage 1: Provisional patent applications', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           File for provisional patents in Australia | Baxter IP Sydney &

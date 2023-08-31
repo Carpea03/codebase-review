@@ -8,7 +8,7 @@ export default function BaxterIpPhilosophy() {
     { title: 'The Baxter IP Philosophy', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"The Baxter IP philosophy"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"The Baxter IP philosophy"} active={"Values"}>
       <Head>
         <title>
           Dedicated & supportive, transparent and commercial | The Baxter IP

@@ -91,9 +91,19 @@ export const cards = [
   },
 ]
 
+export const subMenusContact = [
+  [
+    { title: 'Our patent & Trade mark attorney offices', bold: true, division: false, href: '' },
+    { title: 'Sydney Patent & Trade Mark Office', bold: false, division: false, href: '/contact-us/sydney' },
+    { title: 'Melbourne Patent & Trade Mark Office', bold: false, division: false, href: '/contact-us/melbourne' },
+    { title: 'Brisbane Patent & Trade Mark Office', bold: false, division: false, href: '/contact-us/brisbane' },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+]
+
 export const subMenusValues = [
   [
-    { title: 'About us', bold: true, division: false, href: '' },
+    { title: 'About us', bold: true, division: false, href: '/about' },
     { title: 'Our values', bold: false, division: false, href: '/living-our-values' },
     { title: 'Our philosophy', bold: false, division: false, href: '/baxter-ip-philosophy' },
     { title: 'Capital partners', bold: false, division: false, href: '/capital-partners' },
@@ -144,6 +154,14 @@ export const sideMenus = [
   {
     name: 'Join us',
     img: '/menus/services/sideMenus/Expertise (Dark).svg',
+    href: '',
+  },
+]
+
+export const sideMenusContact = [
+  {
+    name: 'Contact',
+    img: '/menus/contact/sideMenus/contact-book.svg',
     href: '',
   },
 ]

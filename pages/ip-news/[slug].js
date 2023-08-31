@@ -43,6 +43,7 @@ export default function Post({ data = {}, preview }) {
     initialData: data,
     enabled: preview && slugData,
   })
+  // console.log("post",post)
   
   if (!router.isFallback && !slugData) {
     return <ErrorPage statusCode={404} />
@@ -84,7 +85,7 @@ export default function Post({ data = {}, preview }) {
   }
 
   return (
-    <Layout navData={menu} articlesBg={true} bannerData={true} contactUs={true} layout={3}>
+    <Layout navData={menu} articlesBg={true} bannerData={true} contactUs={true} layout={3} active={'Articles'}>
       <div>
         <div
           className="w-full hidden md:flex rounded"

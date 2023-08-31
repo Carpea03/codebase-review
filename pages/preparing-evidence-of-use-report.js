@@ -16,7 +16,7 @@ export default function PreparingAnEvidenceOfUseReport() {
     { title: 'Evidence of Use preparation', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Preparing an Evidence of Use report | Baxter IP Sydney & Melbourne

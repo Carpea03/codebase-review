@@ -9,7 +9,7 @@ export default function IpAudit() {
     { title: 'IP Audit', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           IP Audit | Intellectual property audit | Baxter IP Sydney & Melbourne

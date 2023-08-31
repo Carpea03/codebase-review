@@ -11,21 +11,24 @@ import GoogleMapReact from 'google-map-react'
 import Link from 'next/link'
 
 const contact = [
-  { title: 'Phone', content: '+61 2 9264 6716' },
-  { title: 'Email', content: 'mail@baxterip.com.au' },
+  { title: 'Phone', content: '+61 2 9264 6716', link: 'tel:+61 2 9264 6716' },
+  {
+    title: 'Email',
+    content: 'mail@baxterip.com.au',
+    link: 'mailto:mail@baxterip.com.au',
+  },
 ]
 
 const company = [
-  { title: 'About Us', href: '/about-us' },
+  { title: 'About Us', href: '/about' },
   { title: 'Contact', href: '/contact-us' },
-  { title: 'Privacy Policy', href: '' },
-  { title: 'Terms & conditions', href: '' },
+  { title: 'Privacy Policy', href: '/privacy-policy' },
 ]
 
 const moreToExplore = [
   { title: 'IP News', href: '/ip-news' },
   { title: 'Our Values', href: '/living-our-values' },
-  { title: 'How We Give Back', href: '' },
+  { title: 'How We Give Back', href: '/living-our-values' },
   { title: 'Awards & Recognition', href: '/awards-and-recognition' },
 ]
 
@@ -46,7 +49,7 @@ const Item = ({ title, content, page }) => {
   return (
     <div className="flex flex-col items-start gap-[3px] md:gap-[1px]">
       <span className="font-manrope font-medium text-sm sm:text-xl md:text-sm lg:text-base text-white whitespace-nowrap cursor-pointer">
-        {page === title ? <div className="text-black">{title}</div> : title}
+        {title}
       </span>
       {content && (
         <span className="font-manrope font-medium text-sm sm:text-xl text-[#9FA0B2] whitespace-nowrap cursor-pointer">
@@ -70,7 +73,7 @@ const AnyReactComponent = ({ icon }) => <div>{icon}</div>
 const Footer = ({ page }) => {
   return (
     <Container>
-      <div className="flex flex-col items-center px-4 py-[30px] sm:px-9 sm:py-[67px] md:px-4 lg:px-10 md:pt-[50px] bg-[#404266]">
+      <div className="flex flex-col items-center px-4 py-[30px] sm:px-9 sm:py-[67px] md:px-4 lg:px-10 xl:px-48 md:pt-[50px] bg-[#404266]">
         <InnerContainer>
           <div className="w-full flex flex-col items-center gap-[60px] md:gap-[50px]">
             <div className="w-full flex flex-col md:flex-row justify-start md:justify-between md:items-center gap-[60px] md:gap-0">
@@ -108,11 +111,13 @@ const Footer = ({ page }) => {
                 <div className="flex flex-col items-start gap-6">
                   {contact.map((item) => (
                     <div key={`contact-${item.title}`}>
-                      <Item
-                        key={`contact-${item.title}`}
-                        title={item.title}
-                        content={item.content}
-                      />
+                      <a href={item.link}>
+                        <Item
+                          key={`contact-${item.title}`}
+                          title={item.title}
+                          content={item.content}
+                        />
+                      </a>
                     </div>
                   ))}
                 </div>
@@ -178,16 +183,22 @@ const Footer = ({ page }) => {
                 <div className="hidden md:flex h-[90px]" />
                 <div className="hidden md:flex flex-col items-start gap-3">
                   <Subject title="Connect with us" />
-                  <div className="flex flex-row items-center px-4 py-[10px] gap-3 bg-[#6A6DA9] rounded-md cursor-pointer">
-                    <span className="font-manrope font-medium text-base text-white">
-                      LinkedIn
-                    </span>
-                    <TiSocialLinkedin
-                      size={24}
-                      color="#6A6DA9"
-                      className="bg-white rounded-full"
-                    />
-                  </div>
+                  <a
+                    href="https://www.linkedin.com/company/baxter-ip-patent-&-trade-mark-attorneys/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="flex flex-row items-center px-4 py-[10px] gap-3 bg-[#6A6DA9] rounded-md cursor-pointer">
+                      <span className="font-manrope font-medium text-base text-white">
+                        LinkedIn
+                      </span>
+                      <TiSocialLinkedin
+                        size={24}
+                        color="#6A6DA9"
+                        className="bg-white rounded-full"
+                      />
+                    </div>
+                  </a>
                 </div>
               </div>
               <div className="flex flex-col items-start">
@@ -225,15 +236,21 @@ const Footer = ({ page }) => {
               </div>
               <div className="md:hidden flex flex-col items-start gap-10">
                 <Subject title="Connect with us" />
-                <div className="flex flex-row items-center px-4 py-[10px] sm:px-9 sm:py-6 gap-3 sm:gap-7 bg-[#6A6DA9] rounded-md cursor-pointer">
-                  <span className="font-manrope font-medium text-base sm:text-xl text-white">
-                    LinkedIn
-                  </span>
-                  <TiSocialLinkedin
-                    color="#6A6DA9"
-                    className="bg-white rounded-full w-6 h-6 sm:w-8 sm:h-8"
-                  />
-                </div>
+                <a
+                  href="https://www.linkedin.com/company/baxter-ip-patent-&-trade-mark-attorneys/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="flex flex-row items-center px-4 py-[10px] sm:px-9 sm:py-6 gap-3 sm:gap-7 bg-[#6A6DA9] rounded-md cursor-pointer">
+                    <span className="font-manrope font-medium text-base sm:text-xl text-white">
+                      LinkedIn
+                    </span>
+                    <TiSocialLinkedin
+                      color="#6A6DA9"
+                      className="bg-white rounded-full w-6 h-6 sm:w-8 sm:h-8"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="md:hidden flex flex-col items-start gap-4 sm:gap-10">
                 <span className="font-lora font-medium text-xl sm:text-3xl text-white">

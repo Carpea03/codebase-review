@@ -21,7 +21,7 @@ export default function TradeMarkRegistrationProcess() {
     { title: 'Trade mark registration process', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Trade mark registration process | Baxter IP Sydney & Melbourne

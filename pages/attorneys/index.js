@@ -156,7 +156,7 @@ export default function Profile() {
 
   return (
     <>
-      <Header active={'People'} />
+      <Header active={'Attorneys'} />
       <Container className="flex flex-col">
         <div className="bg-profile-bg !bg-cover">
           <InnerContainer>

@@ -16,7 +16,7 @@ export default function TradeMarkAcceptance() {
     { title: 'Trade mark acceptance', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Acceptance of a trade mark application | Baxter IP Sydney & Melbourne

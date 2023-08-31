@@ -10,7 +10,7 @@ export default function HowToPatent() {
     { title: 'How to patent', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           How to patent an idea in Australia | Baxter IP Sydney & Melbourne

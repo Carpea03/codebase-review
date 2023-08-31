@@ -8,7 +8,7 @@ export default function HowToBecomeAPatentAttorney() {
     { title: 'How to become a patent attorney', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"How to become a patent attorney"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"How to become a patent attorney"}  active={"Values"}>
       <Head>
         <title>How to become a patent attorney in Australia | Baxter IP</title>
         <meta

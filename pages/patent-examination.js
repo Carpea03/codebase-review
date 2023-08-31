@@ -10,7 +10,7 @@ export default function PatentExamination() {
     { title: 'Patent examination and publication', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Examination of an Australian patent application | Baxter IP Sydney &

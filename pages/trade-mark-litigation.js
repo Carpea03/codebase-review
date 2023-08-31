@@ -13,7 +13,7 @@ export default function TradeMarkLitigation() {
     { title: 'Trade mark litigation', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Trade mark litigation | Baxter IP Sydney & Melbourne</title>
         <meta

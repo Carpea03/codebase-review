@@ -16,7 +16,7 @@ export default function TradeMarkRegistrationBenefits() {
     { title: 'Trade mark registration benefits', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Benefits of a trade mark registration | Baxter IP Sydney & Melbourne

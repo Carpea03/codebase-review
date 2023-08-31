@@ -57,6 +57,7 @@ export default function ContactUs() {
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
                   <Link
                     href={metaOffice}
+                    target='_blank'
                     className="flex flex-row items-center"
                   >
                     <Image
@@ -109,7 +110,7 @@ export default function ContactUs() {
               </div>
               <div className="flex flex-row justify-start pb-8 md:gap-4 xl:gap-[100px]">
                 <div className="w-1/3 flex justify-center items-center border-[3px] border-[#816BD9] rounded-sm bg-contactus-metaoffice">
-                  <Link href={metaOffice}>
+                  <Link href={metaOffice} target='_blank'>
                     <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-white/20 backdrop-blur-xl">
                       <Image
                         alt=""

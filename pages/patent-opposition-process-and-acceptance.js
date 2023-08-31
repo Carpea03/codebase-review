@@ -14,7 +14,7 @@ export default function PatentOppositionProcessAndAcceptance() {
     { title: 'Patent opposition process and acceptance', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Patent opposition process and acceptance of an Australian patent |
