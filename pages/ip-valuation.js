@@ -9,7 +9,7 @@ export default function IpValuation() {
     { title: 'IP Valuation', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Intellectual Property Valuation | What is your patent worth?

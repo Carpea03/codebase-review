@@ -20,7 +20,9 @@ export default function SubMenuBlock({ contents }) {
                         {!c.division && (
                           <span
                             key={k}
-                            className={`cursor-pointer hover:text-black ${
+                            className={`${
+                              c.href ? 'cursor-pointer' : ''
+                            } hover:text-black ${
                               c.bold
                                 ? 'text-[#272940]'
                                 : 'text-[#272940]/60 py-[5px]'

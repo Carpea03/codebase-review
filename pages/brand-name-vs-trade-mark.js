@@ -10,7 +10,7 @@ export default function BrandNameVsTradeMark() {
     { title: 'Brand name vs trade mark', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Brand name vs trade mark | Baxter IP Sydney & Melbourne</title>
         <meta

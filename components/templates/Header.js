@@ -15,7 +15,7 @@ import { useRouter } from 'next/router'
 
 const menus = [
   { id: 1, name: 'Services' },
-  { id: 2, name: 'People' },
+  { id: 2, name: 'Attorneys' },
   { id: 3, name: 'Values' },
   { id: 4, name: 'Articles' },
   { id: 5, name: 'Contact' },
@@ -42,8 +42,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
       case 2:
         router.push('/people')
         return
-      case 5:
-        router.push('/contact-us')
+      case 5: 
         return
       default:
         return
@@ -117,7 +116,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                           {menu.id == 2 && ''}
                           {menu.id == 3 && <Values active={"Values"} />}
                           {menu.id == 4 && <Blog active={"Articles"} />}
-                          {menu.id == 5 && ''}
+                          {menu.id == 5 && <Contact active={"Contact"} />}
                         </Popover.Panel>
                       </Transition>
                     </>
@@ -186,7 +185,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                   {menu.id == 2 && ''}
                   {menu.id == 3 && <Values active={"Values"} />}
                   {menu.id == 4 && <Blog active={"Articles"} />}
-                  {menu.id == 5 && ''}
+                  {menu.id == 5 && <Contact active={"Contact"} />}
                 </Disclosure.Panel>
               </Disclosure>
             ))}

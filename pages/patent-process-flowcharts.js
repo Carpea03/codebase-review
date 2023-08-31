@@ -9,7 +9,7 @@ export default function PatentProcessFlowcharts() {
     { title: 'Patent process flowcharts', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Articles"}>
       <Head>
         <title>Patent process flowcharts | Baxter IP Sydney & Melbourne</title>
         <meta

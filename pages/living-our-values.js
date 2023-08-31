@@ -9,7 +9,7 @@ export default function LivingOurValues() {
     { title: 'Living our values', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"Living our values"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Living our values"} active={"Values"}>
       <Head>
         <title>
           Living our values at Baxter IP, Patent & Trade Mark Attorneys

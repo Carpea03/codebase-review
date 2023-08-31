@@ -19,7 +19,7 @@ export default function TradeMarkInOtherCountries() {
     },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Trade marks in other countries | Baxter IP Sydney & Melbourne

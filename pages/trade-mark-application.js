@@ -16,7 +16,7 @@ export default function TradeMarkApplication() {
     { title: 'Australian trade mark application', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Apply for a trade mark in Australia | Baxter IP Sydney & Melbourne

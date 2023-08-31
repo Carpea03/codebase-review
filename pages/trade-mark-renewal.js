@@ -16,7 +16,7 @@ export default function TradeMarkRenewal() {
     { title: 'Trade mark renewal', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Renewing your trade mark application | Baxter IP Sydney & Melbourne

@@ -8,7 +8,7 @@ export default function RoleOfAustralianPatentAttorneys() {
     { title: 'The role of Australian patent attorneys', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian patent attorneys"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian patent attorneys"} active={"Values"}>
       <Head>
         <title>
           The role of Australian patent attorneys | Baxter IP Sydney & Melbourne

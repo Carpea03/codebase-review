@@ -17,7 +17,7 @@ export default function TradeMarkInfringement() {
     { title: 'Trade mark infringement', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Trade mark infringement | Baxter IP Sydney & Melbourne</title>
         <meta

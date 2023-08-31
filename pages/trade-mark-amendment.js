@@ -16,7 +16,7 @@ export default function TradeMarkAmendment() {
     { title: 'Trade mark amendment', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Amending your trade mark application | Baxter IP Sydney & Melbourne

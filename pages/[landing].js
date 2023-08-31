@@ -135,7 +135,7 @@ export default function Home({ allPosts: initialAllPosts, preview, counselData }
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Header topMenuIndex={selectedMenu} onTopMenuChange={onChangeMenu} />
+      <Header topMenuIndex={selectedMenu} onTopMenuChange={onChangeMenu} active={"Services"} />
       <HeroBanner landing={true} data={counselData} />
       <BrandsBanner landing={true} />
       <TransparentCounsel data={counselData}/>

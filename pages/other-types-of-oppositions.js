@@ -13,7 +13,7 @@ export default function OtherTypesOfOppositions() {
     { title: 'Other types of oppositions', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Other types of oppositions | Baxter IP Sydney & Melbourne</title>
         <meta

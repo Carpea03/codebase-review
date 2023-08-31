@@ -8,7 +8,7 @@ export default function RoleOfAustralianTradeMarkAttorneys() {
     { title: 'The role of Australian trade mark attorney', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian trade mark attorneys"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian trade mark attorneys"} active={"Values"}>
       <Head>
         <title>The role of Australian trade mark attorneys | Baxter IP</title>
         <meta

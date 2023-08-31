@@ -15,7 +15,7 @@ export default function MadridProtocolApplication() {
     { title: 'Madrid Protocol application', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Filing a Madrid Protocol application | Baxter IP</title>
         <meta

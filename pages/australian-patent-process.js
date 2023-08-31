@@ -10,7 +10,7 @@ export default function AustralianPatentProcess() {
     { title: 'Australian patent process', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Australian patent process | Baxter IP Sydney & Melbourne</title>
         <meta

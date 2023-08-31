@@ -7,7 +7,7 @@ export default function About() {
     { title: 'About us', link: '/about' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} bannerData={true} layout={2} title={"About us"}>
       <Head>
         <title>
           About Baxter IP, Patent & Trade Mark Attorneys | Baxter IP

@@ -23,12 +23,6 @@ export const sideMenus = [
     img: '/menus/services/sideMenus/Expertise (Dark).svg',
     href: '',
   },
-  {
-    id: 5,
-    name: 'Capital Partners',
-    img: '/menus/services/sideMenus/Partners (Dark).svg',
-    href: '',
-  },
 ]
 
 export const subMenus = [
@@ -45,7 +39,7 @@ export const subMenus = [
       title: 'International patent process',
       bold: true,
       division: false,
-      href: '/international-patent-process',
+      href: '',
     },
     {
       title: 'Stage 1: Provisional patent applications',
@@ -150,7 +144,7 @@ export const subMenus = [
       title: 'Patent opositions & dispites',
       bold: true,
       division: false,
-      href: '/patent-opositions-and-dispites',
+      href: '/patent-oppositions-disputes',
     },
     {
       title: 'Patent opositions',
@@ -249,7 +243,7 @@ export const subMenus1 = [
       title: 'Trade mark preparation',
       bold: true,
       division: false,
-      href: '/trade-mark-preparation',
+      href: '/trade-mark-pre-filing-considerations',
     },
     {
       title: 'Types of trade marks',
@@ -280,7 +274,7 @@ export const subMenus1 = [
       title: 'Trade mark oppositions and disputes',
       bold: true,
       division: false,
-      href: '/trade-mark-oppositions-and-dispute',
+      href: '/trade-mark-oppositions-disputes',
     },
     {
       title: 'Trade mark opposition',

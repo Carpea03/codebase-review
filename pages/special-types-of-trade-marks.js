@@ -16,7 +16,7 @@ export default function SpecialTypesOfTradeMarks() {
     { title: 'Special types of trade marks', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Other types of trade mark with special functions | Baxter IP

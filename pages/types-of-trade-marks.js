@@ -16,7 +16,7 @@ export default function TypesOfTradeMarks() {
     { title: 'Types of trade marks', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Types of trade mark used in the market | Baxter IP Sydney & Melbourne

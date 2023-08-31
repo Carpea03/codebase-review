@@ -20,6 +20,7 @@ export default function Layout({
   title,
   defaultLayout,
   contactUs,
+  active,
   allPosts: initialAllPosts,
   preview,
 }) {
@@ -42,7 +43,7 @@ export default function Layout({
 
   return (
     <>
-      <Header active={'Articles'} />
+      <Header active={active} />
       <div
         style={{ zIndex: 10 }}
         className="bg-white w-full flex item-center absolute h-30 z-100"
@@ -127,7 +128,7 @@ export default function Layout({
                     <span
                       className={'font-lora text-5xl mt-20 mb-10 text-white'}
                     >
-                      {title}
+                      <h1>{title}</h1>
                     </span>
                   </div>
                   <main

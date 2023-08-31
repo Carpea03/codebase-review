@@ -1,12 +1,13 @@
 import Button from '../../buttons/Button'
 import { Container } from '../../templates/Container'
 import { InnerContainer } from '../../templates/InnerContainer'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { HiPhone } from 'react-icons/hi'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import { BsDoorOpenFill } from 'react-icons/bs'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from "next/router";
 import { metaOffice } from '../../../utils/const/links'
 
 const details = [
@@ -29,6 +30,14 @@ const buttonText = [
 
 export default function HeroBanner({ landing, data }) {
   const [changeImage, setChangeImage] = useState(false)
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.prefetch(metaOffice);
+  }, [router]);
+
+
   return (
     <Container className="z-4 bg-hero-banner px-10 xl:px-0">
       <InnerContainer>
@@ -76,7 +85,7 @@ export default function HeroBanner({ landing, data }) {
                       </div>
                     </div>
                   </Link>
-                  <Link href={metaOffice}>
+                  <Link href={metaOffice} target="_blank" prefetch={true} passHref>
                     <div
                       className="flex flex-col items-center"
                       onMouseEnter={() => setChangeImage(true)}
@@ -120,7 +129,6 @@ export default function HeroBanner({ landing, data }) {
                     alt={'banner'}
                     width={584}
                     height={438}
-                    resizeMode={'contain'}
                     style={
                       changeImage
                         ? {

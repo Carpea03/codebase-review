@@ -20,7 +20,7 @@ export default function TradeMarkSearch() {
     { title: 'Trade mark search', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Trade mark search | Baxter IP Sydney & Melbourne</title>
         <meta

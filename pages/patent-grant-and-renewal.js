@@ -10,7 +10,7 @@ export default function PatentGrantAndRenewal() {
     { title: 'Patent grant and renewal', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Grant and renewal of an Australian patent | Baxter IP Sydney &

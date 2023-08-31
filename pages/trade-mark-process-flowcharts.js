@@ -13,7 +13,7 @@ export default function TradeMarkProcessFlowcharts() {
     { title: 'Trade mark process flowcharts', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Articles"}>
       <Head>
         <title>
           Trade mark process flowcharts | Baxter IP Sydney & Melbourne

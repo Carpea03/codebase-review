@@ -10,7 +10,7 @@ export default function ClassesOfGoodsAndServices() {
     { title: 'Classes of goods and services', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Classes of goods and/or services | Baxter IP Sydney & Melbourne

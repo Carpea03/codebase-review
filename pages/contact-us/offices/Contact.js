@@ -260,7 +260,7 @@ export default function Contact({ contactDetails }) {
         <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
           Send us a message
         </span>
-        <form 
+        <form
           id="ActionStepWebform10"
           name="ActionStepWebform10"
           enctype="application/x-www-form-urlencoded"
@@ -269,35 +269,35 @@ export default function Contact({ contactDetails }) {
           ref={contact}
         >
           <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
-            <InputField 
+            <InputField
               type="text"
               id="organization_key"
               name="organization_key"
               defaultValue="sq9162"
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               id="uid"
               name="uid"
               defaultValue="6344f7cad4e589f0366f8e5810af571a9ed85029"
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               id="dc100__user_id"
               name="dc100__user_id"
               defaultValue=""
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               id="dc100__geo_location"
               name="dc100__geo_location"
               defaultValue=""
               className="hidden"
             />
-            <InputField 
+            <InputField
               type="text"
               id="dc100__Location"
               name="dc100__Location"
@@ -408,7 +408,12 @@ export default function Contact({ contactDetails }) {
                 ))}
               </select>
             </div>
-            <CheckBoxBlock title="Enquiry about:" id="dc100__Enquiry_Type" name="dc100__Enquiry_Type[]" items={enquiries} />
+            <CheckBoxBlock
+              title="Enquiry about:"
+              id="dc100__Enquiry_Type"
+              name="dc100__Enquiry_Type[]"
+              items={enquiries}
+            />
             <div className="flex flex-col items-start justify-center px-6 gap-4 w-full cursor-pointer">
               <span className="font-manrope font-medium text-sm sm:text-xl text-[#404266]">
                 Do you have a preferred time to get a call from us?
@@ -421,10 +426,17 @@ export default function Contact({ contactDetails }) {
                 dateFormat="EEE d MMMM, hh:mm aa"
                 id="dc100__Meeting_Preferences"
                 name="dc100__Meeting_Preferences"
-                customInput={<CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />}
+                customInput={
+                  <CustomerInput placeholder="Tue 10 Jan, 12:30 PM" />
+                }
               />
             </div>
-            <CheckBoxBlock title="Would you also like assistance with:" id="dc100__assistance" name="dc100__assistance" items={assistances} />
+            <CheckBoxBlock
+              title="Would you also like assistance with:"
+              id="dc100__assistance"
+              name="dc100__assistance"
+              items={assistances}
+            />
           </div>
           <Button
             type="button"
@@ -521,9 +533,11 @@ export default function Contact({ contactDetails }) {
           <span className="uppercase font-manrope font-semibold text-base sm:text-3xl md:text-xl text-[#7A7B94]">
             Phone
           </span>
-          <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
-            {contactDetails?.number}
-          </span>
+          <a href={`tel:${contactDetails?.number}`}>
+            <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
+              {contactDetails?.number}
+            </span>
+          </a>
         </div>
         <div className="flex flex-col items-start gap-[10px]">
           <span className="uppercase font-manrope font-semibold text-base sm:text-3xl md:text-xl text-[#7A7B94]">
@@ -537,16 +551,18 @@ export default function Contact({ contactDetails }) {
           <span className="uppercase font-manrope font-semibold text-base sm:text-3xl md:text-xl text-[#7A7B94]">
             email
           </span>
-          <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
-            mail@baxterip.com.au
-          </span>
+          <a href="mailto:mail@baxterip.com.au">
+            <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
+              mail@baxterip.com.au
+            </span>
+          </a>
         </div>
         <div className="flex flex-col items-start gap-9 h-full w-full">
           <span className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">
             Meet us on Baxter IP Meta Office
           </span>
           <div className="w-full h-[343px] sm:h-[432px] flex justify-center items-center rounded-sm bg-contactus-metaoffice !bg-cover px-6">
-            <Link href={metaOffice}>
+            <Link href={metaOffice} target='_blank'>
               <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-white/20 backdrop-blur-xl cursor-pointer">
                 <Image
                   src="/contactus/arrow-outward.svg"

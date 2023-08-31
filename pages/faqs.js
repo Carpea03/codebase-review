@@ -11,7 +11,7 @@ export default function Faqs() {
     },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Articles"}>
       <Head>
         <title>
           Intellectual Property FAQs | Answered by Baxter IP Sydney & Melbourne

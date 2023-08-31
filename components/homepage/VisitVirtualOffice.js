@@ -40,7 +40,7 @@ export const VisitVirtualOffice = () => {
                 style={{ height: 279 }}
                 className="flex justify-center items-center rounded-sm bg-metaoffice"
               >
-                <Link href={metaOffice}>
+                <Link href={metaOffice} target='_blank'>
                   <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-[#8368DF]">
                     <Image
                       alt=""

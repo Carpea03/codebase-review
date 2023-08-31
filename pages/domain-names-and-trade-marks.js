@@ -10,7 +10,7 @@ export default function DomainNamesAndTradeMarks() {
     { title: 'Domain names and trade marks', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Domain names and trade marks | Baxter IP Sydney & Melbourne

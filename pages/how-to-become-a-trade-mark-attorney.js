@@ -8,7 +8,7 @@ export default function HowToBecomeATradeMarkAttorney() {
     { title: 'How to become a trade mark attorney', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"How to become a trade mark attorney"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"How to become a trade mark attorney"} active={"Values"}>
       <Head>
         <title>
           How to become a trade mark attorney in Australia | Baxter IP
