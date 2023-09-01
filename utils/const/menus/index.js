@@ -93,7 +93,7 @@ export const cards = [
 
 export const subMenusContact = [
   [
-    { title: 'Our patent & Trade mark attorney offices', bold: true, division: false, href: '' },
+    { title: 'Our Patent & Trade Mark Attorney Offices', bold: true, division: false, href: '' },
     { title: 'Sydney Patent & Trade Mark Office', bold: false, division: false, href: '/contact-us/sydney' },
     { title: 'Melbourne Patent & Trade Mark Office', bold: false, division: false, href: '/contact-us/melbourne' },
     { title: 'Brisbane Patent & Trade Mark Office', bold: false, division: false, href: '/contact-us/brisbane' },

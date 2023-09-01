@@ -175,7 +175,7 @@ export const FillingStats = () => {
                       </span>
                       <div className="hidden md:flex flex-row items-center py-5 gap-[10px]">
                         <span className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940]">
-                          Giving Back to the Community
+                          Giving back to the community
                         </span>
                       </div>
                       <div className="md:hidden flex flex-row items-center py-5 gap-[10px]">
@@ -185,7 +185,9 @@ export const FillingStats = () => {
                       </div>
                     </div>
                     <span className="md:w-1/2 font-manrope font-medium text-sm sm:text-[32px] sm:leading-[44px] md:text-xl text-black/50">
-                      {"In 2018 we committed to supporting Australian universities to help them help their academics & students in protecting and commercialising spin-out IP - and we've been hard at work ever since."}
+                      {
+                        "In 2018 we committed to supporting Australian universities to help them help their academics & students in protecting and commercialising spin-out IP - and we've been hard at work ever since."
+                      }
                     </span>
                   </div>
                   <div className="w-full flex flex-rows justify-center text-center">

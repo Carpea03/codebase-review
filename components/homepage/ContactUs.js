@@ -43,7 +43,7 @@ export default function ContactUs() {
               <div className="flex flex-col">
                 <div className="py-5">
                   <span className="font-lora font-medium md:text-4xl xl:text-5xl text-white">
-                    Speak with an IP Attorney Now
+                    Speak with an IP Attorney now
                   </span>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function ContactUs() {
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
                   <Link
                     href={metaOffice}
-                    target='_blank'
+                    target="_blank"
                     className="flex flex-row items-center"
                   >
                     <Image
@@ -103,14 +103,14 @@ export default function ContactUs() {
                       height={48}
                     />
                     <p className="font-manrope font-bold text-xl text-white/50">
-                      Enquiry Form or Email
+                      Enquiry form or email
                     </p>
                   </Link>
                 </div>
               </div>
               <div className="flex flex-row justify-start pb-8 md:gap-4 xl:gap-[100px]">
                 <div className="w-1/3 flex justify-center items-center border-[3px] border-[#816BD9] rounded-sm bg-contactus-metaoffice">
-                  <Link href={metaOffice} target='_blank'>
+                  <Link href={metaOffice} target="_blank">
                     <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-white/20 backdrop-blur-xl">
                       <Image
                         alt=""
@@ -295,7 +295,7 @@ export default function ContactUs() {
                       height={24}
                     />
                     <span className="uppercase font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
-                      Enquiry Form or Email
+                      Enquiry form or email
                     </span>
                   </div>
                   <div className="flex justify-end items-end w-full">

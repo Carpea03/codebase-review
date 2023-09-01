@@ -60,7 +60,7 @@ export default function ContactUs({ office }) {
     <>
       <Header active={'Contact'} />
       <Container className="bg-[#FFFDF7]">
-        <InnerContainer>
+    
           <div className="w-full bg-contactus-unsplash !bg-cover">
             <div
               style={{
@@ -74,6 +74,7 @@ export default function ContactUs({ office }) {
                     'linear-gradient(180deg, rgba(255, 206, 79, 0) 0%, rgba(255, 206, 79, 0.4) 100%)',
                 }}
               >
+                    <InnerContainer>
                 <div className="w-full flex flex-col items-center md:items-start px-4 sm:px-[76px] md:pl-40 py-28 sm:py-[409px] md:py-48">
                   <div className="w-full md:w-[558px] h-44 sm:h-80 md:h-[185px] flex flex-col items-center gap-6 sm:gap-[60px] md:gap-6">
                     <span className="font-lora font-medium text-3xl sm:text-5xl sm:leading-[138%] md:text-[40px] md:leading-[51px] text-white text-center md:text-left">
@@ -97,10 +98,13 @@ export default function ContactUs({ office }) {
                     </div>
                   </div>
                 </div>
+                </InnerContainer>
               </div>
             </div>
           </div>
-          <Contact contactDetails={contactDetails[selectedId]} />
+          
+        <InnerContainer>
+        <Contact contactDetails={contactDetails[selectedId]} />
         </InnerContainer>
       </Container>
       <Footer page={'Contact'} />

@@ -538,7 +538,7 @@ export const subMenus3 = [
   ],
   [
     {
-      title: 'Other Industries',
+      title: 'Other industries',
       bold: true,
       division: false,
       href: '/other-Industries',
@@ -565,7 +565,7 @@ export const services = {
   0: [
     {
       id: 1,
-      title: 'Seamless Cross-Industry, Cross-Disciplinary IP Advice',
+      title: 'Seamless cross-industry, cross-disciplinary IP advice',
       content:
         "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/Seamless cross-industry, cross-disciplinary IP advice.svg',
@@ -573,7 +573,7 @@ export const services = {
     },
     {
       id: 2,
-      title: 'Strategy First',
+      title: 'Strategy first',
       content:
         'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
       img: '/ourservices/Strategy first.svg',
@@ -581,7 +581,7 @@ export const services = {
     },
     {
       id: 3,
-      title: 'Analytical, Technical and Creative Talent',
+      title: 'Analytical, technical and creative talent',
       content:
         'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
@@ -589,7 +589,7 @@ export const services = {
     },
     {
       id: 4,
-      title: 'Award Winning',
+      title: 'Award winning',
       content:
         'Our team have established a reptuation for being the best and have won highly regarded IP awards.',
       img: '/ourservices/Award winning.svg',
@@ -597,7 +597,7 @@ export const services = {
     },
     {
       id: 5,
-      title: 'Tech Spectrum Covered',
+      title: 'Tech spectrum covered',
       content:
         'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
       img: '/ourservices/Tech spectrum covered.svg',
@@ -607,7 +607,7 @@ export const services = {
   1: [
     {
       id: 1,
-      title: 'Seamless Cross-Industry, Cross-Disciplinary IP Advice',
+      title: 'Seamless cross-industry, cross-disciplinary IP advice',
       content:
         "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
       img: '/ourservices/Seamless cross-industry, cross-disciplinary IP advice.svg',
@@ -615,7 +615,7 @@ export const services = {
     },
     {
       id: 2,
-      title: 'Strategy First',
+      title: 'Strategy first',
       content:
         'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
       img: '/ourservices/Strategy first.svg',
@@ -623,7 +623,7 @@ export const services = {
     },
     {
       id: 3,
-      title: 'Analytical, Technical and Creative Talent',
+      title: 'Analytical, technical and creative talent',
       content:
         'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
@@ -631,7 +631,7 @@ export const services = {
     },
     {
       id: 4,
-      title: 'Award Winning',
+      title: 'Award winning',
       content:
         'Our team have established a reptuation for being the best and have won highly regarded IP awards.',
       img: '/ourservices/Award winning.svg',
@@ -641,7 +641,7 @@ export const services = {
   2: [
     {
       id: 1,
-      title: 'Analytical, Technical and Creative Talent',
+      title: 'Analytical, technical and creative talent',
       content:
         'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
@@ -649,7 +649,7 @@ export const services = {
     },
     {
       id: 2,
-      title: 'Strategy First',
+      title: 'Strategy first',
       content:
         'We use IP searches & analyses to inform strategic decision making to protect your innovation or brand strategically, otherwise to protect your budget.',
       img: '/ourservices/Strategy first.svg',
@@ -657,7 +657,7 @@ export const services = {
     },
     {
       id: 3,
-      title: 'Tech Spectrum Covered',
+      title: 'Tech spectrum covered',
       content:
         'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
       img: '/ourservices/Tech spectrum covered.svg',
@@ -665,7 +665,7 @@ export const services = {
     },
     {
       id: 4,
-      title: 'Award Winning',
+      title: 'Award winning',
       content:
         'Our team have established a reptuation for being the best and have won highly regarded IP awards.',
       img: '/ourservices/Award winning.svg',
@@ -675,7 +675,7 @@ export const services = {
   3: [
     {
       id: 1,
-      title: 'Analytical, Technical and Creative Talent',
+      title: 'Analytical, technical and creative talent',
       content:
         'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
@@ -683,7 +683,7 @@ export const services = {
     },
     {
       id: 2,
-      title: 'Tech Spectrum Covered',
+      title: 'Tech spectrum covered',
       content:
         'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
       img: '/ourservices/Tech spectrum covered.svg',
@@ -691,7 +691,7 @@ export const services = {
     },
     {
       id: 3,
-      title: 'Capital Connected',
+      title: 'Capital connected',
       content:
         "Our capital partners are major Australian venture capital funds and syndicates. At a client's request, we consider whether a warm introduction to our capital partners is likely to be of interest and make the introductions if so.",
       img: '/ourservices/Capital connected.svg',
@@ -701,7 +701,7 @@ export const services = {
   4: [
     {
       id: 1,
-      title: 'Analytical, Technical and Creative Talent',
+      title: 'Analytical, technical and creative talent',
       content:
         'Our team comprises some of the most experienced patent & trade mark attorneys in the profession. Our mix of analytical, creative, technical and commercially-minded talent participate in rigorous ongoing internal development to keep us at the top of our game.',
       img: '/ourservices/Analytical, technical and creative talent.svg',
@@ -709,7 +709,7 @@ export const services = {
     },
     {
       id: 2,
-      title: 'Tech Spectrum Covered',
+      title: 'Tech spectrum covered',
       content:
         'Our eight patent attorneys provide specialist advice across the full technology spectrum from pharma & biotech to robotics & software.',
       img: '/ourservices/Tech spectrum covered.svg',
