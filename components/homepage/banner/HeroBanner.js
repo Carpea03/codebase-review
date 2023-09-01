@@ -35,7 +35,7 @@ export default function HeroBanner({ landing, data }) {
 
   useEffect(() => {
     router.prefetch(metaOffice);
-  }, [router]);
+  }, []);
 
 
   return (

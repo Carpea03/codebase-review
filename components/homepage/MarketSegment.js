@@ -54,7 +54,7 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
           <div className="flex flex-col md:items-start gap-[30px] sm:gap-[30px] md:gap-10 w-full">
             <div className="flex w-full justify-center items-center">
               <span className="font-lora font-medium text-4xl md:text-5xl sm:text-4xl  text-[#272940] text-center md:text-left">
-                {'Tailoring Your Experience'}
+                {'Tailoring your experience'}
               </span>
             </div>
             <div className="md:w-full flex flex-row justify-between md:items-start">

@@ -1,54 +1,11 @@
-import { Container } from '../../components/templates/Container'
-import Footer from '../../components/templates/Footer'
-import Header from '../../components/templates/Header'
+import { Container } from '../../../components/templates/Container'
+import Footer from '../../../components/templates/Footer'
+import Header from '../../../components/templates/Header'
 import React, { useState, useEffect } from 'react'
-import Contact from './offices/Contact'
-import { contactDetails } from '../../utils/const/contacts'
+import Contact from '../offices/Contact'
+import { contactDetails } from '../../../utils/const/contacts'
 import { useRouter } from 'next/router'
-import { InnerContainer } from '../../components/templates/InnerContainer'
-import Head from 'next/head'
-
-const hears = [
-  { id: 1, name: 'Select one' },
-  { id: 2, name: 'LinkedIn' },
-]
-
-const offices = [
-  {
-    id: 'sydney',
-    title: 'Sydney Patent & Trade Mark Office',
-    details: 'Call us Sydney Office',
-    office: 'Sydney Office',
-  },
-  {
-    id: 'melbourne',
-    title: 'Melbourne Patent & Trade Mark Office',
-    details: 'Call us Melbourne Office',
-    office: 'Melbourne Office',
-  },
-]
-
-const ipOffices = ['sydney', 'melbourne', 'brisbane']
-
-export const getStaticPaths = async () => {
-  const paths = ipOffices.map((item) => {
-    return {
-      params: { id: item.toString() },
-    }
-  })
-
-  return {
-    paths,
-    fallback: false,
-  }
-}
-
-export const getStaticProps = async (context) => {
-  const id = context.params.id
-  return {
-    props: { office: id },
-  }
-}
+import { InnerContainer } from '../../../components/templates/InnerContainer'
 
 export default function ContactUs({ office }) {
   const [callUs, setCallUs] = useState(true)
@@ -58,49 +15,42 @@ export default function ContactUs({ office }) {
   const [place, setPlace] = useState([])
 
   useEffect(() => {
-    if (office) {
-      const item = contactDetails.filter(
-        (item) => item.name.toLowerCase() === office.toLowerCase()
-      )[0]
+    let office = null
+    let newArray = []
 
-      let newArray = []
+    var url = window.location
 
-      if (item.id === 0) {
-        setSelectedPlace(item.number)
-        contactDetails.sort().map((key) => {
-          newArray.push({ ...key })
-        })
-        setPlace(newArray)
-        return
-      }
+    var area = url
+      .toString()
+      .substring(url.toString().lastIndexOf('/') + 1)
+      .toLowerCase()
 
-      if (item.id === 2) {
-        setSelectedPlace(item.number)
-        contactDetails.reverse().map((key) => {
-          newArray.push({ ...key })
-        })
-        setPlace(newArray)
-        return
-      }
-      setSelectedPlace(contactDetails[0].number)
-      setPlace(contactDetails)
-    }
-    setSelectedPlace(contactDetails[0].number)
-    setPlace(contactDetails)
+    contactDetails.sort().map((key) => {
+      newArray.push({ ...key })
+    })
+
+    setPlace(newArray)
+
+    office = contactDetails.filter(
+      (item) => item.name.toLowerCase() === area
+    )[0]
+
+    setSelectedPlace(office?.number)
+    setSelectedId(office?.id)
   }, [office])
 
   const onSelected = (id) => {
     const details = contactDetails[id]
-    setSelectedPlace(details.number)
-    setSelectedId(id)
+    // setSelectedPlace(details.number)
+    // setSelectedId(id)
     router.push(`/contact-us/${details.name.toLocaleLowerCase()}`)
   }
 
-  const renderOptions = (item, id, selected) => (
+  const renderOptions = (id, item, key) => (
     <option
-      key={`contact-${id}`}
+      key={`contact-${key}`}
       value={id}
-      selected={selected}
+      selected={id == selectedId ? 'selected' : ''}
       className="flex font-manrope font-semibold text-[#404266] sm:text-xl md:text-xl whitespace-nowrap"
     >
       {item}
@@ -109,10 +59,6 @@ export default function ContactUs({ office }) {
 
   return (
     <>
-      <Head>
-        <title>Contact Us</title>
-        <meta name="description" content="" />
-      </Head>
       <Header active={'Contact'} />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-contactus-unsplash !bg-cover">
@@ -138,10 +84,10 @@ export default function ContactUs({ office }) {
                       <select
                         onChange={(e) => onSelected(e.target.value)}
                         className="select-contact flex flex-row items-center px-5 py-4 sm:py-9 sm:px-5 md:px-6 md:py-4 gap-[10px] bg-[#FFCE4F] cursor-pointer h-full rounded-l-md flex font-manrope font-semibold text-[#404266] text-xl whitespace-nowrap"
-                        value={'Call us Brisbane Office'}
+                        // value={'Call us Brisbane Office'}
                       >
                         {place?.map((item, index) =>
-                          renderOptions(item?.place, index, item?.selected)
+                          renderOptions(item?.id, item?.place, index)
                         )}
                       </select>
                       <div className="flex flex-row items-center px-5 py-4 sm:py-9 sm:px-6 md:px-6 md:py-4 gap-[10px] bg-black/30 cursor-pointer h-full rounded-r-md">

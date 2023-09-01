@@ -15,7 +15,7 @@ export const sideMenus = [
 
 export const subMenus = [
   [
-    { title: 'Browse By Category', bold: true, division: false, href: '' },
+    { title: 'Browse by category', bold: true, division: false, href: '' },
     { title: 'General', bold: false, division: false, href: '/ip-news' },
     { title: 'Patents', bold: false, division: false, href: '/ip-news' },
     { title: 'Trade marks', bold: false, division: false, href: '/ip-news' },

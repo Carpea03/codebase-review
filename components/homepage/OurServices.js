@@ -21,7 +21,7 @@ export const OurServices = () => {
       <InnerContainer>
         <div className="flex items-center justify-center py-10 ">
           <span className="font-lora font-medium text-xl sm:text-[44px] leading-none md:text-5xl text-[#8370D5] md:text-[#5F618C] text-center">
-            Working with Us
+            Working with us
           </span>
         </div>
         <div className="flex flex-col pb-20">
