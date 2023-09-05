@@ -137,7 +137,7 @@ export default function People() {
             <span className="font-lora font-semibold text-2xl sm:text-5xl sm:leading-[120%] tracking-[-0.03em] text-center text-white">
               Perpetual Innovation. Protected.
             </span>
-            <Link href="/contact-us">
+            <Link href="/contact/sydney">
               <Button
                 className="w-40 h-11 sm:w-[313px] md:w-[353px] sm:h-24"
                 title="Contact Us"
