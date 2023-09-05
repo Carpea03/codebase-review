@@ -263,7 +263,7 @@ export default function Contact({ contactDetails }) {
         <form
           id="ActionStepWebform10"
           name="ActionStepWebform10"
-          encType="application/x-www-form-urlencoded"
+          enctype="application/x-www-form-urlencoded"
           method="post"
           action="https://go.actionstep.com/frontend/application/webform/post"
           ref={contact}

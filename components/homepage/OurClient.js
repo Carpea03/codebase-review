@@ -85,47 +85,44 @@ const brands = [
 ]
 export const OurClient = ({ state }) => {
   return (
-    <Container>
-      <div className="flex flex-col items-start">
-        {/** top */}
-        <div className="w-full flex flex-col py-10  border-[1px] border-[#F0E4C3]">
-          <TitleContainer description="Join other companies growing their IP with us" />
+    <Container className="flex flex-col sm:py-[100px] md:py-[20px] gap-[70px]">
+      <div
+        style={{
+          background: 'linear-gradient(168deg, #FFFEF8 42.45%, #FFF3D0 91%)',
+        }}
+      >
+      <InnerContainer>
+        <div className="px-10 mt-10 w-full flex justify-center">
+          <div className="w-[500px] xl:w-[700px]">
+            <TitleContainer description="Join other companies growing their IP with us" />
+          </div>
         </div>
-        {/** bottom */}
-        <div
-          className="w-full flex flex-col justify-center px-12 sm:px-[107px] md:px-44"
-          style={{
-            background:
-              'linear-gradient(176.69deg, #FFFEF8 21.12%, #FFBF15 139.62%)',
-          }}
-        >
-          <InnerContainer>
-            {/** brands container */}
-            <div className="flex flex-col items-ystart py-20 sm:pb-20 md:py-20">
-              <div className="grid grid-cols-4 gap-1 sm:gap-4 md:gap-5 w-full items-center justify-center">
-                {brands[state].supportedBrand.map((brand) => (
-                  <div
-                    key={`brand-${brand.id}`}
-                    className="flex justify-center items-center bg-white"
-                    style={{
-                      boxShadow:
-                        '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                    }}
-                  >
-                    <Image
-                      key={brand.id}
-                      alt=""
-                      src={brand.src}
-                      className="w-full block"
-                      width={200}
-                      height={100}
-                    />
-                  </div>
-                ))}
-              </div>
+        <div className="px-10 xl:px-8 mb-10">
+          <div className="flex flex-col py-20 sm:pb-20 md:py-20 xl:px-32">
+            <div className="grid grid-cols-3 xl:grid-cols-4 gap-1 sm:gap-4 md:gap-5 w-full items-center justify-center">
+              {brands[state].supportedBrand.map((brand) => (
+                <div
+                  key={`brand-${brand.id}`}
+                  className="flex justify-center items-center bg-white"
+                  style={{
+                    boxShadow:
+                      '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                  }}
+                >
+                  <Image
+                    key={brand.id}
+                    alt=""
+                    src={brand.src}
+                    className="w-full block"
+                    width={200}
+                    height={100}
+                  />
+                </div>
+              ))}
             </div>
-          </InnerContainer>
+          </div>
         </div>
+      </InnerContainer>
       </div>
     </Container>
   )

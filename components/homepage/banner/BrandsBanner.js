@@ -25,19 +25,19 @@ export default function BrandsBanner({ landing }) {
   return (
     <Container>
       <div
-        className={`flex flex-col justify-center items-center py-[53px] ${
-          landing ? '' : 'border-bottom-base'
+        className={`flex flex-col justify-center items-center bg-[#FFFEF8] py-[53px] ${
+          landing ? '' : ''
         } z-30`}
       >
         <p className="z-30 font-manrope font-semibold text-[#272940]/50 tracking-tight text-sm sm:text-lg md:text-xl xl:text-2xl">
           {landing ? 'Awards and Recognition' : 'Trusted by these brands'}
         </p>
       </div>
-      <div className="border-bottom-base">
+      <div className="border-bottom-base bg-[#FFFEF8]">
         <InnerContainer>
-          <div className="w-full flex flex-wrap flex-rows items-center justify-center">
+          <div className="w-full flex flex-wrap flex-rows items-center justify-center mb-5">
             {logos?.map((banner) => (
-              <div key={banner.id} className={landing ? 'px-10 pb-10' : ''}>
+              <div key={banner.id} className={landing ? 'px-10 pb-10' : 'px-5'}>
                 <Image
                   key={banner.id}
                   className="object-cover"

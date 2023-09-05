@@ -6,7 +6,7 @@ import { cards, cardsIndustry } from '../../utils/const/menus'
 
 const marketSigment = [
   {
-    header: 'Step 1',
+    header: 'STEP 1',
     title: 'What best describes you?',
     description:
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
@@ -14,7 +14,7 @@ const marketSigment = [
 ]
 const marketSigment2 = [
   {
-    header: 'Step 2',
+    header: 'STEP 2',
     title: 'What best describes your industry?',
     description:
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
@@ -59,7 +59,7 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
             </div>
             <div className="md:w-full flex flex-row justify-between md:items-start">
               <div className="md:w-1/2 flex flex-col item -center md:items-start gap-8 md:gap-[10px]">
-                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-left md:text-left">
+                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320f80] text-left md:text-left">
                   {marketSigment[0].header}
                 </span>
                 <div className="flex py-1 gap-[10px]">
@@ -73,14 +73,14 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
                     onCollapse()
                     onChange(-1)
                   }}
-                  className={`${collapse ? 'flex' : 'hidden'} flex-row justify-center text-center mr-5 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-opacity-0 rounded w-1/5 sm:w-[200px] h-20 w-100 cursor-pointer`}
+                  className={`${collapse ? 'flex' : 'hidden'} flex-row justify-center text-center mr-5 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] h-20 w-100 cursor-pointer`}
                   style={{
                     boxShadow:
                       '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-                    border: '1px solid #816BD9',
+                    border: '1px solid #000000',
                   }}
                 >
-                <span className="font-manrope text-[10px] sm:text-xl text-[#816BD9] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
+                <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
                   Clear Section
                 </span>
               </div>
@@ -294,7 +294,7 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
           <div className="w-full">
             <div className="md:w-full flex flex-row justify-between md:items-start">
               <div className="w-full flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
-                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-left md:text-left">
+                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320f80] text-left md:text-left">
                   {marketSigment2[0].header}
                 </span>
                 <div className="flex pb-10 md:pb-0 gap-[10px] justify-left">
@@ -308,14 +308,14 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
                     onCollapseIndustry()
                     onChangeIndustry(-1)
                   }}
-                  className={`${collapseIndustry ? 'flex' : 'hidden'} flex-row justify-center text-center py-[10px] mr-5 sm:py-6 gap-[10px] sm:gap-6 bg-opacity-0 rounded w-1/5 sm:w-[200px] cursor-pointer h-20 w-100`}
+                  className={`${collapseIndustry ? 'flex' : 'hidden'} flex-row justify-center text-center py-[10px] mr-5 sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] cursor-pointer h-20 w-100`}
                   style={{
                     boxShadow:
                       '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-                    border: '1px solid #816BD9',
+                    border: '1px solid #000000',
                   }}
                 >
-                <span className="font-manrope text-[10px] sm:text-xl text-[#816BD9] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
+                <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
                   Clear Section
                 </span>
               </div>

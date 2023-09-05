@@ -43,7 +43,7 @@ export default function ContactUs({ office }) {
     const details = contactDetails[id]
     // setSelectedPlace(details.number)
     // setSelectedId(id)
-    router.push(`/contact-us/${details.name.toLocaleLowerCase()}`)
+    router.push(`/contact/${details.name.toLocaleLowerCase()}`)
   }
 
   const renderOptions = (id, item, key) => (
@@ -102,7 +102,6 @@ export default function ContactUs({ office }) {
             </div>
           </div>
         </div>
-
         <InnerContainer>
           <Contact contactDetails={contactDetails[selectedId]} />
         </InnerContainer>

@@ -82,7 +82,7 @@ const projects = [
   {
     id: 1,
     name: '10X IP Due Diligence',
-    image: '/ipNewsBlog/slide-1.png',
+    image: '/fillingStats/slide-0.jpg',
     totalNumber: 2,
     totalHours: 54,
     budget: 650,
@@ -162,12 +162,61 @@ export const FillingStats = () => {
 
   return (
     <div className="-mt-14">
-      <Container>
+      <Container className="flex flex-col sm:py-[100px] md:py-[20px] gap-[70px]">
         <div className="flex flex-col">
           <div className="flex flex-col items-start">
             <div className="w-full md:border-b-[1px] border-[#F0E4C3]">
               <InnerContainer>
-                <div className="flex flex-col justify-center items-center pt-[133px] px-24 md:pb-10  ">
+                <div className="px-10 sm:px-10 xl:px-8">
+                  <div className="xl:px-32">
+                    <div className="py-20 mt-10">
+                      <span className="uppercase font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
+                        PRO BONO WORK
+                      </span>
+                      <div className="flex flex-col sm:flex-row">
+                        <div className="mt-10 flex flex-col">
+                          <div>
+                            <span className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940]">
+                              Giving back to the community
+                            </span>
+                          </div>
+                          <div className="mt-5">
+                            <span className="text-xl font-manrope font-medium opacity-50">
+                              {`In 2018 we committed to supporting Australian
+                              universities to help them help their academics &
+                              students in protecting and commercialising
+                              spin-out IP - and we've been hard at work ever
+                              since.`}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="w-full flex flex-row xl:flex-col">
+                          {brands.map((brand, index) => (
+                            <div
+                              key={brand.id}
+                              className="flex  justify-center xl:justify-end cursor-pointer"
+                              onClick={() => setSelectedBrand(index)}
+                            >
+                              <Image
+                                alt=""
+                                key={brand.id}
+                                src={brand.url}
+                                className={` ${
+                                  selectedBrand === index
+                                    ? 'opacity-100'
+                                    : 'opacity-50'
+                                }`}
+                                width={215.652}
+                                height={93.913}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="flex flex-col justify-center items-center pt-[133px] px-24 md:pb-10  ">
                   <div className="flex flex-col md:flex-row items-center justify-center md:justify-end gap-5 md:gap-[108px]">
                     <div className="md:w-1/2 flex flex-col item-center md:items-start gap-[10px]">
                       <span className="uppercase font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
@@ -212,7 +261,7 @@ export const FillingStats = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </InnerContainer>
             </div>
             <div className="flex flex-col items-start w-full">
@@ -222,36 +271,6 @@ export const FillingStats = () => {
               </InnerContainer>
               <div className="w-full bg-[#FBF8F1]">
                 <InnerContainer>
-                  <div className="md:hidden w-full flex flex-row justify-center items-center py-6 sm:py-14 gap-8">
-                    <div
-                      className="w-1/3 flex flex-row justify-center items-center px-6 py-11 gap-6 hover:opacity-50 cursor-pointer"
-                      onClick={prevBrandSlide}
-                    >
-                      <MdKeyboardArrowRight
-                        size={19}
-                        color="black"
-                        style={{ transform: 'matrix(-1, 0, 0, 1, 0, 0)' }}
-                      />
-                    </div>
-                    <div className="w-1/3 flex justify-center items-center">
-                      <Image
-                        alt=""
-                        src={brands[selectedBrand].url}
-                        width={20}
-                        height={20}
-                      />
-                    </div>
-                    <div
-                      className="w-1/3 flex flex-row justify-center items-center px-6 py-11 gap-6 hover:opacity-50 cursor-pointer"
-                      onClick={nextBrandSlide}
-                    >
-                      <MdKeyboardArrowLeft
-                        size={19}
-                        color="black"
-                        style={{ transform: 'matrix(-1, 0, 0, 1, 0, 0)' }}
-                      />
-                    </div>
-                  </div>
                   <div
                     ref={projectsRef}
                     className="w-full flex justify-center text-center flex flex-row overflow-x-auto py-[60px] gap-[60px]"
