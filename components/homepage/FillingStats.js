@@ -182,11 +182,11 @@ export const FillingStats = () => {
                           </div>
                           <div className="mt-5">
                             <span className="text-xl font-manrope font-medium opacity-50">
-                              In 2018 we committed to supporting Australian
+                              {`In 2018 we committed to supporting Australian
                               universities to help them help their academics &
                               students in protecting and commercialising
                               spin-out IP - and we've been hard at work ever
-                              since.
+                              since.`}
                             </span>
                           </div>
                         </div>
