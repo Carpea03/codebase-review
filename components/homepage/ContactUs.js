@@ -128,7 +128,7 @@ export default function ContactUs() {
                 </div>
                 <div className="w-1/3 flex flex-col items-start px-[10px] gap-7">
                   {contactDetails.map((item, index) => (
-                    <a href={`tel:${item.number}`}>
+                    <a key={`link1-2${index}`} href={`tel:${item.number}`}>
                       <div
                         key={`contact-${index}`}
                         className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
@@ -270,7 +270,7 @@ export default function ContactUs() {
                   <div className="w-2/5 border-[1px] border-[#FFD15B]" />
                 </div>
                 {contactDetails.map((item, index) => (
-                  <a href={`tel:${item.number}`}>
+                  <a key={`link1-${index}`} href={`tel:${item.number}`}>
                     <div
                       key={`contactus-${index}`}
                       className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
