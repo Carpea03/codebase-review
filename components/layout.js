@@ -78,7 +78,7 @@ export default function Layout({
                   style={{ zIndex: 10 }}
                   className={`${
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
-                  } md:flex flex-col  items-center xl:px-[120px] px-10`}
+                  } md:flex flex-col  items-center xl:px-[81px] px-10`}
                 >
                   <main
                     style={{
@@ -122,7 +122,7 @@ export default function Layout({
                   style={{ zIndex: 10 }}
                   className={`${
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
-                  } md:flex flex-col  justify-center items-center xl:px-[120px] pt-10`}
+                  } md:flex flex-col  justify-center items-center xl:px-[81px] pt-10`}
                 >
                   <div className="flex justify-center item-center">
                     <span
@@ -169,7 +169,7 @@ export default function Layout({
                   style={{ zIndex: 10 }}
                   className={`${
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
-                  } md:flex flex-col  items-center xl:px-[120px]`}
+                  } md:flex flex-col  items-center xl:px-[43px]`}
                 >
                   <main
                     style={{

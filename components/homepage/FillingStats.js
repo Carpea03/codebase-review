@@ -216,52 +216,6 @@ export const FillingStats = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="flex flex-col justify-center items-center pt-[133px] px-24 md:pb-10  ">
-                  <div className="flex flex-col md:flex-row items-center justify-center md:justify-end gap-5 md:gap-[108px]">
-                    <div className="md:w-1/2 flex flex-col item-center md:items-start gap-[10px]">
-                      <span className="uppercase font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
-                        PRO BONO WORK
-                      </span>
-                      <div className="hidden md:flex flex-row items-center py-5 gap-[10px]">
-                        <span className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940]">
-                          Giving back to the community
-                        </span>
-                      </div>
-                      <div className="md:hidden flex flex-row items-center py-5 gap-[10px]">
-                        <span className="font-lora font-medium text-xl sm:text-5xl sm:leading-[70px] text-[#272940] text-center">
-                          Baxter IP Founder program
-                        </span>
-                      </div>
-                    </div>
-                    <span className="md:w-1/2 font-manrope font-medium text-sm sm:text-[32px] sm:leading-[44px] md:text-xl text-black/50">
-                      {
-                        "In 2018 we committed to supporting Australian universities to help them help their academics & students in protecting and commercialising spin-out IP - and we've been hard at work ever since."
-                      }
-                    </span>
-                  </div>
-                  <div className="w-full flex flex-rows justify-center text-center">
-                    {brands.map((brand, index) => (
-                      <div
-                        key={brand.id}
-                        className="w-1/4  flex cursor-pointer"
-                        onClick={() => setSelectedBrand(index)}
-                      >
-                        <Image
-                          alt=""
-                          key={brand.id}
-                          src={brand.url}
-                          className={` ${
-                            selectedBrand === index
-                              ? 'opacity-100'
-                              : 'opacity-50'
-                          }`}
-                          width={500}
-                          height={200}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div> */}
               </InnerContainer>
             </div>
             <div className="flex flex-col items-start w-full">
@@ -283,7 +237,7 @@ export const FillingStats = () => {
                         onClick={() => setSelectedProject(index)}
                       >
                         <span
-                          className={`\ font-lora font-medium sm:text-2xl md:text-3xl xltext-[32px] leading-10 whitespace-nowrap ${
+                          className={`font-lora font-medium sm:text-2xl md:text-3xl xltext-[32px] leading-10 whitespace-nowrap ${
                             selectedProject === index
                               ? 'opacity-100'
                               : 'opacity-50'
@@ -296,25 +250,26 @@ export const FillingStats = () => {
                   </div>
                 </InnerContainer>
               </div>
-              {/** image container */}
-              <div className="bg-white/50 w-full h-[246px] sm:h-[574px] md:h-[330px] relative">
-                <div className="flex flex-row justify-center items-center h-full">
+              <div className="bg-white/50 w-full h-[437px] sm:h-[437px] md:h-[437px] relative ">
+                <div className="flex flex-row justify-between items-center h-full">
                   <div
-                    className="w-[15%] sm:w-[20%] md:w-[30%] h-full flex justify-center items-center"
+                    className="w-[10%] h-full flex justify-center items-center"
                     style={{
-                      background: `linear-gradient(0deg, rgba(38, 30, 8, 0.8), rgba(38, 30, 8, 0.8)), url(${
+                      background: `linear-gradient(0deg, rgba(38, 30, 8, 0.00) 0%, rgba(38, 30, 8, 0.00) 100%), url(${
                         projects[
                           selectedProject > 0
                             ? selectedProject - 1
                             : projects.length - 1
                         ].image
                       })`,
+                      backgroundSisze: 'cover',
                       borderRadius: '2px',
                       backgroundSize: 'cover !important',
+                      opacity: 0.5,
                     }}
                   >
                     <div
-                      className="w-8 h-8 sm:w-[72px] sm:h-[72px] md:w-32 md:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
+                      className="w-8 h-8 sm:w-[72px] sm:h-[72px] sm:w-20 sm:h-20 md:w-20 md:h-20 xl:w-32 xl:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
                       onClick={prevProjectSlide}
                     >
                       <MdKeyboardArrowLeft
@@ -325,27 +280,30 @@ export const FillingStats = () => {
                     </div>
                   </div>
                   <div
-                    className="w-[70%] sm:w-[60%] md:w-[40%] h-full !bg-cover"
+                    className="w-[75%] h-full !bg-cover"
                     style={{
                       background: `linear-gradient(239.25deg, rgba(255, 209, 91, 0) -12.39%, rgba(255, 209, 91, 0.5) 207.04%), url(${projects[selectedProject].image})`,
                       borderRadius: '2px',
                     }}
                   />
                   <div
-                    className="w-[15%] sm:w-[20%] md:w-[30%] h-full flex items-center justify-center !bg-cover"
+                    className="w-[10%] h-full flex items-center justify-center !bg-cover"
                     style={{
-                      background: `linear-gradient(0deg, rgba(38, 30, 8, 0.8), rgba(38, 30, 8, 0.8)), url(${
+                      background: `linear-gradient(0deg, rgba(38, 30, 8, 0.00) 0%, rgba(38, 30, 8, 0.00) 100%), url(${
                         projects[
                           selectedProject + 1 > projects.length - 1
                             ? 0
                             : selectedProject + 1
                         ].image
                       })`,
+                      backgroundSisze: 'cover',
                       borderRadius: '2px',
+                      backgroundSize: 'cover !important',
+                      opacity: 0.5,
                     }}
                   >
                     <div
-                      className="w-8 h-8 sm:w-[72px] sm:h-[72px] md:w-32 md:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
+                      className="w-8 h-8 sm:w-[72px] sm:h-[72px] sm:w-20 sm:h-20  md:w-20 md:h-20 xl:w-32 xl:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
                       onClick={nextProjectSlide}
                     >
                       <MdKeyboardArrowRight
@@ -357,96 +315,31 @@ export const FillingStats = () => {
                   </div>
                 </div>
               </div>
-              {/** project info */}
-              {/* <div className="w-full flex flex-row items-center justify-center px-[107px] sm:py-6 sm:gap-8 md:px-40 md:py-7 md:gap-12 bg-[#FBF8F1] border-b-[1px] border-[#F0E4C3]">
-                <div className="w-full flex flex-row justify-center items-center p-6 gap-7 md:py-6 md:px-8 md:gap-12">
-                  <div className="flex flex-col justify-center items-center gap-2 md:gap-6">
-                    <span className="font-manrope font-medium text-[10px] leading-[14px] sm:text-2xl opacity-30 text-black">
-                      Project
-                    </span>
-                    <span className="font-lora font-normal text-sm sm:text-[32px] sm:leading-[40px] md:text-[40px] md:leading-[70px] text-[#272940] whitespace-nowrap">
-                      {projects[selectedProject].totalNumber} Project
-                    </span>
-                  </div>
+              <InnerContainer>
+                <div className="px-[55px] xl:px-[110px] 2xl:px-[150px] mt-10">
+                  <span className="text-xl font-manrope font-medium opacity-50">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sapien id purus condimentum vehicula. Ut iaculis pharetra enim quis gravida. Ut a cursus purus, vitae cursus odio. Fusce at justo eget libero eleifend auctor nec sed felis. Etiam lobortis pulvinar mauris vel fermentum. Vivamus ornare libero nec euismod pretium. Maecenas eleifend varius leo quis pellentesque. Vivamus euismod elit id porttitor tincidunt. Phasellus nec nibh finibus justo ultrices commodo a a lacus. Suspendisse tincidunt lectus purus, ut sollicitudin sapien aliquet placerat.`}</span>
                 </div>
-                <div className="w-full flex flex-row justify-center items-center p-6 gap-7 md:py-6 md:px-8 md:gap-12">
-                  <div className="flex flex-col justify-center items-center gap-2 md:gap-6">
-                    <span className="font-manrope font-medium text-[10px] leading-[14px] sm:text-2xl opacity-30 text-black">
-                      Total time
-                    </span>
-                    <span className="font-lora font-normal text-sm sm:text-[32px] sm:leading-[40px] md:text-[40px] md:leading-[70px] text-[#272940] whitespace-nowrap">
-                      {projects[selectedProject].totalHours} Hours
-                    </span>
-                  </div>
+                <div className="flex justify-center item-cemter mt-20 mb-20 gap-3">
+                  <div
+                    onClick={() => setSelectedProject(0)}
+                    className={`w-[24px] h-[4px] bg-[#8368DF] cursor-pointer ${
+                      selectedProject === 0 ? '' : 'opacity-30'
+                    }`}
+                  ></div>
+                  <div
+                    onClick={() => setSelectedProject(1)}
+                    className={`w-[24px] h-[4px] bg-[#8368DF] cursor-pointer ${
+                      selectedProject === 1 ? '' : 'opacity-30'
+                    }`}
+                  ></div>
+                  <div
+                    onClick={() => setSelectedProject(2)}
+                    className={`w-[24px] h-[4px] bg-[#8368DF] cursor-pointer ${
+                      selectedProject === 2 ? '' : 'opacity-30'
+                    }`}
+                  ></div>
                 </div>
-                <div className="w-full flex flex-row justify-center items-center p-6 gap-7 md:py-6 md:px-8 md:gap-12">
-                  <div className="flex flex-col justify-center items-center gap-2 md:gap-6">
-                    <span className="font-manrope font-medium text-[10px] leading-[14px] sm:text-2xl opacity-30 text-black">
-                      Budget
-                    </span>
-                    <span className="font-lora font-normal text-sm sm:text-[32px] sm:leading-[40px] md:text-[40px] md:leading-[70px] text-[#272940] whitespace-nowrap">
-                      {projects[selectedProject].budget}
-                    </span>
-                  </div>
-                </div>
-              </div> */}
-              <div className="w-full bg-[#FBF8F1] border-b-[1px] border-[#F0E4C3]">
-                <InnerContainer>
-                  {/** project details */}
-                  <div className="grid grid-cols-10 items-start">
-                    <div className="col-span-8 w-full flex flex-col items-start">
-                      <div className="w-full flex flex-col items-start py-6 pr-3 pl-12 sm:py-12 sm:pr-8 sm:pl-24 md:px-24 xl:px-40 md:py-5 bg-[#FBF8F1]">
-                        <div className="w-full flex flex-col items-start">
-                          <div className="w-full flex felx-row items-center justify-center gap-3 sm:gap-7 md:gap-12 py-8 md:py-12">
-                            <div className="w-[35%] flex flex-row items-start gap-[27px] md:gap-[10px]">
-                              <span className="font-manrope font-medium sm:text-2xl text-black opacity-30">
-                                Activity
-                              </span>
-                            </div>
-                            <div className="w-[65%] flex flex-row items-start">
-                              <span className="font-manrope font-medium sm:text-2xl md:text-xl leading-normal text-black opacity-50">
-                                {projects[selectedProject].activity}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="w-full flex felx-row items-center justify-center gap-3 sm:gap-7 md:gap-12 py-8 md:py-12">
-                            <div className="w-[35%] flex flex-row items-start gap-[27px] md:gap-[10px]">
-                              <span className="font-manrope font-medium sm:text-2xl text-black opacity-30">
-                                Est budget
-                              </span>
-                            </div>
-                            <div className="w-[65%] flex flex-row items-start">
-                              <span className="font-manrope font-medium sm:text-2xl md:text-xl leading-normal text-black opacity-50">
-                                {projects[selectedProject].estBudget}
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-row items-center justify-center h-full col-span-1 bg-[#FBF8F1] backdrop-blur-lg hover:opacity-50 cursor-pointer">
-                      <div
-                        className="flex flex-col justify-center items-center hover:opacity-50 cursor-pointer"
-                        onClick={prevProjectSlide}
-                      >
-                        <MdKeyboardArrowLeft
-                          className="w-2 h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
-                          color="black"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="h-full flex flex-col justify-center items-center cursor-pointer hover:opacity-50"
-                      onClick={nextProjectSlide}
-                    >
-                      <MdKeyboardArrowRight
-                        className="w-2 h-2 sm:w-5 sm:h-5 md:w-8 md:h-8"
-                        color="black"
-                      />
-                    </div>
-                  </div>
-                </InnerContainer>
-              </div>
+              </InnerContainer>
             </div>
           </div>
         </div>

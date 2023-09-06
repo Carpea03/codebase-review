@@ -128,17 +128,19 @@ export default function ContactUs() {
                 </div>
                 <div className="w-1/3 flex flex-col items-start px-[10px] gap-7">
                   {contactDetails.map((item, index) => (
-                    <div
-                      key={`contact-${index}`}
-                      className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
-                    >
-                      <span className="font-semibold text-base text-white/50">
-                        {item.name}
-                      </span>
-                      <span className="font-normal text-xl text-white">
-                        {item.number}
-                      </span>
-                    </div>
+                    <a key={`link1-2${index}`} href={`tel:${item.number}`}>
+                      <div
+                        key={`contact-${index}`}
+                        className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
+                      >
+                        <span className="font-semibold text-base text-white/50">
+                          {item.name}
+                        </span>
+                        <span className="font-normal text-xl text-white">
+                          {item.number}
+                        </span>
+                      </div>
+                    </a>
                   ))}
                 </div>
                 <div className="w-1/3 items-start">
@@ -268,17 +270,19 @@ export default function ContactUs() {
                   <div className="w-2/5 border-[1px] border-[#FFD15B]" />
                 </div>
                 {contactDetails.map((item, index) => (
-                  <div
-                    key={`contactus-${index}`}
-                    className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
-                  >
-                    <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
-                      {item.name}
-                    </span>
-                    <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                      {item.number}
-                    </span>
-                  </div>
+                  <a key={`link1-${index}`} href={`tel:${item.number}`}>
+                    <div
+                      key={`contactus-${index}`}
+                      className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
+                    >
+                      <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
+                        {item.name}
+                      </span>
+                      <span className="font-manrope font-normal text-sm sm:text-xl text-white">
+                        {item.number}
+                      </span>
+                    </div>
+                  </a>
                 ))}
               </div>
               <div className="flex flex-col items-start w-full">
