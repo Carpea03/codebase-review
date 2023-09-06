@@ -284,8 +284,6 @@ export const FillingStats = () => {
                     style={{
                       background: `linear-gradient(239.25deg, rgba(255, 209, 91, 0) -12.39%, rgba(255, 209, 91, 0.5) 207.04%), url(${projects[selectedProject].image})`,
                       borderRadius: '2px',
-                      backgroundSize: 'cover !important',
-                      backgroundRepeat: 'no-repeat !important',
                     }}
                   />
                   <div
