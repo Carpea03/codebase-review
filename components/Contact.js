@@ -7,15 +7,15 @@ import React, {
 } from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-import Button from '../../../components/buttons/Button'
+import Button from '../components/buttons/Button'
 import GoogleMapReact from 'google-map-react'
 import { BsFillChatSquareFill } from 'react-icons/bs'
-import { API_KEY } from '../../../utils/const/apiKey'
+import { API_KEY } from '../utils/const/apiKey'
 import { FiChevronUp, FiCalendar } from 'react-icons/fi'
 import Image from 'next/image'
-import { hears } from '../../../utils/const/contacts'
+import { hears } from '../utils/const/contacts'
 import Link from 'next/link'
-import { metaOffice } from '../../../utils/const/links'
+import { metaOffice } from '../utils/const/links'
 import { useRouter } from 'next/router'
 
 const generalTypes = [
@@ -263,7 +263,7 @@ export default function Contact({ contactDetails }) {
         <form
           id="ActionStepWebform10"
           name="ActionStepWebform10"
-          encType="application/x-www-form-urlencoded"
+          enctype="application/x-www-form-urlencoded"
           method="post"
           action="https://go.actionstep.com/frontend/application/webform/post"
           ref={contact}
@@ -562,7 +562,7 @@ export default function Contact({ contactDetails }) {
             Meet us on Baxter IP Meta Office
           </span>
           <div className="w-full h-[343px] sm:h-[432px] flex justify-center items-center rounded-sm bg-contactus-metaoffice !bg-cover px-6">
-            <Link href={metaOffice} target='_blank'>
+            <Link href={metaOffice} target="_blank">
               <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-white/20 backdrop-blur-xl cursor-pointer">
                 <Image
                   src="/contactus/arrow-outward.svg"

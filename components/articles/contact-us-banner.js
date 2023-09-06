@@ -15,7 +15,7 @@ export default function ContactUsBanner({ title }) {
             Your patent and trademark attorneys for infinite innovation &
             bussiness growth
           </div>
-          <Link href="/contact/sydney">
+          <Link href="/sydney">
             <div
               className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
               style={{

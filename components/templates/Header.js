@@ -32,7 +32,7 @@ const classNames = (...classes) => {
 
 export default function Header({ topMenuIndex, onTopMenuChange, active }) {
   const menuState = useContentStore((state) => state.menuState)
-  const router = useRouter();
+  const router = useRouter()
   const onClick = (id) => {
     switch (id) {
       case 1:
@@ -42,7 +42,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
       case 2:
         router.push('/people')
         return
-      case 5: 
+      case 5:
         return
       default:
         return
@@ -114,9 +114,9 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                           )}
 
                           {menu.id == 2 && ''}
-                          {menu.id == 3 && <Values active={"Values"} />}
-                          {menu.id == 4 && <Blog active={"Articles"} />}
-                          {menu.id == 5 && <Contact active={"Contact"} />}
+                          {menu.id == 3 && <Values active={'Values'} />}
+                          {menu.id == 4 && <Blog active={'Articles'} />}
+                          {menu.id == 5 && <Contact active={'Contact'} />}
                         </Popover.Panel>
                       </Transition>
                     </>
@@ -183,9 +183,9 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                     />
                   )}
                   {menu.id == 2 && ''}
-                  {menu.id == 3 && <Values active={"Values"} />}
-                  {menu.id == 4 && <Blog active={"Articles"} />}
-                  {menu.id == 5 && <Contact active={"Contact"} />}
+                  {menu.id == 3 && <Values active={'Values'} />}
+                  {menu.id == 4 && <Blog active={'Articles'} />}
+                  {menu.id == 5 && <Contact active={'Contact'} />}
                 </Disclosure.Panel>
               </Disclosure>
             ))}
