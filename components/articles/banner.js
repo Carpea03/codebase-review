@@ -14,7 +14,7 @@ export default function Banner({ layout, coverImage }) {
           : 'bg-ipNews-banner'
       } z-0 mt-100 absolute`}
     >
-      {layout === 3 && (
+      {coverImage?.asset?._ref && layout === 3 && (
         <div className="flex justify-center item-center w-full ">
           
           <Image
