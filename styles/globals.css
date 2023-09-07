@@ -377,6 +377,7 @@
   height: 553px;
   background: linear-gradient(90deg, #FFDF8D 0%, rgba(255, 223, 141, 0.85) 29.67%, rgba(255, 223, 141, 0.00) 100%);
   flex-shrink: 0;
+  position: absolute;
 }
 
 .bg-ipNewsLog-linearPlane {

@@ -1,11 +1,11 @@
-import { Container } from '../../../components/templates/Container'
-import Footer from '../../../components/templates/Footer'
-import Header from '../../../components/templates/Header'
+import { Container } from '../../components/templates/Container'
+import Footer from '../../components/templates/Footer'
+import Header from '../../components/templates/Header'
 import React, { useState, useEffect } from 'react'
-import Contact from '../offices/Contact'
-import { contactDetails } from '../../../utils/const/contacts'
+import Contact from './offices/Contact'
+import { contactDetails } from '../../utils/const/contacts'
 import { useRouter } from 'next/router'
-import { InnerContainer } from '../../../components/templates/InnerContainer'
+import { InnerContainer } from '../../components/templates/InnerContainer'
 import Head from 'next/head'
 
 export default function ContactUs({ office }) {
@@ -18,13 +18,8 @@ export default function ContactUs({ office }) {
   useEffect(() => {
     let office = null
     let newArray = []
-
-    var url = window.location
-
-    var area = url
-      .toString()
-      .substring(url.toString().lastIndexOf('/') + 1)
-      .toLowerCase()
+    
+    var area = 'sydney'
 
     contactDetails.sort().map((key) => {
       newArray.push({ ...key })

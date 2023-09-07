@@ -10,6 +10,7 @@ import { InnerContainer } from '../../components/templates/InnerContainer'
 import IpNewsBlog from '../../components/homepage/IpNewsBlog'
 import { indexQuery } from '../../lib/queries'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
+import Head from 'next/head';
 
 export const getStaticPaths = async () => {
   const paths = peoples[0]?.teamMembers?.slice(0, 8).map((item) => {
@@ -46,6 +47,10 @@ export default function Profile({ profile }) {
 
   return (
     <>
+      <Head>
+        <title>{`${profile.name} - ${profile.position}`}</title>
+        <meta name="description" content={profile?.bio} />
+      </Head>
       <Header active={'Attorneys'} />
       <Container className="flex flex-col">
         <div className="bg-profile-bg !bg-cover">
@@ -116,7 +121,7 @@ export default function Profile({ profile }) {
                           }
                           className="self-end m-5 sm:m-10 sm:mb-0"
                         />
-                      ))}{' '}
+                      ))}
                     </>
                   )}
                 </div>

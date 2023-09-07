@@ -6,6 +6,7 @@ import React, { useState } from 'react'
 import { HiPhone, HiLocationMarker } from 'react-icons/hi'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 import { profiles as peoples } from '../../utils/const/people'
 import { InnerContainer } from '../../components/templates/InnerContainer'
 
@@ -14,6 +15,15 @@ export default function People() {
 
   return (
     <>
+      <Head>
+        <title>{`Patent and trade mark attorneys in Sydney & Melbourne | Baxter IP`}</title>
+        <meta
+          name="description"
+          content={
+            'The patent and trade mark attorneys at Baxter IP in Sydney or Melbourne can help secure your intellectual property. You will be matched with the IP attorney best suited to your needs.'
+          }
+        />
+      </Head>
       <Header active={'Attorneys'} />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-people-unsplash !bg-cover">

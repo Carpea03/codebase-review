@@ -34,6 +34,7 @@ export const technicalAreas = [
 export const profiles = {
   'chris-baxter': {
     name: 'Chris Baxter',
+    bio: 'Chris Baxter is a Sydney patent and trade mark attorney specialising in software patents, computer patents, medical device patents and engineering patents.',
     position: 'Managing Director, Patent & Trade Mark Attorney',
     email: 'chris.baxter@baxterip.com.au',
     telephone: '+61 2 9264 6716',
@@ -134,6 +135,7 @@ export const profiles = {
   },
   'andrew-balis': {
     name: 'Andrew Balis',
+    bio: 'Andrew Balis is a Sydney patent and trade mark attorney specialising in mechanical and aerospace technology.',
     position: 'Associate, Patent & Trade Mark Attorney',
     email: 'andrew.balis@baxterip.com.au',
     telephone: '+61 2 9099 0650',
@@ -242,6 +244,7 @@ export const profiles = {
   },
   'martin-earley': {
     name: 'Martin Earley',
+    bio: 'Martin Earley is a Melbourne IP attorney specialising in ICT patents, physics patents, engineering patent applications and patent oppositions.',
     position: 'Director, Victoria Region Manager, Patent & Trade Mark Attorney',
     email: 'martin.earley@baxterip.com.au',
     awards: [1],
@@ -344,6 +347,7 @@ export const profiles = {
   },
   'dr-qi-zhang': {
     name: 'Dr Qi Zhang',
+    bio: "Dr Qi Zhang is a patent and trade mark attorney specialising in mobile communications, electrical engineering and software. Qi is based at Baxter IP's Sydney Office.",
     position: 'Principal, Patent & Trade Mark Attorney',
     email: 'qi.zhang@baxterip.com.au',
     telephone: '+61 2 9099 0644',
@@ -567,6 +571,7 @@ export const profiles = {
   },
   'dr-richard-grant': {
     name: 'Dr Richard Grant',
+    bio: 'Dr Richard Grant is a Sydney patent attorney specialising in drafting and filing chemical and pharmaceutical patents, such as nanotechnology and polymers.',
     position: 'Senior Patent Attorney',
     email: 'richard.grant@baxterip.com.au',
     telephone: '+61 2 9099 0646',
@@ -671,6 +676,7 @@ export const profiles = {
   },
   'dr-seán-klinkradt': {
     name: 'Dr Seán Klinkradt',
+    bio: 'Dr Seán Klinkradt is a Melbourne patent attorney specialising in biotechnology, medical devices, industrial processes and chemistry.',
     position: 'Senior Associate, Patent Attorney',
     email: 'sean.klinkradt@baxterip.com.au',
     telephone: '+61 3 8672 2977',
@@ -807,6 +813,7 @@ export const profiles = {
   },
   'warren-chandler': {
     name: 'Warren Chandler',
+    bio: 'Warren Chandler is a Melbourne IP attorney specialising in engineering, chemical patents, biotechnology, and pharmaceutical patent applications.',
     position: 'Senior Associate, Patent & Trade Mark Attorney',
     email: 'warren.chandler@baxterip.com.au',
     telephone: '+61 3 9020 3143',
