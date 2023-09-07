@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function PctPatent() {
   const data = [
@@ -11,7 +11,7 @@ export default function PctPatent() {
     { title: 'Stage 3: PCT International patent applications', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           PCT patent | PCT international patent applications | Baxter IP

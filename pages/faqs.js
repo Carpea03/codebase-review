@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function Faqs() {
   const data = [
@@ -11,7 +11,7 @@ export default function Faqs() {
     },
   ]
   return (
-    <Layout navData={data} active={'Articles'}>
+    <Layout navData={data} active={"Articles"}>
       <Head>
         <title>
           Intellectual Property FAQs | Answered by Baxter IP Sydney & Melbourne

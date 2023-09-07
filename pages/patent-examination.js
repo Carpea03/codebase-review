@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function PatentExamination() {
   const data = [
@@ -10,7 +10,7 @@ export default function PatentExamination() {
     { title: 'Patent examination and publication', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Examination of an Australian patent application | Baxter IP Sydney &

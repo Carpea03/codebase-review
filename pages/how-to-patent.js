@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function HowToPatent() {
   const data = [
@@ -10,7 +10,7 @@ export default function HowToPatent() {
     { title: 'How to patent', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           How to patent an idea in Australia | Baxter IP Sydney & Melbourne

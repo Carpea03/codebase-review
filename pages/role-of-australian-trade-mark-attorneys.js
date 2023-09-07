@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function RoleOfAustralianTradeMarkAttorneys() {
   const data = [
@@ -8,13 +8,7 @@ export default function RoleOfAustralianTradeMarkAttorneys() {
     { title: 'The role of Australian trade mark attorney', link: '' },
   ]
   return (
-    <Layout
-      navData={data}
-      bannerData={true}
-      layout={2}
-      title={'The role of Australian trade mark attorneys'}
-      active={'Values'}
-    >
+    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian trade mark attorneys"} active={"Values"}>
       <Head>
         <title>The role of Australian trade mark attorneys | Baxter IP</title>
         <meta

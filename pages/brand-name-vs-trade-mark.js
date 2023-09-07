@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function BrandNameVsTradeMark() {
   const data = [
@@ -10,7 +10,7 @@ export default function BrandNameVsTradeMark() {
     { title: 'Brand name vs trade mark', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Brand name vs trade mark | Baxter IP Sydney & Melbourne</title>
         <meta

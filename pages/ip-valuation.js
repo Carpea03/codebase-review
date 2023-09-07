@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function IpValuation() {
   const data = [
@@ -9,7 +9,7 @@ export default function IpValuation() {
     { title: 'IP Valuation', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Intellectual Property Valuation | What is your patent worth?

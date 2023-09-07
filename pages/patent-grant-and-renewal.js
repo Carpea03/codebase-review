@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function PatentGrantAndRenewal() {
   const data = [
@@ -10,7 +10,7 @@ export default function PatentGrantAndRenewal() {
     { title: 'Patent grant and renewal', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Grant and renewal of an Australian patent | Baxter IP Sydney &

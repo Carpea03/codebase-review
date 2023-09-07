@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function NationalPhasePatent() {
   const data = [
@@ -11,7 +11,7 @@ export default function NationalPhasePatent() {
     { title: 'Stage 4: National phase patent applications', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Australian PCT national phase patent application | Baxter IP

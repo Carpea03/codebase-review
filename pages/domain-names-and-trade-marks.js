@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function DomainNamesAndTradeMarks() {
   const data = [
@@ -10,7 +10,7 @@ export default function DomainNamesAndTradeMarks() {
     { title: 'Domain names and trade marks', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Domain names and trade marks | Baxter IP Sydney & Melbourne

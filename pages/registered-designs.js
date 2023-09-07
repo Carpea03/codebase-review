@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function RegisteredDesigns() {
   const data = [
@@ -9,7 +9,7 @@ export default function RegisteredDesigns() {
     { title: 'Registered designs', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Registered designs | Design patents Australia | Baxter IP</title>
         <meta

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function CapitalPartners() {
   const data = [
@@ -8,13 +8,7 @@ export default function CapitalPartners() {
     { title: 'Capital Partners', link: '' },
   ]
   return (
-    <Layout
-      navData={data}
-      bannerData={true}
-      layout={2}
-      title={'BIP Capital Partners'}
-      active={'Values'}
-    >
+    <Layout navData={data} bannerData={true} layout={2} title={"BIP Capital Partners"} active={"Values"}>
       <Head>
         <title>
           BIP Capital Partners | Baxter IP, Patent & Trade Mark Attorneys

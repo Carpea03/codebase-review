@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 
 export default function 巴克斯特家庭哲学() {
   return (

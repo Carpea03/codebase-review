@@ -1,6 +1,6 @@
 // import CardCta from '../components/blocks/card-cta'
 // import FeatureListCta from '../components/blocks/feature-list-cta'
-import LayoutWide from '../components/Layout-wide'
+import LayoutWide from '../components/layout-wide'
 import Link from 'next/link'
 import TeamPatent from '../components/team-patent'
 

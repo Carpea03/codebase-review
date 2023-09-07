@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function TypesOfTradeMarks() {
   const data = [
@@ -16,7 +16,7 @@ export default function TypesOfTradeMarks() {
     { title: 'Types of trade marks', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Types of trade mark used in the market | Baxter IP Sydney & Melbourne

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function TradeMarkEnforcementOptions() {
   const data = [
@@ -13,7 +13,7 @@ export default function TradeMarkEnforcementOptions() {
     { title: 'Trade mark enforcement options', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Trade mark enforcement and defence | Baxter IP Sydney & Melbourne

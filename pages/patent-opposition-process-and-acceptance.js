@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function PatentOppositionProcessAndAcceptance() {
   const data = [
@@ -14,7 +14,7 @@ export default function PatentOppositionProcessAndAcceptance() {
     { title: 'Patent opposition process and acceptance', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Patent opposition process and acceptance of an Australian patent |

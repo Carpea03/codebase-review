@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function PreparingAnEvidenceOfUseReport() {
   const data = [
@@ -16,7 +16,7 @@ export default function PreparingAnEvidenceOfUseReport() {
     { title: 'Evidence of Use preparation', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Preparing an Evidence of Use report | Baxter IP Sydney & Melbourne

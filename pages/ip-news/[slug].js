@@ -9,7 +9,7 @@ import PostTitle from '../../components/blog/post-title'
 import { postQuery, postSlugsQuery } from '../../lib/queries'
 import { urlForImage, usePreviewSubscription } from '../../lib/sanity'
 import { sanityClient, getClient, overlayDrafts } from '../../lib/sanity.server'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 import Banner from '../../components/articles/banner'
 import Avatar from '../../components/articles/profile-avatar'
 import Image from 'next/image'
@@ -44,7 +44,7 @@ export default function Post({ data = {}, preview }) {
     enabled: preview && slugData,
   })
   // console.log("post",post)
-
+  
   if (!router.isFallback && !slugData) {
     return <ErrorPage statusCode={404} />
   }
@@ -85,14 +85,7 @@ export default function Post({ data = {}, preview }) {
   }
 
   return (
-    <Layout
-      navData={menu}
-      articlesBg={true}
-      bannerData={true}
-      contactUs={true}
-      layout={3}
-      active={'Articles'}
-    >
+    <Layout navData={menu} articlesBg={true} bannerData={true} contactUs={true} layout={3} active={'Articles'}>
       <div>
         <div
           className="w-full hidden md:flex rounded"

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function SpecialTypesOfTradeMarks() {
   const data = [
@@ -16,7 +16,7 @@ export default function SpecialTypesOfTradeMarks() {
     { title: 'Special types of trade marks', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Other types of trade mark with special functions | Baxter IP

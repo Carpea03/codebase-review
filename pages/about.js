@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function About() {
-  const data = [{ title: 'About us', link: '/about' }]
+  const data = [
+    { title: 'About us', link: '/about' },
+  ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={'About us'}>
+    <Layout navData={data} bannerData={true} layout={2} title={"About us"}>
       <Head>
         <title>
           About Baxter IP, Patent & Trade Mark Attorneys | Baxter IP

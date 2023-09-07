@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function InternationalTradeMarkManagement() {
   const data = [
@@ -10,7 +10,7 @@ export default function InternationalTradeMarkManagement() {
     { title: 'International trade mark application', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Managing your international trade mark | Baxter IP Sydney & Melbourne

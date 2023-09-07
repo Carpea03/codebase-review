@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function FreedomToOperatePatentSearch() {
   const data = [
@@ -14,7 +14,7 @@ export default function FreedomToOperatePatentSearch() {
     { title: 'Freedom-to-operate patent search', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Freedom-to-operate patent search | Patent infringement search | Baxter

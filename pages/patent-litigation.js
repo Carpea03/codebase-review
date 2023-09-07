@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function PatentLitigation() {
   const data = [
@@ -13,7 +13,7 @@ export default function PatentLitigation() {
     { title: 'Patent litigation', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Patent litigation | Intellectual property enforcement | Baxter IP

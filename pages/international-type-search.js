@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function InternationalTypeSearch() {
   const data = [
@@ -10,7 +10,7 @@ export default function InternationalTypeSearch() {
     { title: 'Stage 2: International-type patent search', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>International-type search | Baxter IP Sydney & Melbourne</title>
         <meta
@@ -27,7 +27,7 @@ export default function InternationalTypeSearch() {
           hreflang="zh"
         />
       </Head>
-      <div className="mt-10"></div>
+      <div className='mt-10'></div>
       <h1>Stage 2: International-type patent search</h1>
       <p>
         IP Australia offers a highly cost effective option for an international

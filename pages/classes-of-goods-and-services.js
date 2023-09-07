@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 
 export default function ClassesOfGoodsAndServices() {
   const data = [
@@ -10,7 +10,7 @@ export default function ClassesOfGoodsAndServices() {
     { title: 'Classes of goods and services', link: '' },
   ]
   return (
-    <Layout navData={data} active={'Services'}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Classes of goods and/or services | Baxter IP Sydney & Melbourne

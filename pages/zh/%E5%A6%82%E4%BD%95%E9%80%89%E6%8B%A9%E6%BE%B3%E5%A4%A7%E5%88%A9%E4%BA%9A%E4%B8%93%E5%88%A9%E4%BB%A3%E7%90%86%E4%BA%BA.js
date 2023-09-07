@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 
 export default function 如何选择澳大利亚专利代理人() {
   return (

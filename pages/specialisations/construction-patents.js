@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 import Link from 'next/link'
 import StaffChris from '../../components/staff/chris'
 import StaffMartin from '../../components/staff/martin'

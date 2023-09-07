@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 
 export default function 创新专利申请() {
   return (
