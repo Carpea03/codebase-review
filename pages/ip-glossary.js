@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function IpGlossary() {
   const data = [
@@ -8,7 +8,7 @@ export default function IpGlossary() {
     { title: 'IP Glossary', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Articles"}>
+    <Layout navData={data} active={'Articles'}>
       <Head>
         <title>IP Glossary | Intellectual Property Glossary | Baxter IP</title>
         <meta

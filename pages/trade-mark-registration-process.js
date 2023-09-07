@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
@@ -21,7 +21,7 @@ export default function TradeMarkRegistrationProcess() {
     { title: 'Trade mark registration process', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           Trade mark registration process | Baxter IP Sydney & Melbourne

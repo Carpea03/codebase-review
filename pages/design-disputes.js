@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function DesignDisputes() {
   const data = [
@@ -9,7 +9,7 @@ export default function DesignDisputes() {
     { title: 'Design disputes', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           Design disputes | Baxter IP, Patent & Trade Mark Attorneys

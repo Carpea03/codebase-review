@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function HowToTradeMark() {
   const data = [
@@ -9,7 +9,7 @@ export default function HowToTradeMark() {
     { title: 'How to trade mark', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           How to trade mark and obtain protection for your brand | Baxter IP
@@ -28,7 +28,7 @@ export default function HowToTradeMark() {
           hreflang="zh"
         />
       </Head>
-      <div className='mt-10'></div>
+      <div className="mt-10"></div>
       <h1>How to trade mark</h1>
       <p>
         A trade mark is a form of intellectual property designed to protect

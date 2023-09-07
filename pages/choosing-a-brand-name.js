@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function ChoosingABrandName() {
   const data = [
@@ -10,7 +10,7 @@ export default function ChoosingABrandName() {
     { title: 'Choosing a brand name', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>Choosing a brand name | Baxter IP Sydney & Melbourne</title>
         <meta

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function TradeMarkExamination() {
   const data = [
@@ -16,7 +16,7 @@ export default function TradeMarkExamination() {
     { title: 'Trade mark examination', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           Examination of a trade mark application | Baxter IP Sydney & Melbourne

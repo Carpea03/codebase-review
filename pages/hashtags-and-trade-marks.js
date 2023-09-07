@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function HashtagsAndTradeMarks() {
   const data = [
@@ -10,7 +10,7 @@ export default function HashtagsAndTradeMarks() {
     { title: 'Hashtags and trade marks', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>Hashtags and trade marks | Baxter IP Sydney & Melbourne</title>
         <meta

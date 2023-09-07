@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function PatentOpposition() {
   const data = [
@@ -14,7 +14,7 @@ export default function PatentOpposition() {
     { title: 'Patent opposition', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           Patent opposition in Australia | Baxter IP Sydney & Melbourne

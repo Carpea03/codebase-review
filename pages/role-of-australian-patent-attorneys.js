@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function RoleOfAustralianPatentAttorneys() {
   const data = [
@@ -8,7 +8,13 @@ export default function RoleOfAustralianPatentAttorneys() {
     { title: 'The role of Australian patent attorneys', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian patent attorneys"} active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'The role of Australian patent attorneys'}
+      active={'Values'}
+    >
       <Head>
         <title>
           The role of Australian patent attorneys | Baxter IP Sydney & Melbourne

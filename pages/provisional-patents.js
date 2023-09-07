@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function ProvisionalPatents() {
   const data = [
@@ -10,7 +10,7 @@ export default function ProvisionalPatents() {
     { title: 'Stage 1: Provisional patent applications', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           File for provisional patents in Australia | Baxter IP Sydney &

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function PatentApplication() {
   const data = [
@@ -10,7 +10,7 @@ export default function PatentApplication() {
     { title: 'Australian patent application', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           Filing an Australian patent application | Baxter IP Sydney & Melbourne

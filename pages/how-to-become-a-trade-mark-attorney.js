@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function HowToBecomeATradeMarkAttorney() {
   const data = [
@@ -8,7 +8,13 @@ export default function HowToBecomeATradeMarkAttorney() {
     { title: 'How to become a trade mark attorney', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"How to become a trade mark attorney"} active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'How to become a trade mark attorney'}
+      active={'Values'}
+    >
       <Head>
         <title>
           How to become a trade mark attorney in Australia | Baxter IP

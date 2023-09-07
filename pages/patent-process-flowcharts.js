@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function PatentProcessFlowcharts() {
   const data = [
@@ -9,7 +9,7 @@ export default function PatentProcessFlowcharts() {
     { title: 'Patent process flowcharts', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Articles"}>
+    <Layout navData={data} active={'Articles'}>
       <Head>
         <title>Patent process flowcharts | Baxter IP Sydney & Melbourne</title>
         <meta

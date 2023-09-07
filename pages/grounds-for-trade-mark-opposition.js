@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function GroundsForTradeMarkOpposition() {
   const data = [
@@ -14,7 +14,7 @@ export default function GroundsForTradeMarkOpposition() {
     { title: 'Grounds for trade mark opposition', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>Grounds for opposing a trade mark application | Baxter IP</title>
         <meta

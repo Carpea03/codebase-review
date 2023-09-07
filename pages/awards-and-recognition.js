@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Image from 'next/image'
 
 export default function AwardsAndRecognition() {
@@ -10,7 +10,13 @@ export default function AwardsAndRecognition() {
     { title: 'Awards & Recognition', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"Awards & Recognition"} active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'Awards & Recognition'}
+      active={'Values'}
+    >
       <Head>
         <title>
           Patent and trade mark attorney awards and recognition | Baxter IP

@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function Testimonials() {
   const data = [
@@ -9,7 +9,13 @@ export default function Testimonials() {
     { title: 'Client testimonials', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"Client Testimonials"} active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'Client Testimonials'}
+      active={'Values'}
+    >
       <Head>
         <title>
           Client testimonials on Baxter IP&apos;s intellectual property services

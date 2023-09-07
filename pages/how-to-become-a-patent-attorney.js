@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function HowToBecomeAPatentAttorney() {
   const data = [
@@ -8,7 +8,13 @@ export default function HowToBecomeAPatentAttorney() {
     { title: 'How to become a patent attorney', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"How to become a patent attorney"}  active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'How to become a patent attorney'}
+      active={'Values'}
+    >
       <Head>
         <title>How to become a patent attorney in Australia | Baxter IP</title>
         <meta
@@ -30,9 +36,9 @@ export default function HowToBecomeAPatentAttorney() {
           A patent is a government granted monopoly that provides a patent owner
           the exclusive right to prevent others from making, using or selling an
           invention that is the subject of the patent in any country in which
-          the patent has been granted. The typical term for the monopoly grsanted
-          by a patent is 20 years from the original filing date of a patent
-          application.
+          the patent has been granted. The typical term for the monopoly
+          grsanted by a patent is 20 years from the original filing date of a
+          patent application.
         </p>
         <p>
           <Link href="/patent-attorney">Patent attorneys</Link> are intellectual

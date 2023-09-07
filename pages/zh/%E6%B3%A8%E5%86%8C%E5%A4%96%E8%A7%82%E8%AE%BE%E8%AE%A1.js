@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout'
+import Layout from '../../components/Layout'
 
 export default function 注册外观设计() {
   return (

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function AustralianPatentProcess() {
   const data = [
@@ -10,7 +10,7 @@ export default function AustralianPatentProcess() {
     { title: 'Australian patent process', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>Australian patent process | Baxter IP Sydney & Melbourne</title>
         <meta

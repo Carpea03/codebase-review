@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function BaxterIpPhilosophy() {
   const data = [
@@ -8,7 +8,13 @@ export default function BaxterIpPhilosophy() {
     { title: 'The Baxter IP Philosophy', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"The Baxter IP philosophy"} active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'The Baxter IP philosophy'}
+      active={'Values'}
+    >
       <Head>
         <title>
           Dedicated & supportive, transparent and commercial | The Baxter IP

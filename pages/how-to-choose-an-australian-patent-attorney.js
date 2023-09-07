@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function HowToChooseAnAustralianPatentAttorney() {
   const data = [
@@ -25,7 +25,7 @@ export default function HowToChooseAnAustralianPatentAttorney() {
           hreflang="zh"
         />
       </Head>
-      <div className="mt-10"/>
+      <div className="mt-10" />
       <h1>How to choose an Australian patent attorney</h1>
       <p>
         Like any other type of professional, the primary and secondary skills of

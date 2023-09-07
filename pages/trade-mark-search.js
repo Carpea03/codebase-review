@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function TradeMarkSearch() {
   const data = [
@@ -20,7 +20,7 @@ export default function TradeMarkSearch() {
     { title: 'Trade mark search', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>Trade mark search | Baxter IP Sydney & Melbourne</title>
         <meta

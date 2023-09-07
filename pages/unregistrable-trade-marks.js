@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default function UnregistrableTradeMarks() {
   const data = [
@@ -16,7 +16,7 @@ export default function UnregistrableTradeMarks() {
     { title: 'Signs that cannot be protected as a trade mark', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           Signs that cannot be protected or registered as a trade mark | Baxter
