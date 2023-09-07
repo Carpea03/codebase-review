@@ -1,11 +1,11 @@
-import { Container } from '../../components/templates/Container'
-import Footer from '../../components/templates/Footer'
-import Header from '../../components/templates/Header'
+import { Container } from '../components/templates/Container'
+import Footer from '../components/templates/Footer'
+import Header from '../components/templates/Header'
+import Contact from '../components/Contact'
 import React, { useState, useEffect } from 'react'
-import Contact from './offices/Contact'
-import { contactDetails } from '../../utils/const/contacts'
+import { contactDetails } from '../utils/const/contacts'
 import { useRouter } from 'next/router'
-import { InnerContainer } from '../../components/templates/InnerContainer'
+import { InnerContainer } from '../components/templates/InnerContainer'
 import Head from 'next/head'
 
 export default function ContactUs({ office }) {
@@ -39,7 +39,7 @@ export default function ContactUs({ office }) {
     const details = contactDetails[id]
     // setSelectedPlace(details.number)
     // setSelectedId(id)
-    router.push(`/contact/${details.name.toLocaleLowerCase()}`)
+    router.push(`/${details.name.toLocaleLowerCase()}`)
   }
 
   const renderOptions = (id, item, key) => (

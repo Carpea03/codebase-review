@@ -74,10 +74,7 @@ export default function ContactUs() {
                 </div>
 
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
-                  <Link
-                    href="/contact/sydney"
-                    className="flex flex-row items-center"
-                  >
+                  <Link href="/sydney" className="flex flex-row items-center">
                     <Image
                       alt=""
                       src="/contactus/phone.svg"
@@ -91,10 +88,7 @@ export default function ContactUs() {
                   </Link>
                 </div>
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
-                  <Link
-                    href="/contact/sydney"
-                    className="flex flex-row items-center"
-                  >
+                  <Link href="/sydney" className="flex flex-row items-center">
                     <Image
                       alt=""
                       src="/contactus/mail-outline.svg"
@@ -144,7 +138,7 @@ export default function ContactUs() {
                   ))}
                 </div>
                 <div className="w-1/3 items-start">
-                  <Link href="/contact/sydney">
+                  <Link href="/sydney">
                     <div
                       className="flex flex-col justify-center items-center h-[88px] bg-[#816BD9] rounded-sm"
                       style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}

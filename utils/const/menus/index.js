@@ -93,10 +93,30 @@ export const cards = [
 
 export const subMenusContact = [
   [
-    { title: 'Our Patent & Trade Mark Attorney Offices', bold: true, division: false, href: '' },
-    { title: 'Sydney Patent & Trade Mark Office', bold: false, division: false, href: '/contact/sydney' },
-    { title: 'Melbourne Patent & Trade Mark Office', bold: false, division: false, href: '/contact/melbourne' },
-    { title: 'Brisbane Patent & Trade Mark Office', bold: false, division: false, href: '/contact/brisbane' },
+    {
+      title: 'Our Patent & Trade Mark Attorney Offices',
+      bold: true,
+      division: false,
+      href: '',
+    },
+    {
+      title: 'Sydney Patent & Trade Mark Office',
+      bold: false,
+      division: false,
+      href: '/sydney',
+    },
+    {
+      title: 'Melbourne Patent & Trade Mark Office',
+      bold: false,
+      division: false,
+      href: '/melbourne',
+    },
+    {
+      title: 'Brisbane Patent & Trade Mark Office',
+      bold: false,
+      division: false,
+      href: '/brisbane',
+    },
     { title: '', bold: false, division: true, href: '' },
   ],
 ]
@@ -104,11 +124,36 @@ export const subMenusContact = [
 export const subMenusValues = [
   [
     { title: 'About us', bold: true, division: false, href: '/about' },
-    { title: 'Our values', bold: false, division: false, href: '/living-our-values' },
-    { title: 'Our philosophy', bold: false, division: false, href: '/baxter-ip-philosophy' },
-    { title: 'Capital partners', bold: false, division: false, href: '/capital-partners' },
-    { title: 'Awards and recognition', bold: false, division: false, href: '/awards-and-recognition' },
-    { title: 'Client testimonials', bold: false, division: false, href: '/testimonials' },
+    {
+      title: 'Our values',
+      bold: false,
+      division: false,
+      href: '/living-our-values',
+    },
+    {
+      title: 'Our philosophy',
+      bold: false,
+      division: false,
+      href: '/baxter-ip-philosophy',
+    },
+    {
+      title: 'Capital partners',
+      bold: false,
+      division: false,
+      href: '/capital-partners',
+    },
+    {
+      title: 'Awards and recognition',
+      bold: false,
+      division: false,
+      href: '/awards-and-recognition',
+    },
+    {
+      title: 'Client testimonials',
+      bold: false,
+      division: false,
+      href: '/testimonials',
+    },
     { title: '', bold: false, division: true, href: '' },
   ],
 ]

@@ -21,7 +21,7 @@ const contact = [
 
 const company = [
   { title: 'About Us', href: '/about' },
-  { title: 'Contact', href: '/contact/sydney' },
+  { title: 'Contact', href: '/contact' },
   { title: 'Privacy Policy', href: '/privacy-policy' },
 ]
 
@@ -75,8 +75,8 @@ const Footer = ({ page }) => {
     <Container>
       <div className="flex flex-col items-center px-4 py-[30px] sm:px-9 sm:py-[67px] md:px-4 lg:px-10  md:pt-[50px] bg-[#404266]">
         <InnerContainer>
-          <div className='sm:px-9 xl:px-8'>
-            <div className='xl:px-32'>
+          <div className="sm:px-9 xl:px-8">
+            <div className="xl:px-32">
               <div className="w-full flex flex-col items-center gap-[60px] md:gap-[50px]">
                 <div className="w-full flex flex-col md:flex-row justify-start md:justify-between md:items-center gap-[60px] md:gap-0">
                   <div className="md:w-2/5 flex flex-col items-start gap-2 sm:gap-[18px] md:gap-4">
