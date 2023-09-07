@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react'
 import { contactDetails } from '../utils/const/contacts'
 import { useRouter } from 'next/router'
 import { InnerContainer } from '../components/templates/InnerContainer'
+import Head from 'next/head'
 
 export default function ContactUs({ office }) {
   const [callUs, setCallUs] = useState(true)
@@ -59,6 +60,15 @@ export default function ContactUs({ office }) {
 
   return (
     <>
+      <Head>
+        <title>{`Contact our Baxter IP Sydney Patent & Trade Mark Attorneys`}</title>
+        <meta
+          name="description"
+          content={
+            'Call +61 2 9264 6716 to talk with a patent or trade mark attorney at our Sydney office to discuss intellectual property queries today.'
+          }
+        />
+      </Head>
       <Header active={'Contact'} />
       <Container className="bg-[#FFFDF7]">
         <div className="w-full bg-contactus-unsplash !bg-cover">

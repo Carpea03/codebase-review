@@ -40,7 +40,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
         if (menuState === 4) router.push('/services')
         return
       case 2:
-        router.push('/people')
+        router.push('/attorneys')
         return
       case 5:
         return

@@ -21,6 +21,7 @@ export default function Layout({
   defaultLayout,
   contactUs,
   active,
+  coverImage,
   allPosts: initialAllPosts,
   preview,
 }) {
@@ -60,7 +61,7 @@ export default function Layout({
       </div>
       {bannerData && (
         <div className="z-0">
-          <Banner layout={layout} />
+          <Banner layout={layout} coverImage={coverImage}/>
         </div>
       )}
 

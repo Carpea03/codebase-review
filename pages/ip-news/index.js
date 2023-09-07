@@ -21,6 +21,10 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
 
   return (
     <>
+      <Head>
+      <title>{`IP Front™ - General`}</title>
+        <meta name="description" content='' />
+      </Head>
       <Layout preview={preview} defaultLayout={true} navData={data} layout={1} active={"Articles"}>
         <div className="mt-10">
           {morePosts.length > 0 && (
