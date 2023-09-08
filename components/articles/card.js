@@ -10,6 +10,7 @@ export default function Card({
   excerpt,
   author,
   slug,
+  metaDescription,
   type,
 }) {
   return (
@@ -31,6 +32,18 @@ export default function Card({
               />
             )}
             <h3 className="mb-3 text-3xl leading-snug">{title}</h3>
+            <div
+              className="mb-5"
+              style={{
+                height: 96,
+              }}
+            >
+              <p
+                className="line-clamp-3 font-manrope text-xl font-medium text-[#7A7B94]"
+              >
+                {metaDescription}
+              </p>
+            </div>
             <div className="text-xl mb-4 text-[#ADAEBD] font-manrope">
               {type} · <Date dateString={date} />
             </div>

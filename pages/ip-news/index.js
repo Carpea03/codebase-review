@@ -1,15 +1,10 @@
 import Head from 'next/head'
-import Container from '../../components/blog/container'
-import MoreStories from '../../components/blog/more-stories'
-import HeroPost from '../../components/blog/hero-post'
-import Intro from '../../components/blog/intro'
 import Layout from '../../components/layout'
-import { InnerContainer } from '../../components/templates/InnerContainer'
 import { indexQuery } from '../../lib/queries'
 import { usePreviewSubscription } from '../../lib/sanity'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
 import Content from '../../components/articles/content'
-import { useState, useEffect } from 'react'
+
 
 export default function Index({ allPosts: initialAllPosts, preview }) {
   const { data: allPosts } = usePreviewSubscription(indexQuery, {

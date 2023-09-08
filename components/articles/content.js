@@ -4,27 +4,20 @@ import { Search } from 'react-feather'
 import CategoryList from './category-list'
 import ReactPaginate from 'react-paginate'
 import { useState, useEffect } from 'react'
-
-const general = '676965b3-8ec8-43b1-b1a9-1e88f11c65fc'
-const patents = '07830fcf-e52a-449b-a873-771207400afb'
-const tradeMarks = '350407f4-914c-4d6d-93b7-75c0e1cb0a1b'
-//General Types
-const corporateOrSME = '17c82d5a-0303-40e7-8897-31cb8fc998a2'
-const scaleupOrInvestor = 'f3ae2cc0-56db-4049-a3aa-be654ddd41c4'
-const startupOrEntrepreneur = '57580353-cb18-4618-8824-de3a99d441f2'
-const foreignAssociates = 'fdbab480-08f8-418d-aa24-b930940e5c5e'
-const generalUserType = 'e2641235-19ce-4406-8124-d3cec617da0c'
-//Industry Types
-const engineering = '4ed84108-ae9f-4d7c-8ee8-98ca9205cacd'
-const highTech = '510d7804-bc26-4ff8-9f6e-a694ecf03373'
-const healthtech = '63bf9a5a-b8ce-4197-98e8-c8ff280ee3cd'
-const otherIndustries = 'b1a0ad48-81a5-45d0-84d9-605d0dc12b90'
-const allIndustries = 'f9106bb6-b232-4f2c-8923-96a3414c58b0'
+import { useRouter } from 'next/router'
+import {
+  filterHelper,
+  generalTags,
+  industryTags,
+} from '../../utils/utility.helper'
+import { general, patents, tradeMarks } from '../../utils/const/ids'
 
 export default function Content({ posts }) {
   const [filteredData, setFilteredData] = useState()
+  const [initialPage, setInitialPage] = useState()
   const itemsPerPage = 6
   const [itemOffset, setItemOffset] = useState(0)
+  const router = useRouter()
 
   const generalTotal = posts
     .map((item) => item.category)
@@ -49,65 +42,110 @@ export default function Content({ posts }) {
   }, [posts])
 
   const init = async () => {
+    const url = window.location
+    const newPage = url.toString().substring().split('/')
+    switch (newPage[4]) {
+      case 'general':
+        generalData()
+        break
+      case 'patents':
+        patentsData()
+        break
+      case 'trade-marks':
+        tradeMarksData()
+        break
+      case 'for-you':
+        forYouData()
+        break
+      default:
+        allData()
+        break
+    }
+  }
+
+  const generalData = async () => {
+    const generalPost = filterHelper(posts, false, general)
+    setFilteredData(generalPost)
+    checkPages(generalPost)
+  }
+
+  const patentsData = async () => {
+    const patentsPost = filterHelper(posts, false, patents)
+    setFilteredData(patentsPost)
+    checkPages(patentsPost)
+  }
+
+  const tradeMarksData = async () => {
+    const tradeMarksPost = filterHelper(posts, false, tradeMarks)
+    setFilteredData(tradeMarksPost)
+    checkPages(tradeMarksPost)
+  }
+
+  const forYouData = async () => {
     const generalSelected = await localStorage.getItem('selected-id')
     const industrySelected = await localStorage.getItem('selected-id-2')
     await combineData(generalSelected, industrySelected)
   }
 
-  const combineData = (generalSelected, industrySelected) => {
-    let generalTags
-    let industryTags
-
-    if (Number(generalSelected) === 0) {
-      generalTags = filterHelper(posts, corporateOrSME)
-    } else if (Number(generalSelected) === 1) {
-      generalTags = filterHelper(posts, scaleupOrInvestor)
-    } else if (Number(generalSelected) === 2) {
-      generalTags = filterHelper(posts, startupOrEntrepreneur)
-    } else if (Number(generalSelected) === 3) {
-      generalTags = filterHelper(posts, foreignAssociates)
-    } else {
-      generalTags = filterHelper(posts, generalUserType)
-    }
-
-    if (Number(industrySelected) === 0) {
-      industryTags = filterHelper(posts, engineering)
-    } else if (Number(industrySelected) === 1) {
-      industryTags = filterHelper(posts, highTech)
-    } else if (Number(industrySelected) === 2) {
-      industryTags = filterHelper(posts, healthtech)
-    } else if (Number(industrySelected) === 3) {
-      industryTags = filterHelper(posts, otherIndustries)
-    } else {
-      industryTags = filterHelper(posts, allIndustries)
-    }
-
-    const newData = generalTags.concat(industryTags)
-    setFilteredData(newData)
+  const allData = async () => {
+    setFilteredData(posts)
+    checkPages(posts)
   }
 
+  const isNumber = (value) => {
+    if (typeof value === 'string') {
+      return !isNaN(value)
+    }
+  }
+
+  const combineData = (generalSelected, industrySelected) => {
+    const newData = generalTags(generalSelected, posts).concat(
+      industryTags(industrySelected, posts)
+    )
+    setFilteredData(newData)
+    checkPages(newData)
+  }
+
+  const checkPages = (data) => {
+    const url = window.location
+    const pages = url
+      .toString()
+      .substring(url.toString().lastIndexOf('/') + 1)
+      .toLowerCase()
+
+    if (isNumber(pages)) {
+      const newValue = parseInt(pages) - 1
+      setInitialPage(newValue)
+      const newOffset = (newValue * itemsPerPage) % data?.length
+      setItemOffset(newOffset)
+      return
+    }
+  }
   const endOffset = itemOffset + itemsPerPage
   const currentItems = filteredData?.slice(itemOffset, endOffset)
   const pageCount = Math.ceil(filteredData?.length / itemsPerPage)
 
-  const filterHelper = (morePosts, tags) => {
-    const resultTags = morePosts.map((item) => {
-      let exist = false
-      item.tag.filter((val) => {
-        if (val?._ref === tags) {
-          exist = true
-          return
-        }
-      })
-      return { ...item, selected: exist }
+  const handlePageClick = (event) => {
+    console.log("filteredData",filteredData)
+    const url = window.location
+    const pages = url
+      .toString()
+      .substring(url.toString().lastIndexOf('/') + 1)
+      .toLowerCase()
+
+    if (parseInt(pages) === event.selected + 1) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+      return
+    }
+
+    const newPage = url.toString().substring().split('/')
+    router.push({
+      pathname: `/ip-news/${newPage[4]}/[pid]`,
+      query: { pid: event.selected + 1 },
     })
 
-    return resultTags.filter((item) => item.selected === true)
-  }
-
-  const handlePageClick = (event) => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-    const newOffset = (event.selected * itemsPerPage) % filteredData?.length
+    const newOffset =
+      (parseInt(pages) - 1 * itemsPerPage) % filteredData?.length
     setItemOffset(newOffset)
   }
 
@@ -117,7 +155,7 @@ export default function Content({ posts }) {
         <div className="">
           <div className="mt-10">
             <span className="text-4xl text-black font-medium font-lora">
-              {'Fresh content'}
+              {filteredData && 'Fresh content'}
             </span>
           </div>
           <div style={{ width: 636 }} className="flow-col">
@@ -129,6 +167,7 @@ export default function Content({ posts }) {
                 date={post.date}
                 author={post.author}
                 slug={post.slug}
+                metaDescription={post.metaDescription}
                 excerpt={post.excerpt}
                 type={
                   post.category[0]._ref === patents
@@ -187,6 +226,7 @@ export default function Content({ posts }) {
       <div className="hidden xl:flex mt-10 md:px-45">
         <ReactPaginate
           breakLabel="..."
+          forcePage={initialPage}
           nextLabel="next >"
           onPageChange={handlePageClick}
           pageRangeDisplayed={5}
@@ -206,6 +246,7 @@ export default function Content({ posts }) {
       <div className=" xl:hidden mt-10 md:px-45">
         <ReactPaginate
           breakLabel="..."
+          forcePage={initialPage}
           nextLabel="next >"
           onPageChange={handlePageClick}
           pageRangeDisplayed={1}
