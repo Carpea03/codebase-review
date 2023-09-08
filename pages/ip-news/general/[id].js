@@ -54,7 +54,7 @@ export default function Index({ allPosts: initialAllPosts, preview, id }) {
         active={'Articles'}
       >
         <div className="mt-10">
-          {morePosts.length > 0 && <Content posts={morePosts} />}
+          {morePosts.length > 0 && <Content posts={morePosts} title={"General Articles"} />}
         </div>
       </Layout>
     </>

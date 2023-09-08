@@ -7,7 +7,7 @@ const Button = ({ className = 'w-full', children, title, onClick }) => {
       onClick={onClick}
     >
       {children}
-      <span className="font-manrope font-semibold text-xs sm:text-2xl text-white">
+      <span className="font-manrope font-semibold text-xs sm:text-2xl text-white no-underline">
         {title}
       </span>
     </div>

@@ -11,8 +11,11 @@ import {
   industryTags,
 } from '../../utils/utility.helper'
 import { general, patents, tradeMarks } from '../../utils/const/ids'
+import Link from 'next/link'
+import Button from '../../components/buttons/Button'
+import { MdArrowForward } from 'react-icons/md'
 
-export default function Content({ posts }) {
+export default function Content({ posts, title, subTitle }) {
   const [filteredData, setFilteredData] = useState()
   const [initialPage, setInitialPage] = useState()
   const itemsPerPage = 6
@@ -126,7 +129,7 @@ export default function Content({ posts }) {
   const pageCount = Math.ceil(filteredData?.length / itemsPerPage)
 
   const handlePageClick = (event) => {
-    console.log("filteredData",filteredData)
+    console.log('filteredData', filteredData)
     const url = window.location
     const pages = url
       .toString()
@@ -155,7 +158,7 @@ export default function Content({ posts }) {
         <div className="">
           <div className="mt-10">
             <span className="text-4xl text-black font-medium font-lora">
-              {filteredData && 'Fresh content'}
+              {filteredData && title}
             </span>
           </div>
           <div style={{ width: 636 }} className="flow-col">
@@ -194,7 +197,7 @@ export default function Content({ posts }) {
           </div>
           <div className="mt-10 mb-5">
             <span className="font-lora text-4xl text-black">
-              Articles relevant to you
+              {subTitle || 'Articles for you'}
             </span>
             {filteredData
               ?.sort(() => Math.random() - 0.5)
@@ -210,6 +213,34 @@ export default function Content({ posts }) {
                   excerpt={post.excerpt}
                 />
               ))}
+          </div>
+          <div>
+            <Link href="/ip-news/page" className='no-underline'>
+              <div className="flex flex-col items-center px-2">
+                <div
+                  className="w-full h-[87px] sm:h-24  md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
+                  style={{
+                    boxShadow:
+                      '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                  }}
+                >
+                  <span className="font-manrope font-semibold text-[14px] sm:text-xl text-white ">
+                    {'More aticles for you'}
+                  </span>
+                  <div
+                    className="flex flex-row items-center justify-center w-6 h-6 sm:w-14 sm:h-14 md:h-12 md:w-12 bg-white rounded-full"
+                    style={{
+                      boxShadow: '1px 7px 16px rgba(44, 44, 44, 0.15)',
+                    }}
+                  >
+                    <MdArrowForward
+                      className="w-[9px] h-[9px] sm:w-5 sm:h-5"
+                      color="#404266"
+                    />
+                  </div>
+                </div>
+              </div>
+            </Link>
           </div>
           <div className="mt-10 mb-5">
             <span className="font-lora text-4xl text-black">Categories</span>
