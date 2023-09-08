@@ -30,5 +30,5 @@ module.exports = {
       overflow: ['responsive', 'hover', 'focus'],
     },
   },
-  plugins: [require('flowbite-typography')],
+  plugins: [require('flowbite-typography'), require('@tailwindcss/line-clamp')],
 }

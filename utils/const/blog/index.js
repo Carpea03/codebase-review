@@ -16,14 +16,14 @@ export const sideMenus = [
 export const subMenus = [
   [
     { title: 'Browse by category', bold: true, division: false, href: '' },
-    { title: 'General', bold: false, division: false, href: '/ip-news' },
-    { title: 'Patents', bold: false, division: false, href: '/ip-news' },
-    { title: 'Trade marks', bold: false, division: false, href: '/ip-news' },
+    { title: 'General', bold: false, division: false, href: '/ip-news/general' },
+    { title: 'Patents', bold: false, division: false, href: '/ip-news/patents' },
+    { title: 'Trade marks', bold: false, division: false, href: '/ip-news/trade-marks' },
   ],
   [
     { title: 'Browse by content', bold: true, division: false, href: '' },
-    { title: 'Articles for you', bold: false, division: false, href: '/ip-news' },
-    { title: 'All articles', bold: false, division: false, href: '/ip-news' },
+    { title: 'Articles for you', bold: false, division: false, href: '/ip-news/for-you' },
+    { title: 'All articles', bold: false, division: false, href: '/ip-news/page' },
   ],
 ]
 
