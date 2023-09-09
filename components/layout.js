@@ -24,6 +24,7 @@ export default function Layout({
   coverImage,
   allPosts: initialAllPosts,
   preview,
+  lightbox,
 }) {
   // const { data: allPosts } = usePreviewSubscription(indexQueryTop3, {
   //   initialData: initialAllPosts,
@@ -44,7 +45,7 @@ export default function Layout({
 
   return (
     <>
-      <Header active={active} />
+      <Header active={active} lightbox={lightbox} />
       <div
         style={{ zIndex: 10 }}
         className="bg-white w-full flex item-center absolute h-30 z-100"
