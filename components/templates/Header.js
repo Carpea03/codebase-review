@@ -30,9 +30,10 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ topMenuIndex, onTopMenuChange, active }) {
+export default function Header({ topMenuIndex, onTopMenuChange, active, lightbox}) {
   const menuState = useContentStore((state) => state.menuState)
   const router = useRouter()
+
   const onClick = (id) => {
     switch (id) {
       case 1:
@@ -49,7 +50,8 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
     }
   }
   return (
-    <div className="z-50 sticky top-0 relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD] z-30 ">
+    <div className="z-50 sticky top-0 relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD]">
+      {lightbox}
       <div className="container hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40">
         <div className="flex justify-between w-full md:gap-8">
           <div className="flex justify-between items-center gap-16 2xl:gap-[70px]">

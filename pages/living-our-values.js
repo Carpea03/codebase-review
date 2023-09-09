@@ -2,14 +2,38 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
+import Lightbox from '../components/lightbox'
+import React, { useState } from "react"
 
 export default function LivingOurValues() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
   const data = [
     { title: 'About us', link: '/about' },
     { title: 'Living our values', link: '' },
   ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"Living our values"} active={"Values"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Living our values"} active={"Values"} 
+      lightbox={
+        <Lightbox
+          images={[
+            'https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg',
+            'https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg',
+            'https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg',
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+        />
+      }
+    >
       <Head>
         <title>
           Living our values at Baxter IP, Patent & Trade Mark Attorneys
@@ -78,34 +102,24 @@ export default function LivingOurValues() {
         Attorney
       </cite>
       <h2>We give back</h2>
-      <Link
-        href="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
-        data-lbwps-width="640"
-        data-lbwps-height="480"
-        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
-      >
-        <Image
-          decoding="async"
-          src="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
-          alt="The UNSW Sydney logo"
-          width="255"
-          height="191"
-        />
-      </Link>
-      <Link
-        href="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
-        data-lbwps-width="640"
-        data-lbwps-height="480"
-        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
-      >
-        <Image
-          decoding="async"
-          src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
-          alt="Founders of 10x Accelerator"
-          width="255"
-          height="191"
-        />
-      </Link>
+      <Image
+        decoding="async"
+        onClick={() => setLigthbox(0)}
+        src="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
+        alt="The UNSW Sydney logo"
+        width="255"
+        height="191"
+        className="cursor-pointer"
+      />
+      <Image
+        decoding="async"
+        onClick={() => setLigthbox(1)}
+        src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
+        alt="Founders of 10x Accelerator"
+        width="255"
+        height="191"
+        className="cursor-pointer"
+      />
       <p>
         Baxter IP is a benefactor of the{' '}
         <Link
@@ -146,20 +160,14 @@ export default function LivingOurValues() {
         one of its products.
       </p>
       <h2>We continue a philanthropic legacy</h2>
-      <Link
-        href="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
-        data-lbwps-width="314"
-        data-lbwps-height="186"
-        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
-      >
-        <Image
-          decoding="async"
-          src="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
-          alt="Percy Baxter Charitable Trust logo"
-          width="255"
-          height="191"
-        />
-      </Link>
+      <Image
+        decoding="async"
+        onClick={() => setLigthbox(2)}
+        src="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
+        alt="Percy Baxter Charitable Trust logo"
+        width="255"
+        height="191"
+      />
       <p>
         64 years ago, John Percy Hamilton Baxter, Chris&apos; great-grandfather,
         showed how one can use their innovative skills in business enterprise to
