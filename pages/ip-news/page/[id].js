@@ -14,12 +14,19 @@ import { general } from '../../../utils/const/ids'
 export const getStaticPaths = async () => {
   const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
   const [...morePosts] = allPosts || []
+  const itemsPerPage = 6
+  const pageCount = [Math.ceil(morePosts?.length || 0 / itemsPerPage)]
+  let newData = []
+  for (var i = 1; i <= pageCount; i++) {
+    newData.push(i)
+  }
 
-  const paths = morePosts.map((item, index) => {
+  const paths = newData.map((item, index) => {
     return {
-      params: { id: index.toString() },
+      params: { id: (index + 1).toString() },
     }
   })
+
 
     return {
     paths,

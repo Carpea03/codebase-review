@@ -15,7 +15,7 @@ export default function Card({
 }) {
   return (
     <div>
-      <Link href={`/ip-news/${slug}`} className="no-underline">
+      <Link key={`cardTitle-${title}`} href={`/ip-news/${slug}`} className="no-underline">
         <div
           className=""
           style={{ boxShadow: '0px 5px 17px 0px rgba(64, 76, 89, 0.06)' }}

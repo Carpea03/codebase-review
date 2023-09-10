@@ -26,10 +26,16 @@ export const getStaticPaths = async () => {
   const data = generalTags(generalSelected, morePosts).concat(
     industryTags(industrySelected, morePosts)
   )
+  const itemsPerPage = 6
+  const pageCount = [Math.ceil(data?.length || 0 / itemsPerPage)]
+  let newData = []
+  for (var i = 1; i <= pageCount; i++) {
+    newData.push(i)
+  }
 
-  const paths = data.map((item, index) => {
+  const paths = newData.map((item, index) => {
     return {
-      params: { id: index.toString() },
+      params: { id: (index + 1).toString() },
     }
   })
 
