@@ -17,10 +17,11 @@ export const getStaticPaths = async () => {
   const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
   const [...morePosts] = allPosts || []
   const data = filterHelper(morePosts, false, general)
-
+  const pageCount = Math.ceil(data?.length / 6)
+  console.log('pageCount', pageCount)
   const paths = data.map((item, index) => {
     return {
-      params: { id: index.toString() },
+      params: { id: (index + 1).toString() },
     }
   })
 
@@ -29,7 +30,6 @@ export const getStaticPaths = async () => {
     fallback: false,
   }
 }
-
 
 export default function Index({ allPosts: initialAllPosts, preview, id }) {
   const { data: allPosts } = usePreviewSubscription(indexQuery, {
@@ -54,7 +54,9 @@ export default function Index({ allPosts: initialAllPosts, preview, id }) {
         active={'Articles'}
       >
         <div className="mt-10">
-          {morePosts.length > 0 && <Content posts={morePosts} title={"General Articles"} />}
+          {morePosts.length > 0 && (
+            <Content posts={morePosts} title={'General Articles'} />
+          )}
         </div>
       </Layout>
     </>

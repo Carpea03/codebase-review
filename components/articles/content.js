@@ -126,7 +126,7 @@ export default function Content({ posts, title, subTitle }) {
   }
   const endOffset = itemOffset + itemsPerPage
   const currentItems = filteredData?.slice(itemOffset, endOffset)
-  const pageCount = Math.ceil(filteredData?.length / itemsPerPage)
+  const pageCount = Math.ceil(filteredData?.length || 0 / itemsPerPage)
 
   const handlePageClick = (event) => {
   
@@ -143,7 +143,7 @@ export default function Content({ posts, title, subTitle }) {
 
     const newPage = url.toString().substring().split('/')
     if (newPage[4]) {
-      const newLink = `/ip-news/${newPage[4]}/${event.selected + 1}`
+      const newLink = `/ip-news/${newPage[4]}/${parseInt(event.selected) + 1}`
       router.push({
         pathname: newLink,
       })
@@ -166,18 +166,18 @@ export default function Content({ posts, title, subTitle }) {
           <div style={{ width: 636 }} className="flow-col">
             {currentItems?.map((post) => (
               <Card
-                key={post.slug}
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
+                key={post?.slug}
+                title={post?.title}
+                coverImage={post?.coverImage}
+                date={post?.date}
+                author={post?.author}
                 slug={post.slug}
-                metaDescription={post.metaDescription}
-                excerpt={post.excerpt}
+                metaDescription={post?.metaDescription}
+                excerpt={post?.excerpt}
                 type={
-                  post.category[0]._ref === patents
+                  post?.category[0]?._ref === patents
                     ? 'Patents'
-                    : post.category[0]._ref === tradeMarks
+                    : post?.category[0]?._ref === tradeMarks
                     ? 'Trade Marks'
                     : 'General'
                 }
