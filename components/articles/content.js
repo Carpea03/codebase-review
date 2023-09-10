@@ -129,7 +129,7 @@ export default function Content({ posts, title, subTitle }) {
   const pageCount = Math.ceil(filteredData?.length / itemsPerPage)
 
   const handlePageClick = (event) => {
-    console.log('filteredData', filteredData)
+  
     const url = window.location
     const pages = url
       .toString()
@@ -142,10 +142,12 @@ export default function Content({ posts, title, subTitle }) {
     }
 
     const newPage = url.toString().substring().split('/')
-    router.push({
-      pathname: `/ip-news/${newPage[4]}/[pid]`,
-      query: { pid: event.selected + 1 },
-    })
+    if (newPage[4]) {
+      const newLink = `/ip-news/${newPage[4]}/${event.selected + 1}`
+      router.push({
+        pathname: newLink,
+      })
+    }
 
     const newOffset =
       (parseInt(pages) - 1 * itemsPerPage) % filteredData?.length
@@ -215,7 +217,7 @@ export default function Content({ posts, title, subTitle }) {
               ))}
           </div>
           <div>
-            <Link href="/ip-news/page" className='no-underline'>
+            <Link href="/ip-news/page" className="no-underline">
               <div className="flex flex-col items-center px-2">
                 <div
                   className="w-full h-[87px] sm:h-24  md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
