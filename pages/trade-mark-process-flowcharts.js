@@ -29,7 +29,7 @@ export default function TradeMarkProcessFlowcharts() {
         <Lightbox
           images={[
             `/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png`,
-            `/images//charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png`,
+            `/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png`,
             `/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png`,
 
           ]}

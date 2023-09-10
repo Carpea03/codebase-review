@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
+import Lightbox from '../components/lightbox'
+import React, { useState } from 'react'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
@@ -16,8 +18,30 @@ export default function TradeMarkOpposition() {
     },
     { title: 'Trade mark opposition', link: '' },
   ]
+
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout
+      navData={data}
+      active={'Services'}
+      lightbox={
+        <Lightbox
+          images={[
+            `/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png`,
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+        />
+      }
+    >
       <Head>
         <title>Trade mark opposition | Baxter IP Sydney & Melbourne</title>
         <meta
@@ -43,15 +67,15 @@ export default function TradeMarkOpposition() {
         as provided in sections 57 to 62A of the <em>Trade Marks Act 1995</em>.
       </p>
       <figure>
-        <Link href="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop.png">
-          <Image
-            loader={myLoader}
-            src="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
-            alt="Trade Mark Opposition Procedure"
-            width="1024"
-            height="313"
-          />
-        </Link>
+        <Image
+          loader={myLoader}
+          onClick={() => setLigthbox(0)}
+          src="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
+          alt="Trade Mark Opposition Procedure"
+          width="1024"
+          height="313"
+          className="cursor-pointer"
+        />
         <figcaption>Trade Mark Opposition Procedure</figcaption>
       </figure>
       <h3>Notice of Intention to Oppose</h3>
