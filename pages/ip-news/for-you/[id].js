@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
 
   const paths = data.map((item, index) => {
     return {
-      params: { id: index.toString() },
+      params: { id: (index + 1).toString() },
     }
   })
 

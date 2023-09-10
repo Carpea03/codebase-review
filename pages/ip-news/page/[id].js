@@ -17,7 +17,7 @@ export const getStaticPaths = async () => {
 
   const paths = morePosts.map((item, index) => {
     return {
-      params: { id: index.toString() },
+      params: { id: (index + 1).toString() },
     }
   })
 
