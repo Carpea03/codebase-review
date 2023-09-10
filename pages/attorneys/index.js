@@ -2,17 +2,37 @@ import Button from '../../components/buttons/Button'
 import { Container } from '../../components/templates/Container'
 import Footer from '../../components/templates/Footer'
 import Header from '../../components/templates/Header'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { HiPhone, HiLocationMarker } from 'react-icons/hi'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
-import { profiles as peoples } from '../../utils/const/people'
+import { profiles as peoples, awards } from '../../utils/const/people'
 import { InnerContainer } from '../../components/templates/InnerContainer'
 
 export default function People() {
   const [selectedMenu, setSelectedMenu] = useState(0)
   const [team, setTeam] = useState(1)
+  const [screenSize, setScreenSize] = useState(getCurrentDimension())
+
+  function getCurrentDimension() {
+    return {
+      width: typeof window !== 'undefined' ? window.innerWidth : 0,
+      height: typeof window !== 'undefined' ? window.innerHeight : 0,
+    }
+  }
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension())
+    }
+
+    window.addEventListener('resize', updateDimension)
+
+    return () => {
+      window.removeEventListener('resize', updateDimension)
+    }
+  }, [screenSize])
 
   return (
     <>
@@ -110,41 +130,79 @@ export default function People() {
               .filter((item) => item.id === team)[0]
               .teamMembers.map((people, index) => (
                 <div
-                  key={index}
-                  className="bg-white rounded-sm cursor-pointer"
-                  style={{
-                    boxShadow:
-                      '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
-                  }}
-                >
-                  <Link href={people.link}>
-                    <Image src={people.url} width={400} height={200} alt="" />
-                    <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
-                      <div>
-                        <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266]">
-                          {people.name}
+                key={index}
+                className="bg-white  rounded-sm cursor-pointer"
+                style={{
+                  boxShadow:
+                    '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
+                }}
+              >
+                <Link href={people.link}>
+                  <Image
+                    alt=""
+                    src={people?.url}
+                    width={400}
+                    height={200}
+                  />
+                  <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
+                    <div className="flex flex-row w-full">
+                      <div className="flex flex-col w-full">
+                        <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266] pb-2 sm:pb-4">
+                          {people?.name}
                         </span>
+                        <div className="flex flex-col w-full">
+                          {people?.positions?.map((position, index) => (
+                            <span
+                              key={index}
+                              className="font-lora italic font-medium text-[7px] sm:text-base md:text-sm text-[#7A7B94] sm:w-full md:w-[200px]"
+                            >
+                              {position}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                      <div className="flex flex-col">
-                        {people.positions.map((position, index) => (
-                          <span
+                      <div className="flex flex-col flex-end content-end flex-wrap w-full">
+                        {people?.awards?.map((award, index) => (
+                          <Image
                             key={index}
-                            className="font-lora italic font-medium text-[7px] sm:text-base md:text-xl text-[#7A7B94]"
-                          >
-                            {position}
-                          </span>
+                            src={`/professionalProfiles/awards/${
+                              awards?.filter(
+                                (value) => value.id == award
+                              )[0]?.title
+                            }.png`}
+                            width={
+                              screenSize.width <= 768
+                                ? awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.width / 2
+                                : awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.width
+                            }
+                            height={
+                              screenSize.width <= 768
+                                ? awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.height / 1.5
+                                : awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.height
+                            }
+                            className="self-end pb-2 sm:pb-4"
+                          />
                         ))}
                       </div>
                     </div>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
+              </div>
               ))}
           </div>
         </InnerContainer>
         <div className="bg-people-unsplash-1 w-full h-[412px] sm:h-[916px] md:h-[624px] !bg-cover">
           <div className="flex flex-col items-center justify-center gap-10 sm:gap-[89px] md:gap-12 px-12 md:px-[184px] h-full">
             <span className="font-lora font-semibold text-2xl sm:text-5xl sm:leading-[120%] tracking-[-0.03em] text-center text-white">
-              Perpetual Innovation. Protected.
+            Innovate Boldly. Protect Strategically.
             </span>
             <Link href="/contact/sydney">
               <Button
