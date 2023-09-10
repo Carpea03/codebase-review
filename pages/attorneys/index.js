@@ -12,6 +12,7 @@ import { InnerContainer } from '../../components/templates/InnerContainer'
 
 export default function People() {
   const [selectedMenu, setSelectedMenu] = useState(0)
+  const [team, setTeam] = useState(1)
 
   return (
     <>
@@ -54,7 +55,7 @@ export default function People() {
           </div>
         </div>
         <InnerContainer>
-          <div className="flex flex-row items-start justify-center w-full">
+          <div className="flex flex-row items-start justify-center w-full  md:px-[50px] xl:px-[100px] 2xl:px-[160px]">
             {peoples
               .filter(
                 (item) =>
@@ -73,7 +74,9 @@ export default function People() {
                         ? 'polygon(0 0, 98% 0, 100% 100%, 0 100%)'
                         : 'polygon(0 0, 100% 0, 100% 100%, 2% 100%)',
                   }}
-                  onClick={() => setSelectedMenu(index)}
+                  onClick={() => {
+                    setSelectedMenu(index), setTeam(team === 1 ? 2 : 1)
+                  }}
                 >
                   {selectedMenu === index ? (
                     <HiLocationMarker
@@ -102,13 +105,9 @@ export default function People() {
                 </div>
               ))}
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 sm:py-24">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 py-20 sm:py-24">
             {peoples
-              .filter(
-                (item) =>
-                  item.teamName === 'Sydney teams' ||
-                  item.teamName === 'Melbourne teams'
-              )[0]
+              .filter((item) => item.id === team)[0]
               .teamMembers.map((people, index) => (
                 <div
                   key={index}

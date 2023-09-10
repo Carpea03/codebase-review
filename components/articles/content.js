@@ -129,7 +129,6 @@ export default function Content({ posts, title, subTitle }) {
   const pageCount = Math.ceil(filteredData?.length || 0 / itemsPerPage)
 
   const handlePageClick = (event) => {
-  
     const url = window.location
     const pages = url
       .toString()
@@ -142,16 +141,14 @@ export default function Content({ posts, title, subTitle }) {
     }
 
     const newPage = url.toString().substring().split('/')
+    checkPages(filteredData)
+
     if (newPage[4]) {
       const newLink = `/ip-news/${newPage[4]}/${parseInt(event.selected) + 1}`
       router.push({
         pathname: newLink,
       })
     }
-
-    const newOffset =
-      (parseInt(pages) - 1 * itemsPerPage) % filteredData?.length
-    setItemOffset(newOffset)
   }
 
   return (

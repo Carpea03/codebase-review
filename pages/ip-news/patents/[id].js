@@ -16,8 +16,14 @@ export const getStaticPaths = async () => {
   const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
   const [...morePosts] = allPosts || []
   const data = filterHelper(morePosts, false, patents)
+  const itemsPerPage = 6
+  const pageCount = [Math.ceil(data?.length || 0 / itemsPerPage)]
+  let newData = []
+  for (var i = 1; i <= pageCount; i++) {
+    newData.push(i)
+  }
 
-  const paths = data.map((item, index) => {
+  const paths = newData.map((item, index) => {
     return {
       params: { id: (index + 1).toString() },
     }

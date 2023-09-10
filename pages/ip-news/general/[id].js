@@ -13,12 +13,19 @@ import { useState, useEffect } from 'react'
 import { filterHelper } from '../../../utils/utility.helper'
 import { general } from '../../../utils/const/ids'
 
+const itemsPerPage = 6
+
 export const getStaticPaths = async () => {
   const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
   const [...morePosts] = allPosts || []
   const data = filterHelper(morePosts, false, general)
- 
-  const paths = data.map((item, index) => {
+  const pageCount = [Math.ceil(data?.length || 0 / itemsPerPage)]
+  let newData = []
+  for (var i = 1; i <= pageCount; i++) {
+    newData.push(i)
+  }
+
+  const paths = newData.map((item, index) => {
     return {
       params: { id: (index + 1).toString() },
     }
