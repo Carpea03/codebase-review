@@ -71,3 +71,7 @@ export const industryTags = (industrySelected, posts) => {
 
   return industryTags
 }
+
+export const filterByPerson = (morePosts, name) => {
+  return morePosts.filter((item) => item?.author?.name === name)
+}

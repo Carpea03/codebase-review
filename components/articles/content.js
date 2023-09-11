@@ -152,15 +152,26 @@ export default function Content({ posts, title, subTitle }) {
   }
 
   return (
-    <section>
-      <div className="px-5 sm:px-5 md:px-40 flex flex-col sm:flex-col md:flex-row xl:flex-row">
-        <div className="">
+    <>
+      <div className="px-5 sm:px-5 xl:px-40 flex flex-col sm:flex-col md:flex-row xl:flex-row">
+        <div className="bg-transparent">
           <div className="mt-10">
             <span className="text-4xl text-black font-medium font-lora">
               {filteredData && title}
             </span>
           </div>
-          <div style={{ width: 636 }} className="flow-col">
+          <div className="flex md:hidden items-center w-full h-14 mt-5 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
+            <div className="grid place-items-center h-full w-12 text-gray-300">
+              <Search color="#404266" size={24} />
+            </div>
+            <input
+              className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none"
+              type="text"
+              id="search"
+              placeholder="Search..."
+            />
+          </div>
+          <div className="flow-col w-full sm:w-[636px] bg-transparent ">
             {currentItems?.map((post) => (
               <Card
                 key={post?.slug}
@@ -180,10 +191,54 @@ export default function Content({ posts, title, subTitle }) {
                 }
               />
             ))}
+            
+          </div>
+        </div>
+        <div className="block md:hidden ">
+          <div className="hidden xl:flex mt-10 ">
+            <ReactPaginate
+              breakLabel="..."
+              forcePage={initialPage}
+              nextLabel="next >"
+              onPageChange={handlePageClick}
+              pageRangeDisplayed={5}
+              pageCount={pageCount}
+              previousLabel="< prev"
+              renderOnZeroPageCount={null}
+              containerClassName="pagination"
+              pageLinkClassName="page-num"
+              previousLinkClassName="page-num"
+              nextLinkClassName="page-num"
+              activeLinkClassName="active"
+              breakLinkClassName="break-dot"
+              previousClassName="previous"
+              nextClassName="next"
+            />
+          </div>
+          <div className=" xl:hidden mt-10">
+            <ReactPaginate
+              breakLabel="..."
+              forcePage={initialPage}
+              nextLabel="next >"
+              onPageChange={handlePageClick}
+              pageRangeDisplayed={1}
+              pageCount={pageCount}
+              marginPagesDisplayed={3}
+              previousLabel="< prev"
+              renderOnZeroPageCount={null}
+              containerClassName="pagination"
+              pageLinkClassName="page-num"
+              previousLinkClassName="page-num"
+              nextLinkClassName="page-num"
+              activeLinkClassName="active"
+              breakLinkClassName="break-dot"
+              previousClassName="previous1"
+              nextClassName="next1"
+            />
           </div>
         </div>
         <div className="w-full mt-10 md:m-10">
-          <div className="flex items-center w-full h-14 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
+          <div className="hidden md:flex items-center w-full h-14 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
             <div className="grid place-items-center h-full w-12 text-gray-300">
               <Search color="#404266" size={24} />
             </div>
@@ -253,47 +308,49 @@ export default function Content({ posts, title, subTitle }) {
           ))}
         </div>
       </div>
-      <div className="hidden xl:flex mt-10 md:px-45">
-        <ReactPaginate
-          breakLabel="..."
-          forcePage={initialPage}
-          nextLabel="next >"
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
-          pageCount={pageCount}
-          previousLabel="< prev"
-          renderOnZeroPageCount={null}
-          containerClassName="pagination"
-          pageLinkClassName="page-num"
-          previousLinkClassName="page-num"
-          nextLinkClassName="page-num"
-          activeLinkClassName="active"
-          breakLinkClassName="break-dot"
-          previousClassName="previous"
-          nextClassName="next"
-        />
+      <div className="hidden md:block ">
+        <div className="hidden xl:flex mt-10 md:px-45">
+          <ReactPaginate
+            breakLabel="..."
+            forcePage={initialPage}
+            nextLabel="next >"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={5}
+            pageCount={pageCount}
+            previousLabel="< prev"
+            renderOnZeroPageCount={null}
+            containerClassName="pagination"
+            pageLinkClassName="page-num"
+            previousLinkClassName="page-num"
+            nextLinkClassName="page-num"
+            activeLinkClassName="active"
+            breakLinkClassName="break-dot"
+            previousClassName="previous"
+            nextClassName="next"
+          />
+        </div>
+        <div className=" xl:hidden mt-10">
+          <ReactPaginate
+            breakLabel="..."
+            forcePage={initialPage}
+            nextLabel="next >"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={1}
+            pageCount={pageCount}
+            marginPagesDisplayed={3}
+            previousLabel="< prev"
+            renderOnZeroPageCount={null}
+            containerClassName="pagination"
+            pageLinkClassName="page-num"
+            previousLinkClassName="page-num"
+            nextLinkClassName="page-num"
+            activeLinkClassName="active"
+            breakLinkClassName="break-dot"
+            previousClassName="previous1"
+            nextClassName="next1"
+          />
+        </div>
       </div>
-      <div className=" xl:hidden mt-10 md:px-45">
-        <ReactPaginate
-          breakLabel="..."
-          forcePage={initialPage}
-          nextLabel="next >"
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={1}
-          pageCount={pageCount}
-          marginPagesDisplayed={3}
-          previousLabel="< prev"
-          renderOnZeroPageCount={null}
-          containerClassName="pagination"
-          pageLinkClassName="page-num"
-          previousLinkClassName="page-num"
-          nextLinkClassName="page-num"
-          activeLinkClassName="active"
-          breakLinkClassName="break-dot"
-          previousClassName="previous1"
-          nextClassName="next1"
-        />
-      </div>
-    </section>
+    </>
   )
 }
