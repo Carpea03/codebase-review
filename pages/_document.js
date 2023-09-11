@@ -10,7 +10,7 @@ export default function Document() {
     j.async=true;
     j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
     f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TN38JC');
+  })(window,document,'script','dataLayer','GTM-KJB3Z8NJ');
 `
   return (
     <Html lang="en">
@@ -30,7 +30,7 @@ export default function Document() {
       <body>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TN38JC"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KJB3Z8NJ"
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
