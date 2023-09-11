@@ -10,14 +10,14 @@ export default function CoverImage({ title, slug, image: source, priority }) {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     >
+      <div className="cover-bg w-[636px] h-[300px] z-50" />
       <Image
-        className="w-full h-auto"
-        width={2000}
-        height={1000}
+        style={{ height: 300, width: '100%', objectFit: 'cover' }}
+        width={0}
+        height={0}
         alt={`Cover Image for ${title}`}
         // prettier-ignore
-        src={urlForImage(source).height(1000)
-          .width(2000)
+        src={urlForImage(source)
           .url()}
         sizes="100vw"
         priority={priority}
@@ -27,15 +27,5 @@ export default function CoverImage({ title, slug, image: source, priority }) {
     <div style={{ paddingTop: '50%', backgroundColor: '#ddd' }} />
   )
 
-  return (
-    <div className="sm:mx-0">
-      {slug ? (
-        <div>
-          {image}
-        </div>
-      ) : (
-        image
-      )}
-    </div>
-  )
+  return <div className="sm:mx-0">{slug ? <div>{image}</div> : image}</div>
 }

@@ -5,14 +5,14 @@ import Link from 'next/link'
 import { urlForImage } from '../../lib/sanity'
 import Date from '../../components/blog/date'
 
-export default function NewsBlog({ data, isblog, btnTitle }) {
+export default function NewsBlog({ data, isblog, btnTitle, title }) {
   return (
     <>
       <div className="w-full flex flex-row items-start justify-center sm:pb-10 px-5">
         <div className="flex flex-col gap-5 sm:gap-10">
           {isblog && (
-            <div className="font-lora text-2xl leading-normal font-medium pt-10 pl-5 sm:pl-10 sm:ml-5 md:pl-10 md:ml-5">
-              <div>Related IP News</div>
+            <div className="font-lora text-5xl font-medium flex justify-center mt-20 mb-5">
+              <div> {title || 'Related Articles'}</div>
             </div>
           )}
           <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-10">
