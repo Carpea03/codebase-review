@@ -201,7 +201,8 @@ export default function Content({ posts, title, subTitle }) {
               forcePage={initialPage}
               nextLabel="next >"
               onPageChange={handlePageClick}
-              pageRangeDisplayed={5}
+              pageRangeDisplayed={1}
+              marginPagesDisplayed={2}
               pageCount={pageCount}
               previousLabel="< prev"
               renderOnZeroPageCount={null}
@@ -223,7 +224,7 @@ export default function Content({ posts, title, subTitle }) {
               onPageChange={handlePageClick}
               pageRangeDisplayed={1}
               pageCount={pageCount}
-              marginPagesDisplayed={3}
+              marginPagesDisplayed={2}
               previousLabel="< prev"
               renderOnZeroPageCount={null}
               containerClassName="pagination"
@@ -315,7 +316,8 @@ export default function Content({ posts, title, subTitle }) {
             forcePage={initialPage}
             nextLabel="next >"
             onPageChange={handlePageClick}
-            pageRangeDisplayed={5}
+            pageRangeDisplayed={1}
+            marginPagesDisplayed={4}
             pageCount={pageCount}
             previousLabel="< prev"
             renderOnZeroPageCount={null}
@@ -337,7 +339,7 @@ export default function Content({ posts, title, subTitle }) {
             onPageChange={handlePageClick}
             pageRangeDisplayed={1}
             pageCount={pageCount}
-            marginPagesDisplayed={3}
+            marginPagesDisplayed={5}
             previousLabel="< prev"
             renderOnZeroPageCount={null}
             containerClassName="pagination"
