@@ -202,7 +202,7 @@ export default function Content({ posts, title, subTitle }) {
               nextLabel="next >"
               onPageChange={handlePageClick}
               pageRangeDisplayed={1}
-              marginPagesDisplayed={2}
+              marginPagesDisplayed={1}
               pageCount={pageCount}
               previousLabel="< prev"
               renderOnZeroPageCount={null}
@@ -224,7 +224,7 @@ export default function Content({ posts, title, subTitle }) {
               onPageChange={handlePageClick}
               pageRangeDisplayed={1}
               pageCount={pageCount}
-              marginPagesDisplayed={2}
+              marginPagesDisplayed={1}
               previousLabel="< prev"
               renderOnZeroPageCount={null}
               containerClassName="pagination"

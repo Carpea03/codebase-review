@@ -117,9 +117,9 @@ export default function Post({ data = {}, preview }) {
                   ? 'Trade Marks'
                   : 'General'}
               </div>
-              <div className="font-lora text-2xl md: xl:text-5xl font-medium text-[#272940] gap-60 mt-5">
+              <h1 className="font-lora text-2xl md: xl:text-5xl font-medium text-[#272940] gap-60 mt-5">
                 {post?.title}
-              </div>
+              </h1>
               <Avatar
                 size={60}
                 name={post?.author.name}

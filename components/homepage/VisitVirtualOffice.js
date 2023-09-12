@@ -19,12 +19,12 @@ export const VisitVirtualOffice = () => {
                   {'VIRTUAL OFFICE'}
                 </span>
                 <div className="flex flex-row items-center py-5 gap-[10px] px-9 sm:px-20 md:px-0">
-                  <span
+                  <h2
                     style={{ lineHeight: 1.5 }}
                     className="font-lora font-medium text-xl sm:text-5xl md:leading-[10px] text-[#272940] text-center md:text-left"
                   >
                     {'Meet us in the Baxter IP Virtual Office'}
-                  </span>
+                  </h2>
                 </div>
                 <div className="flex flex-row items-center py-5 gap-[10px] px-9 md:px-0 xl:w-[500px]">
                   <span className="text-[#000]">

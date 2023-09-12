@@ -96,7 +96,7 @@ export default function ProfessionalProfiles() {
   }, [screenSize])
 
   return (
-    <Container className="flex flex-col sm:py-[100px] md:py-[20px] gap-[70px]">
+    <Container className="flex flex-col gap-[70px]">
       <div
         style={{
           background: 'linear-gradient(168deg, #FFFEF8 42.45%, #FFF3D0 91%)',
