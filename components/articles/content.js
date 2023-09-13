@@ -17,6 +17,7 @@ import { MdArrowForward } from 'react-icons/md'
 
 export default function Content({ posts, title, subTitle }) {
   const [filteredData, setFilteredData] = useState()
+  const [articlesPost, setArticlesPost] = useState()
   const [initialPage, setInitialPage] = useState()
   const itemsPerPage = 6
   const [itemOffset, setItemOffset] = useState(0)
@@ -35,9 +36,13 @@ export default function Content({ posts, title, subTitle }) {
     .filter((val) => val[0]._ref === tradeMarks).length
 
   const category = [
-    { title: 'General ', total: generalTotal },
-    { title: 'Patents', total: patentsTotal },
-    { title: 'Trade marks', total: trademarksTotal },
+    { title: 'General ', total: generalTotal, link: '/ip-news/general' },
+    { title: 'Patents', total: patentsTotal, link: '/ip-news/patents' },
+    {
+      title: 'Trade marks',
+      total: trademarksTotal,
+      link: '/ip-news/trade-marks',
+    },
   ]
 
   useEffect(() => {
@@ -68,29 +73,34 @@ export default function Content({ posts, title, subTitle }) {
 
   const generalData = async () => {
     const generalPost = filterHelper(posts, false, general)
+    setArticlesPost(await combineData())
     setFilteredData(generalPost)
     checkPages(generalPost)
   }
 
   const patentsData = async () => {
     const patentsPost = filterHelper(posts, false, patents)
+    setArticlesPost(await combineData())
     setFilteredData(patentsPost)
     checkPages(patentsPost)
   }
 
   const tradeMarksData = async () => {
     const tradeMarksPost = filterHelper(posts, false, tradeMarks)
+    setArticlesPost(await combineData())
     setFilteredData(tradeMarksPost)
     checkPages(tradeMarksPost)
   }
 
   const forYouData = async () => {
-    const generalSelected = await localStorage.getItem('selected-id')
-    const industrySelected = await localStorage.getItem('selected-id-2')
-    await combineData(generalSelected, industrySelected)
+    setArticlesPost(posts)
+    const newData = await combineData()
+    setFilteredData(newData)
+    checkPages(newData)
   }
 
   const allData = async () => {
+    setArticlesPost(await combineData())
     setFilteredData(posts)
     checkPages(posts)
   }
@@ -101,12 +111,13 @@ export default function Content({ posts, title, subTitle }) {
     }
   }
 
-  const combineData = (generalSelected, industrySelected) => {
+  const combineData = async () => {
+    const generalSelected = await localStorage.getItem('selected-id')
+    const industrySelected = await localStorage.getItem('selected-id-2')
     const newData = generalTags(generalSelected, posts).concat(
       industryTags(industrySelected, posts)
     )
-    setFilteredData(newData)
-    checkPages(newData)
+    return newData
   }
 
   const checkPages = (data) => {
@@ -191,7 +202,6 @@ export default function Content({ posts, title, subTitle }) {
                 }
               />
             ))}
-            
           </div>
         </div>
         <div className="block md:hidden ">
@@ -202,7 +212,7 @@ export default function Content({ posts, title, subTitle }) {
               nextLabel="next >"
               onPageChange={handlePageClick}
               pageRangeDisplayed={1}
-              marginPagesDisplayed={2}
+              marginPagesDisplayed={1}
               pageCount={pageCount}
               previousLabel="< prev"
               renderOnZeroPageCount={null}
@@ -224,7 +234,7 @@ export default function Content({ posts, title, subTitle }) {
               onPageChange={handlePageClick}
               pageRangeDisplayed={1}
               pageCount={pageCount}
-              marginPagesDisplayed={2}
+              marginPagesDisplayed={1}
               previousLabel="< prev"
               renderOnZeroPageCount={null}
               containerClassName="pagination"
@@ -254,9 +264,7 @@ export default function Content({ posts, title, subTitle }) {
             <span className="font-lora text-4xl text-black">
               {subTitle || 'Articles for you'}
             </span>
-            {filteredData
-              ?.sort(() => Math.random() - 0.5)
-              .slice(0, 3)
+            {articlesPost?.slice(0, 5)
               .map((post, index) => (
                 <ArticlesList
                   key={post.slug}
@@ -301,11 +309,13 @@ export default function Content({ posts, title, subTitle }) {
             <span className="font-lora text-4xl text-black">Categories</span>
           </div>
           {category.map((item, index) => (
-            <CategoryList
-              key={`${item.title}-${index}`}
-              title={item.title}
-              total={item.total}
-            />
+            <Link className="no-underline" key={`Link-${item.title}-${index}`} href={item.link}>
+              <CategoryList
+                key={`${item.title}-${index}`}
+                title={item.title}
+                total={item.total}
+              />
+            </Link>
           ))}
         </div>
       </div>

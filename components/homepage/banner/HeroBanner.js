@@ -34,7 +34,7 @@ export default function HeroBanner({ landing, data }) {
   const router = useRouter()
 
   useEffect(() => {
-    router.prefetch(metaOffice)
+    // router.prefetch(metaOffice)
   }, [])
 
   return (
@@ -42,7 +42,7 @@ export default function HeroBanner({ landing, data }) {
       <InnerContainer>
         <div className="px-10 sm:px-10 xl:px-8">
           <div className="xl:px-32">
-            <div className={`xl:pt-20`}>
+            <div className={`${landing ? 'xl:pt-10' : 'xl:pt-20'}`}>
               <div className="container h-full pt-12 xl:pt-0 md:py-20 ">
                 <div className="flex flex-col xl:flex-row">
                   <div
@@ -53,7 +53,7 @@ export default function HeroBanner({ landing, data }) {
                     }`}
                   >
                     <div className="flex flex-col">
-                      <div className='flex mt-10 justify-center text-center md:pt-10 md:text-center lg:py-2 xl:text-left md:justify-center xl:justify-start'>
+                      <div className="flex mt-10 justify-center text-center md:pt-10 md:text-center lg:py-2 xl:text-left md:justify-center xl:justify-start">
                         <span className="text-6xl font-lora font-semibold mb-5">
                           {landing
                             ? data?.header[0]?.title
@@ -62,7 +62,7 @@ export default function HeroBanner({ landing, data }) {
                           {landing ? '' : 'Protect Strategically.'}
                         </span>
                       </div>
-                      <div className='flex mt-5 mb-10 justify-center text-center md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0 md:text-center xl:text-left md:justify-center xl:justify-start'>
+                      <div className="flex mt-5 mb-10 justify-center text-center md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0 md:text-center xl:text-left md:justify-center xl:justify-start">
                         <p
                           style={{ whiteSpace: 'pre-line' }}
                           className="text-2xl font-semibold font-manrope opacity-50"
@@ -75,7 +75,7 @@ export default function HeroBanner({ landing, data }) {
                       </div>
                     </div>
                     <div className="flex flex-col gap-5 md:flex-row 2xl:pt-20 pb-10 sm:pb-10 md:pb-0 xl:pb-0 2xl:pb-10 justify-center 2xl:justify-start">
-                      <Link href="/contact-us">
+                      <Link href="/contact">
                         <div className="flex flex-col items-center px-2">
                           <div
                             className="w-60 h-[87px] w-[330px] sm:h-24 sm:w-[330px] md:w-[309px] md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"

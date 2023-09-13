@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
 import ErrorPage from 'next/error'
 import Container from '../../components/blog/container'
 import PostBody from '../../components/blog/post-body'
@@ -31,6 +32,7 @@ import {
 
 export default function Post({ data = {}, preview }) {
   const router = useRouter()
+  const [tags, setTags] = useState()
   const { slug } = router.query
   const slugData = data?.post?.slug
   const {
@@ -40,10 +42,7 @@ export default function Post({ data = {}, preview }) {
     initialData: data,
     enabled: preview && slugData,
   })
-   
-  if (!router.isFallback && !slugData) {
-    return <ErrorPage statusCode={404} />
-  }
+
 
   const menu = [
     { title: 'Articles', link: '/ip-news' },
@@ -55,6 +54,19 @@ export default function Post({ data = {}, preview }) {
     { link: 'https://www.linkedin.com/', icon: '/socialmedia/linkedin.svg' },
     { link: 'https://www.facebook.com/', icon: '/socialmedia/facebook.svg' },
   ]
+
+  useEffect(() => {
+    init()
+  }, [])
+
+  const init = () => {
+    let tagsName = []
+    post?.tag?.map((item) => {
+      tagsName.push(convertTags(item._ref))
+    })
+    setTags(tagsName.sort())
+    return;
+  }
 
   const convertTags = (tags) => {
     if (tags === corporateOrSME) {
@@ -80,6 +92,10 @@ export default function Post({ data = {}, preview }) {
     }
   }
 
+  if (!router.isFallback && !slugData) {
+    return <ErrorPage statusCode={404} />
+  }
+
   return (
     <>
       <Head>
@@ -95,7 +111,7 @@ export default function Post({ data = {}, preview }) {
         active={'Articles'}
         coverImage={post?.coverImage}
       >
-        <div className='bg-transparent'>
+        <div className="bg-transparent">
           <div
             className="w-full hidden md:flex rounded bg-transparent"
             style={{ boxShadow: '0 -10px 10px 1px rgba(0, 0, 0, 0.1)' }}
@@ -117,9 +133,9 @@ export default function Post({ data = {}, preview }) {
                   ? 'Trade Marks'
                   : 'General'}
               </div>
-              <div className="font-lora text-2xl md: xl:text-5xl font-medium text-[#272940] gap-60 mt-5">
+              <h1 className="font-lora text-2xl md: xl:text-5xl font-medium text-[#272940] gap-60 mt-5">
                 {post?.title}
-              </div>
+              </h1>
               <Avatar
                 size={60}
                 name={post?.author.name}
@@ -185,12 +201,12 @@ export default function Post({ data = {}, preview }) {
               Tags
             </div>
             <div className="flex gap-3 flex-wrap md:flex-row mb-20">
-              {post?.tag?.map((item, index) => (
+              {tags?.map((item, index) => (
                 <div
                   className="text-[#7A7B94] font-manrope flex bg-[#F6F6F8] md:mr-2 pr-2 pl-2 pt-1 pb-1"
                   key={`tags-${index}`}
                 >
-                  {convertTags(item._ref)}
+                  {item}
                 </div>
               ))}
             </div>
@@ -205,38 +221,6 @@ export default function Post({ data = {}, preview }) {
             />
           </div>
         </div>
-        {/* {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article>
-              <Head>
-                <title>{post.title} - IP Front™ News</title>
-                {post.coverImage?.asset?._ref && (
-                  <meta
-                    key="ogImage"
-                    property="og:image"
-                    content={urlForImage(post.coverImage)
-                      .width(1200)
-                      .height(627)
-                      .fit('crop')
-                      .url()}
-                  />
-                )}
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-                category={post.category}
-                tag={post.tag}
-              />
-              <PostBody content={post.content} />
-            </article>
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </>
-        )} */}
       </Layout>
     </>
   )

@@ -53,9 +53,9 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
         <div className="w-full flex flex-col gap-10 sm:gap-10 py-16 sm:py-20 md:py-20 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-40 items-center">
           <div className="flex flex-col md:items-start gap-[30px] sm:gap-[30px] md:gap-10 w-full">
             <div className="flex w-full justify-center items-center">
-              <span className="font-lora font-medium text-4xl md:text-5xl sm:text-4xl  text-[#272940] text-center md:text-left">
+              <h2 className="font-lora font-medium text-4xl md:text-5xl sm:text-4xl  text-[#272940] text-center md:text-left">
                 {'Tailoring your experience'}
-              </span>
+              </h2>
             </div>
             <div className="md:w-full flex flex-row justify-between md:items-start">
               <div className="md:w-1/2 flex flex-col item -center md:items-start gap-8 md:gap-[10px]">
@@ -63,9 +63,9 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
                   {marketSigment[0].header}
                 </span>
                 <div className="flex py-1 gap-[10px]">
-                  <span className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
+                  <h3 className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
                     {marketSigment[0].title}
-                  </span>
+                  </h3>
                 </div>
               </div>
               <div
@@ -298,9 +298,9 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
                   {marketSigment2[0].header}
                 </span>
                 <div className="flex pb-10 md:pb-0 gap-[10px] justify-left">
-                  <span className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
+                  <h3 className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
                     {marketSigment2[0].title}
-                  </span>
+                  </h3>
                 </div>
               </div>
               <div

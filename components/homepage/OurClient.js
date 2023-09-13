@@ -8,11 +8,11 @@ const brands = [
   {
     id: 0,
     supportedBrand: [
-      { src: '/banner/ten13.svg' },
+      { src: '/banner/Ten13.svg' },
       { src: '/banner/investible.svg' },
       { src: '/banner/UNSW Sydney.svg' },
       { src: '/banner/USYD Genesis.svg' },
-      { src: '/banner/founder.svg' },
+      { src: '/banner/Founders 10x Accelerator.svg' },
       { src: '/banner/airtree.svg' },
     ],
   },
@@ -85,7 +85,7 @@ const brands = [
 ]
 export const OurClient = ({ state }) => {
   return (
-    <Container className="flex flex-col sm:py-[100px] md:py-[20px] gap-[70px]">
+    <Container className="flex flex-col gap-[70px]">
       <div
         style={{
           background: 'linear-gradient(168deg, #FFFEF8 42.45%, #FFF3D0 91%)',

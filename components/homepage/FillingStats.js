@@ -74,7 +74,7 @@ const menus = [
 ]
 
 const brands = [
-  { id: 1, url: '/banner/unsw-sydney.svg' },
+  { id: 1, url: '/banner/UNSW Sydney.svg' },
   { id: 2, url: '/banner/Founders 10x Accelerator.svg' },
 ]
 
@@ -176,9 +176,9 @@ export const FillingStats = () => {
                       <div className="flex flex-col sm:flex-row">
                         <div className="mt-10 flex flex-col">
                           <div>
-                            <span className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940]">
+                            <h2 className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940]">
                               Giving back to the community
-                            </span>
+                            </h2>
                           </div>
                           <div className="mt-5">
                             <span className="text-xl font-manrope font-medium opacity-50">
@@ -194,19 +194,13 @@ export const FillingStats = () => {
                           {brands.map((brand, index) => (
                             <div
                               key={brand.id}
-                              className="flex  justify-center xl:justify-end cursor-pointer"
-                              onClick={() => setSelectedBrand(index)}
+                              className="flex  justify-center xl:justify-end"
                             >
                               <Image
                                 alt=""
                                 key={brand.id}
                                 src={brand.url}
-                                className={` ${
-                                  selectedBrand === index
-                                    ? 'opacity-100'
-                                    : 'opacity-50'
-                                }`}
-                                width={215.652}
+                                width={215}
                                 height={93.913}
                               />
                             </div>
@@ -236,7 +230,7 @@ export const FillingStats = () => {
                         className={`w-1/3 md:w-1/4 flex flex-shrink-0 items-center justify-center cursor-pointer`}
                         onClick={() => setSelectedProject(index)}
                       >
-                        <span
+                        <h3
                           className={`font-lora font-medium sm:text-2xl md:text-3xl xltext-[32px] leading-10 whitespace-nowrap ${
                             selectedProject === index
                               ? 'opacity-100'
@@ -244,7 +238,7 @@ export const FillingStats = () => {
                           }`}
                         >
                           {project.name}
-                        </span>
+                        </h3>
                       </div>
                     ))}
                   </div>
@@ -268,7 +262,7 @@ export const FillingStats = () => {
                       opacity: 0.5,
                     }}
                   >
-                    <div
+                    {/* <div
                       className="w-8 h-8 sm:w-[72px] sm:h-[72px] sm:w-20 sm:h-20 md:w-20 md:h-20 xl:w-32 xl:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
                       onClick={prevProjectSlide}
                     >
@@ -277,7 +271,7 @@ export const FillingStats = () => {
                         className="w-4 h-4 md:w-12 md:h-12"
                         color="white"
                       />
-                    </div>
+                    </div> */}
                   </div>
                   <div
                     className="w-[75%] h-full !bg-cover"
@@ -302,7 +296,7 @@ export const FillingStats = () => {
                       opacity: 0.5,
                     }}
                   >
-                    <div
+                    {/* <div
                       className="w-8 h-8 sm:w-[72px] sm:h-[72px] sm:w-20 sm:h-20  md:w-20 md:h-20 xl:w-32 xl:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
                       onClick={nextProjectSlide}
                     >
@@ -311,7 +305,7 @@ export const FillingStats = () => {
                         className="w-4 h-4 md:w-12 md:h-12"
                         color="white"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ export default function PctPatent() {
     { title: 'Stage 3: PCT International patent applications', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"} stepper={3}>
       <Head>
         <title>
           PCT patent | PCT international patent applications | Baxter IP

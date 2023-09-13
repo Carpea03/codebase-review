@@ -10,7 +10,7 @@ export default function InternationalTypeSearch() {
     { title: 'Stage 2: International-type patent search', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"} stepper={2}>
       <Head>
         <title>International-type search | Baxter IP Sydney & Melbourne</title>
         <meta

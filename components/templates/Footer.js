@@ -32,7 +32,11 @@ const moreToExplore = [
   { title: 'Awards & Recognition', href: '/awards-and-recognition' },
 ]
 
-const logos = ['ita.svg', 'ipta.svg', 'aipla.svg']
+const logos = [
+  { icon: 'ita.svg', href: 'https://www.inta.org/' },
+  { icon: 'ipta.svg', href: 'https://ipta.org.au/' },
+  { icon: 'aipla.svg', href: 'https://www.aipla.org/' },
+]
 
 const Subject = ({ title }) => {
   return (
@@ -227,15 +231,17 @@ const Footer = ({ page }) => {
                         <br /> Attorneys is a member of:
                       </span>
                       <div className="grid grid-rows-2 xl:grid-rows-1 grid-flow-col items-center gap-7 relative">
-                        {logos.map((item) => (
+                      {logos.map((item) => (
+                        <Link key={`link-logo-${item.icon}`} href={item.href} target='_blank'>
                           <Image
-                            key={`logos-${item}`}
-                            src={'/footer/marks/' + item}
+                            key={`logo-${item.icon}`}
+                            src={'/footer/marks/' + item.icon}
                             alt=""
                             width={100}
                             height={100}
                           />
-                        ))}
+                        </Link>
+                      ))}
                       </div>
                     </div>
                   </div>
@@ -263,13 +269,15 @@ const Footer = ({ page }) => {
                     </span>
                     <div className="grid grid-cols-5 items-center gap-7 sm:gap-16">
                       {logos.map((item) => (
-                        <Image
-                          key={`logo-${item}`}
-                          src={'/footer/marks/' + item}
-                          alt=""
-                          width={100}
-                          height={100}
-                        />
+                        <Link key={`link-logo-${item.icon}`} href={item.href} target='_blank'>
+                          <Image
+                            key={`logo-${item.icon}`}
+                            src={'/footer/marks/' + item.icon}
+                            alt=""
+                            width={100}
+                            height={100}
+                          />
+                        </Link>
                       ))}
                     </div>
                   </div>

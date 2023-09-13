@@ -42,9 +42,9 @@ export default function ContactUs() {
             <div className="flex flex-row items-center justify-between">
               <div className="flex flex-col">
                 <div className="py-5">
-                  <span className="font-lora font-medium md:text-4xl xl:text-5xl text-white">
+                  <h2 className="font-lora font-medium md:text-4xl xl:text-5xl text-white">
                     Speak with an IP Attorney now
-                  </span>
+                  </h2>
                 </div>
               </div>
             </div>

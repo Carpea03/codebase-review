@@ -26,11 +26,6 @@ export default function Nav({ navData }) {
                 />
               </g>
             </svg>
-            <div
-              className={`ml-1 text-sm font-manrope text-[#7A7B94] hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white`}
-            >
-              Home
-            </div>
           </Link>
         </li>
         {navData?.map((item, index) => (

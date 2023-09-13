@@ -20,9 +20,9 @@ export const OurServices = () => {
     <Container className="flex flex-col sm:py-[100px] md:py-[20px] gap-[70px] bg-ourservice">
       <InnerContainer>
         <div className="flex items-center justify-center py-10 ">
-          <span className="font-lora font-medium text-xl sm:text-[44px] leading-none md:text-5xl text-[#8370D5] md:text-[#5F618C] text-center">
+          <h2 className="font-lora font-medium text-xl sm:text-[44px] leading-none md:text-5xl text-[#8370D5] md:text-[#5F618C] text-center">
             Working with us
-          </span>
+          </h2>
         </div>
         <div className="flex flex-col pb-20">
           <div className="hidden md:flex flex-col items-center  md:px-20 xl:px-40">
@@ -51,9 +51,9 @@ export const OurServices = () => {
                       : 'order-last pl-[116px]'
                   }`}
                 >
-                  <span className="mb-5 font-manrope font-medium text-4xl text-[#272940]">
+                  <h3 className="mb-5 font-manrope font-medium text-4xl text-[#272940]">
                     {service.title}
-                  </span>
+                  </h3>
                   <span className="mb-10 font-manrope font-semibold text-xl text-[#7A7B94]">
                     {service.content}
                   </span>
@@ -78,9 +78,9 @@ export const OurServices = () => {
                   />
                 </div>
                 <div className="flex flex-col justify-start gap-6 sm:gap-14 h-[30%]">
-                  <span className="font-manrope font-medium text-sm sm:text-2xl text-[#272940]">
+                  <h3 className="font-manrope font-medium text-sm sm:text-2xl text-[#272940]">
                     {service.title}
-                  </span>
+                  </h3>
                   <span className="font-manrope font-medium text-[10px] sm:text-xl text-[#7A7B94]">
                     {service.content}
                   </span>
