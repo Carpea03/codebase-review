@@ -10,6 +10,7 @@ import { getClient, overlayDrafts } from '../lib/sanity.server'
 import { useState, useEffect, useCallback } from 'react'
 import Nav from '../components/Nav'
 import ContactUsBanner from '../components/articles/contact-us-banner'
+import Stepper from '../components/stepper'
 
 export default function Layout({
   articlesBg,
@@ -21,6 +22,7 @@ export default function Layout({
   defaultLayout,
   contactUs,
   active,
+  stepper,
   coverImage,
   allPosts: initialAllPosts,
   preview,
@@ -62,7 +64,7 @@ export default function Layout({
       </div>
       {bannerData && (
         <div className="z-0">
-          <Banner layout={layout} coverImage={coverImage}/>
+          <Banner layout={layout} coverImage={coverImage} />
         </div>
       )}
 
@@ -82,6 +84,11 @@ export default function Layout({
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
                   } md:flex flex-col  items-center xl:px-[81px] px-10`}
                 >
+                  {stepper && (
+                    <div className="w-full mt-40">
+                      <Stepper active={stepper}/>
+                    </div>
+                  )}
                   <main
                     style={{
                       zIndex: 0,
@@ -89,7 +96,7 @@ export default function Layout({
                     className={` ${
                       bannerData ? 'py-80 mt-20' : 'bg-white'
                     } format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-lg
-                  ${bannerData ? 'mb-20' : 'md:mt-20 mb-20 '}
+                  ${bannerData ? 'mb-20' : stepper?  'md:mt-10 mb-20':'md:mt-20 mb-20'}
                   `}
                   >
                     {children}

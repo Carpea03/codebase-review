@@ -31,7 +31,7 @@ export default function Avatar({ name, picture, date, bio, size, body }) {
         </div>
         {body && (
           <div>
-            {body} <Date dateString={date} /> • 4 min read
+            {body} <Date dateString={date} />
           </div>
         )}
       </div>

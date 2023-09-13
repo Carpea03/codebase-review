@@ -229,7 +229,7 @@
   .bg-hero-banner {
     background-image: url('/banner/bg-decoration.svg'),
       linear-gradient(284.64deg, #ffc839 -12.83%, #ffe295 102.88%);
-    background-position-y: 40%;
+    background-position-y: 30%;
     background-repeat: no-repeat;
     background-size: auto;
   }
@@ -520,4 +520,26 @@ input[type='checkbox'] {
   border-left: 20px solid #9481df;
   border-top: 44px solid transparent;
   border-bottom: 44px solid transparent;
+}
+
+
+@layer utilities{
+  .bg-stepper-desktop {
+    background-image: url('/stepper/desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-stepper-tablet {
+    background-image: url('/stepper/tablet.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-stepper-mobile {
+    background-image: url('/stepper/mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

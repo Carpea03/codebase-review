@@ -74,7 +74,7 @@ const menus = [
 ]
 
 const brands = [
-  { id: 1, url: '/banner/unsw-sydney.svg' },
+  { id: 1, url: '/banner/UNSW Sydney.svg' },
   { id: 2, url: '/banner/Founders 10x Accelerator.svg' },
 ]
 
@@ -200,12 +200,7 @@ export const FillingStats = () => {
                                 alt=""
                                 key={brand.id}
                                 src={brand.url}
-                                className={` ${
-                                  selectedBrand === index
-                                    ? 'opacity-100'
-                                    : 'opacity-50'
-                                }`}
-                                width={215.652}
+                                width={215}
                                 height={93.913}
                               />
                             </div>

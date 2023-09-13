@@ -11,8 +11,12 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 }
 
 export default function ElectricalEngineeringPatents() {
+  const data = [
+    { title: 'Patenting in your industry', link: '/specialisations' },
+    { title: 'Electrical engineering and electronics patents', link: '' },
+  ]
   return (
-    <Layout>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
           Electrical engineering patents | Baxter IP patent attorneys
@@ -31,67 +35,7 @@ export default function ElectricalEngineeringPatents() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center mt-4 mb-4 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-            >
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <Link
-                href="/specialisations"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
-              >
-                Patenting in your industry
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Electrical engineering and electronics patents
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <div>
+      <div className="mt-10">
         <h1>Electrical engineering and electronics patents</h1>
         <p>
           Inventions and innovations in electronic and electromechanical
@@ -1395,8 +1339,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="clients/logo-jands.png"
+                  src="/clients/logo-jands.png"
                   alt="Jands logo."
                   width={255}
                   height={191}
@@ -1408,8 +1351,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="clients/logo-k-hart-international.png"
+                  src="/clients/logo-k-hart-international.png"
                   alt="K-Hart International Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1421,8 +1363,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="clients/logo-l3-micreo.png"
+                  src="/clients/logo-l3-micreo.png"
                   alt="L3 Micreo Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1434,8 +1375,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="clients/logo-thomas-global-systems.png"
+                  src="/clients/logo-thomas-global-systems.png"
                   alt="Thomas Global Systems Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1447,8 +1387,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="clients/logo-wbs-technology.png"
+                  src="/clients/logo-wbs-technology.png"
                   alt="WBS Technology logo."
                   width={255}
                   height={191}
@@ -1460,8 +1399,7 @@ export default function ElectricalEngineeringPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="clients/logo-zte-corporation.png"
+                  src="/clients/logo-zte-corporation.png"
                   alt="ZTE Corporation logo."
                   width={255}
                   height={191}
