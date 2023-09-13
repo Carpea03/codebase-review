@@ -8,7 +8,7 @@ const brands = [
   {
     id: 0,
     supportedBrand: [
-      { src: '/banner/ten13.svg' },
+      { src: '/banner/Ten13.png' },
       { src: '/banner/investible.svg' },
       { src: '/banner/UNSW Sydney.svg' },
       { src: '/banner/USYD Genesis.svg' },
