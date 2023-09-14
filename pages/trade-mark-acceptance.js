@@ -6,20 +6,16 @@ export default function TradeMarkAcceptance() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark acceptance', link: '' },
+    { title: 'Trade Mark Acceptance', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Acceptance of a trade mark application | Baxter IP Sydney & Melbourne
+          Acceptance of a Trade Mark Application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function TradeMarkAcceptance() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Acceptance of a trade mark application</h1>
+      <h1>Acceptance of a Trade Mark Application</h1>
       <h2>What happens once a mark is accepted?</h2>
       <p>
         If an adverse Examination Report is not issued in relation to an

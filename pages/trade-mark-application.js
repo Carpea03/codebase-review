@@ -6,20 +6,16 @@ export default function TradeMarkApplication() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Australian trade mark application', link: '' },
+    { title: 'Australian Trade Mark Application', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Apply for a trade mark in Australia | Baxter IP Sydney & Melbourne
+          Apply for a Trade Mark in Australia | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -41,7 +37,7 @@ export default function TradeMarkApplication() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Apply for a trade mark in Australia</h1>
+      <h1>Apply for a Trade Mark in Australia</h1>
       <h2>What is a trade mark?</h2>
       <p>
         In commerce, a trade mark is the identity of a business, product or

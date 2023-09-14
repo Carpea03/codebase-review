@@ -5,14 +5,12 @@ import Layout from '../components/layout'
 export default function PatentSearch() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Patent search', link: '' },
+    { title: 'Patent Search', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Patent search | Worldwide patent search | Baxter IP</title>
+        <title>Patent Search | Worldwide Patent Search | Baxter IP</title>
         <meta
           name="description"
           content="Baxter IP provides patent search, whether worldwide or in Australia to review patentability, novelty and freedom-to-operate."
@@ -28,7 +26,7 @@ export default function PatentSearch() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent search</h1>
+      <h1>Patent Search</h1>
       <p>
         A patent search and searches of other technical literature is an
         important step in obtaining strategic international patent protection

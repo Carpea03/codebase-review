@@ -10,8 +10,8 @@ export default function PatentProcessFlowcharts() {
   const [imageIndex, setImageIndex] = useState(0)
 
   const data = [
-    { title: 'Resources', link: '/ip-info' },
-    { title: 'Patent process flowcharts', link: '' },
+    { title: 'IP Info', link: '/ip-info' },
+    { title: 'Patent Process Flowcharts', link: '' },
   ]
 
   const setLigthbox = (index) => {
@@ -50,7 +50,7 @@ export default function PatentProcessFlowcharts() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent process flowcharts</h1>
+      <h1>Patent Process Flowcharts</h1>
       <p>
         This page archives all the patent process flowcharts. Flowcharts in this
         page are for illustrative purposes alone and only indicates some of the

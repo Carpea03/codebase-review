@@ -6,16 +6,15 @@ export default function OtherTypesOfOppositions() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Marks Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    { title: 'Trade mark opposition', link: '/Trade mark opposition' },
-    { title: 'Other types of oppositions', link: '' },
+    { title: 'Other Types of Oppositions', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Other types of oppositions | Baxter IP Sydney & Melbourne</title>
+        <title>Other Types of Oppositions | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Knowing the types of oppositions, such as opposing time extension and opposing amendment allows you to protect your trade mark's position in the market.The trade mark opposition procedure can be undertaken to oppose or challenge the registration of an accepted trade mark application."
@@ -26,7 +25,7 @@ export default function OtherTypesOfOppositions() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Other types of oppositions</h1>
+      <h1>Other Types of Oppositions</h1>
       <p>
         Any party can lodge an{' '}
         <Link href="/trade-mark-opposition">opposition</Link>, which is a formal

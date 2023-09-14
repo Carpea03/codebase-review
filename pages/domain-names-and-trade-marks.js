@@ -5,15 +5,14 @@ import Layout from '../components/layout'
 export default function DomainNamesAndTradeMarks() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'Domain names and trade marks', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Domain Names and Trade Marks', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Domain names and trade marks | Baxter IP Sydney & Melbourne
+          Domain Names and Trade Marks | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -25,7 +24,7 @@ export default function DomainNamesAndTradeMarks() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Domain names and trade marks</h1>
+        <h1>Domain Names and Trade Marks</h1>
         <p>
           A domain name is an address made up of letters or a combination of
           letters and numbers, where internet users can access a business&apos;

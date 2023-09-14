@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 export default function IpGlossary() {
   const data = [
-    { title: 'Resources', link: '/ip-info' },
+    { title: 'IP Info', link: '/ip-info' },
     { title: 'IP Glossary', link: '' },
   ]
   return (

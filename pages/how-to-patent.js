@@ -6,8 +6,7 @@ import Layout from '../components/layout'
 export default function HowToPatent() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '' },
+    { title: 'How to Patent', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>

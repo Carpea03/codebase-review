@@ -6,20 +6,16 @@ export default function TradeMarkExamination() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark examination', link: '' },
+    { title: 'Trade Mark Examination', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Examination of a trade mark application | Baxter IP Sydney & Melbourne
+          Examination of a Trade Mark Application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function TradeMarkExamination() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Examination of a trade mark application</h1>
+      <h1>Examination of a Trade Mark Application</h1>
       <p>
         After an Australian trade mark application is submitted to{' '}
         <Link

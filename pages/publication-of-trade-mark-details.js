@@ -6,20 +6,16 @@ export default function MadridProtocolApplication() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark publication', link: '' },
+    { title: 'Trade Mark Publication', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Publication of your trade mark details | Baxter IP Sydney & Melbourne
+          Publication of your Trade Mark Details | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function MadridProtocolApplication() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Publication of trade mark details</h1>
+      <h1>Publication of Trade Mark Details</h1>
       <p>
         When applying for{' '}
         <Link href="/trade-mark-application">trade mark registration</Link>, you

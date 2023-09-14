@@ -6,15 +6,14 @@ import Layout from '../components/layout'
 export default function NationalPhasePatent() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Stage 4: National phase patent applications', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Stage 4: National Phase Patent Applications', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Australian PCT national phase patent application | Baxter IP
+          Australian PCT National Phase Patent Application | Baxter IP
         </title>
         <meta
           name="description"
@@ -31,7 +30,7 @@ export default function NationalPhasePatent() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Stage 4: National phase patent applications</h1>
+      <h1>Stage 4: National Phase Patent Applications</h1>
       <h2>National phase patent applications overview &amp; timing</h2>
       <figure>
         <Link

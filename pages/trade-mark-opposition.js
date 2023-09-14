@@ -13,10 +13,10 @@ export default function TradeMarkOpposition() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Mark Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    { title: 'Trade mark opposition', link: '' },
+    { title: 'Trade Mark Opposition', link: '' },
   ]
 
   const [toggler, setToggler] = useState(false)
@@ -43,7 +43,7 @@ export default function TradeMarkOpposition() {
       }
     >
       <Head>
-        <title>Trade mark opposition | Baxter IP Sydney & Melbourne</title>
+        <title>Trade Mark Opposition | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="The trade mark opposition procedure can be undertaken to oppose or challenge the registration of an accepted trade mark application."
@@ -54,7 +54,7 @@ export default function TradeMarkOpposition() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark opposition</h1>
+      <h1>Trade Mark Opposition</h1>
       <p>
         Trade mark opposition is a means of challenging an accepted{' '}
         <Link href="/trade-mark-application">trade mark application</Link>. Any

@@ -10,14 +10,13 @@ const myLoader = ({ src, width, quality }) => {
 export default function MadridProtocolApplication() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'Madrid Protocol application', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Madrid Protocol', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Filing a Madrid Protocol application | Baxter IP</title>
+        <title>Filing a Madrid Protocol Application | Baxter IP</title>
         <meta
           name="description"
           content="The Madrid Protocol governs the registration and management of trade marks for protection in member states of the Madrid Union."
@@ -28,7 +27,7 @@ export default function MadridProtocolApplication() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Filing a Madrid Protocol trade mark application</h1>
+      <h1>Filing a Madrid Protocol Trade Mark Application</h1>
       <p>
         Whilst there is no such thing as a worldwide trade mark <em>per se</em>,
         the{' '}

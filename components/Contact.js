@@ -257,9 +257,9 @@ export default function Contact({ contactDetails }) {
           boxShadow: '0px 5px 17px rgba(64, 76, 89, 0.06)',
         }}
       >
-        <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
+        <h2 className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
           Send us a message
-        </span>
+        </h2>
         <form
           id="ActionStepWebform10"
           name="ActionStepWebform10"
@@ -447,9 +447,9 @@ export default function Contact({ contactDetails }) {
         </form>
       </div>
       <div className="flex flex-col items-start gap-9 h-full">
-        <span className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">
-          Contact our Patent & Trade Mark Office
-        </span>
+        <h2 className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">
+          {`Contact our ${contactDetails?.name} Patent & Trade Mark Office`}
+        </h2>
         <div className="w-full border-[3px] border-[#816BD9] mx-auto">
           <div
             className="p-5 w-full"
@@ -465,12 +465,6 @@ export default function Contact({ contactDetails }) {
               <span className="font-manrope font-medium text-xl text-white">
                 {`${contactDetails?.name} office`}
               </span>
-              <FiChevronUp
-                className={`w-6 h-6 sm:w-8 sm:h-8 stroke-white ${
-                  openMap ? 'rotate-180' : ''
-                }`}
-                color={'white'}
-              />
             </div>
           </div>
           <div className="w-full h-80">
@@ -559,7 +553,7 @@ export default function Contact({ contactDetails }) {
         </div>
         <div className="flex flex-col items-start gap-9 h-full w-full">
           <span className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">
-            Meet us on Baxter IP Meta Office
+            Meet us in the Baxter IP Virtual Office
           </span>
           <div className="w-full h-[343px] sm:h-[432px] flex justify-center items-center rounded-sm bg-contactus-metaoffice !bg-cover px-6">
             <Link href={metaOffice} target="_blank">

@@ -4,13 +4,13 @@ import Layout from '../components/layout'
 
 export default function RoleOfAustralianTradeMarkAttorneys() {
   const data = [
-    { title: 'Join us', link: '/ip-careers' },
-    { title: 'The role of Australian trade mark attorney', link: '' },
+    { title: 'Join Us', link: '/ip-careers' },
+    { title: 'The Role of Australian Trade Mark Attorneys', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"The role of Australian trade mark attorneys"} active={"Values"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"The Role of Australian Trade Mark Attorneys"} active={"Values"}>
       <Head>
-        <title>The role of Australian trade mark attorneys | Baxter IP</title>
+        <title>The Role of Australian Trade Mark Attorneys | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="The role of Australian trade mark attorneys include filing, prosecution and enforcement of the trade mark rights of their client."

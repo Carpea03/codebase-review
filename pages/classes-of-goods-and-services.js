@@ -5,15 +5,14 @@ import Layout from '../components/layout'
 export default function ClassesOfGoodsAndServices() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'Classes of goods and services', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Classes of Goods and/or Services', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Classes of goods and/or services | Baxter IP Sydney & Melbourne
+          Classes of Goods and/or Services | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -25,7 +24,7 @@ export default function ClassesOfGoodsAndServices() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Classes of goods and services</h1>
+        <h1>Classes of Goods and/or Services</h1>
         <p>
           An application for trade mark registration contains a number of
           mandatory elements, including, the trade mark owner, the trade mark,

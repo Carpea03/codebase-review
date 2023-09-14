@@ -3,13 +3,12 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 
 export default function IpCareers() {
-  const data = [{ title: 'Join us', link: '' }]
+  const data = [{ title: 'Join Us', link: '' }]
   return (
     <Layout navData={data} bannerData={true} layout={2} title={"Careers at Baxter IP"} active={"Values"}>
       <Head>
         <title>
-          IP attorney careers | Start your intellectual property career at
-          Baxter IP
+          IP Attorney Careers | Start your intellectual property career at Baxter IP
         </title>
         <meta
           name="description"

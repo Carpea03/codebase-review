@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 
 export default function IpInfo() {
-  const data = [{ title: 'Resources', link: '' }]
+  const data = [{ title: 'IP Info', link: '' }]
   return (
     <Layout navData={data}>
       <Head>

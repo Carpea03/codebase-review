@@ -4,15 +4,14 @@ import Layout from '../components/layout'
 
 export default function BaxterIpPhilosophy() {
   const data = [
-    { title: 'About us', link: '/about' },
-    { title: 'The Baxter IP Philosophy', link: '' },
+    { title: 'About Us', link: '/about' },
+    { title: 'Our Philosophy', link: '' },
   ]
   return (
     <Layout navData={data} bannerData={true} layout={2} title={"The Baxter IP philosophy"} active={"Values"}>
       <Head>
         <title>
-          Dedicated & supportive, transparent and commercial | The Baxter IP
-          philosophy
+          Dedicated & supportive, transparent and commercial | The Baxter IP Philosophy
         </title>
         <meta
           name="description"

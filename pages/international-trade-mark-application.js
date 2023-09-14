@@ -5,9 +5,8 @@ import Layout from '../components/layout'
 export default function InternationalTradeMarkApplication() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'International trade mark application', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'International Trade Mark Application', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
@@ -30,7 +29,7 @@ export default function InternationalTradeMarkApplication() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Applying for an international trade mark</h1>
+      <h1>International Trade Mark Application</h1>
       <p>
         In order to protect your brand in other countries you have two main
         options:

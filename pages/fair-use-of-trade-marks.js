@@ -5,17 +5,13 @@ import Layout from '../components/layout'
 export default function FairUseOfTradeMarks() {
   const data = [
     { title: 'Services', link: '/services' },
-    {
-      title: 'Trade mark oppositions & disputes',
-      link: '/trade-mark-oppositions-disputes',
-    },
-    { title: 'Trade mark disputes', link: '/trade-mark-disputes' },
-    { title: 'Domain names and trade marks', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Fair Use of Trade Marks', link: '' },
   ]
   return (
     <Layout navData={data}>
       <Head>
-        <title>Fair use of trade marks | Baxter IP Sydney & Melbourne</title>
+        <title>Fair Use of Trade Marks | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="The policy on trade mark fair use allows for descriptive fair use or nominative fair use of trade marks without risking infringement."
@@ -26,7 +22,7 @@ export default function FairUseOfTradeMarks() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Fair use of trade marks</h1>
+        <h1>Fair Use of Trade Marks</h1>
         <p>
           A trade mark serves as a badge of origin of particular{' '}
           <Link href="/classes-of-goods-and-services">

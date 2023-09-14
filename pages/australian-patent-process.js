@@ -5,17 +5,16 @@ import Layout from '../components/layout'
 export default function AustralianPatentProcess() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Australian patent process', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Australian Patent Process', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Australian patent process | Baxter IP Sydney & Melbourne</title>
+        <title>Australian Patent Process | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
-          content="The Australian patent process commences at filing and includes examination which, when successful, results in grant of the patent. Baxter IP is a leading, independent, mid-tier patent and trade mark attorney firm with offices in Sydney and Melbourne, Australia."
+          content="The Australian patent process commences at filing and includes examination which, when successful, results in grant of the patent."
         />
         <link
           rel="canonical"
@@ -23,7 +22,7 @@ export default function AustralianPatentProcess() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Australian patent process</h1>
+        <h1>Australian Patent Process</h1>
         <p>
           Developing new technologies allows businesses to generate significant
           new revenue streams and charge higher margins. However, at the start
