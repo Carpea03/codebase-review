@@ -6,23 +6,15 @@ export default function TradeMarkSquatting() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    {
-      title: 'Trade marks in other countries',
-      link: '/trade-marks-in-other-countries',
-    },
-    { title: 'Trade mark squatting', link: '' },
+    { title: 'Trade Mark Squatting', link: '' },
   ]
   return (
     <Layout navData={data}>
       <Head>
-        <title>Trade mark squatting | Baxter IP Sydney & Melbourne</title>
+        <title>Trade Mark Squatting | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Trade mark squatting is the act of registering a known trade mark for the purpose of selling the registered mark back to the original trade mark owner."
@@ -33,7 +25,7 @@ export default function TradeMarkSquatting() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark squatting</h1>
+      <h1>Trade Mark Squatting</h1>
       <p>
         Trade mark squatting or bad faith trade mark filing occurs when a party
         files and registers an original applicant&apos;s trade mark in a country

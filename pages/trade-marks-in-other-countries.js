@@ -6,23 +6,19 @@ export default function TradeMarkInOtherCountries() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
     {
-      title: 'Trade marks in other countries',
+      title: 'Trade Marks in Other Countries',
       link: '',
-    },
+    }
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Trade marks in other countries | Baxter IP Sydney & Melbourne
+          Trade Marks in Other Countries | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -34,7 +30,7 @@ export default function TradeMarkInOtherCountries() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade marks in other countries</h1>
+      <h1>Trade Marks in Other Countries</h1>
       <p>
         Why are foreign jurisdictions considered when discussing trade mark?
         Trade mark rights are territorial, which means that protection is

@@ -17,13 +17,34 @@ export default function Index({ allPosts: initialAllPosts, preview }) {
   return (
     <>
       <Head>
-      <title>{`IP Front™ - General`}</title>
-        <meta name="description" content='' />
+      <title>{`IP Front™ | Intellectual Property News | IP News by Baxter IP`}</title>
+        <meta name="description" content='IP Front™ - The latest intellectual property news across patents and trade marks law and intellectual property practice by Baxter IP.' />
+        <link rel="canonical" href="https://www.baxterip.com.au/ip-news" />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/ip-news"
+          hreflang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/ip-news"
+          hreflang="en-AU"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/ip-news"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%85%B3%E4%BA%8E"
+          hreflang="zh"
+        ></link>
       </Head>
       <Layout preview={preview} defaultLayout={true} navData={data} layout={1} active={"Articles"}>
         <div className="mt-10">
           {morePosts.length > 0 && (
-            <Content posts={morePosts} />
+            <Content posts={morePosts} title={"Articles For You"} />
           )}
         </div>
       </Layout>

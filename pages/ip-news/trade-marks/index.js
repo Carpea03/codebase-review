@@ -22,8 +22,29 @@ export default function Index({ allPosts: initialAllPosts, preview, id }) {
   return (
     <>
       <Head>
-        <title>{`IP Front™ - Trade marks`}</title>
-        <meta name="description" content="" />
+      <title>{`IP Front™ - Trade Mark News by Baxter IP`}</title>
+        <meta name="description" content='IP Front™ - The latest trade mark news across by Baxter IP.' />
+        <link rel="canonical" href="https://www.baxterip.com.au/ip-news/trade-marks" />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/ip-news/trade-marks"
+          hreflang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/ip-news/trade-marks"
+          hreflang="en-AU"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/global/ip-news"
+          hreflang="en-US"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E5%85%B3%E4%BA%8E"
+          hreflang="zh"
+        ></link>
       </Head>
       <Layout
         preview={preview}

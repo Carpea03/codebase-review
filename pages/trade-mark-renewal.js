@@ -6,20 +6,16 @@ export default function TradeMarkRenewal() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark renewal', link: '' },
+    { title: 'Trade Mark Renewal', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Renewing your trade mark application | Baxter IP Sydney & Melbourne
+          Renewing your Trade Mark Application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function TradeMarkRenewal() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Renewing your trade mark</h1>
+      <h1>Renewing your Trade Mark Application</h1>
       <p>
         After registration, a registered trade mark is in force for 10 years. At
         the 10 year mark, the trade mark owner can then opt to keep the trade

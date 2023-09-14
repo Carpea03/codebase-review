@@ -6,21 +6,16 @@ export default function UnregistrableTradeMarks() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Signs that cannot be protected as a trade mark', link: '' },
+    { title: 'Signs that cannot be protected as a Trade Mark', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Signs that cannot be protected or registered as a trade mark | Baxter
-          IP
+          Signs that cannot be protected or registered as a Trade Mark | Baxter IP
         </title>
         <meta
           name="description"
@@ -32,7 +27,7 @@ export default function UnregistrableTradeMarks() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Signs that cannot be protected as a trade mark</h1>
+      <h1>Signs that cannot be protected as a Trade Mark</h1>
       <p>
         A <Link href="/trade-mark-search">trade mark search</Link> is a good
         preparation step before launching a{' '}
