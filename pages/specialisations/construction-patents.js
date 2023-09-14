@@ -12,9 +12,12 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 }
 
 export default function ConstructionPatents() {
+  const data = [
+    { title: 'Construction Patents', link: '' },
+  ]
   return (
-    <Layout>
-      <div>
+    <Layout navData={data} active={'Services'}>
+      <div className='mt-10'>
         <h1>Civil engineering and construction patents</h1>
         <p>
           Innovations in the field of civil engineering and construction are
@@ -1446,8 +1449,7 @@ export default function ConstructionPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="logo-slingshot-haulage.png"
+                  src="/logo-slingshot-haulage.png"
                   alt="Slingshot Haulage Pty Ltd logo."
                   width={255}
                   height={191}
@@ -1459,8 +1461,7 @@ export default function ConstructionPatents() {
                 className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <Image
-                  loader={myLoader}
-                  src="logo-wombat-timbers.png"
+                  src="/logo-wombat-timbers.png"
                   alt="Wombat Timbers Pty Ltd logo."
                   width={255}
                   height={191}

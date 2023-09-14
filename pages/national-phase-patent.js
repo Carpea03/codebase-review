@@ -10,7 +10,7 @@ export default function NationalPhasePatent() {
     { title: 'Stage 4: National Phase Patent Applications', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"} stepper={4}>
       <Head>
         <title>
           Australian PCT National Phase Patent Application | Baxter IP

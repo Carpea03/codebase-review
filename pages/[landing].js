@@ -29,16 +29,6 @@ export const landingPages = [
   { landing: 'trade-marks' },
 ]
 
-// export const landingPageData = [
-//   { landing: 'designs', data: '' },
-//   { landing: 'ip-oppositions-disputes', data: '' },
-//   { landing: 'ip-strategy', data: '' },
-//   { landing: 'patent-oppositions-disputes', data: '' },
-//   { landing: 'patents', data: '' },
-//   { landing: 'trade-mark-oppositions-disputes', data: '' },
-//   { landing: 'trade-marks', data: '' },
-// ]
-
 export const getStaticPaths = async () => {
   const paths = landingPages.map((item) => {
     return {

@@ -459,12 +459,17 @@ export default function Contact({ contactDetails }) {
             }}
           >
             <div
-              className="flex flex-row items-center justify-between px-5 w-full cursor-pointer"
-              onClick={() => setOpenMap(!openMap)}
+              className="flex flex-row items-center justify-between px-5 w-full"
             >
               <span className="font-manrope font-medium text-xl text-white">
                 {`${contactDetails?.name} office`}
               </span>
+              {/* <FiChevronUp
+                className={`w-6 h-6 sm:w-8 sm:h-8 stroke-white ${
+                  openMap ? 'rotate-180' : ''
+                }`}
+                color={'white'}
+              /> */}
             </div>
           </div>
           <div className="w-full h-80">

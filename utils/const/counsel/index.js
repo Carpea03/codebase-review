@@ -11,8 +11,7 @@ export const transparentCounselData = {
         title: 'Protect your valuable design.',
         body:
           'Your product’s unique aesthetic makes it more desirable in-market when compared with competing products.\n\n' +
-          ' A design registration protects your valuable differentiating aesthetics from competitors who might want to leverage off your design work to benefit from it or create confusion with your product. A registered design provides 10 years of design ownership in the countries you choose.\n\n' +
-          'Call us on +61 2 9264 6716 for an explanation of the options available to you.',
+          ' A design registration protects your valuable differentiating aesthetics from competitors who might want to leverage off your design work to benefit from it or create confusion with your product. A registered design provides 10 years of design ownership in the countries you choose.',
       },
     ],
     data: [
@@ -44,8 +43,7 @@ export const transparentCounselData = {
       {
         title: 'Resolve your IP dispute.',
         body:
-          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.\n\n' +
-          'Call us on +61 2 9264 6716 for an explanation of the options available to you.',
+          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.',
       },
     ],
     data: [
@@ -77,8 +75,7 @@ export const transparentCounselData = {
       {
         title: 'Know your IP. Understand its value. Maximise its potential.',
         body:
-          'Establishing a clear understanding of the underlying intellectual property in a business is the first step to understanding its commercial value to the business or third party and how its potential can be maximised. IP audit, valuation and due diligence processes can be conducted on the identifiable IP of any business and we’re ready to assist.\n\n' +
-          'Call us on +61 2 9264 6716 for an explanation of the options available to you.',
+          'Establishing a clear understanding of the underlying intellectual property in a business is the first step to understanding its commercial value to the business or third party and how its potential can be maximised. IP audit, valuation and due diligence processes can be conducted on the identifiable IP of any business and we’re ready to assist.',
       },
     ],
     data: [
@@ -110,8 +107,7 @@ export const transparentCounselData = {
       {
         title: 'Resolve your patent dispute.',
         body:
-          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.\n\n' +
-          'Call us on +61 2 9264 6716 for an explanation of the options available to you.',
+          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.',
       },
     ],
     data: [
@@ -144,8 +140,7 @@ export const transparentCounselData = {
         title: 'Protect your valuable idea to secure your business.',
         body:
           'Your intellectual property is what makes your product unique. By lodging a patent application, your patent pending status will establish your claim on your new idea, provide investors with confidence and help deter competitors from copying.\n\n' +
-          'A granted patent provides ownership of an invention for up to 20 years in the countries you choose and provides both monopoly and licensing rights.\n\n' +
-          'Call us on +61 2 9264 6716 for an explanation of the options available to you.',
+          'A granted patent provides ownership of an invention for up to 20 years in the countries you choose and provides both monopoly and licensing rights.',
       },
     ],
     data: [
@@ -177,8 +172,7 @@ export const transparentCounselData = {
       {
         title: 'Resolve your trade mark dispute.',
         body:
-          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, consent orders, opposition or court enforcement, we’re ready to help you identify options for resolution.e\n\n' +
-          'Call us on +61 2 9264 6716 for an explanation of the options available to you.',
+          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, consent orders, opposition or court enforcement, we’re ready to help you identify options for resolution.',
       },
     ],
     data: [
@@ -210,8 +204,7 @@ export const transparentCounselData = {
       {
         title: 'Protect your trade mark to secure your brand’s future.',
         body:
-          'Your trade mark is the face of your business. It directs customers back to your company, the source of the quality of your products or services. A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, get in touch with us today.\n\n' +
-          'Call us on +61 2 9264 6716 for an explanation of the options available to you.',
+          'Your trade mark is the face of your business. It directs customers back to your company, the source of the quality of your products or services. A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, get in touch with us today.',
       },
     ],
     data: [
