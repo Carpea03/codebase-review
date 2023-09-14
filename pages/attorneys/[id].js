@@ -296,7 +296,7 @@ export default function Profile({ profile }) {
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl leading-[140%] tracking-[-0.03em] text-[#272940]">
                   Patent Technical Areas
                 </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-start gap-8 w-full">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-start gap-8 w-full">
                   {profile.technicalAreas.map((technicalArea, index) => (
                     <div
                       key={index}
@@ -316,6 +316,9 @@ export default function Profile({ profile }) {
                       </span>
                     </div>
                   ))}
+                </div> */}
+                <div className='w-full'>
+                  <div className='grid grid-row-4'><div className=''></div></div>
                 </div>
               </div>
             </div>
