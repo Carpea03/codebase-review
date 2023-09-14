@@ -4,13 +4,13 @@ import Layout from '../components/layout'
 
 export default function About() {
   const data = [
-    { title: 'About us', link: '/about' },
+    { title: 'About Us', link: '/about ' },
   ]
   return (
     <Layout navData={data} bannerData={true} layout={2} title={"About us"}>
       <Head>
         <title>
-          About Baxter IP, Patent & Trade Mark Attorneys | Baxter IP
+          About our company | Baxter IP, Patent & Trade Mark Attorneys
         </title>
         <meta
           name="description"

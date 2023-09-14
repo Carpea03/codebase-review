@@ -5,18 +5,17 @@ import Layout from '../components/layout'
 export default function PatentLitigation() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
     {
-      title: 'Patent oppositions and disputes',
+      title: 'Patent Oppositions & Disputes',
       link: '/patent-oppositions-disputes',
     },
-    { title: 'Patent litigation', link: '' },
+    { title: 'Patent Litigation', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Patent litigation | Intellectual property enforcement | Baxter IP
+          Patent Litigation | Intellectual property enforcement | Baxter IP
         </title>
         <meta
           name="description"
@@ -38,7 +37,7 @@ export default function PatentLitigation() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent litigation</h1>
+      <h1>Patent Litigation</h1>
       <h2>An overview of patent litigation</h2>
 
       <p>

@@ -5,14 +5,13 @@ import Layout from '../components/layout'
 export default function BrandNameVsTradeMark() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'Brand name vs trade mark', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Brand Name vs Trade Mark', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Brand name vs trade mark | Baxter IP Sydney & Melbourne</title>
+        <title>Brand Name vs Trade Mark | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="A brand name is just a name of a brand or a product, whereas a trade mark is the intellectual property that protects a brand."
@@ -23,7 +22,7 @@ export default function BrandNameVsTradeMark() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Brand name vs trade mark</h1>
+        <h1>Brand Name vs Trade Mark</h1>
         <p>
           Brand name and trade mark are used interchangeably in daily life.
           However, the difference between brand name and trade mark lies in

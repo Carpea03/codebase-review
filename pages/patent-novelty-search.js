@@ -5,15 +5,14 @@ import Layout from '../components/layout'
 export default function PatentNoveltySearch() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
+    { title: 'How to Patent', link: '/how-to-patent' },
     { title: 'Stage 2: Patent Novelty Searches', link: '' },
   ]
   return (
     <Layout navData={data}>
       <Head>
         <title>
-          International patent search | Patent novelty search | Baxter IP
+          International Patent Search | Patent novelty search | Baxter IP
         </title>
         <meta
           name="description"

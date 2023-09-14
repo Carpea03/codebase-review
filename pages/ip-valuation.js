@@ -26,7 +26,7 @@ export default function IpValuation() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Intellectual property valuation</h1>
+      <h1>Intellectual Property Valuation</h1>
       <p>
         IP valuation is a multi-faceted legal and financial analysis to identify
         and value intellectual property assets. We can carry out parts of the

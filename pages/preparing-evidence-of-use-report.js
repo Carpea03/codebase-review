@@ -6,20 +6,16 @@ export default function PreparingAnEvidenceOfUseReport() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Mark Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    {
-      title: 'Trade mark opposition',
-      link: '/trade-mark-opposition',
-    },
-    { title: 'Evidence of Use preparation', link: '' },
+    { title: 'Evidence of Use Preparation', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Preparing an Evidence of Use report | Baxter IP Sydney & Melbourne
+          Preparing an Evidence of Use Report | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function PreparingAnEvidenceOfUseReport() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Preparing an Evidence of Use report</h1>
+      <h1>Preparing an Evidence of Use Report</h1>
       <p>
         In certain cases, providing evidence of use of a trade mark can help
         overcome objections raised during prosecution of a trade mark. Evidence

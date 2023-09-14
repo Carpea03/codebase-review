@@ -14,8 +14,8 @@ export default function TradeMarkProcessFlowcharts() {
   const [imageIndex, setImageIndex] = useState(0)
 
   const data = [
-    { title: 'Resources', link: '/ip-info' },
-    { title: 'Trade mark process flowcharts', link: '' },
+    { title: 'IP Info', link: '/ip-info' },
+    { title: 'Trade Mark Process Flowcharts', link: '' },
   ]
 
   const setLigthbox = (index) => {
@@ -41,7 +41,7 @@ export default function TradeMarkProcessFlowcharts() {
     >
       <Head>
         <title>
-          Trade mark process flowcharts | Baxter IP Sydney & Melbourne
+          Trade Mark Process Flowcharts | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -50,7 +50,7 @@ export default function TradeMarkProcessFlowcharts() {
         <link rel="canonical" href="/trade-mark-process-flowcharts" />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark process flowcharts</h1>
+      <h1>Trade Mark Process Flowcharts</h1>
       <p>
         This page archives all the trade mark process flowcharts. Flowcharts in
         this page are for illustrative purposes alone and only indicates some of

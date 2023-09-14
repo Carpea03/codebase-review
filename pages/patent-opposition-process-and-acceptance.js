@@ -6,19 +6,17 @@ import Layout from '../components/layout'
 export default function PatentOppositionProcessAndAcceptance() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
     {
-      title: 'Patent oppositions and disputes',
+      title: 'Patent Oppositions & Disputes',
       link: '/patent-oppositions-disputes',
     },
-    { title: 'Patent opposition process and acceptance', link: '' },
+    { title: 'Patent Opposition Process and Acceptance', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Patent opposition process and acceptance of an Australian patent |
-          Baxter IP
+          Patent Opposition Process and Acceptance of an Australian Patent | Baxter IP
         </title>
         <meta
           name="description"
@@ -30,7 +28,7 @@ export default function PatentOppositionProcessAndAcceptance() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Opposing a patent application</h1>
+      <h1>Patent Opposition Process and Acceptance</h1>
       <h2>Acceptance of a patent application</h2>
 
       <p>

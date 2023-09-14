@@ -6,20 +6,16 @@ export default function TradeMarkAmendment() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark amendment', link: '' },
+    { title: 'Trade Mark Amendment', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Amending your trade mark application | Baxter IP Sydney & Melbourne
+          Amending your Trade Mark Application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function TradeMarkAmendment() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Amending your trade mark application</h1>
+      <h1>Amending your Trade Mark Application</h1>
       <p>
         A trade mark owner can request to have several details of their trade
         mark amended at any point after filing the{' '}

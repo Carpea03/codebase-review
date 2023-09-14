@@ -4,13 +4,13 @@ import Layout from '../components/layout'
 
 export default function HowToChooseAnAustralianPatentAttorney() {
   const data = [
-    { title: 'Our patent attorneys', link: '/patent-attorney' },
-    { title: 'How to choose an Australian patent attorney', link: '' },
+    { title: 'Attorneys', link: '/patent-attorney' },
+    { title: 'How to Choose an Australian Patent Attorney', link: '' },
   ]
   return (
     <Layout navData={data}>
       <Head>
-        <title>How to choose an Australian patent attorney | Baxter IP</title>
+        <title>How to Choose an Australian Patent Attorney | Baxter IP</title>
         <meta
           name="description"
           content="Here are several factors on how to choose an Australian patent attorney to help you in drafting and filing your patent application."
@@ -26,7 +26,7 @@ export default function HowToChooseAnAustralianPatentAttorney() {
         />
       </Head>
       <div className="mt-10"/>
-      <h1>How to choose an Australian patent attorney</h1>
+      <h1>How to Choose an Australian Patent Attorney</h1>
       <p>
         Like any other type of professional, the primary and secondary skills of
         individual patent attorneys vary, along with the capability of their

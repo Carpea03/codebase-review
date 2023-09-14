@@ -5,14 +5,14 @@ import Layout from '../components/layout'
 export default function DesignDisputes() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Registered designs', link: '/registered-designs' },
-    { title: 'Design disputes', link: '' },
+    { title: 'Registered Designs', link: '/registered-designs' },
+    { title: 'Design Disputes', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Design disputes | Baxter IP, Patent & Trade Mark Attorneys
+          Design Disputes | Baxter IP, Patent & Trade Mark Attorneys
         </title>
         <meta
           name="description"
@@ -29,7 +29,7 @@ export default function DesignDisputes() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Design disputes</h1>
+        <h1>Design Disputes</h1>
         <p>
           The two- or three-dimensional appearance of an article can be
           protected through{' '}

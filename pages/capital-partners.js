@@ -4,14 +4,14 @@ import Layout from '../components/layout'
 
 export default function CapitalPartners() {
   const data = [
-    { title: 'Our Partners', link: '/' },
+    { title: 'Values', link: '/' },
     { title: 'Capital Partners', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"BIP Capital Partners"} active={"Values"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Capital Partners"} active={"Values"}>
       <Head>
         <title>
-          BIP Capital Partners | Baxter IP, Patent & Trade Mark Attorneys
+          Capital Partners | Baxter IP, Patent & Trade Mark Attorneys
         </title>
         <meta
           name="description"

@@ -6,18 +6,17 @@ import Layout from '../components/layout'
 export default function PatentOpposition() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
     {
-      title: 'Patent oppositions and disputes',
+      title: 'Patent Oppositions & Disputes',
       link: '/patent-oppositions-disputes',
     },
-    { title: 'Patent opposition', link: '' },
+    { title: 'Patent Opposition', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Patent opposition in Australia | Baxter IP Sydney & Melbourne
+          Patent Opposition in Australia | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -29,7 +28,7 @@ export default function PatentOpposition() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Opposing a patent application</h1>
+      <h1>Opposing a Patent Application</h1>
 
       <p>
         A patent opposition is an adversarial mechanism provided in the{' '}

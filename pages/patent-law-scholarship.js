@@ -4,8 +4,8 @@ import Layout from '../components/layout'
 
 export default function PatentLawScholarship() {
   const data = [
-    { title: 'About us', link: '/about' },
-    { title: 'Baxter IP scholarship', link: '' },
+    { title: 'Values', link: '/about' },
+    { title: 'Baxter IP Scholarship', link: '' },
   ]
   return (
     <Layout navData={data}>

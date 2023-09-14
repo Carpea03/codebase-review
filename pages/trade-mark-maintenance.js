@@ -10,16 +10,16 @@ export default function TradeMarkMaintenance() {
       link: '/trade-marks',
     },
     {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark maintenance', link: '' },
+    { title: 'Trade Mark Maintenance', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Maintaining your trade mark application | Baxter IP Sydney & Melbourne
+          Maintaining your Trade Mark Application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +31,7 @@ export default function TradeMarkMaintenance() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Maintaining your trade mark application</h1>
+      <h1>Maintaining your Trade Mark Application</h1>
       <p>
         Being able to readily enforce rights in a brand against an infringing
         competitor is one of the major benefits of registering a trade mark. A

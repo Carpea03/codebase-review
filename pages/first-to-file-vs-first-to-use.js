@@ -5,12 +5,7 @@ import Layout from '../components/layout'
 export default function FirstToFileVsFirstToUse() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    {
-      title: 'Trade marks in other countries',
-      link: '/trade-marks-in-other-countries',
-    },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
     { title: 'First to File vs First to Use', link: '' },
   ]
   return (

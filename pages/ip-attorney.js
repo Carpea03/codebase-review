@@ -73,8 +73,7 @@ export default function IpAttorney() {
         </ol>
       </nav>
       <h1>
-        Our patent & trade mark attorney teams in Sydney & Melbourne are poised
-        to protect what&rsquo;s yours
+        Our patent & trade mark attorney teams in Sydney & Melbourne are poised to protect what&rsquo;s yours
       </h1>
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 not-format">
         <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">

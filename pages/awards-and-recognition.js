@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function AwardsAndRecognition() {
   const data = [
-    { title: 'About us', link: '/about' },
+    { title: 'About Us', link: '/about' },
     { title: 'Awards & Recognition', link: '' },
   ]
   return (

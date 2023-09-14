@@ -5,16 +5,14 @@ import Layout from '../components/layout'
 export default function PatentGrantAndRenewal() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Patent grant and renewal', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Patent Grant and Renewal', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Grant and renewal of an Australian patent | Baxter IP Sydney &
-          Melbourne
+          Grant and Renewal of an Australian Patent | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -26,7 +24,7 @@ export default function PatentGrantAndRenewal() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Grant and renewal of an Australian patent</h1>
+      <h1>Grant and Renewal of an Australian Patent</h1>
       <h2>Pathway to grant</h2>
 
       <ol>

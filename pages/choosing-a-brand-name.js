@@ -5,14 +5,13 @@ import Layout from '../components/layout'
 export default function ChoosingABrandName() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'Choosing a brand name', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Choosing a Brand Name', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Choosing a brand name | Baxter IP Sydney & Melbourne</title>
+        <title>Choosing a Brand Name | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Choosing a brand name is an exercise in creative thinking backed by cold hard facts in order to arrive at a solid, memorable brand name to trade mark."
@@ -23,7 +22,7 @@ export default function ChoosingABrandName() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Choosing a brand name</h1>
+        <h1>Choosing a Brand Name</h1>
         <p>
           Commercial success for inventions and innovations does not solely rely
           on a good product. Along with the manufacture of high-quality goods,

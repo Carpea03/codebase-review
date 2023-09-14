@@ -5,15 +5,13 @@ import Layout from '../components/layout'
 export default function AustralianPatentSearch() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Patent search', link: '/patent-search' },
-    { title: 'Australian patent search', link: '' },
+    { title: 'Patent Search', link: '/patent-search' },
+    { title: 'Australian Patent Search', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Australian patent search | Baxter IP Sydney & Melbourne</title>
+        <title>Australian Patent Search | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Australian patent search often takes the form of freedom-to operate search to see whether a company has freedom-to-operate in Australia."
@@ -34,7 +32,7 @@ export default function AustralianPatentSearch() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Australian patent search</h1>
+        <h1>Australian Patent Search</h1>
         <p>
           Compared with many other countries, a patent search in Australia is
           relatively straightforward because IP Australia offers a sophisticated

@@ -5,16 +5,14 @@ import Layout from '../components/layout'
 export default function PatentExamination() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Patent examination and publication', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Patent Examination and Publication', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Examination of an Australian patent application | Baxter IP Sydney &
-          Melbourne
+          Examination of an Australian Patent Application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -26,7 +24,7 @@ export default function PatentExamination() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Examination and publication of an Australian patent application</h1>
+      <h1>Examination and Publication of an Australian Patent Application</h1>
       <h2>Publication of an Australian patent application</h2>
 
       <p>

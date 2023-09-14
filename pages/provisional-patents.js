@@ -5,16 +5,14 @@ import Layout from '../components/layout'
 export default function ProvisionalPatents() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Stage 1: Provisional patent applications', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Stage 1: Provisional Patent Applications', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"} stepper={1}>
       <Head>
         <title>
-          File for provisional patents in Australia | Baxter IP Sydney &
-          Melbourne
+          File for Provisional Patents in Australia | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +29,7 @@ export default function ProvisionalPatents() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Stage 1: Provisional patent applications</h1>
+      <h1>Stage 1: Provisional Patent Applications</h1>
 
       <p>
         A provisional patent application has a life of 12 months and is designed

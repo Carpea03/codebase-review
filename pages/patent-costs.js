@@ -5,13 +5,13 @@ import Layout from '../components/layout'
 export default function PatentCosts() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'Patent costs', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Patent Costs', link: '' },
   ]
   return (
     <Layout navData={data}>
       <Head>
-        <title>Patent costs in Australia | Baxter IP Sydney & Melbourne</title>
+        <title>Patent Costs in Australia | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Learn about patent costs and fees in Australia. Baxter IP patent attorneys provide a simple fixed-fee and capped-fee model for your patenting needs."
@@ -19,7 +19,7 @@ export default function PatentCosts() {
         <link rel="canonical" href="https://www.baxterip.com.au/patent-costs" />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent costs in Australia</h1>
+      <h1>Patent Costs in Australia</h1>
       <p>
         As <Link href="/patent-attorney">patent attorneys</Link>, we are
         continually surprised by the incorrect perceptions that exist around

@@ -6,15 +6,14 @@ import Layout from '../components/layout'
 export default function PctPatent() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Stage 3: PCT International patent applications', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Stage 3: PCT International Patent Applications', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"} stepper={3}>
       <Head>
         <title>
-          PCT patent | PCT international patent applications | Baxter IP
+          PCT Patent | PCT International Patent Applications | Baxter IP
         </title>
         <meta
           name="description"
@@ -28,7 +27,7 @@ export default function PctPatent() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Stage 3: PCT International patent applications</h1>
+      <h1>Stage 3: PCT International Patent Applications</h1>
 
       <h2>How to patent an idea internationally?</h2>
 

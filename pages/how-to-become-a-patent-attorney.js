@@ -4,13 +4,13 @@ import Layout from '../components/layout'
 
 export default function HowToBecomeAPatentAttorney() {
   const data = [
-    { title: 'Join us', link: '/ip-careers' },
-    { title: 'How to become a patent attorney', link: '' },
+    { title: 'Join Us', link: '/ip-careers' },
+    { title: 'How to Become a Patent Attorney', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"How to become a patent attorney"}  active={"Values"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"How to Become a Patent Attorney"}  active={"Values"}>
       <Head>
-        <title>How to become a patent attorney in Australia | Baxter IP</title>
+        <title>How to Become a Patent Attorney in Australia | Baxter IP</title>
         <meta
           name="description"
           content="Learn how to become a patent attorney in Australia and determine whether your skill set qualifies for an IP career in Baxter IP."

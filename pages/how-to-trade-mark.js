@@ -5,8 +5,7 @@ import Layout from '../components/layout'
 export default function HowToTradeMark() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '' },
+    { title: 'How to Trade Mark', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>

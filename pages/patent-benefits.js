@@ -6,15 +6,14 @@ import Nav from '../components/Nav'
 export default function PatentBenefits() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Patent benefits', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Patent Benefits', link: '' },
   ]
   return (
     <>
       <Layout navData={data} active={"Services"}>
         <Head>
-          <title>Benefits of a patent | Baxter IP Sydney & Melbourne</title>
+          <title>Benefits of a Patent | Baxter IP Sydney & Melbourne</title>
           <meta
             name="description"
             content="Thinking about filing a patent application? Learn about the benefits of filing a patent application."
@@ -25,7 +24,7 @@ export default function PatentBenefits() {
           />
         </Head>
         <div className='mt-10'>
-        <h1>Benefits of a patent</h1>
+        <h1>Benefits of a Patent</h1>
         <p>
           The patent system is designed to stimulate invention by providing
           inventors with a monopoly to develop and commercialise their

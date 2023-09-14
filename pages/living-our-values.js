@@ -10,8 +10,7 @@ export default function LivingOurValues() {
   const [imageIndex, setImageIndex] = useState(0)
 
   const data = [
-    { title: 'About us', link: '/about' },
-    { title: 'Living our values', link: '' },
+    { title: 'Values', link: '' },
   ]
 
   const setLigthbox = (index) => {
@@ -20,7 +19,7 @@ export default function LivingOurValues() {
   }
 
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"Living our values"} active={"Values"} 
+    <Layout navData={data} bannerData={true} layout={2} title={"Living Our Values"} active={"Values"} 
       lightbox={
         <Lightbox
           images={[
@@ -36,7 +35,7 @@ export default function LivingOurValues() {
     >
       <Head>
         <title>
-          Living our values at Baxter IP, Patent & Trade Mark Attorneys
+          Living Our Values at Baxter IP, Patent & Trade Mark Attorneys
         </title>
         <meta
           name="description"
