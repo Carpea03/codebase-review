@@ -317,8 +317,32 @@ export default function Profile({ profile }) {
                     </div>
                   ))}
                 </div> */}
-                <div className='w-full'>
-                  <div className='grid grid-row-4'><div className=''></div></div>
+                <div className="w-full">
+                  <div className="w-full flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    {profile.industries.map((industry, index) => {
+                      return (
+                        <div
+                          key={`industry-${index}`}
+                          className="flex flex-col w-full h-full md:h-[385px] border-2 p-[24px] "
+                        >
+                          <div className="w-full flex mb-5">
+                            <span className="font-manrope text-[#272940] text-xl font-medium">
+                              {industry.title}
+                            </span>
+                          </div>
+                          <div>
+                            {industry.technicalAreas.map((item) => {
+                              return (
+                                <div key={`${item.title}`} className="flex flex-col">
+                                  <span className='text-base text-[#7A7B94]'>{`• ${item.title}`}</span>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
             </div>

@@ -132,33 +132,42 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-    industries: {
-      engineering: [
-        { title: 'Aero' },
-        { title: 'Agri Tech' },
-        { title: 'Construction' },
-        { title: 'Manufacturing' },
-        { title: 'Mechanical' },
-        { title: 'Mining' },
-        { title: 'Naval' },
-        { title: 'Space' },
-      ],
-      hightech: [
-        { title: 'Applications' },
-        { title: 'Defence' },
-        { title: 'Distributed Ledgers' },
-        { title: 'E-Commerce' },
-        { title: 'Electrical' },
-        { title: 'Electronics' },
-        { title: 'Energy Tech' },
-        { title: 'Optical Tech' },
-        { title: 'Physics' },
-        { title: 'Robotics' },
-        { title: 'Security' },
-      ],
-      healthtech: [{ title: 'Medical Devices' }],
-      otherIndustries: [{ title: 'FMCG' }, { title: 'Food & Bev' }],
-    },
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Aero' },
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+          { title: 'Naval' },
+          { title: 'Space' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [
+          { title: 'Applications' },
+          { title: 'Defence' },
+          { title: 'Distributed Ledgers' },
+          { title: 'E-Commerce' },
+          { title: 'Electrical' },
+          { title: 'Electronics' },
+          { title: 'Energy Tech' },
+          { title: 'Optical Tech' },
+          { title: 'Physics' },
+          { title: 'Robotics' },
+          { title: 'Security' },
+        ],
+      },
+      { title: 'Healthtech', technicalAreas: [{ title: 'Medical Devices' }] },
+      {
+        title: 'Other Industries',
+        technicalAreas: [{ title: 'FMCG' }, { title: 'Food & Bev' }],
+      },
+    ],
   },
   'andrew-balis': {
     name: 'Andrew Balis',
@@ -268,21 +277,33 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-    industries: {
-      engineering: [
-        { title: 'Aero' },
-        { title: 'Agri Tech' },
-        { title: 'Construction' },
-        { title: 'Manufacturing' },
-        { title: 'Mechanical' },
-        { title: 'Mining' },
-        { title: 'Naval' },
-        { title: 'Space' },
-      ],
-      hightech: [{ title: 'Defence' }, { title: 'Electrical' }],
-      healthtech: [{ title: 'Medical Devices' }],
-      otherIndustries: [{ title: 'Food & Bev' }],
-    },
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Aero' },
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+          { title: 'Naval' },
+          { title: 'Space' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [{ title: 'Defence' }, { title: 'Electrical' }],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [{ title: 'Medical Devices' }],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [{ title: 'Food & Bev' }],
+      },
+    ],
   },
   'martin-earley': {
     name: 'Martin Earley',
@@ -386,41 +407,52 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-    industries: {
-      engineering: [
-        { title: 'Agri Tech' },
-        { title: 'Construction' },
-        { title: 'Manufacturing' },
-        { title: 'Mechanical' },
-        { title: 'Mining' },
-        { title: 'Naval' },
-      ],
-      hightech: [
-        { title: 'Applications' },
-        { title: 'Defence' },
-        { title: 'Electrical' },
-        { title: 'Electronics' },
-        { title: 'Energy Tech' },
-        { title: 'Laser Tech' },
-        { title: 'Nuclear' },
-        { title: 'Optical Tech' },
-        { title: 'Physics' },
-        { title: 'Quantum' },
-        { title: 'Security' },
-      ],
-      healthtech: [
-        { title: 'Chemistry' },
-        { title: 'Medical Devices' },
-        { title: 'Vet Science' },
-      ],
-      otherIndustries: [
-        { title: 'Cosmetics' },
-        { title: 'Entertainment' },
-        { title: 'FMCG' },
-        { title: 'Food & Bev' },
-        { title: 'Hospitality' },
-      ],
-    },
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+          { title: 'Naval' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [
+          { title: 'Applications' },
+          { title: 'E-Commerce' },
+          { title: 'Electrical' },
+          { title: 'Electronics' },
+          { title: 'Energy Tech' },
+          { title: 'Laser Tech' },
+          { title: 'Nuclear' },
+          { title: 'Optical Tech' },
+          { title: 'Physics' },
+          { title: 'Security' },
+        ],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'Entertainment' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+          { title: 'Hospitality' },
+        ],
+      },
+    ],
   },
   'dr-qi-zhang': {
     name: 'Dr Qi Zhang',
@@ -534,115 +566,53 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-  },
-  'julia-caunt': {
-    name: 'Julia Caunt',
-    position: 'Principal, Trade Mark Attorney',
-    email: 'julia.caunt@baxterip.com.au',
-    telephone: '+61 2 9099 0646',
-    potrait: '/professionalProfiles/profiles/julia.jpg',
-    objective:
-      '“In the commercial world there can be a lot of moving parts. I like to work with businesses to ensure the right strategy is implemented and IP is protected.”',
-    industry: {
-      title: 'Biography',
-      description:
-        'Julia has over 16 years of experience in global and local FMCG organisations having worked in-house for both Nestlé and Lion. She has considerable business advisory experience in trade mark and IP protection across a broad range of categories including food and beverages, health sciences, infant nutrition and petfood products.\n\n' +
-        'Her extensive experience supporting global, regional and local teams on diverse brand portfolio and intellectual property matters includes trade mark clearance searches, infringement issues, trade mark protection, strategy and enforcement.\n\n' +
-        'Julia’s core motivation is to ensure that clients receive the most appropriate advice tailored to their unique requirements.\n\n' +
-        'She has a Bachelor of Arts in Modern History from Macquarie University and a Masters in Intellectual Property from the University of Technology Sydney. Julia is a registered trade mark attorney and a member of the Intellectual Property Society of Australia & New Zealand.\n\n' +
-        'When not working Julia enjoys being active and embarking on new adventures, whether that is road trips, adventure races, long walks exploring new areas or even taking a pottery class.',
-    },
-    snapshots: {
-      title: 'Attorney Snapshot',
-      items: [
-        { id: 1, title: 'Registered Australian Patent Attorney' },
-        { id: 2, title: 'Chinese Patent Attorney Qualification' },
-        {
-          id: 3,
-          title: 'M.S. in Intellectual Property Management & Markets',
-        },
-        { id: 4, title: 'Ph.D. in Electrical Engineering' },
-        {
-          id: 5,
-          title: 'Bachelor of Science in Communication Engineering',
-        },
-        {
-          id: 6,
-          title:
-            '​Over 10​ years​ working​ experience in ​patent protection in Australia, the US, and China',
-        },
-        {
-          id: 7,
-          title:
-            'Solid understanding of cutting-edge technologies, marketing, and laws.​',
-        },
-        { id: 8, title: 'Pragmatic solutions to client problems' },
-        { id: 9, title: '​Positive attitude to work and life​' },
-        {
-          id: 10,
-          title:
-            'The Institute of Patent and Trade Mark Attorneys of Australia​',
-        },
-        { id: 11, title: 'The ​Australia ​China Business Council​' },
-      ],
-    },
-    publications: {
-      title: 'Publications',
-      items: [
-        { id: 1, title: 'IP 101 Workshop - UNSW New Wave Group - 20 Jun 22' },
-        { id: 2, title: 'Baxter vs Bixter Case Review - 1 Feb 22' },
-      ],
-    },
-    technicalAreas: [
+    industries: [
       {
-        id: 1,
-        title: 'Mechanical',
-        icon: '/industrySpeciality/wrench-normal.svg',
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Aero' },
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+        ],
       },
       {
-        id: 2,
-        title: 'Mining / Civil',
-        icon: '/industrySpeciality/wrench-normal.svg',
+        title: 'HighTech',
+        technicalAreas: [
+          { title: 'Electrical' },
+          { title: 'Electronics' },
+          { title: 'Energy Tech' },
+          { title: 'Laser Tech' },
+          { title: 'Optical Tech' },
+          { title: 'Physics' },
+          { title: 'Robotics' },
+          { title: 'Security' },
+          { title: 'Telecommunications' },
+        ],
       },
       {
-        id: 3,
-        title: 'Medical',
-        icon: '/industrySpeciality/medical-normal.svg',
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Biotechnology' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
       },
       {
-        id: 4,
-        title: 'Physics',
-        icon: '/industrySpeciality/grid-normal.svg',
-      },
-      {
-        id: 5,
-        title: 'Software',
-        icon: '/industrySpeciality/grid-normal.svg',
-      },
-      {
-        id: 6,
-        title: 'Electrical / Electronics',
-        icon: '/industrySpeciality/medical-normal.svg',
-      },
-      {
-        id: 7,
-        title: 'Chemistry',
-        icon: '/industrySpeciality/chemistry-normal.svg',
-      },
-      {
-        id: 1,
-        title: 'Pharmaceuticals / Biochemistry / Vet Science',
-        icon: '/industrySpeciality/wrench-normal.svg',
-      },
-      {
-        id: 2,
-        title: 'Biotechnology',
-        icon: '/industrySpeciality/energy-normal.svg',
-      },
-      {
-        id: 3,
-        title: 'Consumer products',
-        icon: '/industrySpeciality/grid-normal.svg',
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'Entertainment' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+          { title: 'Hospitality' },
+          { title: 'Recruitment' },
+        ],
       },
     ],
   },
@@ -750,48 +720,30 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-    industries: {
-      engineering: [
-        { title: 'Aero' },
-        { title: 'Agri Tech' },
-        { title: 'Construction' },
-        { title: 'Manufacturing' },
-        { title: 'Mechanical' },
-        { title: 'Mining' },
-      ],
-      hightech: [
-        { title: 'Applications' },
-        { title: 'Defence' },
-        { title: 'Distributed Ledgers' },
-        { title: 'E-Commerce' },
-        { title: 'Electrical' },
-        { title: 'Electronics' },
-        { title: 'Energy Tech' },
-        { title: 'Laser Tech' },
-        { title: 'Optical Tech' },
-        { title: 'Physics' },
-        { title: 'Quantum' },
-        { title: 'Robotics' },
-        { title: 'Security' },
-        { title: 'Telecommunications' },
-      ],
-      healthtech: [
-        { title: 'Biochemistry' },
-        { title: 'Biotechnology' },
-        { title: 'Chemistry' },
-        { title: 'Medical Devices' },
-        { title: 'Pharmaceuticals' },
-        { title: 'Vet Science' },
-      ],
-      otherIndustries: [
-        { title: 'Cosmetics' },
-        { title: 'Entertainment' },
-        { title: 'FMCG' },
-        { title: 'Food & Bev' },
-        { title: 'Hospitality' },
-        { title: 'Recruitment' },
-      ],
-    },
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [{ title: 'Manufacturing' }, { title: 'Mechanical' }],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [],
+      },
+    ],
   },
   'dr-seán-klinkradt': {
     name: 'Dr Seán Klinkradt',
@@ -929,23 +881,38 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-    industries: {
-      engineering: [{ title: 'Mechanical' }],
-      hightech: [],
-      healthtech: [
-        { title: 'Biochemistry' },
-        { title: 'Biotechnology' },
-        { title: 'Chemistry' },
-        { title: 'Medical Devices' },
-        { title: 'Pharmaceuticals' },
-        { title: 'Vet Science' },
-      ],
-      otherIndustries: [
-        { title: 'Cosmetics' },
-        { title: 'FMCG' },
-        { title: 'Food & Bev' },
-      ],
-    },
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Mechanical' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [
+        ],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Biotechnology' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+        ],
+      },
+    ],
   },
   'warren-chandler': {
     name: 'Warren Chandler',
@@ -1070,28 +1037,40 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-    industries: {
-      engineering: [
-        { title: 'Agri Tech' },
-        { title: 'Construction' },
-        { title: 'Manufacturing' },
-        { title: 'Mechanical' },
-        { title: 'Mining' },
-      ],
-      hightech: [],
-      healthtech: [
-        { title: 'Biochemistry' },
-        { title: 'Chemistry' },
-        { title: 'Medical Devices' },
-        { title: 'Pharmaceuticals' },
-        { title: 'Vet Science' },
-      ],
-      otherIndustries: [
-        { title: 'Cosmetics' },
-        { title: 'Entertainment' },
-        { title: 'FMCG' },
-        { title: 'Food & Bev' },
-      ],
-    },
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'Entertainment' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+        ],
+      },
+    ],
   },
 }
