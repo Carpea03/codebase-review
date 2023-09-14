@@ -243,9 +243,10 @@ export default function Contact({ contactDetails }) {
 
       return false
     } else {
-      contact.current.requestSubmit()
-
-      router.push('/thank-you')
+      setTimeout(() => {
+        contact.current.requestSubmit()
+        router.push('/thank-you')
+      }, 1500)
     }
   }
 
@@ -458,9 +459,7 @@ export default function Contact({ contactDetails }) {
                 'linear-gradient(111.36deg, #61638D 0%, #494B70 98.54%), #505278',
             }}
           >
-            <div
-              className="flex flex-row items-center justify-between px-5 w-full"
-            >
+            <div className="flex flex-row items-center justify-between px-5 w-full">
               <span className="font-manrope font-medium text-xl text-white">
                 {`${contactDetails?.name} office`}
               </span>

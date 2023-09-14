@@ -148,17 +148,17 @@ export const profiles = [
     id: 0,
     teamName: 'all',
     teamMembers: [
+      // {
+      //   id: 1,
+      //   linkId: 'julia-caunt',
+      //   name: 'Julia Caunt',
+      //   positions: ['Senior Associate'],
+      //   url: '/professionalProfiles/peoples/julia.jpg',
+      //   link: '/attorneys/julia-caunt',
+      //   awards: []
+      // },
       {
         id: 1,
-        linkId: 'julia-caunt',
-        name: 'Julia Caunt',
-        positions: ['Senior Associate'],
-        url: '/professionalProfiles/peoples/julia.jpg',
-        link: '/attorneys/julia-caunt',
-        awards: []
-      },
-      {
-        id: 2,
         linkId: 'chris-baxter',
         name: 'Chris Baxter',
         positions: ['Managing Director'],
@@ -167,7 +167,7 @@ export const profiles = [
         awards: [0, 1],
       },
       {
-        id: 3,
+        id: 2,
         linkId: 'martin-earley',
         name: 'Martin Earley',
         positions: [
@@ -179,7 +179,7 @@ export const profiles = [
         awards: [1],
       },
       {
-        id: 4,
+        id: 3,
         linkId: 'dr-seán-klinkradt',
         name: 'Dr Seán Klinkradt',
         positions: ['Senior Associate'],
@@ -188,7 +188,7 @@ export const profiles = [
         awards: [1],
       },
       {
-        id: 5,
+        id: 4,
         linkId: 'warren-chandler',
         name: 'Warren Chandler',
         positions: ['Senior Associate'],
@@ -197,7 +197,7 @@ export const profiles = [
         awards: [],
       },
       {
-        id: 6,
+        id: 5,
         linkId: 'andrew-balis',
         name: 'Andrew Balis',
         positions: ['Associate'],
@@ -206,7 +206,7 @@ export const profiles = [
         awards: [],
       },
       {
-        id: 7,
+        id: 6,
         linkId: 'dr-qi-zhang',
         name: 'Dr Qi Zhang',
         positions: ['Principal'],
@@ -215,7 +215,7 @@ export const profiles = [
         awards: [],
       },
       {
-        id: 8,
+        id: 7,
         linkId: 'dr-richard-grant',
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
@@ -223,15 +223,15 @@ export const profiles = [
         link: '/attorneys/dr-richard-grant',
         awards: [],
       },
-      {
-        id: 9,
-        linkId: 'john-baxter',
-        name: 'John Baxter',
-        positions: ['Senior Commercial Counsel'],
-        url: '/professionalProfiles/peoples/john.jpg',
-        link: '',
-        awards: [],
-      },
+      // {
+      //   id: 9,
+      //   linkId: 'john-baxter',
+      //   name: 'John Baxter',
+      //   positions: ['Senior Commercial Counsel'],
+      //   url: '/professionalProfiles/peoples/john.jpg',
+      //   link: '',
+      //   awards: [],
+      // },
     ],
   },
   {
