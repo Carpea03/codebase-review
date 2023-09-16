@@ -5,14 +5,13 @@ import Layout from '../components/layout'
 export default function InternationalTypeSearch() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Stage 2: International-type patent search', link: '' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Stage 2: International-type Patent Search', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"} stepper={2}>
       <Head>
-        <title>International-type search | Baxter IP Sydney & Melbourne</title>
+        <title>International-type Search | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Conducting an international-type search on provisional patent applications can be used to cost-effectively review the novelty of the patent claims."
@@ -28,7 +27,7 @@ export default function InternationalTypeSearch() {
         />
       </Head>
       <div className='mt-10'></div>
-      <h1>Stage 2: International-type patent search</h1>
+      <h1>Stage 2: International-type Patent Search</h1>
       <p>
         IP Australia offers a highly cost effective option for an international
         patent search called an &ldquo;international-type search&rdquo;.

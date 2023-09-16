@@ -6,17 +6,16 @@ export default function TradeMarkEnforcementOptions() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Mark Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    { title: 'Trade mark disputes', link: '/trade-mark-disputes' },
-    { title: 'Trade mark enforcement options', link: '' },
+    { title: 'Trade Mark Enforcement and Defence', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Trade mark enforcement and defence | Baxter IP Sydney & Melbourne
+          Trade Mark Enforcement and Defence | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -28,7 +27,7 @@ export default function TradeMarkEnforcementOptions() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark enforcement and defence</h1>
+      <h1>Trade Mark Enforcement and Defence</h1>
       <p>
         The value of your IP is normally directly related to the extent to which
         the owner of the intellectual property rights can enforce these rights.

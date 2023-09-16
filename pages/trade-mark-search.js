@@ -6,23 +6,15 @@ export default function TradeMarkSearch() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    {
-      title: 'Australian trade mark application',
-      link: '/trade-mark-application',
-    },
-    { title: 'Trade mark search', link: '' },
+    { title: 'Trade Mark Search', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Trade mark search | Baxter IP Sydney & Melbourne</title>
+        <title>Trade Mark Search | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="A comprehensive trade mark search covering Australian and international databases is necessary to check registrability and clearance."
@@ -43,7 +35,7 @@ export default function TradeMarkSearch() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark search</h1>
+      <h1>Trade Mark Search</h1>
       <p>
         When introducing a new product into the market, the trade mark is one of
         the first aspects that is considered. After all, your trade mark

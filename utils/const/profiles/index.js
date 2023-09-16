@@ -38,7 +38,7 @@ export const profiles = {
     position: 'Managing Director, Patent & Trade Mark Attorney',
     email: 'chris.baxter@baxterip.com.au',
     telephone: '+61 2 9264 6716',
-    potrait: '/professionalProfiles/peoples/chris.jpg',
+    potrait: '/professionalProfiles/profiles/chris.jpg',
     awards: [0, 1],
     objective:
       '“There is no surer way to create jobs and societal wealth than through the commercialisation of new ideas anchored on a strong intellectual property foundation. Through a combination of my in-house, private practice and extensive tech investment experience, I work with clients to channel their IP towards maximum impact on business value.”',
@@ -132,6 +132,42 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Aero' },
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+          { title: 'Naval' },
+          { title: 'Space' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [
+          { title: 'Applications' },
+          { title: 'Defence' },
+          { title: 'Distributed Ledgers' },
+          { title: 'E-Commerce' },
+          { title: 'Electrical' },
+          { title: 'Electronics' },
+          { title: 'Energy Tech' },
+          { title: 'Optical Tech' },
+          { title: 'Physics' },
+          { title: 'Robotics' },
+          { title: 'Security' },
+        ],
+      },
+      { title: 'Healthtech', technicalAreas: [{ title: 'Medical Devices' }] },
+      {
+        title: 'Other Industries',
+        technicalAreas: [{ title: 'FMCG' }, { title: 'Food & Bev' }],
+      },
+    ],
   },
   'andrew-balis': {
     name: 'Andrew Balis',
@@ -139,7 +175,7 @@ export const profiles = {
     position: 'Associate, Patent & Trade Mark Attorney',
     email: 'andrew.balis@baxterip.com.au',
     telephone: '+61 2 9099 0650',
-    potrait: '/professionalProfiles/peoples/andrew.jpg',
+    potrait: '/professionalProfiles/profiles/andrew.jpg',
     objective:
       '“I enjoy a hands-on approach, working closely with clients to develop their strategies. It brings me great satisfaction to help clients navigate the IP system to protect their ideas and maximise their idea’s potential.”',
     industry: {
@@ -241,6 +277,33 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Aero' },
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+          { title: 'Naval' },
+          { title: 'Space' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [{ title: 'Defence' }, { title: 'Electrical' }],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [{ title: 'Medical Devices' }],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [{ title: 'Food & Bev' }],
+      },
+    ],
   },
   'martin-earley': {
     name: 'Martin Earley',
@@ -249,7 +312,7 @@ export const profiles = {
     email: 'martin.earley@baxterip.com.au',
     awards: [1],
     telephone: '+61 3 9602 2288',
-    potrait: '/professionalProfiles/peoples/martin.jpg',
+    potrait: '/professionalProfiles/profiles/martin.jpg',
     objective:
       '“To me, getting on board early in the piece is advantageous because my range of experience as an IP attorney in both contentious patent and trade mark issues allows us to determine the approach most likely to maximise benefits to the client. Positive outcomes for our clients are what matter most to me.”',
     industry: {
@@ -344,6 +407,52 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+          { title: 'Naval' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [
+          { title: 'Applications' },
+          { title: 'E-Commerce' },
+          { title: 'Electrical' },
+          { title: 'Electronics' },
+          { title: 'Energy Tech' },
+          { title: 'Laser Tech' },
+          { title: 'Nuclear' },
+          { title: 'Optical Tech' },
+          { title: 'Physics' },
+          { title: 'Security' },
+        ],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'Entertainment' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+          { title: 'Hospitality' },
+        ],
+      },
+    ],
   },
   'dr-qi-zhang': {
     name: 'Dr Qi Zhang',
@@ -351,7 +460,7 @@ export const profiles = {
     position: 'Principal, Patent & Trade Mark Attorney',
     email: 'qi.zhang@baxterip.com.au',
     telephone: '+61 2 9099 0644',
-    potrait: '/professionalProfiles/peoples/qi.jpg',
+    potrait: '/professionalProfiles/profiles/qi.jpg',
     objective:
       '“I love seeing my clients and their businesses grow, because I feel like I grow with them. There’s no better feeling than staying with an inventor from the first discussion of their idea, through successfully protecting their IP rights, to seeing them generate profits from their hard work and creativity.”',
     industry: {
@@ -457,115 +566,53 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
-  },
-  'julia-caunt': {
-    name: 'Julia Caunt',
-    position: 'Principal, Trade Mark Attorney',
-    email: 'julia.caunt@baxterip.com.au',
-    telephone: '+61 2 9099 0646',
-    potrait: '/professionalProfiles/peoples/julia.jpg',
-    objective:
-      '“In the commercial world there can be a lot of moving parts. I like to work with businesses to ensure the right strategy is implemented and IP is protected.”',
-    industry: {
-      title: 'Biography',
-      description:
-        'Julia has over 16 years of experience in global and local FMCG organisations having worked in-house for both Nestlé and Lion. She has considerable business advisory experience in trade mark and IP protection across a broad range of categories including food and beverages, health sciences, infant nutrition and petfood products.\n\n' +
-        'Her extensive experience supporting global, regional and local teams on diverse brand portfolio and intellectual property matters includes trade mark clearance searches, infringement issues, trade mark protection, strategy and enforcement.\n\n' +
-        'Julia’s core motivation is to ensure that clients receive the most appropriate advice tailored to their unique requirements.\n\n' +
-        'She has a Bachelor of Arts in Modern History from Macquarie University and a Masters in Intellectual Property from the University of Technology Sydney. Julia is a registered trade mark attorney and a member of the Intellectual Property Society of Australia & New Zealand.\n\n' +
-        'When not working Julia enjoys being active and embarking on new adventures, whether that is road trips, adventure races, long walks exploring new areas or even taking a pottery class.',
-    },
-    snapshots: {
-      title: 'Attorney Snapshot',
-      items: [
-        { id: 1, title: 'Registered Australian Patent Attorney' },
-        { id: 2, title: 'Chinese Patent Attorney Qualification' },
-        {
-          id: 3,
-          title: 'M.S. in Intellectual Property Management & Markets',
-        },
-        { id: 4, title: 'Ph.D. in Electrical Engineering' },
-        {
-          id: 5,
-          title: 'Bachelor of Science in Communication Engineering',
-        },
-        {
-          id: 6,
-          title:
-            '​Over 10​ years​ working​ experience in ​patent protection in Australia, the US, and China',
-        },
-        {
-          id: 7,
-          title:
-            'Solid understanding of cutting-edge technologies, marketing, and laws.​',
-        },
-        { id: 8, title: 'Pragmatic solutions to client problems' },
-        { id: 9, title: '​Positive attitude to work and life​' },
-        {
-          id: 10,
-          title:
-            'The Institute of Patent and Trade Mark Attorneys of Australia​',
-        },
-        { id: 11, title: 'The ​Australia ​China Business Council​' },
-      ],
-    },
-    publications: {
-      title: 'Publications',
-      items: [
-        { id: 1, title: 'IP 101 Workshop - UNSW New Wave Group - 20 Jun 22' },
-        { id: 2, title: 'Baxter vs Bixter Case Review - 1 Feb 22' },
-      ],
-    },
-    technicalAreas: [
+    industries: [
       {
-        id: 1,
-        title: 'Mechanical',
-        icon: '/industrySpeciality/wrench-normal.svg',
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Aero' },
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+        ],
       },
       {
-        id: 2,
-        title: 'Mining / Civil',
-        icon: '/industrySpeciality/wrench-normal.svg',
+        title: 'HighTech',
+        technicalAreas: [
+          { title: 'Electrical' },
+          { title: 'Electronics' },
+          { title: 'Energy Tech' },
+          { title: 'Laser Tech' },
+          { title: 'Optical Tech' },
+          { title: 'Physics' },
+          { title: 'Robotics' },
+          { title: 'Security' },
+          { title: 'Telecommunications' },
+        ],
       },
       {
-        id: 3,
-        title: 'Medical',
-        icon: '/industrySpeciality/medical-normal.svg',
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Biotechnology' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
       },
       {
-        id: 4,
-        title: 'Physics',
-        icon: '/industrySpeciality/grid-normal.svg',
-      },
-      {
-        id: 5,
-        title: 'Software',
-        icon: '/industrySpeciality/grid-normal.svg',
-      },
-      {
-        id: 6,
-        title: 'Electrical / Electronics',
-        icon: '/industrySpeciality/medical-normal.svg',
-      },
-      {
-        id: 7,
-        title: 'Chemistry',
-        icon: '/industrySpeciality/chemistry-normal.svg',
-      },
-      {
-        id: 1,
-        title: 'Pharmaceuticals / Biochemistry / Vet Science',
-        icon: '/industrySpeciality/wrench-normal.svg',
-      },
-      {
-        id: 2,
-        title: 'Biotechnology',
-        icon: '/industrySpeciality/energy-normal.svg',
-      },
-      {
-        id: 3,
-        title: 'Consumer products',
-        icon: '/industrySpeciality/grid-normal.svg',
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'Entertainment' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+          { title: 'Hospitality' },
+          { title: 'Recruitment' },
+        ],
       },
     ],
   },
@@ -575,7 +622,7 @@ export const profiles = {
     position: 'Senior Patent Attorney',
     email: 'richard.grant@baxterip.com.au',
     telephone: '+61 2 9099 0646',
-    potrait: '/professionalProfiles/peoples/richard.jpg',
+    potrait: '/professionalProfiles/profiles/richard.jpg',
     objective:
       '“It is important when preparing patent applications to listen to the client closely. It’s very easy to think that you understand what the client is saying when, in fact, they mean something subtly different. Drafting a patent specification involves reflecting the inventor’s new technology faithfully, as well as balancing the sometimes conflicting requirements of multiple jurisdictions and anticipating possible issues that may be raised by the Patent Office or a third party.”',
     industry: {
@@ -673,6 +720,30 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [{ title: 'Manufacturing' }, { title: 'Mechanical' }],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [],
+      },
+    ],
   },
   'dr-seán-klinkradt': {
     name: 'Dr Seán Klinkradt',
@@ -680,7 +751,7 @@ export const profiles = {
     position: 'Senior Associate, Patent Attorney',
     email: 'sean.klinkradt@baxterip.com.au',
     telephone: '+61 3 8672 2977',
-    potrait: '/professionalProfiles/peoples/sean.jpg',
+    potrait: '/professionalProfiles/profiles/sean.jpg',
     objective:
       "“Participating in a client's developing intellectual property portfolio is incredibly rewarding to me.”",
     industry: {
@@ -810,6 +881,38 @@ export const profiles = {
         icon: '/industrySpeciality/grid-normal.svg',
       },
     ],
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Mechanical' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [
+        ],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Biotechnology' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+        ],
+      },
+    ],
   },
   'warren-chandler': {
     name: 'Warren Chandler',
@@ -817,7 +920,7 @@ export const profiles = {
     position: 'Senior Associate, Patent & Trade Mark Attorney',
     email: 'warren.chandler@baxterip.com.au',
     telephone: '+61 3 9020 3143',
-    potrait: '/professionalProfiles/peoples/warren.jpg',
+    potrait: '/professionalProfiles/profiles/warren.jpg',
     objective:
       '“I care about people and their business goals. So whilst I consider client instructions carefully, I always look to make recommendations that are practical, commercially strategic, and that add value.”',
     industry: {
@@ -932,6 +1035,41 @@ export const profiles = {
         id: 3,
         title: 'Consumer products',
         icon: '/industrySpeciality/grid-normal.svg',
+      },
+    ],
+    industries: [
+      {
+        title: 'Engineering',
+        technicalAreas: [
+          { title: 'Agri Tech' },
+          { title: 'Construction' },
+          { title: 'Manufacturing' },
+          { title: 'Mechanical' },
+          { title: 'Mining' },
+        ],
+      },
+      {
+        title: 'HighTech',
+        technicalAreas: [],
+      },
+      {
+        title: 'Healthtech',
+        technicalAreas: [
+          { title: 'Biochemistry' },
+          { title: 'Chemistry' },
+          { title: 'Medical Devices' },
+          { title: 'Pharmaceuticals' },
+          { title: 'Vet Science' },
+        ],
+      },
+      {
+        title: 'Other Industries',
+        technicalAreas: [
+          { title: 'Cosmetics' },
+          { title: 'Entertainment' },
+          { title: 'FMCG' },
+          { title: 'Food & Bev' },
+        ],
       },
     ],
   },

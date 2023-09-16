@@ -5,20 +5,17 @@ import Layout from '../components/layout'
 export default function FreedomToOperatePatentSearch() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
     {
-      title: 'Patent search',
+      title: 'Patent Search',
       link: '/patent-search',
     },
-    { title: 'Freedom-to-operate patent search', link: '' },
+    { title: 'Freedom-to-Operate Patent Search', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Freedom-to-operate patent search | Patent infringement search | Baxter
-          IP
+          Freedom-to-Operate Patent Search | Patent infringement search | Baxter IP
         </title>
         <meta
           name="description"
@@ -40,7 +37,7 @@ export default function FreedomToOperatePatentSearch() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Freedom-to-operate patent search</h1>
+        <h1>Freedom-to-Operate Patent Search</h1>
         <h3>Why carry out a freedom-to-operate patent search</h3>
         <p>
           If you are looking to develop or release a new product, it is

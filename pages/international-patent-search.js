@@ -5,16 +5,14 @@ import Layout from '../components/layout'
 export default function InternationalPatentSearch() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Patent search', link: '/patent-search' },
-    { title: 'International patent search', link: '' },
+    { title: 'Patent Search', link: '/patent-search' },
+    { title: 'International Patent Search', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          International patent search | Patent novelty search | Baxter IP
+          International Patent Search | Patent novelty search | Baxter IP
         </title>
         <meta
           name="description"
@@ -31,7 +29,7 @@ export default function InternationalPatentSearch() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>International patent search</h1>
+      <h1>International Patent Search</h1>
       <p>
         Conducting a international patent search of prior art patents is
         valuable since it provides you with an indication of whether a patent

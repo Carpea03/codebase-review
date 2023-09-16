@@ -6,12 +6,12 @@ import Layout from '../components/layout'
 export default function RegisteredDesigns() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Registered designs', link: '' },
+    { title: 'Registered Designs', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Registered designs | Design patents Australia | Baxter IP</title>
+        <title>Registered Designs | Design Patents Australia | Baxter IP</title>
         <meta
           name="description"
           content="Protect and register your designs and innovations via registered designs with Baxter IP to protect the appearance of your products."
@@ -32,7 +32,7 @@ export default function RegisteredDesigns() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Registered designs</h1>
+      <h1>Registered Designs</h1>
       <p>
         A registered design right provides legal protection for the visual
         appearance of a product.

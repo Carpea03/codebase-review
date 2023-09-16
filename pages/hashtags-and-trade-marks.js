@@ -5,14 +5,13 @@ import Layout from '../components/layout'
 export default function HashtagsAndTradeMarks() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'Hashtags and trade marks', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Hashtags and Trade Marks', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Hashtags and trade marks | Baxter IP Sydney & Melbourne</title>
+        <title>Hashtags and Trade Marks | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Hashtags may perform a similar function as trade marks but do not offer the same protection."
@@ -23,7 +22,7 @@ export default function HashtagsAndTradeMarks() {
         />
       </Head>
       <div className="mt-10">
-        <h1>Hashtags and trade marks</h1>
+        <h1>Hashtags and Trade Marks</h1>
         <p>
           Australian e-commerce has grown by 22% in 2018, and the number of
           people relying on testimonials from social media influencers before

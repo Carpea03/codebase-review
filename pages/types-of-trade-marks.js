@@ -6,20 +6,16 @@ export default function TypesOfTradeMarks() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Types of trade marks', link: '' },
+    { title: 'Types of Trade Marks', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Types of trade mark used in the market | Baxter IP Sydney & Melbourne
+          Types of Trade Marks Used in the Market | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function TypesOfTradeMarks() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Types of trade marks</h1>
+      <h1>Types of Trade Marks</h1>
       <p>
         A trade mark is an intellectual property right that protects a{' '}
         <Link href="/brand-name-vs-trade-mark">brand</Link>. These are the

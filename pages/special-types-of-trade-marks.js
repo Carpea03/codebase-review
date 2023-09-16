@@ -6,14 +6,10 @@ export default function SpecialTypesOfTradeMarks() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Special types of trade marks', link: '' },
+    { title: 'Special Types of Trade Marks', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
@@ -31,7 +27,7 @@ export default function SpecialTypesOfTradeMarks() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Special types of trade marks</h1>
+      <h1>Special Types of Trade Marks</h1>
       <h2 id="collective">Collective trade marks</h2>
       <p>
         Collective trade marks are used by members of a certain organisation.

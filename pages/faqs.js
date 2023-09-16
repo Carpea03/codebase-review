@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 export default function Faqs() {
   const data = [
-    { title: 'Resources', link: '/ip-info' },
+    { title: 'IP Info', link: '/ip-info' },
     {
       title: 'Frequently Asked Questions',
       link: '/trade-mark-oppositions-disputes',

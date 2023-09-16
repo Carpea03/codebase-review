@@ -5,9 +5,8 @@ import Layout from '../components/layout'
 export default function InternationalTradeMarkManagement() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Trade marks', link: '/trade-marks' },
-    { title: 'How to trade mark', link: '/how-to-trade-mark' },
-    { title: 'International trade mark application', link: '' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'International Trade Mark Management', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>

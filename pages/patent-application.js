@@ -5,15 +5,14 @@ import Layout from '../components/layout'
 export default function PatentApplication() {
   const data = [
     { title: 'Services', link: '/services' },
-    { title: 'Patents', link: '/patents' },
-    { title: 'How to patent', link: '/how-to-patent' },
-    { title: 'Australian patent application', link: '' },
-  ]
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Australian Patent Application', link: '' },
+  ] 
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Filing an Australian patent application | Baxter IP Sydney & Melbourne
+          Filing an Australian Patent Application | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -25,7 +24,7 @@ export default function PatentApplication() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Filing an Australian patent application</h1>
+      <h1>Filing an Australian Patent Application</h1>
       <p>
         There are two main types of patents available in Australia: these are a
         provisional patent application and a standard patent application.

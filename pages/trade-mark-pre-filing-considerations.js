@@ -10,10 +10,10 @@ export default function TradeMarkPreFilingConsiderations() {
       link: '/trade-marks',
     },
     {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark pre-filing considerations', link: '' },
+    { title: 'Trade Mark Pre-filing Considerations', link: '' },
   ]
   return (
     <Layout navData={data}>
@@ -31,7 +31,7 @@ export default function TradeMarkPreFilingConsiderations() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark pre-filing considerations</h1>
+      <h1>Trade Mark Pre-filing Considerations</h1>
       <p>
         Before filing a trade mark application, you need to consider the
         following questions:

@@ -1,11 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
 
 const Stepper = ({ active }) => {
   const router = useRouter()
-  const [activeStepper, setActiveStepper] = useState()
-  const [activeOpacity, setActiveOpacity] = useState()
 
   const data = [
     {
@@ -29,38 +26,6 @@ const Stepper = ({ active }) => {
       href: '/national-phase-patent',
     },
   ]
-
-  useEffect(() => {
-    init()
-  }, [])
-
-  const init = () => {
-    if (active === 1) {
-      setActiveStepper('bg-stepper-desktop0')
-      setActiveOpacity('opacity-100')
-      return
-    }
-
-    if (active === 2) {
-      setActiveStepper('bg-stepper-desktop1')
-      setActiveOpacity('opacity-100')
-      return
-    }
-
-    if (active === 3) {
-      setActiveStepper('bg-stepper-desktop2')
-      setActiveOpacity('opacity-100')
-      return
-    }
-
-    if (active === 4) {
-      setActiveStepper('bg-stepper-desktop3')
-      setActiveOpacity('opacity-100')
-      return
-    }
-    setActiveOpacity('opacity-50')
-    setActiveStepper('')
-  }
 
   const onClick = (href) => {
     router.push(href)

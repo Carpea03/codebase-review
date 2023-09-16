@@ -11,15 +11,15 @@ export default function TradeMarkInfringement() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Mark Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    { title: 'Trade mark infringement', link: '' },
+    { title: 'Trade Mark Infringement', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Trade mark infringement | Baxter IP Sydney & Melbourne</title>
+        <title>Trade Mark Infringement | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Trade mark infringement, the unauthorised use of a registered trade mark, needs to be addressed to avoid dilution of your trade mark."
@@ -40,7 +40,7 @@ export default function TradeMarkInfringement() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark infringement</h1>
+      <h1>Trade Mark Infringement</h1>
       <p>
         Trade mark registration grants the owner exclusive rights for using that
         trade mark in respect of the{' '}

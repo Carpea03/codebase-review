@@ -7,11 +7,10 @@ export default function GroundsForTradeMarkOpposition() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Marks Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    { title: 'Trade mark opposition', link: '/Trade mark opposition' },
-    { title: 'Grounds for trade mark opposition', link: '' },
+    { title: 'Grounds for opposing a trade mark application', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>

@@ -6,20 +6,16 @@ export default function TradeMarkRegistrationBenefits() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark registration benefits', link: '' },
+    { title: 'Trade Mark Registration Benefits', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Benefits of a trade mark registration | Baxter IP Sydney & Melbourne
+          Benefits of a Trade Mark Registration | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -31,7 +27,7 @@ export default function TradeMarkRegistrationBenefits() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Benefits of a trade mark registration</h1>
+      <h1>Benefits of a Trade Mark Registration</h1>
       <p>
         When starting a business, the{' '}
         <Link href="/trade-mark-registration-process">

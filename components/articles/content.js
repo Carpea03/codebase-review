@@ -159,6 +159,11 @@ export default function Content({ posts, title, subTitle }) {
       router.push({
         pathname: newLink,
       })
+    } else {
+      const newLink = `/ip-news/page/${parseInt(event.selected) + 1}`
+      router.push({
+        pathname: newLink,
+      })
     }
   }
 

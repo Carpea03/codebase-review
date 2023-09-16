@@ -15,15 +15,15 @@ export const sideMenus = [
 
 export const subMenus = [
   [
-    { title: 'Browse by category', bold: true, division: false, href: '' },
+    { title: 'Browse by Category', bold: true, division: false, href: '' },
     { title: 'General', bold: false, division: false, href: '/ip-news/general' },
     { title: 'Patents', bold: false, division: false, href: '/ip-news/patents' },
-    { title: 'Trade marks', bold: false, division: false, href: '/ip-news/trade-marks' },
+    { title: 'Trade Marks', bold: false, division: false, href: '/ip-news/trade-marks' },
   ],
   [
-    { title: 'Browse by content', bold: true, division: false, href: '' },
-    { title: 'Articles for you', bold: false, division: false, href: '/ip-news/for-you' },
-    { title: 'All articles', bold: false, division: false, href: '/ip-news/page' },
+    { title: 'Browse by Content', bold: true, division: false, href: '' },
+    { title: 'Articles For You', bold: false, division: false, href: '/ip-news/for-you' },
+    { title: 'All Articles', bold: false, division: false, href: '/ip-news/page' },
   ],
 ]
 

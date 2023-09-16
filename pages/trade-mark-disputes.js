@@ -6,15 +6,15 @@ export default function TradeMarkDisputes() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Mark Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    { title: 'Trade mark disputes', link: '' },
+    { title: 'Trade Mark Disputes & Alternative Dispute Resolutions', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Trade mark disputes | Baxter IP Sydney & Melbourne</title>
+        <title>Trade Mark Disputes | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Trade mark disputes typically arise from a party enforcing their right as a trade mark owner against trade mark infringement."
@@ -25,7 +25,7 @@ export default function TradeMarkDisputes() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark disputes and alternative dispute resolutions</h1>
+      <h1>Trade Mark Disputes and Alternative Dispute Resolutions</h1>
       <p>
         Trade mark disputes typically arise from trade mark infringement. Trade
         mark infringement is the use of a trade mark that is substantially

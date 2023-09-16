@@ -15,16 +15,16 @@ export default function TradeMarkRegistrationProcess() {
       link: '/trade-marks',
     },
     {
-      title: 'How to trade mark',
+      title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },
-    { title: 'Trade mark registration process', link: '' },
+    { title: 'Trade Mark Registration Process', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Trade mark registration process | Baxter IP Sydney & Melbourne
+          Trade Mark Registration Process | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -36,7 +36,7 @@ export default function TradeMarkRegistrationProcess() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark registration process</h1>
+      <h1>Trade Mark Registration Process</h1>
       <p>
         In Australia, the trade mark registration process involves several steps
         commencing with a search and extending beyond registration.

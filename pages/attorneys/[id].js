@@ -296,7 +296,7 @@ export default function Profile({ profile }) {
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl leading-[140%] tracking-[-0.03em] text-[#272940]">
                   Patent Technical Areas
                 </span>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-start gap-8 w-full">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-start gap-8 w-full">
                   {profile.technicalAreas.map((technicalArea, index) => (
                     <div
                       key={index}
@@ -316,6 +316,33 @@ export default function Profile({ profile }) {
                       </span>
                     </div>
                   ))}
+                </div> */}
+                <div className="w-full">
+                  <div className="w-full flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    {profile.industries.map((industry, index) => {
+                      return (
+                        <div
+                          key={`industry-${index}`}
+                          className="flex flex-col w-full h-full md:h-[385px] border-2 p-[24px] "
+                        >
+                          <div className="w-full flex mb-5">
+                            <span className="font-manrope text-[#272940] text-xl font-medium">
+                              {industry.title}
+                            </span>
+                          </div>
+                          <div>
+                            {industry.technicalAreas.map((item) => {
+                              return (
+                                <div key={`${item.title}`} className="flex flex-col">
+                                  <span className='text-base text-[#7A7B94]'>{`• ${item.title}`}</span>
+                                </div>
+                              )
+                            })}
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
             </div>

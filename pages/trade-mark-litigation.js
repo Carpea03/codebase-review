@@ -7,15 +7,15 @@ export default function TradeMarkLitigation() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade mark oppositions & disputes',
+      title: 'Trade Mark Oppositions & Disputes',
       link: '/trade-mark-oppositions-disputes',
     },
-    { title: 'Trade mark litigation', link: '' },
+    { title: 'Trade Mark Litigation', link: '' },
   ]
   return (
     <Layout navData={data} active={"Services"}>
       <Head>
-        <title>Trade mark litigation | Baxter IP Sydney & Melbourne</title>
+        <title>Trade Mark Litigation | Baxter IP Sydney & Melbourne</title>
         <meta
           name="description"
           content="Enforce your intellectual property rights and your trade mark against trade mark infringers with Baxter IP's trade mark litigation and IP enforcement team."
@@ -36,7 +36,7 @@ export default function TradeMarkLitigation() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Trade mark litigation</h1>
+      <h1>Trade Mark Litigation</h1>
       <p>
         The owner of a registered trade mark has the exclusive rights to use the
         trade mark and authorise others to use the trade mark in relation to the{' '}
