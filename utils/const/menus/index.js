@@ -31,32 +31,40 @@ export const cardsIndustry = [
     iconDark: '/marketSegments2/Engineering (Dark).svg',
     iconLight: '/marketSegments2/Engineering (Light).svg',
     name: 'Engineering',
+    nickname: 'Engineering',
     description:
       'Aero, Agri Tech, Construction, Manufacturing, Mechanical, Mining, Naval, Space',
+    link: '/patent-industry-expertise/engineering',
   },
   {
     id: 2,
     iconDark: '/marketSegments2/HighTech (Dark).svg',
     iconLight: '/marketSegments2/HighTech (Light).svg',
     name: 'HighTech',
+    nickname: 'HighTech',
     description:
       'Applications, Defence, Distributed Ledgers, E-Commerce, Electrical, Electronics, Energy Tech, Laser Tech, Nuclear, Optical Tech, Physics, Quantum, Robotics, Security, Telecommunications',
+    link: '/patent-industry-expertise/hightech',
   },
   {
     id: 3,
     iconDark: '/marketSegments2/Healthtech (Dark).svg',
     iconLight: '/marketSegments2/Healthtech (Light).svg',
     name: 'Healthtech',
+    nickname: 'Healthcare',
     description:
       'Biochemistry, Biotechnology, Chemistry, Medical Devices, Pharmaceuticals, Vet Science',
+      link: '/patent-industry-expertise/healthcare',
   },
   {
     id: 4,
     iconDark: '/marketSegments2/FMCG (Dark).svg',
     iconLight: '/marketSegments2/FMCG (Light).svg',
     name: 'Other Industries',
+    nickname: 'Other Industries',
     description:
       'Cosmetics, Entertainment, FMCG, Food & Bev, Hospitality, Recruitment',
+      link: '/patent-industry-expertise/other-industries',
   },
 ]
 

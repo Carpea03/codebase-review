@@ -2,13 +2,14 @@ import { Container } from '../../components/templates/Container'
 import { Listbox } from '@headlessui/react'
 import { MdArrowDropDown } from 'react-icons/md'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Patents from './contents/patents'
 import TradeMarks from './contents/trademarks'
 import Header from '../../components/templates/Header'
 import Footer from '../../components/templates/Footer'
-import NewsBlog from '../../components/newsblog'
-import ScrollToTop from '../../components/buttons/ScrollToTop'
+import { indexQuery } from '../../lib/queries'
+import IpNewsBlog from '../../components/homepage/IpNewsBlog'
+import { getClient, overlayDrafts } from '../../lib/sanity.server'
 
 const menus = [
   {
@@ -61,6 +62,17 @@ const news = [
 
 export default function Index() {
   const [selectedMenu, setSelectedMenu] = useState(0)
+  const [reduceMorePost, setReduceMorePost] = useState()
+
+  const init = async () => {
+    const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
+    setReduceMorePost(allPosts)
+  }
+
+  useEffect(() => {
+    init()
+  }, [])
+
 
   return (
     <>
@@ -184,7 +196,12 @@ export default function Index() {
               'linear-gradient(177.97deg, rgba(255, 254, 248, 0) 4.08%, rgba(255, 217, 115, 0.4) 98.05%)',
           }}
         >
-          <NewsBlog data={news} />
+          <IpNewsBlog
+                news={reduceMorePost
+                  ?.sort(() => Math.random() - 0.5)
+                  .slice(0, 3)}
+                isblog={true}
+              />
         </div>
       </Container>
       <Footer />
