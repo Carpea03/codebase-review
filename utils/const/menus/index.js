@@ -131,33 +131,33 @@ export const subMenusContact = [
 
 export const subMenusValues = [
   [
-    { title: 'About us', bold: true, division: false, href: '/about' },
+    { title: 'About Us', bold: true, division: false, href: '/about' },
     {
-      title: 'Our values',
+      title: 'Our Values',
       bold: false,
       division: false,
       href: '/living-our-values',
     },
     {
-      title: 'Our philosophy',
+      title: 'Our Philosophy',
       bold: false,
       division: false,
       href: '/baxter-ip-philosophy',
     },
     {
-      title: 'Capital partners',
+      title: 'Capital Partners',
       bold: false,
       division: false,
       href: '/capital-partners',
     },
     {
-      title: 'Awards and recognition',
+      title: 'Awards & Recognition',
       bold: false,
       division: false,
       href: '/awards-and-recognition',
     },
     {
-      title: 'Client testimonials',
+      title: 'Client Testimonials',
       bold: false,
       division: false,
       href: '/testimonials',
@@ -168,28 +168,28 @@ export const subMenusValues = [
 
 export const subMenusJoinUs = [
   [
-    { title: 'Join us', bold: true, division: false, href: '' },
-    { title: 'IP careers', bold: false, division: false, href: '/ip-careers' },
+    { title: 'Join Us', bold: true, division: false, href: '' },
+    { title: 'IP Careers', bold: false, division: false, href: '/ip-careers' },
     {
-      title: 'The role of Australian patent attorneys',
+      title: 'The Role of Australian Patent Attorneys',
       bold: false,
       division: false,
       href: '/role-of-australian-patent-attorneys',
     },
     {
-      title: 'How to become a patent attorney',
+      title: 'How to Become a Patent Attorney',
       bold: false,
       division: false,
       href: '/how-to-become-a-patent-attorney',
     },
     {
-      title: 'The role of Australian trade mark attorneys',
+      title: 'The Role of Australian Trade Mark Attorneys',
       bold: false,
       division: false,
       href: '/role-of-australian-trade-mark-attorneys',
     },
     {
-      title: 'How to become a trade mark attorney',
+      title: 'How to Become a Trade Mark Attorney',
       bold: false,
       division: false,
       href: '/how-to-become-a-trade-mark-attorney',
