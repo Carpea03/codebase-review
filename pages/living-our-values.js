@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Lightbox from '../components/lightbox'
+import Lightboxs from '../components/lightbox'
 import React, { useState } from "react"
 
 export default function LivingOurValues() {
@@ -21,7 +21,7 @@ export default function LivingOurValues() {
   return (
     <Layout navData={data} bannerData={true} layout={2} title={"Living Our Values"} active={"Values"} 
       lightbox={
-        <Lightbox
+        <Lightboxs
           images={[
             'https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg',
             'https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg',
@@ -30,6 +30,7 @@ export default function LivingOurValues() {
           type="image"
           index={imageIndex}
           toggler={toggler}
+          setToggler={setToggler}
         />
       }
     >
