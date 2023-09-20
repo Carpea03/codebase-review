@@ -173,7 +173,7 @@ export default function Layout({
         <>
           <div className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} `}>
             <InnerContainer>
-              <div className="flex flex-col md:px-20 mt-10">
+              <div className="flex flex-col md:px-20 mt-[200px]">
                 <div
                   style={{ zIndex: 10 }}
                   className={`${

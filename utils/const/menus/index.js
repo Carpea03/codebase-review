@@ -34,7 +34,7 @@ export const cardsIndustry = [
     nickname: 'Engineering',
     description:
       'Aero, Agri Tech, Construction, Manufacturing, Mechanical, Mining, Naval, Space',
-    link: '/patent-industry-expertise/engineering',
+    link: '/expertise/engineering',
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ export const cardsIndustry = [
     nickname: 'HighTech',
     description:
       'Applications, Defence, Distributed Ledgers, E-Commerce, Electrical, Electronics, Energy Tech, Laser Tech, Nuclear, Optical Tech, Physics, Quantum, Robotics, Security, Telecommunications',
-    link: '/patent-industry-expertise/hightech',
+    link: '/expertise/hightech',
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ export const cardsIndustry = [
     nickname: 'Healthcare',
     description:
       'Biochemistry, Biotechnology, Chemistry, Medical Devices, Pharmaceuticals, Vet Science',
-      link: '/patent-industry-expertise/healthcare',
+      link: '/expertise/healthcare',
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ export const cardsIndustry = [
     nickname: 'Other Industries',
     description:
       'Cosmetics, Entertainment, FMCG, Food & Bev, Hospitality, Recruitment',
-      link: '/patent-industry-expertise/other-industries',
+      link: '/expertise/other-industries',
   },
 ]
 
