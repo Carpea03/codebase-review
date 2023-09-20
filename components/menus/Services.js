@@ -1,6 +1,6 @@
 import { Disclosure, Tab } from '@headlessui/react'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
 import { FaCaretDown } from 'react-icons/fa'
 import {
@@ -15,33 +15,6 @@ import { topMenus } from '../../utils/const/menus'
 import useContentStore from '../../store/useContent.store'
 import Link from 'next/link'
 
-const panels = [
-  {
-    title: 'PATENTING IN YOUR INDUSTRY',
-    description:
-      'Baxter IP has patent attorneys who have specialist expertise in a variety of industries and technology specialisations.',
-    data: subMenus1,
-  },
-  {
-    title: 'OUR PATENT SERVICES',
-    description:
-      'We explain how to apply for a trade mark in Australia so you can protect your trade mark to secure your brand’s future.',
-    data: subMenus2,
-  },
-  {
-    title: 'IP OPPOSITIONS & DISPUTES',
-    description:
-      'With their extensive expertise in contentious matters, our patent and trade mark attorneys are well-equipped to handle your IP dispute and opposition matters.',
-    data: subMenus3,
-  },
-  {
-    title: 'OUR PARTNERS',
-    description:
-      'The Baxter IP team is trained in capital raising, licensing and government grants and can help connect you with BIP Capital Partners.',
-    data: subMenus4,
-  },
-]
-
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
@@ -51,11 +24,13 @@ const menusData = {
   1: subMenus1,
   2: subMenus2,
   3: subMenus3,
-  4: subMenus4,
 }
 
 export default function Services({ menuIndex, onChange }) {
-  const setMenuState = useContentStore((state) => state.setMenuState)
+
+  const menuState = useContentStore((state) => state.menuState2)
+  const setMenuState = useContentStore((state) => state.setMenuState2)
+
   return (
     <div
       className="w-full bg-[#FFFEFD]"
@@ -64,13 +39,17 @@ export default function Services({ menuIndex, onChange }) {
       }}
     >
       <div className="container max-w-[1440px] mx-auto">
-        <Tab.Group as="div" className="hidden md:flex flex-row justify-center">
+        <Tab.Group as="div" className="hidden md:flex flex-row justify-center"
+          selectedIndex={menuState}
+          onChange={(index) => {
+            setMenuState(index)
+          }}
+        >
           <Tab.List
             as="div"
             className="hidden md:flex flex-col justify-start w-[30%]"
           >
-            {Object.keys(sideMenus).map((index) => (
-              <Link key={index} href={sideMenus[index].href}>
+            {sideMenus.map((item, index) => (
                 <Tab
                   key={index}
                   as="div"
@@ -84,35 +63,22 @@ export default function Services({ menuIndex, onChange }) {
                   }
                 >
                   <Image
-                    src={sideMenus[index].img}
+                    src={item.img}
                     size={16}
                     alt=""
                     width={16}
                     height={16}
                   />
                   <span className="uppercase font-manrope text-sm ">
-                    {sideMenus[index].name}
+                    {item.name}
                   </span>
                 </Tab>
-              </Link>
             ))}
           </Tab.List>
           <Tab.Panels as="div" className="flex flex-col xl:flex-row w-[70%]">
-            <Tab.Panel>
-              <Tab.Group defaultIndex={1}>
-                <Tab.Panels>
-                  <Tab.Panel />
-                  <Tab.Panel>
-                    <SubMenuBlock contents={subMenus} />
-                  </Tab.Panel>
-                </Tab.Panels>
-              </Tab.Group>
-            </Tab.Panel>
-            {panels.map((item, index) => (
+            {sideMenus.map((item, index) => (
               <Tab.Panel key={index}>
-                <div className="flex flex-col w-full h-full bg-[#FFFDF7] font-manrope font-semibold text-sm">
-                  <SubMenuBlock contents={item.data} />
-                </div>
+                <SubMenuBlock contents={menusData[index]} />
               </Tab.Panel>
             ))}
           </Tab.Panels>

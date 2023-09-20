@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Lightbox from '../components/lightbox'
+import Lightboxs from '../components/lightbox'
 import React, { useState } from "react"
 
 export default function PatentProcessFlowcharts() {
@@ -22,7 +22,7 @@ export default function PatentProcessFlowcharts() {
   return (
     <Layout navData={data} active={"Articles"}  
       lightbox={
-        <Lightbox
+        <Lightboxs
           images={[
             'https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png',
             'https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
@@ -35,6 +35,7 @@ export default function PatentProcessFlowcharts() {
           type="image"
           index={imageIndex}
           toggler={toggler}
+          setToggler={setToggler}
         />
       }
       >

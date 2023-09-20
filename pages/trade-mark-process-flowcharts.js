@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Lightbox from '../components/lightbox'
+import Lightboxs from '../components/lightbox'
 import React, { useState } from "react"
 
 const myLoader = ({ src, width, quality }) => {
@@ -26,7 +26,7 @@ export default function TradeMarkProcessFlowcharts() {
   return (
     <Layout navData={data} active={"Articles"}
       lightbox={
-        <Lightbox
+        <Lightboxs
           images={[
             `/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png`,
             `/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png`,
@@ -36,6 +36,7 @@ export default function TradeMarkProcessFlowcharts() {
           type="image"
           index={imageIndex}
           toggler={toggler}
+          setToggler={setToggler}
         />
       }
     >

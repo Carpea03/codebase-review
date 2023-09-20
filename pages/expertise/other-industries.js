@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Layout from '../../components/layout'
 import ExpertiseBox from '../../components/expertiseBox'
 import ClientsBox from '../../components/clientsBox'
-import profiles from '../../utils/const/people'
+import { profiles, awards } from '../../utils/const/people'
 import AttorneysCard from '../../components/attorneysCard'
 
 export default function OtherIndustries() {
@@ -66,7 +66,12 @@ export default function OtherIndustries() {
         heart of clients’ businesses, and the integral role of IP in their
         commercial success.
       </p>
-      <AttorneysCard />
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) => people.linkId !== 'dr-richard-grant'
+        )}
+        awards={awards}
+      />
       <p>
         Contact a member of our team today, to understand how we can help you
         protect your IP and maximise your return on investment.

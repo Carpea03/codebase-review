@@ -29,10 +29,18 @@ import {
   patents,
   tradeMarks,
 } from '../../utils/const/ids'
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+} from 'react-share'
+import { profiles } from '../../utils/const/people'
 
 export default function Post({ data = {}, preview }) {
   const router = useRouter()
   const [tags, setTags] = useState()
+  const [url, setUrl] = useState()
+  const [copy, setCopy] = useState('Copy')
   const { slug } = router.query
   const slugData = data?.post?.slug
   const {
@@ -43,16 +51,16 @@ export default function Post({ data = {}, preview }) {
     enabled: preview && slugData,
   })
 
-
   const menu = [
     { title: 'Articles', link: '/ip-news' },
     { title: post?.title, link: `/ip-news/${slug}` },
   ]
 
   const socialMedia = [
-    { link: 'https://twitter.com/', icon: '/socialmedia/twitter.svg' },
-    { link: 'https://www.linkedin.com/', icon: '/socialmedia/linkedin.svg' },
-    { link: 'https://www.facebook.com/', icon: '/socialmedia/facebook.svg' },
+    { link: '', icon: '/socialmedia/twitter.svg' },
+    { link: '', icon: '/socialmedia/linkedin.svg' },
+    { link: '', icon: '/socialmedia/facebook.svg' },
+    { link: '', icon: '/socialmedia/Copy link.svg' },
   ]
 
   useEffect(() => {
@@ -61,11 +69,12 @@ export default function Post({ data = {}, preview }) {
 
   const init = () => {
     let tagsName = []
+    setUrl(window.location)
     post?.tag?.map((item) => {
       tagsName.push(convertTags(item._ref))
     })
     setTags(tagsName.sort())
-    return;
+    return
   }
 
   const convertTags = (tags) => {
@@ -94,6 +103,14 @@ export default function Post({ data = {}, preview }) {
 
   if (!router.isFallback && !slugData) {
     return <ErrorPage statusCode={404} />
+  }
+
+  const onProfile = () => {
+    const selectedProfile = profiles[0]?.teamMembers?.filter(
+      (people) => people.name.toLowerCase() === post?.author.name.toLowerCase()
+    )[0]
+
+    router.push(`/attorneys/${selectedProfile.linkId}`)
   }
 
   return (
@@ -136,13 +153,15 @@ export default function Post({ data = {}, preview }) {
               <h1 className="font-lora text-2xl md: xl:text-5xl font-medium text-[#272940] gap-60 mt-5">
                 {post?.title}
               </h1>
-              <Avatar
-                size={60}
-                name={post?.author.name}
-                picture={post?.author.picture}
-                body={true}
-                date={post?.date}
-              />
+              <div className="cursor-pointer" onClick={() => onProfile()}>
+                <Avatar
+                  size={60}
+                  name={post?.author.name}
+                  picture={post?.author.picture}
+                  body={true}
+                  date={post?.date}
+                />
+              </div>
             </div>
           </div>
 
@@ -184,7 +203,51 @@ export default function Post({ data = {}, preview }) {
             <div className="font-manrope text-xl text-[#404266] font-semibold mt-20">
               Share Articles
               <div className="flex flex-row">
-                {socialMedia.map((item, index) => (
+                <div
+                  className="cursor-pointer"
+                  onClick={() => {
+                    navigator.clipboard.writeText(url),setCopy('Copied!')
+                  }}
+                >
+                  <div className="tooltip">
+                  <Image
+                    // key={`icon-${index}`}
+                    src={socialMedia[3].icon}
+                    height={40}
+                    width={40}
+                    style={{ marginRight: 16 }}
+                  />
+                  <span className="tooltiptext">{copy}</span>
+                  </div>
+                </div>
+                <TwitterShareButton url={url}>
+                  <Image
+                    // key={`icon-${index}`}
+                    src={socialMedia[0].icon}
+                    height={40}
+                    width={40}
+                    style={{ marginRight: 16 }}
+                  />
+                </TwitterShareButton>
+                <LinkedinShareButton url={url}>
+                  <Image
+                    // key={`icon-${index}`}
+                    src={socialMedia[1].icon}
+                    height={40}
+                    width={40}
+                    style={{ marginRight: 16 }}
+                  />
+                </LinkedinShareButton>
+                <FacebookShareButton url={url}>
+                  <Image
+                    // key={`icon-${index}`}
+                    src={socialMedia[2].icon}
+                    height={40}
+                    width={40}
+                    style={{ marginRight: 16 }}
+                  />
+                </FacebookShareButton>
+                {/* {socialMedia.map((item, index) => (
                   <Link href={item.link} key={`icon-${index}`}>
                     <Image
                       key={`icon-${index}`}
@@ -194,7 +257,7 @@ export default function Post({ data = {}, preview }) {
                       style={{ marginRight: 16 }}
                     />
                   </Link>
-                ))}
+                ))} */}
               </div>
             </div>
             <div className="font-manrope text-xl text-[#404266] font-semibold mb-5 ">
@@ -213,12 +276,14 @@ export default function Post({ data = {}, preview }) {
             <div className="font-manrope text-xl text-[#404266] font-semibold mb-5">
               About the author
             </div>
-            <CardAvatar
-              name={post?.author.name}
-              picture={post?.author.picture}
-              position={post?.author.role}
-              details={post?.author.bio}
-            />
+            <div className="cursor-pointer" onClick={() => onProfile()}>
+              <CardAvatar
+                name={post?.author.name}
+                picture={post?.author.picture}
+                position={post?.author.role}
+                details={post?.author.bio}
+              />
+            </div>
           </div>
         </div>
       </Layout>

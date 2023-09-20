@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Layout from '../../components/layout'
 import ExpertiseBox from '../../components/expertiseBox'
 import ClientsBox from '../../components/clientsBox'
-import profiles from '../../utils/const/people'
 import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
 
 export default function HighTech() {
   const data = [
@@ -67,7 +67,15 @@ export default function HighTech() {
         heart of clients’ businesses, and the integral role of IP in their
         commercial success.
       </p>
-      <AttorneysCard />
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.linkId !== 'dr-qi-zhang' &&
+            people.linkId !== 'warren-chandler' &&
+            people.linkId !== 'dr-richard-grant'
+        )}
+        awards={awards}
+      />
       <p>
         If you are operating at the forefront of innovation, contact one of our
         experts today for specialist advice on how to protect maximise the value

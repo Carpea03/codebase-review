@@ -256,9 +256,8 @@ export const FillingStats = () => {
                             : projects.length - 1
                         ].image
                       })`,
-                      backgroundSisze: 'cover',
                       borderRadius: '2px',
-                      backgroundSize: 'cover !important',
+                      backgroundSize: 'cover',
                       opacity: 0.5,
                     }}
                   >
@@ -273,13 +272,17 @@ export const FillingStats = () => {
                       />
                     </div> */}
                   </div>
-                  <div
-                    className="w-[75%] h-full !bg-cover"
-                    style={{
-                      background: `linear-gradient(239.25deg, rgba(255, 209, 91, 0) -12.39%, rgba(255, 209, 91, 0.5) 207.04%), url(${projects[selectedProject].image})`,
-                      borderRadius: '2px',
-                    }}
-                  />
+                  <InnerContainer>
+                    <div className="flex justify-center  items-center w-full h-full px-[60px]">
+                      <div
+                        className="w-full h-full !bg-cover"
+                        style={{
+                          background: `linear-gradient(239.25deg, rgba(255, 209, 91, 0) -12.39%, rgba(255, 209, 91, 0.5) 207.04%), url(${projects[selectedProject].image})`,
+                          borderRadius: '2px',
+                        }}
+                      />
+                    </div>
+                  </InnerContainer>
                   <div
                     className="w-[10%] h-full flex items-center justify-center !bg-cover"
                     style={{
@@ -290,9 +293,8 @@ export const FillingStats = () => {
                             : selectedProject + 1
                         ].image
                       })`,
-                      backgroundSisze: 'cover',
+                      backgroundSize: 'cover',
                       borderRadius: '2px',
-                      backgroundSize: 'cover !important',
                       opacity: 0.5,
                     }}
                   >

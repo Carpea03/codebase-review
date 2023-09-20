@@ -3,8 +3,9 @@ import Link from 'next/link'
 import Layout from '../../components/layout'
 import ExpertiseBox from '../../components/expertiseBox'
 import ClientsBox from '../../components/clientsBox'
-import profiles from '../../utils/const/people'
 import AttorneysCard from '../../components/attorneysCard'
+import React, { useState, useEffect } from 'react'
+import { profiles, awards } from '../../utils/const/people'
 
 export default function Engineering() {
   const data = [
@@ -64,7 +65,10 @@ export default function Engineering() {
         heart of clients’ businesses, and the integral role of IP in their
         commercial success.
       </p>
-      <AttorneysCard />
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers}
+        awards={awards}
+      />
       <p>
         For specialist advice on how to protect your engineering IP, contact one
         of our experts today.
