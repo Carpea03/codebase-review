@@ -42,7 +42,8 @@ export default function Layout({
 
   const init = async () => {
     const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
-    setReduceMorePost(allPosts)
+    setReduceMorePost(allPosts?.sort(() => Math.random() - 0.5)
+    .slice(0, 3))
   }
 
   return (
@@ -197,9 +198,7 @@ export default function Layout({
             </InnerContainer>
             <>
               <IpNewsBlog
-                news={reduceMorePost
-                  ?.sort(() => Math.random() - 0.5)
-                  .slice(0, 3)}
+                news={reduceMorePost}
                 isblog={true}
               />
             </>
