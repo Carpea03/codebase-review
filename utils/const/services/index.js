@@ -500,6 +500,9 @@ export const subMenus3 = [
     { title: 'Healthtech', bold: false, division: false, href: '/expertise/healthcare' },
     { title: 'Other Industries', bold: false, division: false, href: '/expertise/other-industries' },
     { title: '', bold: false, division: true, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+    { title: '', bold: false, division: true, href: '' },
+    { title: '', bold: false, division: true, href: '' },
   ],
 ]
 
