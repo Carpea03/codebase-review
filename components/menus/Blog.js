@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
 import Link from 'next/link'
 import { sideMenus, subMenus, subMenus1 } from '../../utils/const/blog'
+import useContentStore from '../../store/useContent.store'
 
 const panels = [
   {
@@ -25,6 +26,10 @@ const classNames = (...classes) => {
 }
 
 export default function Blog() {
+
+  const menuState5 = useContentStore((state) => state.menuState5)
+  const setMenuState5 = useContentStore((state) => state.setMenuState5)
+
   return (
     <div
       className="w-full bg-[#FFFEFD]"
@@ -36,36 +41,38 @@ export default function Blog() {
         <Tab.Group
           as="div"
           className="flex flex-col md:flex-row justify-center"
+          selectedIndex={menuState5}
+          onChange={(index) => {
+            setMenuState5(index)
+          }}
         >
           <Tab.List
             as="div"
             className="hidden md:flex flex-col justify-start w-[30%]"
           >
             {sideMenus.map((sideMenu, i) => (
-              <Link key={i} href={sideMenu.href}>
-                <Tab
-                  key={sideMenu.id}
-                  className={({ selected }) =>
-                    classNames(
-                      'flex flex-row justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none',
-                      selected
-                        ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
-                        : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
-                    )
-                  }
-                >
-                  <Image
-                    src={sideMenu.img}
-                    size={16}
-                    alt=""
-                    width={16}
-                    height={16}
-                  />
-                  <span className="uppercase font-manrope text-sm ">
-                    {sideMenu.name}
-                  </span>
-                </Tab>
-              </Link>
+              <Tab
+                key={i}
+                className={({ selected }) =>
+                  classNames(
+                    'flex flex-row justify-start hover:text-black items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none cursor-pointer',
+                    selected
+                      ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
+                      : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
+                  )
+                }
+              >
+                <Image
+                  src={sideMenu.img}
+                  size={16}
+                  alt=""
+                  width={16}
+                  height={16}
+                />
+                <span className="uppercase font-manrope text-sm ">
+                  {sideMenu.name}
+                </span>
+              </Tab>
             ))}
           </Tab.List>
           <Tab.Panels

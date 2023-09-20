@@ -28,8 +28,8 @@ const menusData = {
 
 export default function Services({ menuIndex, onChange }) {
 
-  const menuState = useContentStore((state) => state.menuState2)
-  const setMenuState = useContentStore((state) => state.setMenuState2)
+  const menuState3 = useContentStore((state) => state.menuState3)
+  const setMenuState3 = useContentStore((state) => state.setMenuState3)
 
   return (
     <div
@@ -40,9 +40,9 @@ export default function Services({ menuIndex, onChange }) {
     >
       <div className="container max-w-[1440px] mx-auto">
         <Tab.Group as="div" className="hidden md:flex flex-row justify-center"
-          selectedIndex={menuState}
+          selectedIndex={menuState3}
           onChange={(index) => {
-            setMenuState(index)
+            setMenuState3(index)
           }}
         >
           <Tab.List
@@ -55,7 +55,7 @@ export default function Services({ menuIndex, onChange }) {
                   as="div"
                   className={({ selected }) =>
                     classNames(
-                      'flex justify-start items-center hover:text-black md:pl-4 lg:pl-20 xl:pl-40 gap-3 h-[67px] border-b border-solid outline-none',
+                      'flex justify-start items-center hover:text-black md:pl-4 lg:pl-20 xl:pl-40 gap-3 h-[67px] border-b border-solid outline-none cursor-pointer',
                       selected
                         ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                         : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'

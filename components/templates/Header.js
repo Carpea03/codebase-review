@@ -160,6 +160,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active, lightbox
             {menus.map((menu) => (
               <Disclosure key={menu.id} as="div" className="w-full">
                 <Disclosure.Button
+                onClick={() => onClick(menu.id)}
                   as="div"
                   className={({ open }) =>
                     classNames(
