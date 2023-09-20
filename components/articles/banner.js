@@ -6,7 +6,7 @@ export default function Banner({ layout, coverImage }) {
  
   return (
     <div
-      className={`w-full flex ${
+      className={`w-full flex mt-[69px] ${
         layout === 3
           ? ''
           : layout === 2
@@ -18,7 +18,7 @@ export default function Banner({ layout, coverImage }) {
         <div className="flex justify-center item-center w-full ">
           
           <Image
-            style={{ height: 553, width: '100%', objectFit:'cover' }}
+            style={{ height: 675, width: '100%', objectFit:'cover' }}
             alt={`Cover Image for ${coverImage?.title}`}
             width={0}
             height={0}

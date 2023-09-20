@@ -23,7 +23,7 @@ const ClientsBox = () => {
               key={`logos-${index}`}
               className="flex flex-col w-full h-full border-2"
             >
-              <div className="w-full flex ">
+              <div className="w-full flex justify-center md:justify-center">
                 <Image
                   src={item.image}
                   alt=""
