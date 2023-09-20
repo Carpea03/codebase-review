@@ -60,7 +60,7 @@ export default function Values() {
                 key={i}
                 className={({ selected }) =>
                   classNames(
-                    'flex flex-row justify-start items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none cursor-pointer',
+                    'flex flex-row justify-start hover:text-black items-center md:pl-4 lg:pl-20 xl:pl-40 gap-3 w-full h-[67px] border-b border-solid outline-none cursor-pointer',
                     selected
                       ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
                       : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
