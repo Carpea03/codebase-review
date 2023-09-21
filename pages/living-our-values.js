@@ -58,74 +58,46 @@ export default function LivingOurValues() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h2>Dedicated &amp; supportive, transparent and commercial</h2>
-      <p>
-        These are our core values. At the heart of Baxter IP is a{' '}
-        <Link href="/ip-attorney">group of attorneys</Link> who are dedicated to
-        you, your business and the change you seek to create. Whether
-        you&apos;re in-house counsel for a multinational or a mum-and-dad
-        entrepreneur, you can rest assured that every team member you deal with
-        is dedicated to your successful commercial outcomes.
+      <h1>Care, transparency and commerciality</h1>
+      <p className="mb-10" >
+        Our core values are care, transparency and commerciality. 
+        At the heart of Baxter IP is a group of attorneys who really care about innovators, 
+        their projects and the change that they seek to create. 
+        Whether you are a member of in-house counsel for a multinational or a mum-and-dad entrepreneur, 
+        you can rest assured that our culture of care is for everyone.
       </p>
-      <p>
-        Transparency is at the heart of every trusted advisor and the same is
-        true for IP attorneys. We&apos;ll be completely transparent with you on
-        how we&apos;re handling your matter and consult with you closely.
-        Clarity on timing, costs and sticking to our word, unless we communicate
-        otherwise, are all part and parcel of our transparent service.
-      </p>
-      <p>
-        The best advice an IP attorney can give their client is always business
-        contextual. It&apos;s advice that&apos;s balanced in line with the
-        multi-factorial considerations that govern your strategic plans. We
-        promise to ask the right questions and to provide you with clear,
-        commercially astute IP advice.
-      </p>
-      <figure className="aligncenter size-large is-resized">
-        <Image
-          decoding="async"
-          loading="lazy"
-          src="https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter.jpg"
-          alt="Chris Baxter - Managing Director, Patent &amp; Trade Mark Attorney"
-          width="150"
-          height="150"
-          srcSet="https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter-150x150.jpg 150w, https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter-210x210.jpg 210w, https://www.baxterip.com.au/wp-content/uploads/2021/01/square-chris-baxter-100x100.jpg 100w"
-          sizes="(max-width: 150px) 100vw, 150px"
-        />
-      </figure>
-      <blockquote>
-        Our purpose: To partner with clients to provide transparent and
-        commercially astute advice, dedicated to achieving successful outcomes.
-      </blockquote>
-      <cite>
-        &ndash; Chris Baxter, Managing Director, Patent &amp; Trade Mark
-        Attorney
-      </cite>
       <h2>We give back</h2>
-      <Image
-        decoding="async"
-        onClick={() => setLigthbox(0)}
-        src="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
-        alt="The UNSW Sydney logo"
-        width="255"
-        height="191"
-        className="cursor-pointer"
-      />
-      <Image
-        decoding="async"
-        onClick={() => setLigthbox(1)}
-        src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
-        alt="Founders of 10x Accelerator"
-        width="255"
-        height="191"
-        className="cursor-pointer"
-      />
+      <div className="flex">
+        <div className="flex-col">
+          <Image
+            decoding="async"
+            onClick={() => setLigthbox(0)}
+            src="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
+            alt="The UNSW Sydney logo"
+            width="255"
+            height="191"
+            className="cursor-pointer m-0"
+          />
+        </div>
+        <div className="flex-col">
+          <Image
+            decoding="async"
+            onClick={() => setLigthbox(1)}
+            src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
+            alt="Founders of 10x Accelerator"
+            width="255"
+            height="191"
+            className="cursor-pointer m-0"
+          />
+        </div>
+      </div>
       <p>
         Baxter IP is a benefactor of the{' '}
         <Link
           href="https://www.founders.unsw.edu.au/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-[#816BD9]"
         >
           UNSW Founder&apos;s Program
         </Link>{' '}
@@ -144,31 +116,31 @@ export default function LivingOurValues() {
         <Image
           decoding="async"
           loading="lazy"
-          width="666"
-          height="100"
+          width="366"
+          height="55"
           src="https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre.jpg"
           alt="Nunyara Centre logo"
           srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre.jpg 666w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-300x45.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-210x32.jpg 210w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-100x15.jpg 100w"
           sizes="(max-width: 666px) 100vw, 666px"
         />
       </Link>
-      <p>
+      <p className="mb-10">
         We continue the Baxter family tradition of supporting Australian
         Indigenous causes. Recently, we supported the Nunyara Centre at Officer,
         Victoria in using trade mark law to stop the indigenous word
         &ldquo;Nunyara&rdquo; from being adopted by a large cannabis company for
         one of its products.
       </p>
-      <h2>We continue a philanthropic legacy</h2>
+      <h2 className="mt-5">We continue a philanthropic legacy</h2>
       <Image
         decoding="async"
         onClick={() => setLigthbox(2)}
         src="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
         alt="Percy Baxter Charitable Trust logo"
-        width="255"
-        height="191"
+        width="210"
+        height="124"
       />
-      <p>
+      <p className="mb-10">
         64 years ago, John Percy Hamilton Baxter, Chris&apos; great-grandfather,
         showed how one can use their innovative skills in business enterprise to
         develop wealth and, in turn, help people in need. The{' '}
@@ -176,6 +148,7 @@ export default function LivingOurValues() {
           href="http://www.baxtercharitabletrusts.org.au/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-[#816BD9]"
         >
           Percy Baxter Charitable Trust
         </Link>{' '}
@@ -190,7 +163,7 @@ export default function LivingOurValues() {
         </Link>{' '}
         on a voluntary basis.
       </p>
-      <h2>We step forwards</h2>
+      <h2 className="mt-5">We step forwards</h2>
       <p>
         Historically, many family foundations give to causes that resonate with
         them, that have some intersection with the life experience of the
@@ -200,6 +173,7 @@ export default function LivingOurValues() {
           href="http://www.baxtercharitabletrusts.org.au/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-[#816BD9]"
         >
           Baxter Charitable Trusts
         </Link>

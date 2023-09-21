@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Lightbox from '../components/lightbox'
+import Lightboxs from '../components/lightbox'
 import React, { useState } from 'react'
 
 const myLoader = ({ src, width, quality }) => {
@@ -10,6 +10,9 @@ const myLoader = ({ src, width, quality }) => {
 }
 
 export default function TradeMarkOpposition() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
   const data = [
     { title: 'Services', link: '/services' },
     {
@@ -18,9 +21,6 @@ export default function TradeMarkOpposition() {
     },
     { title: 'Trade Mark Opposition', link: '' },
   ]
-
-  const [toggler, setToggler] = useState(false)
-  const [imageIndex, setImageIndex] = useState(0)
 
   const setLigthbox = (index) => {
     setImageIndex(index)
@@ -32,13 +32,14 @@ export default function TradeMarkOpposition() {
       navData={data}
       active={'Services'}
       lightbox={
-        <Lightbox
+        <Lightboxs
           images={[
-            `/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png`,
+            '/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png',
           ]}
           type="image"
           index={imageIndex}
           toggler={toggler}
+          setToggler={setToggler}
         />
       }
     >
