@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import { brands } from '../../utils/const/clients'
 
-const ClientsBox = () => {
+const ClientsBox = ({ state }) => {
   const logos = [
     { image: '/clients/logo-biometic.png' },
     { image: '/clients/logo-covidien.png' },
@@ -17,19 +18,14 @@ const ClientsBox = () => {
   return (
     <div className="w-full">
       <div className="w-full flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        {logos.map((item, index) => {
+        {brands[state].supportedBrand.map((item, index) => {
           return (
             <div
               key={`logos-${index}`}
               className="flex flex-col w-full h-full border-2"
             >
               <div className="w-full flex justify-center md:justify-center">
-                <Image
-                  src={item.image}
-                  alt=""
-                  width={320}
-                  height={240}
-                />
+                <Image src={item.src} alt="" width={320} height={240} />
               </div>
             </div>
           )
