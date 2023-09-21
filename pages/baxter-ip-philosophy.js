@@ -92,7 +92,7 @@ export default function BaxterIpPhilosophy() {
           </li>
         </ol>
         <blockquote>We promise you commercially astute IP advice</blockquote>
-        <cite>&ndash; Michael Manak, General Manager</cite>
+        <cite>&ndash; Chris Baxter, General Manager</cite>
       </div>
     </Layout>
   )
