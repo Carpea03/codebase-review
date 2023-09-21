@@ -58,7 +58,7 @@ export default function HighTech() {
         <li>Quantum</li>
         <li>Optical Tech</li>
       </ul>
-      <ClientsBox />
+      <ClientsBox state={2} />
       <p>
         In addition to their IP expertise, a number of our attorneys also have
         prior experience working in the engineering industry. They pride
@@ -70,9 +70,8 @@ export default function HighTech() {
       <AttorneysCard
         peoples={profiles[0]?.teamMembers?.filter(
           (people) =>
-            people.linkId !== 'dr-qi-zhang' &&
             people.linkId !== 'warren-chandler' &&
-            people.linkId !== 'dr-richard-grant'
+            people.linkId !== 'dr-seán-klinkradt'
         )}
         awards={awards}
       />
