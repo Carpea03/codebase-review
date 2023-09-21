@@ -56,7 +56,7 @@ export default function Engineering() {
         start-ups, SMEs, multinationals, ASX listed companies, and university
         spin-outs.
       </p>
-      <ClientsBox />
+      <ClientsBox state={0}/>
       <p>
         In addition to their IP expertise, a number of our attorneys also have
         prior experience working in the engineering industry. They pride
@@ -66,7 +66,10 @@ export default function Engineering() {
         commercial success.
       </p>
       <AttorneysCard
-        peoples={profiles[0]?.teamMembers}
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.linkId !== 'dr-richard-grant'
+        )}
         awards={awards}
       />
       <p>

@@ -66,7 +66,7 @@ export default function HealthTech() {
         <li>Vet Science</li>
         <li>Biotechnology</li>
       </ul>
-      <ClientsBox />
+      <ClientsBox state={2} />
       <p>
         In addition to their IP expertise, a number of our attorneys also have
         prior experience working in the engineering industry. They pride
@@ -75,7 +75,16 @@ export default function HealthTech() {
         heart of clients’ businesses, and the integral role of IP in their
         commercial success.
       </p>
-      <AttorneysCard peoples={profiles[0]?.teamMembers} awards={awards} />
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.linkId !== 'chris-baxter' &&
+            people.linkId !== 'dr-richard-grant' &&
+            people.linkId !== 'andrew-balis' &&
+            people.linkId !== 'martin-earley'
+        )}
+        awards={awards}
+      />
       <p>
         For expert advice on protecting your IP and maximising your means of
         commercialisation, contact our team of specialists today.

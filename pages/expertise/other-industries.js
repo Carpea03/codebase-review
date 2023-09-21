@@ -57,7 +57,7 @@ export default function OtherIndustries() {
         areas of expertise, with Principal Julia Caunt having worked for more
         than 16 years in leading global and domestic FMCG organisations.
       </p>
-      <ClientsBox />
+      <ClientsBox state={3} />
       <p>
         In addition to their IP expertise, a number of our attorneys also have
         prior experience working in the engineering industry. They pride
@@ -68,7 +68,10 @@ export default function OtherIndustries() {
       </p>
       <AttorneysCard
         peoples={profiles[0]?.teamMembers?.filter(
-          (people) => people.linkId !== 'dr-richard-grant'
+          (people) =>
+            people.linkId !== 'chris-baxter' &&
+            people.linkId !== 'dr-qi-zhang' &&
+            people.linkId !== 'dr-seán-klinkradt'
         )}
         awards={awards}
       />
