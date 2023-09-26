@@ -9,7 +9,7 @@ export default function PatentCosts() {
     { title: 'Patent Costs', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Patent Costs in Australia | Baxter IP Sydney & Melbourne</title>
         <meta

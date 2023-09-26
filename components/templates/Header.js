@@ -30,7 +30,12 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ topMenuIndex, onTopMenuChange, active, lightbox}) {
+export default function Header({
+  topMenuIndex,
+  onTopMenuChange,
+  active,
+  lightbox,
+}) {
   const menuState = useContentStore((state) => state.menuState)
   const router = useRouter()
 
@@ -160,7 +165,7 @@ export default function Header({ topMenuIndex, onTopMenuChange, active, lightbox
             {menus.map((menu) => (
               <Disclosure key={menu.id} as="div" className="w-full">
                 <Disclosure.Button
-                onClick={() => onClick(menu.id)}
+                  onClick={() => onClick(menu.id)}
                   as="div"
                   className={({ open }) =>
                     classNames(
@@ -174,7 +179,11 @@ export default function Header({ topMenuIndex, onTopMenuChange, active, lightbox
                     boxShadow: '0px 5px 10px rgba(64, 76, 89, 0.05)',
                   }}
                 >
-                  <span className="font-manrope font-medium text-sm text-[#7A7B94] pl-12 py-4">
+                  <span
+                    className={`font-manrope font-medium text-sm ${
+                      active === menu.name ? 'text-[#272940]' : 'text-[#7A7B94]'
+                    } pl-12 py-4`}
+                  >
                     {menu.name}
                   </span>
                 </Disclosure.Button>
