@@ -2,12 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
+import Lightboxs from '../components/lightbox'
+import React, { useState } from 'react'
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function TradeMarkRegistrationProcess() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
   const data = [
     { title: 'Services', link: '/services' },
     {
@@ -20,8 +25,26 @@ export default function TradeMarkRegistrationProcess() {
     },
     { title: 'Trade Mark Registration Process', link: '' },
   ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"}
+      lightbox={
+        <Lightboxs
+          images={[
+            '/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png',
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+          setToggler={setToggler}
+        />
+      }
+    >
       <Head>
         <title>
           Trade Mark Registration Process | Baxter IP Sydney & Melbourne
@@ -42,15 +65,15 @@ export default function TradeMarkRegistrationProcess() {
         commencing with a search and extending beyond registration.
       </p>
       <figure>
-        <Link href="/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png">
-          <Image
-            loader={myLoader}
-            src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
-            alt="Australian Standard Trade Mark Procedure"
-            width="1024"
-            height="331"
-          />
-        </Link>
+        <Image
+          loader={myLoader}
+          onClick={() => setLigthbox(0)}
+          src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+          alt="Australian Standard Trade Mark Procedure"
+          width="1024"
+          height="331"
+          className="cursor-pointer"
+        />
         <figcaption>Australian Standard Trade Mark Procedure</figcaption>
       </figure>
       <h3>File an application</h3>

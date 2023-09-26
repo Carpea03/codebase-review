@@ -13,6 +13,12 @@ export default function Lightboxs({
 
   return (
     <>
+      <style jsx global>{`
+        .yarl__slide_image {
+          background-color: #fff;
+        }
+      `}</style>
+
       <Lightbox
         key={index}
         open={toggler}

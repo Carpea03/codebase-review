@@ -2,19 +2,42 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
+import Lightboxs from '../components/lightbox'
+import React, { useState } from "react"
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function MadridProtocolApplication() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+  
   const data = [
     { title: 'Services', link: '/services' },
     { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
     { title: 'Madrid Protocol', link: '' },
   ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"}
+      lightbox={
+        <Lightboxs
+          images={[
+            '/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png',
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+          setToggler={setToggler}
+        />
+      }
+    >
       <Head>
         <title>Filing a Madrid Protocol Application | Baxter IP</title>
         <meta
@@ -133,15 +156,15 @@ export default function MadridProtocolApplication() {
         parties.
       </p>
       <figure>
-        <Link href="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png">
-          <Image
-            loader={myLoader}
-            src="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
-            alt="Madrid Protocol Trade Mark Application Process (for desktop)"
-            width="1024"
-            height="395"
-          />
-        </Link>
+        <Image
+          loader={myLoader}
+          onClick={() => setLigthbox(0)}
+          src="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
+          alt="Madrid Protocol Trade Mark Application Process (for desktop)"
+          width="1024"
+          height="395"
+          className="cursor-pointer m-0"
+        />
         <figcaption>Madrid Protocol Trade Mark Application Process</figcaption>
       </figure>
       <h4>Dependance on basic application</h4>
