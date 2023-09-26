@@ -105,7 +105,7 @@ export const subMenusContact = [
       title: 'Our Patent & Trade Mark Attorney Offices',
       bold: true,
       division: false,
-      href: '',
+      href: '/contact',
     },
     {
       title: 'Sydney Patent & Trade Mark Office',

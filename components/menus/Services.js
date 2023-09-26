@@ -27,7 +27,6 @@ const menusData = {
 }
 
 export default function Services({ menuIndex, onChange }) {
-
   const menuState3 = useContentStore((state) => state.menuState3)
   const setMenuState3 = useContentStore((state) => state.setMenuState3)
 
@@ -38,18 +37,21 @@ export default function Services({ menuIndex, onChange }) {
         filter: 'drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15))',
       }}
     >
-      <div className="container max-w-[1440px] mx-auto">
-        <Tab.Group as="div" className="hidden md:flex flex-row justify-center"
-          selectedIndex={menuState3}
-          onChange={(index) => {
-            setMenuState3(index)
-          }}
-        >
-          <Tab.List
+      <div className="bg-[#FFFEF8] md:bg-gradient-to-r from-[#FBF8F1] to-[#FFFEF8]">
+        <div className="container max-w-[1440px] mx-auto">
+          <Tab.Group
             as="div"
-            className="hidden md:flex flex-col justify-start w-[30%]"
+            className="hidden md:flex flex-row justify-center"
+            selectedIndex={menuState3}
+            onChange={(index) => {
+              setMenuState3(index)
+            }}
           >
-            {sideMenus.map((item, index) => (
+            <Tab.List
+              as="div"
+              className="hidden md:flex flex-col justify-start w-[30%] bg-[#FBF8F1]"
+            >
+              {sideMenus.map((item, index) => (
                 <Tab
                   key={index}
                   as="div"
@@ -58,7 +60,7 @@ export default function Services({ menuIndex, onChange }) {
                       'flex justify-start items-center hover:text-black md:pl-4 lg:pl-20 xl:pl-40 gap-3 h-[67px] border-b border-solid outline-none cursor-pointer',
                       selected
                         ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
-                        : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
+                        : 'bg-[#FBF8F1] border-[#EEEDE9] font-semibold text-[#000000]/50'
                     )
                   }
                 >
@@ -73,45 +75,46 @@ export default function Services({ menuIndex, onChange }) {
                     {item.name}
                   </span>
                 </Tab>
+              ))}
+            </Tab.List>
+            <Tab.Panels as="div" className="flex w-[70%] bg-[#FFFEF8]">
+              {sideMenus.map((item, index) => (
+                <Tab.Panel key={index}>
+                  <SubMenuBlock contents={menusData[index]} />
+                </Tab.Panel>
+              ))}
+            </Tab.Panels>
+          </Tab.Group>
+          <div className="flex flex-col md:hidden">
+            {sideMenus.map((sideMenu, index) => (
+              <Disclosure key={sideMenu.id}>
+                <Disclosure.Button
+                  className={({ open }) =>
+                    classNames(
+                      'flex justify-start hover:text-black items-center gap-3 w-full h-[67px] pl-12 border-b border-solid outline-none',
+                      open
+                        ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
+                        : 'bg-[#FBF8F1] border-[#EEEDE9] font-semibold text-[#000000]/50'
+                    )
+                  }
+                >
+                  <Image
+                    src={sideMenu.img}
+                    size={16}
+                    alt=""
+                    width={16}
+                    height={16}
+                  />
+                  <span className="uppercase font-manrope font-bold text-xs">
+                    {sideMenu.name}
+                  </span>
+                </Disclosure.Button>
+                <Disclosure.Panel className="flex overflow-scroll">
+                  <SubMenuBlock contents={menusData[index]} />
+                </Disclosure.Panel>
+              </Disclosure>
             ))}
-          </Tab.List>
-          <Tab.Panels as="div" className="flex flex-col xl:flex-row w-[70%]">
-            {sideMenus.map((item, index) => (
-              <Tab.Panel key={index}>
-                <SubMenuBlock contents={menusData[index]} />
-              </Tab.Panel>
-            ))}
-          </Tab.Panels>
-        </Tab.Group>
-        <div className="flex flex-col md:hidden">
-          {sideMenus.map((sideMenu, index) => (
-            <Disclosure key={sideMenu.id}>
-              <Disclosure.Button
-                className={({ open }) =>
-                  classNames(
-                    'flex justify-start hover:text-black items-center gap-3 w-full h-[67px] pl-12 border-b border-solid outline-none',
-                    open
-                      ? 'bg-[#FFFEF8] border-[#F0E4C3] font-bold text-[#000000]'
-                      : 'bg-white border-[#EEEDE9] font-semibold text-[#000000]/50'
-                  )
-                }
-              >
-                <Image
-                  src={sideMenu.img}
-                  size={16}
-                  alt=""
-                  width={16}
-                  height={16}
-                />
-                <span className="uppercase font-manrope font-bold text-xs">
-                  {sideMenu.name}
-                </span>
-              </Disclosure.Button>
-              <Disclosure.Panel className="flex overflow-scroll">
-                <SubMenuBlock contents={menusData[index]} />
-              </Disclosure.Panel>
-            </Disclosure>
-          ))}
+          </div>
         </div>
       </div>
     </div>

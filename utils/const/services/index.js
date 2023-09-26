@@ -27,7 +27,12 @@ export const sideMenus = [
 
 export const subMenus = [
   [
-    { title: 'How to Patent', bold: true, division: false, href: '/how-to-patent' },
+    {
+      title: 'How to Patent',
+      bold: true,
+      division: false,
+      href: '/how-to-patent',
+    },
     {
       title: 'Patent Benefits',
       bold: false,
@@ -40,7 +45,53 @@ export const subMenus = [
       division: false,
       href: '/patent-costs',
     },
-    { title: '', bold: false, division: true },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    { title: 'IP Strategy', bold: true, division: false, href: '/ip-strategy' },
+    { title: 'IP Audit', bold: false, division: false, href: '/ip-audit' },
+    {
+      title: 'IP Valuation',
+      bold: false,
+      division: false,
+      href: '/ip-valuation',
+    },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    {
+      title: 'Patent Search',
+      bold: true,
+      division: false,
+      href: '/patent-search',
+    },
+    {
+      title: 'International Patent Search',
+      bold: false,
+      division: false,
+      href: '/international-patent-search',
+    },
+    {
+      title: 'International-type search',
+      bold: false,
+      division: false,
+      href: '/international-type-search',
+    },
+    {
+      title: 'Australian Patent Search',
+      bold: false,
+      division: false,
+      href: '/australian-patent-search',
+    },
+    {
+      title: 'Freedom-to-Operate Patent Search',
+      bold: false,
+      division: false,
+      href: '/freedom-to-operate-search',
+    },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
     {
       title: 'International Patent Process',
       bold: true,
@@ -72,21 +123,8 @@ export const subMenus = [
       href: '/national-phase-patent',
     },
     { title: '', bold: false, division: true, href: '' },
-    { title: 'Registered Designs', bold: true, division: false, href: '/registered-designs' },
-    {
-      title: 'Registered Design Application',
-      bold: false,
-      division: false,
-      href: '/registered-designs',
-    },
-    { title: 'Design disputes', bold: false, division: false, href: '/design-disputes' },
-    { title: '', bold: false, division: true, href: '' },
   ],
   [
-    { title: 'IP Strategy', bold: true, division: false, href: '/ip-strategy' },
-    { title: 'IP Audit', bold: false, division: false, href: '/ip-audit' },
-    { title: 'IP Valuation', bold: false, division: false, href: '/ip-valuation' },
-    { title: '', bold: false, division: true, href: '' },
     {
       title: 'Australian Patent Process',
       bold: true,
@@ -120,32 +158,27 @@ export const subMenus = [
     { title: '', bold: false, division: true },
   ],
   [
-    { title: 'Patent Search', bold: true, division: false, href: '/patent-search' },
     {
-      title: 'International Patent Search',
-      bold: false,
+      title: 'Registered Designs',
+      bold: true,
       division: false,
-      href: '/international-patent-search',
+      href: '/registered-designs',
     },
     {
-      title: 'International-type search',
+      title: 'Registered Design Application',
       bold: false,
       division: false,
-      href: '/international-type-search',
+      href: '/registered-designs',
     },
     {
-      title: 'Australian Patent Search',
+      title: 'Design disputes',
       bold: false,
       division: false,
-      href: '/australian-patent-search',
-    },
-    {
-      title: 'Freedom-to-Operate Patent Search',
-      bold: false,
-      division: false,
-      href: '/freedom-to-operate-search',
+      href: '/design-disputes',
     },
     { title: '', bold: false, division: true, href: '' },
+  ],
+  [
     {
       title: 'Patent Oppositions & Dispites',
       bold: true,
@@ -164,6 +197,7 @@ export const subMenus = [
       division: false,
       href: '/patent-litigation',
     },
+    { title: '', bold: false, division: true, href: '' },
   ],
 ]
 
@@ -228,37 +262,12 @@ export const subMenus1 = [
       bold: false,
       division: false,
       href: '/trade-mark-squatting',
-    },   
-    { title: '', bold: false, division: true, href: '' },
-    {
-      title: 'International Trade Mark Application',
-      bold: true,
-      division: false,
-      href: '/international-trade-mark-application',
-    },
-    {
-      title: 'Madrid Protocol International Trade Mark Application',
-      bold: false,
-      division: false,
-      href: '/madrid-protocol-application',
-    },
-    {
-      title: 'International Trade Mark Management',
-      bold: false,
-      division: false,
-      href: '/international-trade-mark-management',
-    },
-    {
-      title: 'Trade Marks in Other Countries',
-      bold: false,
-      division: false,
-      href: '/trade-marks-in-other-countries',
     },
     { title: '', bold: false, division: true, href: '' },
   ],
   [
     {
-      title: 'Trade Mark Pre-filing Considerations',
+      title: 'Trade Mark Preparation',
       bold: true,
       division: false,
       href: '/trade-mark-pre-filing-considerations',
@@ -288,6 +297,86 @@ export const subMenus1 = [
       href: '/trade-mark-search',
     },
     { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    {
+      title: 'Trade Mark Registration Process',
+      bold: true,
+      division: false,
+      href: '/trade-mark-registration-process',
+    },
+    {
+      title: 'Australian Trade Mark Application',
+      bold: false,
+      division: false,
+      href: '/trade-mark-application',
+    },
+    {
+      title: 'Trade Mark Examination',
+      bold: false,
+      division: false,
+      href: '/trade-mark-examination',
+    },
+    {
+      title: 'Trade Mark Acceptance',
+      bold: false,
+      division: false,
+      href: '/trade-mark-acceptance',
+    },
+    {
+      title: 'Trade Mark Publication',
+      bold: false,
+      division: false,
+      href: '/publication-of-trade-mark-details',
+    },
+    {
+      title: 'Trade Mark Maintenance',
+      bold: false,
+      division: false,
+      href: '/trade-mark-maintenance',
+    },
+    {
+      title: 'Trade Mark Amendment',
+      bold: false,
+      division: false,
+      href: '/trade-mark-amendment',
+    },
+    {
+      title: 'Trade Mark Renewal',
+      bold: false,
+      division: false,
+      href: '/trade-mark-renewal',
+    },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
+    {
+      title: 'International Trade Mark Application',
+      bold: true,
+      division: false,
+      href: '/international-trade-mark-application',
+    },
+    {
+      title: 'Madrid Protocol International Trade Mark Application',
+      bold: false,
+      division: false,
+      href: '/madrid-protocol-application',
+    },
+    {
+      title: 'International Trade Mark Management',
+      bold: false,
+      division: false,
+      href: '/international-trade-mark-management',
+    },
+    {
+      title: 'Trade Marks in Other Countries',
+      bold: false,
+      division: false,
+      href: '/trade-marks-in-other-countries',
+    },
+    { title: '', bold: false, division: true, href: '' },
+  ],
+  [
     {
       title: 'Trade Mark Oppositions and Disputes',
       bold: true,
@@ -344,57 +433,6 @@ export const subMenus1 = [
     },
     { title: '', bold: false, division: true, href: '' },
   ],
-  [
-    {
-      title: 'Trade Mark Registration Process',
-      bold: true,
-      division: false,
-      href: '/trade-mark-registration-process',
-    },
-    {
-      title: 'Australian Trade Mark Application',
-      bold: false,
-      division: false,
-      href: '/trade-mark-application',
-    },
-    {
-      title: 'Trade Mark Examination',
-      bold: false,
-      division: false,
-      href: '/trade-mark-examination',
-    },
-    {
-      title: 'Trade Mark Acceptance',
-      bold: false,
-      division: false,
-      href: '/trade-mark-acceptance',
-    },
-    {
-      title: 'Trade Mark Publication',
-      bold: false,
-      division: false,
-      href: '/publication-of-trade-mark-details',
-    },
-    {
-      title: 'Trade Mark Maintenance',
-      bold: false,
-      division: false,
-      href: '/trade-mark-maintenance',
-    },
-    {
-      title: 'Trade Mark Amendment',
-      bold: false,
-      division: false,
-      href: '/trade-mark-amendment',
-    },
-    {
-      title: 'Trade Mark Renewal',
-      bold: false,
-      division: false,
-      href: '/trade-mark-renewal',
-    },
-    { title: '', bold: false, division: true, href: '' },
-  ],
 ]
 
 export const subMenus2 = [
@@ -411,7 +449,12 @@ export const subMenus2 = [
       division: false,
       href: '/patent-opposition',
     },
-    { title: 'Patent litigation', bold: false, division: false, href: '/patent-litigation' },
+    {
+      title: 'Patent litigation',
+      bold: false,
+      division: false,
+      href: '/patent-litigation',
+    },
     { title: '', bold: false, division: true, href: '' },
   ],
   [
@@ -496,9 +539,24 @@ export const subMenus3 = [
       division: false,
       href: '/expertise/engineering',
     },
-    { title: 'HighTech', bold: false, division: false, href: '/expertise/hightech' },
-    { title: 'Healthtech', bold: false, division: false, href: '/expertise/healthcare' },
-    { title: 'Other Industries', bold: false, division: false, href: '/expertise/other-industries' },
+    {
+      title: 'HighTech',
+      bold: false,
+      division: false,
+      href: '/expertise/hightech',
+    },
+    {
+      title: 'Healthtech',
+      bold: false,
+      division: false,
+      href: '/expertise/healthcare',
+    },
+    {
+      title: 'Other Industries',
+      bold: false,
+      division: false,
+      href: '/expertise/other-industries',
+    },
     { title: '', bold: false, division: true, href: '' },
     { title: '', bold: false, division: true, href: '' },
     { title: '', bold: false, division: true, href: '' },
@@ -506,8 +564,7 @@ export const subMenus3 = [
   ],
 ]
 
-export const subMenus4 = [
-]
+export const subMenus4 = []
 
 export const services = {
   0: [
