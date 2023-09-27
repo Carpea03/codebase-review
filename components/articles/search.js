@@ -30,7 +30,7 @@ export default function SearchDropDown({ data }) {
             className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none relative mt-1"
             type="text"
             id="search"
-            placeholder="Search news..."
+            placeholder="Search news"
             onChange={onSearch}
           />
         </div>
