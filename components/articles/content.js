@@ -14,6 +14,7 @@ import { general, patents, tradeMarks } from '../../utils/const/ids'
 import Link from 'next/link'
 import Button from '../../components/buttons/Button'
 import { MdArrowForward } from 'react-icons/md'
+import SearchDropDown from './search'
 
 export default function Content({ posts, title, subTitle }) {
   const [filteredData, setFilteredData] = useState()
@@ -176,16 +177,8 @@ export default function Content({ posts, title, subTitle }) {
               {filteredData && title}
             </span>
           </div>
-          <div className="flex md:hidden items-center w-full h-14 mt-5 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
-            <div className="grid place-items-center h-full w-12 text-gray-300">
-              <Search color="#404266" size={24} />
-            </div>
-            <input
-              className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none"
-              type="text"
-              id="search"
-              placeholder="Search..."
-            />
+          <div className="flex md:hidden">
+            <SearchDropDown data={filteredData} />
           </div>
           <div className="flow-col w-full sm:w-[636px] bg-transparent ">
             {currentItems?.map((post) => (
@@ -254,33 +247,24 @@ export default function Content({ posts, title, subTitle }) {
           </div>
         </div>
         <div className="w-full mt-10 md:m-10">
-          <div className="hidden md:flex items-center w-full h-14 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
-            <div className="grid place-items-center h-full w-12 text-gray-300">
-              <Search color="#404266" size={24} />
-            </div>
-            <input
-              className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none"
-              type="text"
-              id="search"
-              placeholder="Search..."
-            />
+          <div className="hidden md:flex ">
+            <SearchDropDown data={filteredData} />
           </div>
           <div className="mt-10 mb-5">
             <span className="font-lora text-4xl text-black">
               {subTitle || 'Articles for you'}
             </span>
-            {articlesPost?.slice(0, 5)
-              .map((post, index) => (
-                <ArticlesList
-                  key={post.slug}
-                  title={post.title}
-                  index={index}
-                  date={post.date}
-                  author={post.author}
-                  slug={post.slug}
-                  excerpt={post.excerpt}
-                />
-              ))}
+            {articlesPost?.slice(0, 5).map((post, index) => (
+              <ArticlesList
+                key={post.slug}
+                title={post.title}
+                index={index}
+                date={post.date}
+                author={post.author}
+                slug={post.slug}
+                excerpt={post.excerpt}
+              />
+            ))}
           </div>
           <div>
             <Link href="/ip-news/page" className="no-underline">
@@ -314,7 +298,11 @@ export default function Content({ posts, title, subTitle }) {
             <span className="font-lora text-4xl text-black">Categories</span>
           </div>
           {category.map((item, index) => (
-            <Link className="no-underline" key={`Link-${item.title}-${index}`} href={item.link}>
+            <Link
+              className="no-underline"
+              key={`Link-${item.title}-${index}`}
+              href={item.link}
+            >
               <CategoryList
                 key={`${item.title}-${index}`}
                 title={item.title}
