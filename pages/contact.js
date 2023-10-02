@@ -8,18 +8,28 @@ import { useRouter } from 'next/router'
 import { InnerContainer } from '../components/templates/InnerContainer'
 import Head from 'next/head'
 
+
 export default function ContactUs({ office }) {
   const [callUs, setCallUs] = useState(true)
   const router = useRouter()
   const [selectedId, setSelectedId] = useState(0)
   const [selectedPlace, setSelectedPlace] = useState()
   const [place, setPlace] = useState([])
+  const [area, setArea] = useState(null)
 
   useEffect(() => {
     let office = null
     let newArray = []
-    
-    var area = 'sydney'
+    let ignore = false;
+
+    var url = window.location
+
+    var area = url
+      .toString()
+      .substring(url.toString().lastIndexOf('/') + 1)
+      .toLowerCase()
+
+    setArea(area);
 
     contactDetails.sort().map((key) => {
       newArray.push({ ...key })
@@ -28,11 +38,28 @@ export default function ContactUs({ office }) {
     setPlace(newArray)
 
     office = contactDetails.filter(
-      (item) => item.name.toLowerCase() === area
+      (item) => item.name.toLowerCase() === 'sydney'
     )[0]
 
-    setSelectedPlace(office?.number)
-    setSelectedId(office?.id)
+    if (!ignore) {
+      const geoLocation = handleFetchData();
+
+      geoLocation.then((response) => {
+        if (response?.geolocation_data?.country_name == 'Australia' && ((response?.geolocation_data?.city == 'Melbourne' || response?.geolocation_data?.city == 'Brisbane'))) {
+        
+          office = contactDetails.filter(
+            (item) => item.name.toLowerCase() === response?.geolocation_data?.city.toLowerCase()
+          )[0]
+        }
+
+        setSelectedPlace(office?.number)
+        setSelectedId(office?.id)
+
+        console.log (office)
+      });
+    }
+    
+    return () => { ignore = true; }
   }, [office])
 
   const onSelected = (id) => {
@@ -53,14 +80,25 @@ export default function ContactUs({ office }) {
     </option>
   )
 
+  const handleFetchData = async () => {
+    const responseIp = await fetch('https://api.ipify.org?format=json');
+    const dataIp = await responseIp.json();
+
+    const responseLocation = await fetch(`https://https-api.apigurus.com/iplocation/v1.8/locateip?key=SAKA86EJN6G22AHJS6RZ&ip=${dataIp.ip}&format=JSON`);
+    const dataLocation = await responseLocation.json();
+
+    return dataLocation
+  }
+
+
   return (
     <>
       <Head>
-        <title>{`Contact our Baxter IP Sydney Patent & Trade Mark Attorneys`}</title>
+        <title>{`Other Australian enquiries | Baxter IP, Patent & Trade Mark Attorneys`}</title>
         <meta
           name="description"
           content={
-            'Call +61 2 9264 6716 to talk with a patent or trade mark attorney at our Sydney office to discuss intellectual property queries today.'
+            'Call +61 2 9264 6716 to talk with a patent or trade mark attorney at Baxter IP to discuss your patents, trade marks and intellectual property options today.'
           }
         />
       </Head>
@@ -83,12 +121,12 @@ export default function ContactUs({ office }) {
                 <div className="w-full flex flex-col items-center md:items-start px-4 sm:px-[76px] md:pl-40 py-28 sm:py-[409px] md:py-48">
                   <div className="w-full md:w-[558px] h-44 sm:h-80 md:h-[185px] flex flex-col items-center gap-6 sm:gap-[60px] md:gap-6">
                     <span className="font-lora font-medium text-3xl sm:text-5xl sm:leading-[138%] md:text-[40px] md:leading-[51px] text-white text-center md:text-left">
-                      Australian Patent & Trade Mark Office
+                      <h1>Australian Patent & Trade Mark Office</h1>
                     </span>
                     <div className="flex flex-row items-center justify-center md:justify-start h-14 sm:h-32 md:h-[59px] w-full">
                       <select
                         onChange={(e) => onSelected(e.target.value)}
-                        className="select-contact flex flex-row items-center px-5 py-4 sm:py-9 sm:px-5 md:px-6 md:py-4 gap-[10px] bg-[#FFCE4F] cursor-pointer h-full rounded-l-md flex font-manrope font-semibold text-[#404266] text-xl whitespace-nowrap"
+                        className="select-contact flex-row items-center px-5 py-4 sm:py-9 sm:px-5 md:px-6 md:py-4 gap-[10px] bg-[#FFCE4F] cursor-pointer h-full rounded-l-md flex font-manrope font-semibold text-[#404266] text-xl whitespace-nowrap"
                         // value={'Call us Brisbane Office'}
                       >
                         {place?.map((item, index) =>
@@ -109,7 +147,7 @@ export default function ContactUs({ office }) {
         </div>
 
         <InnerContainer>
-          <Contact contactDetails={contactDetails[selectedId]} />
+          <Contact contactDetails={contactDetails[selectedId]} area={area} />
         </InnerContainer>
       </Container>
       <Footer page={'Contact'} />

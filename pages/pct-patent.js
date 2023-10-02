@@ -2,15 +2,38 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '../components/layout'
+import Lightboxs from '../components/lightbox'
+import React, { useState } from "react"
 
 export default function PctPatent() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
   const data = [
     { title: 'Services', link: '/services' },
     { title: 'How to Patent', link: '/how-to-patent' },
     { title: 'Stage 3: PCT International Patent Applications', link: '' },
   ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout navData={data} active={"Services"} stepper={3}>
+    <Layout navData={data} active={"Services"} stepper={3}
+      lightbox={
+        <Lightboxs
+          images={[
+            'https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+          setToggler={setToggler}
+        />
+      }
+    >
       <Head>
         <title>
           PCT Patent | PCT International Patent Applications | Baxter IP
@@ -32,23 +55,18 @@ export default function PctPatent() {
       <h2>How to patent an idea internationally?</h2>
 
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="523"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-300x98.png"
-        >
-          <Image
-            decoding="async"
-            loading="lazy"
-            width="1024"
-            height="335"
-            src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
-            alt="Flowchart B - PCT Patent Procedure"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-300x98.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-768x251.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1536x503.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-2048x670.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-210x69.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-100x33.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
-        </Link>
+        <Image
+          decoding="async"
+          onClick={() => setLigthbox(0)}
+          loading="lazy"
+          width="1024"
+          height="335"
+          src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
+          alt="Flowchart B - PCT Patent Procedure"
+          srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-300x98.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-768x251.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1536x503.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-2048x670.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-210x69.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-100x33.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3.png 1600w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="cursor-pointer"
+        />
         <figcaption>Flowchart B &ndash; PCT Patent Procedure</figcaption>
       </figure>
 

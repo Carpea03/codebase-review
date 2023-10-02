@@ -146,7 +146,7 @@ const CheckBoxBlock = ({ title, name, items }) => {
 
 const AnyReactComponent = ({ icon }) => <div>{icon}</div>
 
-export default function Contact({ contactDetails }) {
+export default function Contact({ contactDetails, area }) {
   const router = useRouter()
   const contact = useRef(null)
   const firstNameFocus = useRef(null)
@@ -264,7 +264,7 @@ export default function Contact({ contactDetails }) {
         <form
           id="ActionStepWebform10"
           name="ActionStepWebform10"
-          enctype="application/x-www-form-urlencoded"
+          encType="application/x-www-form-urlencoded"
           method="post"
           action="https://go.actionstep.com/frontend/application/webform/post"
           ref={contact}
@@ -449,7 +449,7 @@ export default function Contact({ contactDetails }) {
       </div>
       <div className="flex flex-col items-start gap-9 h-full">
         <h2 className="font-lora font-medium text-2xl sm:text-[32px] text-[#272940]">
-          {`Contact our ${contactDetails?.name} Patent & Trade Mark Office`}
+          {`Contact our ${area == 'contact' ? 'Australian' : contactDetails?.name} Patent & Trade Mark Office`}
         </h2>
         <div className="w-full border-[3px] border-[#816BD9] mx-auto">
           <div
@@ -461,7 +461,7 @@ export default function Contact({ contactDetails }) {
           >
             <div className="flex flex-row items-center justify-between px-5 w-full">
               <span className="font-manrope font-medium text-xl text-white">
-                {`${contactDetails?.name} office`}
+                {`${contactDetails?.name} Office`}
               </span>
               {/* <FiChevronUp
                 className={`w-6 h-6 sm:w-8 sm:h-8 stroke-white ${
