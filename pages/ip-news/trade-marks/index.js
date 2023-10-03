@@ -17,7 +17,10 @@ export default function Index({ allPosts: initialAllPosts, preview, id }) {
     enabled: preview,
   })
   const [heroPost, ...morePosts] = allPosts || []
-  const data = [{ title: 'Articles', link: '/ip-news' }]
+  const data = [
+    { title: 'Articles', link: '/ip-news' },
+    { title: 'Trade Marks', link: '' },
+  ]
 
   return (
     <>

@@ -12,10 +12,11 @@ export default function FreedomToOperatePatentSearch() {
     { title: 'Freedom-to-Operate Patent Search', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
-          Freedom-to-Operate Patent Search | Patent infringement search | Baxter IP
+          Freedom-to-Operate Patent Search | Patent Infringement Search | Baxter
+          IP
         </title>
         <meta
           name="description"

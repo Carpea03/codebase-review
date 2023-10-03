@@ -4,6 +4,10 @@ export const transparentCounselData = {
       {
         header: 'Responsive, Transparent Counsel',
         body: 'From design applications to registration and enforcement, we can help you establish robust design rights.',
+        metaTitle:
+          'Protect your valuable design | Baxter IP Sydney & Melbourne',
+        metaDetails:
+          "Protect your product's distinctive look with design registration, deterring copycats and ensuring 10 years of exclusive ownership in selected countries. Stand out, stay secure.",
       },
     ],
     header: [
@@ -37,13 +41,15 @@ export const transparentCounselData = {
       {
         header: 'Strong & Efficient Counsel',
         body: 'From determining IP infringement and sending a cease and desist letter through to a patent opposition, trade mark opposition or managing a dispute, our experienced IP attorneys are ready to guide you.',
+        metaTitle: 'IP Oppositions & Disputes | Baxter IP Sydney & Melbourne',
+        metaDetails:
+          'Protecting your intellectual property rights through enforcement. Once infringement is established, a cease and desist letter can be sent to a competitor.',
       },
     ],
     header: [
       {
         title: 'Resolve your IP dispute.',
-        body:
-          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.',
+        body: 'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.',
       },
     ],
     data: [
@@ -69,13 +75,16 @@ export const transparentCounselData = {
       {
         header: 'Thorough Counsel, Actionable Insights',
         body: '',
+        metaTitle:
+          'Know your IP. Understand its value. Maximise its potential. | Baxter IP Sydney & Melbourne',
+        metaDetails:
+          "Uncover a business's IP foundation for grasping its value and optimizing potential, the initial stride towards commercial success and partnerships.",
       },
     ],
     header: [
       {
         title: 'Know your IP. Understand its value. Maximise its potential.',
-        body:
-          'Establishing a clear understanding of the underlying intellectual property in a business is the first step to understanding its commercial value to the business or third party and how its potential can be maximised. IP audit, valuation and due diligence processes can be conducted on the identifiable IP of any business and we’re ready to assist.',
+        body: 'Establishing a clear understanding of the underlying intellectual property in a business is the first step to understanding its commercial value to the business or third party and how its potential can be maximised. IP audit, valuation and due diligence processes can be conducted on the identifiable IP of any business and we’re ready to assist.',
       },
     ],
     data: [
@@ -101,13 +110,16 @@ export const transparentCounselData = {
       {
         header: 'Strong & Efficient Counsel',
         body: 'From determining patent infringement and sending a cease and desist letter through to a patent opposition or negotiating a dispute, our experienced patent attorneys are ready to guide you.',
+        metaTitle:
+          'Patent Oppositions & Disputes | Baxter IP Sydney & Melbourne',
+        metaDetails:
+          'Protecting your patent rights through patent enforcement. Once patent infringement is established, a cease and desist letter can be sent to a competitor.',
       },
     ],
     header: [
       {
         title: 'Resolve your patent dispute.',
-        body:
-          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.',
+        body: 'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, opposition or, in consultation with our legal team, Federal court enforcement we’re ready to help you identify options for resolution.',
       },
     ],
     data: [
@@ -133,6 +145,9 @@ export const transparentCounselData = {
       {
         header: 'Responsive, Transparent Counsel',
         body: 'From patent searches and applications to handling disputes and litigation, we can help you establish robust patent rights.',
+        metaTitle: 'Patent Attorney Services | Baxter IP Sydney & Melbourne',
+        metaDetails:
+          'Your IP is what makes your product unique. By lodging a patent application, your patent pending status will establish your claim on your new idea.',
       },
     ],
     header: [
@@ -166,13 +181,15 @@ export const transparentCounselData = {
       {
         header: 'Strong & Efficient Counsel',
         body: 'From sending a cease and desist letter, to obtaining consent orders, filing a trade mark opposition or negotiating a trade mark dispute, our experienced trade mark attorneys can guide you to the best possible outcomes.',
+        metaTitle: 'Trade Mark Oppositions & Disputes | Baxter IP Sydney & Melbourne',
+        metaDetails:
+          'Assisting clients to protect their trade mark during times of dispute, opposition or infringement. Our dedicated team can also enforce your trade mark.',
       },
     ],
     header: [
       {
         title: 'Resolve your trade mark dispute.',
-        body:
-          'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, consent orders, opposition or court enforcement, we’re ready to help you identify options for resolution.',
+        body: 'Whether your dispute requires strategic negotiation, a cease and desist letter, mediation, arbitration, consent orders, opposition or court enforcement, we’re ready to help you identify options for resolution.',
       },
     ],
     data: [
@@ -198,13 +215,15 @@ export const transparentCounselData = {
       {
         header: 'Responsive, Transparent Counsel',
         body: 'From trade mark filing and trade mark management to overcoming disputes and litigation, we can help you maximise the benefits of your registered trade mark.',
+        metaTitle: 'Trade Mark Attorney Services | Baxter IP Sydney & Melbourne',
+        metaDetails:
+          'A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, contact our team of trade mark attorneys.',
       },
     ],
     header: [
       {
         title: 'Protect your trade mark to secure your brand’s future.',
-        body:
-          'Your trade mark is the face of your business. It directs customers back to your company, the source of the quality of your products or services. A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, get in touch with us today.',
+        body: 'Your trade mark is the face of your business. It directs customers back to your company, the source of the quality of your products or services. A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, get in touch with us today.',
       },
     ],
     data: [

@@ -2,15 +2,39 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/layout'
+import Lightboxs from '../components/lightbox'
+import React, { useState } from "react"
 
 export default function NationalPhasePatent() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
   const data = [
     { title: 'Services', link: '/services' },
     { title: 'How to Patent', link: '/how-to-patent' },
     { title: 'Stage 4: National Phase Patent Applications', link: '' },
   ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout navData={data} active={"Services"} stepper={4}>
+    <Layout navData={data} active={"Services"} stepper={4}
+      lightbox={
+        <Lightboxs
+          images={[
+            'https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png',
+            'https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png',
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+          setToggler={setToggler}
+        />
+      }
+    >
       <Head>
         <title>
           Australian PCT National Phase Patent Application | Baxter IP
@@ -33,23 +57,18 @@ export default function NationalPhasePatent() {
       <h1>Stage 4: National Phase Patent Applications</h1>
       <h2>National phase patent applications overview &amp; timing</h2>
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="492"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png"
-        >
-          <Image
-            decoding="async"
-            loading="lazy"
-            width="1024"
-            height="315"
-            src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
-            alt="Patent Procedure Overview"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
-        </Link>
+        <Image
+          decoding="async"
+          onClick={() => setLigthbox(0)}
+          loading="lazy"
+          width="1024"
+          height="315"
+          src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
+          alt="Patent Procedure Overview"
+          srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="cursor-pointer"
+        />
         <figcaption>Patent Procedure Overview</figcaption>
       </figure>
       <p>
@@ -96,23 +115,18 @@ export default function NationalPhasePatent() {
         applications to refer to both on this page.
       </p>
       <figure className="wp-block-image size-large">
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="478"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-300x90.png"
-        >
-          <Image
-            decoding="async"
-            loading="lazy"
-            width="1024"
-            height="306"
-            src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png"
-            alt="Flowchart C - Australian Standard Patent Procedure"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-300x90.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-768x229.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1536x459.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-2048x611.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-210x63.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-100x30.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
-        </Link>
+        <Image
+          decoding="async"
+          onClick={() => setLigthbox(1)}
+          loading="lazy"
+          width="1024"
+          height="306"
+          src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png"
+          alt="Flowchart C - Australian Standard Patent Procedure"
+          srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-300x90.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-768x229.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1536x459.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-2048x611.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-210x63.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-100x30.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop.png 1600w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="cursor-pointer"
+        />
         <figcaption>
           Flowchart C &ndash; Australian Standard Patent Procedure
         </figcaption>

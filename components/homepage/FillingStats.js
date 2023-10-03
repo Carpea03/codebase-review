@@ -176,9 +176,9 @@ export const FillingStats = () => {
                       <div className="flex flex-col sm:flex-row">
                         <div className="mt-10 flex flex-col">
                           <div>
-                            <h2 className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940]">
-                              Giving back to the community
-                            </h2>
+                            <span className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940]">
+                              <h2>Giving back to the community</h2>
+                            </span>
                           </div>
                           <div className="mt-5">
                             <span className="text-xl font-manrope font-medium opacity-50">
@@ -230,15 +230,15 @@ export const FillingStats = () => {
                         className={`w-1/3 md:w-1/4 flex flex-shrink-0 items-center justify-center cursor-pointer`}
                         onClick={() => setSelectedProject(index)}
                       >
-                        <h3
+                        <span
                           className={`font-lora font-medium sm:text-2xl md:text-3xl xltext-[32px] leading-10 whitespace-nowrap ${
                             selectedProject === index
                               ? 'opacity-100'
                               : 'opacity-50'
                           }`}
                         >
-                          {project.name}
-                        </h3>
+                          <h3>{project.name}</h3>
+                        </span>
                       </div>
                     ))}
                   </div>

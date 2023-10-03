@@ -162,7 +162,7 @@ export const subMenus = [
       title: 'Registered Designs',
       bold: true,
       division: false,
-      href: '/registered-designs',
+      href: '/designs',
     },
     {
       title: 'Registered Design Application',
@@ -171,7 +171,7 @@ export const subMenus = [
       href: '/registered-designs',
     },
     {
-      title: 'Design disputes',
+      title: 'Design Disputes',
       bold: false,
       division: false,
       href: '/design-disputes',
