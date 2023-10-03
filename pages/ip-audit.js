@@ -9,10 +9,10 @@ export default function IpAudit() {
     { title: 'IP Audit', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
-          IP Audit | Intellectual property audit | Baxter IP Sydney & Melbourne
+          IP Audit | Intellectual Property Audit | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"

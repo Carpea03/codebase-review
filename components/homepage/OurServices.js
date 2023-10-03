@@ -20,9 +20,9 @@ export const OurServices = () => {
     <Container className="flex flex-col sm:py-[100px] md:py-[20px] gap-[70px] bg-ourservice">
       <InnerContainer>
         <div className="flex items-center justify-center py-10 ">
-          <h2 className="font-lora font-medium text-xl sm:text-[44px] leading-none md:text-5xl text-[#8370D5] md:text-[#5F618C] text-center">
-            Working with us
-          </h2>
+          <span className="font-lora font-medium text-xl sm:text-[44px] leading-none md:text-5xl text-[#8370D5] md:text-[#5F618C] text-center">
+            <h2>Working with us</h2>
+          </span>
         </div>
         <div className="flex flex-col pb-20">
           <div className="hidden md:flex flex-col items-center  md:px-20 xl:px-40">
@@ -51,9 +51,9 @@ export const OurServices = () => {
                       : 'order-last pl-[116px]'
                   }`}
                 >
-                  <h3 className="mb-5 font-manrope font-medium text-4xl text-[#272940]">
-                    {service.title}
-                  </h3>
+                  <span className="mb-5 font-manrope font-medium text-4xl text-[#272940]">
+                    <h3>{service.title}</h3>
+                  </span>
                   <span className="mb-10 font-manrope font-semibold text-xl text-[#7A7B94]">
                     {service.content}
                   </span>

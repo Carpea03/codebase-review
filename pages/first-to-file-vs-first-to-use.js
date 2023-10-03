@@ -9,10 +9,10 @@ export default function FirstToFileVsFirstToUse() {
     { title: 'First to File vs First to Use', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
-          First to File vs First to use | Trade marks in other countries |
+          First to File vs First to Use | Trade marks in other countries |
           Baxter IP
         </title>
         <meta

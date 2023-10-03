@@ -94,7 +94,7 @@ const Footer = ({ page }) => {
                       />
                     </div>
                     <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base flex items-center text-white">
-                      Innovate Boldly. Protect Strategically.
+                      <h2>Innovate Boldly. Protect Strategically.</h2>
                     </span>
                   </div>
                   <div className="md:w-1/3 flex flex-row items-center md:py-5 relative">

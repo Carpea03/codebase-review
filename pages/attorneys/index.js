@@ -66,8 +66,10 @@ export default function People() {
                     ATTORNEYS
                   </span>
                   <span className="font-lora font-medium text-[32px] sm:text-5xl leading-[140%] sm:tracking-[-0.03em] text-center text-white">
-                    Our patent & trade mark attorney teams in Sydney & Melbourne
-                    are poised to protect what’s yours
+                    <h1>
+                      Our patent & trade mark attorney teams in Sydney &
+                      Melbourne are poised to protect what’s yours
+                    </h1>
                   </span>
                 </div>
               </InnerContainer>

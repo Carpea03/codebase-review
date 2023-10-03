@@ -55,11 +55,13 @@ export default function HeroBanner({ landing, data }) {
                     <div className="flex flex-col">
                       <div className="flex mt-10 justify-center text-center md:pt-10 md:text-center lg:py-2 xl:text-left md:justify-center xl:justify-start">
                         <span className="text-6xl font-lora font-semibold mb-5">
-                          {landing
-                            ? data?.header[0]?.title
-                            : 'Innovate Boldly.'}
-                          <br />
-                          {landing ? '' : 'Protect Strategically.'}
+                          <h1>
+                            {landing
+                              ? data?.header[0]?.title
+                              : 'Innovate Boldly.'}
+                            <br />
+                            {landing ? '' : 'Protect Strategically.'}
+                          </h1>
                         </span>
                       </div>
                       <div className="flex mt-5 mb-10 justify-center text-center md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0 md:text-center xl:text-left md:justify-center xl:justify-start">
@@ -67,10 +69,11 @@ export default function HeroBanner({ landing, data }) {
                           style={{ whiteSpace: 'pre-line' }}
                           className="text-2xl font-semibold font-manrope opacity-50"
                         >
-                          {' '}
-                          {landing
-                            ? data?.header[0]?.body
-                            : details[0].description}
+                          <h2>
+                            {landing
+                              ? data?.header[0]?.body
+                              : details[0].description}
+                          </h2>
                         </p>
                       </div>
                     </div>

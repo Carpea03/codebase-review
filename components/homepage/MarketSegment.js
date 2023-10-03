@@ -20,7 +20,12 @@ const marketSigment2 = [
       "We've delivered successful projects spanning multiple industries and functions and can draw on this expertise to provide seamless cross-disciplinary advice.",
   },
 ]
-export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChangeIndustry }) => {
+export const MarketSegment = ({
+  cardIndex,
+  onChange,
+  cardIndexIndustry,
+  onChangeIndustry,
+}) => {
   const [collapseIndustry, setCollapseIndustry] = useState(false)
   const [collapse, setCollapse] = useState(false)
   const [selectedItem, setSelectedItem] = useState('')
@@ -53,9 +58,9 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
         <div className="w-full flex flex-col gap-10 sm:gap-10 py-16 sm:py-20 md:py-20 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-40 items-center">
           <div className="flex flex-col md:items-start gap-[30px] sm:gap-[30px] md:gap-10 w-full">
             <div className="flex w-full justify-center items-center">
-              <h2 className="font-lora font-medium text-4xl md:text-5xl sm:text-4xl  text-[#272940] text-center md:text-left">
-                {'Tailoring your experience'}
-              </h2>
+              <span className="font-lora font-medium text-4xl md:text-5xl sm:text-4xl  text-[#272940] text-center md:text-left">
+                <h2>{'Tailoring your experience'}</h2>
+              </span>
             </div>
             <div className="md:w-full flex flex-row justify-between md:items-start">
               <div className="md:w-1/2 flex flex-col item -center md:items-start gap-8 md:gap-[10px]">
@@ -63,23 +68,25 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
                   {marketSigment[0].header}
                 </span>
                 <div className="flex py-1 gap-[10px]">
-                  <h3 className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
-                    {marketSigment[0].title}
-                  </h3>
+                  <span className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
+                    <h3>{marketSigment[0].title}</h3>
+                  </span>
                 </div>
               </div>
               <div
-                  onClick={() => {
-                    onCollapse()
-                    onChange(-1)
-                  }}
-                  className={`${collapse ? 'flex' : 'hidden'} flex-row justify-center text-center mr-5 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] h-20 w-100 cursor-pointer`}
-                  style={{
-                    boxShadow:
-                      '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-                    border: '1px solid #000000',
-                  }}
-                >
+                onClick={() => {
+                  onCollapse()
+                  onChange(-1)
+                }}
+                className={`${
+                  collapse ? 'flex' : 'hidden'
+                } flex-row justify-center text-center mr-5 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] h-20 w-100 cursor-pointer`}
+                style={{
+                  boxShadow:
+                    '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
+                  border: '1px solid #000000',
+                }}
+              >
                 <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
                   Clear Section
                 </span>
@@ -290,7 +297,7 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
             </div>
           )}
 
-        {/* --------------------- Industry Section ------------------- */}
+          {/* --------------------- Industry Section ------------------- */}
           <div className="w-full">
             <div className="md:w-full flex flex-row justify-between md:items-start">
               <div className="w-full flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
@@ -304,17 +311,19 @@ export const MarketSegment = ({ cardIndex, onChange, cardIndexIndustry, onChange
                 </div>
               </div>
               <div
-                  onClick={() => {
-                    onCollapseIndustry()
-                    onChangeIndustry(-1)
-                  }}
-                  className={`${collapseIndustry ? 'flex' : 'hidden'} flex-row justify-center text-center py-[10px] mr-5 sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] cursor-pointer h-20 w-100`}
-                  style={{
-                    boxShadow:
-                      '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-                    border: '1px solid #000000',
-                  }}
-                >
+                onClick={() => {
+                  onCollapseIndustry()
+                  onChangeIndustry(-1)
+                }}
+                className={`${
+                  collapseIndustry ? 'flex' : 'hidden'
+                } flex-row justify-center text-center py-[10px] mr-5 sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] cursor-pointer h-20 w-100`}
+                style={{
+                  boxShadow:
+                    '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
+                  border: '1px solid #000000',
+                }}
+              >
                 <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
                   Clear Section
                 </span>

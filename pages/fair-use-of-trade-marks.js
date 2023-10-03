@@ -9,7 +9,7 @@ export default function FairUseOfTradeMarks() {
     { title: 'Fair Use of Trade Marks', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Fair Use of Trade Marks | Baxter IP Sydney & Melbourne</title>
         <meta

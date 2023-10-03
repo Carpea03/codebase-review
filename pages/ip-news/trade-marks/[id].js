@@ -41,14 +41,23 @@ export default function Index({ allPosts: initialAllPosts, preview, id }) {
     enabled: preview,
   })
   const [heroPost, ...morePosts] = allPosts || []
-  const data = [{ title: 'Articles', link: '/ip-news' }]
+  const data = [
+    { title: 'Articles', link: '/ip-news' },
+    { title: 'Trade Marks', link: '' },
+  ]
 
   return (
     <>
       <Head>
-      <title>{`IP Front™ - Trade Mark News by Baxter IP`}</title>
-        <meta name="description" content='IP Front™ - The latest trade mark news across by Baxter IP.' />
-        <link rel="canonical" href="https://www.baxterip.com.au/ip-news/trade-marks" />
+        <title>{`IP Front™ - Trade Mark News by Baxter IP`}</title>
+        <meta
+          name="description"
+          content="IP Front™ - The latest trade mark news across by Baxter IP."
+        />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/ip-news/trade-marks"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/ip-news/trade-marks"
@@ -78,7 +87,9 @@ export default function Index({ allPosts: initialAllPosts, preview, id }) {
         active={'Articles'}
       >
         <div className="mt-10">
-          {morePosts.length > 0 && <Content posts={morePosts} title={"Trade Mark Articles"} />}
+          {morePosts.length > 0 && (
+            <Content posts={morePosts} title={'Trade Mark Articles'} />
+          )}
         </div>
       </Layout>
     </>
