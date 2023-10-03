@@ -35,7 +35,7 @@ export default function SearchDropDown({ data }) {
           />
         </div>
       </div>
-      <div className="z-40 absolute flex flex-col w-[100%] lg:w-[405px]">
+      <div className="z-40 absolute flex flex-col w-[92%] lg:w-[405px] ">
         {searchItem?.slice(0, 20).map((item) => (
           <Link
             key={`searchTitle-${item.title}`}
