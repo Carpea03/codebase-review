@@ -31,7 +31,7 @@ export default function Benefits() {
             >
               <Image
                 src={
-                  +selectedCard === benifit.id
+                  selectedCard === benifit.id
                     ? '/benifits/active-' + benifit.imgSrc
                     : '/benifits/' + benifit.imgSrc
                 }

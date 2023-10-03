@@ -65,7 +65,7 @@ export default function HeroBanner({ landing, data }) {
                         </span>
                       </div>
                       <div className="flex mt-5 mb-10 justify-center text-center md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0 md:text-center xl:text-left md:justify-center xl:justify-start">
-                        <p
+                        <span
                           style={{ whiteSpace: 'pre-line' }}
                           className="text-2xl font-semibold font-manrope opacity-50"
                         >
@@ -74,7 +74,7 @@ export default function HeroBanner({ landing, data }) {
                               ? data?.header[0]?.body
                               : details[0].description}
                           </h2>
-                        </p>
+                        </span>
                       </div>
                     </div>
                     <div className="flex flex-col gap-5 md:flex-row 2xl:pt-20 pb-10 sm:pb-10 md:pb-0 xl:pb-0 2xl:pb-10 justify-center 2xl:justify-start">
@@ -102,7 +102,6 @@ export default function HeroBanner({ landing, data }) {
                       <Link
                         href={metaOffice}
                         target="_blank"
-                        prefetch={true}
                         passHref
                       >
                         <div
