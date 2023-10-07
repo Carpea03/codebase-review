@@ -44,6 +44,30 @@ export default function People() {
             'The patent and trade mark attorneys at Baxter IP in Sydney or Melbourne can help secure your intellectual property. You will be matched with the IP attorney best suited to your needs.'
           }
         />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/attorneys"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/attorneys"
+          hrefLang="en-us"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/attorneys"
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BB%A3%E7%90%86%E4%BA%BA"
+          hrefLang="zh"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/attorneys"
+        />
       </Head>
       <Header active={'Attorneys'} />
       <Container className="bg-[#FFFDF7]">

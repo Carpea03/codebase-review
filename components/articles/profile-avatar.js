@@ -14,7 +14,7 @@ export default function Avatar({ name, picture, date, bio, size, body }) {
                   .width(size || 32)
                   .fit('crop')
                   .url()
-              : 'https://source.unsplash.com/96x96/?face'
+              : picture || 'https://source.unsplash.com/96x96/?face'
           }
           className="rounded-full"
           height={size || 32}

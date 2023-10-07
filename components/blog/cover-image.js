@@ -10,9 +10,9 @@ export default function CoverImage({ title, slug, image: source, priority }) {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     >
-      <div className="cover-bg w-[636px] h-[400px] z-50" />
+      <div className="cover-bg z-50 " style={{ height: 'auto', width: '100%', objectFit: 'cover' }}/>
       <Image
-        style={{ height: 400, width: '100%', objectFit: 'cover' }}
+        style={{ height: 'auto', width: '100%', objectFit: 'cover' }}
         width={0}
         height={0}
         alt={`Cover Image for ${title}`}

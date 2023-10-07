@@ -157,9 +157,8 @@ export default function MadridProtocolApplication() {
       </p>
       <figure>
         <Image
-          loader={myLoader}
           onClick={() => setLigthbox(0)}
-          src="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
+          src="/flowchart/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
           alt="Madrid Protocol Trade Mark Application Process (for desktop)"
           width="1024"
           height="395"

@@ -58,7 +58,7 @@ export default function LivingOurValues() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Care, transparency and commerciality</h1>
+      <h2>Care, transparency and commerciality</h2>
       <p className="mb-10" >
         Our core values are care, transparency and commerciality. 
         At the heart of Baxter IP is a group of attorneys who really care about innovators, 
@@ -66,7 +66,7 @@ export default function LivingOurValues() {
         Whether you are a member of in-house counsel for a multinational or a mum-and-dad entrepreneur, 
         you can rest assured that our culture of care is for everyone.
       </p>
-      <h2>We give back</h2>
+      <h3>We give back</h3>
       <div className="flex">
         <div className="flex-col">
           <Image
@@ -107,7 +107,7 @@ export default function LivingOurValues() {
         modest but important start to giving back to the community and more
         generally to STEM education in Australia.
       </p>
-      <h2>We support Australian Indigenous Causes</h2>
+      <h3>We support Australian Indigenous Causes</h3>
       <Link
         title="Nunyara Centre"
         href="https://www.vcmh.com.au/"
@@ -131,7 +131,7 @@ export default function LivingOurValues() {
         &ldquo;Nunyara&rdquo; from being adopted by a large cannabis company for
         one of its products.
       </p>
-      <h2 className="mt-5">We continue a philanthropic legacy</h2>
+      <h3 className="mt-5">We continue a philanthropic legacy</h3>
       <Image
         decoding="async"
         onClick={() => setLigthbox(2)}
@@ -163,7 +163,7 @@ export default function LivingOurValues() {
         </Link>{' '}
         on a voluntary basis.
       </p>
-      <h2 className="mt-5">We step forwards</h2>
+      <h3 className="mt-5">We step forwards</h3>
       <p>
         Historically, many family foundations give to causes that resonate with
         them, that have some intersection with the life experience of the

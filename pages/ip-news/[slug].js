@@ -118,6 +118,20 @@ export default function Post({ data = {}, preview }) {
       <Head>
         <title>{`${post?.title} - IP Front™ News`}</title>
         <meta name="description" content={post?.metaDescription} />
+        <link
+          rel="canonical"
+          href={`https://www.baxterip.com.au/${post?.slug}`}
+        />
+         <link
+          rel="alternate"
+          href={`https://www.baxterip.com.au/${post?.slug}`}
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={`https://www.baxterip.com.au/${post?.slug}`}
+        />
       </Head>
       <Layout
         navData={menu}

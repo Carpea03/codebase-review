@@ -1,17 +1,26 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
+import Testimonial from '../components/testimonial'
 
 export default function BaxterIpPhilosophy() {
   const data = [
     { title: 'About Us', link: '/about' },
     { title: 'Our Philosophy', link: '' },
   ]
+
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"The Baxter IP philosophy"} active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'The Baxter IP Philosophy'}
+      active={'Values'}
+    >
       <Head>
         <title>
-          Dedicated & supportive, transparent and commercial | The Baxter IP Philosophy
+          Dedicated & supportive, transparent and commercial | The Baxter IP
+          Philosophy
         </title>
         <meta
           name="description"
@@ -34,12 +43,18 @@ export default function BaxterIpPhilosophy() {
       </Head>
       <div className="mt-10">
         <h2>Our heritage, our legacy, our promise to you</h2>
-        <blockquote>
+        <Testimonial
+          content="Upholding the highest standard of business ethics and ensuring our
+          advice always serves the best interests of our clients. This is our
+          guiding principle and our legacy"
+          name={'John Baxter'}
+        />
+        {/* <blockquote>
           Upholding the highest standard of business ethics and ensuring our
           advice always serves the best interests of our clients. This is our
           guiding principle and our legacy.
         </blockquote>
-        <cite>&ndash; Dr John Baxter, Senior Commercial Counsel</cite>
+        <cite>&ndash; Dr John Baxter, Senior Commercial Counsel</cite> */}
         <p>
           We are passionate about providing intellectual property and advice
           that genuinely helps clients achieve their commercial goals and as
@@ -91,8 +106,10 @@ export default function BaxterIpPhilosophy() {
             have worked in-house at research &amp; development firms.
           </li>
         </ol>
-        <blockquote>We promise you commercially astute IP advice</blockquote>
-        <cite>&ndash; Chris Baxter, General Manager</cite>
+        <Testimonial
+          content="We promise you commercially astute IP advice"
+          name={'Chris Baxter'}
+        />
       </div>
     </Layout>
   )

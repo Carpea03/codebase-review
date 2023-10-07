@@ -14,7 +14,7 @@ export default function CardAvatar({ name, picture, position, details }) {
             src={
               picture?.asset?._ref
                 ? urlForImage(picture).height(150).width(150).fit('crop').url()
-                : 'https://source.unsplash.com/96x96/?face'
+                : picture || 'https://source.unsplash.com/96x96/?face'
             }
             className="rounded-md"
             style={{

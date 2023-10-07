@@ -14,11 +14,13 @@ import Head from 'next/head'
 import { filterByPerson } from '../../utils/utility.helper'
 
 export const getStaticPaths = async () => {
-  const paths = peoples[0]?.teamMembers?.slice(0, 8).map((item) => {
-    return {
-      params: { id: item?.linkId?.toString() },
-    }
-  })
+  const paths = peoples[0]?.teamMembers
+    ?.filter((people) => people.isShow === true)
+    ?.map((item) => {
+      return {
+        params: { id: item?.linkId?.toString() },
+      }
+    })
 
   return {
     paths,
@@ -333,8 +335,11 @@ export default function Profile({ profile }) {
                           <div>
                             {industry.technicalAreas.map((item) => {
                               return (
-                                <div key={`${item.title}`} className="flex flex-col">
-                                  <span className='text-base text-[#7A7B94]'>{`• ${item.title}`}</span>
+                                <div
+                                  key={`${item.title}`}
+                                  className="flex flex-col"
+                                >
+                                  <span className="text-base text-[#7A7B94]">{`• ${item.title}`}</span>
                                 </div>
                               )
                             })}

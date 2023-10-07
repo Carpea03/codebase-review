@@ -1,7 +1,12 @@
-<svg width="160" height="127" viewBox="0 0 160 127" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0H66.2021L98.6277 63.5L66.2021 127H0L32.4255 63.5L0 0Z" fill="#8570D6"/>
-<path d="M20 0H86.2021L118.628 63.5L86.2021 127H20L52.4255 63.5L20 0Z" fill="#8C78DB"/>
-<path d="M38.625 0H104.827L137.253 63.5L104.827 127H38.625L71.0505 63.5L38.625 0Z" fill="#927FDD"/>
-<path d="M54.625 0H120.827L153.253 63.5L120.827 127H54.625L87.0505 63.5L54.625 0Z" fill="#9F8BED"/>
-<path d="M71.2578 0H127.46L159.885 63.5L127.46 127H71.2578L103.683 63.5L71.2578 0Z" fill="white"/>
+<svg width="150" height="87" viewBox="0 0 150 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1178_52169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="87">
+<rect width="150" height="87" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_1178_52169)">
+<path d="M-10 -20H56.2021L88.6277 43.5L56.2021 107H-10L22.4255 43.5L-10 -20Z" fill="#8570D6"/>
+<path d="M10 -20H76.2021L108.628 43.5L76.2021 107H10L42.4255 43.5L10 -20Z" fill="#8C78DB"/>
+<path d="M28.625 -20H94.8271L127.253 43.5L94.8271 107H28.625L61.0505 43.5L28.625 -20Z" fill="#927FDD"/>
+<path d="M44.625 -20H110.827L143.253 43.5L110.827 107H44.625L77.0505 43.5L44.625 -20Z" fill="#9F8BED"/>
+<path d="M61.2578 -20H117.46L149.885 43.5L117.46 107H61.2578L93.6833 43.5L61.2578 -20Z" fill="white"/>
+</g>
 </svg>
