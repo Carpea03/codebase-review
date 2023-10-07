@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 export default function IpInfo() {
   const data = [{ title: 'IP Info', link: '' }]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Articles"}>
       <Head>
         <title>
           IP Info | Intellectual Property Information & Tools | Baxter IP

@@ -60,7 +60,7 @@ export default function ProfessionalProfiles() {
 
       return itemContainer[0]
     })
-    setSelectedMenu(newProfiles.filter((people) => people))
+    setSelectedMenu(newProfiles.filter((people) => people.isShow === true))
     const item = cards.filter((val) => val.id === menuState2)[0]
     selectedIndustry(item?.name)
   }, [menuState2])

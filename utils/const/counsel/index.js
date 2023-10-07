@@ -79,6 +79,7 @@ export const transparentCounselData = {
           'Know your IP. Understand its value. Maximise its potential. | Baxter IP Sydney & Melbourne',
         metaDetails:
           "Uncover a business's IP foundation for grasping its value and optimizing potential, the initial stride towards commercial success and partnerships.",
+        zh: 'https://www.baxterip.com.au/zh/%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E6%88%98%E7%95%A5',
       },
     ],
     header: [
@@ -181,7 +182,8 @@ export const transparentCounselData = {
       {
         header: 'Strong & Efficient Counsel',
         body: 'From sending a cease and desist letter, to obtaining consent orders, filing a trade mark opposition or negotiating a trade mark dispute, our experienced trade mark attorneys can guide you to the best possible outcomes.',
-        metaTitle: 'Trade Mark Oppositions & Disputes | Baxter IP Sydney & Melbourne',
+        metaTitle:
+          'Trade Mark Oppositions & Disputes | Baxter IP Sydney & Melbourne',
         metaDetails:
           'Assisting clients to protect their trade mark during times of dispute, opposition or infringement. Our dedicated team can also enforce your trade mark.',
       },
@@ -215,7 +217,8 @@ export const transparentCounselData = {
       {
         header: 'Responsive, Transparent Counsel',
         body: 'From trade mark filing and trade mark management to overcoming disputes and litigation, we can help you maximise the benefits of your registered trade mark.',
-        metaTitle: 'Trade Mark Attorney Services | Baxter IP Sydney & Melbourne',
+        metaTitle:
+          'Trade Mark Attorney Services | Baxter IP Sydney & Melbourne',
         metaDetails:
           'A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, contact our team of trade mark attorneys.',
       },

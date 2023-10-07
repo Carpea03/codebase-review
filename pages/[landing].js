@@ -47,7 +47,12 @@ export const getStaticProps = async (context) => {
   const landing = context.params.landing
   const data = transparentCounselData[landing]
   return {
-    props: { allPosts, preview: false, counselData: data },
+    props: {
+      allPosts,
+      preview: false,
+      counselData: data,
+      landingName: landing,
+    },
   }
 }
 
@@ -55,6 +60,7 @@ export default function Home({
   allPosts: initialAllPosts,
   preview,
   counselData,
+  landingName,
 }) {
   const menuState = useContentStore((state) => state.menuState)
   const setMenuState = useContentStore((state) => state.setMenuState)
@@ -112,6 +118,7 @@ export default function Home({
   }, [menuState])
 
   useEffect(() => {
+    alert(landingName)
     const selectedId2 = localStorage.getItem('selected-id-2')
     if (!selectedId2) {
       localStorage.setItem('selected-id-2', -1)
@@ -126,6 +133,27 @@ export default function Home({
         <title>{counselData?.title[0]?.metaTitle}</title>
         <meta name="description" content={counselData?.title[0]?.metaDetails} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.baxterip.com.au/${landingName}`}
+        />
+        <link
+          rel="alternate"
+          href={`https://www.baxterip.com.au/${landingName}`}
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={`https://www.baxterip.com.au/${landingName}`}
+        />
+        {counselData?.title[0]?.zh && (
+          <link
+            rel="alternate"
+            href={counselData?.title[0]?.zh}
+            hreflang="zh"
+          />
+        )}
         <link rel="icon" href="/favicon.png" />
       </Head>
 

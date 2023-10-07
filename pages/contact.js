@@ -55,7 +55,6 @@ export default function ContactUs({ office }) {
         setSelectedPlace(office?.number)
         setSelectedId(office?.id)
 
-        console.log (office)
       });
     }
     
