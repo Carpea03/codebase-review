@@ -8,11 +8,7 @@ import AttorneysCard from '../../components/attorneysCard'
 
 export default function HealthTech() {
   const data = [
-    { title: 'Services', link: '/services' },
-    {
-      title: 'Patent Industry Expertise',
-      link: '/patent-industry-expertise',
-    },
+    { title: 'Industry Expertise', link: '/expertise' },
     {
       title: 'Healthcare',
       link: '',
@@ -23,10 +19,24 @@ export default function HealthTech() {
       <Head>
         <title>Healthtech</title>
         <meta name="description" content="" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/expertise/healthcare"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/expertise/healthcare"
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/expertise/healthcare"
+        />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent Industry Expertise</h1>
-      <p>
+      <h1>Healthtech Patents</h1>
+      {/* <p>
         Baxter IP’s size belies our breadth and depth of expertise, and we pride
         ourselves on our ability to provide our clients with expert IP advice
         across a range of sectors. Our key areas of focus are engineering, high
@@ -34,7 +44,7 @@ export default function HealthTech() {
         industries.
       </p>
       <ExpertiseBox active={3} />
-      <div className="w-full h-[312px] bg-[#B875CF] mt-10"></div>
+      <div className="w-full h-[312px] bg-[#B875CF] mt-10"></div> */}
       <p>
         Our healthcare team is led by Dr Seán Klinkradt, who has a PhD in
         neuroscience and is ranked in the 2023 IAM Patent 1000 as a Recommended
@@ -78,6 +88,7 @@ export default function HealthTech() {
       <AttorneysCard
         peoples={profiles[0]?.teamMembers?.filter(
           (people) =>
+            people.isShow === true &&
             people.linkId !== 'chris-baxter' &&
             people.linkId !== 'dr-richard-grant' &&
             people.linkId !== 'andrew-balis' &&

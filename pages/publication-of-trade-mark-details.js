@@ -12,7 +12,7 @@ export default function MadridProtocolApplication() {
     { title: 'Trade Mark Publication', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"} stepper={true}>
       <Head>
         <title>
           Publication of your Trade Mark Details | Baxter IP Sydney & Melbourne

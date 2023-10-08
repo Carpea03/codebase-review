@@ -9,7 +9,7 @@ export default function PatentNoveltySearch() {
     { title: 'Stage 2: Patent Novelty Searches', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"} stepper={2}>
       <Head>
         <title>
           International Patent Search | Patent novelty search | Baxter IP

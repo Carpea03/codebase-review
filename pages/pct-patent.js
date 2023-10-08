@@ -25,7 +25,7 @@ export default function PctPatent() {
       lightbox={
         <Lightboxs
           images={[
-            'https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
+            '/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
           ]}
           type="image"
           index={imageIndex}
@@ -61,9 +61,9 @@ export default function PctPatent() {
           loading="lazy"
           width="1024"
           height="335"
-          src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
+          src="/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
           alt="Flowchart B - PCT Patent Procedure"
-          srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-300x98.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-768x251.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1536x503.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-2048x670.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-210x69.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-100x33.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3.png 1600w"
+          srcSet="/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png 1024w"
           sizes="(max-width: 1024px) 100vw, 1024px"
           className="cursor-pointer"
         />

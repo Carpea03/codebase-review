@@ -8,11 +8,7 @@ import AttorneysCard from '../../components/attorneysCard'
 
 export default function OtherIndustries() {
   const data = [
-    { title: 'Services', link: '/services' },
-    {
-      title: 'Patent Industry Expertise',
-      link: '/patent-industry-expertise',
-    },
+    { title: 'Industry Expertise', link: '/expertise' },
     {
       title: 'Other Industries',
       link: '',
@@ -23,10 +19,24 @@ export default function OtherIndustries() {
       <Head>
         <title>Other Industries</title>
         <meta name="description" content="" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/expertise/other-industries"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/expertise/other-industries"
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/expertise/other-industries"
+        />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent Industry Expertise</h1>
-      <p>
+      <h1>Other Industry Patents</h1>
+      {/* <p>
         Baxter IP’s size belies our breadth and depth of expertise, and we pride
         ourselves on our ability to provide our clients with expert IP advice
         across a range of sectors. Our key areas of focus are engineering, high
@@ -34,7 +44,7 @@ export default function OtherIndustries() {
         industries.
       </p>
       <ExpertiseBox active={4} />
-      <div className="w-full h-[312px] bg-[#CF7575] mt-10"></div>
+      <div className="w-full h-[312px] bg-[#CF7575] mt-10"></div> */}
       <p>
         Our patent and trade mark attorneys pride themselves on their ability to
         turn their hand to a variety of IP matters. The breadth of our firmwide
@@ -69,9 +79,10 @@ export default function OtherIndustries() {
       <AttorneysCard
         peoples={profiles[0]?.teamMembers?.filter(
           (people) =>
+            people.isShow === true &&
             people.linkId !== 'chris-baxter' &&
             people.linkId !== 'dr-qi-zhang' &&
-            people.linkId !== 'dr-seán-klinkradt'
+            people.linkId !== 'dr-sean-klinkradt'
         )}
         awards={awards}
       />

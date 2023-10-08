@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
+import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
+import ClientsBox from '../../components/clientsBox'
 
 const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
   return `${host}/images/${src}?w=${width}&q=${quality || 75}`
@@ -12,8 +12,8 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 
 export default function FintechPatents() {
   const data = [
-    { title: 'Patenting in your industry', link: '/specialisations' },
-    { title: 'Fintech patents', link: '' },
+    { title: 'Industry Expertise', link: '/expertise' },
+    { title: 'Fintech Patents', link: '' },
   ]
   
   return (
@@ -27,15 +27,28 @@ export default function FintechPatents() {
           name="description"
           content="File a patent on innovative technology that improves financial activities. Talk to our expert fintech patent attorneys today."
         />
-        <link rel="canonical" href="/specialisations/fintech-patents" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/specialisations/fintech-patents"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/specialisations/fintech-patents"
+          hrefLang="en-au"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E4%B8%93%E5%88%A9"
           hrefLang="zh"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/specialisations/fintech-patents"
+        />
       </Head>
       <div className='mt-10'>
-        <h1>Fintech patents</h1>
+        <h1>Fintech Patents</h1>
         <p>
           Fintech encompasses all manner of{' '}
           <Link href="https://www.baxterip.com.au/specialisations/software-patents">
@@ -339,18 +352,25 @@ export default function FintechPatents() {
           </li>
         </ol>
       </div>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 not-format">
+      <div className="px-4 mx-auto max-w-screen-xl text-center mt-20 lg:px-6 not-format">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Our fintech industry experts
           </h2>
         </div>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <StaffChris />
-          <StaffMartin />
-          <StaffQi />
-        </div>
       </div>
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.isShow === true &&
+            people.linkId !== 'warren-chandler' &&
+            people.linkId !== 'dr-sean-klinkradt' &&
+            people.linkId !== 'andrew-balis' &&
+            people.linkId !== 'dr-richard-grant'
+            
+        )}
+        awards={awards}
+      />
       <div>
         <h2>What are the key regions for fintech patents?</h2>
         <p>
@@ -912,56 +932,7 @@ export default function FintechPatents() {
             <h4 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
               Some of our fintech clients include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/Identitii-Pty-Ltd.svg"
-                  alt="Identitii logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-mazooma-2.png"
-                  alt="Mazooma Technical Services, Inc logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-picnic-1.png"
-                  alt="Picnic IP Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-spectrum-message-services-1.png"
-                  alt="Spectrum Message Services Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-            </div>
+            <ClientsBox state={7} />
           </div>
         </section>
       </div>

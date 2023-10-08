@@ -9,11 +9,7 @@ import { profiles, awards } from '../../utils/const/people'
 
 export default function Engineering() {
   const data = [
-    { title: 'Services', link: '/services' },
-    {
-      title: 'Patent Industry Expertise',
-      link: '/patent-industry-expertise',
-    },
+    { title: 'Industry Expertise', link: '/expertise' },
     {
       title: 'Engineering',
       link: '',
@@ -24,18 +20,32 @@ export default function Engineering() {
       <Head>
         <title>Engineering</title>
         <meta name="description" content="" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/expertise/engineering"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/expertise/engineering"
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/expertise/engineering"
+        />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent Industry Expertise</h1>
-      <p>
+      <h1>Engineering Patents</h1>
+      {/* <p>
         Baxter IP’s size belies our breadth and depth of expertise, and we pride
         ourselves on our ability to provide our clients with expert IP advice
         across a range of sectors. Our key areas of focus are engineering, high
         tech, and healthcare, with each sector comprised of a number of discrete
         industries.
-      </p>
-      <ExpertiseBox active={1} />
-      <div className="w-full h-[312px] bg-[#75CFBA] mt-10"></div>
+      </p> */}
+      {/* <ExpertiseBox active={1} /> */}
+      {/* <div className="w-full h-[312px] bg-[#75CFBA] mt-10"></div> */}
       <p>
         Engineering is a core specialism at Baxter IP. With xx of our attorneys
         specialising in engineering IP, we offer clients strength of expertise
@@ -68,6 +78,7 @@ export default function Engineering() {
       <AttorneysCard
         peoples={profiles[0]?.teamMembers?.filter(
           (people) =>
+            people.isShow === true &&
             people.linkId !== 'dr-richard-grant'
         )}
         awards={awards}

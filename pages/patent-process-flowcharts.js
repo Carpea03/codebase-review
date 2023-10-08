@@ -24,12 +24,12 @@ export default function PatentProcessFlowcharts() {
       lightbox={
         <Lightboxs
           images={[
-            'https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png',
-            'https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
-            'https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png',
-            'https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png',
-            'https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png',
-            'https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png'
+            '/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png',
+            '/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
+            '/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png',
+            '/flowchart/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png',
+            '/flowchart/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png',
+            '/flowchart/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png'
 
           ]}
           type="image"
@@ -72,9 +72,9 @@ export default function PatentProcessFlowcharts() {
           loading="lazy"
           width="1024"
           height="315"
-          src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
+          src="/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
           alt="Patent Procedure Overview"
-          srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
+          srcSet="/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w"
           sizes="(max-width: 1024px) 100vw, 1024px"
           className="cursor-pointer"
         />
@@ -98,7 +98,7 @@ export default function PatentProcessFlowcharts() {
           loading="lazy"
           width="1024"
           height="335"
-          src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
+          src="/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
           alt="Flowchart B - PCT Patent Procedure (Desktop)"
           srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-300x98.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-768x251.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1536x503.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-2048x670.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-210x69.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-100x33.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3.png 1600w"
           sizes="(max-width: 1024px) 100vw, 1024px"
@@ -180,9 +180,9 @@ export default function PatentProcessFlowcharts() {
           loading="lazy"
           width="1024"
           height="332"
-          src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png"
+          src="/flowchart/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png"
           alt="Registered Design Procedure"
-          srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-300x97.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-768x249.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1536x497.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-2048x663.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-210x68.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2-100x32.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-E-Registered-Design-Procedure-Desktop-v2.png 1600w"
+          srcSet="/flowchart/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png 1024w"
           sizes="(max-width: 1024px) 100vw, 1024px"
           className="cursor-pointer"
         />
@@ -206,9 +206,9 @@ export default function PatentProcessFlowcharts() {
           loading="lazy"
           width="1024"
           height="292"
-          src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png"
+          src="/flowchart/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png"
           alt="Patent Opposition Procedure"
-          srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-300x85.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-768x219.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1536x438.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-2048x584.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-210x60.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-100x28.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2.png 1600w"
+          srcSet="/flowchart/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png 1024w"
           sizes="(max-width: 1024px) 100vw, 1024px"
           className="cursor-pointer"
         />

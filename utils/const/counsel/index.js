@@ -149,6 +149,7 @@ export const transparentCounselData = {
         metaTitle: 'Patent Attorney Services | Baxter IP Sydney & Melbourne',
         metaDetails:
           'Your IP is what makes your product unique. By lodging a patent application, your patent pending status will establish your claim on your new idea.',
+        zh: 'https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9',
       },
     ],
     header: [

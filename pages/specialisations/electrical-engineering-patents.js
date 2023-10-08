@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
+import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
+import ClientsBox from '../../components/clientsBox'
 
 const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
   return `${host}/images/${src}?w=${width}&q=${quality || 75}`
@@ -12,8 +12,8 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 
 export default function ElectricalEngineeringPatents() {
   const data = [
-    { title: 'Patenting in your industry', link: '/specialisations' },
-    { title: 'Electrical engineering and electronics patents', link: '' },
+    { title: 'Industry Expertise', link: '/expertise' },
+    { title: 'Electrical Engineering & Electronics Patents', link: '' },
   ]
   return (
     <Layout navData={data} active={'Services'}>
@@ -27,16 +27,26 @@ export default function ElectricalEngineeringPatents() {
         />
         <link
           rel="canonical"
-          href="/specialisations/electrical-engineering-patents"
+          href="https://www.baxterip.com.au/specialisations/electrical-engineering-patents"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/specialisations/electrical-engineering-patents"
+          hrefLang="en-au"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E7%94%B5%E5%AD%90%E5%B7%A5%E7%A8%8B%E5%8F%8A%E7%94%B5%E5%AD%90%E5%AD%A6%E4%B8%93%E5%88%A9%E6%96%B9%E9%9D%A2"
           hrefLang="zh"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/specialisations/electrical-engineering-patents"
+        />
       </Head>
       <div className="mt-10">
-        <h1>Electrical engineering and electronics patents</h1>
+        <h1>Electrical Engineering & Electronics Patents</h1>
         <p>
           Inventions and innovations in electronic and electromechanical
           technology have revolutionised and continue to change the modern
@@ -620,18 +630,25 @@ export default function ElectricalEngineeringPatents() {
           </li>
         </ol>
       </div>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 not-format">
+      <div className="px-4 mx-auto max-w-screen-xl text-center mt-20 lg:px-6 not-format">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Our foremost experts in electrical engineering and electronics:
           </h2>
         </div>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <StaffChris />
-          <StaffMartin />
-          <StaffQi />
-        </div>
       </div>
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.isShow === true &&
+            people.linkId !== 'warren-chandler' &&
+            people.linkId !== 'dr-sean-klinkradt' &&
+            people.linkId !== 'andrew-balis' &&
+            people.linkId !== 'dr-richard-grant'
+            
+        )}
+        awards={awards}
+      />
       <div>
         <h2>
           What are the key regions for electrical engineering and electronics
@@ -1333,80 +1350,7 @@ export default function ElectricalEngineeringPatents() {
               Some of our electrical engineering and electronics clients
               include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-jands.png"
-                  alt="Jands logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-k-hart-international.png"
-                  alt="K-Hart International Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-l3-micreo.png"
-                  alt="L3 Micreo Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-thomas-global-systems.png"
-                  alt="Thomas Global Systems Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-wbs-technology.png"
-                  alt="WBS Technology logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-zte-corporation.png"
-                  alt="ZTE Corporation logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-            </div>
+            <ClientsBox state={8} />
           </div>
         </section>
       </div>

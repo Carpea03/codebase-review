@@ -5,10 +5,10 @@ import Layout from '../components/layout'
 export default function Services() {
   const data = [{ title: 'Services', link: '' }]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={'Services'}>
       <Head>
         <title>
-          Patent services and trade mark services | Baxter IP Sydney & Melbourne
+          Patent and Trade Mark Services | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -17,12 +17,22 @@ export default function Services() {
         <link rel="canonical" href="https://www.baxterip.com.au/services" />
         <link
           rel="alternate"
+          href="https://www.baxterip.com.au/services"
+          hreflang="en-AU"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/services"
+          hreflang="x-default"
+        />
+        <link
+          rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%88%91%E4%BB%AC%E7%9A%84%E6%9C%8D%E5%8A%A1"
           hreflang="zh"
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Services</h1>
+      <h1>Patent and Trade Mark Services</h1>
       <p>
         Baxter IP, Patent and Trade Mark Attorneys provide a host of IP
         services, including patent services and trade mark services, to grow and
@@ -79,7 +89,12 @@ export default function Services() {
               </ul>
             </li>
             <li>
-              <Link href="/patent-search" className='no-underline hover:underline'>Patent Search</Link>
+              <Link
+                href="/patent-search"
+                className="no-underline hover:underline"
+              >
+                Patent Search
+              </Link>
               <ul>
                 <li>
                   <Link
@@ -278,7 +293,6 @@ export default function Services() {
               </ul>
             </li>
             <li>
-              
               Other Patent Services
               <ul>
                 <li>
@@ -320,7 +334,10 @@ export default function Services() {
               </Link>
               <ul>
                 <li>
-                  <Link href="/trade-mark-application" className='no-underline hover:underline'>
+                  <Link
+                    href="/trade-mark-application"
+                    className="no-underline hover:underline"
+                  >
                     Australian trade mark applications
                   </Link>
                 </li>

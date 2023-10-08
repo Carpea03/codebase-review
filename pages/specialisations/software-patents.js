@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
+import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
+import ClientsBox from '../../components/clientsBox'
 
 const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
   return `${host}/images/${src}?w=${width}&q=${quality || 75}`
@@ -12,26 +12,39 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 
 export default function SoftwarePatents() {
   const data = [
-    { title: 'Patenting in your industry', link: '/specialisations' },
+    { title: 'Industry Expertise', link: '/expertise' },
     { title: 'Patents for software', link: '' },
   ]
   return (
     <Layout navData={data} active={'Services'}>
       <Head>
-        <title>Software patent experts | Patent experts at Baxter IP</title>
+        <title>Software Patent Experts | Patent experts at Baxter IP</title>
         <meta
           name="description"
           content="File a patent on software applications including computer programs, platforms, user interfaces, or algorithms. Talk to our software patent experts today."
         />
-        <link rel="canonical" href="/specialisations/software-patents" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/specialisations/software-patents"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/specialisations/software-patents"
+          hrefLang="en-au"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E5%88%A9"
           hrefLang="zh"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/specialisations/software-patents"
+        />
       </Head>
       <div className='mt-10'>
-        <h1>Patents for software</h1>
+        <h1>Patents for Software</h1>
         <p>
           Many established industries are being modernised by the introduction
           of cloud-based management, crowdsourced services, or networking
@@ -508,12 +521,19 @@ export default function SoftwarePatents() {
           career in IP Australia as an examiner, which means he has extensive
           knowledge in what the office is looking for in submitted applications.
         </p>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <StaffChris />
-          <StaffMartin />
-          <StaffQi />
-        </div>
       </div>
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.isShow === true &&
+            people.linkId !== 'warren-chandler' &&
+            people.linkId !== 'dr-sean-klinkradt' &&
+            people.linkId !== 'andrew-balis' &&
+            people.linkId !== 'dr-richard-grant'
+            
+        )}
+        awards={awards}
+      />
       <div>
         <h2>What countries are most software patent friendly?</h2>
         <p>
@@ -1511,92 +1531,7 @@ export default function SoftwarePatents() {
             <h4 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
               Some of our software, apps and computer industry clients include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-enome.png"
-                  alt="E-nome Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/Identitii-Pty-Ltd.svg"
-                  alt="Identitii logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-penten.png"
-                  alt="Pen10 Services Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-quikser.png"
-                  alt="Quikser Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-red-propaganda.png"
-                  alt="Red Propaganda Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-spectrum-message-services-1.png"
-                  alt="Spectrum Message Services Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-thomas-electronics.png"
-                  alt="Thomas Electronics of Australia Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-            </div>
+            <ClientsBox state={13} />
           </div>
         </section>
       </div>

@@ -60,6 +60,21 @@ export default function Profile({ profile }) {
       <Head>
         <title>{`${profile.name} - ${profile.position}`}</title>
         <meta name="description" content={profile?.bio} />
+        <link
+          rel="canonical"
+          href={`https://www.baxterip.com.au/${profile.linkId}`}
+        />
+        <link
+          rel="alternate"
+          href={`https://www.baxterip.com.au/${profile.linkId}`}
+          hreflang="en-au"
+        />
+        <link
+          rel="alternate"
+          href={`https://www.baxterip.com.au/global/${profile.linkId}`}
+          hreflang="en-us"
+        />
+        {profile.zh && <link rel="alternate" href={profile.zh} hreflang="zh" />}
       </Head>
       <Header active={'Attorneys'} />
       <Container className="flex flex-col">
@@ -70,13 +85,15 @@ export default function Profile({ profile }) {
                 <div className="w-full xl:w-[788.185px] xl:h-[333px] bg-white p-10 md:p-14">
                   <div className="w-full">
                     <span className="font-lora font-normal text-[32px] sm:text-5xl xl:text-[64px] xl:leading-[70px]">
-                      {profile.name}
+                      <h1>
+                        {profile.name}
+                        <span className="screen-reader-text"> - </span>
+                        <span className=" flex flex-col justify-center items-start mb-5 md:mb-20 font-manrope font-medium text-base sm:text-[32px] sm:leading-[44px] sm:tracking-[-0.03em] md:text-xl xl:text-2xl text-[#272940]">
+                          {profile.position}
+                        </span>
+                      </h1>
                     </span>
-                    <div className="flex flex-col justify-center items-start mb-5 md:mb-20">
-                      <span className="font-manrope font-medium text-base sm:text-[32px] sm:leading-[44px] sm:tracking-[-0.03em] md:text-xl xl:text-2xl text-[#272940]">
-                        {profile.position}
-                      </span>
-                    </div>
+
                     <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-[60px]">
                       <div className="flex flex-col items-start gap-[10px]">
                         <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
@@ -224,7 +241,7 @@ export default function Profile({ profile }) {
             >
               <div className="flex flex-col items-start gap-12 w-full ">
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl md:leading-[140%] md:tracking-[-0.03em] text-[#272940]">
-                  {profile.industry.title}
+                  <h2>{profile.industry.title}</h2>
                 </span>
                 <p
                   style={{ whiteSpace: 'pre-line', textAlign: 'justify' }}
@@ -235,7 +252,7 @@ export default function Profile({ profile }) {
               </div>
               <div className="flex flex-col items-start gap-4 sm:gap-8 w-full">
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl md:leading-[140%] md:tracking-[-0.03em] text-[#272940]">
-                  Attorney Snapshot
+                  <h2>Attorney Snapshot</h2>
                 </span>
                 <div className="flex flex-col md:flex-row gap-6 md:gap-12 w-full">
                   <ul className="w-full md:w-1/2 flex flex-col gap-6 list-disc list-outside pl-4">
@@ -262,7 +279,7 @@ export default function Profile({ profile }) {
                   </ul>
                 </div>
               </div>
-              <div className="flex flex-col items-start gap-4 sm:gap-8 w-full">
+              {/* <div className="flex flex-col items-start gap-4 sm:gap-8 w-full">
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl leading-[140%] tracking-[-0.03em] text-[#272940]">
                   Publications
                 </span>
@@ -293,10 +310,10 @@ export default function Profile({ profile }) {
                       ))}
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="flex flex-col items-start gap-4 sm:gap-8 w-full">
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl leading-[140%] tracking-[-0.03em] text-[#272940]">
-                  Patent Technical Areas
+                  <h2>Patent Technical Areas</h2>
                 </span>
                 {/* <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-start gap-8 w-full">
                   {profile.technicalAreas.map((technicalArea, index) => (
