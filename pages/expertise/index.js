@@ -5,20 +5,41 @@ import ExpertiseBox from '../../components/expertiseBox'
 
 export default function PatentIndustryExpertise() {
   const data = [
-    { title: 'Services', link: '/services' },
     {
-      title: 'Patent Industry Expertise',
+      title: 'Industry Expertise',
       link: '',
     },
   ]
   return (
     <Layout navData={data} active={'Services'}>
       <Head>
-        <title>Patent Industry Expertise</title>
-        <meta name="description" content="" />
+        <title>Patenting in your industry | Baxter IP Sydney & Melbourne</title>
+        <meta
+          name="description"
+          content="Baxter IP has patent attorneys in Sydney & Melbourne who have specialist expertise in a variety of industries and technology specialisations."
+        />
+        <link
+          rel="canonical"
+          href="https://bip-git-development-baxterip.vercel.app/expertise"
+        />
+        <link
+          rel="alternate"
+          href="https://bip-git-development-baxterip.vercel.app/expertise"
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F"
+          hrefLang="zh"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://bip-git-development-baxterip.vercel.app/expertise"
+        />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent Industry Expertise</h1>
+      <h1>Industry Expertise</h1>
       <p>
         Baxter IP’s size belies our breadth and depth of expertise, and we pride
         ourselves on our ability to provide our clients with expert IP advice
@@ -26,10 +47,12 @@ export default function PatentIndustryExpertise() {
         tech, and healthcare, with each sector comprised of a number of discrete
         industries.
       </p>
-      <h2>
-        Five reasons it’s better working with a patent specialist attorney
-      </h2>
       <ExpertiseBox />
+      <div className='mt-20'>
+        <h2>
+          Five reasons it’s better working with a patent specialist attorney
+        </h2>
+      </div>
       <p>
         1. Your patent industry expert attorney will understand your new idea
         and its technical and commercial context more quickly.

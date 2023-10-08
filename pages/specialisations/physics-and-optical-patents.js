@@ -2,10 +2,9 @@ import Image from 'next/image'
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
-import StaffNaleesha from '../../components/staff/naleesha'
+import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
+import ClientsBox from '../../components/clientsBox'
 
 const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
   return `${host}/images/${src}?w=${width}&q=${quality || 75}`
@@ -13,14 +12,14 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 
 export default function PhysicsAndOpticalPatents() {
   const data = [
-    { title: 'Patenting in your industry', link: '/specialisations' },
-    { title: 'Physics and optical engineering patents', link: '' },
+    { title: 'Industry Expertise', link: '/expertise' },
+    { title: 'Physics & Optical Engineering Patents', link: '' },
   ]
   return (
     <Layout navData={data} active={'Services'}>
       <Head>
         <title>
-          Physics & optical engineering patents | Baxter IP patent attorneys
+          Physics & Optical Engineering Patents | Baxter IP patent attorneys
         </title>
         <meta
           name="description"
@@ -28,16 +27,26 @@ export default function PhysicsAndOpticalPatents() {
         />
         <link
           rel="canonical"
-          href="/specialisations/physics-and-optical-patents"
+          href="https://www.baxterip.com.au/specialisations/physics-and-optical-patents"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/specialisations/physics-and-optical-patents"
+          hrefLang="en-au"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E7%89%A9%E7%90%86%E5%92%8C%E5%85%89%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E5%88%A9"
           hrefLang="zh"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/specialisations/physics-and-optical-patents"
+        />
       </Head>
-      <div className='mt-10'>
-        <h1>Physics and optical engineering patents</h1>
+      <div className="mt-10">
+        <h1>Physics & Optical Engineering Patents</h1>
         <p>
           Many products that have made their way into daily life, such as
           microwaves, medical lasers, nuclear medicine and optical fibre data
@@ -281,13 +290,25 @@ export default function PhysicsAndOpticalPatents() {
           applications in the physics industry and experience in dealing
           directly with university researchers and academics.
         </p>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+        {/* <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <StaffChris />
           <StaffMartin />
           <StaffQi />
           <StaffNaleesha />
-        </div>
+        </div> */}
       </div>
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.isShow === true &&
+            people.linkId !== 'warren-chandler' &&
+            people.linkId !== 'dr-sean-klinkradt' &&
+            people.linkId !== 'andrew-balis' &&
+            people.linkId !== 'dr-richard-grant'
+            
+        )}
+        awards={awards}
+      />
       <div>
         <h2>
           What are the key regions for physics and optical engineering patents?
@@ -833,56 +854,7 @@ export default function PhysicsAndOpticalPatents() {
             <h4 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
               Some of our physics and optical engineering clients include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-cyclopharm.png"
-                  alt="Cyclopharm Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-lockheed-martin.png"
-                  alt="Lockheed Martin Corporation logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-red-garage.png"
-                  alt="Red Garage Ventures Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-thomas-electronics.png"
-                  alt="Thomas Electronics of Australia Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-            </div>
+            <ClientsBox state={12} />
           </div>
         </section>
       </div>

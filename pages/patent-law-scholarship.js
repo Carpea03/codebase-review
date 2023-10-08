@@ -8,7 +8,7 @@ export default function PatentLawScholarship() {
     { title: 'Baxter IP Scholarship', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Values"}>
       <Head>
         <title>Baxter IP Scholarship US$ 1,000 Cash Award | Baxter IP</title>
         <meta

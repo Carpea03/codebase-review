@@ -8,11 +8,7 @@ import { profiles, awards } from '../../utils/const/people'
 
 export default function HighTech() {
   const data = [
-    { title: 'Services', link: '/services' },
-    {
-      title: 'Patent Industry Expertise',
-      link: '/patent-industry-expertise',
-    },
+    { title: 'Industry Expertise', link: '/expertise' },
     {
       title: 'HighTech',
       link: '',
@@ -23,10 +19,24 @@ export default function HighTech() {
       <Head>
         <title>HighTech</title>
         <meta name="description" content="" />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/expertise/hightech"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/expertise/hightech"
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/expertise/hightech"
+        />
       </Head>
       <div className="mt-10"></div>
-      <h1>Patent Industry Expertise</h1>
-      <p>
+      <h1>HighTech Patents</h1>
+      {/* <p>
         Baxter IP’s size belies our breadth and depth of expertise, and we pride
         ourselves on our ability to provide our clients with expert IP advice
         across a range of sectors. Our key areas of focus are engineering, high
@@ -34,7 +44,7 @@ export default function HighTech() {
         industries.
       </p>
       <ExpertiseBox active={2} />
-      <div className="w-full h-[312px] bg-[#7589CF] mt-10"></div>
+      <div className="w-full h-[312px] bg-[#7589CF] mt-10"></div> */}
       <p>
         High technology, also known as advanced technology, is technology that
         is at the cutting edge of developments. Our high tech expertise spans a
@@ -70,8 +80,9 @@ export default function HighTech() {
       <AttorneysCard
         peoples={profiles[0]?.teamMembers?.filter(
           (people) =>
+            people.isShow === true &&
             people.linkId !== 'warren-chandler' &&
-            people.linkId !== 'dr-seán-klinkradt'
+            people.linkId !== 'dr-sean-klinkradt'
         )}
         awards={awards}
       />

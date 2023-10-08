@@ -726,10 +726,6 @@ export const profiles = {
         technicalAreas: [{ title: 'Manufacturing' }, { title: 'Mechanical' }],
       },
       {
-        title: 'HighTech',
-        technicalAreas: [],
-      },
-      {
         title: 'Healthtech',
         technicalAreas: [
           { title: 'Biochemistry' },
@@ -745,7 +741,7 @@ export const profiles = {
       },
     ],
   },
-  'dr-seán-klinkradt': {
+  'dr-sean-klinkradt': {
     name: 'Dr Seán Klinkradt',
     bio: 'Dr Seán Klinkradt is a Melbourne patent attorney specialising in biotechnology, medical devices, industrial processes and chemistry.',
     position: 'Senior Associate, Patent Attorney',
@@ -886,11 +882,6 @@ export const profiles = {
         title: 'Engineering',
         technicalAreas: [
           { title: 'Mechanical' },
-        ],
-      },
-      {
-        title: 'HighTech',
-        technicalAreas: [
         ],
       },
       {
@@ -1047,10 +1038,6 @@ export const profiles = {
           { title: 'Mechanical' },
           { title: 'Mining' },
         ],
-      },
-      {
-        title: 'HighTech',
-        technicalAreas: [],
       },
       {
         title: 'Healthtech',

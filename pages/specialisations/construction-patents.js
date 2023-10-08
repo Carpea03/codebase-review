@@ -1,11 +1,10 @@
 import Image from 'next/image'
+import Head from 'next/head'
 import Layout from '../../components/layout'
 import Link from 'next/link'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffMike from '../../components/staff/mike'
-import StaffWarren from '../../components/staff/warren'
-import StaffNaleesha from '../../components/staff/naleesha'
+import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
+import ClientsBox from '../../components/clientsBox'
 
 const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
   return `${host}/images/${src}?w=${width}&q=${quality || 75}`
@@ -13,12 +12,42 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 
 export default function ConstructionPatents() {
   const data = [
-    { title: 'Construction Patents', link: '' },
+    { title: 'Industry Expertise', link: '/expertise' },
+    { title: 'Civil Engineering & Construction Patents', link: '' },
   ]
   return (
     <Layout navData={data} active={'Services'}>
-      <div className='mt-10'>
-        <h1>Civil engineering and construction patents</h1>
+      <Head>
+        <title>
+          Civil Engineering Patent | Construction Patent | Baxter IP patent
+          attorneys
+        </title>
+        <meta
+          name="description"
+          content="File a patent on civil engineering patents and construction technology. Talk to our expert civil engineering patent attorneys today at Baxter IP."
+        />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/specialisations/construction-patents"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/specialisations/construction-patents"
+          hrefLang="en-au"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E5%9C%9F%E6%9C%A8%E5%B7%A5%E7%A8%8B%E5%92%8C%E5%BB%BA%E7%AD%91%E4%B8%93%E5%88%A9"
+          hrefLang="zh"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/specialisations/construction-patents"
+        />
+      </Head>
+      <div className="mt-10">
+        <h1>Civil Engineering & Construction Patents</h1>
         <p>
           Innovations in the field of civil engineering and construction are
           brought about by the need to meet or exceed existing building
@@ -520,7 +549,7 @@ export default function ConstructionPatents() {
         </ol>
       </div>
       {/* <section className="bg-white dark:bg-gray-900 not-format max-w-2xl"> */}
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 not-format">
+      <div className="px-4 mx-auto max-w-screen-xl text-center mt-20 lg:px-6 not-format">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Our civil engineering and construction industry experts
@@ -529,14 +558,18 @@ export default function ConstructionPatents() {
                 Tagline
               </p> */}
         </div>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <StaffChris />
-          <StaffMartin />
-          <StaffMike />
-          <StaffWarren />
-          <StaffNaleesha />
-        </div>
       </div>
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.isShow === true &&
+            people.linkId !== 'dr-qi-zhang' &&
+            people.linkId !== 'dr-sean-klinkradt' &&
+            people.linkId !== 'andrew-balis' &&
+            people.linkId !== 'dr-richard-grant'
+        )}
+        awards={awards}
+      />
       {/* </section> */}
       {/* <div className="pt-14 mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"> */}
       <div>
@@ -1443,32 +1476,7 @@ export default function ConstructionPatents() {
             <h4 className="mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
               Some of our civil engineering and construction clients include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-2 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/logo-slingshot-haulage.png"
-                  alt="Slingshot Haulage Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/logo-wombat-timbers.png"
-                  alt="Wombat Timbers Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-            </div>
+            <ClientsBox state={5} />
           </div>
         </section>
       </div>

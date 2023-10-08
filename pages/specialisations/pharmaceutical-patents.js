@@ -2,11 +2,9 @@ import Image from 'next/image'
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
-import StaffWarren from '../../components/staff/warren'
-import StaffNaleesha from '../../components/staff/naleesha'
+import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
+import ClientsBox from '../../components/clientsBox'
 
 const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
   return `${host}/images/${src}?w=${width}&q=${quality || 75}`
@@ -14,28 +12,45 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 
 export default function PharmaceuticalPatents() {
   const data = [
-    { title: 'Patenting in your industry', link: '/specialisations' },
-    { title: 'Chemical, biotech and pharmaceutical patents', link: '' },
+    { title: 'Industry Expertise', link: '/expertise' },
+    { title: 'Chemical, Biotech & Pharmaceutical Patents', link: '' },
   ]
   return (
     <Layout navData={data} active={'Services'}>
       <Head>
         <title>
-          Chemical engineering, biotech and pharmaceutical patents | Baxter IP
+          Chemical Engineering, Biotech and Pharmaceutical Patents | Baxter IP
         </title>
         <meta
           name="description"
           content="File a patent to protect your chemical engineering, biotech and pharmaceutical innovations, such as new drug formulations and chemical processes."
         />
-        <link rel="canonical" href="/specialisations/pharmaceutical-patents" />
+        <meta
+          name="description"
+          content="File a patent to protect your medical device patents, as well as new methods of medical treatment. Talk to one of our medical device subject matter experts."
+        />
+        <link
+          rel="canonical"
+          href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents"
+          hrefLang="en-au"
+        />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E5%8C%96%E5%AD%A6%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%92%8C%E8%8D%AF%E7%89%A9%E4%B8%93%E5%88%A9"
           hrefLang="zh"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/specialisations/pharmaceutical-patents"
+        />
       </Head>
       <div className="mt-10">
-        <h1>Chemical, biotech and pharmaceutical patents</h1>
+        <h1>Chemical, Biotech & Pharmaceutical Patents</h1>
         <p>
           Claims in chemical patents may cover a composition of matter (for
           example a particular chemical substance or mixture of substances), a
@@ -748,12 +763,24 @@ export default function PharmaceuticalPatents() {
           correcting spinal column misalignment, and new drugs and compounds for
           treatments of diseases such as Alzheimer&rsquo;s, Hepatitis C virus.
         </p>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+        {/* <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           <StaffChris />
           <StaffNaleesha />
           <StaffMartin />
-        </div>
+        </div> */}
       </div>
+      <AttorneysCard
+        peoples={profiles[0]?.teamMembers?.filter(
+          (people) =>
+            people.isShow === true &&
+            people.linkId !== 'dr-qi-zhang' &&
+            people.linkId !== 'dr-sean-klinkradt' &&
+            people.linkId !== 'andrew-balis' &&
+            people.linkId !== 'dr-richard-grant'
+            
+        )}
+        awards={awards}
+      />
       <div>
         <h2>
           What are the key regions for chemical, biotech and pharmaceutical
@@ -1438,128 +1465,7 @@ export default function PharmaceuticalPatents() {
             <h4 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
               Some of our chemical, biotech and pharmaceuticals clients include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-biometic.png"
-                  alt="Biometic Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-covidien.png"
-                  alt="Covidien AG logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-ethicon-endo-surgery.png"
-                  alt="Ethicon Endo-Surgery, Inc logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-glycom.png"
-                  alt="Glycom A/S logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-intelligent-implant-systems.png"
-                  alt="Intelligent Implant Systems LLC logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-ironwood-pharmaceuticals.png"
-                  alt="Ironwood Pharmaceuticals, Inc logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-lenswista.png"
-                  alt="Lenswista AG logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-optimized-ortho.png"
-                  alt="Optimized Ortho Pty Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-sunjin-chemicals.png"
-                  alt="Sunjin Chemical Co., Ltd logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/logo-syntheon.png"
-                  alt="Syntheon Cardiology LLC logo."
-                  width={255}
-                  height={191}
-                  className="mx-auto mb-4 rounded-full"
-                />
-              </Link>
-            </div>
+            <ClientsBox state={11} />
           </div>
         </section>
       </div>

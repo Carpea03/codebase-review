@@ -12,7 +12,9 @@ export default function NewsBlog({ data, isblog, btnTitle, title }) {
         <div className="flex flex-col gap-5 sm:gap-10">
           {isblog && (
             <div className="font-lora text-5xl font-medium flex justify-center mt-20 mb-5">
-              <div> {title || 'Related Articles'}</div>
+              <div>
+                <h2>{title || 'Related Articles'}</h2>
+              </div>
             </div>
           )}
           <div className="grid grid-rows-1 md:grid-cols-3 gap-4 px-6 sm:px-10">

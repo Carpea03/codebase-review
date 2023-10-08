@@ -118,7 +118,6 @@ export default function Home({
   }, [menuState])
 
   useEffect(() => {
-    alert(landingName)
     const selectedId2 = localStorage.getItem('selected-id-2')
     if (!selectedId2) {
       localStorage.setItem('selected-id-2', -1)

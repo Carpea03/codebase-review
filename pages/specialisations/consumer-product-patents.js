@@ -2,11 +2,9 @@ import Image from 'next/image'
 import Layout from '../../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
-import StaffChris from '../../components/staff/chris'
-import StaffMartin from '../../components/staff/martin'
-import StaffQi from '../../components/staff/qi'
-import StaffWarren from '../../components/staff/warren'
-import StaffNaleesha from '../../components/staff/naleesha'
+import AttorneysCard from '../../components/attorneysCard'
+import { profiles, awards } from '../../utils/const/people'
+import ClientsBox from '../../components/clientsBox'
 
 const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
   return `${host}/images/${src}?w=${width}&q=${quality || 75}`
@@ -14,29 +12,39 @@ const myLoader = ({ src, width, quality, host = 'http://localhost:3000' }) => {
 
 export default function ConsumerProductPatents() {
   const data = [
-    { title: 'Patenting in your industry', link: '/specialisations' },
-    { title: 'Consumer product patents', link: '' },
+    { title: 'Industry Expertise', link: '/expertise' },
+    { title: 'Consumer Product Patents', link: '' },
   ]
   return (
     <Layout navData={data} active={'Services'}>
       <Head>
-        <title>Consumer product patents | Baxter IP patent attorneys</title>
+        <title>Consumer Product Patents | Baxter IP patent attorneys</title>
         <meta
           name="description"
           content="File a patent on consumer products or goods intended to be bought by individuals or households. Talk to our expert consumer product patent attorneys today."
         />
         <link
           rel="canonical"
-          href="/specialisations/consumer-product-patents"
+          href="https://www.baxterip.com.au/specialisations/consumer-product-patents"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/specialisations/consumer-product-patents"
+          hrefLang="en-au"
         />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F/%E6%B6%88%E8%B4%B9%E5%93%81%E4%B8%93%E5%88%A9"
           hrefLang="zh"
         />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://www.baxterip.com.au/specialisations/consumer-product-patents"
+        />
       </Head>
-      <div className='mt-10'>
-        <h1>Consumer product patents</h1>
+      <div className="mt-10">
+        <h1>Consumer Product Patents</h1>
         <p>
           Consumer products are fast moving and typically less complicated
           compared with inventions in other industries, so people often
@@ -423,20 +431,23 @@ export default function ConsumerProductPatents() {
           </li>
         </ol>
       </div>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 not-format">
+      <div className="px-4 mx-auto max-w-screen-xl text-center mt-20 lg:px-6 not-format">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Our foremost experts in consumer products:
           </h2>
         </div>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <StaffChris />
-          <StaffMartin />
-          <StaffQi />
-          <StaffWarren />
-          <StaffNaleesha />
-        </div>
       </div>
+      <AttorneysCard
+          peoples={profiles[0]?.teamMembers?.filter(
+            (people) =>
+              people.isShow === true &&
+              people.linkId !== 'dr-sean-klinkradt' &&
+              people.linkId !== 'andrew-balis' &&
+              people.linkId !== 'dr-richard-grant'
+          )}
+          awards={awards}
+        />
       <div>
         <h2>What are the key regions for consumer product patents?</h2>
         <p>
@@ -1086,21 +1097,7 @@ export default function ConsumerProductPatents() {
             <h4 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:mb-8 lg:mb-16 dark:text-white md:text-4xl">
               Some of our consumer product clients include:
             </h4>
-            <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mb-8 md:mt-12">
-              <Link
-                href="#"
-                className="block py-12 px-8 text-center bg-gray-50 rounded dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <Image
-                  src="/clients/juvo-solutions-1.svg"
-                  alt="Juvo Solutions Pty Ltd logo"
-                  class="img-fluid"
-                  title="Juvo Solutions"
-                  width={200}
-                  height={150}
-                />
-              </Link>
-            </div>
+            <ClientsBox state={6} />
           </div>
         </section>
       </div>

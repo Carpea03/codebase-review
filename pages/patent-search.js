@@ -36,7 +36,7 @@ export default function PatentSearch() {
         searches.
       </p>
 
-      <h2>Worldwide patent searches</h2>
+      <h2>Worldwide Patent Searches</h2>
 
       <p>
         A worldwide patent search (international patent novelty search) can be
@@ -46,7 +46,7 @@ export default function PatentSearch() {
         <Link href="/international-patent-search">Read more…</Link>
       </p>
 
-      <h2>Freedom-to-operate patent searches</h2>
+      <h2>Freedom-To-Operate Patent Searches</h2>
 
       <p>
         A freedom-to-operate patent search, also known as an infringement patent
@@ -56,7 +56,7 @@ export default function PatentSearch() {
         <Link href="/freedom-to-operate-search">Read more…</Link>
       </p>
 
-      <h2>Australian patent searches</h2>
+      <h2>Australian Patent Searches</h2>
 
       <p>
         IP Australia maintains the AUSPAT patent database, which allows anyone
@@ -67,7 +67,7 @@ export default function PatentSearch() {
         <Link href="/australian-patent-search">Read more…</Link>
       </p>
 
-      <h2>Other patent searches</h2>
+      <h2>Other Patent Searches</h2>
 
       <p>
         Patent searching may be conducted for strategic business purposes. Here
