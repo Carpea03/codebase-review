@@ -36,19 +36,33 @@ export default function ContactUs({ office }) {
     })
 
     setPlace(newArray)
+    let city = 'Sydney';
 
     office = contactDetails.filter(
-      (item) => item.name.toLowerCase() === 'sydney'
+      (item) => item.name.toLowerCase() === city.toLowerCase()
     )[0]
+
+    setSelectedPlace(office?.number)
+    setSelectedId(office?.id)
 
     if (!ignore) {
       const geoLocation = handleFetchData();
 
       geoLocation.then((response) => {
-        if (response?.geolocation_data?.country_name == 'Australia' && ((response?.geolocation_data?.city == 'Melbourne' || response?.geolocation_data?.city == 'Brisbane'))) {
-        
+        if (response?.geolocation_data?.country_name == 'Australia') {
+          if (response?.geolocation_data?.city != 'Sydney' && response?.geolocation_data?.city != 'Melbourne' && response?.geolocation_data?.city != 'Brisbane') {
+            if (response?.geolocation_data?.region_name == 'Victoria')
+              city = 'Melbourne';
+            else if (response?.geolocation_data?.region_name == 'Queensland')
+              city = 'Brisbane';
+            else if (response?.geolocation_data?.region_name == 'New South Wales')
+              city = 'Sydney';
+            else
+              city = 'Sydney';
+          }
+
           office = contactDetails.filter(
-            (item) => item.name.toLowerCase() === response?.geolocation_data?.city.toLowerCase()
+            (item) => item.name.toLowerCase() === city.toLowerCase()
           )[0]
         }
 
@@ -82,7 +96,7 @@ export default function ContactUs({ office }) {
   const handleFetchData = async () => {
     const responseIp = await fetch('https://api.ipify.org?format=json');
     const dataIp = await responseIp.json();
-
+    
     const responseLocation = await fetch(`https://https-api.apigurus.com/iplocation/v1.8/locateip?key=SAKA86EJN6G22AHJS6RZ&ip=${dataIp.ip}&format=JSON`);
     const dataLocation = await responseLocation.json();
 

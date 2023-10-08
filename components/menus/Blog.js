@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Disclosure, Tab } from '@headlessui/react'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
 import Link from 'next/link'
 import { sideMenus, subMenus, subMenus1 } from '../../utils/const/blog'
@@ -33,6 +33,35 @@ const classNames = (...classes) => {
 export default function Blog() {
   const menuState5 = useContentStore((state) => state.menuState5)
   const setMenuState5 = useContentStore((state) => state.setMenuState5)
+
+  useEffect(() => {
+    let ignore = false;
+    
+    if (!ignore)
+      handleMenuActive();
+
+    return () => { ignore = true; }
+  }, [])
+
+  const handleMenuActive = async () => {
+    var url = window.location
+
+    var page = url
+      .toString()
+      .substring(url.toString().lastIndexOf('/') + 1)
+      .toLowerCase()
+
+    for (let i = 0; i < 2; i++) {
+      menusData[i].forEach(element => {
+        element.forEach(value => {
+          if (value.href == `/${page}` && menuState5 != i) {
+            setMenuState5(i);
+            return;
+          }
+        })
+      })
+    }
+  }
 
   return (
     <div

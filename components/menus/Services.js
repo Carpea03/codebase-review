@@ -1,6 +1,6 @@
 import { Disclosure, Tab } from '@headlessui/react'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import SubMenuBlock from '../templates/SubMenuBlock'
 import { FaCaretDown } from 'react-icons/fa'
 import {
@@ -29,6 +29,35 @@ const menusData = {
 export default function Services({ menuIndex, onChange }) {
   const menuState3 = useContentStore((state) => state.menuState3)
   const setMenuState3 = useContentStore((state) => state.setMenuState3)
+
+  useEffect(() => {
+    let ignore = false;
+    
+    if (!ignore)
+      handleMenuActive();
+
+    return () => { ignore = true; }
+  }, [])
+
+  const handleMenuActive = async () => {
+    var url = window.location
+
+    var page = url
+      .toString()
+      .substring(url.toString().lastIndexOf('/') + 1)
+      .toLowerCase()
+
+    for (let i = 0; i < 4; i++) {
+      menusData[i].forEach(element => {
+        element.forEach(value => {
+          if (value.href == `/${page}` && menuState3 != i) {
+            setMenuState3(i);
+            return;
+          }
+        })
+      })
+    }
+  }
 
   return (
     <div

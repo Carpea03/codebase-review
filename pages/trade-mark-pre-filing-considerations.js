@@ -6,10 +6,6 @@ export default function TradeMarkPreFilingConsiderations() {
   const data = [
     { title: 'Services', link: '/services' },
     {
-      title: 'Trade marks',
-      link: '/trade-marks',
-    },
-    {
       title: 'How to Trade Mark',
       link: '/how-to-trade-mark',
     },

@@ -259,7 +259,7 @@ export const profiles = [
         name: 'Chris Baxter',
         positions: ['Managing Director'],
         url: '/professionalProfiles/profiles/chris.jpg',
-        link: '/attorneys/chris-baxter',
+        link: '/sydney/chris-baxter',
         awards: [0, 1],
       },
       {
@@ -268,7 +268,7 @@ export const profiles = [
         name: 'Andrew Balis',
         positions: ['Associate'],
         url: '/professionalProfiles/profiles/andrew.jpg',
-        link: '/attorneys/andrew-balis',
+        link: '/sydney/andrew-balis',
         awards: [],
       },
       {
@@ -277,7 +277,7 @@ export const profiles = [
         name: 'Dr Qi Zhang',
         positions: ['Principal'],
         url: '/professionalProfiles/profiles/qi.jpg',
-        link: '/attorneys/dr-qi-zhang',
+        link: '/sydney/dr-qi-zhang',
         awards: [],
       },
       {
@@ -286,7 +286,7 @@ export const profiles = [
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
         url: '/professionalProfiles/profiles/richard.jpg',
-        link: '/attorneys/dr-richard-grant',
+        link: '/sydney/dr-richard-grant',
         awards: [],
       },
     ],
@@ -304,7 +304,7 @@ export const profiles = [
           'Victoria region manager',
         ],
         url: '/professionalProfiles/profiles/martin.jpg',
-        link: '/attorneys/martin-earley',
+        link: '/melbourne/martin-earley',
         awards: [1],
       },
       {
@@ -313,7 +313,7 @@ export const profiles = [
         name: 'Dr Seán Klinkradt',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/profiles/sean.jpg',
-        link: '/attorneys/dr-sean-klinkradt',
+        link: '/melbourne/dr-sean-klinkradt',
         awards: [1],
       },
       {
@@ -322,7 +322,7 @@ export const profiles = [
         name: 'Warren Chandler',
         positions: ['Senior Associate'],
         url: '/professionalProfiles/profiles/warren.jpg',
-        link: '/attorneys/warren-chandler',
+        link: '/melbourne/warren-chandler',
         awards: [],
       },
     ],
