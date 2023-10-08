@@ -15,7 +15,7 @@ export default function PatentLitigation() {
     <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Patent Litigation | Intellectual property enforcement | Baxter IP
+          Patent Litigation | Intellectual Property Enforcement | Baxter IP
         </title>
         <meta
           name="description"

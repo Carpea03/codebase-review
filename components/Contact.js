@@ -268,6 +268,7 @@ export default function Contact({ contactDetails, area }) {
           method="post"
           action="https://go.actionstep.com/frontend/application/webform/post"
           ref={contact}
+          className="w-full"
         >
           <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
             <InputField
