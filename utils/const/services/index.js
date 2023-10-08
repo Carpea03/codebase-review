@@ -263,6 +263,12 @@ export const subMenus1 = [
       division: false,
       href: '/trade-mark-squatting',
     },
+    {
+      title: 'Trade Mark Pre-filing Considerations',
+      bold: false,
+      division: false,
+      href: '/trade-mark-pre-filing-considerations',
+    },
     { title: '', bold: false, division: true, href: '' },
   ],
   [
@@ -444,13 +450,13 @@ export const subMenus2 = [
       href: '/patent-oppositions-and-disputes',
     },
     {
-      title: 'Patent opposition',
+      title: 'Patent Opposition',
       bold: false,
       division: false,
       href: '/patent-opposition',
     },
     {
-      title: 'Patent litigation',
+      title: 'Patent Litigation',
       bold: false,
       division: false,
       href: '/patent-litigation',
