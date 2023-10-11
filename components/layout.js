@@ -41,6 +41,7 @@ export default function Layout({
   }, [])
 
   const init = async () => {
+    setReduceMorePost([])
     const allPosts = overlayDrafts(await getClient(false).fetch(indexQuery))
     setReduceMorePost(allPosts?.sort(() => Math.random() - 0.5).slice(0, 3))
   }
@@ -95,7 +96,7 @@ export default function Layout({
                     }}
                     className={` ${
                       bannerData ? 'py-80 mt-20' : 'bg-white'
-                    } format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-lg
+                    } format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-lg w-full
                   ${
                     bannerData
                       ? 'mb-20'
@@ -170,7 +171,7 @@ export default function Layout({
                 isblog={true}
                 news={reduceMorePost
                   ?.sort(() => Math.random() - 0.5)
-                  .slice(0, 3)}
+                  ?.slice(0, 3)}
               />
             </>
           </div>

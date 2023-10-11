@@ -180,7 +180,7 @@ export default function Content({ posts, title, subTitle }) {
           <div className="flex md:hidden">
             <SearchDropDown data={filteredData} />
           </div>
-          <div className="flow-col w-full sm:w-[636px] bg-transparent ">
+          <div className="flow-col w-full md:w-[636px] bg-transparent ">
             {currentItems?.map((post) => (
               <Card
                 key={post?.slug}
@@ -203,7 +203,7 @@ export default function Content({ posts, title, subTitle }) {
           </div>
         </div>
         <div className="block md:hidden ">
-          <div className="hidden xl:flex mt-10 ">
+          <div className="hidden sm:flex mt-10 ">
             <ReactPaginate
               breakLabel="..."
               forcePage={initialPage}
@@ -224,16 +224,16 @@ export default function Content({ posts, title, subTitle }) {
               nextClassName="next"
             />
           </div>
-          <div className=" xl:hidden mt-10">
+          <div className="flex sm:hidden mt-10 ml-[-30px]">
             <ReactPaginate
-              breakLabel="..."
               forcePage={initialPage}
-              nextLabel="next >"
+              nextLabel=">"
+              breakLabel={false}
               onPageChange={handlePageClick}
               pageRangeDisplayed={1}
               pageCount={pageCount}
               marginPagesDisplayed={1}
-              previousLabel="< prev"
+              previousLabel="<"
               renderOnZeroPageCount={null}
               containerClassName="pagination"
               pageLinkClassName="page-num"
@@ -334,7 +334,7 @@ export default function Content({ posts, title, subTitle }) {
             nextClassName="next"
           />
         </div>
-        <div className=" xl:hidden mt-10">
+        <div className="xl:hidden mt-10">
           <ReactPaginate
             breakLabel="..."
             forcePage={initialPage}

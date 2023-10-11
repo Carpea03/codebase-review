@@ -55,7 +55,7 @@ export default function Header({
     }
   }
   return (
-    <div className="z-50 sticky top-0 relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD]">
+    <div className="z-40 sticky top-0 relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD]">
       {lightbox}
       <div className="container hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40">
         <div className="flex justify-between w-full md:gap-8">
