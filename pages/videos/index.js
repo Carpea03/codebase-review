@@ -269,9 +269,8 @@ export default function Videos() {
           <div className="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {videos.slice(0, next).map((item, index) => {
               return (
-                <div className="">
+                <div key={`video-${index}`}>
                   <div
-                    key={`video-${index}`}
                     style={{ width: '100%', height: 190 }}
                     className="bg-[#D9D9D9] flex justify-center items-center cursor-pointer"
                     onClick={() => {
