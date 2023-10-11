@@ -28,8 +28,8 @@ export default function ArticlesList({
                   picture={author.picture}
                 />
               )}
-              <h3 className="mb-3 text-xl font-manrope font-medium">{title}</h3>
-              <div className="mb-4 text-xl text-[#ADAEBD] font-manrope">
+              <h3 className="mb-3 text-sm sm:text-xl lg:text-xl font-manrope font-medium">{title}</h3>
+              <div className="mb-4 text-sm sm:text-xl lg:text-xl text-[#ADAEBD] font-manrope">
                 <Date dateString={date} />
               </div>
               <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>

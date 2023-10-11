@@ -32,7 +32,11 @@ export default function Card({
           >
             <CoverImage slug={slug} title={title} image={coverImage} />
 
-            <div className="px-5 pb-2">
+            <div
+              className={`px-5 pb-2 ${
+                coverImage?.asset?._ref ? 'mt-[-45px] md:mt-0' : ''
+              }`}
+            >
               {author && (
                 <Avatar
                   name={author.name}
@@ -41,21 +45,27 @@ export default function Card({
                   picture={author.picture}
                 />
               )}
-              <h3 className="mb-3 text-3xl leading-snug">{title}</h3>
-              <div
-                className="mb-5"
-                style={{
-                  height: 96,
-                }}
-              >
-                <p className="line-clamp-3 font-manrope text-xl font-medium text-[#7A7B94]">
-                  {metaDescription}
-                </p>
-              </div>
-              <div className="text-xl mb-4 text-[#ADAEBD] font-manrope">
+              <h3 className="mb-3 text-base sm:text-2xl sm:leading-8 lg:text-3xl leading-snug ">
+                {title}
+              </h3>
+              {metaDescription && (
+                <div
+                  className="md:mb-5"
+                  style={{
+                    height: 96,
+                  }}
+                >
+                  <p className="line-clamp-3 font-manrope text-sm sm:text-xl lg:text-xl font-medium text-[#7A7B94]">
+                    {metaDescription}
+                  </p>
+                </div>
+              )}
+              <div className="text-sm sm:text-xl lg:text-xl mb-4 text-[#ADAEBD] font-manrope">
                 {type} · <Date dateString={date} />
               </div>
-              <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
+              <p className="mb-4 text-sm sm:text-xl lg:text-lg leading-relaxed">
+                {excerpt}
+              </p>
             </div>
           </div>
         </div>
