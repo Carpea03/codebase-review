@@ -151,7 +151,7 @@ export default function People() {
                 </div>
               ))}
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 py-20 sm:py-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 py-20 sm:py-24">
             {peoples
               .filter((item) => item.id === team)[0]
               .teamMembers.map((people, index) => (

@@ -54,9 +54,9 @@ export default function Layout({
         className="bg-white w-full flex item-center absolute h-30 z-100"
       >
         <InnerContainer>
-          <div className="flex flex-col">
-            <div className=" md:flex flex-col  xl:px-[120px]">
-              <div className="pl-10">
+          <div className="flex">
+            <div className=" md:flex xl:px-[120px]">
+              <div className="pl-[32px] md:pl-10 ">
                 <Nav navData={navData} />
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Layout({
                   style={{ zIndex: 10 }}
                   className={`${
                     bannerData ? 'x2l:mr-10 x2l:ml-10' : ''
-                  } md:flex flex-col  items-center xl:px-[81px] px-10`}
+                  } md:flex flex-col  items-center xl:px-[81px] px-[32px] md:px-10`}
                 >
                   {stepper && (
                     <div className="w-full mt-40">
@@ -96,7 +96,7 @@ export default function Layout({
                     }}
                     className={` ${
                       bannerData ? 'py-80 mt-20' : 'bg-white'
-                    } format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-lg w-full
+                    } format max-w-none mx-auto  mt-[100px] pt-[1px] pl-[16px] pr-[16px] md:pl-10 md:pr-10 pb-10 rounded-lg w-full
                   ${
                     bannerData
                       ? 'mb-20'
@@ -144,7 +144,9 @@ export default function Layout({
                 >
                   <div className="flex justify-center item-center">
                     <span
-                      className={'font-lora text-5xl mt-20 mb-10 text-white'}
+                      className={
+                        'font-lora text-[32px] sm:text-[48px] md:text-5xl mt-20 mb-10 text-white'
+                      }
                     >
                       <h1>{title}</h1>
                     </span>
@@ -156,7 +158,7 @@ export default function Layout({
                     }}
                     className={` 
                   bg-white
-                     format max-w-none mx-auto pl-10 pr-10 pb-10 rounded-md pt-1
+                     format max-w-none mx-auto pl-[16px] pr-[16px] sm:pl-[32px] sm:pr-[32px] md:pl-10 md:pr-10 pb-10 rounded-md pt-1
                     
                  ${bannerData ? 'mb-20' : 'md:mt-20 mb-20'}
                  `}
@@ -195,7 +197,7 @@ export default function Layout({
                     }}
                     className={` ${
                       bannerData ? 'py-80 mt-20' : 'bg-white'
-                    } format max-w-none mx-auto pl-10 pr-10 pb-10
+                    } format max-w-none mx-auto pl-[32px] pr-[32px] md:pl-10 md:pr-10 pb-10
                   ${bannerData ? 'mb-20' : 'md:mt-20 mb-20 '}
                   `}
                   >
