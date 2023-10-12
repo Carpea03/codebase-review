@@ -5,7 +5,7 @@ import React from 'react'
 export default function Nav({ navData }) {
   return (
     <nav className="flex w-full" aria-label="Breadcrumb">
-      <ol className="inline-flex md:pt-5 pt-0 pb-6 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
+      <ol className="inline-flex md:pt-5 pt-0 mb:pb-6 space-x-1 md:space-x-3 list-none pm-25">
         <li className="inline-flex items-center">
           <Link
             href="/"
@@ -30,7 +30,7 @@ export default function Nav({ navData }) {
         </li>
         {navData?.map((item, index) => (
           <li key={`list-${index}`}>
-            <div key={`list-${index}`} className="flex items-center">
+            <div key={`list-${index}`} className="flex items-center ">
               <div className="font-manrope text-[#7A7B94]">/</div>
               <Link href={item?.link}>
                 <div
@@ -38,7 +38,7 @@ export default function Nav({ navData }) {
                     navData?.length - 1 === index
                       ? 'text-gray-900'
                       : 'text-[#7A7B94]'
-                  } hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white`}
+                  } hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white line-clamp-1`}
                 >
                   {item?.title}
                 </div>

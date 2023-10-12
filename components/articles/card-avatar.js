@@ -8,7 +8,7 @@ import { urlForImage } from '../../lib/sanity'
 export default function CardAvatar({ name, picture, position, details }) {
   return (
     <div style={{}} className="bg-[#F6F6F8] rounded-md">
-      <div className="w-full flex flex-col md:flex-row ">
+      <div className="w-full flex flex-col sm:flex-row ">
         <div className="px-5">
           <Image
             src={
@@ -25,7 +25,7 @@ export default function CardAvatar({ name, picture, position, details }) {
             width={150}
           />
         </div>
-        <div className="px-5 py-6">
+        <div className="px-5 py-6 sm:w-[450px] md:w-full">
           <div className="flex flex-col justify-center item-center">
             <div className="text-[#404266] font-manrope text-xl font-semibold">
               {name}
@@ -33,7 +33,7 @@ export default function CardAvatar({ name, picture, position, details }) {
             <div className="text-[#404266] font-manrope  font-medium">
               {position}
             </div>
-            <div className="text-[#7A7B94] font-manrope  font-medium mt-2">
+            <div className="text-[#7A7B94] font-manrope font-medium mt-2">
               {details}
             </div>
           </div>

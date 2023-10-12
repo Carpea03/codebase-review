@@ -144,7 +144,7 @@ export default function Post({ data = {}, preview }) {
       >
         <div className="bg-transparent">
           <div
-            className="w-full hidden md:flex rounded bg-transparent"
+            className="w-full hidden sm:flex rounded bg-transparent"
             style={{ boxShadow: '0 -10px 10px 1px rgba(0, 0, 0, 0.1)' }}
           >
             <div
@@ -152,7 +152,7 @@ export default function Post({ data = {}, preview }) {
                 clipPath:
                   'polygon(96% 0px, calc(100% - 0px) 15%, calc(100% - 0px) calc(100% - 5px), 0px calc(100% - 5px), 0px 0px)',
               }}
-              className="w-full bg-white px-10 pt-5 py-10 rounded-lg"
+              className="w-full bg-white px-[16px] md:px-10 pt-5 md:py-10 rounded-lg"
             >
               <div
                 style={{ marginTop: 20 }}
@@ -180,7 +180,7 @@ export default function Post({ data = {}, preview }) {
           </div>
 
           <div
-            className="flex md:hidden w-full"
+            className="flex sm:hidden w-full"
             style={{ boxShadow: '0 -10px 10px 1px rgba(0, 0, 0, 0.1)' }}
           >
             <div
@@ -188,7 +188,7 @@ export default function Post({ data = {}, preview }) {
                 clipPath:
                   'polygon(92% 0px, calc(100% - 0px) 10%, calc(100% - 0px) calc(100% - 5px), 0px calc(100% - 5px), 0px 0px)',
               }}
-              className="w-full bg-white px-10 pt-5 py-10 rounded-lg"
+              className="w-full bg-white px-[16px] md:px-10 pt-5 md:py-10 rounded-lg"
             >
               <div
                 style={{ marginTop: 20 }}
@@ -212,7 +212,7 @@ export default function Post({ data = {}, preview }) {
               />
             </div>
           </div>
-          <div className="px-10">
+          <div className="px-[16px] md:px-10">
             <PostBody content={post?.content} post={post} />
             <div className="font-manrope text-xl text-[#404266] font-semibold mt-20">
               Share Articles

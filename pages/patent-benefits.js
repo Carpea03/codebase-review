@@ -24,7 +24,7 @@ export default function PatentBenefits() {
           />
         </Head>
         <div className='mt-10'>
-        <h1>Benefits of a Patent</h1>
+        <h1 className='test'>Benefits of a Patent</h1>
         <p>
           The patent system is designed to stimulate invention by providing
           inventors with a monopoly to develop and commercialise their
