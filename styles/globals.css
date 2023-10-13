@@ -502,6 +502,15 @@
   background-position-x: 95%;
 }
 
+.select-contact-sm {
+  width: 285px;
+  border: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+    no-repeat right #ffce4f;
+  -webkit-appearance: none;
+  background-position-x: 95%;
+}
+
 input[type='checkbox'] {
   accent-color: #ffce4f;
 }
