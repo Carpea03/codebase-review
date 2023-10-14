@@ -14,13 +14,13 @@ export const OurClient = ({ state }) => {
         }}
       >
         <InnerContainer>
-          <div className="px-10 mt-10 w-full flex justify-center">
+          <div className="px-[32px] sm:px-[48px] mt-10 w-full flex justify-center">
             <div className="w-[500px] xl:w-[700px]">
               <TitleContainer description="Join other companies growing their IP with us" />
             </div>
           </div>
-          <div className="px-10 xl:px-8 mb-10">
-            <div className="flex flex-col py-20 sm:pb-20 md:py-20 xl:px-32">
+          <div className="px-[32px] xl:px-8 mb-10">
+            <div className="flex flex-col pt-5 pb-5 sm:py-20 sm:pb-20 md:py-20 xl:px-32">
               <div className="grid grid-cols-3 xl:grid-cols-4 gap-1 sm:gap-4 md:gap-5 w-full items-center justify-center">
                 {brands[state].supportedBrand.map((brand) => (
                   <div

@@ -253,14 +253,16 @@ export default function Contact({ contactDetails, area }) {
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start px-4 sm:px-16 md:px-4 xl:px-20 2xl:px-40 pt-16 pb-32 gap-6">
       <div
-        className="flex flex-col items-start p-6 gap-9 bg-white w-full"
+        className="flex flex-col items-start gap-9 bg-white w-full"
         style={{
           boxShadow: '0px 5px 17px rgba(64, 76, 89, 0.06)',
         }}
       >
-        <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
-          <h2>Send us a message</h2>
-        </span>
+        <div className="p-5">
+          <span className="font-lora font-medium text-3xl sm:text-5xl md:text-[40px] text-[#272940]">
+            <h2>Send us a message</h2>
+          </span>
+        </div>
         <form
           id="ActionStepWebform10"
           name="ActionStepWebform10"
@@ -271,108 +273,111 @@ export default function Contact({ contactDetails, area }) {
           className="w-full"
         >
           <div className="flex flex-col items-start gap-6 sm:gap-9 w-full">
-            <InputField
-              type="text"
-              id="organization_key"
-              name="organization_key"
-              defaultValue="sq9162"
-              className="hidden"
-            />
-            <InputField
-              type="text"
-              id="uid"
-              name="uid"
-              defaultValue="6344f7cad4e589f0366f8e5810af571a9ed85029"
-              className="hidden"
-            />
-            <InputField
-              type="text"
-              id="dc100__user_id"
-              name="dc100__user_id"
-              defaultValue=""
-              className="hidden"
-            />
-            <InputField
-              type="text"
-              id="dc100__geo_location"
-              name="dc100__geo_location"
-              defaultValue=""
-              className="hidden"
-            />
-            <InputField
-              type="text"
-              id="dc100__Location"
-              name="dc100__Location"
-              defaultValue={contactDetails?.name}
-              className="hidden"
-            />
-            <InputField
-              type="text"
-              id="dc100__user_type"
-              name="dc100__user_type"
-              defaultValue={generalType}
-              className="hidden"
-            />
-            <InputField
-              type="text"
-              id="dc100__industry_type"
-              name="dc100__industry_type"
-              defaultValue={industryType}
-              className="hidden"
-            />
-            <InputField
-              onChange={(e) => setFirstName(e.target.value)}
-              type="text"
-              id="p50__first_name"
-              name="p50__first_name"
-              fieldName="First Name"
-              placeHolder="First Name"
-              isRequired={firstName.length === 0 ? true : false}
-              ref={firstNameFocus}
-            />
-            <InputField
-              onChange={(e) => setLastName(e.target.value)}
-              type="text"
-              id="p50__last_name"
-              name="p50__last_name"
-              fieldName="Last Name"
-              placeHolder="Last Name"
-              isRequired={lastName.length === 0 ? true : false}
-              ref={lastNameFocus}
-            />
-            <InputField
-              onChange={(e) => setPhoneNumber(e.target.value)}
-              type="text"
-              id="p50__phone1"
-              name="p50__phone1"
-              fieldName="Phone Number"
-              placeHolder="Phone Number"
-              isRequired={phoneNumber.length === 0 ? true : false}
-              ref={phoneNumberFocus}
-            />
-            <InputField
-              onChange={(e) => checkEmailValid(e.target.value)}
-              type="text"
-              id="p50__e_mail"
-              name="p50__e_mail"
-              fieldName="Email Address"
-              placeHolder="Your@email.com"
-              isRequired={
-                email.length === 0 ? true : isValidEmail ? false : true
-              }
-              ref={emailFocus}
-            />
-            <div className="flex flex-col items-start justify-center gap-4 w-full">
-              <div className="flex flex-row gap-2">
-                <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
-                  Any other comments?
-                </span>
-              </div>
-              <textarea
-                id="dc100__Initial_Comments"
-                name="dc100__Initial_Comments"
-                className="w-full h-72 p-6 rounded text-sm sm:text-2xl md:text-xl border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0"
+            <div className="w-full p-6">
+              <InputField
+                type="text"
+                id="organization_key"
+                name="organization_key"
+                defaultValue="sq9162"
+                className="hidden"
               />
+              <InputField
+                type="text"
+                id="uid"
+                name="uid"
+                defaultValue="6344f7cad4e589f0366f8e5810af571a9ed85029"
+                className="hidden"
+              />
+              <InputField
+                type="text"
+                id="dc100__user_id"
+                name="dc100__user_id"
+                defaultValue=""
+                className="hidden"
+              />
+              <InputField
+                type="text"
+                id="dc100__geo_location"
+                name="dc100__geo_location"
+                defaultValue=""
+                className="hidden"
+              />
+              <InputField
+                type="text"
+                id="dc100__Location"
+                name="dc100__Location"
+                defaultValue={contactDetails?.name}
+                className="hidden"
+              />
+              <InputField
+                type="text"
+                id="dc100__user_type"
+                name="dc100__user_type"
+                defaultValue={generalType}
+                className="hidden"
+              />
+              <InputField
+                type="text"
+                id="dc100__industry_type"
+                name="dc100__industry_type"
+                defaultValue={industryType}
+                className="hidden"
+              />
+              <InputField
+                onChange={(e) => setFirstName(e.target.value)}
+                type="text"
+                id="p50__first_name"
+                name="p50__first_name"
+                fieldName="First Name"
+                placeHolder="First Name"
+                isRequired={firstName.length === 0 ? true : false}
+                ref={firstNameFocus}
+              />
+              <InputField
+                onChange={(e) => setLastName(e.target.value)}
+                type="text"
+                id="p50__last_name"
+                name="p50__last_name"
+                fieldName="Last Name"
+                placeHolder="Last Name"
+                isRequired={lastName.length === 0 ? true : false}
+                ref={lastNameFocus}
+              />
+              <InputField
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                type="text"
+                id="p50__phone1"
+                name="p50__phone1"
+                fieldName="Phone Number"
+                placeHolder="Phone Number"
+                isRequired={phoneNumber.length === 0 ? true : false}
+                ref={phoneNumberFocus}
+              />
+              <InputField
+                onChange={(e) => checkEmailValid(e.target.value)}
+                type="text"
+                id="p50__e_mail"
+                name="p50__e_mail"
+                fieldName="Email Address"
+                placeHolder="Your@email.com"
+                isRequired={
+                  email.length === 0 ? true : isValidEmail ? false : true
+                }
+                ref={emailFocus}
+              />
+
+              <div className="flex flex-col items-start justify-center gap-4 w-full">
+                <div className="flex flex-row gap-2">
+                  <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl text-[#404266]">
+                    Any other comments?
+                  </span>
+                </div>
+                <textarea
+                  id="dc100__Initial_Comments"
+                  name="dc100__Initial_Comments"
+                  className="w-full h-72 p-6 rounded text-sm sm:text-2xl md:text-xl border-[1px] sm:border-[3px] md:border-[1px] border-[#E4E6F1] focus:border-0"
+                />
+              </div>
             </div>
           </div>
           <div className="flex flex-col items-start pt-8 bg-white border-[1px] border-[#F3F3FA] rounded w-full gap-9 pb-9">

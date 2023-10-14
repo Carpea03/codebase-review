@@ -60,7 +60,7 @@ export default function ProfessionalProfiles() {
 
       return itemContainer[0]
     })
-    setSelectedMenu(newProfiles.filter((people) => people.isShow === true))
+    setSelectedMenu(newProfiles.filter((people) => people?.isShow === true))
     const item = cards.filter((val) => val.id === menuState2)[0]
     selectedIndustry(item?.name)
   }, [menuState2])
@@ -103,7 +103,7 @@ export default function ProfessionalProfiles() {
         }}
       >
         <InnerContainer>
-          <div className="px-10 mt-10 w-full flex justify-center">
+          <div className="px-[32px] mt-10 w-full flex justify-center">
             <div className="w-[600px] xl:w-[950px]">
               <TitleContainer
                 description={`${
@@ -114,7 +114,7 @@ export default function ProfessionalProfiles() {
               />
             </div>
           </div>
-          <div className="px-10 sm:px-10 xl:px-8">
+          <div className="px-[32px] sm:px-10 xl:px-8">
             <div className="xl:px-32">
               <div className="grid mt-10 grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4">
                 {selectedMenu.map((teamMember, index) => (
@@ -187,10 +187,10 @@ export default function ProfessionalProfiles() {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center mb-32">
+              <div className="flex justify-center mb-20 md:mb-32">
                 <Link href="/people">
                   <div
-                    className="w-48 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md mt-20 flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
+                    className="w-48 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md mt-10 md:mt-20 flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
                     style={{
                       boxShadow:
                         '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',

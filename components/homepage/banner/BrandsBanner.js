@@ -25,17 +25,31 @@ export default function BrandsBanner({ landing }) {
   return (
     <Container>
       <div
-        className={`flex flex-col justify-center items-center bg-[#FFFEF8] py-[53px] ${
+        className={`flex flex-col justify-center items-center bg-[#FFFEF8] pt-[53px] ${
           landing ? '' : ''
         } z-30`}
       >
-        <p className="z-30 font-manrope font-semibold text-[#272940]/50 tracking-tight text-sm sm:text-lg md:text-xl xl:text-2xl">
+        <span className="z-30 font-manrope font-semibold text-[#272940]/50 tracking-tight text-[16px] sm:text-[24px] md:text-xl xl:text-2xl">
           {landing ? 'Awards and Recognition' : 'Trusted by these brands'}
-        </p>
+        </span>
       </div>
       <div className="border-bottom-base bg-[#FFFEF8]">
         <InnerContainer>
-          <div className="w-full flex flex-wrap flex-rows items-center justify-center mb-5">
+          <div className="hidden sm:flex md:w-full md:flex-wrap md:flex-row md:items-center md:justify-center md:mb-5">
+            {logos?.map((banner) => (
+              <div key={banner.id} className={landing ? 'px-10 pb-10' : 'px-5'}>
+                <Image
+                  key={banner.id}
+                  className="object-cover"
+                  src={banner.src}
+                  alt=""
+                  width={landing? 130 : 200}
+                  height={100}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="flex sm:hidden w-full grid grid-cols-2 mb-5">
             {logos?.map((banner) => (
               <div key={banner.id} className={landing ? 'px-10 pb-10' : 'px-5'}>
                 <Image

@@ -7,6 +7,7 @@ import { contactDetails } from '../utils/const/contacts'
 import { useRouter } from 'next/router'
 import { InnerContainer } from '../components/templates/InnerContainer'
 import Head from 'next/head'
+import Dropdown from '../components/Dropdown'
 
 export default function ContactUs({ office }) {
   const [callUs, setCallUs] = useState(true)
@@ -85,29 +86,13 @@ export default function ContactUs({ office }) {
               }}
             >
               <InnerContainer>
-                <div className="w-full flex flex-col items-center md:items-start px-4 sm:px-[76px] md:pl-40 py-28 sm:py-[409px] md:py-48">
-                  <div className="w-full md:w-[558px] h-44 sm:h-80 md:h-[185px] flex flex-col items-center gap-6 sm:gap-[60px] md:gap-6">
-                    <h1 className="font-lora font-medium text-3xl sm:text-5xl sm:leading-[138%] md:text-[40px] md:leading-[51px] text-white text-center md:text-left">
-                      Brisbane Patent & Trade Mark Office
-                    </h1>
-                    <div className="flex flex-row items-center justify-center md:justify-start h-14 sm:h-32 md:h-[59px] w-full">
-                      <select
-                        onChange={(e) => onSelected(e.target.value)}
-                        className="select-contact flex-row items-center px-5 py-4 sm:py-9 sm:px-5 md:px-6 md:py-4 gap-[10px] bg-[#FFCE4F] cursor-pointer h-full rounded-l-md flex font-manrope font-semibold text-[#404266] text-xl whitespace-nowrap"
-                        // value={'Call us Brisbane Office'}
-                      >
-                        {place?.map((item, index) =>
-                          renderOptions(item?.id, item?.place, index)
-                        )}
-                      </select>
-                      <div className="flex flex-row items-center px-5 py-4 sm:py-9 sm:px-6 md:px-6 md:py-4 gap-[10px] bg-black/30 cursor-pointer h-full rounded-r-md">
-                        <span className="font-manrope font-semibold items-center text-base sm:text-[32px] sm:leading-[44px] md:text-xl text-white whitespace-nowrap">
-                          {selectedPlace}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <Dropdown
+                  title={'Brisbane Patent & Trade Mark Office'}
+                  place={place}
+                  onChange={(e) => onSelected(e.target.value)}
+                  selectedPlace={selectedPlace}
+                  selectedId={selectedId}
+                />
               </InnerContainer>
             </div>
           </div>
