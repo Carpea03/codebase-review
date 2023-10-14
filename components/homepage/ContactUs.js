@@ -152,34 +152,26 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
+
+          {/* Tablet/Mobile */}
           <div className="md:hidden flex flex-col items-center">
             <div
-              className="flex flex-col items-center justify-center w-full px-12 py-6 sm:px-28 sm:py-14 gap-8"
+              className="flex flex-col items-center justify-center w-full px-[32px] py-6 sm:px-[48px] sm:py-14 gap-8"
               style={{
                 background:
                   'linear-gradient(107.1deg, #61638D -31.76%, #343652 96.53%)',
               }}
             >
-              <span className="font-manrope font-bold text-xs sm:text-2xl text-white/50">
+              {/* <span className="font-manrope font-bold text-xs sm:text-2xl text-white/50">
                 Contact us
+              </span> */}
+              <span className="font-lora font-medium text-[24px] sm:text-[46px] leading-tight text-white">
+                <h2>Speak with an IP Attorney now</h2>
               </span>
-              <span className="font-lora font-medium text-xl sm:text-[32px] leading-tight text-white">
-                Reach Out to Baxter IP
-              </span>
-            </div>
-            <div
-              className="flex flex-col justify-center items-center w-full"
-              style={{
-                background:
-                  'linear-gradient(134.74deg, #61638D -209.59%, #343652 65.05%)',
-              }}
-            >
+
               <div className="flex flex-col items-start w-full">
-                <div
-                  className="flex flex-row items-center w-full px-12 py-6 sm:px-[107px] sm:py-5 border-b-[3px] border-white/30 opacity-80 cursor-pointer"
-                  onClick={handleMetaOffice}
-                >
-                  <div className="flex flex-row items-center gap-6 w-full">
+                <div className="flex flex-row items-center w-full  cursor-pointer">
+                  <div className="flex flex-row items-center gap-3 sm:gap-6 w-full mb-2">
                     <Image
                       alt=""
                       src="/contactus/web.svg"
@@ -187,50 +179,75 @@ export default function ContactUs() {
                       width={24}
                       height={24}
                     />
-                    <span className="font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
+                    <span className="font-manrope font-bold text-[14px] sm:text-[20px] tracking-[0.2em] text-white/50 toUpper uppercase">
                       Virtual office
                     </span>
                   </div>
-                  <div className="flex justify-end items-end w-full">
-                    <FiChevronUp
-                      className={`w-6 h-6 sm:w-[53px] sm:h-[53px] ${
-                        showMetaOffice ? 'rotate-180' : ''
-                      }`}
-                      color={'white'}
-                    />
-                  </div>
                 </div>
-                <div
-                  className={`relative flex flex-wrap ${
-                    showMetaOffice ? 'flex' : 'hidden'
-                  }`}
-                >
-                  <Image
-                    alt=""
-                    src="/contactus/office-1.png"
-                    width={375}
-                    height={375}
-                  />
-                  <div className="absolute bottom-0 right-0 left-0 py-5 px-12 sm:px-[107px] sm:py-6 flex flex-row justify-between items-center gap-[10px] bg-white/20 backdrop-blur-lg">
-                    <p className="font-manrope font-semibold text-sm sm:text-xl text-white">
-                      Visit virtual office
-                    </p>
-                    <Image
-                      alt=""
-                      src="/contactus/arrow-outward.svg"
-                      className="w-6 h-6 sm:h-8 sm:w-8"
-                      width={24}
-                      height={24}
-                    />
+                <div className="w-full h-full sm:w-full md:px-0">
+                  <div className={`relative flex `}>
+                    <div className="w-full">
+                      <div className="hidden sm:flex ">
+                        <Image
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                          }}
+                          alt=""
+                          src="/contactus/image 53.jpg"
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                        />
+                      </div>
+                      <div className="flex sm:hidden">
+                        <Image
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                          }}
+                          alt=""
+                          src="/contactus/office-1.png"
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                        />
+                      </div>
+                    </div>
+                    <div className="absolute top-[100px] sm:top-[130px] left-[30px] sm:left-[210px]">
+                      <Link href={metaOffice} target="_blank">
+                        <div
+                          style={{
+                            background: 'rgba(0, 0, 0, 0.20)',
+                            backdropFilter: 'blur(25px)',
+                          }}
+                          className="flex flex-row justify-center items-center gap-[10px] sm:h-[75px] p-5  "
+                        >
+                          <Image
+                            alt=""
+                            src="/contactus/arrow-outward.svg"
+                            className="w-[24px] h-[24px] sm:h-8 sm:w-8"
+                            sizes={0}
+                            width={0}
+                            height={0}
+                          />
+                          <p className="font-manrope font-semibold text-[14px] sm:text-xl text-white whitespace-nowrap">
+                            Visit virtual office
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col items-start w-full">
                 <div
-                  className="flex flex-row items-center w-full py-5 px-12 sm:px-[107px] sm:py-5 border-b-[3px] border-white/30 opacity-80 cursor-pointer"
+                  className="flex flex-row items-center w-full  cursor-pointer"
                   onClick={handleCallUs}
                 >
-                  <div className="flex flex-row items-center gap-6 w-full">
+                  <div className="flex flex-row items-center gap-6 w-full ">
                     <Image
                       alt=""
                       src="/contactus/phone.svg"
@@ -238,94 +255,54 @@ export default function ContactUs() {
                       width={24}
                       height={24}
                     />
-                    <span className="uppercase font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
+                    <span className="font-manrope font-bold text-sm sm:text-[20px] tracking-[0.2em] text-white/50 toUpper uppercase">
                       Call us
                     </span>
-                  </div>
-                  <div className="flex justify-end items-end w-full">
-                    <FiChevronUp
-                      className={`w-6 h-6 sm:w-[53px] sm:h-[53px] ${
-                        showCallUs ? 'rotate-180' : ''
-                      }`}
-                      color={'white'}
-                    />
                   </div>
                 </div>
               </div>
               <div
-                className={`flex flex-col items-start py-5 px-12 sm:px-28 sm:py-11 w-full gap-6 ${
+                className={`flex flex-col items-start sm:px-[32px]  w-full gap-6 ${
                   showCallUs ? 'flex' : 'hidden'
                 }`}
               >
-                <div className="flex flex-col items-start gap-[10px]">
-                  <span className="font-manrope font-semibold text-sm sm:text-xl text-white">
-                    Patent & Trade Mark Office
-                  </span>
-                  <div className="w-2/5 border-[1px] border-[#FFD15B]" />
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-[10px] w-full">
+                  {contactDetails.map((item, index) => (
+                    <a key={`link1-${index}`} href={`tel:${item.number}`}>
+                      <div
+                        key={`contactus-${index}`}
+                        className="flex flex-col justify-center items-start"
+                      >
+                        <span className="font-manrope font-normal text-[14px] sm:text-xl text-white/50">
+                          {item.name}
+                        </span>
+                        <span className="font-manrope font-normal text-[14px] sm:text-xl text-white">
+                          {item.number}
+                        </span>
+                      </div>
+                    </a>
+                  ))}
                 </div>
-                {contactDetails.map((item, index) => (
-                  <a key={`link1-${index}`} href={`tel:${item.number}`}>
-                    <div
-                      key={`contactus-${index}`}
-                      className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
-                    >
-                      <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
-                        {item.name}
-                      </span>
-                      <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                        {item.number}
-                      </span>
-                    </div>
-                  </a>
-                ))}
               </div>
               <div className="flex flex-col items-start w-full">
                 <div
-                  className="flex flex-row items-center w-full py-5 px-12 sm:px-[107px] border-b-[3px] border-white/30 opacity-80 cursor-pointer"
+                  className="flex flex-row items-center w-full  cursor-pointer"
                   onClick={handleEmailUs}
                 >
-                  <div className="flex flex-row items-center gap-6 w-full">
+                  <div className="flex flex-row items-center gap-6 w-full ">
                     <Image
                       alt=""
-                      src="/contactus/mail-outline.svg"
+                      src="/contactus/phone.svg"
                       className="w-6 h-6 sm:h-12 sm:w-12"
                       width={24}
                       height={24}
                     />
-                    <span className="uppercase font-manrope font-bold text-sm sm:text-2xl tracking-[0.2em] text-white/50">
-                      Enquiry form or email
-                    </span>
-                  </div>
-                  <div className="flex justify-end items-end w-full">
-                    <FiChevronUp
-                      className={`w-6 h-6 sm:w-[53px] sm:h-[53px] ${
-                        showEmailUs ? 'rotate-180' : ''
-                      }`}
-                      color={'white'}
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`flex flex-col items-start py-5 px-12 sm:px-[107px] gap-6 opacity-80 w-full ${
-                    showEmailUs ? 'flex' : 'hidden'
-                  }`}
-                >
-                  <div className="flex flex-col items-start gap-[10px]">
-                    <span className="font-manrope font-semibold text-sm sm:text-xl text-white">
-                      Baxter IP
-                    </span>
-                    <div className="w-full border-[1px] border-[#FFD15B]" />
-                  </div>
-                  <div className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl">
-                    <span className="font-manrope font-normal text-sm sm:text-xl text-white/50">
-                      Email
-                    </span>
-                    <span className="font-manrope font-normal text-sm sm:text-xl text-white">
-                      mail@baxterip.com.au
+                    <span className="font-manrope font-bold text-sm sm:text-[20px] tracking-[0.2em] text-white/50 toUpper uppercase">
+                      Email Us
                     </span>
                   </div>
                 </div>
-                <div className="flex flex-col px-12 py-5 sm:px-[107px] sm:py-11 gap-[10px] w-full cursor-pointer hover:opacity-80">
+                <div className="flex flex-col py-5 gap-[10px] w-full cursor-pointer hover:opacity-80">
                   <div
                     className="flex flex-col justify-center items-center bg-[#816BD9] rounded-sm px-6 py-3 sm:px-14 sm:py-6"
                     style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}

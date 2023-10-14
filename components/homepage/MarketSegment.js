@@ -55,20 +55,20 @@ export const MarketSegment = ({
   return (
     <div className="bg-marketsegment">
       <InnerContainer>
-        <div className="w-full flex flex-col gap-10 sm:gap-10 py-16 sm:py-20 md:py-20 px-12 sm:px-[106px] md:px-11 xl:px-32 2xl:px-40 items-center">
-          <div className="flex flex-col md:items-start gap-[30px] sm:gap-[30px] md:gap-10 w-full">
-            <div className="flex w-full justify-center items-center">
-              <span className="font-lora font-medium text-4xl md:text-5xl sm:text-4xl  text-[#272940] text-center md:text-left">
+        <div className="w-full flex flex-col gap-5 sm:gap-10 py-16 sm:py-20 md:py-20 px-[32px] sm:px-[42px] md:px-11 xl:px-32 2xl:px-40 items-center">
+          <div className="flex flex-col md:items-start sm:gap-[30px] md:gap-10 w-full">
+            <div className="flex w-full items-start mb-5 sm:justify-center sm:items-center">
+              <span className="font-lora font-medium text-[21px] sm:text-[48px] md:text-5xl  text-[#272940] text-center md:text-left">
                 <h2>{'Tailoring your experience'}</h2>
               </span>
             </div>
-            <div className="md:w-full flex flex-row justify-between md:items-start">
-              <div className="md:w-1/2 flex flex-col item -center md:items-start gap-8 md:gap-[10px]">
-                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320f80] text-left md:text-left">
+            <div className="sm:w-full flex flex-row justify-between md:items-start">
+              <div className="w-[180px] sm:w-full md:w-1/2 flex flex-col item-center md:items-start md:gap-[10px]">
+                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-[12px] sm:text-[20px] md:text-xl text-[#40320f80] text-left md:text-left">
                   {marketSigment[0].header}
                 </span>
-                <div className="flex py-1 gap-[10px]">
-                  <span className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
+                <div className="flex sm:block py-1 sm:py-0">
+                  <span className="w-48 md:w-full font-lora font-medium text-[18px] sm:text-[32px] text-[#272940] text-left md:text-left">
                     <h3>{marketSigment[0].title}</h3>
                   </span>
                 </div>
@@ -80,20 +80,20 @@ export const MarketSegment = ({
                 }}
                 className={`${
                   collapse ? 'flex' : 'hidden'
-                } flex-row justify-center text-center mr-5 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] h-20 w-100 cursor-pointer`}
+                } flex-row justify-center w-[107px] h-[44px] sm:w-[210px] sm:h-[72px]  text-center sm:mr-5 sm:py-[5px] sm:py-6 sm:gap-[10px] sm:gap-6 bg-white rounded sm:w-1/5 sm:w-[200px] sm:h-20 sm:w-100 cursor-pointer`}
                 style={{
                   boxShadow:
                     '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-                  border: '1px solid #000000',
+                  border: '1px solid #816BD9',
                 }}
               >
-                <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
+                <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap sm:pl-10 sm:pr-10 flex justify-center items-center">
                   Clear Section
                 </span>
               </div>
             </div>
-            <div className={`${collapse ? 'hidden' : 'flex'}`}>
-              <div className="hidden md:grid grid-cols-2 grid-flow-row gap-6 items-stretch">
+            <div className={`${collapse ? 'hidden' : 'flex mt-5'}`}>
+              <div className="hidden sm:grid grid-cols-2 grid-flow-row gap-6 items-stretch">
                 {cards.map((card, index) => (
                   <div
                     className={`${
@@ -173,7 +173,7 @@ export const MarketSegment = ({
             <div
               className={`${
                 collapse ? 'hidden' : 'flex'
-              } md:hidden flex flex-col items-center justify-center gap-8 w-full`}
+              } sm:hidden flex flex-col items-center justify-center gap-[16px] sm:gap-8 w-full`}
             >
               {cards.map((card, index) => (
                 <div
@@ -192,7 +192,7 @@ export const MarketSegment = ({
                   <div className="flex flex-row items-center gap-6 w-full">
                     <div className="flex flex-row items-center gap-8 w-[90%]">
                       <div
-                        className={`w-10 h-10 sm:w-[88px] sm:h-[88px] rounded-full flex items-center justify-center  ${
+                        className={`w-[40px] h-[40px] sm:w-[88px] sm:h-[88px] rounded-full flex items-center justify-center  ${
                           cardIndex - 1 === index
                             ? 'bg-[#816BD9]'
                             : 'bg-[#F3F3FA]'
@@ -242,7 +242,7 @@ export const MarketSegment = ({
                       strokeWidth={2}
                     />
                   </div>
-                  <div className="flex flex-col w-full">
+                  <div className="hidden flex flex-col w-full">
                     <span
                       className={`font-manrope font-medium text-[10px] sm:text-xl ${
                         cardIndex - 1 === index
@@ -272,7 +272,7 @@ export const MarketSegment = ({
           {collapse && (
             <div className="flex w-full">
               <div
-                className="flex flex-row pl-5 md:pl-10  mr-5 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-gradient-to-r from-[#61638D] to-[#494B70]  border-[#DCC895] rounded w-full"
+                className="flex flex-row pl-5 md:pl-10 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-gradient-to-r from-[#61638D] to-[#494B70]  border-[#DCC895] rounded w-full"
                 style={{
                   boxShadow:
                     '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
@@ -299,15 +299,16 @@ export const MarketSegment = ({
 
           {/* --------------------- Industry Section ------------------- */}
           <div className="w-full">
-            <div className="md:w-full flex flex-row justify-between md:items-start">
-              <div className="w-full flex flex-col item-center md:items-start gap-8 md:gap-[10px]">
-                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320f80] text-left md:text-left">
+
+          <div className="sm:w-full flex flex-row justify-between md:items-start">
+              <div className="w-[180px] sm:w-full md:w-1/2 flex flex-col item-center md:items-start md:gap-[10px]">
+                <span className="font-manrope font-bold tracking-[0.2em] md:tracking-normal text-[12px] sm:text-[20px] md:text-xl text-[#40320f80] text-left md:text-left">
                   {marketSigment2[0].header}
                 </span>
-                <div className="flex pb-10 md:pb-0 gap-[10px] justify-left">
-                  <h3 className="w-48 md:w-full font-lora font-medium text-xl sm:text-4xl  text-[#272940] text-left md:text-left">
-                    {marketSigment2[0].title}
-                  </h3>
+                <div className="flex sm:block py-1 sm:py-0">
+                  <span className="w-48 md:w-full font-lora font-medium text-[18px] sm:text-[32px] text-[#272940] text-left md:text-left">
+                    <h3>{marketSigment2[0].title}</h3>
+                  </span>
                 </div>
               </div>
               <div
@@ -317,20 +318,20 @@ export const MarketSegment = ({
                 }}
                 className={`${
                   collapseIndustry ? 'flex' : 'hidden'
-                } flex-row justify-center text-center py-[10px] mr-5 sm:py-6 gap-[10px] sm:gap-6 bg-white rounded w-1/5 sm:w-[200px] cursor-pointer h-20 w-100`}
+                } flex-row justify-center w-[107px] h-[44px] sm:w-[210px] sm:h-[72px]  text-center sm:mr-5 sm:py-[5px] sm:py-6 sm:gap-[10px] sm:gap-6 bg-white rounded sm:w-1/5 sm:w-[200px] sm:h-20 sm:w-100 cursor-pointer`}
                 style={{
                   boxShadow:
                     '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
-                  border: '1px solid #000000',
+                  border: '1px solid #816BD9',
                 }}
               >
-                <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap pl-10 pr-10 flex justify-center items-center">
+                <span className="font-manrope text-[10px] sm:text-xl text-[#000000] whitespace-nowrap sm:pl-10 sm:pr-10 flex justify-center items-center">
                   Clear Section
                 </span>
               </div>
             </div>
-            <div className={`${collapseIndustry ? 'hidden' : 'flex'}`}>
-              <div className="hidden md:grid grid-cols-2 grid-flow-row gap-6 mt-10 items-stretch">
+            <div className={`${collapseIndustry ? 'hidden' : 'flex mt-5'}`}>
+              <div className="hidden sm:grid grid-cols-2 grid-flow-row gap-6 mt-10 items-stretch">
                 {cardsIndustry.map((card, index) => (
                   <div
                     className={`${
@@ -410,7 +411,7 @@ export const MarketSegment = ({
             <div
               className={`${
                 collapseIndustry ? 'hidden' : 'flex'
-              } md:hidden flex flex-col items-center justify-center gap-8 w-full`}
+              } sm:hidden flex flex-col items-center justify-center gap-[16px] sm:gap-8 w-full`}
             >
               {cardsIndustry.map((card, index) => (
                 <div
@@ -479,7 +480,7 @@ export const MarketSegment = ({
                       strokeWidth={2}
                     />
                   </div>
-                  <div className="flex flex-col w-full">
+                  <div className="hidden flex flex-col w-full">
                     <span
                       className={`font-manrope font-medium text-[10px] sm:text-xl ${
                         cardIndexIndustry - 1 === index
@@ -509,15 +510,14 @@ export const MarketSegment = ({
           {collapseIndustry && (
             <div className="flex w-full ">
               <div
-                className="flex flex-row pl-5 md:pl-10 mr-5 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-gradient-to-r from-[#61638D] to-[#494B70]  border-[#DCC895] rounded w-full"
+                className="flex flex-row pl-5 md:pl-10 py-[10px] sm:py-6 gap-[10px] sm:gap-6 bg-gradient-to-r from-[#61638D] to-[#494B70]  border-[#DCC895] rounded w-full"
                 style={{
                   boxShadow:
                     '0px 124px 253px rgba(150, 151, 169, 0.17), 0px 27px 56px rgba(150, 151, 169, 0.101338), 0px 8px 16px rgba(150, 151, 169, 0.0686618), 0px 3px 7px rgba(0, 0, 0, 0.0477948)',
                 }}
               >
                 <span
-                  style={{ width: 48, height: 48 }}
-                  className="bg-[#816BD9] rounded-full flex justify-center items-center"
+                  className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] bg-[#816BD9] rounded-full flex justify-center items-center"
                 >
                   <Image
                     src={selectedIconIndustry}
