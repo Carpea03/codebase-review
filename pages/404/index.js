@@ -11,6 +11,7 @@ import { getClient, overlayDrafts } from '../../lib/sanity.server'
 import { useState, useEffect } from 'react'
 import { InnerContainer } from '../../components/templates/InnerContainer'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const news = [
   {
@@ -49,6 +50,9 @@ export default function Notfound() {
   }
   return (
     <>
+      <Head>
+        <title>{`Page not found | Baxter IP`}</title>
+      </Head>
       <Header />
       <Container>
         <div className="bg-404 bg-cover bg-center flex flex-col items-center justify-center gap-6 sm:gap-16 md:gap-14 px-12 sm:px-20 md:px-56 xl:px-[432px] py-52 sm:py-56 md:py-32 bg-hero-banner">
@@ -63,23 +67,24 @@ export default function Notfound() {
               Sorry the page you’re looking doesn’t exist or has been moved.
             </span>
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+          <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
             <Link href={'/'}>
               <div
-                className="w-32 h-11 sm:w-[250px] sm:h-24 md:w-[230px] md:h-[75px] flex flex-row justify-center items-center px-6 py-[10px] sm:px-12 sm:py-6 gap-3 sm:gap-6 bg-white border-4 border-[#B2B4DB] rounded-sm cursor-pointer hover:opacity-80"
+                className="w-60 h-11 sm:w-[250px] sm:h-24 md:w-[230px] md:h-[75px] flex flex-row justify-center items-center px-6 py-[10px] sm:px-12 sm:py-6 gap-3 bg-white border-4 border-[#B2B4DB] rounded-sm cursor-pointer hover:opacity-80 order-first md:order-last"
                 style={{
                   boxShadow:
-                    '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
+                    '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
                 }}
               >
                 <IoArrowBackOutline
                   size={16}
                   className="w-[10px] h-[10px] sm:w-6 sm:h-6 md:w-4 md:h-4"
-                />
-                <span className="font-manrope font-semibold text-xs sm:text-base text-[#272940]">
-                  Go back
+                />  
+                <span className="font-manrope font-semibold text-xs sm:text-base text-black">
+                Go back
                 </span>
               </div>
+              
             </Link>
             <Link href={'/'}>
               <div
@@ -98,14 +103,14 @@ export default function Notfound() {
         </div>
         <div className="flex flex-col items-start gap-12 md:gap-[60px]">
           <InnerContainer>
-            <div className="md:w-2/3 flex flex-col items-center md:items-start justify-center md:justify-end gap-[10px] sm:gap-6 px-14 xl:px-40 pt-[70px] sm:pt-32">
+            <div className="md:w-2/3 flex flex-col items-center sm:items-start justify-center md:justify-end gap-[10px] sm:gap-6 px-[32px] sm:px-14 xl:px-40 pt-[70px] sm:pt-32">
               <span className="uppercase font-manrope font-bold tracking-[0.2em] md:tracking-normal text-xs sm:text-2xl md:text-xl text-[#40320F]/50 text-center md:text-left">
                 ip news blog
               </span>
-              <span className="font-lora font-medium text-xl sm:text-5xl leading-[70px] text-[#272940] text-center md:text-left">
+              <span className="font-lora font-medium text-xl sm:text-5xl sm:leading-[70px] text-[#272940] text-center sm:text-left">
                 Check out our latest articles
               </span>
-              <span className="w-92 font-manrope text-xl text-[#7A7B94] text-center text-[#272940] text-center md:text-left">
+              <span className="w-92 font-manrope text-xl text-[#7A7B94] text-center sm:text-left text-[#272940] md:text-left">
                 Check out lattes news on Baxter IP, here’s our listed
                 recommended news for you to look.
               </span>

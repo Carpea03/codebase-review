@@ -101,8 +101,8 @@ export default function Layout({
                     bannerData
                       ? 'mb-20'
                       : stepper
-                      ? 'md:mt-10 mb-20'
-                      : 'md:mt-32 mb-20'
+                      ? 'md:mt-10 md:mb-20'
+                      : 'md:mt-32 md:mb-20'
                   }
                   `}
                   >

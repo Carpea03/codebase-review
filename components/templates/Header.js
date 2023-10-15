@@ -132,7 +132,7 @@ export default function Header({
               ))}
             </div>
           </div>
-          <form action="">
+          {/* <form action="">
             <input
               type="search"
               placeholder="Search here..."
@@ -141,11 +141,11 @@ export default function Header({
             <div className="absolute top-4 p-3 flex justify-start item-center">
               <Search color="#404266" size={24} />
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
       <div className="container flex flex-row justify-between items-center mx-auto p-5 md:hidden">
-        <form action="">
+        {/* <form action="">
           <input
             type="search"
             placeholder="Search here..."
@@ -154,8 +154,7 @@ export default function Header({
           <div className="absolute top-6 p-3 flex justify-start item-center">
             <Search color="#404266" size={24} />
           </div>
-        </form>
-        <Logo />
+        </form> */}
         <Popover as="div">
           <Popover.Button className="outline-none">
             <FiMenu size={24} className="cursor-pointer" />
@@ -203,6 +202,9 @@ export default function Header({
             ))}
           </Popover.Panel>
         </Popover>
+        <Link href={'/'}>
+          <Logo />
+        </Link>
       </div>
     </div>
   )
