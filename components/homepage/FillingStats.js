@@ -93,7 +93,7 @@ const projects = [
   {
     id: 2,
     name: 'New Wave',
-    image: '/fillingStats/slide-2.png',
+    image: '/fillingStats/slide-3.jpg',
     totalNumber: 3,
     totalHours: 534,
     budget: 11232,
@@ -104,7 +104,7 @@ const projects = [
   {
     id: 3,
     name: 'Coach & Connect',
-    image: '/fillingStats/slide-1.png',
+    image: '/fillingStats/slide-2.jpg',
     totalNumber: 2,
     totalHours: 4,
     budget: 23,
