@@ -454,7 +454,7 @@ export const profiles = {
       },
     ],
   },
-  'dr-qi-zhang': {
+  'qi-zhang': {
     name: 'Dr Qi Zhang',
     bio: "Dr Qi Zhang is a patent and trade mark attorney specialising in mobile communications, electrical engineering and software. Qi is based at Baxter IP's Sydney Office.",
     position: 'Principal, Patent & Trade Mark Attorney',
@@ -616,7 +616,7 @@ export const profiles = {
       },
     ],
   },
-  'dr-richard-grant': {
+  'richard-grant': {
     name: 'Dr Richard Grant',
     bio: 'Dr Richard Grant is a Sydney patent attorney specialising in drafting and filing chemical and pharmaceutical patents, such as nanotechnology and polymers.',
     position: 'Senior Patent Attorney',
@@ -741,7 +741,7 @@ export const profiles = {
       },
     ],
   },
-  'dr-sean-klinkradt': {
+  'sean-klinkradt': {
     name: 'Dr Seán Klinkradt',
     bio: 'Dr Seán Klinkradt is a Melbourne patent attorney specialising in biotechnology, medical devices, industrial processes and chemistry.',
     position: 'Senior Associate, Patent Attorney',

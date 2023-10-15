@@ -36,30 +36,43 @@ const AttorneysCard = ({ peoples, awards }) => {
               '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
           }}
         >
-          <Link href={teamMember.link} className="no-underline">
-            <Image alt="" src={teamMember?.url} sizes='100vw' width={0} height={0} className='w-full' />
-            <div className="flex flex-col pl-6 pr-6 pb-3">
+          <Link href={teamMember.link} className='no-underline'>
+            <Image
+              alt=""
+              style={{ width:"100%", objectFit:"cover"}}
+              src={teamMember?.url}
+              sizes="100vw"
+              width={0}
+              height={0}
+            />
+            <div className="flex flex-col pl-4 pb-4 pr-4 sm:p-8">
               <div className="flex flex-row w-full">
                 <div className="flex flex-col w-full md:w-[50%]">
-                  <span className="font-manrope font-medium text-base sm:text-xl text-[#404266] pb-2 sm:pb-4">
+                  <span className="font-manrope font-medium text-base sm:text-xl md:text-[20px] text-[#404266] pb-2 sm:pb-4">
                     {teamMember?.name}
                   </span>
                   <div className="flex flex-col w-full">
                     {teamMember?.positions?.map((position, index) => (
                       <span
                         key={index}
-                        className="font-lora italic font-medium text-base sm:text-base md:text-sm text-[#7A7B94] sm:w-full md:w-[200px]"
+                        className="font-lora italic font-medium text-base sm:text-base md:text-[16px] text-[#7A7B94] sm:w-full md:w-[200px]"
                       >
                         {position}
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="flex justify-end w-full mt-[-30px]">
+                <div
+                  className={`${
+                    teamMember?.awards.length !== 0
+                      ? 'flex justify-end w-full'
+                      : 'hidden'
+                  }`}
+                >
                   <div className="flex-col">
                     {teamMember?.awards?.map((award, index) => (
                       <>
-                        <div className="">
+                        <div className={`mb-5 mt-[-30px]`}>
                           <Image
                             key={index}
                             src={`/professionalProfiles/awards/${

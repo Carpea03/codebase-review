@@ -11,6 +11,7 @@ import { getClient, overlayDrafts } from '../../lib/sanity.server'
 import { useState, useEffect } from 'react'
 import { InnerContainer } from '../../components/templates/InnerContainer'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const news = [
   {
@@ -49,6 +50,9 @@ export default function Notfound() {
   }
   return (
     <>
+      <Head>
+        <title>{`Page not found | Baxter IP`}</title>
+      </Head>
       <Header />
       <Container>
         <div className="bg-404 bg-cover bg-center flex flex-col items-center justify-center gap-6 sm:gap-16 md:gap-14 px-12 sm:px-20 md:px-56 xl:px-[432px] py-52 sm:py-56 md:py-32 bg-hero-banner">
@@ -63,7 +67,7 @@ export default function Notfound() {
               Sorry the page you’re looking doesn’t exist or has been moved.
             </span>
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+          <div className="w-full flex flex-col md:flex-row items-center gap-6 sm:gap-8">
             <Link href={'/'}>
               <div
                 className="w-32 h-11 sm:w-[250px] sm:h-24 md:w-[230px] md:h-[75px] flex flex-row justify-center items-center px-6 py-[10px] sm:px-12 sm:py-6 gap-3 sm:gap-6 bg-white border-4 border-[#B2B4DB] rounded-sm cursor-pointer hover:opacity-80"
