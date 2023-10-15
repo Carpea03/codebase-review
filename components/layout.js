@@ -101,8 +101,8 @@ export default function Layout({
                     bannerData
                       ? 'mb-20'
                       : stepper
-                      ? 'md:mt-10 mb-20'
-                      : 'md:mt-32 mb-20'
+                      ? 'md:mt-10 md:mb-20'
+                      : 'md:mt-32 md:mb-20'
                   }
                   `}
                   >
@@ -198,7 +198,7 @@ export default function Layout({
                     className={` ${
                       bannerData ? 'py-80 mt-20' : 'bg-white'
                     } format max-w-none mx-auto pl-[32px] pr-[32px] md:pl-10 md:pr-10 pb-10
-                  ${bannerData ? 'mb-20' : 'md:mt-20 mb-20 '}
+                  ${bannerData ? 'md:mb-5' : 'md:mt-20 mb:mb-20 '}
                   `}
                   >
                     {children}

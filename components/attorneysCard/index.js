@@ -26,7 +26,7 @@ const AttorneysCard = ({ peoples, awards }) => {
   }, [screenSize])
 
   return (
-    <div className="grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 mb-10">
+    <div className="grid mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 mb-10">
       {peoples?.map((teamMember, index) => (
         <div
           key={index}
@@ -39,13 +39,13 @@ const AttorneysCard = ({ peoples, awards }) => {
           <Link href={teamMember.link} className='no-underline'>
             <Image
               alt=""
-              style={{ width:"100%", objectFit:"cover"}}
+              style={{ width:"100%", marginTop:0, objectFit:"cover"}}
               src={teamMember?.url}
               sizes="100vw"
               width={0}
               height={0}
             />
-            <div className="flex flex-col pl-4 pb-4 pr-4 sm:p-8">
+            <div className="flex flex-col pl-4 pb-4 pr-4 sm:p-4 md:p-8 mt-[-20px]">
               <div className="flex flex-row w-full">
                 <div className="flex flex-col w-full md:w-[50%]">
                   <span className="font-manrope font-medium text-base sm:text-xl md:text-[20px] text-[#404266] pb-2 sm:pb-4">
@@ -72,7 +72,7 @@ const AttorneysCard = ({ peoples, awards }) => {
                   <div className="flex-col">
                     {teamMember?.awards?.map((award, index) => (
                       <>
-                        <div className={`mb-5 mt-[-30px]`}>
+                        <div className={`mb-10 mt-[-30px]`}>
                           <Image
                             key={index}
                             src={`/professionalProfiles/awards/${

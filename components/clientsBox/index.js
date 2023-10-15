@@ -17,7 +17,7 @@ const ClientsBox = ({ state }) => {
   ]
   return (
     <div className="w-full">
-      <div className="w-full flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px]">
+      <div className="w-full flex grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  gap-[10px] md:gap-[20px]">
         {brands[state].supportedBrand.map((item, index) => {
           return (
             <div
@@ -29,7 +29,7 @@ const ClientsBox = ({ state }) => {
               }}
             >
               <div className="w-full flex justify-center md:justify-center">
-                <Image src={item.src} alt="" width={320} height={240} />
+                <Image src={item.src} alt="" width={320} height={240} sizes='100vw' className='w-[200px] h-[60px] sm:w-[320px] sm:h-[140px] md:w-[320px] md:h-[200px]' />
               </div>
             </div>
           )

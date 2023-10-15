@@ -11,7 +11,7 @@ export default function NewsBlog({ data, isblog, btnTitle, title }) {
       <div className="w-full flex flex-row items-start justify-center sm:pb-10 px-5">
         <div className="flex flex-col gap-5 sm:gap-10">
           {isblog && (
-            <div className="font-lora text-[20px] sm:text-[48px] md:text-5xl font-medium flex justify-center mt-20 mb-5">
+            <div className="font-lora text-[20px] sm:text-[48px] md:text-5xl font-medium flex justify-center mt-10 sm:mt-20 mb-5">
               <h2>{title || 'Related Articles'}</h2>
             </div>
           )}
