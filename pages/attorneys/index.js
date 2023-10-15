@@ -44,10 +44,7 @@ export default function People() {
             'The patent and trade mark attorneys at Baxter IP in Sydney or Melbourne can help secure your intellectual property. You will be matched with the IP attorney best suited to your needs.'
           }
         />
-        <link
-          rel="canonical"
-          href="https://www.baxterip.com.au/attorneys"
-        />
+        <link rel="canonical" href="https://www.baxterip.com.au/attorneys" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/attorneys"
@@ -151,7 +148,7 @@ export default function People() {
                 </div>
               ))}
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-12 sm:px-24 md:px-12 xl:px-24 2xl:px-40 py-20 sm:py-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-5 md:gap-4 px-[32px] sm:px-[48px] md:px-12 xl:px-24 2xl:px-40 py-10 sm:py-20 sm:py-24">
             {peoples
               .filter((item) => item.id === team)[0]
               .teamMembers.map((people, index) => (
@@ -164,53 +161,60 @@ export default function People() {
                   }}
                 >
                   <Link href={people.link}>
-                    <Image alt="" src={people?.url} width={400} height={200} />
-                    <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
+                    <Image
+                      alt=""
+                      src={people?.url}
+                      sizes="100vw"
+                      width={0}
+                      height={0}
+                      className="w-full"
+                    />
+                    <div className="flex flex-col p-8">
                       <div className="flex flex-row w-full">
-                        <div className="flex flex-col w-full">
-                          <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266] pb-2 sm:pb-4">
+                        <div className="flex flex-col w-full md:w-[50%]">
+                          <span className="font-manrope font-medium text-base sm:text-xl md:text-[20px] text-[#404266] pb-2 sm:pb-4">
                             {people?.name}
                           </span>
                           <div className="flex flex-col w-full">
                             {people?.positions?.map((position, index) => (
                               <span
                                 key={index}
-                                className="font-lora italic font-medium text-[7px] sm:text-base md:text-sm text-[#7A7B94] sm:w-full md:w-[200px]"
+                                className="font-lora italic font-medium text-base sm:text-base md:text-[16px] text-[#7A7B94] sm:w-full md:w-[200px]"
                               >
                                 {position}
                               </span>
                             ))}
                           </div>
                         </div>
-                        <div className="flex flex-col flex-end content-end flex-wrap w-full">
-                          {people?.awards?.map((award, index) => (
-                            <Image
-                              key={index}
-                              src={`/professionalProfiles/awards/${
-                                awards?.filter((value) => value.id == award)[0]
-                                  ?.title
-                              }.png`}
-                              width={
-                                screenSize.width <= 768
-                                  ? awards?.filter(
-                                      (value) => value.id == award
-                                    )[0]?.width / 2
-                                  : awards?.filter(
-                                      (value) => value.id == award
-                                    )[0]?.width
-                              }
-                              height={
-                                screenSize.width <= 768
-                                  ? awards?.filter(
-                                      (value) => value.id == award
-                                    )[0]?.height / 1.5
-                                  : awards?.filter(
-                                      (value) => value.id == award
-                                    )[0]?.height
-                              }
-                              className="self-end pb-2 sm:pb-4"
-                            />
-                          ))}
+                        <div className={`${people?.awards.length !== 0? "flex justify-end w-full": "hidden"}`}>
+                          <div className="flex-col">
+                            {people?.awards?.map((award, index) => (
+                              <>
+                                <div
+                                  className={`mb-5`}
+                                >
+                                  <Image
+                                    key={index}
+                                    src={`/professionalProfiles/awards/${
+                                      awards?.filter(
+                                        (value) => value.id == award
+                                      )[0]?.title
+                                    }.png`}
+                                    width={
+                                      screenSize.width <= 768
+                                        ? awards?.filter(
+                                            (value) => value.id == award
+                                          )[0]?.width
+                                        : awards?.filter(
+                                            (value) => value.id == award
+                                          )[0]?.width
+                                    }
+                                    height={100}
+                                  />
+                                </div>
+                              </>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>

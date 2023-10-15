@@ -127,63 +127,58 @@ export default function ProfessionalProfiles() {
                     }}
                   >
                     <Link href={teamMember.link}>
-                      <Image
-                        alt=""
-                        src={teamMember?.url}
-                        width={400}
-                        height={200}
-                      />
-                      <div className="flex flex-col p-4 sm:p-8 md:p-6 gap-y-4 sm:gap-y-8 md:gap-y-6">
-                        <div className="flex flex-row w-full">
+                    <Image
+                      alt=""
+                      src={teamMember?.url}
+                      sizes="100vw"
+                      width={0}
+                      height={0}
+                      className="w-full"
+                    />
+                    <div className="flex flex-col p-3 sm:p-8">
+                      <div className="flex flex-col sm:flex-row w-full">
+                        <div className="flex flex-col w-full md:w-[50%]">
+                          <span className="font-manrope font-medium text-base sm:text-xl md:text-[20px] text-[#404266] pb-2 sm:pb-4">
+                            {teamMember?.name}
+                          </span>
                           <div className="flex flex-col w-full">
-                            <span className="font-manrope font-medium text-[8px] sm:text-xl text-[#404266] pb-2 sm:pb-4">
-                              {teamMember?.name}
-                            </span>
-                            <div className="flex flex-col w-full">
-                              {teamMember?.positions?.map((position, index) => (
-                                <span
-                                  key={index}
-                                  className="font-lora italic font-medium text-[7px] sm:text-base md:text-sm text-[#7A7B94] sm:w-full md:w-[200px]"
-                                >
-                                  {position}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-                          <div className="flex flex-col flex-end content-end flex-wrap w-full">
-                            {teamMember?.awards?.map((award, index) => (
-                              <Image
+                            {teamMember?.positions?.map((position, index) => (
+                              <span
                                 key={index}
-                                src={`/professionalProfiles/awards/${
-                                  awards?.filter(
-                                    (value) => value.id == award
-                                  )[0]?.title
-                                }.png`}
-                                width={
-                                  screenSize.width <= 768
-                                    ? awards?.filter(
+                                className="font-lora italic font-medium text-base sm:text-base md:text-[16px] text-[#7A7B94] sm:w-full md:w-[200px]"
+                              >
+                                {position}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <div className={`${teamMember?.awards.length !== 0? "flex justify-center mt-3 sm:justify-end w-full": "hidden"}`}>
+                          <div className="flex flex-row sm:flex-col gap-2 sm:gap-0">
+                            {teamMember?.awards?.map((award, index) => (
+                              <>
+                                <div
+                                  className={`mb-5`}
+                                >
+                                  <Image
+                                    key={index}
+                                    src={`/professionalProfiles/awards/${
+                                      awards?.filter(
                                         (value) => value.id == award
-                                      )[0]?.width / 2
-                                    : awards?.filter(
-                                        (value) => value.id == award
-                                      )[0]?.width
-                                }
-                                height={
-                                  screenSize.width <= 768
-                                    ? awards?.filter(
-                                        (value) => value.id == award
-                                      )[0]?.height / 1.5
-                                    : awards?.filter(
-                                        (value) => value.id == award
-                                      )[0]?.height
-                                }
-                                className="self-end pb-2 sm:pb-4"
-                              />
+                                      )[0]?.title
+                                    }.png`}
+                                    width={0}
+                                    height={0}
+                                    sizes='100vw'
+                                    className='w-[40px] sm:w-[60px]'
+                                  />
+                                </div>
+                              </>
                             ))}
                           </div>
                         </div>
                       </div>
-                    </Link>
+                    </div>
+                  </Link>
                   </div>
                 ))}
               </div>
