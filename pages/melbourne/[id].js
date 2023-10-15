@@ -80,86 +80,136 @@ export default function Profile({ profile }) {
       <Container className="flex flex-col">
         <div className="bg-profile-bg !bg-cover">
           <InnerContainer>
-            <div className="px-[20px] md:px-[63px] xl:px-[160px]">
-              <div className="flex flex-col md:flex-row justify-center w-full sm:pt-[100px]">
-                <div className="w-full xl:w-[788.185px] xl:h-[333px] bg-white p-10 md:p-14">
-                  <div className="w-full">
-                    <span className="font-lora font-normal text-[32px] sm:text-5xl xl:text-[64px] xl:leading-[70px]">
-                      <h1>
-                        {profile.name}
-                        <span className="screen-reader-text"> - </span>
-                        <span className=" flex flex-col justify-center items-start mb-5 md:mb-20 font-manrope font-medium text-base sm:text-[32px] sm:leading-[44px] sm:tracking-[-0.03em] md:text-xl xl:text-2xl text-[#272940]">
-                          {profile.position}
-                        </span>
-                      </h1>
-                    </span>
+            <div className="px-[16px] sm:px-[48px] md:px-[63px] xl:px-[160px] mt-10">
+              <div className="sm:pt-[100px]">
+                <div className="flex flex-col sm:flex-row justify-center w-full bg-white">
+                  <div
+                    className={`w-full ${
+                      profile.awards ? 'sm:w-[500px]' : 'sm:w-full'
+                    } md:w-[788.185px] md:h-[333px] bg-white h-full p-[16px] md:p-14`}
+                  >
+                    <div className="w-full">
+                      <span className="font-lora font-normal text-[32px] sm:text-[40px] md:text-[64px] xl:leading-[70px]">
+                        <h1>
+                          {profile.name}
+                          <span className="screen-reader-text"> - </span>
+                          <span className=" flex flex-col justify-center items-start mb-5 md:mb-20 font-manrope font-medium text-base sm:text-[24px] sm:leading-[44px] sm:tracking-[-0.03em] md:text-xl xl:text-2xl text-[#272940]">
+                            {profile.position}
+                          </span>
+                        </h1>
+                      </span>
 
-                    <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-[60px]">
-                      <div className="flex flex-col items-start gap-[10px]">
-                        <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
-                          Email
-                        </span>
-                        <a href={`mailto:${profile.email}`}>
-                          <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940]">
-                            {profile.email}
+                      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 2xl:gap-[60px]">
+                        <div className="flex flex-col items-start sm:gap-[10px]">
+                          <span className="font-manrope font-medium text-sm sm:text-[24px] md:text-base xl:text-xl text-[#7A7B94] uppercase">
+                            Email
                           </span>
-                        </a>
-                      </div>
-                      <div className="flex flex-col items-start gap-[10px]">
-                        <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
-                          Telephone
-                        </span>
-                        <a href={`tel:${profile.telephone}`}>
-                          <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940] whitespace-nowrap sm:pb-10 xl:pb-0">
-                            {profile.telephone}
+                          <a href={`mailto:${profile.email}`}>
+                            <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940]">
+                              {profile.email}
+                            </span>
+                          </a>
+                        </div>
+                        <div className="flex flex-col items-start gap-[10px]">
+                          <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
+                            Telephone
                           </span>
-                        </a>
+                          <a href={`tel:${profile.telephone}`}>
+                            <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940] whitespace-nowrap sm:pb-10 xl:pb-0">
+                              {profile.telephone}
+                            </span>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  className={`${
-                    profile.awards ? 'md:w-[250px]' : 'md:w-[332px]'
-                  } xl:w-[332px] xl:h-[333px] bg-white`}
-                >
-                  <div className="flex-col">
-                    <Image
-                      src={profile.potrait}
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      style={{
-                        height: '100%',
-                        width: '100%',
-                        objectFit: 'cover',
-                      }}
-                      alt=""
-                    />
-                    <div
-                      className={`flex xl:hidden ${
-                        profile.awards ? 'md:w-[250px]' : 'md:w-[332px]'
-                      } md:h-full bg-white`}
-                    >
-                      <div className="w-full flex flex-row justify-center p-10">
-                        <div className="flex flex-col">
-                          {profile.awards?.map((award, index) => (
-                            <Image
-                              key={index}
-                              src={`/professionalProfiles/awards/${
-                                awards?.filter((value) => value.id == award)[0]
-                                  ?.title
-                              }.png`}
-                              width={
-                                awards?.filter((value) => value.id == award)[0]
-                                  ?.width * 2
-                              }
-                              height={
-                                awards?.filter((value) => value.id == award)[0]
-                                  ?.height * 1.5
-                              }
-                            />
-                          ))}
+                  <div
+                    className={`${
+                      profile.awards ? 'md:w-[250px]' : 'md:w-[332px]'
+                    } xl:w-[332px] xl:h-[333px] bg-white`}
+                  >
+                    <div className="flex-col">
+                      <div className={`${profile.awards ? 'flex' : 'sm:hidden'}`}>
+                        <Image
+                          src={profile.potrait}
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                          style={{
+                            height: '100%',
+                            width: '100%',
+                            objectFit: 'cover',
+                          }}
+                          alt=""
+                        />
+                      </div>
+
+                      <div className={`${profile.awards ? 'hidden' : 'hidden sm:flex'}`}>
+                        <Image
+                          src={profile.potrait}
+                          width={0}
+                          height={0}
+                          sizes="100vw"
+                          style={{
+                            height: 400,
+                            width: 400,
+                            objectFit: 'cover',
+                          }}
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className={`flex xl:hidden ${
+                          profile.awards
+                            ? 'md:w-[250px]'
+                            : 'hidden md:w-[332px]'
+                        } md:h-full bg-white`}
+                      >
+                        <div className="w-full flex flex-row justify-center p-10">
+                          <div className="flex sm:hidden flex-row gap-5">
+                            {profile.awards?.map((award, index) => (
+                              <Image
+                                key={index}
+                                src={`/professionalProfiles/awards/${
+                                  awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.title
+                                }.png`}
+                                width={
+                                  awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.width
+                                }
+                                height={
+                                  awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.height
+                                }
+                              />
+                            ))}
+                          </div>
+                          <div className="hidden sm:flex flex-col ">
+                            {profile.awards?.map((award, index) => (
+                              <Image
+                                key={index}
+                                src={`/professionalProfiles/awards/${
+                                  awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.title
+                                }.png`}
+                                width={
+                                  awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.width * 2
+                                }
+                                height={
+                                  awards?.filter(
+                                    (value) => value.id == award
+                                  )[0]?.height * 1.5
+                                }
+                              />
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -170,8 +220,8 @@ export default function Profile({ profile }) {
           </InnerContainer>
         </div>
         <InnerContainer>
-          <div className="px-5 sm:px-5 md:px-16 xl:px-[160px]">
-            <div className="flex flex-col md:flex-row justify-center w-full">
+          <div className="px-[16px] sm:px-[48px] md:px-16 xl:px-[160px]">
+            <div className="flex flex-col md:flex-row sm:justify-center w-full">
               <div
                 className={`w-full ${
                   profile.awards ? 'xl:w-[788.185px]' : ''
@@ -179,13 +229,13 @@ export default function Profile({ profile }) {
               >
                 <div className="w-full">
                   <div
-                    className={`flex items-center px-10 py-10`}
+                    className={`flex sm:items-center px-[16px] py-[16px] sm:px-10 sm:py-10`}
                     style={{
                       background:
                         'linear-gradient(111.14deg, #60628C 4.56%, #4B4D72 97.76%)',
                     }}
                   >
-                    <p className=" md:flex font-manrope font-semibold sm:text-2xl text-white text-center">
+                    <p className=" md:flex font-manrope font-semibold sm:text-2xl text-white md:text-center">
                       {profile.objective}
                     </p>
                   </div>
@@ -194,7 +244,7 @@ export default function Profile({ profile }) {
               {profile.awards && (
                 <div className="hidden xl:flex md:w-[332px] md:h-100 bg-white">
                   <div className="w-full flex flex-row justify-end">
-                    <div className="flex flex-col pt-10 pr-10 gap-5">
+                    <div className="flex sm:flex-col pt-10 pr-10 gap-5">
                       {profile.awards?.map((award, index) => (
                         <Image
                           key={index}
@@ -234,12 +284,12 @@ export default function Profile({ profile }) {
             </div>
 
             <div
-              className="flex flex-col items-center justify-center py-[60px] px-4 sm:pt-[100px] sm:px-6 md:p-[60px] gap-[100px] md:gap-[60px] bg-white rounded-lg"
+              className="flex flex-col items-center justify-center py-5 sm:py-[20px] md:py-[60px] px-4 sm:pt-[20px] md:pt-[100px] sm:px-6 md:p-[60px] gap-10 sm:gap-[100px] md:gap-[60px] bg-white rounded-lg"
               style={{
                 boxShadow: '0px 5px 17px rgba(64, 76, 89, 0.06)',
               }}
             >
-              <div className="flex flex-col items-start gap-12 w-full ">
+              <div className="flex flex-col items-start gap-5 sm:gap-12 w-full ">
                 <span className="font-lora font-medium text-2xl sm:text-5xl md:text-4xl md:leading-[140%] md:tracking-[-0.03em] text-[#272940]">
                   <h2>{profile.industry.title}</h2>
                 </span>
