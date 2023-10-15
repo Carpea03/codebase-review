@@ -82,7 +82,7 @@ const projects = [
   {
     id: 1,
     name: '10X IP Due Diligence',
-    image: '/fillingStats/slide-0.png',
+    image: '/fillingStats/slide-0.jpg',
     totalNumber: 2,
     totalHours: 54,
     budget: 650,

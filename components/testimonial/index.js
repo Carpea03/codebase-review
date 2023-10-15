@@ -21,7 +21,7 @@ const Testimonial = ({ content, name }) => {
       <div className="flex justify-center items-start">
         <Image src={'/testimonial/left.svg'} height={32} width={29} />
         <span className="text-[#272940] font-lora not-italic font-semibold text-base md:text-4xl p-5">
-          {`“${content}.”`}
+          {`${content}.`}
         </span>
         <Image
           src={'/testimonial/right.svg'}
