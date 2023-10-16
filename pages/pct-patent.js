@@ -25,7 +25,7 @@ export default function PctPatent() {
       lightbox={
         <Lightboxs
           images={[
-            '/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
+            { src : '/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png' }
           ]}
           type="image"
           index={imageIndex}

@@ -36,7 +36,7 @@ export default function TradeMarkRegistrationProcess() {
       lightbox={
         <Lightboxs
           images={[
-            '/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png',
+            { src : '/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png' }
           ]}
           type="image"
           index={imageIndex}

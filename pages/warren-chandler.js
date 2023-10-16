@@ -12,8 +12,7 @@ export default function Page() {
     <Layout>
       <Head>
         <title>
-          Warren Chandler - Senior Associate, Patent & Trade Mark Attorney |
-          Baxter IP
+          Warren Chandler - Senior Associate, Patent & Trade Mark Attorney | Baxter IP
         </title>
         <meta
           name="description"
@@ -21,7 +20,17 @@ export default function Page() {
         />
         <link
           rel="canonical"
-          href="https://www.baxterip.com.au/melbourne/warren-chandler"
+          href="https://www.baxterip.com.au/attorneys/warren-chandler"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/attorneys/warren-chandler"
+          hrefLang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/attorneys/warren-chandler"
+          hrefLang="en-UA"
         />
         <link
           rel="alternate"
@@ -34,7 +43,7 @@ export default function Page() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex !pl-0" aria-label="Breadcrumb">
+      {/* <nav className="flex !pl-0" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -95,9 +104,11 @@ export default function Page() {
             </div>
           </li>
         </ol>
-      </nav>
-      <h1>Warren Chandler</h1>
-      <p>Senior Associate, Patent & Trade Mark Attorney</p>
+      </nav> */}
+      <h1>
+        Warren Chandler
+        <p><>-</>Senior Associate, Patent & Trade Mark Attorney</p>
+      </h1>
       <div className="text-sm">
         <Link href="mailto:warren.chandler@baxterip.com.au" className="text-xs">
           warren.chandler@baxterip.com.au

@@ -29,7 +29,7 @@ export default function MadridProtocolApplication() {
       lightbox={
         <Lightboxs
           images={[
-            '/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png',
+            { src : '/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png' }
           ]}
           type="image"
           index={imageIndex}

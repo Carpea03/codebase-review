@@ -33,7 +33,7 @@ export default function Page() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex !pl-0" aria-label="Breadcrumb">
+      {/* <nav className="flex !pl-0" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -94,9 +94,11 @@ export default function Page() {
             </div>
           </li>
         </ol>
-      </nav>
-      <h1>Dr Qi Zhang</h1>
-      <p>Senior Associate, Patent & Trade Mark Attorney</p>
+      </nav> */}
+      <h1>
+        Dr Qi Zhang
+        <p><>-</>Senior Associate, Patent & Trade Mark Attorney</p>
+      </h1>
       <div className="text-sm">
         <Link href="mailto:qi.zhang@baxterip.com.au" className="text-xs">
           qi.zhang@baxterip.com.au

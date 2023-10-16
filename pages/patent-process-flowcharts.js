@@ -24,13 +24,12 @@ export default function PatentProcessFlowcharts() {
       lightbox={
         <Lightboxs
           images={[
-            '/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png',
-            '/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png',
-            '/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png',
-            '/flowchart/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png',
-            '/flowchart/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png',
-            '/flowchart/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png'
-
+            { src : '/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png' },
+            { src : '/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png' },
+            { src : '/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png' },
+            { src : '/flowchart/Flowchart-D-Innovation-Patent-Procedure-Desktop-v2-1024x270.png' },
+            { src : '/flowchart/Flowchart-E-Registered-Design-Procedure-Desktop-v2-1024x332.png' },
+            { src : '/flowchart/Flowchart-G-Patent-Opposition-Procedure-Desktop-v2-1024x292.png' }
           ]}
           type="image"
           index={imageIndex}

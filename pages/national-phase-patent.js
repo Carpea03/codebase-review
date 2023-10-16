@@ -25,8 +25,8 @@ export default function NationalPhasePatent() {
       lightbox={
         <Lightboxs
           images={[
-            '/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png',
-            '/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png',
+            { src : '/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png' },
+            { src : '/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png' }
           ]}
           type="image"
           index={imageIndex}

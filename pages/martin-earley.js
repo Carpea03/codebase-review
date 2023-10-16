@@ -12,8 +12,7 @@ export default function Page() {
     <Layout>
       <Head>
         <title>
-          Martin Earley - Director, Patent & Trade Mark Attorney | Baxter IP
-          Melbourne
+          Martin Earley - Director, Patent & Trade Mark Attorney | Baxter IP Melbourne
         </title>
         <meta
           name="description"
@@ -21,7 +20,17 @@ export default function Page() {
         />
         <link
           rel="canonical"
-          href="https://www.baxterip.com.au/melbourne/martin-earley"
+          href="https://www.baxterip.com.au/attorneys/martin-earley"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/attorneys/martin-earley"
+          hrefLang="x-default"
+        />
+        <link
+          rel="alternate"
+          href="https://www.baxterip.com.au/attorneys/martin-earley"
+          hrefLang="en-UA"
         />
         <link
           rel="alternate"
@@ -34,7 +43,7 @@ export default function Page() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex !pl-0" aria-label="Breadcrumb">
+      {/* <nav className="flex !pl-0" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -95,9 +104,11 @@ export default function Page() {
             </div>
           </li>
         </ol>
-      </nav>
-      <h1>Martin Earley</h1>
-      <p>Director, Victoria Region Manager, Patent & Trade Mark Attorney</p>
+      </nav> */}
+      <h1>
+        Martin Earley
+        <p><>-</>Director, Victoria Region Manager, Patent & Trade Mark Attorney</p>
+      </h1>
       <div className="text-sm">
         <Link href="mailto:martin.earley@baxterip.com.au" className="text-xs">
           martin.earley@baxterip.com.au

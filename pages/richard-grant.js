@@ -33,7 +33,7 @@ export default function Page() {
           hrefLang="zh"
         />
       </Head>
-      <nav className="flex !pl-0" aria-label="Breadcrumb">
+      {/* <nav className="flex !pl-0" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
           <li className="inline-flex items-center">
             <Link
@@ -94,9 +94,11 @@ export default function Page() {
             </div>
           </li>
         </ol>
-      </nav>
-      <h1>Dr Richard Grant</h1>
-      <p>Senior Patent Attorney</p>
+      </nav> */}
+      <h1>
+        Dr Richard Grant
+        <p><>-</>Senior Patent Attorney</p>
+      </h1>
       <div className="py-8">
         <small>Areas of Expertise</small>
         <div className="grid grid-cols-5 gap-4 text-xs">
