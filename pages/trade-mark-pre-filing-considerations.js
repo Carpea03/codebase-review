@@ -12,7 +12,7 @@ export default function TradeMarkPreFilingConsiderations() {
     { title: 'Trade Mark Pre-filing Considerations', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
           Considerations before filing a trade mark application | Baxter IP
