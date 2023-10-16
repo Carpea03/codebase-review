@@ -23,9 +23,9 @@ export default function LivingOurValues() {
       lightbox={
         <Lightboxs
           images={[
-            'https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg',
-            'https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg',
-            'https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg',
+            { src : 'https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg' },
+            { src : 'https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg' },
+            { src : 'https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg' }
           ]}
           type="image"
           index={imageIndex}

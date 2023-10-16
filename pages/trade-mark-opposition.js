@@ -34,7 +34,7 @@ export default function TradeMarkOpposition() {
       lightbox={
         <Lightboxs
           images={[
-            '/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png',
+            { src : '/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png' }
           ]}
           type="image"
           index={imageIndex}

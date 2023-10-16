@@ -1,5 +1,5 @@
 import { Container } from '../templates/Container'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FiChevronUp } from 'react-icons/fi'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,6 +12,8 @@ export default function ContactUs() {
   const [showMetaOffice, setShowMetaOffice] = useState(true)
   const [showCallUs, setShowCallUs] = useState(true)
   const [showEmailUs, setShowEmailUs] = useState(true)
+  const [callUs, setCallUs] = useState(null)
+  const [city, setCity] = useState(null)
 
   const handleContactUs = () => {
     setShowContactUs(!showContactUs)
@@ -27,6 +29,69 @@ export default function ContactUs() {
 
   const handleEmailUs = () => {
     setShowEmailUs(!showEmailUs)
+  }
+
+  useEffect(() => {
+    let ignore = false
+    let city = 'all'
+    let office = {}
+
+    if (!ignore) {
+      const geoLocation = handleFetchData()
+
+      geoLocation.then((response) => {
+        if (response?.geolocation_data?.country_name == 'Australia') {
+          if (
+            response?.geolocation_data?.city != 'Sydney' ||
+            response?.geolocation_data?.city != 'Melbourne' ||
+            response?.geolocation_data?.city != 'Brisbane'
+          ) {
+            if (response?.geolocation_data?.region_name == 'Victoria')
+              city = 'Melbourne'
+            else if (response?.geolocation_data?.region_name == 'Queensland')
+              city = 'Brisbane'
+            else if (
+              response?.geolocation_data?.region_name == 'New South Wales'
+            )
+              city = 'Sydney'
+            else city = 'all'
+          }
+
+          if (city != 'all') {
+            office = contactDetails.filter(
+              (item) => item.name.toLowerCase() === city.toLowerCase()
+            )[0]
+          }
+        }
+        
+        if (city == 'all') {
+          office = contactDetails.filter(
+            (item) => item.name.toLowerCase() === 'sydney'
+          )[0]
+        }
+
+        setCity(city)
+        setCallUs(office?.number)
+      })
+    }
+
+    return () => {
+      ignore = true
+    }
+  }, [])
+
+  const handleFetchData = async () => {
+    const responseIp = await fetch('https://api.ipify.org?format=json')
+    const dataIp = await responseIp.json()
+
+    const responseLocation = await fetch(
+      `https://https-api.apigurus.com/iplocation/v1.8/locateip?key=SAKA86EJN6G22AHJS6RZ&ip=${dataIp.ip}&format=JSON`
+    )
+    const dataLocation = await responseLocation.json()
+
+    // console.log(dataLocation)
+
+    return dataLocation
   }
 
   return (
@@ -74,7 +139,7 @@ export default function ContactUs() {
                 </div>
 
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
-                  <Link href="/sydney" className="flex flex-row items-center">
+                  <Link href={`tel:${callUs}`} className="flex flex-row items-center">
                     <Image
                       alt=""
                       src="/contactus/phone.svg"
@@ -88,7 +153,7 @@ export default function ContactUs() {
                   </Link>
                 </div>
                 <div className="flex flex-row items-center py-[10px] gap-[10px] w-1/3 cursor-pointer">
-                  <Link href="/sydney" className="flex flex-row items-center">
+                  <Link href="mailto:mail@baxterip.com.au" className="flex flex-row items-center">
                     <Image
                       alt=""
                       src="/contactus/mail-outline.svg"
@@ -103,7 +168,7 @@ export default function ContactUs() {
                 </div>
               </div>
               <div className="flex flex-row justify-start pb-8 md:gap-4 xl:gap-[100px]">
-                <div className="w-1/3 flex justify-center items-center border-[3px] border-[#816BD9] rounded-sm bg-contactus-metaoffice">
+                <div className="w-1/3 flex justify-center items-center border-[3px] border-[#816BD9] h-[242px] rounded-sm bg-contactus-metaoffice">
                   <Link href={metaOffice} target="_blank">
                     <div className="flex flex-row justify-center items-center gap-[10px] h-[75px] p-5 bg-white/20 backdrop-blur-xl">
                       <Image
@@ -122,7 +187,11 @@ export default function ContactUs() {
                 </div>
                 <div className="w-1/3 flex flex-col items-start px-[10px] gap-7">
                   {contactDetails.map((item, index) => (
-                    <a key={`link1-2${index}`} href={`tel:${item.number}`}>
+                    <a key={`link1-2${index}`} href={`tel:${item.number}`}
+                      className={
+                        city?.toLowerCase() == 'all' || city?.toLowerCase() == item?.name?.toLowerCase() ? 'flex' : 'hidden'
+                      }
+                    >
                       <div
                         key={`contact-${index}`}
                         className="flex flex-col justify-center items-start gap-[10px] backdrop-blur-xl"
@@ -244,21 +313,23 @@ export default function ContactUs() {
               </div>
               <div className="flex flex-col items-start w-full">
                 <div
-                  className="flex flex-row items-center w-full  cursor-pointer"
-                  onClick={handleCallUs}
+                  className="flex flex-row items-center w-full cursor-pointer"
+                  // onClick={handleCallUs}
                 >
-                  <div className="flex flex-row items-center gap-6 w-full ">
-                    <Image
-                      alt=""
-                      src="/contactus/phone.svg"
-                      className="w-6 h-6 sm:h-12 sm:w-12"
-                      width={24}
-                      height={24}
-                    />
-                    <span className="font-manrope font-bold text-sm sm:text-[20px] tracking-[0.2em] text-white/50 toUpper uppercase">
-                      Call us
-                    </span>
-                  </div>
+                  <Link href={`tel:${callUs}`}>
+                    <div className="flex flex-row items-center gap-6 w-full ">
+                      <Image
+                        alt=""
+                        src="/contactus/phone.svg"
+                        className="w-6 h-6 sm:h-12 sm:w-12"
+                        width={24}
+                        height={24}
+                      />
+                      <span className="font-manrope font-bold text-sm sm:text-[20px] tracking-[0.2em] text-white/50 toUpper uppercase">
+                        Call us
+                      </span>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div
@@ -268,7 +339,11 @@ export default function ContactUs() {
               >
                 <div className="flex flex-col sm:flex-row justify-between items-start gap-[10px] w-full">
                   {contactDetails.map((item, index) => (
-                    <a key={`link1-${index}`} href={`tel:${item.number}`}>
+                    <a key={`link1-${index}`} href={`tel:${item.number}`}
+                      className={
+                        city?.toLowerCase() == 'all' || city?.toLowerCase() == item?.name?.toLowerCase() ? 'flex' : 'hidden'
+                      }
+                    >
                       <div
                         key={`contactus-${index}`}
                         className="flex flex-col justify-center items-start"
@@ -287,30 +362,34 @@ export default function ContactUs() {
               <div className="flex flex-col items-start w-full">
                 <div
                   className="flex flex-row items-center w-full  cursor-pointer"
-                  onClick={handleEmailUs}
+                  // onClick={handleEmailUs}
                 >
-                  <div className="flex flex-row items-center gap-6 w-full ">
-                    <Image
-                      alt=""
-                      src="/contactus/phone.svg"
-                      className="w-6 h-6 sm:h-12 sm:w-12"
-                      width={24}
-                      height={24}
-                    />
-                    <span className="font-manrope font-bold text-sm sm:text-[20px] tracking-[0.2em] text-white/50 toUpper uppercase">
-                      Email Us
-                    </span>
-                  </div>
+                  <Link href="mailto:mail@baxterip.com.au">
+                    <div className="flex flex-row items-center gap-6 w-full ">
+                      <Image
+                        alt=""
+                        src="/contactus/phone.svg"
+                        className="w-6 h-6 sm:h-12 sm:w-12"
+                        width={24}
+                        height={24}
+                      />
+                      <span className="font-manrope font-bold text-sm sm:text-[20px] tracking-[0.2em] text-white/50 toUpper uppercase">
+                        Email Us
+                      </span>
+                    </div>
+                  </Link>
                 </div>
                 <div className="flex flex-col py-5 gap-[10px] w-full cursor-pointer hover:opacity-80">
-                  <div
-                    className="flex flex-col justify-center items-center bg-[#816BD9] rounded-sm px-6 py-3 sm:px-14 sm:py-6"
-                    style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}
-                  >
-                    <span className="font-manrope font-semibold text-xs sm:text-2xl text-white">
-                      Send us an enquiry
-                    </span>
-                  </div>
+                  <Link href="/sydney">
+                    <div
+                      className="flex flex-col justify-center items-center bg-[#816BD9] rounded-sm px-6 py-3 sm:px-14 sm:py-6"
+                      style={{ boxShadow: '5px 4px 21px rgba(0, 0, 0, 0.25)' }}
+                    >
+                      <span className="font-manrope font-semibold text-xs sm:text-2xl text-white">
+                        Send us an enquiry
+                      </span>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
