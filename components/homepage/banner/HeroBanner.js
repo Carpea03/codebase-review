@@ -40,21 +40,51 @@ export default function HeroBanner({ landing, data }) {
   return (
     <Container className="z-4 bg-hero-banner px-[32px] md:px-10">
       <InnerContainer>
-        <div className="sm:px-[48] md:px-10 xl:px-8">
+        <div className=" sm:px-[48] md:px-10 xl:px-8">
           <div className="xl:px-32">
-            <div className={`${landing ? 'xl:pt-10 flex justify-center' : 'xl:pt-20 flex justify-center'}`}>
+            <div
+              className={`${
+                landing
+                  ? 'xl:pt-10 flex justify-center'
+                  : 'xl:pt-20 flex justify-center'
+              }`}
+            >
               <div className="container h-full pt-12 xl:pt-0 md:py-20 ">
-                <div className="flex flex-col xl:flex-row">
-                  <div
-                    className={`order-2 xl:order-1  ${
-                      landing
-                        ? 'xl:w-[730px] pt-[20px] xl:pt-0'
-                        : 'pt-[10px] xl:w-[700px]'
-                    }`}
-                  >
+                <div className="hidden md:flex w-full flex flex-col">
+                  <div className="w-full flex flex-row justify-center items-center">
+                    <div className='w-full'>
+                      <Image
+                        src={'/heroBanner/image 62.jpg'}
+                        alt={'banner2'}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                        }}
+                        sizes="100vw"
+                        width={0}
+                        height={0}
+                      />
+                    </div>
+                    <div className='w-full'>
+                      <Image
+                        src={'/heroBanner/image 63.jpg'}
+                        alt={'banner2'}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                        }}
+                        sizes="100vw"
+                        width={0}
+                        height={0}
+                      />
+                    </div>
+                  </div>
+                  <div className="w-full flex flex-row">
                     <div className="flex flex-col">
-                      <div className="flex md:mt-10 justify-center text-center md:pt-10 md:text-center lg:py-2 xl:text-left md:justify-center xl:justify-start">
-                        <span className="text-[25px] sm:text-[64px] md:text-6xl font-lora font-semibold mb-5">
+                      <div className="flex md:mt-10 md:pt-10 lg:py-2 xl:text-left xl:justify-start">
+                        <span className="text-[25px] sm:text-[64px] md:text-6xl font-lora font-semibold mb-3">
                           <h1>
                             {landing
                               ? data?.header[0]?.title
@@ -64,7 +94,7 @@ export default function HeroBanner({ landing, data }) {
                           </h1>
                         </span>
                       </div>
-                      <div className="flex md:mt-5 mb-10 justify-center text-center md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0 md:text-center xl:text-left md:justify-center xl:justify-start">
+                      <div className="flex sm:mb-10 md:mt-10 mb-5 md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0  text-left justify-start">
                         <span
                           style={{ whiteSpace: 'pre-line' }}
                           className="text-[16px] sm:text-[24px] md:text-2xl font-semibold font-manrope opacity-50"
@@ -77,17 +107,98 @@ export default function HeroBanner({ landing, data }) {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-5 sm:flex-row 2xl:pt-20 pb-10 sm:pb-20 md:pb-0 xl:pb-0 2xl:pb-10 justify-center 2xl:justify-start">
+                    <div className="flex flex-col gap-[16px] mt-[50px]">
                       <Link href="/contact">
-                        <div className="flex flex-col items-center px-2">
+                        <div className="flex flex-col items-center">
                           <div
-                            className="w-full p-3 sm:h-24 sm:w-[330px] md:w-[309px] md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
+                            className="w-[350px] p-3 bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
                             style={{
                               boxShadow:
                                 '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
                             }}
                           >
-                            <div className="hidden sm:flex">
+                            <Image
+                              src="/telephone.svg"
+                              alt=""
+                              width={48}
+                              height={48}
+                            />
+
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
+                              {buttonText[0].title}
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                      <Link href={metaOffice} target="_blank">
+                        <div className="flex flex-col items-center">
+                          <div
+                            className="w-[350px] p-3  bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
+                            style={{
+                              boxShadow:
+                                '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                            }}
+                          >
+                            <Image
+                              src="/door.svg"
+                              alt=""
+                              width={48}
+                              height={48}
+                            />
+
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
+                              {buttonText[1].title}
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="md:hidden flex flex-col xl:flex-row">
+                  <div
+                    className={`order-2 xl:order-1  ${
+                      landing
+                        ? 'xl:w-[730px] pt-[20px] xl:pt-0'
+                        : 'pt-[10px] xl:w-[700px]'
+                    }`}
+                  >
+                    <div className="flex flex-col">
+                      <div className="flex md:mt-10 md:pt-10 md:text-center lg:py-2 xl:text-left md:justify-center xl:justify-start">
+                        <span className="text-[25px] sm:text-[64px] md:text-6xl font-lora font-semibold mb-3">
+                          <h1>
+                            {landing
+                              ? data?.header[0]?.title
+                              : 'Innovate Boldly.'}
+                            <br />
+                            {landing ? '' : 'Protect Strategically.'}
+                          </h1>
+                        </span>
+                      </div>
+                      <div className="flex sm:mb-10 md:mt-10 mb-5 md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0 md:text-center xl:text-left md:justify-center xl:justify-start">
+                        <span
+                          style={{ whiteSpace: 'pre-line' }}
+                          className="text-[16px] sm:text-[24px] md:text-2xl font-semibold font-manrope opacity-50"
+                        >
+                          <h2>
+                            {landing
+                              ? data?.header[0]?.body
+                              : details[0].description}
+                          </h2>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-5 md:flex-row 2xl:pt-20 pb-10 sm:pb-20 md:pb-0 xl:pb-0 2xl:pb-10 justify-center 2xl:justify-start">
+                      <Link href="/contact">
+                        <div className="flex flex-col items-center">
+                          <div
+                            className="w-full p-3 md:w-[309px] md:h-[88px] bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
+                            style={{
+                              boxShadow:
+                                '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                            }}
+                          >
+                            <div className="hidden sm:flex ml-5">
                               <Image
                                 src="/telephone.svg"
                                 alt=""
@@ -103,14 +214,43 @@ export default function HeroBanner({ landing, data }) {
                                 height={24}
                               />
                             </div>
-                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white w-[180px]">
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
                               {buttonText[0].title}
                             </span>
                           </div>
                         </div>
                       </Link>
-                      <Link href={metaOffice} target="_blank" passHref>
-                        <div
+                      <Link href={metaOffice} target="_blank">
+                        <div className="flex flex-col items-center">
+                          <div
+                            className="w-full p-3 md:w-[309px] md:h-[88px] bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
+                            style={{
+                              boxShadow:
+                                '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                            }}
+                          >
+                            <div className="hidden sm:flex ml-5">
+                              <Image
+                                src="/door.svg"
+                                alt=""
+                                width={48}
+                                height={48}
+                              />
+                            </div>
+                            <div className="flex sm:hidden">
+                              <Image
+                                src="/door.svg"
+                                alt=""
+                                width={24}
+                                height={24}
+                              />
+                            </div>
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
+                              {buttonText[1].title}
+                            </span>
+                          </div>
+                        </div>
+                        {/* <div
                           className="flex flex-col items-center"
                           onMouseEnter={() => setChangeImage(true)}
                           onMouseLeave={() => setChangeImage(false)}
@@ -121,7 +261,7 @@ export default function HeroBanner({ landing, data }) {
                                 ? 'md:pointerArrow rounded-tl-md rounded-bl-md'
                                 : 'bg-[#816BD9] rounded-md'
                             }  flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer 
-                        ${changeImage ? 'pointerArrow' : ''} `}
+                         ${changeImage ? 'pointerArrow' : ''} `}
                             style={
                               changeImage
                                 ? { backgroundImage: `url("/arrrow-bg.svg")` }
@@ -151,7 +291,7 @@ export default function HeroBanner({ landing, data }) {
                               {buttonText[1].title}
                             </span>
                           </div>
-                        </div>
+                        </div> */}
                       </Link>
                     </div>
                   </div>
@@ -166,7 +306,7 @@ export default function HeroBanner({ landing, data }) {
                             : '/professionalProfiles/IP-people.jpg'
                         }
                         alt={'banner'}
-                        width={584}
+                        width={650}
                         height={438}
                         style={
                           changeImage
