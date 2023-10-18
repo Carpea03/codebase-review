@@ -265,8 +265,8 @@ export default function Videos() {
           />
         </Head>
         <div className="mt-10"></div>
-        <div className="p-5">
-          <div className="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="md:p-5">
+          <div className="flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {videos.slice(0, next).map((item, index) => {
               return (
                 <div key={`video-${index}`}>
@@ -294,7 +294,7 @@ export default function Videos() {
                     />
                   </div>
                   <div className="pt-3 ">
-                    <span className="text-[#272940] font-manrope text-xl font-semibold">
+                    <span className="text-[#272940] font-manrope text-[16px] sm:text-[20px] md:text-xl font-semibold">
                       {item.title}
                     </span>
                   </div>
