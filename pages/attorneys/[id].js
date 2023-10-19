@@ -14,6 +14,7 @@ import Head from 'next/head'
 import { filterByPerson } from '../../utils/utility.helper'
 
 export const getStaticPaths = async () => {
+  
   const paths = peoples[0]?.teamMembers
     ?.filter((people) => people.isShow === true)
     ?.map((item) => {
@@ -39,7 +40,11 @@ export const getStaticProps = async (context) => {
 export default function Profile({ profile }) {
   const [reduceMorePost, setReduceMorePost] = useState()
   const [noArticles, setNoArticles] = useState(false)
+  const [people, setPeople] = useState({})
+
   useEffect(() => {
+    setPeople(peoples[0]?.teamMembers.filter(value => value.name == profile.name)[0])
+    console.log(people)
     init()
   }, [])
 
@@ -58,23 +63,28 @@ export default function Profile({ profile }) {
   return (
     <>
       <Head>
-        <title>{`${profile.name} - ${profile.position}`}</title>
+        <title>{`${people.name} - ${people.positions}, Patent & Trade Mark Attorney | Baxter IP`}</title>
         <meta name="description" content={profile?.bio} />
         <link
           rel="canonical"
-          href={`https://www.baxterip.com.au/${profile.linkId}`}
+          href={`https://www.baxterip.com.au/attorneys/${people.linkId}`}
         />
         <link
           rel="alternate"
-          href={`https://www.baxterip.com.au/${profile.linkId}`}
+          href={`https://www.baxterip.com.au/attorneys/${people.linkId}`}
+          hrefLang="x-default"
+        />
+        <link
+          rel="alternate"
+          href={`https://www.baxterip.com.au/attorneys/${people.linkId}`}
           hreflang="en-au"
         />
         <link
           rel="alternate"
-          href={`https://www.baxterip.com.au/global/${profile.linkId}`}
+          href={`https://www.baxterip.com.au/global/${people.linkId}`}
           hreflang="en-us"
         />
-        {profile.zh && <link rel="alternate" href={profile.zh} hreflang="zh" />}
+        {people.zh && <link rel="alternate" href={people.zh} hreflang="zh" />}
       </Head>
       <Header active={'Attorneys'} />
       <Container className="flex flex-col">
@@ -389,30 +399,32 @@ export default function Profile({ profile }) {
                 <div className="w-full">
                   <div className="w-full flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                     {profile.industries.map((industry, index) => {
-                      return (
-                        <div
-                          key={`industry-${index}`}
-                          className="flex flex-col w-full h-full md:h-[385px] border-2 p-[24px] "
-                        >
-                          <div className="w-full flex mb-5">
-                            <span className="font-manrope text-[#272940] text-xl font-medium">
-                              {industry.title}
-                            </span>
+                      if (industry.technicalAreas.length > 0) {
+                        return (
+                          <div
+                            key={`industry-${index}`}
+                            className="flex flex-col w-full h-full md:h-[385px] border-2 p-[24px] "
+                          >
+                            <div className="w-full flex mb-5">
+                              <span className="font-manrope text-[#272940] text-xl font-medium">
+                                {industry.title}
+                              </span>
+                            </div>
+                            <div>
+                              {industry.technicalAreas.map((item) => {
+                                return (
+                                  <div
+                                    key={`${item.title}`}
+                                    className="flex flex-col"
+                                  >
+                                    <span className="text-base text-[#7A7B94]">{`• ${item.title}`}</span>
+                                  </div>
+                                )
+                              })}
+                            </div>
                           </div>
-                          <div>
-                            {industry.technicalAreas.map((item) => {
-                              return (
-                                <div
-                                  key={`${item.title}`}
-                                  className="flex flex-col"
-                                >
-                                  <span className="text-base text-[#7A7B94]">{`• ${item.title}`}</span>
-                                </div>
-                              )
-                            })}
-                          </div>
-                        </div>
-                      )
+                        )
+                      }
                     })}
                   </div>
                 </div>
@@ -423,7 +435,7 @@ export default function Profile({ profile }) {
         <IpNewsBlog
           news={reduceMorePost?.sort(() => Math.random() - 0.5).slice(0, 3)}
           isblog={true}
-          title={noArticles ? '' : `Articles by ${profile.name}`}
+          title={noArticles ? 'hide' : `Articles by ${profile.name}`}
         />
       </Container>
       <Footer />

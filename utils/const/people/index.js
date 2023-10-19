@@ -172,10 +172,7 @@ export const profiles = [
         id: 2,
         linkId: 'martin-earley',
         name: 'Martin Earley',
-        positions: [
-          'Director',
-          'Victoria region manager',
-        ],
+        positions: ['Director'],
         url: '/professionalProfiles/profiles/martin.jpg',
         link: '/attorneys/martin-earley',
         zh: "https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC/%E9%A9%AC%E4%B8%81%E5%8E%84%E8%80%8C%E5%88%A9",

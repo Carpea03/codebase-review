@@ -162,6 +162,12 @@ export const subMenusValues = [
       division: false,
       href: '/testimonials',
     },
+    {
+      title: 'In the Media',
+      bold: false,
+      division: false,
+      href: '/videos',
+    },
     { title: '', bold: false, division: true, href: '' },
   ],
 ]

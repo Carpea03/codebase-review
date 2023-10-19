@@ -120,17 +120,17 @@ export default function Post({ data = {}, preview }) {
         <meta name="description" content={post?.metaDescription} />
         <link
           rel="canonical"
-          href={`https://www.baxterip.com.au/${post?.slug}`}
+          href={`https://www.baxterip.com.au/ip-news/${post?.slug}`}
         />
          <link
           rel="alternate"
-          href={`https://www.baxterip.com.au/${post?.slug}`}
+          href={`https://www.baxterip.com.au/ip-news/${post?.slug}`}
           hrefLang="en-au"
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href={`https://www.baxterip.com.au/${post?.slug}`}
+          href={`https://www.baxterip.com.au/ip-news/${post?.slug}`}
         />
       </Head>
       <Layout

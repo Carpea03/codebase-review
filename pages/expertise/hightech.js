@@ -82,7 +82,8 @@ export default function HighTech() {
           (people) =>
             people.isShow === true &&
             people.linkId !== 'warren-chandler' &&
-            people.linkId !== 'dr-sean-klinkradt'
+            people.linkId !== 'dr-sean-klinkradt' && 
+            people.linkId !== 'richard-grant'
         )}
         awards={awards}
       />

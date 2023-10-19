@@ -573,7 +573,7 @@ input[type='checkbox'] {
 @layer utilities{
   .bg-stepper-desktop {
     background-image: url('/stepper/desktop.svg');
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
   }
