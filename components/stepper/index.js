@@ -32,7 +32,7 @@ const Stepper = ({ active }) => {
   }
 
   return (
-    <div className="w-full  h-[127px] flex flex-row justify-center items-center bg-[#FFF] rounded-md">
+    <div className="w-full h-[127px] flex flex-row justify-center items-center bg-[#FFF] rounded-md">
       {data.map((item, index) => {
         return (
           <div

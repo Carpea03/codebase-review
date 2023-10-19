@@ -76,7 +76,7 @@ export default function HealthTech() {
         <li>Vet Science</li>
         <li>Biotechnology</li>
       </ul>
-      <ClientsBox state={2} />
+      <ClientsBox state={3} />
       <p>
         In addition to their IP expertise, a number of our attorneys also have
         prior experience working in the engineering industry. They pride
@@ -90,9 +90,9 @@ export default function HealthTech() {
           (people) =>
             people.isShow === true &&
             people.linkId !== 'chris-baxter' &&
-            people.linkId !== 'dr-richard-grant' &&
             people.linkId !== 'andrew-balis' &&
-            people.linkId !== 'martin-earley'
+            people.linkId !== 'martin-earley' &&
+            people.linkId !== 'qi-zhang'
         )}
         awards={awards}
       />

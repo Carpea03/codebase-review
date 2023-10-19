@@ -12,7 +12,7 @@ export default function TradeMarkSquatting() {
     { title: 'Trade Mark Squatting', link: '' },
   ]
   return (
-    <Layout navData={data}>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>Trade Mark Squatting | Baxter IP Sydney & Melbourne</title>
         <meta

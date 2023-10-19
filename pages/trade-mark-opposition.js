@@ -71,7 +71,7 @@ export default function TradeMarkOpposition() {
         <Image
           loader={myLoader}
           onClick={() => setLigthbox(0)}
-          src="/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
+          src="/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
           alt="Trade Mark Opposition Procedure"
           width="1024"
           height="313"

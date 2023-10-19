@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 export default function Testimonials() {
   const data = [
     { title: 'About us', link: '/about' },
-    { title: 'Client testimonials', link: '' },
+    { title: 'Client Testimonials', link: '' },
   ]
   return (
     <Layout navData={data} bannerData={true} layout={2} title={"Client Testimonials"} active={"Values"}>
