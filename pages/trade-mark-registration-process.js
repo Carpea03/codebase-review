@@ -68,7 +68,7 @@ export default function TradeMarkRegistrationProcess() {
         <Image
           loader={myLoader}
           onClick={() => setLigthbox(0)}
-          src="/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+          src="/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
           alt="Australian Standard Trade Mark Procedure"
           width="1024"
           height="331"
