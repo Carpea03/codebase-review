@@ -16,7 +16,7 @@ export default function TradeMarkMaintenance() {
     { title: 'Trade Mark Maintenance', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"} stepper={true} stepperData={true}>
       <Head>
         <title>
           Maintaining your Trade Mark Application | Baxter IP Sydney & Melbourne
