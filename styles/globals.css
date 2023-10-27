@@ -587,7 +587,7 @@ input[type='checkbox'] {
     background-image: url('/stepper/mobile.png');
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 80px, 127px;
+    background-size: cover;
     z-index: 10;
   }
   .bg-expertise {

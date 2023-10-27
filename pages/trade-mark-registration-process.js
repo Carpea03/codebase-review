@@ -32,11 +32,11 @@ export default function TradeMarkRegistrationProcess() {
   }
 
   return (
-    <Layout navData={data} active={"Services"}
+    <Layout navData={data} active={"Services"} stepper={true} stepperData={true}
       lightbox={
         <Lightboxs
           images={[
-            { src : '/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png' }
+            { src : '/flowchart/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png' }
           ]}
           type="image"
           index={imageIndex}
@@ -66,9 +66,8 @@ export default function TradeMarkRegistrationProcess() {
       </p>
       <figure>
         <Image
-          loader={myLoader}
           onClick={() => setLigthbox(0)}
-          src="/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+          src="/flowchart/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png"
           alt="Australian Standard Trade Mark Procedure"
           width="1024"
           height="331"
