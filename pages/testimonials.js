@@ -9,7 +9,7 @@ export default function Testimonials() {
     { title: 'Client Testimonials', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"Client Testimonials"} active={"Values"}>
+    <Layout navData={data} bannerData={true} layout={2} title={"Clients share their thoughts on our patent & trade mark attorneys"} active={"Values"}>
       <Head>
         <title>
           Client testimonials on Baxter IP&apos;s intellectual property services
@@ -26,8 +26,6 @@ export default function Testimonials() {
         />
       </Head>
       <div className="mt-10"></div>
-      <h1>Clients share their thoughts on our patent & trade mark attorneys</h1>
-
       <blockquote>
         It was a pleasant time to see Dr. Qi Zhang, the attorney at Baxter IP,
         Patent &amp; Trade Mark Attorneys in his office a few years ago. I

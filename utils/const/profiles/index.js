@@ -39,6 +39,7 @@ export const profiles = {
     email: 'chris.baxter@baxterip.com.au',
     telephone: '+61 2 9264 6716',
     potrait: '/professionalProfiles/profiles/chris.jpg',
+    place: 'Sydney',
     awards: [0, 1],
     objective:
       '“There is no surer way to create jobs and societal wealth than through the commercialisation of new ideas anchored on a strong intellectual property foundation. Through a combination of my in-house, private practice and extensive tech investment experience, I work with clients to channel their IP towards maximum impact on business value.”',
@@ -47,30 +48,57 @@ export const profiles = {
       description:
         'Chris began his intellectual property career working at a large Australian IP firm, then joined the in-house team at one of Australia’s largest medical devices companies, before leaving in 2007 to establish Baxter IP.' +
         'Under Chris’ leadership, the firm has grown to a team of 27 patent & trade mark attorneys and administrative staff, with offices in Sydney and Melbourne. Chris advises a client base comprised of multinational corporations, universities and SMEs, as well as venture capital firms, tech start-ups and entrepreneurs.' +
-        'Chris has broad technological experience spanning, in particular: medtech, defence, software and aerospace inventions.\n\n He specialises in providing strategic, cross-jurisdictional intellectual property advice on complex patent portfolios and dispute matters. He understands the nexus of IP and its significance in the commercial licensing and capital raising process. Clients benefit from Chris’ holistic approach, which focuses on their commercial interests, as well as the legal processes involved.',
+        'Chris has broad technological experience spanning, in particular: <a href="/specialisations/medical-patents" style="color:#7D67D8;"  className="links" >medtech</a>, <a href="/specialisations/mechanical-patents" style="color:#7D67D8;"  className="links" >defence</a>, <a href="/specialisations/software-patents" style="color:#7D67D8;"  className="links" >software</a> and <a href="/specialisations/mechanical-patents" style="color:#7D67D8;"  className="links" >aerospace inventions</a>.\n\n He specialises in providing strategic, cross-jurisdictional intellectual property advice on complex patent portfolios and dispute matters. He understands the nexus of IP and its significance in the commercial licensing and capital raising process. Clients benefit from Chris’ holistic approach, which focuses on their commercial interests, as well as the legal processes involved.',
     },
     snapshots: {
       title: 'Attorney Snapshot',
       items: [
-        { id: 1, title: 'Qualified trade mark and patent attorney' },
-        { id: 2, title: 'Founded Baxter IP in 2007' },
+        {
+          id: 1,
+          title:
+            '“Leading Specialist Patent and Trademark Attorney of the Year, Australia” in the Acquisition International Leading Adviser Awards 2019',
+        },
+        {
+          id: 2,
+          title:
+            ' <a href="https://www.iam-media.com/rankings/patent-1000/country/australia" style="color:#7D67D8;"  className="links"   className="links" target="_blank">Recommended patent attorney for patent prosecution in 2015 by Intellectual Asset Management Magazine</a>',
+        },
         {
           id: 3,
           title:
-            'Fellow of The Institute of Patent & Trade Mark Attorneys of Australia',
+            '<a href="https://www.eonetwork.org/sydney/" style="color:#7D67D8;"  className="links"   className="links" target="_blank">Member of Entrepreneurs’ Organization Sydney</a>',
         },
-        { id: 4, title: 'Former in-house patent attorney at ResMed' },
+        {
+          id: 4,
+          title:
+            'Fellow of <a href="https://ipta.org.au/" style="color:#7D67D8;"  className="links"   className="links" target="_blank">The Institute of Patent & Trade Mark Attorneys of Australia</a>',
+        },
         {
           id: 5,
           title:
-            'Award for 1st place in Trade Mark Law in Master of Intellectual Property Law at the University of Technology Sydney',
+            'Founded <a href="/" style="color:#7D67D8;"  className="links" >Baxter IP</a> in 2007',
         },
         {
           id: 6,
           title:
-            'Thesis Prize and 1st Class Honours in Aeronautical Engineering from the University of Sydney',
+            'Manages an angel investment <a href="https://www.chrisbaxter.com.au/" style="color:#7D67D8;"  className="links"   className="links"  target="_blank">portfolio</a>',
         },
-        { id: 7, title: 'Adviser to Baxter Charitable Trusts' },
+        { id: 7, title: 'Prev. in-house patent attorney at ResMed' },
+        {
+          id: 8,
+          title:
+            'Award for 1st place in Trade Mark Law in Master of Intellectual Property Law @ <a href="https://www.uts.edu.au/" style="color:#7D67D8;"  className="links"   className="links"  target="_blank">UTS</a>',
+        },
+        {
+          id: 9,
+          title:
+            'Thesis Prize and 1st Class Hons in Aeronautical Engineering @ <a href="https://www.sydney.edu.au/" style="color:#7D67D8;"  className="links"   className="links"  target="_blank">USYD</a>',
+        },
+        {
+          id: 10,
+          title:
+            'Adviser to <a href="https://www.baxterip.com.au/sydney/chris-baxter" style="color:#7D67D8;"  className="links"   className="links"  target="_blank">Baxter Charitable Trusts</a>',
+        },
       ],
     },
     publications: {
@@ -313,14 +341,15 @@ export const profiles = {
     awards: [1],
     telephone: '+61 3 9602 2288',
     potrait: '/professionalProfiles/profiles/martin.jpg',
+    place: 'Melbourne',
     objective:
       '“To me, getting on board early in the piece is advantageous because my range of experience as an IP attorney in both contentious patent and trade mark issues allows us to determine the approach most likely to maximise benefits to the client. Positive outcomes for our clients are what matter most to me.”',
     industry: {
       title: 'Biography',
       description:
         'If you have a worthwhile or exciting innovation, patent attorney Martin Earley may be the catalyst that drives you towards successful IP protection and patent commercialisation. He has an equal passion for ideas and problem solving, and believes in sharing every step of each client’s journey in order to maximise the chances of success on a personal and commercial level.\n\n' +
-        'Knowing patent law is one thing; applying it to your commercial advantage is quite another. To get the most out of your invention you need to work with a patent attorney who has both a keen eye for detail and an intimate understanding of the subject. Martin’s detailed strategies for applying a commercial slant to patent protection in the areas of ICT, physics, nanotechnology and engineering innovations allow him to cut through complexity.\n\n' +
-        'Martin started his career as an examiner at IP Australia (the Australian Patent Office). His expertise spans technologies as diverse as medical and mechanical devices, consumer goods, information technology, telecommunication, physics and nanotechnology. His talent for detailed conceptual analysis and practical commercial advice delivers ongoing value for all his clients.\n\n' +
+        'Knowing patent law is one thing; applying it to your commercial advantage is quite another. To get the most out of your invention you need to work with a patent attorney who has both a keen eye for detail and an intimate understanding of the subject. Martin’s detailed strategies for applying a commercial slant to patent protection in the areas of <a href="/specialisations/software-patents" style="color:#7D67D8;"  className="links" >ICT</a>, <a href="/specialisations/physics-and-optical-patents" style="color:#7D67D8;"  className="links" >physics</a>, nanotechnology and engineering innovations allow him to cut through complexity.\n\n' +
+        'Martin started his career as an examiner at IP Australia (the Australian Patent Office). His expertise spans technologies as diverse as <a href="/specialisations/medical-patents" style="color:#7D67D8;"  className="links" >medical</a> and <a href="/specialisations/mechanical-patents" style="color:#7D67D8;"  className="links" >mechanical devices</a>, <a href="/specialisations/consumer-product-patents" style="color:#7D67D8;"  className="links" >consumer goods</a>, <a href="/specialisations/software-patents" style="color:#7D67D8;"  className="links" >information technology</a>, telecommunication, physics and nanotechnology. His talent for detailed conceptual analysis and practical commercial advice delivers ongoing value for all his clients.\n\n' +
         'Martin is active both domestically and overseas, and regularly attends international patent attorney conferences to maintain his strong links with foreign patent attorneys. He was recognised as an IPLuminary in IPWorld publications in 2007/8.' +
         'He has also built a reputation as ‘a man of the people’ and frequently presents at inventor and university groups on patent law and patent commercialisation.',
     },
@@ -341,11 +370,23 @@ export const profiles = {
         {
           id: 6,
           title:
-            'Fellow, Institute of Patent & Trade Mark Attorneys of Australia',
+            'Fellow, <a href="https://ipta.org.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">Institute of Patent & Trade Mark Attorneys of Australia</a>',
         },
-        { id: 7, title: 'Member, AIPPI, IPSANZ and AIPLAs' },
-        { id: 8, title: 'Member IEEE, AIP' },
-        { id: 9, title: 'Physics patent attorney specialist' },
+        {
+          id: 7,
+          title:
+            'Member, <a href="https://www.aippi.org/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">AIPPI</a>, <a href="https://www.ipsanz.com.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">IPSANZ</a> and <a href="https://www.aipla.org/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">AIPLAs</a>',
+        },
+        {
+          id: 8,
+          title:
+            'Member <a href="https://www.ieee.org/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">IEEE</a>, AIP',
+        },
+        {
+          id: 9,
+          title:
+            '<a href="/specialisations/physics-and-optical-patents" style="color:#7D67D8;"  className="links" >Physics patent attorney specialist</a>',
+        },
       ],
     },
     publications: {
@@ -423,6 +464,7 @@ export const profiles = {
         title: 'HighTech',
         technicalAreas: [
           { title: 'Applications' },
+          { title: 'Defence' },
           { title: 'E-Commerce' },
           { title: 'Electrical' },
           { title: 'Electronics' },
@@ -431,6 +473,7 @@ export const profiles = {
           { title: 'Nuclear' },
           { title: 'Optical Tech' },
           { title: 'Physics' },
+          { title: 'Quantum' },
           { title: 'Security' },
         ],
       },
@@ -461,15 +504,16 @@ export const profiles = {
     email: 'qi.zhang@baxterip.com.au',
     telephone: '+61 2 9099 0644',
     potrait: '/professionalProfiles/profiles/qi.jpg',
+    place: 'Sydney',
     objective:
       '“I love seeing my clients and their businesses grow, because I feel like I grow with them. There’s no better feeling than staying with an inventor from the first discussion of their idea, through successfully protecting their IP rights, to seeing them generate profits from their hard work and creativity.”',
     industry: {
       title: 'Biography',
       description:
-        'We were delighted to welcome Qi to the Baxter IP team in 2016. Specialising in mobile communications, electrical engineering and mechanics, he works with private inventors, start-ups and SMEs, helping to identify and protect their IP assets and providing comprehensive support from concept through to commercialisation.\n\n' +
+        'We were delighted to welcome Qi to the Baxter IP team in 2016. Specialising in <a href="/specialisations/software-patents" style="color:#7D67D8;"  className="links" >mobile communications</a>, <a href="/specialisations/electrical-engineering-patents" style="color:#7D67D8;"  className="links" >electrical engineering</a> and <a href="/specialisations/mechanical-patents" style="color:#7D67D8;"  className="links" >mechanics</a>, he works with private inventors, start-ups and SMEs, helping to identify and protect their IP assets and providing comprehensive support from concept through to commercialisation.\n\n' +
         'Qi provides clear, practical advice to clients on the patentability of their inventions and patenting strategies, in light of their specific goals and business strategies. He also drafts patent specifications and prosecutes patent applications in major jurisdictions, including Australia, US, China, Europe, Japan, Korea and other emerging economies.\n\n' +
         'Our clients appreciate Qi for his straightforward, jargon-free advice and for his strong focus on helping them to generate sustainable value from their ideas and hard work. Qi helps his clients explore different ideas and options, and make informed decisions about a patent strategy and commercialisation pathway to suit their individual circumstances and goals.\n\n' +
-        'Prior to joining Baxter IP, Qi has enjoyed a highly successful international career in IP protection and management. In 2012 he was invited to join a tier-1 patent attorney firm in Sydney, where he qualified as an Australian patent attorney. Working with high-profile international clients and leading Australian research organisations, including NICTA, CSIRO and the University of Sydney, he provided expert advice on global patent strategies, drafted patent specifications, and provided legal and technical analyses of patentability in multiple technical areas including software, business methods, financial services, electronics, and mechatronics.\n\n' +
+        'Prior to joining Baxter IP, Qi has enjoyed a highly successful international career in IP protection and management. In 2012 he was invited to join a tier-1 patent attorney firm in Sydney, where he qualified as an Australian patent attorney. Working with high-profile international clients and leading Australian research organisations, including NICTA, CSIRO and the University of Sydney, he provided expert advice on global patent strategies, drafted patent specifications, and provided legal and technical analyses of patentability in multiple technical areas including <a href="/specialisations/software-patents" style="color:#7D67D8;"  className="links" >software</a>, business methods, <a href="/specialisations/fintech-patents" style="color:#7D67D8;"  className="links" >financial services</a>, electronics, and mechatronics.\n\n' +
         'Before his move to Sydney Qi’s career took him to the USA, where he furthered his education in the IP field by completing a Master degree in Intellectual Property Management & Markets. As a patent researcher with a US patent consulting firm, he applied these learnings to help clients create tangible commercial value from their intangible IP assets – identifying valuable patents in hot consumer markets and advising clients on building their patent portfolios. His work also included identifying potential patent infringements and supporting clients through infringement litigation.\n\n' +
         'The foundations of Qi’s intellectual property career were built in China, where he worked with one of the top patent attorney firms in China after completing his Ph.D in electrical engineering in 2005. His work there included providing legal and technical advice, and managing the preparation, filing and prosecution of patent applications for major international clients including Motorola, Samsung, 3M, GE and Yamaha.',
     },
@@ -502,9 +546,9 @@ export const profiles = {
         {
           id: 10,
           title:
-            'The Institute of Patent and Trade Mark Attorneys of Australia​',
+            '<a href="https://ipta.org.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">The Institute of Patent and Trade Mark Attorneys of Australia</a>​',
         },
-        { id: 10, title: 'The ​Australia ​China Business Council​' },
+        { id: 10, title: '<a href="https://acbc.com.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">The ​Australia ​China Business Council</a>​' },
       ],
     },
     publications: {
@@ -623,6 +667,7 @@ export const profiles = {
     email: 'richard.grant@baxterip.com.au',
     telephone: '+61 2 9099 0646',
     potrait: '/professionalProfiles/profiles/richard.jpg',
+    place: 'Sydney',
     objective:
       '“It is important when preparing patent applications to listen to the client closely. It’s very easy to think that you understand what the client is saying when, in fact, they mean something subtly different. Drafting a patent specification involves reflecting the inventor’s new technology faithfully, as well as balancing the sometimes conflicting requirements of multiple jurisdictions and anticipating possible issues that may be raised by the Patent Office or a third party.”',
     industry: {
@@ -652,12 +697,12 @@ export const profiles = {
         },
         {
           id: 7,
-          title: 'Fellow, Royal Australian Chemical Institute​',
+          title: 'Fellow, <a href="https://www.raci.org.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">Royal Australian Chemical Institute</a>​',
         },
         {
           id: 8,
           title:
-            'Fellow, Institute of Patent and Trade Mark Attorneys of Australia',
+            'Fellow, <a href="https://ipta.org.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">Institute of Patent and Trade Mark Attorneys of Australia</a>',
         },
       ],
     },
@@ -750,6 +795,7 @@ export const profiles = {
     potrait: '/professionalProfiles/profiles/sean.jpg',
     objective:
       "“Participating in a client's developing intellectual property portfolio is incredibly rewarding to me.”",
+    place: 'Melbourne',
     industry: {
       title: 'Biography',
       description:
@@ -880,9 +926,7 @@ export const profiles = {
     industries: [
       {
         title: 'Engineering',
-        technicalAreas: [
-          { title: 'Mechanical' },
-        ],
+        technicalAreas: [{ title: 'Mechanical' }],
       },
       {
         title: 'Healthtech',
@@ -912,14 +956,15 @@ export const profiles = {
     email: 'warren.chandler@baxterip.com.au',
     telephone: '+61 3 9020 3143',
     potrait: '/professionalProfiles/profiles/warren.jpg',
+    place: 'Melbourne',
     objective:
       '“I care about people and their business goals. So whilst I consider client instructions carefully, I always look to make recommendations that are practical, commercially strategic, and that add value.”',
     industry: {
       title: 'Biography',
       description:
-        'When you’ve excelled in a particular field for 30 years, you build a name for yourself. When that area of excellence is mastering a scientific approach to IP strategy, you also earn the admiration of both colleagues and clients. But for Warren Chandler, it’s only ever been about creating strong intellectual property assets for his clients.\n\n' +
-        'The claim ‘attention to detail’ tends to be used far too liberally – but Warren’s appetite for detail can be seen in his comprehensive assessments of client’s commercial IP strategies, and it’s something that delivers literal and measurable results. Several Australian companies that Warren has advised from start-up stage have now emerged as large, well-known commercial enterprises with strong intellectual property assets. This is where Warren, and by extension, his clients are well served by his 24 years’ experience as a patent attorney in chemical engineering.\n\n' +
-        'Warren worked across a broad spectrum of disciplines during the course of a 7-year tenure at the CSIRO. Fields as diverse as radical polymerisation of diallylamine monomers (at the division of applied organic chemistry) to chemical engineering, and controlled release of veterinary pharmaceuticals (at the division of Animal Production) were traversed during this time. With the dawn of the 90s, Warren registered as a patent attorney, commencing in his area of speciality, applied chemistry and methods of treatment of diseased states in animals and humans.\n\n' +
+        'When you’ve excelled in a particular field for 30 years, you build a name for yourself. When that area of excellence is mastering a scientific approach to <a href="/ip-strategy" style="color:#7D67D8;"  className="links" >IP strategy</a>, you also earn the admiration of both colleagues and clients. But for Warren Chandler, it’s only ever been about creating strong intellectual property assets for his clients.\n\n' +
+        'The claim ‘attention to detail’ tends to be used far too liberally – but Warren’s appetite for detail can be seen in his comprehensive assessments of client’s commercial IP strategies, and it’s something that delivers literal and measurable results. Several Australian companies that Warren has advised from start-up stage have now emerged as large, well-known commercial enterprises with strong intellectual property assets. This is where Warren, and by extension, his clients are well served by his 24 years’ experience as a patent attorney in <a href="/specialisations/pharmaceutical-patents" style="color:#7D67D8;"  className="links" >chemical engineering</a>.\n\n' +
+        'Warren worked across a broad spectrum of disciplines during the course of a 7-year tenure at the <a href="https://www.csiro.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">CSIRO</a>. Fields as diverse as radical polymerisation of diallylamine monomers (at the division of applied organic chemistry) to chemical engineering, and controlled release of <a href="/specialisations/pharmaceutical-patents" style="color:#7D67D8;"  className="links" >veterinary pharmaceuticals</a> (at the division of Animal Production) were traversed during this time. With the dawn of the 90s, Warren registered as a patent attorney, commencing in his area of speciality, applied chemistry and methods of treatment of diseased states in animals and humans.\n\n' +
         'Warren’s modus operandum has always put client service and quality first. Warren’s reward? The satisfaction of a raft of listed and private companies whose businesses have significantly increased in value as a result of his assistance as their patent attorney.\n\n' +
         'A patient man, known for his tenacity, Warren has never lost a staring competition with his home-brewed beer and produces a brave if not aggressive drop for the private collection.',
     },
@@ -929,11 +974,11 @@ export const profiles = {
         {
           id: 1,
           title:
-            '24 years’ experience as a patent attorney in private practice and at IP Australia',
+            '24 years’ experience as a patent attorney in private practice and at <a href="https://www.ipaustralia.gov.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">IP Australia</a>',
         },
         {
           id: 2,
-          title: 'Extensive patent oppositions and litigation experience',
+          title: 'Extensive <a href="/patent-opposition" style="color:#7D67D8;"  className="links" >patent oppositions</a> and <a href="/patent-litigation" style="color:#7D67D8;"  className="links" >litigation experience</a>',
         },
         {
           id: 3,
@@ -953,11 +998,11 @@ export const profiles = {
         {
           id: 6,
           title:
-            'Fellow of Institute of Patent & Trade Mark Attorneys Australia',
+            'Fellow of <a href="https://ipta.org.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">Institute of Patent & Trade Mark Attorneys Australia</a>',
         },
         {
           id: 7,
-          title: 'Member of the Royal Australian Chemical Institute​',
+          title: 'Member of the <a href="https://www.raci.org.au/" style="color:#7D67D8;"  className="links"   className="links" targer="_black">Royal Australian Chemical Institute​</a>',
         },
         {
           id: 8,
