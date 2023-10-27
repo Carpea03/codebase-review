@@ -126,7 +126,7 @@ export default function ProfessionalProfiles() {
                         '0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 7.01207px 14.2746px rgba(150, 151, 169, 0.085), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(150, 151, 169, 0.0477948)',
                     }}
                   >
-                    <Link href={teamMember.link}>
+                    <Link href={teamMember.link} className='no-underline'>
                     <Image
                       alt=""
                       src={teamMember?.url}
@@ -135,13 +135,13 @@ export default function ProfessionalProfiles() {
                       height={0}
                       className="w-full"
                     />
-                    <div className="flex flex-col p-3 sm:p-8">
+                    <div className="flex flex-col p-3 sm:p-8 no-underline">
                       <div className="flex flex-col sm:flex-row w-full">
                         <div className="flex flex-col w-full md:w-[50%]">
                           <span className="font-manrope font-medium text-base sm:text-xl md:text-[20px] text-[#404266] pb-2 sm:pb-4">
                             {teamMember?.name}
                           </span>
-                          <div className="flex flex-col w-full">
+                          <div className="flex flex-col w-full no-underline">
                             {teamMember?.positions?.map((position, index) => (
                               <span
                                 key={index}
@@ -183,7 +183,7 @@ export default function ProfessionalProfiles() {
                 ))}
               </div>
               <div className="flex justify-center mb-20 md:mb-32">
-                <Link href="/people">
+                <Link href="/people" className='no-underline'>
                   <div
                     className="w-48 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md mt-10 md:mt-20 flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
                     style={{

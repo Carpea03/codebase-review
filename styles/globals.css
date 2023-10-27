@@ -145,7 +145,6 @@
   );
   flex-shrink: 0;
   position: absolute;
-  
 }
 .btn-discover {
   background: #816bd9;
@@ -345,7 +344,6 @@
       0px 8px 17px rgba(150, 151, 169, 0.0686618),
       0px 3px 7px rgba(150, 151, 169, 0.0477948);
   }
-
 }
 
 .bg-ipNewsLog-banner {
@@ -555,7 +553,7 @@ input[type='checkbox'] {
 }
 
 .tooltip .tooltiptext::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -570,27 +568,30 @@ input[type='checkbox'] {
   opacity: 1;
 }
 
-@layer utilities{
+@layer utilities {
   .bg-stepper-desktop {
     background-image: url('/stepper/desktop.svg');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 10;
   }
   .bg-stepper-tablet {
-    background-image: url('/stepper/tablet.svg');
+    background-image: url('/stepper/tablet.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 10;
   }
   .bg-stepper-mobile {
-    background-image: url('/stepper/mobile.svg');
-    background-position: center;
+    background-image: url('/stepper/mobile.png');
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80px, 127px;
+    z-index: 10;
   }
   .bg-expertise {
-    background: linear-gradient(111deg, #61638D 0%, #494B70 98.54%);
+    background: linear-gradient(111deg, #61638d 0%, #494b70 98.54%);
   }
 }
 
@@ -605,4 +606,8 @@ input[type='checkbox'] {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+.links:hover {
+  text-decoration: underline;
 }

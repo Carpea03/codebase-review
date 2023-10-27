@@ -41,6 +41,7 @@ export default function Profile({ profile }) {
   const [reduceMorePost, setReduceMorePost] = useState()
   const [noArticles, setNoArticles] = useState(false)
   const [people, setPeople] = useState({})
+  const parse = require('html-react-parser');
 
   useEffect(() => {
     setPeople(peoples[0]?.teamMembers.filter(value => value.name == profile.name)[0])
@@ -63,7 +64,7 @@ export default function Profile({ profile }) {
   return (
     <>
       <Head>
-        <title>{`${people.name} - ${people.positions}, Patent & Trade Mark Attorney | Baxter IP`}</title>
+        <title>{`${people.name} - ${people.positions}, Patent & Trade Mark Attorney | Baxter IP ${people.place}`}</title>
         <meta name="description" content={profile?.bio} />
         <link
           rel="canonical"
@@ -307,7 +308,7 @@ export default function Profile({ profile }) {
                   style={{ whiteSpace: 'pre-line', textAlign: 'justify' }}
                   className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]"
                 >
-                  {profile.industry.description}
+                  {parse(profile.industry.description)}
                 </p>
               </div>
               <div className="flex flex-col items-start gap-4 sm:gap-8 w-full">
@@ -321,7 +322,7 @@ export default function Profile({ profile }) {
                       .map((item, index) => (
                         <li key={index}>
                           <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]">
-                            {item.title}
+                            {parse(item.title)}
                           </span>
                         </li>
                       ))}
@@ -332,7 +333,7 @@ export default function Profile({ profile }) {
                       .map((item, index) => (
                         <li key={index}>
                           <span className="font-manrope font-semibold text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]">
-                            {item.title}
+                            {parse(item.title)}
                           </span>
                         </li>
                       ))}

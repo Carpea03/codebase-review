@@ -8,7 +8,7 @@ export default function HowToTradeMark() {
     { title: 'How to Trade Mark', link: '' },
   ]
   return (
-    <Layout navData={data} active={"Services"}>
+    <Layout navData={data} active={"Services"} stepper={true} stepperData={true}>
       <Head>
         <title>
           How to trade mark and obtain protection for your brand | Baxter IP

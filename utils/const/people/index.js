@@ -167,6 +167,7 @@ export const profiles = [
         zh: "https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%85%8B%E9%87%8C%E6%96%AF%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9",
         awards: [0, 1],
         isShow: true,
+        place: "Sydney"
       },
       {
         id: 2,
@@ -178,6 +179,7 @@ export const profiles = [
         zh: "https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC/%E9%A9%AC%E4%B8%81%E5%8E%84%E8%80%8C%E5%88%A9",
         awards: [1],
         isShow: true,
+        place: "Melbourne"
       },
       {
         id: 3,
@@ -189,6 +191,7 @@ export const profiles = [
         zh: "https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC/%E8%82%96%E6%81%A9%E5%85%8B%E6%9E%97%E5%85%8B%E6%8B%89%E5%BE%B7",
         awards: [1],
         isShow: true,
+        place: "Melbourne"
       },
       {
         id: 4,
@@ -200,6 +203,7 @@ export const profiles = [
         zh: "https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC/%E6%B2%83%E4%BC%A6%E9%92%B1%E5%BE%B7%E5%8B%92",
         awards: [],
         isShow: true,
+        place: ""
       },
       // {
       //   id: 5,
@@ -222,6 +226,7 @@ export const profiles = [
         zh: "https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%BC%A0%E6%97%97%E5%8D%9A%E5%A3%AB",
         awards: [],
         isShow: true,
+        place: ""
       },
       {
         id: 7,
@@ -233,6 +238,7 @@ export const profiles = [
         zh: "https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E7%90%86%E6%9F%A5%E5%BE%B7%E6%A0%BC%E5%85%B0%E7%89%B9%E5%8D%9A%E5%A3%AB",
         awards: [],
         isShow: true,
+        place: "Sydney"
       },
       {
         id: 8,
@@ -258,6 +264,7 @@ export const profiles = [
         url: '/professionalProfiles/profiles/chris.jpg',
         link: '/attorneys/chris-baxter',
         awards: [0, 1],
+        place: "Sydney"
       },
       // {
       //   id: 2,
@@ -276,6 +283,7 @@ export const profiles = [
         url: '/professionalProfiles/profiles/qi.jpg',
         link: '/attorneys/qi-zhang',
         awards: [],
+        place: ""
       },
       {
         id: 4,
@@ -285,6 +293,7 @@ export const profiles = [
         url: '/professionalProfiles/profiles/richard.jpg',
         link: '/attorneys/richard-grant',
         awards: [],
+        place: "Sydney"
       },
     ],
   },
@@ -303,6 +312,7 @@ export const profiles = [
         url: '/professionalProfiles/profiles/martin.jpg',
         link: '/attorneys/martin-earley',
         awards: [1],
+        place: "Melbourne"
       },
       {
         id: 2,
@@ -312,6 +322,7 @@ export const profiles = [
         url: '/professionalProfiles/profiles/sean.jpg',
         link: '/attorneys/sean-klinkradt',
         awards: [1],
+        place: "Melbourne"
       },
       {
         id: 3,
@@ -321,6 +332,7 @@ export const profiles = [
         url: '/professionalProfiles/profiles/warren.jpg',
         link: '/attorneys/warren-chandler',
         awards: [],
+        place: ""
       },
     ],
   },

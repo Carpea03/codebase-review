@@ -28,9 +28,9 @@ export default function TradeMarkProcessFlowcharts() {
       lightbox={
         <Lightboxs
           images={[
-            { src: '/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png' },
-            { src: '/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png' },
-            { src: '/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png' }
+            { src: '/flowchart/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png' },
+            { src: '/flowchart/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png' },
+            { src: '/flowchart/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop.png' }
           ]}
           type="image"
           index={imageIndex}
@@ -63,9 +63,8 @@ export default function TradeMarkProcessFlowcharts() {
       <h2>Australian Standard Trade Mark Procedure</h2>
       <figure>
         <Image
-          loader={myLoader}
           onClick={() => setLigthbox(0)}
-          src="/images/charts/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2-1024x331.png"
+          src="/flowchart/Flowchart-F-Australian-Standard-Trade-Mark-Procedure-Desktop-v2.png"
           alt="Australian Standard Trade Mark Procedure"
           width="1024"
           height="331"
@@ -82,9 +81,8 @@ export default function TradeMarkProcessFlowcharts() {
       <h2>Madrid Protocol Trade Mark Application Process</h2>
       <figure>
         <Image
-          loader={myLoader}
           onClick={() => setLigthbox(1)}
-          src="/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
+          src="/flowchart/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
           alt="Madrid Protocol Trade Mark Application Process"
           width="1024"
           height="395"
@@ -101,9 +99,8 @@ export default function TradeMarkProcessFlowcharts() {
       <h2>Trade Mark Opposition Procedure</h2>
       <figure>
         <Image
-          loader={myLoader}
           onClick={() => setLigthbox(2)}
-          src="/images/charts/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop-1024x313.png"
+          src="/flowchart/Flowchart-H-Trade-Mark-Opposition-Procedure-Desktop.png"
           alt="Trade Mark Opposition Procedure"
           width="1024"
           height="313"
