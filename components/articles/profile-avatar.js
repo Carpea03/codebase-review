@@ -15,7 +15,7 @@ export default function Avatar({ name, picture, date, bio, size, body }) {
                   .width(size || 32)
                   .fit('crop')
                   .url()
-              : picture || `https://source.unsplash.com/96x96/?face-${name}`
+              : picture || `https://source.unsplash.com/96x96/?face`
           }
           className="rounded-full"
           height={size || 32}
@@ -32,7 +32,7 @@ export default function Avatar({ name, picture, date, bio, size, body }) {
         </div>
         {body && (
           <div>
-            {parse(body)} <Date dateString={date} />
+            {parse(body.toString())} <Date dateString={date} />
           </div>
         )}
       </div>

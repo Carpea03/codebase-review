@@ -12,7 +12,7 @@ const Testimonial = ({ content, name, body, href }) => {
     const getProfiles = profiles[0]?.teamMembers?.filter(
       (people) => people.name === name
     )[0]
-    setPeople(getProfiles?.name || name)
+    setPeople(getProfiles?.name || name?.toString())
     setPicture(getProfiles?.url)
     setPosition(getProfiles?.positions[0] || body)
   }, [name])
