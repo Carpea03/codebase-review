@@ -6,7 +6,7 @@ export default function Banner({ layout, coverImage }) {
  
   return (
     <div
-      className={`w-full flex mt-[69px] ${
+      className={`w-full flex mt-[50px] md:mt-[69px] ${
         layout === 3
           ? ''
           : layout === 2
