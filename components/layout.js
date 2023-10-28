@@ -52,7 +52,7 @@ export default function Layout({
       <Header active={active} lightbox={lightbox} />
       <div
         style={{ zIndex: 10 }}
-        className="bg-white w-full flex item-center absolute h-30 z-100 flex-col"
+        className="bg-white w-full flex item-center absolute h-90 z-100 flex-col"
       >
         <InnerContainer>
           <div className="flex">
@@ -83,7 +83,7 @@ export default function Layout({
       )}
       {!layout && (
         <>
-          <div className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} ${stepper?'mt-[200px]': ''}`}>
+          <div className={`${articlesBg ? '' : 'bg-ipNewsLog-content'} ${stepper?'mt-[140px] sm:mt-[140px] md:mt-[200px]': 'mt-[80px] sm:mt-[50px] md:mt-[0px]'}`}>
             <InnerContainer>
               <div className="flex flex-col md:px-20 mt-10 ">
                 <div
@@ -97,8 +97,8 @@ export default function Layout({
                       zIndex: 0,
                     }}
                     className={` ${
-                      bannerData ? 'py-80 mt-20' : 'bg-white'
-                    } format max-w-none mx-auto sm:mt-[50px] pt-[1px] pl-[16px] pr-[16px] md:pl-10 md:pr-10 pb-10 rounded-lg w-full
+                      bannerData ? 'py-80 mt-20' : 'bg-white pt-1'
+                    } format max-w-none mx-auto sm:mt-[50px]  pl-[16px] pr-[16px] md:pl-10 md:pr-10 pb-10 rounded-lg w-full
                   ${
                     bannerData
                       ? 'mb-20'
