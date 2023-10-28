@@ -778,7 +778,7 @@ export default function Testimonials() {
       <Testimonial
         content="The service at Baxter's is excellent. Friendly and relaxed yet
         professional and thorough."
-        name={'Emmy &amp; Frank McNeilly'}
+        name={'Emmy Frank McNeilly'}
       />
 
       <hr />
@@ -981,7 +981,7 @@ export default function Testimonials() {
       <Testimonial
         content="We are really happy with your services and thank you again. I will
         highly recommend you in the future."
-        name={'Card &amp; Vase'}
+        name={'Card Vase'}
       />
 
       <hr />
@@ -1025,7 +1025,8 @@ export default function Testimonials() {
         licences are stronger as a result enabling us to negotiate with large
         companies from a position of strength. I have no hesitation in
         recommending Baxter IP Patent Attorneys."
-        name={'Bruce Gillespie, MD of Homelift Pty Ltd'}
+        name={'Bruce Gillespie'}
+        body={'MD of Homelift Pty Ltd'}
       />
 
       <hr />
@@ -1038,7 +1039,8 @@ export default function Testimonials() {
         Property is protected. I would highly recommend Baxter IP Patent
         Attorneys to help anyone looking to trade mark or patent their precious
         ideas."
-        name={'Kate Sutton, Director of Uberkate'}
+        name={'Kate Sutton'}
+        body={'Director of Uberkate'}
       />
 
       <hr />
@@ -1052,8 +1054,9 @@ export default function Testimonials() {
       />
 
       <hr />
-      <blockquote>
-        Both my wife and I have used Baxter IP Patent Attorneys for two separate
+     
+      <Testimonial
+        content="Both my wife and I have used Baxter IP Patent Attorneys for two separate
         projects (Wheely Clean Golf and Shnooki Design) we have been working on
         over the last 12 months. We have found them to be extremely
         professional, reliable and helpful. Not only have they successfully
@@ -1061,247 +1064,245 @@ export default function Testimonials() {
         engineering, and manufacturing our products. We have always found Baxter
         IP Patent Attorneys to be very easy to deal with, and nothing is ever a
         problem for them. It has been a pleasure dealing with Baxter IP Patent
-        Attorneys and I would have no hesitation in recommending them.
-      </blockquote>
-      <cite>
-        &ndash; Luke Miles, Director of{' '}
-        <Link
-          href="https://www.lmeelectrical.com.au/"
-          title="LME Electrical Contractors Pty Ltd"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          LME Electrical Contractors Pty Ltd
-        </Link>
-      </cite>
+        Attorneys and I would have no hesitation in recommending them."
+        name={'LME Electrical Contractors Pty Ltd'}
+        body={
+          'of <a href="https://www.lmeelectrical.com.au" style="color:#7D67D8;" className="links" target="_blank" >LME Electrical Contractors Pty Ltd</a>'
+        }
+      />
 
       <hr />
-      <blockquote>
-        I recently filed a patent application with the help of Chris Baxter and
+ 
+      <Testimonial
+        content=" I recently filed a patent application with the help of Chris Baxter and
         his team at Baxter IP Patent Attorneys. Having had no knowledge or
         experience of how to go about this, I was surprised and relieved by the
         professional and caring advice and guidance I was given by Chris and
         Jon, with their help I have been able to take each step to market my
         product with a lot more confidence. I highly recommend a consultation
-        with Chris and his team as a first step to getting a product patent.
-      </blockquote>
-      <cite>&ndash; Mary Ayoub</cite>
+        with Chris and his team as a first step to getting a product patent."
+        name={'Mary Ayoub'}
+      />
+
 
       <hr />
-      <blockquote>
-        Baxter IP was recommended to me and I can understand why. Securing a
+      
+      <Testimonial
+        content="Baxter IP was recommended to me and I can understand why. Securing a
         trade mark and patent for my intellectual property was both exciting and
         bewildering and Chris clearly explained the necessary steps to obtain
         both. He was helpful and patient answering many questions through this
-        long process.
-      </blockquote>
-      <cite>&ndash; Diane Abello</cite>
+        long process."
+        name={'Diane Abello'}
+      />
 
       <hr />
-      <blockquote>
-        If you believe in your idea you need to trust someone. I too that leap
+
+      <Testimonial
+        content="If you believe in your idea you need to trust someone. I too that leap
         of faith and laid my idea on the line to Chris Baxter who appointed me
         his associate Jon Wright. It was a relaxed atmosphere and the best thing
         I have done. These guys are champions. We expect my now robust
         specification is fast progressing up to the PCT application status. Six
-        months ago this seemed but a fantasy.
-      </blockquote>
-      <cite>&ndash; Milton Facaris</cite>
+        months ago this seemed but a fantasy."
+        name={'Milton Facaris'}
+      />
 
       <hr />
-      <blockquote>
-        Thank you for being so proactive in your support of this project and for
-        your considerable effort in preparing a very thorough application.
-      </blockquote>
-      <cite>
-        &ndash; Research &amp; Technology Manager of a global medical devices
-        company
-      </cite>
+
+      <Testimonial
+        content=" Thank you for being so proactive in your support of this project and for
+        your considerable effort in preparing a very thorough application."
+        name={'Research Technology Manager'}
+        body={'of a global medical devices company'}
+      />
 
       <hr />
-      <blockquote>
-        Chris helped us in a very professional and a very personal way I feel
-        part of the family.
-      </blockquote>
-      <cite>&ndash; Ean Herniman</cite>
+      <Testimonial
+        content="Chris helped us in a very professional and a very personal way I feel
+        part of the family."
+        name={'Ean Herniman'}
+      />
+
 
       <hr />
-      <blockquote>
-        I found Baxter IP Patent Attorneys to be very honest regarding my patent
+      <Testimonial
+        content="I found Baxter IP Patent Attorneys to be very honest regarding my patent
         idea and the direction I should take. Their availability to answer
-        questions I had throughout the process was also most helpful.
-      </blockquote>
-      <cite>&ndash; Con Staveris</cite>
+        questions I had throughout the process was also most helpful."
+        name={'Con Staveris'}
+      />
 
       <hr />
-      <blockquote>
-        Thanks for the huge effort you put into this... this was critical to the
-        timing of the project.
-      </blockquote>
-      <cite>&ndash; Project Engineer of a global medical devices company</cite>
+
+      <Testimonial
+        content="Thanks for the huge effort you put into this... this was critical to the
+        timing of the project."
+        name={'Project Engineer'}
+        body={'of a global medical devices company'}
+      />
 
       <hr />
-      <blockquote>
-        I really appreciate all the intelligent and practical advice you gave me
+
+      <Testimonial
+        content="I really appreciate all the intelligent and practical advice you gave me
         concerning the process involved in protecting trade marks and
         intellectual property… I found you extremely honest and professional and
-        I would have no hesitation in recommending you to any of my associates.
-      </blockquote>
-      <cite>&ndash; Andrew Vines</cite>
+        I would have no hesitation in recommending you to any of my associates."
+        name={'Andrew Vines'}
+      />
 
       <hr />
-      <blockquote>
-        Thank you very much for all your help with the provisional patent
+      <Testimonial
+        content="Thank you very much for all your help with the provisional patent
         application. From my point of view this process could not have worked
         out better. Your approach to draft a comprehensive specification, even
         if it is &ldquo;only&rdquo; a provisional application, makes sense to
         me. Also because of your aeronautical engineering background you
         understood the sail-by-wire system immediately. I&rsquo;m sure this
         saved a lot of time and might even lead to better protection of the
-        idea.
-      </blockquote>
-      <cite>&ndash; Karsten Jarke</cite>
+        idea."
+        name={'Karsten Jarke'}
+      />
+
 
       <hr />
-      <blockquote>
-        It is our pleasure to be testament to the absolute Professionalism,
+
+      <Testimonial
+        content="It is our pleasure to be testament to the absolute Professionalism,
         Integrity and Expertise, that we have experienced working with Baxter IP
         Patent Attorneys. Chris has continually gone &lsquo;Above and
         Beyond&rsquo; in his response to our needs. For us being new to the
         Patent process, it was very reassuring having Chris give us advice, and
         keeping us informed and up-to-date every step of the way. We have no
         doubt that his involvement has considerably improved our chances of
-        success. We look forward to working with him on future projects.
-      </blockquote>
-      <cite>&ndash; Monique &amp; Kristy Pastor of Twinnovations</cite>
+        success. We look forward to working with him on future projects."
+        name={'Monique Kristy Pastor'}
+        body={'of Twinnovations'}
+      />
+
 
       <hr />
-      <blockquote>
-        I am very pleased with the result of Chris Baxter&rsquo;s work and would
+      <Testimonial
+        content="I am very pleased with the result of Chris Baxter&rsquo;s work and would
         highly recommend him to anyone seeking to own intellectual property. My
         product was quite basic and the chance of getting a certified innovation
         patent certificate was slim. My first attempt was unsuccessful however
         with Chris&rsquo;s expert knowledge, he was able to remove the grounds
         of objection and the claim got accepted. I received the news from him on
         New Year&rsquo;s Eve which made a great start to this year. Great work
-        Chris!
-      </blockquote>
-      <cite>
-        &ndash; Tony Gouverneur of{' '}
-        <Link
-          href="https://tidytradie.com/"
-          title="Tidy Tradie"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          Tidy Tradie
-        </Link>
-      </cite>
+        Chris!"
+        name={'Tony Gouverneur'}
+        body={
+          'of <a href="https://tidytradie.com/" style="color:#7D67D8;" className="links" target="_blank" >Tidy Tradie</a>'
+        }
+      />
 
       <hr />
-      <blockquote>
-        Thank you for your professionalism and service with providing Focus
+  
+      <Testimonial
+        content="Thank you for your professionalism and service with providing Focus
         Driving School with its first trade mark. We received the Certificate of
         Registration yesterday and we are all very excited about it. We look
         forward to implementing the R symbol on our stationary and have
-        displayed the Certificate in our office.
-      </blockquote>
-      <cite>
-        &ndash; Helen Jancev, Operations Manage of Focus Driving School
-      </cite>
+        displayed the Certificate in our office."
+        name={'Helen Jancev'}
+        body={'Operations Manage of Focus Driving School'}
+      />
+
 
       <hr />
-      <blockquote>
-        Just wanted to pass on my thanks to you and your team for the work done
+      <Testimonial
+        content="Just wanted to pass on my thanks to you and your team for the work done
         in putting together the provisional patent application. The level of
-        work and detail has exceeded my expectations.
-      </blockquote>
-      <cite>&ndash; Kristian Hedge</cite>
+        work and detail has exceeded my expectations."
+        name={'Kristian Hedge'}
+      />
 
       <hr />
-      <blockquote>
-        We decided to invest in a patent for our LC888 window lock. Baxter IP
+
+      <Testimonial
+        content="We decided to invest in a patent for our LC888 window lock. Baxter IP
         Patent Attorneys assisted us with the process which can be very
         involved, their advice was helpful and we would recommend their
-        services.
-      </blockquote>
-      <cite>&ndash; Craig Levey, Manager of LEVCOL</cite>
+        services."
+        name={'Craig Levey'}
+        body={'Manager of LEVCOL'}
+      />
 
       <hr />
-      <blockquote>
-        I cannot recommend Chris Baxter&rsquo;s skills as a patent attorney
+
+      <Testimonial
+        content="I cannot recommend Chris Baxter&rsquo;s skills as a patent attorney
         highly enough. Chris&rsquo; strength lies with his ability to work
         closely with the inventor. Too many patents are open to unlicensed use
         because a clever copier can avoid infringement by exploiting weaknesses
         in an invention&rsquo;s specification and claims. Avoiding these
         weaknesses requires the ability to foresee alternative ways in which the
-        invention could be used without infringing the patent.
-      </blockquote>
-      <cite>&ndash; Dr Ian Doig of Pumping Solutions</cite>
+        invention could be used without infringing the patent."
+        name={'Dr Ian Doig'}
+        body={'of Pumping Solutions'}
+      />
 
       <hr />
-      <blockquote>
-        We approached Baxter IP Patent Attorneys to work with us on the
+
+      <Testimonial
+        content="We approached Baxter IP Patent Attorneys to work with us on the
         registration of a patent. During Chris&rsquo; preliminary searches he
         found a similar product already in the marketplace that our searches
         failed to find. Although we were unable to patent our product,
         Chris&rsquo;s honesty and professionalism saved us thousands of dollars
         in unnecessary searches and registration fees. If you are looking for a
-        Patent Attorney, I would highly recommend Baxter IP Patent Attorneys.
-      </blockquote>
-      <cite>&ndash; Stuart Thomson of travelgoods.com</cite>
+        Patent Attorney, I would highly recommend Baxter IP Patent Attorneys."
+        name={'Stuart Thomson'}
+        body={
+          'of <a href="http://travelgoods.com" style="color:#7D67D8;" className="links" target="_blank" >travelgoods.com</a>'
+        }
+      />
 
       <hr />
-      <blockquote>
-        Thank you for your excellent and efficient service. Your response time
+
+      <Testimonial
+        content="Thank you for your excellent and efficient service. Your response time
         was extremely fast and the information presented was clear. We will use
-        your services again.
-      </blockquote>
-      <cite>
-        &ndash; Eddy Feligueira of{' '}
-        <Link
-          href="http://smartechdesigns.co.za/"
-          title="Smartech Designs Pty Ltd"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          Smartech Designs Pty Ltd
-        </Link>
-      </cite>
+        your services again."
+        name={'Eddy Feligueira'}
+        body={
+          'of <a href="http://smartechdesigns.co.za/" style="color:#7D67D8;" className="links" target="_blank" >Smartech Designs Pty Ltd</a>'
+        }
+      />
 
       <hr />
-      <blockquote>
-        I would like to thank you and your team on the professional way you have
+
+
+      <Testimonial
+        content="I would like to thank you and your team on the professional way you have
         helped me in developing a patent. I would also like to say that you gave
         me all the correct information on how patents work and the costing and
         left it up to me if I wanted to proceed or not with the patent. I would
         also highly recommend you and your company to anyone who is thinking
-        about doing a patent.
-      </blockquote>
-      <cite>&ndash; Ben Halliday of Austa Pty Ltd</cite>
+        about doing a patent."
+        name={'travelgoods.com'}
+      />
+
 
       <hr />
-      <blockquote>
-        From the initial meeting through to the lodging of a patent I have been
+
+      <Testimonial
+        content="From the initial meeting through to the lodging of a patent I have been
         very impressed with Baxter IP Patent Attorneys&rsquo;s punctuality of
         program, utmost professional attention to detail and above all their
-        width of thinking.
-      </blockquote>
-      <cite>
-        &ndash; Bruce Hanlee of{' '}
-        <Link
-          href="https://xsquareddesign.com/"
-          title="X2 Design Pty Ltd"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          X2 Design Pty Ltd
-        </Link>
-      </cite>
+        width of thinking."
+        name={'Bruce Hanlee'}
+        body={
+          'of <a href="https://xsquareddesign.com/" style="color:#7D67D8;" className="links" target="_blank" >X2 Design Pty Ltd</a>'
+        }
+      />
 
       <hr />
-      <blockquote>
-        We recently engaged Baxter IP Patent Attorneys to manage and direct our
+
+      <Testimonial
+        content="We recently engaged Baxter IP Patent Attorneys to manage and direct our
         Intellectual Property needs. We found Chris to be very responsive,
         committed and diligent in his approach to providing us with direction to
         matters that became urgent. Chris demonstrated that he could offer
@@ -1311,67 +1312,62 @@ export default function Testimonials() {
         currently preparing a global strategic direction for the Popcake suite
         of products. Chris comprehended future issues, and there are numerous
         conflicting factors, and reported these to Board of Directors without
-        ambiguity and clear future corporate direction.
-      </blockquote>
-      <cite>
-        &ndash; Marek Szymanski, Managing Director of{' '}
-        <Link
-          href="https://popcake.com.au/"
-          title="Popcake Int Pty Ltd"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          Popcake Int Pty Ltd
-        </Link>
-      </cite>
+        ambiguity and clear future corporate direction."
+        name={'Marek Szymanski'}
+        body={
+          ' Managing Director of <a href="https://popcake.com.au/" style="color:#7D67D8;" className="links" target="_blank" >Popcake Int Pty Ltd</a>'
+        }
+      />
 
       <hr />
-      <blockquote>
-        As a technology company reliant on IP for our success, it is paramount
+      <Testimonial
+        content="As a technology company reliant on IP for our success, it is paramount
         to retain competent and experienced IP advisors and services. Baxter IP
         Patent Attorneys were able to guide us through our technically demanding
         patent space quickly and efficiently, while maintaining excellent
         feedback and communication throughout. We are happy with both the advice
         and services provided by Baxter IP Patent Attorneys, and will continue
-        to engage Chris and his team for our future IP needs.
-      </blockquote>
-      <cite>
-        &ndash; Leo McHugh, PhD of Highlight Ventures Pty Ltd / Adventure
-        Aerospace Pty Ltd
-      </cite>
+        to engage Chris and his team for our future IP needs."
+        name={'Leo McHugh'}
+        body={
+          'of PhD of Highlight Ventures Pty Ltd / Adventure Aerospace Pty Ltd'
+        }
+      />
 
       <hr />
-      <blockquote>
-        After receiving an introduction to Chris from a highly respected and
+
+      <Testimonial
+        content="After receiving an introduction to Chris from a highly respected and
         successful VC, I found Chris to be a very professional and gifted
         operator who sincerely desires to deliver a first class job. Upon
         seeking his opinion on a very detailed and complex matter, I found him
         to be thoughtful, thorough and able to grasp the vision behind what I
-        asked him to advise me on.
-      </blockquote>
-      <cite>
-        &ndash; Anthony Harrison, Managing Director of Brandwave Pty Ltd
-      </cite>
+        asked him to advise me on."
+        name={'Anthony Harrison'}
+        body={
+          'Managing Director of Brandwave Pty Ltd'
+        }
+      />
 
       <hr />
-      <blockquote>
-        Networked Infrastructure National Architecture (NINA) Pty Ltd engaged
+      <Testimonial
+        content="Networked Infrastructure National Architecture (NINA) Pty Ltd engaged
         Baxter IP Patent Attorneys to draft and lodge its patent application for
         its modular integrated curb and ducting systems for electrical, data,
         gas and water infrastructure. Baxter IP Patent Attorneys was able to
         appreciate both the novelty of the invention and the broad scope of its
         application. This was successfully incorporated in the initial filing to
         give us the broadest scope to defend and develop our invention. We would
-        readily recommend their IP and patent services.
-      </blockquote>
-      <cite>
-        &ndash; Guy Dixon, Inventor of Networked Infrastructure National
-        Architecture Pty Ltd
-      </cite>
+        readily recommend their IP and patent services."
+        name={'Guy Dixon'}
+        body={
+          'Inventor of Networked Infrastructure National Architecture Pty Ltd'
+        }
+      />
 
       <hr />
-      <blockquote>
-        The online social networking space that we operate in is highly
+      <Testimonial
+        content="The online social networking space that we operate in is highly
         competitive and is evolving rapidly. Great ideas can lead to enormous
         competitive advantages but they can also be copied very easily. We
         wanted a way to protect our inventions from being copied by the
@@ -1388,54 +1384,66 @@ export default function Testimonials() {
         different jurisdictions to accommodate local laws. This is something we
         felt we have gained enormously by using Baxter IP. I&rsquo;d highly
         recommend using Baxter IP to any software company that&rsquo;s looking
-        to protect their software inventions.
-      </blockquote>
-      <cite>&ndash; Francesco Fiorenza, Director of Flame Pty Ltd</cite>
+        to protect their software inventions."
+        name={'Francesco Fiorenza'}
+        body={
+          'Director of Flame Pty Ltd'
+        }
+      />
 
       <hr />
-      <blockquote>
-        I contacted Baxter IP Patent Attorneys following a previous fruitless,
+  
+      <Testimonial
+        content="I contacted Baxter IP Patent Attorneys following a previous fruitless,
         lengthy and expensive experience with one of the large specialist IP
         firms in a previous business. I have now engaged Baxter IP Patent
         Attorneys for two projects, one simple, and one complex. In both cases
         Chris has demonstrated his talent for rapidly gaining a depth of subject
         understanding and a grasp of the important issues prior to producing and
         lodging highly regarded patent documents. I have no hesitation in
-        recommending Baxter IP Patent Attorneys.
-      </blockquote>
-      <cite>&ndash; Bruce Johansson of CleanPoint Holdings Pty Ltd</cite>
+        recommending Baxter IP Patent Attorneys."
+        name={'Bruce Johansson'}
+        body={
+          'of CleanPoint Holdings Pty Ltd'
+        }
+      />
 
       <hr />
-      <blockquote>
-        A big thanks for you help with the trade mark. A lot easier and quicker
+
+      <Testimonial
+        content="A big thanks for you help with the trade mark. A lot easier and quicker
         than I thought... and a lot more affordable than I thought too. Again
-        truly appreciate the help. Thanks!
-      </blockquote>
-      <cite>&ndash; Greg Betty</cite>
+        truly appreciate the help. Thanks!"
+        name={'Greg Betty'}
+      />
 
       <hr />
-      <blockquote>
-        We have now worked with Barry Meskin on 3 matters. 2 involved quite
+
+      <Testimonial
+        content="We have now worked with Barry Meskin on 3 matters. 2 involved quite
         complex Aussie trade mark applications, and the latest was an urgent UK
         legal dispute on trademarks/copyrights in 10 countries in Europe and
         Asia. Barry did a professional and thorough job on all occasions, and we
         got the TMs and information we needed in a timely manner at very
         reasonable cost. Plus - Barry is just a really good guy to work with.
-        Highly recommended!!
-      </blockquote>
-      <cite>&ndash; Mickey Perret</cite>
+        Highly recommended!!"
+        name={'Mickey Perret'}
+      />
 
       <hr />
-      <blockquote>
-        Service, contact and support to date has been excellent.&nbsp; Attention
+
+      <Testimonial
+        content="Service, contact and support to date has been excellent.&nbsp; Attention
         to detail and advice from our patent attorney at Baxter IP has been
         nothing short of First Class.&nbsp; Thank you all.
-      </blockquote>
-      <cite>&ndash; David Dicesare</cite>
+        Highly recommended!!"
+        name={'David Dicesare'}
+      />
 
       <hr />
-      <blockquote>
-        I was a first time patent seeker. Baxter&apos;s service and
+
+      <Testimonial
+        content="I was a first time patent seeker. Baxter&apos;s service and
         communication was first class. I found the staff helpful and patient as
         being a rookie in the patent application process I had many questions.
         Baxter IP also involved me in some of the text production for rebuttals
@@ -1445,66 +1453,73 @@ export default function Testimonials() {
         Innovations.
         <br />
         Found your staff helpful and efficient. Would recommend you to my
-        friends.
-      </blockquote>
-      <cite>&ndash; Todd Archer, Director of Archer Innovations</cite>
+        friends."
+        name={'Todd Archer'}
+      />
 
       <hr />
-      <blockquote>
-        Being a first time patenter, my initial reservations relating to the
+
+      <Testimonial
+        content="Being a first time patenter, my initial reservations relating to the
         unknown process soon disappeared and was replaced with confidence. Chris
         Baxter lost no time in establishing a trust worthy and safe working
         relationship. Having access to such a highly skilled professional team
         was exactly what my innovation needed. I would strongly recommend IP
         Baxter to anyone wishing to put their innovation or inventions on the
-        best path right from the word go.
-      </blockquote>
-      <cite>&ndash; Pen Williams</cite>
+        best path right from the word go."
+        name={'Pen Williams'}
+      />
 
       <hr />
-      <blockquote>
-        Highly professional firm providing concise and easy to understand
+
+      <Testimonial
+        content="Highly professional firm providing concise and easy to understand
         advice. My understanding of the importance of trade marking my company
         name and logo was negligible. Chris and Barry stepped me through the
         process to protect my asset from a domestic (Australia) and
-        international perspective. Highly recommended.
-      </blockquote>
-      <cite>&ndash; Michelle Fiegehen</cite>
+        international perspective. Highly recommended."
+        name={'Michelle Fiegehen'}
+      />
 
       <hr />
-      <blockquote>
-        Well organised and prepared. Presented and explained concepts behind
+
+      <Testimonial
+        content="Well organised and prepared. Presented and explained concepts behind
         patent law concisely and effectively, providing myself with the upmost
         information to understand the eligibility and process that are involved.
         A very help full team, whom provide a positive and welcoming experience.
-        I would highly recommend Baxter IP.
-      </blockquote>
-      <cite>&ndash; Christapher Karaberis</cite>
+        I would highly recommend Baxter IP."
+        name={'Christapher Karaberis'}
+      />
+
 
       <hr />
-      <blockquote>
-        Baxter IP gave me a quick &amp; precise understanding of the Patenting
+
+      <Testimonial
+        content="Baxter IP gave me a quick &amp; precise understanding of the Patenting
         System &amp; Protocols. They had high quality answers to all my
         enquiries and even gave me a better alternatives to resolve my current
         problems. Additionally, the customer service, friendliness, attention to
         detail and attentiveness of the staff made the whole process very well
-        handled. Highly Reliable and Highly Recommend!
-      </blockquote>
-      <cite>&ndash; Thaison Tran</cite>
+        handled. Highly Reliable and Highly Recommend!"
+        name={'Thaison Tran'}
+      />
 
       <hr />
-      <blockquote>
-        Applying for a provisional patent is new for me. I&apos;m very pleased
+
+      <Testimonial
+        content=" Applying for a provisional patent is new for me. I&apos;m very pleased
         with the guidance I&apos;ve received, every step has been explained
         thoroughly. I have received prompt responses by staff when I&apos;ve had
         questions, my queries have been resolved quickly all staff have been
-        very helpful. Highly recommended.
-      </blockquote>
-      <cite>&ndash; Corinda Lavington</cite>
+        very helpful. Highly recommended."
+        name={'Corinda Lavington'}
+      />
+
 
       <hr />
-      <blockquote>
-        Baxter IP team - Chris, Phil, Kristine, Warren and Julie in particular
+      <Testimonial
+        content="Baxter IP team - Chris, Phil, Kristine, Warren and Julie in particular
         have done a wonderful job in securing a provisional application and
         trade marks for my company. I have dealt with many IP firms in the past
         - in fact most of the larger major ones in Australia - and I would have
@@ -1515,9 +1530,10 @@ export default function Testimonials() {
         couple of near all nighters in order to get my IP filed by the due date.
         If you are looking for a personalised service and working with a firm
         who actually cares about your success, then Baxter IP is definitely the
-        place to go. I will definitely use Baxter IP again.
-      </blockquote>
-      <cite>&ndash; Robert Huber</cite>
+        place to go. I will definitely use Baxter IP again."
+        name={'Robert Huber'}
+      />
+
     </Layout>
   )
 }

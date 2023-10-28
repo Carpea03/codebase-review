@@ -7,7 +7,7 @@ const Testimonial = ({ content, name, body, href }) => {
   const [people, setPeople] = useState()
   const [picture, setPicture] = useState()
   const [position, setPosition] = useState()
-  const parse = require('html-react-parser');
+  const parse = require('html-react-parser')
   useEffect(() => {
     const getProfiles = profiles[0]?.teamMembers?.filter(
       (people) => people.name === name
@@ -31,8 +31,8 @@ const Testimonial = ({ content, name, body, href }) => {
           style={{ top: 0 }}
         />
       </div>
-      <div className="flex justify-center items-start">
-        <Avatar name={people} picture={picture} body={position} size={60} />
+      <div className="flex justify-center items-start w-full">
+        <Avatar name={people} picture={picture} body={position} size={40} testimony={true}/>
       </div>
     </div>
   )
