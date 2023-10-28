@@ -70,26 +70,26 @@ const Stepper = ({ active, stepperData }) => {
   }
 
   return (
-    <div className="z-50 w-full h-[100px] sm:h-[127px] flex flex-row justify-center items-center bg-[#FFF] rounded-md">
+    <div className="z-50 w-full h-[78px] xs:[90px] sm:h-[100px] md:h-[127px] flex flex-row justify-center items-center bg-[#FFF] rounded-md">
       {data?.map((item, index) => {
         return (
           <div
             key={`stepper-${index}`}
             className={`w-full h-full flex flex-row justify-center items-center ${
               index + 1 === active
-                ? 'bg-stepper-mobile sm:bg-stepper-tablet md:bg-stepper-tablet lg:bg-stepper-desktop opacity-100 text-white'
+                ? 'bg-stepper-mobile sm:bg-stepper-tablet xl:bg-stepper-desktop opacity-100 text-white'
                 : ''
-            } hover:bg-stepper-mobile hover:sm:bg-stepper-tablet hover:md:bg-stepper-tablet hover:lg:bg-stepper-desktop 
+            } hover:bg-stepper-mobile hover:sm:bg-stepper-tablet hover:xl:bg-stepper-desktop 
             hover:opacity-100 hover:text-[#FFF] opacity-50`}
           >
             <div
-              className={`ml-4 sm:m-2 md:m-4 lg:m-6 xl:m-8 cursor-pointer sm:p-10 md:p-10 lg:p-3 xl:p-5`}
+              className={`${stepperData ? 'pl-4 xs:pl-5 ' : 'm-1 pl-6 xs:pl-8 '}sm:m-2 md:m-4 lg:m-10 xl:m-8 cursor-pointer sm:p-10 md:p-10 lg:p-3 xl:p-5`}
               onClick={() => onClick(item.href)}
             >
-              <div className="text-[12px] md:text-[20px] xl:text-2xl font-manrope font-semibold">
+              <div className="text-[9px] sm:text-[12px] md:text-[20px] xl:text-2xl font-manrope font-semibold">
                 {item.title}
               </div>
-              <div className="text-[10px] md:text-[12px] xl:text-[15px] font-manrope ">
+              <div className="text-[7px] sm:text-[10px] md:text-[12px] xl:text-[15px] font-manrope ">
                 {item.subTitle}
               </div>
             </div>
