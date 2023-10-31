@@ -10,7 +10,7 @@ export default function HealthTech() {
   const data = [
     { title: 'Industry Expertise', link: '/expertise' },
     {
-      title: 'Healthcare',
+      title: 'Healthtech',
       link: '',
     },
   ]
@@ -89,10 +89,7 @@ export default function HealthTech() {
         peoples={profiles[0]?.teamMembers?.filter(
           (people) =>
             people.isShow === true &&
-            people.linkId !== 'chris-baxter' &&
-            people.linkId !== 'andrew-balis' &&
-            people.linkId !== 'martin-earley' &&
-            people.linkId !== 'qi-zhang'
+            people.linkId !== 'andrew-balis' 
         )}
         awards={awards}
       />

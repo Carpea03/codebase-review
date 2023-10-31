@@ -555,7 +555,7 @@ export const subMenus3 = [
       title: 'Healthtech',
       bold: false,
       division: false,
-      href: '/expertise/healthcare',
+      href: '/expertise/healthtech',
     },
     {
       title: 'Other Industries',

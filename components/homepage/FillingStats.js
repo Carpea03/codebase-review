@@ -350,7 +350,7 @@ export const FillingStats = () => {
               </div>
               <InnerContainer>
                 <div className="px-[32px] sm:px-[55px] xl:px-[110px] 2xl:px-[150px] mt-5 sm:mt-10">
-                  <span className="text-[14px] sm:text-xl font-manrope font-medium opacity-50">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sapien id purus condimentum vehicula. Ut iaculis pharetra enim quis gravida. Ut a cursus purus, vitae cursus odio. Fusce at justo eget libero eleifend auctor nec sed felis. Etiam lobortis pulvinar mauris vel fermentum. Vivamus ornare libero nec euismod pretium. Maecenas eleifend varius leo quis pellentesque. Vivamus euismod elit id porttitor tincidunt. Phasellus nec nibh finibus justo ultrices commodo a a lacus. Suspendisse tincidunt lectus purus, ut sollicitudin sapien aliquet placerat.`}</span>
+                  <span className="text-[14px] sm:text-xl font-manrope font-medium opacity-50">{`Baxter IP is a benefactor of the UNSW Founder’s Program and provides pro-bono IP advice to their 10X and Health 10X cohorts each year. The Founder’s Program supports university students in establishing startups with a focus on social impact. For us, this is a modest but important start to giving back to the community and more generally to STEM education in Australia.`}</span>
                 </div>
                 <div className="flex justify-center item-cemter mt-10 md:mt-20 mb-10 md:mb-20 gap-3">
                   <div

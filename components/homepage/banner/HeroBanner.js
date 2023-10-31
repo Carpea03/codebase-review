@@ -45,7 +45,7 @@ export default function HeroBanner({ landing, data }) {
             <div
               className={`${
                 landing
-                  ? 'xl:pt-10 flex justify-center'
+                  ? 'xl:pt-10 flex justify-center md:mt-10'
                   : 'xl:pt-20 flex justify-center'
               }`}
             >
@@ -54,7 +54,7 @@ export default function HeroBanner({ landing, data }) {
                   <div className="w-full flex flex-row justify-center items-center">
                     <div className='w-full'>
                       <Image
-                        src={'/heroBanner/image 62.jpg'}
+                        src={'/heroBanner/banner.jpg'}
                         alt={'banner2'}
                         style={{
                           width: '100%',
@@ -66,7 +66,7 @@ export default function HeroBanner({ landing, data }) {
                         height={0}
                       />
                     </div>
-                    <div className='w-full'>
+                    {/* <div className='w-full'>
                       <Image
                         src={'/heroBanner/image 63.jpg'}
                         alt={'banner2'}
@@ -79,7 +79,7 @@ export default function HeroBanner({ landing, data }) {
                         width={0}
                         height={0}
                       />
-                    </div>
+                    </div> */}
                   </div>
                   <div className="w-full flex flex-row">
                     <div className="flex flex-col">
@@ -303,7 +303,7 @@ export default function HeroBanner({ landing, data }) {
                         src={
                           changeImage
                             ? '/meta-office.png'
-                            : '/professionalProfiles/IP-people.jpg'
+                            : '/heroBanner/bip-hero-banner-mobile.jpg'
                         }
                         alt={'banner'}
                         width={650}

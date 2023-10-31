@@ -28,7 +28,7 @@ export const VisitVirtualOffice = () => {
                 </div>
                 <div className="flex flex-row items-center sm:py gap-[10px] px-[20px] md:px-0 xl:w-[500px] text-[14px] sm:text-[20px]">
                   <span className="text-[#000] opacity-50">
-                    We specialise aross various market segments, Your bussiness
+                    We specialise aross various market segments, Your business
                     provides products or services that make society better. Our
                     patent & trademark attorneys bring you profession-leading
                     experience in sector-specific IP to protect your valuable

@@ -28,7 +28,6 @@ const company = [
 const moreToExplore = [
   { title: 'IP News', href: '/ip-news' },
   { title: 'Our Values', href: '/living-our-values' },
-  { title: 'How We Give Back', href: '/living-our-values' },
   { title: 'Awards & Recognition', href: '/awards-and-recognition' },
 ]
 

@@ -62,11 +62,11 @@ export default function OtherIndustries() {
         <li>Entertainment</li>
         <li>Retail</li>
       </ul>
-      <p>
+      {/* <p>
         FMCG and food & beverage [does F&B not come within FMCG?] are particular
         areas of expertise, with Principal Julia Caunt having worked for more
         than 16 years in leading global and domestic FMCG organisations.
-      </p>
+      </p> */}
       <ClientsBox state={4} />
       <p>
         In addition to their IP expertise, a number of our attorneys also have
@@ -80,9 +80,7 @@ export default function OtherIndustries() {
         peoples={profiles[0]?.teamMembers?.filter(
           (people) =>
             people.isShow === true &&
-            people.linkId !== 'chris-baxter' &&
-            people.linkId !== 'richard-grant' &&
-            people.linkId !== 'sean-klinkradt'
+            people.linkId !== 'richard-grant'
         )}
         awards={awards}
       />

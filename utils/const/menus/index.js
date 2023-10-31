@@ -44,17 +44,17 @@ export const cardsIndustry = [
     nickname: 'HighTech',
     description:
       'Applications, Defence, Distributed Ledgers, E-Commerce, Electrical, Electronics, Energy Tech, Laser Tech, Nuclear, Optical Tech, Physics, Quantum, Robotics, Security, Telecommunications',
-    link: '/expertise/hightech',
+    link: '/expertise/hightech',  
   },
   {
     id: 3,
     iconDark: '/marketSegments2/Healthtech (Dark).svg',
     iconLight: '/marketSegments2/Healthtech (Light).svg',
     name: 'Healthtech',
-    nickname: 'Healthcare',
+    nickname: 'Healthtech',
     description:
       'Biochemistry, Biotechnology, Chemistry, Medical Devices, Pharmaceuticals, Vet Science',
-      link: '/expertise/healthcare',
+      link: '/expertise/healthtech',
   },
   {
     id: 4,
