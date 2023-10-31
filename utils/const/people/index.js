@@ -1,7 +1,6 @@
 const teamLink = '/people'
 const profile = '/attorneys'
 
-
 export const subMenus = [
   [
     { title: 'Sydney Team', bold: true, division: false, href: teamLink },
