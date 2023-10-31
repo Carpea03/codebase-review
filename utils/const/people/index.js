@@ -1,7 +1,6 @@
 const teamLink = '/people'
 const profile = '/attorneys'
 
-
 export const subMenus = [
   [
     { title: 'Sydney Team', bold: true, division: false, href: teamLink },
@@ -132,10 +131,10 @@ export const subMenus3 = [
 
 export const peopleIndustry = [
   { id: 0, item: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
-  { id: 1, item: [2, 7, 6, 3, 4, 5] },
-  { id: 2, item: [2, 7, 6, 3] },
-  { id: 3, item: [8, 4, 5] },
-  { id: 4, item: [7, 6, 1, 3, 5] },
+  { id: 1, item: [1, 2, 5, 4, 3, 6] },
+  { id: 2, item: [1, 2, 5] },
+  { id: 3, item: [1, 2, 5, 4, 3, 6] },
+  { id: 4, item: [1, 2, 5, 4, 3] },
 ]
 
 export const awards = [
@@ -217,7 +216,7 @@ export const profiles = [
       //   isShow: true,
       // },
       {
-        id: 6,
+        id: 5,
         linkId: 'qi-zhang',
         name: 'Dr Qi Zhang',
         positions: ['Principal'],
@@ -229,7 +228,7 @@ export const profiles = [
         place: ""
       },
       {
-        id: 7,
+        id: 6,
         linkId: 'richard-grant',
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
@@ -241,7 +240,7 @@ export const profiles = [
         place: "Sydney"
       },
       {
-        id: 8,
+        id: 7,
         linkId: 'john-baxter',
         name: 'John Baxter',
         positions: ['Senior Commercial Counsel'],
@@ -254,7 +253,7 @@ export const profiles = [
   },
   {
     id: 1,
-    teamName: 'Sydney teams',
+    teamName: 'Sydney team',
     teamMembers: [
       {
         id: 1,
@@ -276,7 +275,7 @@ export const profiles = [
       //   awards: [],
       // },
       {
-        id: 3,
+        id: 2,
         linkId: 'qi-zhang',
         name: 'Dr Qi Zhang',
         positions: ['Principal'],
@@ -286,7 +285,7 @@ export const profiles = [
         place: ""
       },
       {
-        id: 4,
+        id: 3,
         linkId: 'richard-grant',
         name: 'Dr Richard Grant',
         positions: ['Senior Patent Attorney'],
@@ -299,7 +298,7 @@ export const profiles = [
   },
   {
     id: 2,
-    teamName: 'Melbourne teams',
+    teamName: 'Melbourne team',
     teamMembers: [
       {
         id: 1,

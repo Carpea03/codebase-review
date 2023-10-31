@@ -102,8 +102,8 @@ export default function People() {
             {peoples
               .filter(
                 (item) =>
-                  item.teamName === 'Sydney teams' ||
-                  item.teamName === 'Melbourne teams'
+                  item.teamName === 'Sydney team' ||
+                  item.teamName === 'Melbourne team'
               )
               .map((people, index) => (
                 <div

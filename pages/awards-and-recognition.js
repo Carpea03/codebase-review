@@ -10,7 +10,13 @@ export default function AwardsAndRecognition() {
     { title: 'Awards & Recognition', link: '' },
   ]
   return (
-    <Layout navData={data} bannerData={true} layout={2} title={"Awards & Recognition"} active={"Values"}>
+    <Layout
+      navData={data}
+      bannerData={true}
+      layout={2}
+      title={'Awards & Recognition'}
+      active={'Values'}
+    >
       <Head>
         <title>
           Patent and trade mark attorney awards and recognition | Baxter IP
@@ -39,13 +45,54 @@ export default function AwardsAndRecognition() {
           <Link href="/about">
             Baxter IP, Patent &amp; Trade Mark Attorneys
           </Link>
-          has been increasingly awarded in recent years for its expertise in
-          Australian patents and trade marks and particularly for its work in
-          the field of
+          {
+            ' has been increasingly awarded in recent years for its expertise in Australian patents and trade marks and particularly for its work in the field of '
+          }
           <Link href="/specialisations/software-patents">software patents</Link>
           .
         </p>
         <table>
+          <tr>
+            <td width="50%">
+              <Image
+                width="300"
+                height="300"
+                src="/awards/ip-stars.jpg"
+                alt="Patent Star 2023 (Australia)"
+                title="Patent Star 2023 (Australia)"
+              />
+            </td>
+            <td>
+              <h2>Patent Star 2023 (Australia)</h2>
+              <p>2023 IP Stars from Managing IPs</p>
+
+              <p>
+                Chris Baxter was selected as a Patent Star in the 2023 Edition
+                of IP Stars.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <Image
+                width="300"
+                height="300"
+                src="/awards/iam-1000.jpg"
+                alt="IAM Patent 1000 2023 (Australia)"
+                title="IAM Patent 1000 2023 (Australia)"
+              />
+            </td>
+            <td>
+              <h2>IAM Patent 1000 2023 (Australia)</h2>
+              <p>2023 IAM Patent 1000</p>
+
+              <p>
+                Baxter IP has been ranked in the Bronze category for
+                Prosecution, with Chris Baxter, Martin Earley and Dr Seán
+                Klinkradt as recommended individuals.
+              </p>
+            </td>
+          </tr>
           <tr>
             <td width="50%">
               <Image
