@@ -267,7 +267,7 @@ export const FillingStats = () => {
                   </div>
                 </InnerContainer>
               </div>
-              <div className="bg-white/50 w-[100%] h-[209px] sm:w-full sm:h-[437px] md:h-[437px] relative">
+              <div className="bg-white/50 w-[100%] h-[209px] sm:w-full sm:h-[437px] md:h-[550px] relative">
                 <div className="flex flex-row justify-between items-center h-full">
                   <div
                     className="w-[16px] sm:w-[3%] md:w-[10%] h-full flex justify-center items-center"
