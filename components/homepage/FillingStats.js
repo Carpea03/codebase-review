@@ -92,7 +92,7 @@ const projects = [
   },
   {
     id: 2,
-    name: 'New Wave',
+    name: 'New Wave', 
     image: '/fillingStats/slide-3.jpg',
     totalNumber: 3,
     totalHours: 534,
@@ -267,10 +267,10 @@ export const FillingStats = () => {
                   </div>
                 </InnerContainer>
               </div>
-              <div className="bg-white/50 w-[100%] h-[209px] sm:w-full sm:h-[437px] md:h-[550px] relative">
+              <div className="bg-white/50 w-[100%] h-[209px] sm:w-full sm:h-[437px] md:h-[600px] relative">
                 <div className="flex flex-row justify-between items-center h-full">
-                  <div
-                    className="w-[16px] sm:w-[3%] md:w-[10%] h-full flex justify-center items-center"
+                <div
+                    className="w-[16px] sm:w-[3%] md:w-[10%] h-full flex items-center justify-center !bg-cover"
                     style={{
                       background: `linear-gradient(0deg, rgba(38, 30, 8, 0.00) 0%, rgba(38, 30, 8, 0.00) 100%), url(${
                         projects[
@@ -283,7 +283,7 @@ export const FillingStats = () => {
                       borderRadius: '2px',
                       opacity: 0.5,
                     }}
-                  >
+                  >       
                     {/* <div
                       className="w-8 h-8 sm:w-[72px] sm:h-[72px] sm:w-20 sm:h-20 md:w-20 md:h-20 xl:w-32 xl:h-32 rounded-full border-2 border-white/50 flex justify-center items-center cursor-pointer hover:opacity-50"
                       onClick={prevProjectSlide}
