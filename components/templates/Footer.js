@@ -1,13 +1,14 @@
-import GoogleMapReact from 'google-map-react'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-import { BsFillChatSquareFill } from 'react-icons/bs'
 import { FiSearch } from 'react-icons/fi'
+import { BsFillChatSquareFill } from 'react-icons/bs'
+import { Container } from './Container'
 import { TiSocialLinkedin } from 'react-icons/ti'
+import { metaOffice } from '../../utils/const/links'
 import { API_KEY } from '../../utils/const/apiKey'
 import { InnerContainer } from '../templates/InnerContainer'
-import { Container } from './Container'
+import GoogleMapReact from 'google-map-react'
+import Link from 'next/link'
 
 const contact = [
   { title: 'Phone', content: '+61 2 9264 6716', link: 'tel:+61 2 9264 6716' },
@@ -220,9 +221,6 @@ const Footer = ({ page }) => {
                             <Item title={item.title} page={page} />
                           </Link>
                         ))}
-                        <Link href="/how-to-become-a-patent-attorney">
-                          Become a Patent Attorney
-                        </Link>
                       </div>
                     </div>
                     <div className="hidden md:flex h-[90px]" />
@@ -232,21 +230,17 @@ const Footer = ({ page }) => {
                         <br /> Attorneys is a member of:
                       </span>
                       <div className="grid grid-rows-2 xl:grid-rows-1 grid-flow-col items-center gap-7 relative">
-                        {logos.map((item) => (
-                          <Link
-                            key={`link-logo-${item.icon}`}
-                            href={item.href}
-                            target="_blank"
-                          >
-                            <Image
-                              key={`logo-${item.icon}`}
-                              src={'/footer/marks/' + item.icon}
-                              alt=""
-                              width={100}
-                              height={100}
-                            />
-                          </Link>
-                        ))}
+                      {logos.map((item) => (
+                        <Link key={`link-logo-${item.icon}`} href={item.href} target='_blank'>
+                          <Image
+                            key={`logo-${item.icon}`}
+                            src={'/footer/marks/' + item.icon}
+                            alt=""
+                            width={100}
+                            height={100}
+                          />
+                        </Link>
+                      ))}
                       </div>
                     </div>
                   </div>
@@ -274,11 +268,7 @@ const Footer = ({ page }) => {
                     </span>
                     <div className="grid grid-cols-5 items-center gap-7 sm:gap-16">
                       {logos.map((item) => (
-                        <Link
-                          key={`link-logo-${item.icon}`}
-                          href={item.href}
-                          target="_blank"
-                        >
+                        <Link key={`link-logo-${item.icon}`} href={item.href} target='_blank'>
                           <Image
                             key={`logo-${item.icon}`}
                             src={'/footer/marks/' + item.icon}
