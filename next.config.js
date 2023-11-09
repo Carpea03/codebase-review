@@ -53,6 +53,51 @@ module.exports = {
         destination: '/provisional-patents',
         permanent: true,
       },
+      {
+        source: '/melbourne/martin-earley',
+        destination: '/martin-earley',
+        permanent: true,
+      },
+      {
+        source: '/melbourne/sean-klinkradt',
+        destination: '/sean-klinkradt',
+        permanent: true,
+      },
+      {
+        source: '/melbourne/warren-chandler',
+        destination: '/warren-chandler',
+        permanent: true,
+      },
+      {
+        source: '/sydney/andrew-balis',
+        destination: '/andrew-balis',
+        permanent: true,
+      },
+      {
+        source: '/sydney/chris-baxter',
+        destination: '/chris-baxter',
+        permanent: true,
+      },
+      {
+        source: '/sydney/dr-john-baxter',
+        destination: '/dr-john-baxter',
+        permanent: true,
+      },
+      {
+        source: '/sydney/julia-caunt',
+        destination: '/sydney',
+        permanent: true,
+      },
+      {
+        source: '/sydney/qi-zhang',
+        destination: '/qi-zhang',
+        permanent: true,
+      },
+      {
+        source: '/sydney/richard-grant',
+        destination: '/richard-grant',
+        permanent: true,
+      },
       // Add more redirects here as required
     ]
   },
