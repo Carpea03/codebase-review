@@ -1,0 +1,6 @@
+# *
+User-agent: *
+Disallow:
+
+# Sitemaps
+Sitemap: http://www.baxterip.com.au/sitemap.xml
