@@ -1,6 +1,9 @@
 # *
 User-agent: *
-Disallow:
+Disallow: 
+
+# Host
+Host: https://www.baxterip.com.au/
 
 # Sitemaps
-Sitemap: http://www.baxterip.com.au/sitemap.xml
+Sitemap: https://www.baxterip.com.au/sitemap.xml
