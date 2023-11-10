@@ -1,11 +1,11 @@
 module.exports = {
-  siteUrl: process.env.VERCEL_URL || 'http://localhost:3000',
-  generateIndexSitemap: false,
+  siteUrl: 'https://www.baxterip.com.au/',
+  // generateIndexSitemap: false,
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
       // { userAgent: '*', disallow: '/secret' },
-      { userAgent: '*', disallow: '/' },
+      { userAgent: '*', disallow: '' },
     ],
     // additionalSitemaps: [
     //   `${process.env.VERCEL_URL || 'http://localhost:3000'}/sitemap.xml`,
