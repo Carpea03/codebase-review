@@ -7,7 +7,10 @@ module.exports = {
       // { userAgent: '*', disallow: '/secret' },
       { userAgent: '*', disallow: '' },
     ],
-    additionalSitemaps: 'https://www.baxterip.com.au/sitemap.xml',
+    // additionalSitemaps: [
+    //   `${process.env.VERCEL_URL || 'http://localhost:3000'}/sitemap.xml`,
+    //   `${process.env.VERCEL_URL || 'http://localhost:3000'}/sitemap-0.xml`,
+    // ],
   },
   // exclude: ['/secret'],
 }
