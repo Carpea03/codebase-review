@@ -7,15 +7,18 @@ import { Search } from 'react-feather'
 import { Listbox, Popover, Disclosure, Transition } from '@headlessui/react'
 import Services from '../menus/Services'
 import Blog from '../menus/Blog'
-import People from '../menus/People'
+import Values from '../menus/Values'
 import Contact from '../menus/Contact'
+import useContentStore from '../../store/useContent.store'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const menus = [
   { id: 1, name: 'Services' },
-  { id: 2, name: 'Blog' },
-  { id: 3, name: 'People' },
-  { id: 4, name: 'Contact' },
+  { id: 2, name: 'Attorneys' },
+  { id: 3, name: 'Values' },
+  { id: 4, name: 'Articles' },
+  { id: 5, name: 'Contact' },
 ]
 
 const langList = [
@@ -27,11 +30,33 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ topMenuIndex, onTopMenuChange, active }) {
-  const [selectedLanguage, setSelectedLanguage] = useState(langList[0])
+export default function Header({
+  topMenuIndex,
+  onTopMenuChange,
+  active,
+  lightbox,
+}) {
+  const menuState = useContentStore((state) => state.menuState)
+  const router = useRouter()
 
+  const onClick = (id) => {
+    switch (id) {
+      case 1:
+        if (menuState === 1) router.push('/services')
+        if (menuState === 4) router.push('/services')
+        return
+      case 2:
+        router.push('/attorneys')
+        return
+      case 5:
+        return
+      default:
+        return
+    }
+  }
   return (
-    <div className="relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD] z-30">
+    <div className="z-40 sticky top-0 relative w-full md:border-b border-[#EAE7DD] bg-[#FFFEFD]">
+      {lightbox}
       <div className="container hidden md:flex mx-auto justify-center items-center h-[84px] xl:px-32 2xl:px-40">
         <div className="flex justify-between w-full md:gap-8">
           <div className="flex justify-between items-center gap-16 2xl:gap-[70px]">
@@ -44,12 +69,14 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                   {({ open }) => (
                     <>
                       <Popover.Button
+                        onClick={() => onClick(menu.id)}
                         className={classNames(
                           'font-manrope text-sm leading-5 outline-none',
                           open
                             ? 'font-bold text-[#272940]'
                             : 'font-medium text-[#7A7B94]'
-                        )}>
+                        )}
+                      >
                         {active === menu.name ? (
                           <span className="font-bold text-[#272940]">
                             {menu.name}
@@ -66,20 +93,37 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                         leave="transition ease duration-300 transform"
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-84"
-                        className="absolute top-[84px] left-0 right-0 mx-auto w-full">
+                        className="absolute top-[84px] left-0 right-0 mx-auto w-full"
+                      >
                         <Popover.Panel
                           as="div"
                           // className="absolute top-[85px] left-0 right-0 mx-auto w-full"
                         >
-                          {menu.id == 1 && (
+                          {menu.id == 1 && menuState === 2 && (
                             <Services
-                              menuIndex={topMenuIndex}
+                              menuIndex={topMenuIndex - 1}
                               onChange={(index) => onTopMenuChange(index)}
                             />
                           )}
-                          {menu.id == 2 && <Blog />}
-                          {menu.id == 3 && <People />}
-                          {menu.id == 4 && <Contact />}
+
+                          {menu.id == 1 && menuState === 0 && (
+                            <Services
+                              menuIndex={topMenuIndex - 1}
+                              onChange={(index) => onTopMenuChange(index)}
+                            />
+                          )}
+
+                          {menu.id == 1 && menuState === 3 && (
+                            <Services
+                              menuIndex={topMenuIndex - 1}
+                              onChange={(index) => onTopMenuChange(index)}
+                            />
+                          )}
+
+                          {menu.id == 2 && ''}
+                          {menu.id == 3 && <Values active={'Values'} />}
+                          {menu.id == 4 && <Blog active={'Articles'} />}
+                          {menu.id == 5 && <Contact active={'Contact'} />}
                         </Popover.Panel>
                       </Transition>
                     </>
@@ -88,91 +132,39 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
               ))}
             </div>
           </div>
-          <div className="flex justify-between items-center gap-16 2xl:gap-[70px]">
-            <div className="flex items-center w-full h-14 pl-6 rounded-sm border-solid border-[1px] border-[#F1F2F8] overflow-hidden">
-              <div className="grid place-items-center h-full w-12 text-gray-300">
-                <Search
-                  color="#404266"
-                  size={24}
-                />
-              </div>
-              <input
-                className="h-full w-full outline-none text-sm text-[#7A7B94] pl-2 focus:outline-none border-none"
-                type="text"
-                id="search"
-                placeholder="Search..."
-              />
+          {/* <form action="">
+            <input
+              type="search"
+              placeholder="Search here..."
+              className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-purple-300 focus:pl-16 focus:pr-4"
+            />
+            <div className="absolute top-4 p-3 flex justify-start item-center">
+              <Search color="#404266" size={24} />
             </div>
-            <div className="flex flex-row justify-start items-center h-11 w-full">
-              <Listbox
-                value={selectedLanguage}
-                onChange={setSelectedLanguage}>
-                <Listbox.Button className="flex flex-row justify-start items-center gap-3">
-                  <p className="font-manrope text-xs font-normal text-[#404246]">
-                    {selectedLanguage.name}
-                  </p>
-                  <Image
-                    alt=""
-                    src={selectedLanguage.url}
-                    width={24}
-                    height={24}
-                  />
-                  <MdArrowDropDown
-                    size={16}
-                    color="black"
-                  />
-                </Listbox.Button>
-                {/* <Listbox.Options>
-                  {langList.map((lang) => (
-                    <Listbox.Option
-                      key={lang.id}
-                      value={lang}
-                      disabled={lang.unavailable}
-                      as={Fragment}
-                    >
-                      {({ active, selected }) => (
-                        <li
-                          className={`${
-                            active
-                              ? "bg-blue-500 text-white"
-                              : "bg-white text-black"
-                          }`}
-                        >
-                          {selected && (
-                            <FiCheck
-                              className="hidden ui-selected:block"
-                              sizes={5}
-                            />
-                          )}
-                          {lang.name}
-                        </li>
-                      )}
-                    </Listbox.Option>
-                  ))}
-                </Listbox.Options> */}
-              </Listbox>
-            </div>
-          </div>
+          </form> */}
         </div>
       </div>
       <div className="container flex flex-row justify-between items-center mx-auto p-5 md:hidden">
-        <Search size={24} />
-        <Logo />
+        {/* <form action="">
+          <input
+            type="search"
+            placeholder="Search here..."
+            className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-purple-300 focus:pl-16 focus:pr-4"
+          />
+          <div className="absolute top-6 p-3 flex justify-start item-center">
+            <Search color="#404266" size={24} />
+          </div>
+        </form> */}
         <Popover as="div">
           <Popover.Button className="outline-none">
-            <FiMenu
-              size={24}
-              className="cursor-pointer"
-            />
+            <FiMenu size={24} className="cursor-pointer" />
           </Popover.Button>
 
-          <Popover.Panel className="absolute left-0 right-0 bottom-0 top-[67px] mx-auto flex flex-col justify-start items-start w-full z-20">
+          <Popover.Panel className="absolute left-0 right-0 bottom-0 top-[75px] mx-auto flex flex-col justify-start items-start w-full z-20">
             {menus.map((menu) => (
-              <Disclosure
-                key={menu.id}
-                as="div"
-                className="w-full">
+              <Disclosure key={menu.id} as="div" className="w-full">
                 <Disclosure.Button
+                  onClick={() => onClick(menu.id)}
                   as="div"
                   className={({ open }) =>
                     classNames(
@@ -184,8 +176,13 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                   }
                   style={{
                     boxShadow: '0px 5px 10px rgba(64, 76, 89, 0.05)',
-                  }}>
-                  <span className="font-manrope font-medium text-sm text-[#7A7B94] pl-12 py-4">
+                  }}
+                >
+                  <span
+                    className={`font-manrope font-medium text-sm ${
+                      active === menu.name ? 'text-[#272940]' : 'text-[#7A7B94]'
+                    } pl-12 py-4`}
+                  >
                     {menu.name}
                   </span>
                 </Disclosure.Button>
@@ -196,14 +193,18 @@ export default function Header({ topMenuIndex, onTopMenuChange, active }) {
                       onChange={(index) => onTopMenuChange(index)}
                     />
                   )}
-                  {menu.id == 2 && <Blog />}
-                  {menu.id == 3 && <People />}
-                  {menu.id == 4 && <Contact />}
+                  {menu.id == 2 && ''}
+                  {menu.id == 3 && <Values active={'Values'} />}
+                  {menu.id == 4 && <Blog active={'Articles'} />}
+                  {menu.id == 5 && <Contact active={'Contact'} />}
                 </Disclosure.Panel>
               </Disclosure>
             ))}
           </Popover.Panel>
         </Popover>
+        <Link href={'/'}>
+          <Logo />
+        </Link>
       </div>
     </div>
   )

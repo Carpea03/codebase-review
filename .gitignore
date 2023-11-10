@@ -41,6 +41,5 @@ next-env.d.ts
 .env
 studio/.env.development
 
-/public/robots.txt
 /public/sitemap.xml
 /public/sitemap-0.xml

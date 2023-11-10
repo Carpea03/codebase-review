@@ -1,13 +1,21 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
 
 export default function TypesOfTradeMarks() {
+  const data = [
+    { title: 'Services', link: '/services' },
+    {
+      title: 'How to Trade Mark',
+      link: '/how-to-trade-mark',
+    },
+    { title: 'Types of Trade Marks', link: '' },
+  ]
   return (
-    <Layout>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Types of trade mark used in the market | Baxter IP Sydney & Melbourne
+          Types of Trade Marks Used in the Market | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -18,100 +26,8 @@ export default function TypesOfTradeMarks() {
           href="https://www.baxterip.com.au/types-of-trade-marks"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/trade-marks"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Trade marks
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/how-to-trade-mark"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to trade mark
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Types of trade marks
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <h1>Types of trade marks</h1>
+      <div className="mt-10"></div>
+      <h1>Types of Trade Marks</h1>
       <p>
         A trade mark is an intellectual property right that protects a{' '}
         <Link href="/brand-name-vs-trade-mark">brand</Link>. These are the
@@ -153,21 +69,24 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/706625?s=97fdf68b-ff17-465f-8039-2e4681091642&amp;p=1"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           706625
         </Link>
         ,{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/706626?s=97fdf68b-ff17-465f-8039-2e4681091642&amp;p=1"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           706626
         </Link>{' '}
         and{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/706627?s=97fdf68b-ff17-465f-8039-2e4681091642&amp;p=1"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           706627
         </Link>
         ) are some of the more familiar examples.
@@ -193,7 +112,8 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/891830?q=891830"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           891830
         </Link>
         ). Other notable examples of sound trade marks are Intel&apos;s sound
@@ -201,14 +121,16 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1077876?q=1077876"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           1077876
         </Link>
         ) and Yahoo&apos;s yodel (AU TM #{' '}
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/827728?q=827728"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           827728
         </Link>
         ).
@@ -222,7 +144,8 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1840549?q=1840549"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           1840549
         </Link>
         ). Certain trade marks combine sound and movement, such as the HBO
@@ -231,7 +154,8 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1813005?q=1813005"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           1813005
         </Link>
         ).
@@ -247,7 +171,8 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1055635?q=1055635"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           1055635
         </Link>
         ), which has been in use by the company since 1916, the Burberry tartan
@@ -255,7 +180,8 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/708955?q=708955"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           708955
         </Link>
         ), and the signature red bottom soles of high-heeled Louboutin shoes (AU
@@ -263,7 +189,8 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1352410?q=1352410"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           1352410
         </Link>
         ).
@@ -279,7 +206,8 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/749403?q=749403"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           749403
         </Link>
         ). Colour trade marks may also be associated with trade dress, such as
@@ -287,14 +215,16 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/987048?q=987048"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           987048
         </Link>
         ) and Tiffany&apos;s &amp; Co. (AU TM #
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1414010?q=1414010"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           1414010
         </Link>
         )
@@ -308,14 +238,16 @@ export default function TypesOfTradeMarks() {
         <Link
           href="https://search.ipaustralia.gov.au/trademarks/search/view/1241420?q=1241420"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           1241420
         </Link>
         ) and Play-doh scent (US TM #{' '}
         <Link
           href="http://tmsearch.uspto.gov/bin/showfield?f=doc&amp;state=4801:on9o86.3.1"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           5467089
         </Link>
         ) are examples of registered scent trade marks.

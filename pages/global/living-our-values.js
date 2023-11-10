@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../../components/layout'
 
 export default function LivingOurValues() {
   return (
@@ -35,19 +35,19 @@ export default function LivingOurValues() {
           href="https://www.baxterip.com.au/living-our-values"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+      <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center mt-4 mb-4 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
           <li className="inline-flex items-center">
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
             </Link>
@@ -58,15 +58,18 @@ export default function LivingOurValues() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/global/about"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 About us
               </Link>
             </div>
@@ -77,11 +80,13 @@ export default function LivingOurValues() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 Living our values
@@ -108,7 +113,8 @@ export default function LivingOurValues() {
         href="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
         data-lbwps-width="640"
         data-lbwps-height="480"
-        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg">
+        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
+      >
         <Image
           decoding="async"
           src="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
@@ -120,7 +126,8 @@ export default function LivingOurValues() {
         href="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
         data-lbwps-width="640"
         data-lbwps-height="480"
-        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg">
+        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
+      >
         <Image
           decoding="async"
           src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
@@ -134,7 +141,8 @@ export default function LivingOurValues() {
         <Link
           href="https://www.founders.unsw.edu.au/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           UNSW Founder&apos;s Program
         </Link>{' '}
         and provides pro-bono IP advice to their 10X and Health 10X cohorts each
@@ -149,7 +157,8 @@ export default function LivingOurValues() {
       <Link
         title="Nunyara Centre"
         href="https://www.vcmh.com.au/"
-        rel="noopener nofollow">
+        rel="noopener nofollow"
+      >
         <Image
           decoding="async"
           loading="lazy"
@@ -176,7 +185,8 @@ export default function LivingOurValues() {
         href="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
         data-lbwps-width="314"
         data-lbwps-height="186"
-        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg">
+        data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
+      >
         <Image
           decoding="async"
           src="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
@@ -192,7 +202,8 @@ export default function LivingOurValues() {
         <Link
           href="http://www.baxtercharitabletrusts.org.au/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Percy Baxter Charitable Trust
         </Link>{' '}
         which he established is now one of the largest Philanthropic Charitable
@@ -200,7 +211,8 @@ export default function LivingOurValues() {
         <Link
           href="http://www.baxtercharitabletrusts.org.au/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Trust
         </Link>{' '}
         on a voluntary basis.
@@ -216,7 +228,8 @@ export default function LivingOurValues() {
         <Link
           href="http://www.baxtercharitabletrusts.org.au/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Baxter Charitable Trusts
         </Link>
         , and these are all good reasons to give. However, since 2017 and under

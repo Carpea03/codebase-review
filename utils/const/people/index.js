@@ -1,28 +1,5 @@
 const teamLink = '/people'
-const profile = '/profile'
-
-export const sideMenus = [
-  {
-    name: 'IP Attorneys',
-    img: '/menus/people/sideMenus/empty-shield.svg',
-    href: '/people',
-  },
-  {
-    name: 'Patent attorneys',
-    img: '/menus/people/sideMenus/empty-hammer.svg',
-    href: '',
-  },
-  {
-    name: 'Trade mark attorneys',
-    img: '/menus/people/sideMenus/shield-check.svg',
-    href: '',
-  },
-  {
-    name: 'Commercial counsel',
-    img: '/menus/people/sideMenus/peoples-two.svg',
-    href: '',
-  },
-]
+const profile = '/attorneys'
 
 export const subMenus = [
   [
@@ -150,4 +127,212 @@ export const subMenus2 = [
 
 export const subMenus3 = [
   [{ title: 'Dr John Baxter', bold: false, division: false, href: teamLink }],
+]
+
+export const peopleIndustry = [
+  { id: 0, item: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+  { id: 1, item: [1, 2, 5, 4, 3, 6] },
+  { id: 2, item: [1, 2, 5] },
+  { id: 3, item: [1, 2, 5, 4, 3, 6] },
+  { id: 4, item: [1, 2, 5, 4, 3] },
+]
+
+export const awards = [
+  { id: 0, title: 'IP Stars', width: 80, height: 26 },
+  { id: 1, title: 'IAM 100', width: 55, height: 32 },
+]
+
+export const profiles = [
+  {
+    id: 0,
+    teamName: 'all',
+    teamMembers: [
+      // {
+      //   id: 1,
+      //   linkId: 'julia-caunt',
+      //   name: 'Julia Caunt',
+      //   positions: ['Senior Associate'],
+      //   url: '/professionalProfiles/peoples/julia.jpg',
+      //   link: '/attorneys/julia-caunt',
+      //   awards: []
+      // },
+      {
+        id: 1,
+        linkId: 'chris-baxter',
+        name: 'Chris Baxter',
+        positions: ['Managing Director'],
+        url: '/professionalProfiles/profiles/chris.jpg',
+        link: '/attorneys/chris-baxter',
+        zh: "https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%85%8B%E9%87%8C%E6%96%AF%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9",
+        awards: [0, 1],
+        isShow: true,
+        place: "Sydney"
+      },
+      {
+        id: 2,
+        linkId: 'martin-earley',
+        name: 'Martin Earley',
+        positions: ['Director'],
+        url: '/professionalProfiles/profiles/martin.jpg',
+        link: '/attorneys/martin-earley',
+        zh: "https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC/%E9%A9%AC%E4%B8%81%E5%8E%84%E8%80%8C%E5%88%A9",
+        awards: [1],
+        isShow: true,
+        place: "Melbourne"
+      },
+      {
+        id: 3,
+        linkId: 'sean-klinkradt',
+        name: 'Dr Seán Klinkradt',
+        positions: ['Senior Associate'],
+        url: '/professionalProfiles/profiles/sean.jpg',
+        link: '/attorneys/sean-klinkradt',
+        zh: "https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC/%E8%82%96%E6%81%A9%E5%85%8B%E6%9E%97%E5%85%8B%E6%8B%89%E5%BE%B7",
+        awards: [1],
+        isShow: true,
+        place: "Melbourne"
+      },
+      {
+        id: 4,
+        linkId: 'warren-chandler',
+        name: 'Warren Chandler',
+        positions: ['Senior Associate'],
+        url: '/professionalProfiles/profiles/warren.jpg',
+        link: '/attorneys/warren-chandler',
+        zh: "https://www.baxterip.com.au/zh/%E5%A2%A8%E5%B0%94%E6%9C%AC/%E6%B2%83%E4%BC%A6%E9%92%B1%E5%BE%B7%E5%8B%92",
+        awards: [],
+        isShow: true,
+        place: ""
+      },
+      // {
+      //   id: 5,
+      //   linkId: 'andrew-balis',
+      //   name: 'Andrew Balis',
+      //   positions: ['Associate'],
+      //   url: '/professionalProfiles/profiles/andrew.jpg',
+      //   link: '/attorneys/andrew-balis',
+      //   zh: "https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%AE%89%E5%BE%B7%E9%B2%81%E5%B7%B4%E5%88%A9%E6%96%AF",
+      //   awards: [],
+      //   isShow: true,
+      // },
+      {
+        id: 5,
+        linkId: 'qi-zhang',
+        name: 'Dr Qi Zhang',
+        positions: ['Principal'],
+        url: '/professionalProfiles/profiles/qi.jpg',
+        link: '/attorneys/qi-zhang',
+        zh: "https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E5%BC%A0%E6%97%97%E5%8D%9A%E5%A3%AB",
+        awards: [],
+        isShow: true,
+        place: ""
+      },
+      {
+        id: 6,
+        linkId: 'richard-grant',
+        name: 'Dr Richard Grant',
+        positions: ['Senior Patent Attorney'],
+        url: '/professionalProfiles/profiles/richard.jpg',
+        link: '/attorneys/richard-grant',
+        zh: "https://www.baxterip.com.au/zh/%E6%82%89%E5%B0%BC/%E7%90%86%E6%9F%A5%E5%BE%B7%E6%A0%BC%E5%85%B0%E7%89%B9%E5%8D%9A%E5%A3%AB",
+        awards: [],
+        isShow: true,
+        place: "Sydney"
+      },
+      {
+        id: 7,
+        linkId: 'john-baxter',
+        name: 'John Baxter',
+        positions: ['Senior Commercial Counsel'],
+        url: '/professionalProfiles/peoples/john.jpg',
+        link: '',
+        awards: [],
+        isShow: false,
+      },
+    ],
+  },
+  {
+    id: 1,
+    teamName: 'Sydney team',
+    teamMembers: [
+      {
+        id: 1,
+        linkId: 'chris-baxter',
+        name: 'Chris Baxter',
+        positions: ['Managing Director'],
+        url: '/professionalProfiles/profiles/chris.jpg',
+        link: '/attorneys/chris-baxter',
+        awards: [0, 1],
+        place: "Sydney"
+      },
+      // {
+      //   id: 2,
+      //   linkId: 'andrew-balis',
+      //   name: 'Andrew Balis',
+      //   positions: ['Associate'],
+      //   url: '/professionalProfiles/profiles/andrew.jpg',
+      //   link: '/attorneys/andrew-balis',
+      //   awards: [],
+      // },
+      {
+        id: 2,
+        linkId: 'qi-zhang',
+        name: 'Dr Qi Zhang',
+        positions: ['Principal'],
+        url: '/professionalProfiles/profiles/qi.jpg',
+        link: '/attorneys/qi-zhang',
+        awards: [],
+        place: ""
+      },
+      {
+        id: 3,
+        linkId: 'richard-grant',
+        name: 'Dr Richard Grant',
+        positions: ['Senior Patent Attorney'],
+        url: '/professionalProfiles/profiles/richard.jpg',
+        link: '/attorneys/richard-grant',
+        awards: [],
+        place: "Sydney"
+      },
+    ],
+  },
+  {
+    id: 2,
+    teamName: 'Melbourne team',
+    teamMembers: [
+      {
+        id: 1,
+        linkId: 'martin-earley',
+        name: 'Martin Earley',
+        positions: [
+          'Director',
+          'Victoria region manager',
+        ],
+        url: '/professionalProfiles/profiles/martin.jpg',
+        link: '/attorneys/martin-earley',
+        awards: [1],
+        place: "Melbourne"
+      },
+      {
+        id: 2,
+        linkId: 'sean-klinkradt',
+        name: 'Dr Seán Klinkradt',
+        positions: ['Senior Associate'],
+        url: '/professionalProfiles/profiles/sean.jpg',
+        link: '/attorneys/sean-klinkradt',
+        awards: [1],
+        place: "Melbourne"
+      },
+      {
+        id: 3,
+        linkId: 'warren-chandler',
+        name: 'Warren Chandler',
+        positions: ['Senior Associate'],
+        url: '/professionalProfiles/profiles/warren.jpg',
+        link: '/attorneys/warren-chandler',
+        awards: [],
+        place: ""
+      },
+    ],
+  },
 ]

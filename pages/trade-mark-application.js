@@ -1,13 +1,21 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
 
 export default function TradeMarkApplication() {
+  const data = [
+    { title: 'Services', link: '/services' },
+    {
+      title: 'How to Trade Mark',
+      link: '/how-to-trade-mark',
+    },
+    { title: 'Australian Trade Mark Application', link: '' },
+  ]
   return (
-    <Layout>
+    <Layout navData={data} active={"Services"} stepper={1} stepperData={true}>
       <Head>
         <title>
-          Apply for a trade mark in Australia | Baxter IP Sydney & Melbourne
+          Apply for a Trade Mark in Australia | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -28,100 +36,8 @@ export default function TradeMarkApplication() {
           hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/trade-marks"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Trade marks
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/how-to-trade-mark"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to trade mark
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Australian trade mark application
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <h1>Apply for a trade mark in Australia</h1>
+      <div className="mt-10"></div>
+      <h1>Apply for a Trade Mark in Australia</h1>
       <h2>What is a trade mark?</h2>
       <p>
         In commerce, a trade mark is the identity of a business, product or

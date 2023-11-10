@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../../components/layout'
 
 export default function 注册外观设计() {
   return (
@@ -13,10 +13,7 @@ export default function 注册外观设计() {
           name="description"
           content="保护并通过注册外观设计与Baxter IP注册您的设计和创新，以保护您的产品的外观。"
         />
-        <link
-          rel="canonical"
-          href="/zh/注册外观设计"
-        />
+        <link rel="canonical" href="/zh/注册外观设计" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E6%B3%A8%E5%86%8C%E5%A4%96%E8%A7%82%E8%AE%BE%E8%AE%A1"
@@ -33,19 +30,19 @@ export default function 注册外观设计() {
           href="https://www.baxterip.com.au/registered-designs"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+      <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center mt-4 mb-4 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
           <li className="inline-flex items-center">
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
             </Link>
@@ -56,15 +53,18 @@ export default function 注册外观设计() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/zh/我们的服务"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 我们的服务
               </Link>
             </div>
@@ -75,11 +75,13 @@ export default function 注册外观设计() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 注册外观设计
@@ -123,7 +125,8 @@ export default function 注册外观设计() {
         通过
         <a
           title="我们的专利代理人"
-          href="https://www.baxterip.com.au/zh/专利代理人">
+          href="https://www.baxterip.com.au/zh/专利代理人"
+        >
           专利代理人
         </a>
         申请的外观设计可以在澳大利亚迅速获得注册（一般只需数周时间）。递交设计申请之前，需要准备一份黑白线条的示意图，从多个不同角度展示设计的独特性（如：前方，侧方，顶端，透视等，根据需要从多个视觉角度展现该设计的新颖的和独特的视觉特征）。该图示将在申请递交时，随设计所有者及设计者的详细信息一同提交给澳大利亚知识产权局。
@@ -144,7 +147,8 @@ export default function 注册外观设计() {
           href="https://www.baxterip.com.au/wp-content/uploads/2020/08/流程图E-注册设计程序-Desktop-v2.png"
           data-lbwps-width="1600"
           data-lbwps-height="518"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/流程图E-注册设计程序-Desktop-v2-300x97.png">
+          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/流程图E-注册设计程序-Desktop-v2-300x97.png"
+        >
           <Image
             decoding="async"
             loading="lazy"

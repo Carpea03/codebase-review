@@ -1,10 +1,13 @@
 import Button from '../../buttons/Button'
 import { Container } from '../../templates/Container'
-import React from 'react'
+import { InnerContainer } from '../../templates/InnerContainer'
+import React, { useState, useEffect } from 'react'
 import { HiPhone } from 'react-icons/hi'
 import { IoArrowForwardOutline } from 'react-icons/io5'
+import { BsDoorOpenFill } from 'react-icons/bs'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { metaOffice } from '../../../utils/const/links'
 
 const details = [
@@ -13,81 +16,317 @@ const details = [
     description:
       'In-house and top tier patent & trade mark attorney experience to provide astute, commercial IP advice.',
   },
+  {
+    title: 'Protect your trade mark to secure your brand’s future.',
+    description:
+      'Your trade mark is the face of your business. It directs customers back to your company, the source of the quality of your products or services. A successful trade mark is essential to building brand loyalty and reputation. To stand out from the crowd, get in touch with us today.',
+  },
 ]
 
 const buttonText = [
-  { title: 'Talk to attorney now' },
-  { title: 'Visit metaoffice now' },
+  { title: 'Talk to an IP attorney now' },
+  { title: 'Visit our virtual office now' },
 ]
 
-export default function HeroBanner() {
-  return (
-    <Container className="md:px-20 xl:px-40 bg-hero-banner">
-      <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-16 md:gap-0 py-10 sm:py-[60px] md:py-16 xl:py-32">
-        {/** contents */}
-        <div className="w-full md:w-3/5 flex flex-col items-center md:items-start gap-[70px] order-last md:order-first">
-          <div className="w-full flex flex-col items-start justify-center gap-6">
-            <span className="font-lora font-semibold text-2xl sm:text-5xl lg:text-6xl xl:text-[64px] xl:leading-[120%] text-[#272940] text-center md:text-left px-10 md:px-0">
-              {details[0].title}
-            </span>
-            <span className="font-manrope font-semibold text-sm sm:text-2xl text-[#272940]/50 text-center md:text-left px-14 sm:px-40 md:px-0">
-              {details[0].description}
-            </span>
-          </div>
+export default function HeroBanner({ landing, data }) {
+  const [changeImage, setChangeImage] = useState(false)
 
-          <div className="flex flex-row gap-6">
-            <Link href="/contact-us">
-              <div className="flex flex-col items-center">
-                <div
-                  className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
-                  style={{
-                    boxShadow:
-                      '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                  }}>
-                  <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
-                    <HiPhone
-                      className="w-[9px] h-[9px] sm:w-5 sm:h-5"
-                      color="#404266"
-                    />
+  const router = useRouter()
+
+  useEffect(() => {
+    // router.prefetch(metaOffice)
+  }, [])
+
+  return (
+    <Container className="z-4 bg-hero-banner px-[32px] md:px-10">
+      <InnerContainer>
+        <div className=" sm:px-[48] md:px-10 xl:px-8">
+          <div className="xl:px-32">
+            <div
+              className={`${
+                landing
+                  ? 'xl:pt-10 flex justify-center md:mt-10'
+                  : 'xl:pt-20 flex justify-center'
+              }`}
+            >
+              <div className="container h-full pt-12 xl:pt-0 md:py-20 ">
+                <div className="hidden md:flex w-full flex flex-col">
+                  <div className="w-full flex flex-row justify-center items-center">
+                    <div className='w-full'>
+                      <Image
+                        src={'/heroBanner/banner.jpg'}
+                        alt={'banner2'}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                        }}
+                        sizes="100vw"
+                        width={0}
+                        height={0}
+                      />
+                    </div>
+                    {/* <div className='w-full'>
+                      <Image
+                        src={'/heroBanner/image 63.jpg'}
+                        alt={'banner2'}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                        }}
+                        sizes="100vw"
+                        width={0}
+                        height={0}
+                      />
+                    </div> */}
                   </div>
-                  <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
-                    {buttonText[0].title}
-                  </span>
+                  <div className="w-full flex flex-row">
+                    <div className="flex flex-col">
+                      <div className="flex md:mt-10 md:pt-10 lg:py-2 xl:text-left xl:justify-start">
+                        <span className="text-[25px] sm:text-[64px] md:text-6xl font-lora font-semibold mb-3">
+                          <h1>
+                            {landing
+                              ? data?.header[0]?.title
+                              : 'Innovate Boldly.'}
+                            <br />
+                            {landing ? '' : 'Protect Strategically.'}
+                          </h1>
+                        </span>
+                      </div>
+                      <div className="flex sm:mb-10 md:mt-10 mb-5 md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0  text-left justify-start">
+                        <span
+                          style={{ whiteSpace: 'pre-line' }}
+                          className="text-[16px] sm:text-[24px] md:text-2xl font-semibold font-manrope opacity-50"
+                        >
+                          <h2>
+                            {landing
+                              ? data?.header[0]?.body
+                              : details[0].description}
+                          </h2>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-[16px] mt-[50px]">
+                      <Link href="/contact">
+                        <div className="flex flex-col items-center">
+                          <div
+                            className="w-[350px] p-3 bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
+                            style={{
+                              boxShadow:
+                                '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                            }}
+                          >
+                            <Image
+                              src="/telephone.svg"
+                              alt=""
+                              width={48}
+                              height={48}
+                            />
+
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
+                              {buttonText[0].title}
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                      <Link href={metaOffice} target="_blank">
+                        <div className="flex flex-col items-center">
+                          <div
+                            className="w-[350px] p-3  bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
+                            style={{
+                              boxShadow:
+                                '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                            }}
+                          >
+                            <Image
+                              src="/door.svg"
+                              alt=""
+                              width={48}
+                              height={48}
+                            />
+
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
+                              {buttonText[1].title}
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="md:hidden flex flex-col xl:flex-row">
+                  <div
+                    className={`order-2 xl:order-1  ${
+                      landing
+                        ? 'xl:w-[730px] pt-[20px] xl:pt-0'
+                        : 'pt-[10px] xl:w-[700px]'
+                    }`}
+                  >
+                    <div className="flex flex-col">
+                      <div className="flex md:mt-10 md:pt-10 md:text-center lg:py-2 xl:text-left md:justify-center xl:justify-start">
+                        <span className="text-[25px] sm:text-[64px] md:text-6xl font-lora font-semibold mb-3">
+                          <h1>
+                            {landing
+                              ? data?.header[0]?.title
+                              : 'Innovate Boldly.'}
+                            <br />
+                            {landing ? '' : 'Protect Strategically.'}
+                          </h1>
+                        </span>
+                      </div>
+                      <div className="flex sm:mb-10 md:mt-10 mb-5 md:mb-[60px] lg:mb-[60px] xl:mb-8 md:mt-5 xl:mt-0 2xl:mt-0 2xl:mb-0 md:text-center xl:text-left md:justify-center xl:justify-start">
+                        <span
+                          style={{ whiteSpace: 'pre-line' }}
+                          className="text-[16px] sm:text-[24px] md:text-2xl font-semibold font-manrope opacity-50"
+                        >
+                          <h2>
+                            {landing
+                              ? data?.header[0]?.body
+                              : details[0].description}
+                          </h2>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-5 md:flex-row 2xl:pt-20 pb-10 sm:pb-20 md:pb-0 xl:pb-0 2xl:pb-10 justify-center 2xl:justify-start">
+                      <Link href="/contact">
+                        <div className="flex flex-col items-center">
+                          <div
+                            className="w-full p-3 md:w-[309px] md:h-[88px] bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
+                            style={{
+                              boxShadow:
+                                '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                            }}
+                          >
+                            <div className="hidden sm:flex ml-5">
+                              <Image
+                                src="/telephone.svg"
+                                alt=""
+                                width={48}
+                                height={48}
+                              />
+                            </div>
+                            <div className="flex sm:hidden">
+                              <Image
+                                src="/telephone.svg"
+                                alt=""
+                                width={24}
+                                height={24}
+                              />
+                            </div>
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
+                              {buttonText[0].title}
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                      <Link href={metaOffice} target="_blank">
+                        <div className="flex flex-col items-center">
+                          <div
+                            className="w-full p-3 md:w-[309px] md:h-[88px] bg-[#816BD9] rounded-md flex flex-row md:justify-center items-center gap-6 sm:gap-x-5 md:gap-4 cursor-pointer hover:opacity-80"
+                            style={{
+                              boxShadow:
+                                '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                            }}
+                          >
+                            <div className="hidden sm:flex ml-5">
+                              <Image
+                                src="/door.svg"
+                                alt=""
+                                width={48}
+                                height={48}
+                              />
+                            </div>
+                            <div className="flex sm:hidden">
+                              <Image
+                                src="/door.svg"
+                                alt=""
+                                width={24}
+                                height={24}
+                              />
+                            </div>
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white ">
+                              {buttonText[1].title}
+                            </span>
+                          </div>
+                        </div>
+                        {/* <div
+                          className="flex flex-col items-center"
+                          onMouseEnter={() => setChangeImage(true)}
+                          onMouseLeave={() => setChangeImage(false)}
+                        >
+                          <div
+                            className={`w-[95%] py-[10px] p-3 sm:h-24 sm:w-[330px] md:w-[330px] xl:w-[330px] 2xl:w-[330px]  md:h-[88px] ${
+                              changeImage
+                                ? 'md:pointerArrow rounded-tl-md rounded-bl-md'
+                                : 'bg-[#816BD9] rounded-md'
+                            }  flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer 
+                         ${changeImage ? 'pointerArrow' : ''} `}
+                            style={
+                              changeImage
+                                ? { backgroundImage: `url("/arrrow-bg.svg")` }
+                                : {
+                                    boxShadow:
+                                      '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
+                                  }
+                            }
+                          >
+                            <div className="hidden sm:flex">
+                              <Image
+                                src="/door.svg"
+                                alt=""
+                                width={48}
+                                height={48}
+                              />
+                            </div>
+                            <div className="flex sm:hidden">
+                              <Image
+                                src="/door.svg"
+                                alt=""
+                                width={24}
+                                height={24}
+                              />
+                            </div>
+                            <span className="font-manrope font-semibold text-[10px] sm:text-xl text-white w-[170px] md:w-[200px]">
+                              {buttonText[1].title}
+                            </span>
+                          </div>
+                        </div> */}
+                      </Link>
+                    </div>
+                  </div>
+                  <div
+                    className={`order-1 xl:order-2 flex justify-center xl:justify-end md:mt-5 xl:mt-20`}
+                  >
+                    <div className="xl:pl-10">
+                      <Image
+                        src={
+                          changeImage
+                            ? '/meta-office.png'
+                            : '/heroBanner/bip-hero-banner-mobile.jpg'
+                        }
+                        alt={'banner'}
+                        width={650}
+                        height={438}
+                        style={
+                          changeImage
+                            ? {
+                                borderWidth: 10,
+                                borderStyle: 'solid',
+                                borderColor: '#806AD9',
+                                borderRadius: 5,
+                              }
+                            : {}
+                        }
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-            </Link>
-            <Link href={metaOffice}>
-              <div className="flex flex-col items-center">
-                <div
-                  className="w-52 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
-                  style={{
-                    boxShadow:
-                      '0px 56px 114px rgba(150, 151, 169, 0.17), 0px 12.5083px 25.4634px rgba(150, 151, 169, 0.101338), 0px 3.72406px 7.58112px rgba(150, 151, 169, 0.0686618), 0px 1.54966px 3.15467px rgba(0, 0, 0, 0.0477948)',
-                  }}>
-                  <div className="rounded-full w-6 h-6 sm:w-10 sm:h-10 bg-white flex justify-center items-center">
-                    <IoArrowForwardOutline
-                      className="w-3 h-3 sm:w-5 sm:h-5 md:w-4 md:h-4"
-                      size={16}
-                    />
-                  </div>
-                  <span className=" font-manrope font-semibold text-[10px] sm:text-xl text-white">
-                    {buttonText[1].title}
-                  </span>
-                </div>
-              </div>
-            </Link>
+            </div>
           </div>
         </div>
-        <div className="w-2/5 flex flex-row items-start md:pl-24 order-first md:order-last">
-          <Image
-            src="/professionalProfiles/bip-collage-1.png"
-            className="h-full w-full object-cover"
-            alt=""
-            width={500}
-            height={500}
-          />
-        </div>
-      </div>
+      </InnerContainer>
     </Container>
   )
 }

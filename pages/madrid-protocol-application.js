@@ -1,17 +1,45 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
+import Lightboxs from '../components/lightbox'
+import React, { useState } from "react"
 
 const myLoader = ({ src, width, quality }) => {
   return `http://localhost:3000/images/${src}?w=${width}&q=${quality || 75}`
 }
 
 export default function MadridProtocolApplication() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+  
+  const data = [
+    { title: 'Services', link: '/services' },
+    { title: 'How to Trade Mark', link: '/how-to-trade-mark' },
+    { title: 'Madrid Protocol', link: '' },
+  ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout>
+    <Layout navData={data} active={"Services"}
+      lightbox={
+        <Lightboxs
+          images={[
+            { src : '/images/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png' }
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+          setToggler={setToggler}
+        />
+      }
+    >
       <Head>
-        <title>Filing a Madrid Protocol application | Baxter IP</title>
+        <title>Filing a Madrid Protocol Application | Baxter IP</title>
         <meta
           name="description"
           content="The Madrid Protocol governs the registration and management of trade marks for protection in member states of the Madrid Union."
@@ -21,107 +49,16 @@ export default function MadridProtocolApplication() {
           href="https://www.baxterip.com.au/madrid-protocol-application"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/trade-marks"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Trade marks
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/how-to-trade-mark"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to trade mark
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Madrid Protocol application
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <h1>Filing a Madrid Protocol trade mark application</h1>
+      <div className="mt-10"></div>
+      <h1>Filing a Madrid Protocol Trade Mark Application</h1>
       <p>
         Whilst there is no such thing as a worldwide trade mark <em>per se</em>,
         the{' '}
         <Link
           href="https://www.wipo.int/portal/en/index.html"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           World Intellectual Property Organization (WIPO)
         </Link>{' '}
         provides the Madrid Protocol system for applicants to pursue protection
@@ -219,15 +156,14 @@ export default function MadridProtocolApplication() {
         parties.
       </p>
       <figure>
-        <Link href="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2.png">
-          <Image
-            loader={myLoader}
-            src="/charts/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
-            alt="Madrid Protocol Trade Mark Application Process (for desktop)"
-            width="1024"
-            height="395"
-          />
-        </Link>
+        <Image
+          onClick={() => setLigthbox(0)}
+          src="/flowchart/Flowchart-I-Madrid-Protocol-Trade-Mark-Application-Process-Desktop-v2-1024x395.png"
+          alt="Madrid Protocol Trade Mark Application Process (for desktop)"
+          width="1024"
+          height="395"
+          className="cursor-pointer m-0"
+        />
         <figcaption>Madrid Protocol Trade Mark Application Process</figcaption>
       </figure>
       <h4>Dependance on basic application</h4>

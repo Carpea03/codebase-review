@@ -1,35 +1,9 @@
 import { Container } from '../templates/Container'
 import { TitleContainer } from '../templates/TitleContainer'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { useState } from 'react'
+import { benifits } from '../../utils/const/benefits'
 
-const benifits = [
-  {
-    id: 1,
-    imgSrc: 'organization.svg',
-    title: 'Various target',
-    content:
-      'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
-    link: '#',
-  },
-  {
-    id: 2,
-    imgSrc: 'badge.svg',
-    title: 'Industry expertise',
-    content:
-      'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
-    link: '#',
-  },
-  {
-    id: 3,
-    imgSrc: 'people.svg',
-    title: 'Community',
-    content:
-      'We have a fantastic mixture of analytical, creative, technical and managerial talent.',
-    link: '#',
-  },
-]
 export default function Benefits() {
   const [selectedCard, setSelectedCard] = useState(1)
 
@@ -48,14 +22,16 @@ export default function Benefits() {
                   }`}
             onClick={() => {
               setSelectedCard(benifit.id)
-            }}>
+            }}
+          >
             <div
               className={`mb-12 flex justify-center items-center rounded-full w-[58px] h-[58px] sm:w-[170px] sm:h-[170px] md:w-24 md:h-24 xl:w-[120px] xl:h-[120px] benifit-card-icon ${
                 selectedCard === benifit.id ? 'bg-[#816BD9]' : 'bg-white'
-              }`}>
+              }`}
+            >
               <Image
                 src={
-                  +selectedCard === benifit.id
+                  selectedCard === benifit.id
                     ? '/benifits/active-' + benifit.imgSrc
                     : '/benifits/' + benifit.imgSrc
                 }
@@ -74,7 +50,8 @@ export default function Benefits() {
             </p>
             <a
               href={benifit.link}
-              className="inline-flex text-xs sm:text-xl md:text-base xl:text-xl items-center font-semibold text-[#8069D8] hover:opacity-50 cursor-pointer">
+              className="inline-flex text-xs sm:text-xl md:text-base xl:text-xl items-center font-semibold text-[#8069D8] hover:opacity-50 cursor-pointer"
+            >
               Learn more
             </a>
           </div>

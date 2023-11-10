@@ -13,7 +13,7 @@ import { MarketSegment } from './MarketSegment'
 import { OurClient } from './OurClient'
 import { OurServices } from './OurServices'
 import ProfessionalProfiles from './ProfessionalProfiles'
-import { VisitmetaOffice } from './VisitmetaOffice'
+import { VisitmetaOffice } from './VisitVirtualOffice'
 
 export default function Homepage() {
   const [selectedMenu, setSelectedMenu] = useState(0)
@@ -23,21 +23,12 @@ export default function Homepage() {
 
   return (
     <>
-      <Header
-        topMenuIndex={selectedMenu}
-        onTopMenuChange={onChangeMenu}
-      />
+      <Header topMenuIndex={selectedMenu} onTopMenuChange={onChangeMenu} />
       <HeroBanner />
       <BrandsBanner />
       <Benefits />
-      <MarketSegment
-        cardIndex={selectedMenu}
-        onChange={onChangeMenu}
-      />
-      <TopMenu
-        menuIndex={selectedMenu}
-        onChange={onChangeMenu}
-      />
+      <MarketSegment cardIndex={selectedMenu} onChange={onChangeMenu} />
+      <TopMenu menuIndex={selectedMenu} onChange={onChangeMenu} />
       <OurServices />
       <IndustrySepciality />
       <ProfessionalProfiles />

@@ -19,7 +19,8 @@ export default function PostHeader({ title, coverImage, date, author }) {
               <Link
                 href="#"
                 rel="author"
-                className="text-xl font-bold text-gray-900 dark:text-white">
+                className="text-xl font-bold text-gray-900 dark:text-white"
+              >
                 {author.name}
               </Link>
               <p className="text-base font-light text-gray-500 dark:text-gray-400">
@@ -31,11 +32,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
             </div>
           </div>
         </address>
-        <CoverImage
-          title={title}
-          image={coverImage}
-          priority
-        />
+        <CoverImage title={title} image={coverImage} priority />
       </div>
     </>
   )

@@ -1,21 +1,21 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
 const Title = ({ text }) => {
   return (
     <span className="font-lora font-medium text-2xl sm:text-5xl md:text-[32px] leading-[140%] tracking-[-0.03em] text-[#272940]">
       {text}
     </span>
-  );
-};
+  )
+}
 
 const Content = ({ text }) => {
   return (
     <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl leading-[150%] text-[#404266]">
       {text}
     </span>
-  );
-};
+  )
+}
 
 export default function OurValues() {
   return (
@@ -58,5 +58,5 @@ export default function OurValues() {
         <Content text="Historically, many family foundations give to causes that resonate with them, that have some intersection with the life experience of the trustees or where the family knows people involved in the charitable organisation. This was certainly true for the Baxter Charitable Trusts, and these are all good reasons to give. However, since 2017 and under Chris’ and his brother Richard’s initiative, the Baxter family started taking what might be described as a more innovative, data-driven approach. This now provides the family with a second layer of information to help the family assess the social impact of distribution decisions." />
       </div>
     </>
-  );
+  )
 }

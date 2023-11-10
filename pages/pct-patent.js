@@ -1,143 +1,72 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
+import Lightboxs from '../components/lightbox'
+import React, { useState } from "react"
 
 export default function PctPatent() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
+  const data = [
+    { title: 'Services', link: '/services' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Stage 3: PCT International Patent Applications', link: '' },
+  ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout>
+    <Layout navData={data} active={"Services"} stepper={3}
+      lightbox={
+        <Lightboxs
+          images={[
+            { src : '/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png' }
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+          setToggler={setToggler}
+        />
+      }
+    >
       <Head>
         <title>
-          PCT patent | PCT international patent applications | Baxter IP
+          PCT Patent | PCT International Patent Applications | Baxter IP
         </title>
         <meta
           name="description"
           content="File a PCT patent with Baxter IP. PCT international patent applications with can be used to patent protect your new idea or invention internationally."
         />
-        <link
-          rel="canonical"
-          href="https://www.baxterip.com.au/pct-patent"
-        />
+        <link rel="canonical" href="https://www.baxterip.com.au/pct-patent" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/pct%E5%9B%BD%E9%99%85%E4%B8%93%E5%88%A9"
           hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/patents"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patents
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/how-to-patent"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to patent
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Stage 3: PCT International patent applications
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <h1>Stage 3: PCT International patent applications</h1>
+      <div className="mt-10"></div>
+      <h1>Stage 3: PCT International Patent Applications</h1>
 
       <h2>How to patent an idea internationally?</h2>
 
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="523"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-300x98.png">
-          <Image
-            decoding="async"
-            loading="lazy"
-            width="1024"
-            height="335"
-            src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
-            alt="Flowchart B - PCT Patent Procedure"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-300x98.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-768x251.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1536x503.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-2048x670.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-210x69.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-100x33.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-B-PCT-Patent-Procedure-Desktop-v3.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
-        </Link>
+        <Image
+          decoding="async"
+          onClick={() => setLigthbox(0)}
+          loading="lazy"
+          width="1024"
+          height="335"
+          src="/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png"
+          alt="Flowchart B - PCT Patent Procedure"
+          srcSet="/flowchart/Flowchart-B-PCT-Patent-Procedure-Desktop-v3-1024x335.png 1024w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="cursor-pointer"
+        />
         <figcaption>Flowchart B &ndash; PCT Patent Procedure</figcaption>
       </figure>
 

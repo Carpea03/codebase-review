@@ -1,51 +1,48 @@
 export const sideMenus = [
   {
     id: 1,
-    name: 'IP News',
-    img: '/menus/blog/sideMenus/ip-news.svg',
-    href: '/ip-news',
+    name: 'Articles',
+    img: '/menus/blog/sideMenus/Articles (Dark).svg',
+    href: '',
   },
   {
     id: 2,
-    name: 'Resources',
-    img: '/menus/blog/sideMenus/resources.svg',
+    name: 'IP Info',
+    img: '/menus/blog/sideMenus/Info (Dark).svg',
     href: '',
   },
 ]
 
 export const subMenus = [
   [
-    { title: 'Browse By Category', bold: true, division: false,  href: '' },
-    { title: 'Case Studies', bold: false, division: false,  href: '' },
-    { title: 'Client Success Stories', bold: false, division: false,  href: '' },
-    { title: 'Commercialisation', bold: false, division: false,  href: '' },
-    { title: 'Designs', bold: false, division: false },
-    { title: 'Domain Names', bold: false, division: false,  href: '' },
-    { title: 'Events', bold: false, division: false },
-    { title: 'Featurettes', bold: false, division: false,  href: '' },
-    { title: 'Firm News', bold: false, division: false,  href: '' },
-    { title: '', bold: false, division: true,  href: '' },
+    { title: 'Browse by Category', bold: true, division: false, href: '' },
+    { title: 'General', bold: false, division: false, href: '/ip-news/general' },
+    { title: 'Patents', bold: false, division: false, href: '/ip-news/patents' },
+    { title: 'Trade Marks', bold: false, division: false, href: '/ip-news/trade-marks' },
   ],
   [
-    { title: '', bold: true, division: false,  href: '' },
-    { title: '', bold: true, division: false,  href: '' },
-    { title: '', bold: true, division: false,  href: '' },
-    { title: 'Innovation Patents', bold: false, division: false,  href: '' },
-    { title: 'IP Strategy', bold: false, division: false,  href: '' },
-    { title: 'Oppositions & Disputes', bold: false, division: false,  href: '' },
-    { title: 'Patents', bold: false, division: false,  href: '' },
-    { title: 'Technology', bold: false, division: false,  href: '' },
-    { title: 'Trade Marks', bold: false, division: false,  href: '' },
+    { title: 'Browse by Content', bold: true, division: false, href: '' },
+    { title: 'Articles For You', bold: false, division: false, href: '/ip-news/for-you' },
+    { title: 'All Articles', bold: false, division: false, href: '/ip-news/page' },
   ],
 ]
 
 export const subMenus1 = [
   [
-    { title: 'IP Glossary', bold: false, division: false,  href: '' },
-    { title: 'IP FAQs', bold: false, division: false,  href: '' },
-    { title: 'Patent Process Flowcharts', bold: false, division: false,  href: '' },
-    { title: 'Trade Mark Process Flowcharts', bold: false, division: false,  href: '' },
-    { title: 'Videos', bold: false, division: false,  href: '' },
-    { title: 'Top Startups 2018', bold: false, division: false,  href: '' },
+    { title: 'IP Information and Tools', bold: true, division: false, href: '' },
+    { title: 'IP Glossary', bold: false, division: false, href: '/ip-glossary' },
+    { title: 'IP FAQs', bold: false, division: false, href: '/faqs' },
+    {
+      title: 'Patent Process Flowcharts',
+      bold: false,
+      division: false,
+      href: '/patent-process-flowcharts',
+    },
+    {
+      title: 'Trade Mark Process Flowcharts',
+      bold: false,
+      division: false,
+      href: '/trade-mark-process-flowcharts',
+    },
   ],
 ]

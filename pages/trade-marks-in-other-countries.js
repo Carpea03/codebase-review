@@ -1,13 +1,24 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
 
 export default function TradeMarkInOtherCountries() {
+  const data = [
+    { title: 'Services', link: '/services' },
+    {
+      title: 'How to Trade Mark',
+      link: '/how-to-trade-mark',
+    },
+    {
+      title: 'Trade Marks in Other Countries',
+      link: '',
+    }
+  ]
   return (
-    <Layout>
+    <Layout navData={data} active={"Services"}>
       <Head>
         <title>
-          Trade marks in other countries | Baxter IP Sydney & Melbourne
+          Trade Marks in Other Countries | Baxter IP Sydney & Melbourne
         </title>
         <meta
           name="description"
@@ -18,100 +29,8 @@ export default function TradeMarkInOtherCountries() {
           href="https://www.baxterip.com.au/trade-marks-in-other-countries"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/trade-marks"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Trade marks
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/how-to-trade-mark"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to trade mark
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Trade marks in other countries
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <h1>Trade marks in other countries</h1>
+      <div className="mt-10"></div>
+      <h1>Trade Marks in Other Countries</h1>
       <p>
         Why are foreign jurisdictions considered when discussing trade mark?
         Trade mark rights are territorial, which means that protection is
@@ -276,9 +195,7 @@ export default function TradeMarkInOtherCountries() {
         Madrid Protocol, as six member countries in the region are members
         (Singapore, Cambodia, Laos, Vietnam, Philippines and Thailand).
       </p>
-      <h2
-        className="h5"
-        id="china">
+      <h2 className="h5" id="china">
         Trade marks in China
       </h2>
       <p>
@@ -312,7 +229,8 @@ export default function TradeMarkInOtherCountries() {
         <Link
           href="https://www.wipo.int/classifications/nice/en/"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Nice Classification of Goods and Services
         </Link>
         , but the classification system is further divided into subclasses.

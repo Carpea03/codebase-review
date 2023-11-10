@@ -1,14 +1,43 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
+import Lightboxs from '../components/lightbox'
+import React, { useState } from "react"
 
 export default function NationalPhasePatent() {
+  const [toggler, setToggler] = useState(false)
+  const [imageIndex, setImageIndex] = useState(0)
+
+  const data = [
+    { title: 'Services', link: '/services' },
+    { title: 'How to Patent', link: '/how-to-patent' },
+    { title: 'Stage 4: National Phase Patent Applications', link: '' },
+  ]
+
+  const setLigthbox = (index) => {
+    setImageIndex(index)
+    setToggler(!toggler)
+  }
+
   return (
-    <Layout>
+    <Layout navData={data} active={"Services"} stepper={4}
+      lightbox={
+        <Lightboxs
+          images={[
+            { src : '/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png' },
+            { src : '/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png' }
+          ]}
+          type="image"
+          index={imageIndex}
+          toggler={toggler}
+          setToggler={setToggler}
+        />
+      }
+    >
       <Head>
         <title>
-          Australian PCT national phase patent application | Baxter IP
+          Australian PCT National Phase Patent Application | Baxter IP
         </title>
         <meta
           name="description"
@@ -24,118 +53,22 @@ export default function NationalPhasePatent() {
           hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/patents"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patents
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/how-to-patent"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                How to patent
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                Stage 4: National phase patent applications
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
-      <h1>Stage 4: National phase patent applications</h1>
+      <div className="mt-10"></div>
+      <h1>Stage 4: National Phase Patent Applications</h1>
       <h2>National phase patent applications overview &amp; timing</h2>
       <figure>
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="492"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png">
-          <Image
-            decoding="async"
-            loading="lazy"
-            width="1024"
-            height="315"
-            src="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
-            alt="Patent Procedure Overview"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png 300w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-768x236.png 768w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1536x472.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-2048x630.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-210x65.png 210w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-100x31.png 100w, https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
-        </Link>
+        <Image
+          decoding="async"
+          onClick={() => setLigthbox(0)}
+          loading="lazy"
+          width="1024"
+          height="315"
+          src="/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png"
+          alt="Patent Procedure Overview"
+          srcSet="/flowchart/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-1024x315.png 1024w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="cursor-pointer"
+        />
         <figcaption>Patent Procedure Overview</figcaption>
       </figure>
       <p>
@@ -182,22 +115,18 @@ export default function NationalPhasePatent() {
         applications to refer to both on this page.
       </p>
       <figure className="wp-block-image size-large">
-        <Link
-          href="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop.png"
-          data-lbwps-width="1600"
-          data-lbwps-height="478"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-300x90.png">
-          <Image
-            decoding="async"
-            loading="lazy"
-            width="1024"
-            height="306"
-            src="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png"
-            alt="Flowchart C - Australian Standard Patent Procedure"
-            srcSet="https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png 1024w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-300x90.png 300w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-768x229.png 768w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1536x459.png 1536w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-2048x611.png 2048w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-210x63.png 210w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-100x30.png 100w, https://www.baxterip.com.au/wp-content/uploads/2019/12/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop.png 1600w"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
-        </Link>
+        <Image
+          decoding="async"
+          onClick={() => setLigthbox(1)}
+          loading="lazy"
+          width="1024"
+          height="306"
+          src="/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png"
+          alt="Flowchart C - Australian Standard Patent Procedure"
+          srcSet="/flowchart/Flowchart-C-Australian-Standard-Patent-Procedure-Desktop-1024x306.png 1024w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="cursor-pointer"
+        />
         <figcaption>
           Flowchart C &ndash; Australian Standard Patent Procedure
         </figcaption>
@@ -277,7 +206,8 @@ export default function NationalPhasePatent() {
           National phase patent filing deadline (i.e. post a&nbsp;
           <Link
             title="File a PCT International Patent Application"
-            href="/pct-patent">
+            href="/pct-patent"
+          >
             PCT international patent application
           </Link>
           )

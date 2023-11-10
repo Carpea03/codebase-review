@@ -13,6 +13,8 @@ module.exports = {
       },
     },
     screens: {
+      '2xs': '321px',
+      xs: '375px',
       sm: '640px',
       // => @media (min-width: 640px) { ... }
       md: '834px',
@@ -25,5 +27,10 @@ module.exports = {
       // => @media (min-width: 1440px) { ... }
     },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  variants: {
+    extend: {
+      overflow: ['responsive', 'hover', 'focus'],
+    },
+  },
+  plugins: [require('flowbite-typography'), require('@tailwindcss/line-clamp')],
 }

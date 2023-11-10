@@ -1,14 +1,15 @@
 module.exports = {
-  siteUrl: process.env.VERCEL_URL || 'http://localhost:3000',
+  siteUrl: 'https://www.baxterip.com.au/',
+  generateIndexSitemap: false,
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
       // { userAgent: '*', disallow: '/secret' },
-      { userAgent: '*', disallow: '/' },
+      { userAgent: '*', disallow: '' },
     ],
     // additionalSitemaps: [
-    //   `${siteUrl}/sitemap.xml`,
-    //   `${siteUrl}/server-sitemap.xml`,
+    //   `${process.env.VERCEL_URL || 'http://localhost:3000'}/sitemap.xml`,
+    //   `${process.env.VERCEL_URL || 'http://localhost:3000'}/sitemap-0.xml`,
     // ],
   },
   // exclude: ['/secret'],

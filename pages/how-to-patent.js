@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Layout from '../components/to-delete/layout'
+import Layout from '../components/layout'
 
 export default function HowToPatent() {
+  const data = [
+    { title: 'Services', link: '/services' },
+    { title: 'How to Patent', link: '' },
+  ]
   return (
-    <Layout>
+    <Layout navData={data} active={"Services"} stepper={true}>
       <Head>
         <title>
           How to patent an idea in Australia | Baxter IP Sydney & Melbourne
@@ -29,94 +33,23 @@ export default function HowToPatent() {
           hreflang="zh"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
-          <li className="inline-flex items-center">
-            <Link
-              href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-              </svg>
-            </Link>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/services"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <Link
-                href="/patents"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
-                Patents
-              </Link>
-            </div>
-          </li>
-          <li aria-current="page">
-            <div className="flex items-center">
-              <svg
-                className="w-6 h-6 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
-              </svg>
-              <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                How to patent
-              </span>
-            </div>
-          </li>
-        </ol>
-      </nav>
+      <div className="mt-10"></div>
       <h1>How to patent a new idea in Australia?</h1>
       <p>
         Patenting a new idea in Australia or internationally is a relatively
         straightforward process when working with an{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
-          href="/patent-attorney">
+          href="/patent-attorney"
+        >
           Australian patent attorney
         </Link>
         . The patent process is not one to be embarked on without the advice of
         a patent attorney as your{' '}
         <Link
           title="File a Provisional Patent Application"
-          href="/provisional-patents">
+          href="/provisional-patents"
+        >
           patent application
         </Link>{' '}
         needs to establish a watertight foundation for the IP rights you are
@@ -194,7 +127,8 @@ export default function HowToPatent() {
         provisional patent application. This patent search is called an{' '}
         <Link
           title="International-Type Patent Search"
-          href="/international-type-search">
+          href="/international-type-search"
+        >
           International-Type Search
         </Link>{' '}
         and in our experience, is by far the best value-for-money patent search
@@ -205,13 +139,15 @@ export default function HowToPatent() {
         excluded so far as what can be patented. For example,{' '}
         <Link
           title="Software, Mobile &amp; Apps Patents"
-          href="/specialisations/software-patents">
+          href="/specialisations/software-patents"
+        >
           software patents
         </Link>{' '}
         and{' '}
         <Link
           title="Medical Devices Patents"
-          href="/specialisations/medical-patents">
+          href="/specialisations/medical-patents"
+        >
           methods of medical treatment
         </Link>{' '}
         can generally be patented. All you need to do is provide your patent
@@ -223,7 +159,8 @@ export default function HowToPatent() {
         idea?{' '}
         <Link
           title="Patent Attorneys Sydney &amp; Melbourne"
-          href="/patent-attorney">
+          href="/patent-attorney"
+        >
           Australian Patent Attorneys
         </Link>{' '}
         have a legislated obligation under the Australian Patents Act 1990
@@ -236,9 +173,7 @@ export default function HowToPatent() {
         subject matter.
       </p>
       <p>
-        <Link
-          title="Contact Baxter IP Sydney Office"
-          href="/contact">
+        <Link title="Contact Baxter IP Sydney Office" href="/contact">
           Click here to contact one of our experienced patent attorneys
         </Link>{' '}
         to find out more about whether your new idea includes patentable subject
@@ -251,13 +186,15 @@ export default function HowToPatent() {
         filed, the majority of new entrepreneurs start with a{' '}
         <Link
           title="File a Provisional Patent Application"
-          href="/provisional-patents">
+          href="/provisional-patents"
+        >
           provisional patent application
         </Link>{' '}
         and then file a{' '}
         <Link
           title="File a PCT International Patent Application"
-          href="/pct-patent">
+          href="/pct-patent"
+        >
           PCT International patent application
         </Link>
         . For completeness, there are 4 main types of patent application that
@@ -334,9 +271,7 @@ export default function HowToPatent() {
         required and timeframe.
       </p>
       <p>
-        <Link
-          title="Contact Baxter IP Sydney Office"
-          href="/contact">
+        <Link title="Contact Baxter IP Sydney Office" href="/contact">
           Click here to contact one of our experienced patent attorneys
         </Link>{' '}
         to find out more about how you can protect your idea and for a quote.
@@ -355,7 +290,8 @@ export default function HowToPatent() {
           href="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2.png"
           data-lbwps-width="1600"
           data-lbwps-height="492"
-          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png">
+          data-lbwps-srcsmall="https://www.baxterip.com.au/wp-content/uploads/2020/08/Flowchart-A-Patent-Procedure-Overview-Desktop-0-v2-300x92.png"
+        >
           <Image
             decoding="async"
             loading="lazy"

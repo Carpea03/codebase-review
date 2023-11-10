@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/to-delete/layout'
+import Layout from '../../components/layout'
 
 export default function 临时专利() {
   return (
@@ -12,10 +12,7 @@ export default function 临时专利() {
           name="description"
           content="文件在澳大利亚或美国（US）临时专利来保护与Baxter IP你的临时专利申请。"
         />
-        <link
-          rel="canonical"
-          href="/zh/临时专利"
-        />
+        <link rel="canonical" href="/zh/临时专利" />
         <link
           rel="alternate"
           href="https://www.baxterip.com.au/zh/%E4%B8%B4%E6%97%B6%E4%B8%93%E5%88%A9"
@@ -27,19 +24,19 @@ export default function 临时专利() {
           href="https://www.baxterip.com.au/provisional-patents"
         />
       </Head>
-      <nav
-        className="flex"
-        aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3 list-none pm-25">
+      <nav className="flex overflow-x-auto not-format" aria-label="Breadcrumb">
+        <ol className="inline-flex items-center mt-4 mb-4 space-x-1 md:space-x-3 list-none pm-25 whitespace-nowrap">
           <li className="inline-flex items-center">
             <Link
               href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
               </svg>
             </Link>
@@ -50,15 +47,18 @@ export default function 临时专利() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/zh/我们的服务"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 我们的服务
               </Link>
             </div>
@@ -69,15 +69,18 @@ export default function 临时专利() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/zh/专利"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 专利
               </Link>
             </div>
@@ -88,15 +91,18 @@ export default function 临时专利() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <Link
                 href="/zh/如何申请专利"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >
                 如何申请专利
               </Link>
             </div>
@@ -107,11 +113,13 @@ export default function 临时专利() {
                 className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fillRule="evenodd"
                   d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"></path>
+                  clipRule="evenodd"
+                ></path>
               </svg>
               <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
                 第一阶段一临时专利申请
@@ -127,7 +135,8 @@ export default function 临时专利() {
         申请美国或澳大利亚临时专利申请通常是为获得世界范围专利的专利申请过程的第一个阶段。澳大利亚临时专利申请是在
         <Link
           title="我们的专利代理人"
-          href="https://www.baxterip.com.au/zh/专利代理人">
+          href="https://www.baxterip.com.au/zh/专利代理人"
+        >
           澳大利亚知识产权局
         </Link>
         进行递交的，这种申请是一种为您的想法提出国际性专利要求的经济有效的方式。
@@ -157,7 +166,8 @@ export default function 临时专利() {
       <p>
         <Link
           title="我们的专利代理人"
-          href="https://www.baxterip.com.au/zh/专利代理人">
+          href="https://www.baxterip.com.au/zh/专利代理人"
+        >
           Baxter IP公司的专利代理人坚
         </Link>
         信以下事实，即您的临时专利申请的范围和细节往往与在第四阶段递交的国家专利申请的最终有效性有着密切的联系。这些国家专利申请通常在您首次递交临时专利申请五年左右之后被授予。为了解释这两者之间的联系，我们首先需要更详细地了解一下临时专利申请是怎样进行的。
@@ -208,13 +218,15 @@ export default function 临时专利() {
         如果您的专利说明书中提供的实施方案的范围不足，那么专利局或法院可能会更狭义地解释您的专利要求。在临时专利申请方面最初所进行的详尽工作使得实施例通常被写入到
         <Link
           title="第四阶段一国家专利"
-          href="https://www.baxterip.com.au/zh/国家专利">
+          href="https://www.baxterip.com.au/zh/国家专利"
+        >
           第四阶段国家专利申请
         </Link>
         中，并且在任何情况下，不能在您递交
         <Link
           title="第三阶段一PCT国际专利"
-          href="https://www.baxterip.com.au/zh/pct国际专利">
+          href="https://www.baxterip.com.au/zh/pct国际专利"
+        >
           第三阶段PCT国际专利申请
         </Link>
         之后被加入，因此，确保您的临时专利申请能够公开您发明的详细信息是非常重要的。
@@ -234,7 +246,8 @@ export default function 临时专利() {
         临时专利申请的递交是以一种定义范围的法律方式在权利要求中描述新想法的第一步。虽然在递交
         <Link
           title="第三阶段一PCT国际专利"
-          href="https://www.baxterip.com.au/zh/pct国际专利">
+          href="https://www.baxterip.com.au/zh/pct国际专利"
+        >
           第三阶段的PCT国际专利申请
         </Link>
         或第四阶段国家专利申请之前，会对专利要求进行复查和修改，但是权利要求书中的基本用语在起草临时专利申请的过程中通常就决定了。另外，因为我们知道，权利要求书规定了审核过程中的或有设想，所以，从一开始就递交一份专利要求结构表述清晰（即精细分层的&ldquo;洋葱圈&rdquo;）的详尽的临时专利申请，有助于在专利申请的审核阶段取得好的结果。
@@ -268,7 +281,8 @@ export default function 临时专利() {
           一旦您最初的临时专利申请已被提交，以确定一个较早的提交日期，就召集具有创意和商业头脑的员工和您的
           <Link
             title="专利代理人"
-            href="https://www.baxterip.com.au/zh/专利代理人">
+            href="https://www.baxterip.com.au/zh/专利代理人"
+          >
             专利代理人
           </Link>
           一起进行会谈，来确定您是否可以：
@@ -300,7 +314,8 @@ export default function 临时专利() {
           除了保护您的新想法，知识产权保护可以通过围绕竞争者产品线未来可能出现的版本来申请专利或
           <Link
             title="注册外观设计"
-            href="https://www.baxterip.com.au/zh/注册外观设计">
+            href="https://www.baxterip.com.au/zh/注册外观设计"
+          >
             注册外观设计
           </Link>
           ，以有针对性地阻碍竞争对手的产品开发。
