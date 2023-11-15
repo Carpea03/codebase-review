@@ -1,5 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
+import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
   const gtmScript = `
@@ -10,12 +9,13 @@ export default function Document() {
     j.async=true;
     j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
     f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KJB3Z8NJ');
+  })(window,document,'script','dataLayer','GTM-TN38JC');
 `
   return (
     <Html lang="en">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: gtmScript }}></script>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -30,7 +30,7 @@ export default function Document() {
       <body>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KJB3Z8NJ"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TN38JC"
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
