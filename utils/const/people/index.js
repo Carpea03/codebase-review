@@ -306,7 +306,7 @@ export const profiles = [
         name: 'Martin Earley',
         positions: [
           'Director',
-          'Victoria region manager',
+          'Victoria Region Manager',
         ],
         url: '/professionalProfiles/profiles/martin.jpg',
         link: '/attorneys/martin-earley',
