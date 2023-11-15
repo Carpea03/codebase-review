@@ -1,11 +1,12 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-
+import favicon from '../public/favicon.ico';
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link rel="shortcut icon" href={favicon.src}  type="image/x-icon" />
+        <link rel="icon" href={favicon.src}  type="image/x-icon" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
