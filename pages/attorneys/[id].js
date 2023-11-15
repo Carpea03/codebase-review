@@ -14,7 +14,6 @@ import Head from 'next/head'
 import { filterByPerson } from '../../utils/utility.helper'
 
 export const getStaticPaths = async () => {
-  
   const paths = peoples[0]?.teamMembers
     ?.filter((people) => people.isShow === true)
     ?.map((item) => {
@@ -41,10 +40,12 @@ export default function Profile({ profile }) {
   const [reduceMorePost, setReduceMorePost] = useState()
   const [noArticles, setNoArticles] = useState(false)
   const [people, setPeople] = useState({})
-  const parse = require('html-react-parser');
+  const parse = require('html-react-parser')
 
   useEffect(() => {
-    setPeople(peoples[0]?.teamMembers.filter(value => value.name == profile.name)[0])
+    setPeople(
+      peoples[0]?.teamMembers.filter((value) => value.name == profile.name)[0]
+    )
     console.log(people)
     init()
   }, [])
@@ -64,7 +65,11 @@ export default function Profile({ profile }) {
   return (
     <>
       <Head>
-        <title>{`${people.name} - ${people.positions}, Patent & Trade Mark Attorney | Baxter IP ${people.place}`}</title>
+        <title>{`${
+          people.name && people.positions
+            ? people.name + ' - ' + people.positions + ','
+            : ''
+        } Patent & Trade Mark Attorney | Baxter IP ${people.place}`}</title>
         <meta name="description" content={profile?.bio} />
         <link
           rel="canonical"
@@ -140,7 +145,9 @@ export default function Profile({ profile }) {
                     } xl:w-[332px] xl:h-[333px] bg-white`}
                   >
                     <div className="flex-col">
-                      <div className={`${profile.awards ? 'flex' : 'sm:hidden'}`}>
+                      <div
+                        className={`${profile.awards ? 'flex' : 'sm:hidden'}`}
+                      >
                         <Image
                           src={profile.potrait}
                           width={0}
@@ -155,7 +162,11 @@ export default function Profile({ profile }) {
                         />
                       </div>
 
-                      <div className={`${profile.awards ? 'hidden' : 'hidden sm:flex'}`}>
+                      <div
+                        className={`${
+                          profile.awards ? 'hidden' : 'hidden sm:flex'
+                        }`}
+                      >
                         <Image
                           src={profile.potrait}
                           width={0}
