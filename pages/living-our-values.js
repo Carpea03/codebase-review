@@ -71,8 +71,7 @@ export default function LivingOurValues() {
         <div className="flex-col">
           <Image
             decoding="async"
-            onClick={() => setLigthbox(0)}
-            src="https://www.baxterip.com.au/wp-content/uploads/2021/01/UNSW-Sydney.svg"
+            src="/banner/UNSW Sydney.svg"
             alt="The UNSW Sydney logo"
             width="255"
             height="191"
@@ -82,8 +81,7 @@ export default function LivingOurValues() {
         <div className="flex-col">
           <Image
             decoding="async"
-            onClick={() => setLigthbox(1)}
-            src="https://www.baxterip.com.au/wp-content/uploads/2021/01/Founders-10x-Accelerator.svg"
+            src="/banner/Founders 10x Accelerator.svg"
             alt="Founders of 10x Accelerator"
             width="255"
             height="191"
