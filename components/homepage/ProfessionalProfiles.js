@@ -183,7 +183,7 @@ export default function ProfessionalProfiles() {
                 ))}
               </div>
               <div className="flex justify-center mb-20 md:mb-32">
-                <Link href="/people" className='no-underline'>
+                <Link href="/attorneys" className='no-underline'>
                   <div
                     className="w-48 h-11 sm:w-[434px] sm:h-24 md:w-80 md:h-[88px] bg-[#816BD9] rounded-md mt-10 md:mt-20 flex flex-row justify-center items-center gap-6 sm:gap-x-14 md:gap-4 cursor-pointer hover:opacity-80"
                     style={{
