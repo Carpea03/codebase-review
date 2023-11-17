@@ -96,7 +96,7 @@ const Footer = ({ page }) => {
                       <h2>Innovate Boldly. Protect Strategically.</h2>
                     </span>
                   </div>
-                  <div className="md:w-1/3 flex flex-row items-center md:py-5 relative">
+                  {/* <div className="md:w-1/3 flex flex-row items-center md:py-5 relative">
                     <input
                       className="w-full flex flex-row items-center px-14 sm:px-28 md:px-16 p-4 sm:p-9 md:py-6 gap-4 text-sm sm:text-3xl md:text-xl text-white bg-white/5 border-[1px] border-[#797B94] rounded-md outline-none focus:outline-none"
                       placeholder="Search..."
@@ -108,7 +108,7 @@ const Footer = ({ page }) => {
                         color="#7A7B94"
                       />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="flex flex-col md:flex-row justify-between items-start w-full gap-[60px] md:gap-0">
                   <div className="flex flex-col items-start gap-6 sm:gap-10 w-full md:w-auto">
