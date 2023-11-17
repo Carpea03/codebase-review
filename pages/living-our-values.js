@@ -116,7 +116,7 @@ export default function LivingOurValues() {
           loading="lazy"
           width="366"
           height="55"
-          src="https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre.jpg"
+          src="/images/supported/vcmh-official-logo-1.svg"
           alt="Nunyara Centre logo"
           srcSet="https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre.jpg 666w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-300x45.jpg 300w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-210x32.jpg 210w, https://www.baxterip.com.au/wp-content/uploads/2020/09/nuyaracentre-100x15.jpg 100w"
           sizes="(max-width: 666px) 100vw, 666px"
@@ -132,8 +132,7 @@ export default function LivingOurValues() {
       <h3 className="mt-5">We continue a philanthropic legacy</h3>
       <Image
         decoding="async"
-        onClick={() => setLigthbox(2)}
-        src="https://www.baxterip.com.au/wp-content/uploads/2019/07/Percy-Baxter-Charitable-Trust.svg"
+        src="/images/supported/Percy-Baxter-Charitable-Trust.png"
         alt="Percy Baxter Charitable Trust logo"
         width="210"
         height="124"
