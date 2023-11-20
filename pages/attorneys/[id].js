@@ -1,15 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import IpNewsBlog from '../../components/homepage/IpNewsBlog'
 import { Container } from '../../components/templates/Container'
-import Footer from '../../components/templates/Footer'
 import Header from '../../components/templates/Header'
+import Footer from '../../components/templates/Footer'
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
+import { profiles } from '../../utils/const/profiles'
+import { profiles as peoples, awards } from '../../utils/const/people'
 import { InnerContainer } from '../../components/templates/InnerContainer'
+import IpNewsBlog from '../../components/homepage/IpNewsBlog'
 import { indexQuery } from '../../lib/queries'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
-import { awards, profiles as peoples } from '../../utils/const/people'
-import { profiles } from '../../utils/const/profiles'
+import Head from 'next/head'
 import { filterByPerson } from '../../utils/utility.helper'
 
 export const getStaticPaths = async () => {
@@ -125,14 +126,11 @@ export default function Profile({ profile }) {
                             </span>
                           </a>
                         </div>
-                        <div className="flex flex-col items-start gap-[10px] click-to-call-event">
+                        <div className="flex flex-col items-start gap-[10px]">
                           <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
                             Telephone
                           </span>
-                          <a
-                            href={`tel:${profile.telephone}`}
-                            className="click-to-call-event"
-                          >
+                          <a href={`tel:${profile.telephone}`}>
                             <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940] whitespace-nowrap sm:pb-10 xl:pb-0">
                               {profile.telephone}
                             </span>

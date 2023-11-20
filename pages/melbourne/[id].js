@@ -1,18 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import IpNewsBlog from '../../components/homepage/IpNewsBlog'
 import { Container } from '../../components/templates/Container'
-import Footer from '../../components/templates/Footer'
 import Header from '../../components/templates/Header'
+import Footer from '../../components/templates/Footer'
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
+import { profiles } from '../../utils/const/profiles'
+import { profiles as peoples, awards } from '../../utils/const/people'
 import { InnerContainer } from '../../components/templates/InnerContainer'
+import IpNewsBlog from '../../components/homepage/IpNewsBlog'
 import { indexQuery } from '../../lib/queries'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
-import { awards, profiles as peoples } from '../../utils/const/people'
-import { profiles } from '../../utils/const/profiles'
+import Head from 'next/head'
 import { filterByPerson } from '../../utils/utility.helper'
 
 export const getStaticPaths = async () => {
+  
   const paths = peoples[0]?.teamMembers
     ?.filter((people) => people.isShow === true)
     ?.map((item) => {
@@ -39,12 +41,10 @@ export default function Profile({ profile }) {
   const [reduceMorePost, setReduceMorePost] = useState()
   const [noArticles, setNoArticles] = useState(false)
   const [people, setPeople] = useState({})
-  const parse = require('html-react-parser')
+  const parse = require('html-react-parser');
 
   useEffect(() => {
-    setPeople(
-      peoples[0]?.teamMembers.filter((value) => value.name == profile.name)[0]
-    )
+    setPeople(peoples[0]?.teamMembers.filter(value => value.name == profile.name)[0])
     console.log(people)
     init()
   }, [])
@@ -125,10 +125,7 @@ export default function Profile({ profile }) {
                           <span className="font-manrope font-medium text-sm sm:text-2xl md:text-base xl:text-xl text-[#7A7B94] uppercase">
                             Telephone
                           </span>
-                          <a
-                            href={`tel:${profile.telephone}`}
-                            className="click-to-call-event"
-                          >
+                          <a href={`tel:${profile.telephone}`}>
                             <span className="font-manrope font-medium text-sm sm:text-2xl md:text-xl xl:text-2xl text-[#272940] whitespace-nowrap sm:pb-10 xl:pb-0">
                               {profile.telephone}
                             </span>
@@ -143,9 +140,7 @@ export default function Profile({ profile }) {
                     } xl:w-[332px] xl:h-[333px] bg-white`}
                   >
                     <div className="flex-col">
-                      <div
-                        className={`${profile.awards ? 'flex' : 'sm:hidden'}`}
-                      >
+                      <div className={`${profile.awards ? 'flex' : 'sm:hidden'}`}>
                         <Image
                           src={profile.potrait}
                           width={0}
@@ -160,11 +155,7 @@ export default function Profile({ profile }) {
                         />
                       </div>
 
-                      <div
-                        className={`${
-                          profile.awards ? 'hidden' : 'hidden sm:flex'
-                        }`}
-                      >
+                      <div className={`${profile.awards ? 'hidden' : 'hidden sm:flex'}`}>
                         <Image
                           src={profile.potrait}
                           width={0}

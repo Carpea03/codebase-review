@@ -1,22 +1,22 @@
-import GoogleMapReact from 'google-map-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React, {
-  forwardRef,
-  useEffect,
-  useImperativeHandle,
-  useRef,
   useState,
+  useEffect,
+  forwardRef,
+  useRef,
+  useImperativeHandle,
 } from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-import { BsFillChatSquareFill } from 'react-icons/bs'
-import { FiCalendar } from 'react-icons/fi'
 import Button from '../components/buttons/Button'
+import GoogleMapReact from 'google-map-react'
+import { BsFillChatSquareFill } from 'react-icons/bs'
 import { API_KEY } from '../utils/const/apiKey'
+import { FiChevronUp, FiCalendar } from 'react-icons/fi'
+import Image from 'next/image'
 import { hears } from '../utils/const/contacts'
+import Link from 'next/link'
 import { metaOffice } from '../utils/const/links'
+import { useRouter } from 'next/router'
 
 const generalTypes = [
   { id: 0, title: 'Corporate or SME' },
@@ -539,10 +539,7 @@ export default function Contact({ contactDetails, area }) {
           <span className="uppercase font-manrope font-semibold text-base sm:text-3xl md:text-xl text-[#7A7B94]">
             Phone
           </span>
-          <a
-            href={`tel:${contactDetails?.number}`}
-            className="click-to-call-event"
-          >
+          <a href={`tel:${contactDetails?.number}`}>
             <span className="font-manrope font-medium text-base sm:text-3xl md:text-xl text-[#8C79D9]">
               {contactDetails?.number}
             </span>
